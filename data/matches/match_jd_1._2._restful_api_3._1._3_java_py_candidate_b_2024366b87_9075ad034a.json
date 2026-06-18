@@ -1,0 +1,1069 @@
+{
+  "match_id": "match_jd_1._2._restful_api_3._1._3_java_py_candidate_b_2024366b87_9075ad034a",
+  "created_at": "2026-06-18T13:32:28Z",
+  "final_score": 18.99,
+  "skill_coverage": 0.278,
+  "distribution_similarity": 0.259,
+  "experience_fit": 1.0,
+  "education_fit": 1.0,
+  "domain_fit": 0.2,
+  "semantic_fit": 0.102,
+  "matched_skills": [
+    {
+      "skill_id": "skill:kafka",
+      "name": "Kafka",
+      "match_type": "exact",
+      "jd_weight": 1.2,
+      "resume_proficiency": 1.0,
+      "contribution": 1.2,
+      "evidence_refs": {
+        "jd": [
+          "jd_m017"
+        ],
+        "resume": [
+          "resume_m017",
+          "resume_m038"
+        ]
+      },
+      "evidence_from_jd": [
+        "熟练掌握 Java、Spring Boot、MySQL、Redis、Kafka"
+      ],
+      "evidence_from_resume": [
+        "与后端团队协作优化 Redis 缓存和 Kafka 实时特征链路",
+        "熟悉 Spark、Kafka、Redis、TensorFlow、PyTorch、Linux 和 Git"
+      ]
+    },
+    {
+      "skill_id": "skill:redis",
+      "name": "Redis",
+      "match_type": "exact",
+      "jd_weight": 1.2,
+      "resume_proficiency": 1.0,
+      "contribution": 1.2,
+      "evidence_refs": {
+        "jd": [
+          "jd_m016"
+        ],
+        "resume": [
+          "resume_m016",
+          "resume_m039"
+        ]
+      },
+      "evidence_from_jd": [
+        "熟练掌握 Java、Spring Boot、MySQL、Redis、Kafka"
+      ],
+      "evidence_from_resume": [
+        "与后端团队协作优化 Redis 缓存和 Kafka 实时特征链路",
+        "熟悉 Spark、Kafka、Redis、TensorFlow、PyTorch、Linux 和 Git"
+      ]
+    },
+    {
+      "skill_id": "skill:python",
+      "name": "Python",
+      "match_type": "exact",
+      "jd_weight": 1.2,
+      "resume_proficiency": 0.75,
+      "contribution": 0.84,
+      "evidence_refs": {
+        "jd": [
+          "jd_m011"
+        ],
+        "resume": [
+          "resume_m009",
+          "resume_m028"
+        ]
+      },
+      "evidence_from_jd": [
+        "3 年以上 Java 或 Python 后端开发经验"
+      ],
+      "evidence_from_resume": [
+        "基于 Python、SQL、Spark 完成离线样本构建、模型训练和数据分析",
+        "熟练掌握 Python、SQL、推荐算法、召回模型、排序模型、特征工程、A/B测试"
+      ]
+    },
+    {
+      "skill_id": "skill:后端开发",
+      "name": "后端开发",
+      "match_type": "related",
+      "related_resume_skill": "Python",
+      "relation_type": "language",
+      "jd_weight": 1.4,
+      "resume_proficiency": 0.75,
+      "contribution": 0.7,
+      "evidence_refs": {
+        "jd": [
+          "jd_m001",
+          "jd_m005",
+          "jd_m012"
+        ],
+        "resume": [
+          "resume_m009",
+          "resume_m028"
+        ]
+      },
+      "evidence_from_jd": [
+        "3 年以上 Java 或 Python 后端开发经验",
+        "后端开发工程师"
+      ],
+      "evidence_from_resume": [
+        "基于 Python、SQL、Spark 完成离线样本构建、模型训练和数据分析",
+        "熟练掌握 Python、SQL、推荐算法、召回模型、排序模型、特征工程、A/B测试"
+      ]
+    },
+    {
+      "skill_id": "skill:分布式系统",
+      "name": "分布式系统",
+      "match_type": "related",
+      "related_resume_skill": "Kafka",
+      "relation_type": "tool",
+      "jd_weight": 1.3,
+      "resume_proficiency": 1.0,
+      "contribution": 0.65,
+      "evidence_refs": {
+        "jd": [
+          "jd_m024",
+          "jd_m025"
+        ],
+        "resume": [
+          "resume_m017",
+          "resume_m038"
+        ]
+      },
+      "evidence_from_jd": [
+        "具备系统设计、接口开发、性能优化、分布式系统和微服务实践经验"
+      ],
+      "evidence_from_resume": [
+        "与后端团队协作优化 Redis 缓存和 Kafka 实时特征链路",
+        "熟悉 Spark、Kafka、Redis、TensorFlow、PyTorch、Linux 和 Git"
+      ]
+    },
+    {
+      "skill_id": "skill:git",
+      "name": "Git",
+      "match_type": "exact",
+      "jd_weight": 1.2,
+      "resume_proficiency": 0.5,
+      "contribution": 0.6,
+      "evidence_refs": {
+        "jd": [
+          "jd_m019"
+        ],
+        "resume": [
+          "resume_m043"
+        ]
+      },
+      "evidence_from_jd": [
+        "熟悉 Linux、Git 和 Docker"
+      ],
+      "evidence_from_resume": [
+        "熟悉 Spark、Kafka、Redis、TensorFlow、PyTorch、Linux 和 Git"
+      ]
+    },
+    {
+      "skill_id": "skill:linux",
+      "name": "Linux",
+      "match_type": "exact",
+      "jd_weight": 1.2,
+      "resume_proficiency": 0.5,
+      "contribution": 0.6,
+      "evidence_refs": {
+        "jd": [
+          "jd_m018"
+        ],
+        "resume": [
+          "resume_m042"
+        ]
+      },
+      "evidence_from_jd": [
+        "熟悉 Linux、Git 和 Docker"
+      ],
+      "evidence_from_resume": [
+        "熟悉 Spark、Kafka、Redis、TensorFlow、PyTorch、Linux 和 Git"
+      ]
+    },
+    {
+      "skill_id": "skill:沟通协作",
+      "name": "沟通协作",
+      "match_type": "exact",
+      "jd_weight": 0.5,
+      "resume_proficiency": 1.0,
+      "contribution": 0.5,
+      "evidence_refs": {
+        "jd": [
+          "jd_m027",
+          "jd_m028",
+          "jd_m029"
+        ],
+        "resume": [
+          "resume_m015"
+        ]
+      },
+      "evidence_from_jd": [
+        "有良好的沟通协作、项目管理和文档能力"
+      ],
+      "evidence_from_resume": [
+        "与后端团队协作优化 Redis 缓存和 Kafka 实时特征链路"
+      ]
+    },
+    {
+      "skill_id": "skill:搜索算法",
+      "name": "搜索算法",
+      "match_type": "related",
+      "related_resume_skill": "推荐算法",
+      "relation_type": "related",
+      "jd_weight": 0.7,
+      "resume_proficiency": 0.75,
+      "contribution": 0.35,
+      "evidence_refs": {
+        "jd": [
+          "jd_m009",
+          "jd_m037"
+        ],
+        "resume": [
+          "resume_m001",
+          "resume_m003",
+          "resume_m030"
+        ]
+      },
+      "evidence_from_jd": [
+        "参与岗位能力图谱、搜索推荐、消息队列和缓存体系建设",
+        "有招聘业务、人力资源 SaaS、搜索推荐或知识图谱项目经验优先"
+      ],
+      "evidence_from_resume": [
+        "2023.03-至今 某电商平台 推荐算法工程师",
+        "推荐算法工程师"
+      ]
+    }
+  ],
+  "missing_skills": [
+    {
+      "skill_id": "skill:java",
+      "name": "Java",
+      "jd_weight": 1.3,
+      "priority": "high",
+      "gap_priority": 1.3,
+      "evidence_refs": {
+        "jd": [
+          "jd_m010",
+          "jd_m013"
+        ]
+      },
+      "evidence_from_jd": [
+        "3 年以上 Java 或 Python 后端开发经验",
+        "熟练掌握 Java、Spring Boot、MySQL、Redis、Kafka"
+      ]
+    },
+    {
+      "skill_id": "skill:微服务",
+      "name": "微服务",
+      "jd_weight": 1.3,
+      "priority": "high",
+      "gap_priority": 1.3,
+      "evidence_refs": {
+        "jd": [
+          "jd_m007",
+          "jd_m026"
+        ]
+      },
+      "evidence_from_jd": [
+        "具备系统设计、接口开发、性能优化、分布式系统和微服务实践经验",
+        "设计 RESTful API、微服务和数据访问层"
+      ]
+    },
+    {
+      "skill_id": "skill:接口开发",
+      "name": "接口开发",
+      "jd_weight": 1.3,
+      "priority": "high",
+      "gap_priority": 1.3,
+      "evidence_refs": {
+        "jd": [
+          "jd_m006",
+          "jd_m022"
+        ]
+      },
+      "evidence_from_jd": [
+        "具备系统设计、接口开发、性能优化、分布式系统和微服务实践经验",
+        "设计 RESTful API、微服务和数据访问层"
+      ]
+    },
+    {
+      "skill_id": "skill:docker",
+      "name": "Docker",
+      "jd_weight": 1.2,
+      "priority": "high",
+      "gap_priority": 1.2,
+      "evidence_refs": {
+        "jd": [
+          "jd_m020"
+        ]
+      },
+      "evidence_from_jd": [
+        "熟悉 Linux、Git 和 Docker"
+      ]
+    },
+    {
+      "skill_id": "skill:mysql",
+      "name": "MySQL",
+      "jd_weight": 1.2,
+      "priority": "high",
+      "gap_priority": 1.2,
+      "evidence_refs": {
+        "jd": [
+          "jd_m015"
+        ]
+      },
+      "evidence_from_jd": [
+        "熟练掌握 Java、Spring Boot、MySQL、Redis、Kafka"
+      ]
+    },
+    {
+      "skill_id": "skill:spring_boot",
+      "name": "Spring Boot",
+      "jd_weight": 1.2,
+      "priority": "high",
+      "gap_priority": 1.2,
+      "evidence_refs": {
+        "jd": [
+          "jd_m014"
+        ]
+      },
+      "evidence_from_jd": [
+        "熟练掌握 Java、Spring Boot、MySQL、Redis、Kafka"
+      ]
+    },
+    {
+      "skill_id": "skill:性能优化",
+      "name": "性能优化",
+      "jd_weight": 1.2,
+      "priority": "high",
+      "gap_priority": 1.2,
+      "evidence_refs": {
+        "jd": [
+          "jd_m023"
+        ]
+      },
+      "evidence_from_jd": [
+        "具备系统设计、接口开发、性能优化、分布式系统和微服务实践经验"
+      ]
+    },
+    {
+      "skill_id": "skill:系统设计",
+      "name": "系统设计",
+      "jd_weight": 1.2,
+      "priority": "high",
+      "gap_priority": 1.2,
+      "evidence_refs": {
+        "jd": [
+          "jd_m021"
+        ]
+      },
+      "evidence_from_jd": [
+        "具备系统设计、接口开发、性能优化、分布式系统和微服务实践经验"
+      ]
+    },
+    {
+      "skill_id": "skill:高并发",
+      "name": "高并发",
+      "jd_weight": 0.8,
+      "priority": "medium",
+      "gap_priority": 0.8,
+      "evidence_refs": {
+        "jd": [
+          "jd_m008"
+        ]
+      },
+      "evidence_from_jd": [
+        "保障系统高并发、可扩展和可维护"
+      ]
+    },
+    {
+      "skill_id": "skill:文档能力",
+      "name": "文档能力",
+      "jd_weight": 0.4,
+      "priority": "low",
+      "gap_priority": 0.4,
+      "evidence_refs": {
+        "jd": [
+          "jd_m031",
+          "jd_m032"
+        ]
+      },
+      "evidence_from_jd": [
+        "有良好的沟通协作、项目管理和文档能力"
+      ]
+    },
+    {
+      "skill_id": "skill:项目管理",
+      "name": "项目管理",
+      "jd_weight": 0.3,
+      "priority": "low",
+      "gap_priority": 0.3,
+      "evidence_refs": {
+        "jd": [
+          "jd_m030"
+        ]
+      },
+      "evidence_from_jd": [
+        "有良好的沟通协作、项目管理和文档能力"
+      ]
+    }
+  ],
+  "insufficient_skills": [
+    {
+      "skill_id": "skill:后端开发",
+      "name": "后端开发",
+      "required_level": 0.8,
+      "resume_level": 0.75,
+      "jd_weight": 1.4,
+      "gap_type": "related_only",
+      "evidence_refs": {
+        "jd": [
+          "jd_m001",
+          "jd_m005",
+          "jd_m012"
+        ],
+        "resume": [
+          "resume_m009",
+          "resume_m028"
+        ]
+      }
+    },
+    {
+      "skill_id": "skill:分布式系统",
+      "name": "分布式系统",
+      "required_level": 0.8,
+      "resume_level": 1.0,
+      "jd_weight": 1.3,
+      "gap_type": "related_only",
+      "evidence_refs": {
+        "jd": [
+          "jd_m024",
+          "jd_m025"
+        ],
+        "resume": [
+          "resume_m017",
+          "resume_m038"
+        ]
+      }
+    },
+    {
+      "skill_id": "skill:git",
+      "name": "Git",
+      "required_level": 0.8,
+      "resume_level": 0.5,
+      "jd_weight": 1.2,
+      "gap_type": "insufficient",
+      "evidence_refs": {
+        "jd": [
+          "jd_m019"
+        ],
+        "resume": [
+          "resume_m043"
+        ]
+      }
+    },
+    {
+      "skill_id": "skill:linux",
+      "name": "Linux",
+      "required_level": 0.8,
+      "resume_level": 0.5,
+      "jd_weight": 1.2,
+      "gap_type": "insufficient",
+      "evidence_refs": {
+        "jd": [
+          "jd_m018"
+        ],
+        "resume": [
+          "resume_m042"
+        ]
+      }
+    },
+    {
+      "skill_id": "skill:python",
+      "name": "Python",
+      "required_level": 0.8,
+      "resume_level": 0.75,
+      "jd_weight": 1.2,
+      "gap_type": "insufficient",
+      "evidence_refs": {
+        "jd": [
+          "jd_m011"
+        ],
+        "resume": [
+          "resume_m009",
+          "resume_m028"
+        ]
+      }
+    },
+    {
+      "skill_id": "skill:搜索算法",
+      "name": "搜索算法",
+      "required_level": 0.4,
+      "resume_level": 0.75,
+      "jd_weight": 0.7,
+      "gap_type": "related_only",
+      "evidence_refs": {
+        "jd": [
+          "jd_m009",
+          "jd_m037"
+        ],
+        "resume": [
+          "resume_m001",
+          "resume_m003",
+          "resume_m030"
+        ]
+      }
+    }
+  ],
+  "hard_penalties": [
+    {
+      "reason": "核心必备技能缺失 2 个及以上",
+      "penalty": 20
+    }
+  ],
+  "explanation": "岗位要求集中在 Java、微服务、接口开发、Docker 等能力，简历当前只体现 Kafka、Redis、Python、后端开发，核心技能覆盖不足，因此匹配度偏低。",
+  "jd_id": "jd_1._2._restful_api_3._1._3_java_pytho_a7c2993fe5",
+  "resume_id": "candidate_b_2024366b87",
+  "decision": "low_match",
+  "gap_analysis": {
+    "missing_skills": [
+      {
+        "skill_id": "skill:java",
+        "name": "Java",
+        "priority": "high",
+        "reason": "JD 中权重为 1.3，简历未提供直接或相关证据。",
+        "jd_evidence_refs": [
+          "jd_m010",
+          "jd_m013"
+        ]
+      },
+      {
+        "skill_id": "skill:微服务",
+        "name": "微服务",
+        "priority": "high",
+        "reason": "JD 中权重为 1.3，简历未提供直接或相关证据。",
+        "jd_evidence_refs": [
+          "jd_m007",
+          "jd_m026"
+        ]
+      },
+      {
+        "skill_id": "skill:接口开发",
+        "name": "接口开发",
+        "priority": "high",
+        "reason": "JD 中权重为 1.3，简历未提供直接或相关证据。",
+        "jd_evidence_refs": [
+          "jd_m006",
+          "jd_m022"
+        ]
+      },
+      {
+        "skill_id": "skill:docker",
+        "name": "Docker",
+        "priority": "high",
+        "reason": "JD 中权重为 1.2，简历未提供直接或相关证据。",
+        "jd_evidence_refs": [
+          "jd_m020"
+        ]
+      },
+      {
+        "skill_id": "skill:mysql",
+        "name": "MySQL",
+        "priority": "high",
+        "reason": "JD 中权重为 1.2，简历未提供直接或相关证据。",
+        "jd_evidence_refs": [
+          "jd_m015"
+        ]
+      },
+      {
+        "skill_id": "skill:spring_boot",
+        "name": "Spring Boot",
+        "priority": "high",
+        "reason": "JD 中权重为 1.2，简历未提供直接或相关证据。",
+        "jd_evidence_refs": [
+          "jd_m014"
+        ]
+      },
+      {
+        "skill_id": "skill:性能优化",
+        "name": "性能优化",
+        "priority": "high",
+        "reason": "JD 中权重为 1.2，简历未提供直接或相关证据。",
+        "jd_evidence_refs": [
+          "jd_m023"
+        ]
+      },
+      {
+        "skill_id": "skill:系统设计",
+        "name": "系统设计",
+        "priority": "high",
+        "reason": "JD 中权重为 1.2，简历未提供直接或相关证据。",
+        "jd_evidence_refs": [
+          "jd_m021"
+        ]
+      },
+      {
+        "skill_id": "skill:高并发",
+        "name": "高并发",
+        "priority": "medium",
+        "reason": "JD 中权重为 0.8，简历未提供直接或相关证据。",
+        "jd_evidence_refs": [
+          "jd_m008"
+        ]
+      },
+      {
+        "skill_id": "skill:文档能力",
+        "name": "文档能力",
+        "priority": "low",
+        "reason": "JD 中权重为 0.4，简历未提供直接或相关证据。",
+        "jd_evidence_refs": [
+          "jd_m031",
+          "jd_m032"
+        ]
+      },
+      {
+        "skill_id": "skill:项目管理",
+        "name": "项目管理",
+        "priority": "low",
+        "reason": "JD 中权重为 0.3，简历未提供直接或相关证据。",
+        "jd_evidence_refs": [
+          "jd_m030"
+        ]
+      }
+    ],
+    "insufficient_skills": [
+      {
+        "skill_id": "skill:后端开发",
+        "name": "后端开发",
+        "required_level": 0.8,
+        "current_level": 0.75,
+        "reason": "简历有相关证据，但熟练度或技能关系不足以完全满足岗位要求。",
+        "resume_evidence_refs": [
+          "resume_m009",
+          "resume_m028"
+        ]
+      },
+      {
+        "skill_id": "skill:分布式系统",
+        "name": "分布式系统",
+        "required_level": 0.8,
+        "current_level": 1.0,
+        "reason": "简历有相关证据，但熟练度或技能关系不足以完全满足岗位要求。",
+        "resume_evidence_refs": [
+          "resume_m017",
+          "resume_m038"
+        ]
+      },
+      {
+        "skill_id": "skill:git",
+        "name": "Git",
+        "required_level": 0.8,
+        "current_level": 0.5,
+        "reason": "简历有相关证据，但熟练度或技能关系不足以完全满足岗位要求。",
+        "resume_evidence_refs": [
+          "resume_m043"
+        ]
+      },
+      {
+        "skill_id": "skill:linux",
+        "name": "Linux",
+        "required_level": 0.8,
+        "current_level": 0.5,
+        "reason": "简历有相关证据，但熟练度或技能关系不足以完全满足岗位要求。",
+        "resume_evidence_refs": [
+          "resume_m042"
+        ]
+      },
+      {
+        "skill_id": "skill:python",
+        "name": "Python",
+        "required_level": 0.8,
+        "current_level": 0.75,
+        "reason": "简历有相关证据，但熟练度或技能关系不足以完全满足岗位要求。",
+        "resume_evidence_refs": [
+          "resume_m009",
+          "resume_m028"
+        ]
+      },
+      {
+        "skill_id": "skill:搜索算法",
+        "name": "搜索算法",
+        "required_level": 0.4,
+        "current_level": 0.75,
+        "reason": "简历有相关证据，但熟练度或技能关系不足以完全满足岗位要求。",
+        "resume_evidence_refs": [
+          "resume_m001",
+          "resume_m003",
+          "resume_m030"
+        ]
+      }
+    ],
+    "related_only_skills": [
+      {
+        "required_skill_id": "skill:后端开发",
+        "required_skill_name": "后端开发",
+        "resume_related_skill": "Python",
+        "relation_type": "language",
+        "reason": "简历具备相关技能，但缺少 JD 技能的直接证据。"
+      },
+      {
+        "required_skill_id": "skill:分布式系统",
+        "required_skill_name": "分布式系统",
+        "resume_related_skill": "Kafka",
+        "relation_type": "tool",
+        "reason": "简历具备相关技能，但缺少 JD 技能的直接证据。"
+      },
+      {
+        "required_skill_id": "skill:搜索算法",
+        "required_skill_name": "搜索算法",
+        "resume_related_skill": "推荐算法",
+        "relation_type": "related",
+        "reason": "简历具备相关技能，但缺少 JD 技能的直接证据。"
+      }
+    ],
+    "improvement_suggestions": [
+      {
+        "skill_id": "skill:java",
+        "suggestion": "补充 Java 的学习、项目或工作证据，优先覆盖 JD 中的核心场景。",
+        "priority": "high"
+      },
+      {
+        "skill_id": "skill:微服务",
+        "suggestion": "补充 微服务 的学习、项目或工作证据，优先覆盖 JD 中的核心场景。",
+        "priority": "high"
+      },
+      {
+        "skill_id": "skill:接口开发",
+        "suggestion": "补充 接口开发 的学习、项目或工作证据，优先覆盖 JD 中的核心场景。",
+        "priority": "high"
+      },
+      {
+        "skill_id": "skill:docker",
+        "suggestion": "补充 Docker 的学习、项目或工作证据，优先覆盖 JD 中的核心场景。",
+        "priority": "high"
+      },
+      {
+        "skill_id": "skill:mysql",
+        "suggestion": "补充 MySQL 的学习、项目或工作证据，优先覆盖 JD 中的核心场景。",
+        "priority": "high"
+      },
+      {
+        "skill_id": "skill:后端开发",
+        "suggestion": "强化 后端开发 的项目深度描述，例如职责、产出、指标或上线结果。",
+        "priority": "medium"
+      },
+      {
+        "skill_id": "skill:分布式系统",
+        "suggestion": "强化 分布式系统 的项目深度描述，例如职责、产出、指标或上线结果。",
+        "priority": "medium"
+      },
+      {
+        "skill_id": "skill:git",
+        "suggestion": "强化 Git 的项目深度描述，例如职责、产出、指标或上线结果。",
+        "priority": "medium"
+      }
+    ],
+    "gap_summary": "缺失 11 项技能，优先补齐 Java, 微服务, 接口开发；6 项技能证据或熟练度不足；3 项技能仅存在相关能力支撑"
+  },
+  "model_output": {
+    "semantic_score": 0.102,
+    "job_embedding": null,
+    "resume_embedding": null,
+    "skill_contributions": [
+      {
+        "skill_id": "skill:kafka",
+        "name": "Kafka",
+        "contribution_score": 1.2,
+        "evidence_refs": [
+          "jd_m017"
+        ]
+      },
+      {
+        "skill_id": "skill:redis",
+        "name": "Redis",
+        "contribution_score": 1.2,
+        "evidence_refs": [
+          "jd_m016"
+        ]
+      },
+      {
+        "skill_id": "skill:python",
+        "name": "Python",
+        "contribution_score": 0.9,
+        "evidence_refs": [
+          "jd_m011"
+        ]
+      },
+      {
+        "skill_id": "skill:git",
+        "name": "Git",
+        "contribution_score": 0.6,
+        "evidence_refs": [
+          "jd_m019"
+        ]
+      },
+      {
+        "skill_id": "skill:linux",
+        "name": "Linux",
+        "contribution_score": 0.6,
+        "evidence_refs": [
+          "jd_m018"
+        ]
+      },
+      {
+        "skill_id": "skill:沟通协作",
+        "name": "沟通协作",
+        "contribution_score": 0.5,
+        "evidence_refs": [
+          "jd_m027",
+          "jd_m028",
+          "jd_m029"
+        ]
+      },
+      {
+        "skill_id": "skill:后端开发",
+        "name": "后端开发",
+        "contribution_score": 0.49,
+        "evidence_refs": [
+          "jd_m001",
+          "jd_m005",
+          "jd_m012"
+        ]
+      },
+      {
+        "skill_id": "skill:分布式系统",
+        "name": "分布式系统",
+        "contribution_score": 0.455,
+        "evidence_refs": [
+          "jd_m024",
+          "jd_m025"
+        ]
+      },
+      {
+        "skill_id": "skill:搜索算法",
+        "name": "搜索算法",
+        "contribution_score": 0.245,
+        "evidence_refs": [
+          "jd_m009",
+          "jd_m037"
+        ]
+      },
+      {
+        "skill_id": "skill:java",
+        "name": "Java",
+        "contribution_score": 0.0,
+        "evidence_refs": [
+          "jd_m010",
+          "jd_m013"
+        ]
+      },
+      {
+        "skill_id": "skill:微服务",
+        "name": "微服务",
+        "contribution_score": 0.0,
+        "evidence_refs": [
+          "jd_m007",
+          "jd_m026"
+        ]
+      },
+      {
+        "skill_id": "skill:接口开发",
+        "name": "接口开发",
+        "contribution_score": 0.0,
+        "evidence_refs": [
+          "jd_m006",
+          "jd_m022"
+        ]
+      },
+      {
+        "skill_id": "skill:docker",
+        "name": "Docker",
+        "contribution_score": 0.0,
+        "evidence_refs": [
+          "jd_m020"
+        ]
+      },
+      {
+        "skill_id": "skill:mysql",
+        "name": "MySQL",
+        "contribution_score": 0.0,
+        "evidence_refs": [
+          "jd_m015"
+        ]
+      },
+      {
+        "skill_id": "skill:spring_boot",
+        "name": "Spring Boot",
+        "contribution_score": 0.0,
+        "evidence_refs": [
+          "jd_m014"
+        ]
+      },
+      {
+        "skill_id": "skill:性能优化",
+        "name": "性能优化",
+        "contribution_score": 0.0,
+        "evidence_refs": [
+          "jd_m023"
+        ]
+      },
+      {
+        "skill_id": "skill:系统设计",
+        "name": "系统设计",
+        "contribution_score": 0.0,
+        "evidence_refs": [
+          "jd_m021"
+        ]
+      },
+      {
+        "skill_id": "skill:招聘业务",
+        "name": "招聘业务",
+        "contribution_score": 0.0,
+        "evidence_refs": [
+          "jd_m002",
+          "jd_m003",
+          "jd_m033",
+          "jd_m034",
+          "jd_m035"
+        ]
+      },
+      {
+        "skill_id": "skill:高并发",
+        "name": "高并发",
+        "contribution_score": 0.0,
+        "evidence_refs": [
+          "jd_m008"
+        ]
+      },
+      {
+        "skill_id": "skill:企业服务",
+        "name": "企业服务",
+        "contribution_score": 0.0,
+        "evidence_refs": [
+          "jd_m004",
+          "jd_m036"
+        ]
+      },
+      {
+        "skill_id": "skill:文档能力",
+        "name": "文档能力",
+        "contribution_score": 0.0,
+        "evidence_refs": [
+          "jd_m031",
+          "jd_m032"
+        ]
+      },
+      {
+        "skill_id": "skill:项目管理",
+        "name": "项目管理",
+        "contribution_score": 0.0,
+        "evidence_refs": [
+          "jd_m030"
+        ]
+      },
+      {
+        "skill_id": "skill:cicd",
+        "name": "CI/CD",
+        "contribution_score": 0.0,
+        "evidence_refs": [
+          "jd_m040"
+        ]
+      },
+      {
+        "skill_id": "skill:devops",
+        "name": "DevOps",
+        "contribution_score": 0.0,
+        "evidence_refs": [
+          "jd_m041"
+        ]
+      },
+      {
+        "skill_id": "skill:kubernetes",
+        "name": "Kubernetes",
+        "contribution_score": 0.0,
+        "evidence_refs": [
+          "jd_m039"
+        ]
+      },
+      {
+        "skill_id": "skill:云原生",
+        "name": "云原生",
+        "contribution_score": 0.0,
+        "evidence_refs": [
+          "jd_m042"
+        ]
+      },
+      {
+        "skill_id": "skill:知识图谱",
+        "name": "知识图谱",
+        "contribution_score": 0.0,
+        "evidence_refs": [
+          "jd_m038"
+        ]
+      }
+    ],
+    "item_weights": [
+      {
+        "evidence_id": "jd_e001",
+        "weight": 0.0
+      },
+      {
+        "evidence_id": "jd_e002",
+        "weight": 0.137
+      },
+      {
+        "evidence_id": "jd_e003",
+        "weight": 0.0
+      },
+      {
+        "evidence_id": "jd_e004",
+        "weight": 0.138
+      },
+      {
+        "evidence_id": "jd_e005",
+        "weight": 0.024
+      },
+      {
+        "evidence_id": "jd_e006",
+        "weight": 0.043
+      },
+      {
+        "evidence_id": "jd_e007",
+        "weight": 0.095
+      },
+      {
+        "evidence_id": "jd_e008",
+        "weight": 0.013
+      },
+      {
+        "evidence_id": "jd_e009",
+        "weight": 0.0
+      },
+      {
+        "evidence_id": "jd_e010",
+        "weight": 0.0
+      }
+    ],
+    "model_explanation": "规则适配器基于职责/经历关键词重合与技能上下文计算语义分。",
+    "model_metadata": {
+      "model_name": "rule",
+      "version": "demo-v1",
+      "uses_jobformer": false
+    }
+  },
+  "llm_used": false,
+  "llm_status": {
+    "requested": false,
+    "available": false,
+    "message": "LLM was not requested. Using rule-based pipeline."
+  },
+  "llm_explanation": {
+    "llm_used": false,
+    "available": false,
+    "message": "LLM was not requested. Using rule-based pipeline.",
+    "explanation": "岗位要求集中在 Java、微服务、接口开发、Docker 等能力，简历当前只体现 Kafka、Redis、Python、后端开发，核心技能覆盖不足，因此匹配度偏低。",
+    "source": "rule_based"
+  },
+  "path": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/matches/match_jd_1._2._restful_api_3._1._3_java_py_candidate_b_2024366b87_9075ad034a.json"
+}

@@ -1,0 +1,732 @@
+{
+  "match_id": "match_jd_1._etl_2._bi_3._sparkhadoopflink_candidate_c_c6a5138ee7_ab8bad7910",
+  "created_at": "2026-06-18T13:32:28Z",
+  "final_score": 95.39,
+  "skill_coverage": 0.979,
+  "distribution_similarity": 0.964,
+  "experience_fit": 1.0,
+  "education_fit": 1.0,
+  "domain_fit": 1.0,
+  "semantic_fit": 0.43,
+  "matched_skills": [
+    {
+      "skill_id": "skill:flink",
+      "name": "Flink",
+      "match_type": "exact",
+      "jd_weight": 1.3,
+      "resume_proficiency": 0.8,
+      "contribution": 1.3,
+      "evidence_refs": {
+        "jd": [
+          "jd_m009",
+          "jd_m016"
+        ],
+        "resume": [
+          "resume_m016",
+          "resume_m024"
+        ]
+      },
+      "evidence_from_jd": [
+        "优化 Spark、Hadoop、Flink 任务性能",
+        "熟悉 Spark、Hadoop、Flink、Airflow"
+      ],
+      "evidence_from_resume": [
+        "使用 Flink 和 Kafka 处理交易事件流",
+        "熟练掌握 SQL、Python、Scala、Spark、Hadoop、Flink、Airflow、ETL、数据仓库、数据治理"
+      ]
+    },
+    {
+      "skill_id": "skill:hadoop",
+      "name": "Hadoop",
+      "match_type": "exact",
+      "jd_weight": 1.3,
+      "resume_proficiency": 0.8,
+      "contribution": 1.3,
+      "evidence_refs": {
+        "jd": [
+          "jd_m008",
+          "jd_m015"
+        ],
+        "resume": [
+          "resume_m009",
+          "resume_m023"
+        ]
+      },
+      "evidence_from_jd": [
+        "优化 Spark、Hadoop、Flink 任务性能",
+        "熟悉 Spark、Hadoop、Flink、Airflow"
+      ],
+      "evidence_from_resume": [
+        "使用 SQL、Python、Scala、Spark、Hadoop 开发 ETL 任务",
+        "熟练掌握 SQL、Python、Scala、Spark、Hadoop、Flink、Airflow、ETL、数据仓库、数据治理"
+      ]
+    },
+    {
+      "skill_id": "skill:spark",
+      "name": "Spark",
+      "match_type": "exact",
+      "jd_weight": 1.3,
+      "resume_proficiency": 0.8,
+      "contribution": 1.3,
+      "evidence_refs": {
+        "jd": [
+          "jd_m007",
+          "jd_m014"
+        ],
+        "resume": [
+          "resume_m008",
+          "resume_m022"
+        ]
+      },
+      "evidence_from_jd": [
+        "优化 Spark、Hadoop、Flink 任务性能",
+        "熟悉 Spark、Hadoop、Flink、Airflow"
+      ],
+      "evidence_from_resume": [
+        "使用 SQL、Python、Scala、Spark、Hadoop 开发 ETL 任务",
+        "熟练掌握 SQL、Python、Scala、Spark、Hadoop、Flink、Airflow、ETL、数据仓库、数据治理"
+      ]
+    },
+    {
+      "skill_id": "skill:数据仓库",
+      "name": "数据仓库",
+      "match_type": "exact",
+      "jd_weight": 1.3,
+      "resume_proficiency": 0.8,
+      "contribution": 1.3,
+      "evidence_refs": {
+        "jd": [
+          "jd_m003",
+          "jd_m010"
+        ],
+        "resume": [
+          "resume_m003",
+          "resume_m027"
+        ]
+      },
+      "evidence_from_jd": [
+        "3 年以上数据开发、数据仓库或大数据平台经验",
+        "负责金融风控业务的数据仓库建设、ETL 流程开发和数据质量治理"
+      ],
+      "evidence_from_resume": [
+        "熟练掌握 SQL、Python、Scala、Spark、Hadoop、Flink、Airflow、ETL、数据仓库、数据治理",
+        "负责风控主题数据仓库建设"
+      ]
+    },
+    {
+      "skill_id": "skill:python",
+      "name": "Python",
+      "match_type": "exact",
+      "jd_weight": 1.2,
+      "resume_proficiency": 0.8,
+      "contribution": 1.2,
+      "evidence_refs": {
+        "jd": [
+          "jd_m012"
+        ],
+        "resume": [
+          "resume_m006",
+          "resume_m020"
+        ]
+      },
+      "evidence_from_jd": [
+        "熟练掌握 SQL、Python 或 Scala"
+      ],
+      "evidence_from_resume": [
+        "使用 SQL、Python、Scala、Spark、Hadoop 开发 ETL 任务",
+        "熟练掌握 SQL、Python、Scala、Spark、Hadoop、Flink、Airflow、ETL、数据仓库、数据治理"
+      ]
+    },
+    {
+      "skill_id": "skill:sql",
+      "name": "SQL",
+      "match_type": "exact",
+      "jd_weight": 1.2,
+      "resume_proficiency": 0.8,
+      "contribution": 1.2,
+      "evidence_refs": {
+        "jd": [
+          "jd_m011"
+        ],
+        "resume": [
+          "resume_m005",
+          "resume_m019"
+        ]
+      },
+      "evidence_from_jd": [
+        "熟练掌握 SQL、Python 或 Scala"
+      ],
+      "evidence_from_resume": [
+        "使用 SQL、Python、Scala、Spark、Hadoop 开发 ETL 任务",
+        "熟练掌握 SQL、Python、Scala、Spark、Hadoop、Flink、Airflow、ETL、数据仓库、数据治理"
+      ]
+    },
+    {
+      "skill_id": "skill:scala",
+      "name": "Scala",
+      "match_type": "exact",
+      "jd_weight": 1.2,
+      "resume_proficiency": 0.8,
+      "contribution": 1.2,
+      "evidence_refs": {
+        "jd": [
+          "jd_m013"
+        ],
+        "resume": [
+          "resume_m007",
+          "resume_m021"
+        ]
+      },
+      "evidence_from_jd": [
+        "熟练掌握 SQL、Python 或 Scala"
+      ],
+      "evidence_from_resume": [
+        "使用 SQL、Python、Scala、Spark、Hadoop 开发 ETL 任务",
+        "熟练掌握 SQL、Python、Scala、Spark、Hadoop、Flink、Airflow、ETL、数据仓库、数据治理"
+      ]
+    },
+    {
+      "skill_id": "skill:etl",
+      "name": "ETL",
+      "match_type": "exact",
+      "jd_weight": 1.1,
+      "resume_proficiency": 0.8,
+      "contribution": 1.1,
+      "evidence_refs": {
+        "jd": [
+          "jd_m004",
+          "jd_m019"
+        ],
+        "resume": [
+          "resume_m010",
+          "resume_m026"
+        ]
+      },
+      "evidence_from_jd": [
+        "理解数据治理、数据建模、ETL、数据质量和调度监控体系",
+        "负责金融风控业务的数据仓库建设、ETL 流程开发和数据质量治理"
+      ],
+      "evidence_from_resume": [
+        "使用 SQL、Python、Scala、Spark、Hadoop 开发 ETL 任务",
+        "熟练掌握 SQL、Python、Scala、Spark、Hadoop、Flink、Airflow、ETL、数据仓库、数据治理"
+      ]
+    },
+    {
+      "skill_id": "skill:数据治理",
+      "name": "数据治理",
+      "match_type": "exact",
+      "jd_weight": 1.0,
+      "resume_proficiency": 0.75,
+      "contribution": 1.0,
+      "evidence_refs": {
+        "jd": [
+          "jd_m018"
+        ],
+        "resume": [
+          "resume_m012",
+          "resume_m028"
+        ]
+      },
+      "evidence_from_jd": [
+        "理解数据治理、数据建模、ETL、数据质量和调度监控体系"
+      ],
+      "evidence_from_resume": [
+        "推进数据治理和数据质量校验规则",
+        "熟练掌握 SQL、Python、Scala、Spark、Hadoop、Flink、Airflow、ETL、数据仓库、数据治理"
+      ]
+    },
+    {
+      "skill_id": "skill:airflow",
+      "name": "Airflow",
+      "match_type": "exact",
+      "jd_weight": 1.2,
+      "resume_proficiency": 0.75,
+      "contribution": 0.84,
+      "evidence_refs": {
+        "jd": [
+          "jd_m017"
+        ],
+        "resume": [
+          "resume_m011",
+          "resume_m025"
+        ]
+      },
+      "evidence_from_jd": [
+        "熟悉 Spark、Hadoop、Flink、Airflow"
+      ],
+      "evidence_from_resume": [
+        "熟练掌握 SQL、Python、Scala、Spark、Hadoop、Flink、Airflow、ETL、数据仓库、数据治理",
+        "通过 Airflow 完成调度监控和失败重跑"
+      ]
+    },
+    {
+      "skill_id": "skill:bi",
+      "name": "BI",
+      "match_type": "exact",
+      "jd_weight": 0.8,
+      "resume_proficiency": 0.75,
+      "contribution": 0.8,
+      "evidence_refs": {
+        "jd": [
+          "jd_m005"
+        ],
+        "resume": [
+          "resume_m013",
+          "resume_m029"
+        ]
+      },
+      "evidence_from_jd": [
+        "支撑 BI 报表、风险监控和数据分析需求"
+      ],
+      "evidence_from_resume": [
+        "支撑 BI 报表、风险监控和监管报送",
+        "熟悉 BI、数据分析、需求分析、文档能力和沟通协作"
+      ]
+    },
+    {
+      "skill_id": "skill:数据分析",
+      "name": "数据分析",
+      "match_type": "exact",
+      "jd_weight": 0.8,
+      "resume_proficiency": 0.5,
+      "contribution": 0.8,
+      "evidence_refs": {
+        "jd": [
+          "jd_m006"
+        ],
+        "resume": [
+          "resume_m030"
+        ]
+      },
+      "evidence_from_jd": [
+        "支撑 BI 报表、风险监控和数据分析需求"
+      ],
+      "evidence_from_resume": [
+        "熟悉 BI、数据分析、需求分析、文档能力和沟通协作"
+      ]
+    },
+    {
+      "skill_id": "skill:风控",
+      "name": "风控",
+      "match_type": "exact",
+      "jd_weight": 0.8,
+      "resume_proficiency": 0.8,
+      "contribution": 0.8,
+      "evidence_refs": {
+        "jd": [
+          "jd_m002",
+          "jd_m027",
+          "jd_m028"
+        ],
+        "resume": [
+          "resume_m002",
+          "resume_m004",
+          "resume_m015",
+          "resume_m018"
+        ]
+      },
+      "evidence_from_jd": [
+        "有金融、风控、反欺诈或监管报送数据项目经验优先",
+        "负责金融风控业务的数据仓库建设、ETL 流程开发和数据质量治理"
+      ],
+      "evidence_from_resume": [
+        "参与准实时风控数据链路开发",
+        "设计客户、交易、授信、反欺诈等主题模型和指标口径"
+      ]
+    },
+    {
+      "skill_id": "skill:沟通协作",
+      "name": "沟通协作",
+      "match_type": "exact",
+      "jd_weight": 0.7,
+      "resume_proficiency": 0.5,
+      "contribution": 0.7,
+      "evidence_refs": {
+        "jd": [
+          "jd_m020",
+          "jd_m021",
+          "jd_m022"
+        ],
+        "resume": [
+          "resume_m034",
+          "resume_m035",
+          "resume_m036"
+        ]
+      },
+      "evidence_from_jd": [
+        "具备良好的沟通协作、需求分析和文档能力"
+      ],
+      "evidence_from_resume": [
+        "熟悉 BI、数据分析、需求分析、文档能力和沟通协作"
+      ]
+    },
+    {
+      "skill_id": "skill:金融",
+      "name": "金融",
+      "match_type": "exact",
+      "jd_weight": 0.7,
+      "resume_proficiency": 0.7,
+      "contribution": 0.7,
+      "evidence_refs": {
+        "jd": [
+          "jd_m001",
+          "jd_m026"
+        ],
+        "resume": [
+          "resume_m001",
+          "resume_m014"
+        ]
+      },
+      "evidence_from_jd": [
+        "有金融、风控、反欺诈或监管报送数据项目经验优先",
+        "负责金融风控业务的数据仓库建设、ETL 流程开发和数据质量治理"
+      ],
+      "evidence_from_resume": [
+        "2019.07-2021.03 某银行科技部 数据工程师",
+        "2021.04-至今 某金融科技公司 数据开发工程师"
+      ]
+    },
+    {
+      "skill_id": "skill:文档能力",
+      "name": "文档能力",
+      "match_type": "exact",
+      "jd_weight": 0.6,
+      "resume_proficiency": 0.5,
+      "contribution": 0.6,
+      "evidence_refs": {
+        "jd": [
+          "jd_m024",
+          "jd_m025"
+        ],
+        "resume": [
+          "resume_m032",
+          "resume_m033"
+        ]
+      },
+      "evidence_from_jd": [
+        "具备良好的沟通协作、需求分析和文档能力"
+      ],
+      "evidence_from_resume": [
+        "熟悉 BI、数据分析、需求分析、文档能力和沟通协作"
+      ]
+    },
+    {
+      "skill_id": "skill:需求分析",
+      "name": "需求分析",
+      "match_type": "exact",
+      "jd_weight": 0.5,
+      "resume_proficiency": 0.5,
+      "contribution": 0.5,
+      "evidence_refs": {
+        "jd": [
+          "jd_m023"
+        ],
+        "resume": [
+          "resume_m031"
+        ]
+      },
+      "evidence_from_jd": [
+        "具备良好的沟通协作、需求分析和文档能力"
+      ],
+      "evidence_from_resume": [
+        "熟悉 BI、数据分析、需求分析、文档能力和沟通协作"
+      ]
+    },
+    {
+      "skill_id": "skill:kafka",
+      "name": "Kafka",
+      "match_type": "exact",
+      "jd_weight": 0.2,
+      "resume_proficiency": 0.8,
+      "contribution": 0.2,
+      "evidence_refs": {
+        "jd": [
+          "jd_m029"
+        ],
+        "resume": [
+          "resume_m017"
+        ]
+      },
+      "evidence_from_jd": [
+        "熟悉 Kafka、ClickHouse、数据血缘或数据安全治理者优先"
+      ],
+      "evidence_from_resume": [
+        "使用 Flink 和 Kafka 处理交易事件流"
+      ]
+    }
+  ],
+  "missing_skills": [],
+  "insufficient_skills": [
+    {
+      "skill_id": "skill:airflow",
+      "name": "Airflow",
+      "required_level": 0.8,
+      "resume_level": 0.75,
+      "jd_weight": 1.2,
+      "gap_type": "insufficient",
+      "evidence_refs": {
+        "jd": [
+          "jd_m017"
+        ],
+        "resume": [
+          "resume_m011",
+          "resume_m025"
+        ]
+      }
+    }
+  ],
+  "hard_penalties": [],
+  "explanation": "候选人与岗位在 Flink、Hadoop、Spark、数据仓库 等核心技能上匹配度较高，项目或工作经历中存在可解释证据；主要缺口为 无明显核心缺口。",
+  "jd_id": "jd_1._etl_2._bi_3._sparkhadoopflink_1_8df5d293bb",
+  "resume_id": "candidate_c_c6a5138ee7",
+  "decision": "strong_match",
+  "gap_analysis": {
+    "missing_skills": [],
+    "insufficient_skills": [
+      {
+        "skill_id": "skill:airflow",
+        "name": "Airflow",
+        "required_level": 0.8,
+        "current_level": 0.75,
+        "reason": "简历有相关证据，但熟练度或技能关系不足以完全满足岗位要求。",
+        "resume_evidence_refs": [
+          "resume_m011",
+          "resume_m025"
+        ]
+      }
+    ],
+    "related_only_skills": [],
+    "improvement_suggestions": [
+      {
+        "skill_id": "skill:airflow",
+        "suggestion": "强化 Airflow 的项目深度描述，例如职责、产出、指标或上线结果。",
+        "priority": "medium"
+      }
+    ],
+    "gap_summary": "1 项技能证据或熟练度不足"
+  },
+  "model_output": {
+    "semantic_score": 0.43,
+    "job_embedding": null,
+    "resume_embedding": null,
+    "skill_contributions": [
+      {
+        "skill_id": "skill:flink",
+        "name": "Flink",
+        "contribution_score": 1.04,
+        "evidence_refs": [
+          "jd_m009",
+          "jd_m016"
+        ]
+      },
+      {
+        "skill_id": "skill:hadoop",
+        "name": "Hadoop",
+        "contribution_score": 1.04,
+        "evidence_refs": [
+          "jd_m008",
+          "jd_m015"
+        ]
+      },
+      {
+        "skill_id": "skill:spark",
+        "name": "Spark",
+        "contribution_score": 1.04,
+        "evidence_refs": [
+          "jd_m007",
+          "jd_m014"
+        ]
+      },
+      {
+        "skill_id": "skill:数据仓库",
+        "name": "数据仓库",
+        "contribution_score": 1.04,
+        "evidence_refs": [
+          "jd_m003",
+          "jd_m010"
+        ]
+      },
+      {
+        "skill_id": "skill:python",
+        "name": "Python",
+        "contribution_score": 0.96,
+        "evidence_refs": [
+          "jd_m012"
+        ]
+      },
+      {
+        "skill_id": "skill:sql",
+        "name": "SQL",
+        "contribution_score": 0.96,
+        "evidence_refs": [
+          "jd_m011"
+        ]
+      },
+      {
+        "skill_id": "skill:scala",
+        "name": "Scala",
+        "contribution_score": 0.96,
+        "evidence_refs": [
+          "jd_m013"
+        ]
+      },
+      {
+        "skill_id": "skill:airflow",
+        "name": "Airflow",
+        "contribution_score": 0.9,
+        "evidence_refs": [
+          "jd_m017"
+        ]
+      },
+      {
+        "skill_id": "skill:etl",
+        "name": "ETL",
+        "contribution_score": 0.88,
+        "evidence_refs": [
+          "jd_m004",
+          "jd_m019"
+        ]
+      },
+      {
+        "skill_id": "skill:数据治理",
+        "name": "数据治理",
+        "contribution_score": 0.75,
+        "evidence_refs": [
+          "jd_m018"
+        ]
+      },
+      {
+        "skill_id": "skill:风控",
+        "name": "风控",
+        "contribution_score": 0.64,
+        "evidence_refs": [
+          "jd_m002",
+          "jd_m027",
+          "jd_m028"
+        ]
+      },
+      {
+        "skill_id": "skill:bi",
+        "name": "BI",
+        "contribution_score": 0.6,
+        "evidence_refs": [
+          "jd_m005"
+        ]
+      },
+      {
+        "skill_id": "skill:金融",
+        "name": "金融",
+        "contribution_score": 0.49,
+        "evidence_refs": [
+          "jd_m001",
+          "jd_m026"
+        ]
+      },
+      {
+        "skill_id": "skill:数据分析",
+        "name": "数据分析",
+        "contribution_score": 0.4,
+        "evidence_refs": [
+          "jd_m006"
+        ]
+      },
+      {
+        "skill_id": "skill:沟通协作",
+        "name": "沟通协作",
+        "contribution_score": 0.35,
+        "evidence_refs": [
+          "jd_m020",
+          "jd_m021",
+          "jd_m022"
+        ]
+      },
+      {
+        "skill_id": "skill:文档能力",
+        "name": "文档能力",
+        "contribution_score": 0.3,
+        "evidence_refs": [
+          "jd_m024",
+          "jd_m025"
+        ]
+      },
+      {
+        "skill_id": "skill:需求分析",
+        "name": "需求分析",
+        "contribution_score": 0.25,
+        "evidence_refs": [
+          "jd_m023"
+        ]
+      },
+      {
+        "skill_id": "skill:kafka",
+        "name": "Kafka",
+        "contribution_score": 0.16,
+        "evidence_refs": [
+          "jd_m029"
+        ]
+      }
+    ],
+    "item_weights": [
+      {
+        "evidence_id": "jd_e001",
+        "weight": 0.278
+      },
+      {
+        "evidence_id": "jd_e002",
+        "weight": 0.357
+      },
+      {
+        "evidence_id": "jd_e003",
+        "weight": 0.316
+      },
+      {
+        "evidence_id": "jd_e004",
+        "weight": 0.079
+      },
+      {
+        "evidence_id": "jd_e005",
+        "weight": 0.276
+      },
+      {
+        "evidence_id": "jd_e006",
+        "weight": 0.188
+      },
+      {
+        "evidence_id": "jd_e007",
+        "weight": 0.039
+      },
+      {
+        "evidence_id": "jd_e008",
+        "weight": 0.0
+      },
+      {
+        "evidence_id": "jd_e009",
+        "weight": 0.027
+      },
+      {
+        "evidence_id": "jd_e010",
+        "weight": 0.026
+      }
+    ],
+    "model_explanation": "规则适配器基于职责/经历关键词重合与技能上下文计算语义分。",
+    "model_metadata": {
+      "model_name": "rule",
+      "version": "demo-v1",
+      "uses_jobformer": false
+    }
+  },
+  "llm_used": false,
+  "llm_status": {
+    "requested": false,
+    "available": false,
+    "message": "LLM was not requested. Using rule-based pipeline."
+  },
+  "llm_explanation": {
+    "llm_used": false,
+    "available": false,
+    "message": "LLM was not requested. Using rule-based pipeline.",
+    "explanation": "候选人与岗位在 Flink、Hadoop、Spark、数据仓库 等核心技能上匹配度较高，项目或工作经历中存在可解释证据；主要缺口为 无明显核心缺口。",
+    "source": "rule_based"
+  },
+  "path": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/matches/match_jd_1._etl_2._bi_3._sparkhadoopflink_candidate_c_c6a5138ee7_ab8bad7910.json"
+}

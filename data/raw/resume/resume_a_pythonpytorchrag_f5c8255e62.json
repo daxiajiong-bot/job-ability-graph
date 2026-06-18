@@ -1,0 +1,13 @@
+{
+  "doc_id": "resume_a_pythonpytorchrag_f5c8255e62",
+  "doc_type": "resume",
+  "created_at": "2026-06-18T12:34:11Z",
+  "raw_text": "姓名: 候选人A\n项目经历: 使用 Python、PyTorch、RAG 完成知识库问答系统。",
+  "metadata": {
+    "doc_id": "resume_a_pythonpytorchrag_f5c8255e62",
+    "resume_id": "candidate_a_1d5f8a9864",
+    "candidate_id": "候选人A",
+    "target_position": null
+  },
+  "path": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/raw/resume/resume_a_pythonpytorchrag_f5c8255e62.json"
+}

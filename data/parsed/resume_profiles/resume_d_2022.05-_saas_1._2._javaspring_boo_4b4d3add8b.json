@@ -1,0 +1,1088 @@
+{
+  "doc_id": "resume_d_2022.05-_saas_1._2._javaspring_boo_4b4d3add8b",
+  "profile_type": "resume",
+  "created_at": "2026-06-18T13:32:28Z",
+  "profile": {
+    "doc_id": "resume_d_2022.05-_saas_1._2._javaspring_boo_4b4d3add8b",
+    "resume_id": "candidate_d_1ad7247696",
+    "resume_parse": {
+      "candidate_id": "候选人D",
+      "education": "本科",
+      "experience_years": 6.0,
+      "target_position": "后端开发工程师",
+      "work_experiences": [
+        "2022.05-至今 某人力资源 SaaS 公司 后端开发工程师",
+        "负责招聘业务平台的岗位发布、简历解析、候选人流转和匹配结果模块后端开发",
+        "使用 Java、Spring Boot、MySQL、Redis、Kafka 设计核心 API 和异步任务, 支撑高并发访问",
+        "参与服务拆分、微服务治理、性能优化和接口文档建设, 使用 Docker、Linux、Git 完成日常交付",
+        "2020.07-2022.04 某企业服务公司 Java 开发工程师",
+        "参与 ToB 项目管理系统建设, 负责权限、消息通知和报表接口开发"
+      ],
+      "projects": [
+        "招聘流程协同平台: 核心开发候选人状态流转服务, 通过缓存和异步化将列表接口平均响应时间降低 45%"
+      ],
+      "certificates": [],
+      "domain_experiences": [
+        "SaaS",
+        "ToB",
+        "企业服务",
+        "招聘业务",
+        "教育"
+      ],
+      "raw_skill_mentions": [
+        {
+          "mention_id": "resume_m001",
+          "raw_text": "后端开发",
+          "source_type": "resume",
+          "source_section": "target_position",
+          "evidence_text": "后端开发工程师",
+          "evidence_id": "resume_e001",
+          "position": 0,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "resume_m002",
+          "raw_text": "人力资源",
+          "source_type": "resume",
+          "source_section": "work_experiences",
+          "evidence_text": "2022.05-至今 某人力资源 SaaS 公司 后端开发工程师",
+          "evidence_id": "resume_e003",
+          "position": 14,
+          "confidence": 0.88
+        },
+        {
+          "mention_id": "resume_m003",
+          "raw_text": "SaaS",
+          "source_type": "resume",
+          "source_section": "work_experiences",
+          "evidence_text": "2022.05-至今 某人力资源 SaaS 公司 后端开发工程师",
+          "evidence_id": "resume_e003",
+          "position": 19,
+          "confidence": 0.88
+        },
+        {
+          "mention_id": "resume_m004",
+          "raw_text": "后端开发",
+          "source_type": "resume",
+          "source_section": "work_experiences",
+          "evidence_text": "2022.05-至今 某人力资源 SaaS 公司 后端开发工程师",
+          "evidence_id": "resume_e003",
+          "position": 27,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "resume_m005",
+          "raw_text": "招聘业务",
+          "source_type": "resume",
+          "source_section": "work_experiences",
+          "evidence_text": "负责招聘业务平台的岗位发布、简历解析、候选人流转和匹配结果模块后端开发",
+          "evidence_id": "resume_e004",
+          "position": 5,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "resume_m006",
+          "raw_text": "招聘",
+          "source_type": "resume",
+          "source_section": "work_experiences",
+          "evidence_text": "负责招聘业务平台的岗位发布、简历解析、候选人流转和匹配结果模块后端开发",
+          "evidence_id": "resume_e004",
+          "position": 5,
+          "confidence": 0.88
+        },
+        {
+          "mention_id": "resume_m007",
+          "raw_text": "后端开发",
+          "source_type": "resume",
+          "source_section": "work_experiences",
+          "evidence_text": "负责招聘业务平台的岗位发布、简历解析、候选人流转和匹配结果模块后端开发",
+          "evidence_id": "resume_e004",
+          "position": 34,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "resume_m008",
+          "raw_text": "Java",
+          "source_type": "resume",
+          "source_section": "work_experiences",
+          "evidence_text": "使用 Java、Spring Boot、MySQL、Redis、Kafka 设计核心 API 和异步任务",
+          "evidence_id": "resume_e005",
+          "position": 7,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "resume_m009",
+          "raw_text": "Spring Boot",
+          "source_type": "resume",
+          "source_section": "work_experiences",
+          "evidence_text": "使用 Java、Spring Boot、MySQL、Redis、Kafka 设计核心 API 和异步任务",
+          "evidence_id": "resume_e005",
+          "position": 12,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "resume_m010",
+          "raw_text": "MySQL",
+          "source_type": "resume",
+          "source_section": "work_experiences",
+          "evidence_text": "使用 Java、Spring Boot、MySQL、Redis、Kafka 设计核心 API 和异步任务",
+          "evidence_id": "resume_e005",
+          "position": 24,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "resume_m011",
+          "raw_text": "Redis",
+          "source_type": "resume",
+          "source_section": "work_experiences",
+          "evidence_text": "使用 Java、Spring Boot、MySQL、Redis、Kafka 设计核心 API 和异步任务",
+          "evidence_id": "resume_e005",
+          "position": 30,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "resume_m012",
+          "raw_text": "Kafka",
+          "source_type": "resume",
+          "source_section": "work_experiences",
+          "evidence_text": "使用 Java、Spring Boot、MySQL、Redis、Kafka 设计核心 API 和异步任务",
+          "evidence_id": "resume_e005",
+          "position": 36,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "resume_m013",
+          "raw_text": "高并发",
+          "source_type": "resume",
+          "source_section": "work_experiences",
+          "evidence_text": "支撑高并发访问",
+          "evidence_id": "resume_e005",
+          "position": 60,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "resume_m014",
+          "raw_text": "微服务",
+          "source_type": "resume",
+          "source_section": "work_experiences",
+          "evidence_text": "参与服务拆分、微服务治理、性能优化和接口文档建设",
+          "evidence_id": "resume_e006",
+          "position": 12,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "resume_m015",
+          "raw_text": "性能优化",
+          "source_type": "resume",
+          "source_section": "work_experiences",
+          "evidence_text": "参与服务拆分、微服务治理、性能优化和接口文档建设",
+          "evidence_id": "resume_e006",
+          "position": 18,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "resume_m016",
+          "raw_text": "文档",
+          "source_type": "resume",
+          "source_section": "work_experiences",
+          "evidence_text": "参与服务拆分、微服务治理、性能优化和接口文档建设",
+          "evidence_id": "resume_e006",
+          "position": 25,
+          "confidence": 0.88
+        },
+        {
+          "mention_id": "resume_m017",
+          "raw_text": "Docker",
+          "source_type": "resume",
+          "source_section": "work_experiences",
+          "evidence_text": "使用 Docker、Linux、Git 完成日常交付",
+          "evidence_id": "resume_e006",
+          "position": 34,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "resume_m018",
+          "raw_text": "Linux",
+          "source_type": "resume",
+          "source_section": "work_experiences",
+          "evidence_text": "使用 Docker、Linux、Git 完成日常交付",
+          "evidence_id": "resume_e006",
+          "position": 41,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "resume_m019",
+          "raw_text": "Git",
+          "source_type": "resume",
+          "source_section": "work_experiences",
+          "evidence_text": "使用 Docker、Linux、Git 完成日常交付",
+          "evidence_id": "resume_e006",
+          "position": 47,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "resume_m020",
+          "raw_text": "企业服务",
+          "source_type": "resume",
+          "source_section": "work_experiences",
+          "evidence_text": "2020.07-2022.04 某企业服务公司 Java 开发工程师",
+          "evidence_id": "resume_e007",
+          "position": 23,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "resume_m021",
+          "raw_text": "Java",
+          "source_type": "resume",
+          "source_section": "work_experiences",
+          "evidence_text": "2020.07-2022.04 某企业服务公司 Java 开发工程师",
+          "evidence_id": "resume_e007",
+          "position": 30,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "resume_m022",
+          "raw_text": "ToB",
+          "source_type": "resume",
+          "source_section": "work_experiences",
+          "evidence_text": "参与 ToB 项目管理系统建设",
+          "evidence_id": "resume_e008",
+          "position": 10,
+          "confidence": 0.88
+        },
+        {
+          "mention_id": "resume_m023",
+          "raw_text": "项目管理",
+          "source_type": "resume",
+          "source_section": "work_experiences",
+          "evidence_text": "参与 ToB 项目管理系统建设",
+          "evidence_id": "resume_e008",
+          "position": 14,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "resume_m024",
+          "raw_text": "接口开发",
+          "source_type": "resume",
+          "source_section": "work_experiences",
+          "evidence_text": "负责权限、消息通知和报表接口开发",
+          "evidence_id": "resume_e008",
+          "position": 36,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "resume_m025",
+          "raw_text": "招聘",
+          "source_type": "resume",
+          "source_section": "projects",
+          "evidence_text": "招聘流程协同平台: 核心开发候选人状态流转服务",
+          "evidence_id": "resume_e009",
+          "position": 8,
+          "confidence": 0.88
+        },
+        {
+          "mention_id": "resume_m026",
+          "raw_text": "Java",
+          "source_type": "resume",
+          "source_section": "skills",
+          "evidence_text": "熟练掌握 Java、Spring Boot、MySQL、Redis、Kafka、接口开发、系统设计、微服务、性能优化",
+          "evidence_id": "resume_e010",
+          "position": 14,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "resume_m027",
+          "raw_text": "Spring Boot",
+          "source_type": "resume",
+          "source_section": "skills",
+          "evidence_text": "熟练掌握 Java、Spring Boot、MySQL、Redis、Kafka、接口开发、系统设计、微服务、性能优化",
+          "evidence_id": "resume_e010",
+          "position": 19,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "resume_m028",
+          "raw_text": "MySQL",
+          "source_type": "resume",
+          "source_section": "skills",
+          "evidence_text": "熟练掌握 Java、Spring Boot、MySQL、Redis、Kafka、接口开发、系统设计、微服务、性能优化",
+          "evidence_id": "resume_e010",
+          "position": 31,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "resume_m029",
+          "raw_text": "Redis",
+          "source_type": "resume",
+          "source_section": "skills",
+          "evidence_text": "熟练掌握 Java、Spring Boot、MySQL、Redis、Kafka、接口开发、系统设计、微服务、性能优化",
+          "evidence_id": "resume_e010",
+          "position": 37,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "resume_m030",
+          "raw_text": "Kafka",
+          "source_type": "resume",
+          "source_section": "skills",
+          "evidence_text": "熟练掌握 Java、Spring Boot、MySQL、Redis、Kafka、接口开发、系统设计、微服务、性能优化",
+          "evidence_id": "resume_e010",
+          "position": 43,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "resume_m031",
+          "raw_text": "接口开发",
+          "source_type": "resume",
+          "source_section": "skills",
+          "evidence_text": "熟练掌握 Java、Spring Boot、MySQL、Redis、Kafka、接口开发、系统设计、微服务、性能优化",
+          "evidence_id": "resume_e010",
+          "position": 49,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "resume_m032",
+          "raw_text": "系统设计",
+          "source_type": "resume",
+          "source_section": "skills",
+          "evidence_text": "熟练掌握 Java、Spring Boot、MySQL、Redis、Kafka、接口开发、系统设计、微服务、性能优化",
+          "evidence_id": "resume_e010",
+          "position": 54,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "resume_m033",
+          "raw_text": "微服务",
+          "source_type": "resume",
+          "source_section": "skills",
+          "evidence_text": "熟练掌握 Java、Spring Boot、MySQL、Redis、Kafka、接口开发、系统设计、微服务、性能优化",
+          "evidence_id": "resume_e010",
+          "position": 59,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "resume_m034",
+          "raw_text": "性能优化",
+          "source_type": "resume",
+          "source_section": "skills",
+          "evidence_text": "熟练掌握 Java、Spring Boot、MySQL、Redis、Kafka、接口开发、系统设计、微服务、性能优化",
+          "evidence_id": "resume_e010",
+          "position": 63,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "resume_m035",
+          "raw_text": "Docker",
+          "source_type": "resume",
+          "source_section": "skills",
+          "evidence_text": "熟悉 Docker、Linux、Git、CI/CD、DevOps",
+          "evidence_id": "resume_e011",
+          "position": 13,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "resume_m036",
+          "raw_text": "Linux",
+          "source_type": "resume",
+          "source_section": "skills",
+          "evidence_text": "熟悉 Docker、Linux、Git、CI/CD、DevOps",
+          "evidence_id": "resume_e011",
+          "position": 20,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "resume_m037",
+          "raw_text": "Git",
+          "source_type": "resume",
+          "source_section": "skills",
+          "evidence_text": "熟悉 Docker、Linux、Git、CI/CD、DevOps",
+          "evidence_id": "resume_e011",
+          "position": 26,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "resume_m038",
+          "raw_text": "CI/CD",
+          "source_type": "resume",
+          "source_section": "skills",
+          "evidence_text": "熟悉 Docker、Linux、Git、CI/CD、DevOps",
+          "evidence_id": "resume_e011",
+          "position": 30,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "resume_m039",
+          "raw_text": "DevOps",
+          "source_type": "resume",
+          "source_section": "skills",
+          "evidence_text": "熟悉 Docker、Linux、Git、CI/CD、DevOps",
+          "evidence_id": "resume_e011",
+          "position": 36,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "resume_m040",
+          "raw_text": "Kubernetes",
+          "source_type": "resume",
+          "source_section": "skills",
+          "evidence_text": "了解 Kubernetes 和云原生",
+          "evidence_id": "resume_e011",
+          "position": 47,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "resume_m041",
+          "raw_text": "云原生",
+          "source_type": "resume",
+          "source_section": "skills",
+          "evidence_text": "了解 Kubernetes 和云原生",
+          "evidence_id": "resume_e011",
+          "position": 59,
+          "confidence": 0.95
+        }
+      ],
+      "evidence_items": [
+        {
+          "evidence_id": "resume_e001",
+          "source_type": "resume",
+          "section": "target_position",
+          "text": "后端开发工程师",
+          "position": 0
+        },
+        {
+          "evidence_id": "resume_e002",
+          "source_type": "resume",
+          "section": "education",
+          "text": "某大学 计算机科学与技术 本科",
+          "position": 1
+        },
+        {
+          "evidence_id": "resume_e003",
+          "source_type": "resume",
+          "section": "work_experiences",
+          "text": "2022.05-至今 某人力资源 SaaS 公司 后端开发工程师",
+          "position": 2
+        },
+        {
+          "evidence_id": "resume_e004",
+          "source_type": "resume",
+          "section": "work_experiences",
+          "text": "负责招聘业务平台的岗位发布、简历解析、候选人流转和匹配结果模块后端开发",
+          "position": 3
+        },
+        {
+          "evidence_id": "resume_e005",
+          "source_type": "resume",
+          "section": "work_experiences",
+          "text": "使用 Java、Spring Boot、MySQL、Redis、Kafka 设计核心 API 和异步任务, 支撑高并发访问",
+          "position": 4
+        },
+        {
+          "evidence_id": "resume_e006",
+          "source_type": "resume",
+          "section": "work_experiences",
+          "text": "参与服务拆分、微服务治理、性能优化和接口文档建设, 使用 Docker、Linux、Git 完成日常交付",
+          "position": 5
+        },
+        {
+          "evidence_id": "resume_e007",
+          "source_type": "resume",
+          "section": "work_experiences",
+          "text": "2020.07-2022.04 某企业服务公司 Java 开发工程师",
+          "position": 6
+        },
+        {
+          "evidence_id": "resume_e008",
+          "source_type": "resume",
+          "section": "work_experiences",
+          "text": "参与 ToB 项目管理系统建设, 负责权限、消息通知和报表接口开发",
+          "position": 7
+        },
+        {
+          "evidence_id": "resume_e009",
+          "source_type": "resume",
+          "section": "projects",
+          "text": "招聘流程协同平台: 核心开发候选人状态流转服务, 通过缓存和异步化将列表接口平均响应时间降低 45%",
+          "position": 8
+        },
+        {
+          "evidence_id": "resume_e010",
+          "source_type": "resume",
+          "section": "skills",
+          "text": "熟练掌握 Java、Spring Boot、MySQL、Redis、Kafka、接口开发、系统设计、微服务、性能优化",
+          "position": 9
+        },
+        {
+          "evidence_id": "resume_e011",
+          "source_type": "resume",
+          "section": "skills",
+          "text": "熟悉 Docker、Linux、Git、CI/CD、DevOps, 了解 Kubernetes 和云原生",
+          "position": 10
+        }
+      ],
+      "parse_warnings": []
+    },
+    "resume_profile": {
+      "profile_id": "resume:primary",
+      "profile_type": "resume",
+      "skills": [
+        {
+          "skill_id": "skill:微服务",
+          "name": "微服务",
+          "skill_type": "工程能力",
+          "proficiency": 1.0,
+          "confidence": 0.95,
+          "recency": 0.8,
+          "aliases": [
+            "微服务"
+          ],
+          "evidence_refs": [
+            "resume_m014",
+            "resume_m033"
+          ],
+          "evidence_texts": [
+            "参与服务拆分、微服务治理、性能优化和接口文档建设",
+            "熟练掌握 Java、Spring Boot、MySQL、Redis、Kafka、接口开发、系统设计、微服务、性能优化"
+          ],
+          "source_sections": [
+            "skills",
+            "work_experiences"
+          ]
+        },
+        {
+          "skill_id": "skill:性能优化",
+          "name": "性能优化",
+          "skill_type": "工程能力",
+          "proficiency": 1.0,
+          "confidence": 0.95,
+          "recency": 0.8,
+          "aliases": [
+            "性能优化"
+          ],
+          "evidence_refs": [
+            "resume_m015",
+            "resume_m034"
+          ],
+          "evidence_texts": [
+            "参与服务拆分、微服务治理、性能优化和接口文档建设",
+            "熟练掌握 Java、Spring Boot、MySQL、Redis、Kafka、接口开发、系统设计、微服务、性能优化"
+          ],
+          "source_sections": [
+            "skills",
+            "work_experiences"
+          ]
+        },
+        {
+          "skill_id": "skill:文档能力",
+          "name": "文档能力",
+          "skill_type": "通用能力",
+          "proficiency": 1.0,
+          "confidence": 0.88,
+          "recency": 0.8,
+          "aliases": [
+            "文档"
+          ],
+          "evidence_refs": [
+            "resume_m016"
+          ],
+          "evidence_texts": [
+            "参与服务拆分、微服务治理、性能优化和接口文档建设"
+          ],
+          "source_sections": [
+            "work_experiences"
+          ]
+        },
+        {
+          "skill_id": "skill:招聘业务",
+          "name": "招聘业务",
+          "skill_type": "业务能力",
+          "proficiency": 0.95,
+          "confidence": 0.95,
+          "recency": 0.8,
+          "aliases": [
+            "人力资源",
+            "招聘",
+            "招聘业务"
+          ],
+          "evidence_refs": [
+            "resume_m002",
+            "resume_m005",
+            "resume_m006",
+            "resume_m025"
+          ],
+          "evidence_texts": [
+            "2022.05-至今 某人力资源 SaaS 公司 后端开发工程师",
+            "招聘流程协同平台: 核心开发候选人状态流转服务",
+            "负责招聘业务平台的岗位发布、简历解析、候选人流转和匹配结果模块后端开发"
+          ],
+          "source_sections": [
+            "projects",
+            "work_experiences"
+          ]
+        },
+        {
+          "skill_id": "skill:docker",
+          "name": "Docker",
+          "skill_type": "框架工具",
+          "proficiency": 0.8,
+          "confidence": 0.95,
+          "recency": 0.8,
+          "aliases": [
+            "Docker"
+          ],
+          "evidence_refs": [
+            "resume_m017",
+            "resume_m035"
+          ],
+          "evidence_texts": [
+            "使用 Docker、Linux、Git 完成日常交付",
+            "熟悉 Docker、Linux、Git、CI/CD、DevOps"
+          ],
+          "source_sections": [
+            "skills",
+            "work_experiences"
+          ]
+        },
+        {
+          "skill_id": "skill:git",
+          "name": "Git",
+          "skill_type": "框架工具",
+          "proficiency": 0.8,
+          "confidence": 0.95,
+          "recency": 0.8,
+          "aliases": [
+            "Git"
+          ],
+          "evidence_refs": [
+            "resume_m019",
+            "resume_m037"
+          ],
+          "evidence_texts": [
+            "使用 Docker、Linux、Git 完成日常交付",
+            "熟悉 Docker、Linux、Git、CI/CD、DevOps"
+          ],
+          "source_sections": [
+            "skills",
+            "work_experiences"
+          ]
+        },
+        {
+          "skill_id": "skill:java",
+          "name": "Java",
+          "skill_type": "编程语言",
+          "proficiency": 0.8,
+          "confidence": 0.95,
+          "recency": 0.8,
+          "aliases": [
+            "Java"
+          ],
+          "evidence_refs": [
+            "resume_m008",
+            "resume_m021",
+            "resume_m026"
+          ],
+          "evidence_texts": [
+            "2020.07-2022.04 某企业服务公司 Java 开发工程师",
+            "使用 Java、Spring Boot、MySQL、Redis、Kafka 设计核心 API 和异步任务",
+            "熟练掌握 Java、Spring Boot、MySQL、Redis、Kafka、接口开发、系统设计、微服务、性能优化"
+          ],
+          "source_sections": [
+            "skills",
+            "work_experiences"
+          ]
+        },
+        {
+          "skill_id": "skill:kafka",
+          "name": "Kafka",
+          "skill_type": "框架工具",
+          "proficiency": 0.8,
+          "confidence": 0.95,
+          "recency": 0.8,
+          "aliases": [
+            "Kafka"
+          ],
+          "evidence_refs": [
+            "resume_m012",
+            "resume_m030"
+          ],
+          "evidence_texts": [
+            "使用 Java、Spring Boot、MySQL、Redis、Kafka 设计核心 API 和异步任务",
+            "熟练掌握 Java、Spring Boot、MySQL、Redis、Kafka、接口开发、系统设计、微服务、性能优化"
+          ],
+          "source_sections": [
+            "skills",
+            "work_experiences"
+          ]
+        },
+        {
+          "skill_id": "skill:linux",
+          "name": "Linux",
+          "skill_type": "框架工具",
+          "proficiency": 0.8,
+          "confidence": 0.95,
+          "recency": 0.8,
+          "aliases": [
+            "Linux"
+          ],
+          "evidence_refs": [
+            "resume_m018",
+            "resume_m036"
+          ],
+          "evidence_texts": [
+            "使用 Docker、Linux、Git 完成日常交付",
+            "熟悉 Docker、Linux、Git、CI/CD、DevOps"
+          ],
+          "source_sections": [
+            "skills",
+            "work_experiences"
+          ]
+        },
+        {
+          "skill_id": "skill:mysql",
+          "name": "MySQL",
+          "skill_type": "框架工具",
+          "proficiency": 0.8,
+          "confidence": 0.95,
+          "recency": 0.8,
+          "aliases": [
+            "MySQL"
+          ],
+          "evidence_refs": [
+            "resume_m010",
+            "resume_m028"
+          ],
+          "evidence_texts": [
+            "使用 Java、Spring Boot、MySQL、Redis、Kafka 设计核心 API 和异步任务",
+            "熟练掌握 Java、Spring Boot、MySQL、Redis、Kafka、接口开发、系统设计、微服务、性能优化"
+          ],
+          "source_sections": [
+            "skills",
+            "work_experiences"
+          ]
+        },
+        {
+          "skill_id": "skill:redis",
+          "name": "Redis",
+          "skill_type": "框架工具",
+          "proficiency": 0.8,
+          "confidence": 0.95,
+          "recency": 0.8,
+          "aliases": [
+            "Redis"
+          ],
+          "evidence_refs": [
+            "resume_m011",
+            "resume_m029"
+          ],
+          "evidence_texts": [
+            "使用 Java、Spring Boot、MySQL、Redis、Kafka 设计核心 API 和异步任务",
+            "熟练掌握 Java、Spring Boot、MySQL、Redis、Kafka、接口开发、系统设计、微服务、性能优化"
+          ],
+          "source_sections": [
+            "skills",
+            "work_experiences"
+          ]
+        },
+        {
+          "skill_id": "skill:spring_boot",
+          "name": "Spring Boot",
+          "skill_type": "框架工具",
+          "proficiency": 0.8,
+          "confidence": 0.95,
+          "recency": 0.8,
+          "aliases": [
+            "Spring Boot"
+          ],
+          "evidence_refs": [
+            "resume_m009",
+            "resume_m027"
+          ],
+          "evidence_texts": [
+            "使用 Java、Spring Boot、MySQL、Redis、Kafka 设计核心 API 和异步任务",
+            "熟练掌握 Java、Spring Boot、MySQL、Redis、Kafka、接口开发、系统设计、微服务、性能优化"
+          ],
+          "source_sections": [
+            "skills",
+            "work_experiences"
+          ]
+        },
+        {
+          "skill_id": "skill:企业服务",
+          "name": "企业服务",
+          "skill_type": "业务能力",
+          "proficiency": 0.8,
+          "confidence": 0.95,
+          "recency": 0.8,
+          "aliases": [
+            "SaaS",
+            "ToB",
+            "企业服务"
+          ],
+          "evidence_refs": [
+            "resume_m003",
+            "resume_m020",
+            "resume_m022"
+          ],
+          "evidence_texts": [
+            "2020.07-2022.04 某企业服务公司 Java 开发工程师",
+            "2022.05-至今 某人力资源 SaaS 公司 后端开发工程师",
+            "参与 ToB 项目管理系统建设"
+          ],
+          "source_sections": [
+            "work_experiences"
+          ]
+        },
+        {
+          "skill_id": "skill:后端开发",
+          "name": "后端开发",
+          "skill_type": "工程能力",
+          "proficiency": 0.8,
+          "confidence": 0.95,
+          "recency": 0.8,
+          "aliases": [
+            "后端开发"
+          ],
+          "evidence_refs": [
+            "resume_m001",
+            "resume_m004",
+            "resume_m007"
+          ],
+          "evidence_texts": [
+            "2022.05-至今 某人力资源 SaaS 公司 后端开发工程师",
+            "后端开发工程师",
+            "负责招聘业务平台的岗位发布、简历解析、候选人流转和匹配结果模块后端开发"
+          ],
+          "source_sections": [
+            "target_position",
+            "work_experiences"
+          ]
+        },
+        {
+          "skill_id": "skill:接口开发",
+          "name": "接口开发",
+          "skill_type": "工程能力",
+          "proficiency": 0.8,
+          "confidence": 0.95,
+          "recency": 0.8,
+          "aliases": [
+            "接口开发"
+          ],
+          "evidence_refs": [
+            "resume_m024",
+            "resume_m031"
+          ],
+          "evidence_texts": [
+            "熟练掌握 Java、Spring Boot、MySQL、Redis、Kafka、接口开发、系统设计、微服务、性能优化",
+            "负责权限、消息通知和报表接口开发"
+          ],
+          "source_sections": [
+            "skills",
+            "work_experiences"
+          ]
+        },
+        {
+          "skill_id": "skill:项目管理",
+          "name": "项目管理",
+          "skill_type": "通用能力",
+          "proficiency": 0.8,
+          "confidence": 0.95,
+          "recency": 0.8,
+          "aliases": [
+            "项目管理"
+          ],
+          "evidence_refs": [
+            "resume_m023"
+          ],
+          "evidence_texts": [
+            "参与 ToB 项目管理系统建设"
+          ],
+          "source_sections": [
+            "work_experiences"
+          ]
+        },
+        {
+          "skill_id": "skill:高并发",
+          "name": "高并发",
+          "skill_type": "工程能力",
+          "proficiency": 0.75,
+          "confidence": 0.95,
+          "recency": 0.8,
+          "aliases": [
+            "高并发"
+          ],
+          "evidence_refs": [
+            "resume_m013"
+          ],
+          "evidence_texts": [
+            "支撑高并发访问"
+          ],
+          "source_sections": [
+            "work_experiences"
+          ]
+        },
+        {
+          "skill_id": "skill:系统设计",
+          "name": "系统设计",
+          "skill_type": "工程能力",
+          "proficiency": 0.7,
+          "confidence": 0.95,
+          "recency": 0.8,
+          "aliases": [
+            "系统设计"
+          ],
+          "evidence_refs": [
+            "resume_m032"
+          ],
+          "evidence_texts": [
+            "熟练掌握 Java、Spring Boot、MySQL、Redis、Kafka、接口开发、系统设计、微服务、性能优化"
+          ],
+          "source_sections": [
+            "skills"
+          ]
+        },
+        {
+          "skill_id": "skill:cicd",
+          "name": "CI/CD",
+          "skill_type": "工程能力",
+          "proficiency": 0.5,
+          "confidence": 0.95,
+          "recency": 0.8,
+          "aliases": [
+            "CI/CD"
+          ],
+          "evidence_refs": [
+            "resume_m038"
+          ],
+          "evidence_texts": [
+            "熟悉 Docker、Linux、Git、CI/CD、DevOps"
+          ],
+          "source_sections": [
+            "skills"
+          ]
+        },
+        {
+          "skill_id": "skill:devops",
+          "name": "DevOps",
+          "skill_type": "工程能力",
+          "proficiency": 0.5,
+          "confidence": 0.95,
+          "recency": 0.8,
+          "aliases": [
+            "DevOps"
+          ],
+          "evidence_refs": [
+            "resume_m039"
+          ],
+          "evidence_texts": [
+            "熟悉 Docker、Linux、Git、CI/CD、DevOps"
+          ],
+          "source_sections": [
+            "skills"
+          ]
+        },
+        {
+          "skill_id": "skill:kubernetes",
+          "name": "Kubernetes",
+          "skill_type": "框架工具",
+          "proficiency": 0.2,
+          "confidence": 0.95,
+          "recency": 0.8,
+          "aliases": [
+            "Kubernetes"
+          ],
+          "evidence_refs": [
+            "resume_m040"
+          ],
+          "evidence_texts": [
+            "了解 Kubernetes 和云原生"
+          ],
+          "source_sections": [
+            "skills"
+          ]
+        },
+        {
+          "skill_id": "skill:云原生",
+          "name": "云原生",
+          "skill_type": "工程能力",
+          "proficiency": 0.2,
+          "confidence": 0.95,
+          "recency": 0.8,
+          "aliases": [
+            "云原生"
+          ],
+          "evidence_refs": [
+            "resume_m041"
+          ],
+          "evidence_texts": [
+            "了解 Kubernetes 和云原生"
+          ],
+          "source_sections": [
+            "skills"
+          ]
+        }
+      ],
+      "skill_distribution": {
+        "CI/CD": 0.475,
+        "DevOps": 0.475,
+        "Docker": 0.76,
+        "Git": 0.76,
+        "Java": 0.76,
+        "Kafka": 0.76,
+        "Kubernetes": 0.19,
+        "Linux": 0.76,
+        "MySQL": 0.76,
+        "Redis": 0.76,
+        "Spring Boot": 0.76,
+        "云原生": 0.19,
+        "企业服务": 0.76,
+        "后端开发": 0.76,
+        "微服务": 0.95,
+        "性能优化": 0.95,
+        "招聘业务": 0.902,
+        "接口开发": 0.76,
+        "文档能力": 0.88,
+        "系统设计": 0.665,
+        "项目管理": 0.76,
+        "高并发": 0.712
+      },
+      "vector": [
+        0.475,
+        0.475,
+        0.76,
+        0.76,
+        0.76,
+        0.76,
+        0.19,
+        0.76,
+        0.76,
+        0.76,
+        0.76,
+        0.19,
+        0.76,
+        0.76,
+        0.95,
+        0.95,
+        0.902,
+        0.76,
+        0.88,
+        0.665,
+        0.76,
+        0.712
+      ],
+      "metadata": {
+        "candidate_id": "候选人D",
+        "education": "本科",
+        "experience_years": 6.0,
+        "target_position": "后端开发工程师",
+        "domain_experiences": [
+          "SaaS",
+          "ToB",
+          "企业服务",
+          "招聘业务",
+          "教育"
+        ]
+      }
+    }
+  },
+  "path": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/parsed/resume_profiles/resume_d_2022.05-_saas_1._2._javaspring_boo_4b4d3add8b.json"
+}

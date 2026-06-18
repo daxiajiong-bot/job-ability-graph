@@ -1,0 +1,272 @@
+{
+  "doc_id": "resume_c_2021.04-_1._2._sqlpythonscalaspark_d190b2b028",
+  "source_type": "resume",
+  "created_at": "2026-06-18T13:32:28Z",
+  "normalized_skills": [
+    {
+      "skill_id": "skill:airflow",
+      "name": "Airflow",
+      "skill_type": "框架工具",
+      "aliases": [
+        "Airflow"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "resume_m011",
+        "resume_m025"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:bi",
+      "name": "BI",
+      "skill_type": "数据能力",
+      "aliases": [
+        "BI"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "resume_m013",
+        "resume_m029"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:etl",
+      "name": "ETL",
+      "skill_type": "数据能力",
+      "aliases": [
+        "ETL"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "resume_m010",
+        "resume_m026"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:flink",
+      "name": "Flink",
+      "skill_type": "框架工具",
+      "aliases": [
+        "Flink"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "resume_m016",
+        "resume_m024"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:hadoop",
+      "name": "Hadoop",
+      "skill_type": "框架工具",
+      "aliases": [
+        "Hadoop"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "resume_m009",
+        "resume_m023"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:kafka",
+      "name": "Kafka",
+      "skill_type": "框架工具",
+      "aliases": [
+        "Kafka"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "resume_m017"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:python",
+      "name": "Python",
+      "skill_type": "编程语言",
+      "aliases": [
+        "Python"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "resume_m006",
+        "resume_m020"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:sql",
+      "name": "SQL",
+      "skill_type": "编程语言",
+      "aliases": [
+        "SQL"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "resume_m005",
+        "resume_m019"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:scala",
+      "name": "Scala",
+      "skill_type": "编程语言",
+      "aliases": [
+        "Scala"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "resume_m007",
+        "resume_m021"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:spark",
+      "name": "Spark",
+      "skill_type": "框架工具",
+      "aliases": [
+        "Spark"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "resume_m008",
+        "resume_m022"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:数据仓库",
+      "name": "数据仓库",
+      "skill_type": "数据能力",
+      "aliases": [
+        "数据仓库"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "resume_m003",
+        "resume_m027"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:数据分析",
+      "name": "数据分析",
+      "skill_type": "数据能力",
+      "aliases": [
+        "数据分析"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "resume_m030"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:数据治理",
+      "name": "数据治理",
+      "skill_type": "数据能力",
+      "aliases": [
+        "数据治理"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "resume_m012",
+        "resume_m028"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:文档能力",
+      "name": "文档能力",
+      "skill_type": "通用能力",
+      "aliases": [
+        "文档",
+        "文档能力"
+      ],
+      "relation_type": "alias",
+      "evidence_refs": [
+        "resume_m032",
+        "resume_m033"
+      ],
+      "confidence": 0.915
+    },
+    {
+      "skill_id": "skill:沟通协作",
+      "name": "沟通协作",
+      "skill_type": "通用能力",
+      "aliases": [
+        "协作",
+        "沟通",
+        "沟通协作"
+      ],
+      "relation_type": "alias",
+      "evidence_refs": [
+        "resume_m034",
+        "resume_m035",
+        "resume_m036"
+      ],
+      "confidence": 0.903
+    },
+    {
+      "skill_id": "skill:金融",
+      "name": "金融",
+      "skill_type": "业务能力",
+      "aliases": [
+        "金融",
+        "银行"
+      ],
+      "relation_type": "alias",
+      "evidence_refs": [
+        "resume_m001",
+        "resume_m014"
+      ],
+      "confidence": 0.915
+    },
+    {
+      "skill_id": "skill:需求分析",
+      "name": "需求分析",
+      "skill_type": "通用能力",
+      "aliases": [
+        "需求分析"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "resume_m031"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:风控",
+      "name": "风控",
+      "skill_type": "业务能力",
+      "aliases": [
+        "反欺诈",
+        "风控"
+      ],
+      "relation_type": "alias",
+      "evidence_refs": [
+        "resume_m002",
+        "resume_m004",
+        "resume_m015",
+        "resume_m018"
+      ],
+      "confidence": 0.933
+    }
+  ],
+  "unmatched_mentions": [],
+  "normalization_logs": [
+    "反欺诈 -> 风控",
+    "银行 -> 金融",
+    "文档 -> 文档能力",
+    "沟通 -> 沟通协作",
+    "协作 -> 沟通协作"
+  ]
+}

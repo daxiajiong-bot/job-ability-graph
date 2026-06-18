@@ -1,0 +1,368 @@
+{
+  "doc_id": "resume_a_nlp_2022.07-_1._rag_langchainmilvu_34f5c296d2",
+  "source_type": "resume",
+  "created_at": "2026-06-18T13:32:28Z",
+  "normalized_skills": [
+    {
+      "skill_id": "skill:bert",
+      "name": "BERT",
+      "skill_type": "算法能力",
+      "aliases": [
+        "BERT"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "resume_m012"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:docker",
+      "name": "Docker",
+      "skill_type": "框架工具",
+      "aliases": [
+        "Docker"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "resume_m020",
+        "resume_m040"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:elasticsearch",
+      "name": "Elasticsearch",
+      "skill_type": "框架工具",
+      "aliases": [
+        "Elasticsearch"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "resume_m009",
+        "resume_m037"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:fastapi",
+      "name": "FastAPI",
+      "skill_type": "框架工具",
+      "aliases": [
+        "FastAPI"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "resume_m019",
+        "resume_m041"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:git",
+      "name": "Git",
+      "skill_type": "框架工具",
+      "aliases": [
+        "Git"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "resume_m038"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:kubernetes",
+      "name": "Kubernetes",
+      "skill_type": "框架工具",
+      "aliases": [
+        "Kubernetes"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "resume_m042"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:langchain",
+      "name": "LangChain",
+      "skill_type": "框架工具",
+      "aliases": [
+        "LangChain"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "resume_m007",
+        "resume_m035"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:linux",
+      "name": "Linux",
+      "skill_type": "框架工具",
+      "aliases": [
+        "Linux"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "resume_m021",
+        "resume_m039"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:mlops",
+      "name": "MLOps",
+      "skill_type": "工程能力",
+      "aliases": [
+        "MLOps"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "resume_m043"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:milvus",
+      "name": "Milvus",
+      "skill_type": "框架工具",
+      "aliases": [
+        "Milvus"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "resume_m008",
+        "resume_m036"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:nlp",
+      "name": "NLP",
+      "skill_type": "算法能力",
+      "aliases": [
+        "NLP"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "resume_m002",
+        "resume_m022",
+        "resume_m030"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:pytorch",
+      "name": "PyTorch",
+      "skill_type": "框架工具",
+      "aliases": [
+        "PyTorch"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "resume_m010",
+        "resume_m029"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:python",
+      "name": "Python",
+      "skill_type": "编程语言",
+      "aliases": [
+        "Python"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "resume_m028"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:rag",
+      "name": "RAG",
+      "skill_type": "算法能力",
+      "aliases": [
+        "RAG",
+        "检索增强生成"
+      ],
+      "relation_type": "alias",
+      "evidence_refs": [
+        "resume_m005",
+        "resume_m006",
+        "resume_m026",
+        "resume_m033"
+      ],
+      "confidence": 0.933
+    },
+    {
+      "skill_id": "skill:transformer",
+      "name": "Transformer",
+      "skill_type": "算法能力",
+      "aliases": [
+        "Transformer"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "resume_m011"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:企业服务",
+      "name": "企业服务",
+      "skill_type": "业务能力",
+      "aliases": [
+        "ToB",
+        "企业服务"
+      ],
+      "relation_type": "alias",
+      "evidence_refs": [
+        "resume_m003",
+        "resume_m027"
+      ],
+      "confidence": 0.915
+    },
+    {
+      "skill_id": "skill:大模型微调",
+      "name": "大模型微调",
+      "skill_type": "算法能力",
+      "aliases": [
+        "LoRA",
+        "模型微调"
+      ],
+      "relation_type": "alias",
+      "evidence_refs": [
+        "resume_m017",
+        "resume_m044"
+      ],
+      "confidence": 0.88
+    },
+    {
+      "skill_id": "skill:大语言模型",
+      "name": "大语言模型",
+      "skill_type": "算法能力",
+      "aliases": [
+        "大模型",
+        "大语言模型"
+      ],
+      "relation_type": "alias",
+      "evidence_refs": [
+        "resume_m001",
+        "resume_m016",
+        "resume_m034"
+      ],
+      "confidence": 0.927
+    },
+    {
+      "skill_id": "skill:排序模型",
+      "name": "排序模型",
+      "skill_type": "算法能力",
+      "aliases": [
+        "排序",
+        "排序模型"
+      ],
+      "relation_type": "alias",
+      "evidence_refs": [
+        "resume_m013",
+        "resume_m014"
+      ],
+      "confidence": 0.915
+    },
+    {
+      "skill_id": "skill:机器学习",
+      "name": "机器学习",
+      "skill_type": "算法能力",
+      "aliases": [
+        "机器学习"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "resume_m031"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:模型优化",
+      "name": "模型优化",
+      "skill_type": "算法能力",
+      "aliases": [
+        "模型优化"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "resume_m015"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:模型训练",
+      "name": "模型训练",
+      "skill_type": "算法能力",
+      "aliases": [
+        "模型训练"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "resume_m024"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:模型部署",
+      "name": "模型部署",
+      "skill_type": "工程能力",
+      "aliases": [
+        "推理服务"
+      ],
+      "relation_type": "alias",
+      "evidence_refs": [
+        "resume_m018"
+      ],
+      "confidence": 0.88
+    },
+    {
+      "skill_id": "skill:深度学习",
+      "name": "深度学习",
+      "skill_type": "算法能力",
+      "aliases": [
+        "深度学习"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "resume_m032"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:知识库问答",
+      "name": "知识库问答",
+      "skill_type": "业务能力",
+      "aliases": [
+        "知识库问答",
+        "问答系统"
+      ],
+      "relation_type": "alias",
+      "evidence_refs": [
+        "resume_m004",
+        "resume_m023",
+        "resume_m025"
+      ],
+      "confidence": 0.927
+    }
+  ],
+  "unmatched_mentions": [],
+  "normalization_logs": [
+    "大模型 -> 大语言模型",
+    "检索增强生成 -> RAG",
+    "排序 -> 排序模型",
+    "模型微调 -> 大模型微调",
+    "推理服务 -> 模型部署",
+    "问答系统 -> 知识库问答",
+    "ToB -> 企业服务",
+    "LoRA -> 大模型微调"
+  ]
+}

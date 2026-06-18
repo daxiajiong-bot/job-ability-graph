@@ -1,0 +1,13 @@
+{
+  "doc_id": "jd_1._2._restful_api_3._1._3_java_pytho_a7c2993fe5",
+  "doc_type": "jd",
+  "created_at": "2026-06-18T13:32:28Z",
+  "raw_text": "岗位名称: 后端开发工程师\n岗位职责:\n1. 负责招聘业务和企业服务平台的后端开发, 包括用户、岗位、简历、匹配结果等核心模块。\n2. 设计 RESTful API、微服务和数据访问层, 保障系统高并发、可扩展和可维护。\n3. 参与岗位能力图谱、搜索推荐、消息队列和缓存体系建设。\n任职要求:\n1. 本科及以上学历, 3 年以上 Java 或 Python 后端开发经验。\n2. 熟练掌握 Java、Spring Boot、MySQL、Redis、Kafka, 熟悉 Linux、Git 和 Docker。\n3. 具备系统设计、接口开发、性能优化、分布式系统和微服务实践经验。\n4. 有良好的沟通协作、项目管理和文档能力。\n加分项:\n1. 有招聘业务、人力资源 SaaS、搜索推荐或知识图谱项目经验优先。\n2. 熟悉 Kubernetes、CI/CD、DevOps 或云原生技术者优先。",
+  "metadata": {
+    "doc_id": "jd_1._2._restful_api_3._1._3_java_pytho_a7c2993fe5",
+    "position_id": "position_position_77d933980a",
+    "job_title": "后端开发工程师",
+    "job_category": "后端开发岗"
+  },
+  "path": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/raw/jd/jd_1._2._restful_api_3._1._3_java_pytho_a7c2993fe5.json"
+}

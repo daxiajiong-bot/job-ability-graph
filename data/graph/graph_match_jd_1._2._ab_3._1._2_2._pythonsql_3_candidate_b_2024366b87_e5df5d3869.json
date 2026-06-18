@@ -1,0 +1,1775 @@
+{
+  "graph_id": "graph_match_jd_1._2._ab_3._1._2_2._pythonsql_3_candidate_b_2024366b87_e5df5d3869",
+  "graph_name": "graph_match_jd_1._2._ab_3._1._2_2._pythonsql_3_candidate_b_2024366b87_e5df5d3869",
+  "created_at": "2026-06-18T12:04:54Z",
+  "graph": {
+    "nodes": [
+      {
+        "id": "job:primary",
+        "type": "Job",
+        "label": "推荐算法工程师",
+        "properties": {
+          "job_category": "算法岗"
+        }
+      },
+      {
+        "id": "resume:primary",
+        "type": "Resume",
+        "label": "候选人B",
+        "properties": {
+          "education": "本科",
+          "experience_years": 5.0
+        }
+      },
+      {
+        "id": "skill:ab测试",
+        "type": "Skill",
+        "label": "A/B测试",
+        "properties": {
+          "skill_type": "算法能力"
+        }
+      },
+      {
+        "id": "skill_type:算法能力",
+        "type": "SkillType",
+        "label": "算法能力",
+        "properties": {}
+      },
+      {
+        "id": "evidence:jd:jd_e003",
+        "type": "Evidence",
+        "label": "结合用户行为、商品画像和实时反馈数据, 迭代推荐策略并推动 A/B测试",
+        "properties": {
+          "source_type": "jd",
+          "section": "responsibilities",
+          "text": "结合用户行为、商品画像和实时反馈数据, 迭代推荐策略并推动 A/B测试"
+        }
+      },
+      {
+        "id": "evidence:resume:resume_e005",
+        "type": "Evidence",
+        "label": "基于 Python、SQL、Spark 完成离线样本构建、模型训练和数据",
+        "properties": {
+          "source_type": "resume",
+          "section": "work_experiences",
+          "text": "基于 Python、SQL、Spark 完成离线样本构建、模型训练和数据分析, 推动多轮 A/B测试"
+        }
+      },
+      {
+        "id": "evidence:resume:resume_e012",
+        "type": "Evidence",
+        "label": "熟练掌握 Python、SQL、推荐算法、召回模型、排序模型、特征工程、",
+        "properties": {
+          "source_type": "resume",
+          "section": "skills",
+          "text": "熟练掌握 Python、SQL、推荐算法、召回模型、排序模型、特征工程、A/B测试"
+        }
+      },
+      {
+        "id": "skill:git",
+        "type": "Skill",
+        "label": "Git",
+        "properties": {
+          "skill_type": "框架工具"
+        }
+      },
+      {
+        "id": "skill_type:框架工具",
+        "type": "SkillType",
+        "label": "框架工具",
+        "properties": {}
+      },
+      {
+        "id": "evidence:resume:resume_e013",
+        "type": "Evidence",
+        "label": "熟悉 Spark、Kafka、Redis、TensorFlow、PyTo",
+        "properties": {
+          "source_type": "resume",
+          "section": "skills",
+          "text": "熟悉 Spark、Kafka、Redis、TensorFlow、PyTorch、Linux 和 Git"
+        }
+      },
+      {
+        "id": "skill:kafka",
+        "type": "Skill",
+        "label": "Kafka",
+        "properties": {
+          "skill_type": "框架工具"
+        }
+      },
+      {
+        "id": "evidence:jd:jd_e007",
+        "type": "Evidence",
+        "label": "熟悉 Spark、Kafka、Redis、TensorFlow 或 Py",
+        "properties": {
+          "source_type": "jd",
+          "section": "requirements",
+          "text": "熟悉 Spark、Kafka、Redis、TensorFlow 或 PyTorch 中至少两项"
+        }
+      },
+      {
+        "id": "evidence:resume:resume_e006",
+        "type": "Evidence",
+        "label": "与后端团队协作优化 Redis 缓存和 Kafka 实时特征链路, 提升",
+        "properties": {
+          "source_type": "resume",
+          "section": "work_experiences",
+          "text": "与后端团队协作优化 Redis 缓存和 Kafka 实时特征链路, 提升推荐服务稳定性"
+        }
+      },
+      {
+        "id": "skill:linux",
+        "type": "Skill",
+        "label": "Linux",
+        "properties": {
+          "skill_type": "框架工具"
+        }
+      },
+      {
+        "id": "skill:pytorch",
+        "type": "Skill",
+        "label": "PyTorch",
+        "properties": {
+          "skill_type": "框架工具"
+        }
+      },
+      {
+        "id": "evidence:resume:resume_e008",
+        "type": "Evidence",
+        "label": "参与信息流内容推荐策略优化, 熟悉机器学习、深度学习、TensorFlo",
+        "properties": {
+          "source_type": "resume",
+          "section": "work_experiences",
+          "text": "参与信息流内容推荐策略优化, 熟悉机器学习、深度学习、TensorFlow 和 PyTorch"
+        }
+      },
+      {
+        "id": "skill:python",
+        "type": "Skill",
+        "label": "Python",
+        "properties": {
+          "skill_type": "编程语言"
+        }
+      },
+      {
+        "id": "skill_type:编程语言",
+        "type": "SkillType",
+        "label": "编程语言",
+        "properties": {}
+      },
+      {
+        "id": "evidence:jd:jd_e006",
+        "type": "Evidence",
+        "label": "熟练掌握 Python、SQL, 熟悉机器学习、深度学习、召回模型、排序",
+        "properties": {
+          "source_type": "jd",
+          "section": "requirements",
+          "text": "熟练掌握 Python、SQL, 熟悉机器学习、深度学习、召回模型、排序模型"
+        }
+      },
+      {
+        "id": "skill:redis",
+        "type": "Skill",
+        "label": "Redis",
+        "properties": {
+          "skill_type": "框架工具"
+        }
+      },
+      {
+        "id": "skill:sql",
+        "type": "Skill",
+        "label": "SQL",
+        "properties": {
+          "skill_type": "编程语言"
+        }
+      },
+      {
+        "id": "skill:spark",
+        "type": "Skill",
+        "label": "Spark",
+        "properties": {
+          "skill_type": "框架工具"
+        }
+      },
+      {
+        "id": "skill:tensorflow",
+        "type": "Skill",
+        "label": "TensorFlow",
+        "properties": {
+          "skill_type": "框架工具"
+        }
+      },
+      {
+        "id": "skill:内容推荐",
+        "type": "Skill",
+        "label": "内容推荐",
+        "properties": {
+          "skill_type": "业务能力"
+        }
+      },
+      {
+        "id": "skill_type:业务能力",
+        "type": "SkillType",
+        "label": "业务能力",
+        "properties": {}
+      },
+      {
+        "id": "evidence:jd:jd_e002",
+        "type": "Evidence",
+        "label": "负责电商和内容推荐场景的召回模型、排序模型和特征工程建设",
+        "properties": {
+          "source_type": "jd",
+          "section": "responsibilities",
+          "text": "负责电商和内容推荐场景的召回模型、排序模型和特征工程建设"
+        }
+      },
+      {
+        "id": "evidence:jd:jd_e009",
+        "type": "Evidence",
+        "label": "有电商、信息流、广告或内容推荐业务经验优先",
+        "properties": {
+          "source_type": "jd",
+          "section": "preferred",
+          "text": "有电商、信息流、广告或内容推荐业务经验优先"
+        }
+      },
+      {
+        "id": "skill:召回模型",
+        "type": "Skill",
+        "label": "召回模型",
+        "properties": {
+          "skill_type": "算法能力"
+        }
+      },
+      {
+        "id": "evidence:resume:resume_e004",
+        "type": "Evidence",
+        "label": "负责首页商品推荐的召回模型和排序模型迭代, 使用用户行为、商品画像和上下",
+        "properties": {
+          "source_type": "resume",
+          "section": "work_experiences",
+          "text": "负责首页商品推荐的召回模型和排序模型迭代, 使用用户行为、商品画像和上下文特征进行特征工程"
+        }
+      },
+      {
+        "id": "evidence:resume:resume_e009",
+        "type": "Evidence",
+        "label": "电商个性化推荐: 独立完成双塔召回模型特征升级, 实验点击率提升",
+        "properties": {
+          "source_type": "resume",
+          "section": "projects",
+          "text": "电商个性化推荐: 独立完成双塔召回模型特征升级, 实验点击率提升"
+        }
+      },
+      {
+        "id": "skill:工程化",
+        "type": "Skill",
+        "label": "工程化",
+        "properties": {
+          "skill_type": "工程能力"
+        }
+      },
+      {
+        "id": "skill_type:工程能力",
+        "type": "SkillType",
+        "label": "工程能力",
+        "properties": {}
+      },
+      {
+        "id": "evidence:jd:jd_e010",
+        "type": "Evidence",
+        "label": "熟悉高并发推荐服务、模型优化或工程化落地者优先",
+        "properties": {
+          "source_type": "jd",
+          "section": "preferred",
+          "text": "熟悉高并发推荐服务、模型优化或工程化落地者优先"
+        }
+      },
+      {
+        "id": "skill:性能优化",
+        "type": "Skill",
+        "label": "性能优化",
+        "properties": {
+          "skill_type": "工程能力"
+        }
+      },
+      {
+        "id": "evidence:jd:jd_e004",
+        "type": "Evidence",
+        "label": "与数据开发和后端团队协作, 完成推荐链路的模型训练、离线评估、在线部署和",
+        "properties": {
+          "source_type": "jd",
+          "section": "responsibilities",
+          "text": "与数据开发和后端团队协作, 完成推荐链路的模型训练、离线评估、在线部署和性能优化"
+        }
+      },
+      {
+        "id": "skill:排序模型",
+        "type": "Skill",
+        "label": "排序模型",
+        "properties": {
+          "skill_type": "算法能力"
+        }
+      },
+      {
+        "id": "skill:推荐算法",
+        "type": "Skill",
+        "label": "推荐算法",
+        "properties": {
+          "skill_type": "算法能力"
+        }
+      },
+      {
+        "id": "evidence:jd:jd_e001",
+        "type": "Evidence",
+        "label": "推荐算法工程师",
+        "properties": {
+          "source_type": "jd",
+          "section": "job_title",
+          "text": "推荐算法工程师"
+        }
+      },
+      {
+        "id": "evidence:jd:jd_e005",
+        "type": "Evidence",
+        "label": "本科及以上学历, 2 年以上推荐算法、搜索算法或机器学习相关经验",
+        "properties": {
+          "source_type": "jd",
+          "section": "requirements",
+          "text": "本科及以上学历, 2 年以上推荐算法、搜索算法或机器学习相关经验"
+        }
+      },
+      {
+        "id": "evidence:resume:resume_e001",
+        "type": "Evidence",
+        "label": "推荐算法工程师",
+        "properties": {
+          "source_type": "resume",
+          "section": "target_position",
+          "text": "推荐算法工程师"
+        }
+      },
+      {
+        "id": "evidence:resume:resume_e003",
+        "type": "Evidence",
+        "label": "2023.03-至今 某电商平台 推荐算法工程师",
+        "properties": {
+          "source_type": "resume",
+          "section": "work_experiences",
+          "text": "2023.03-至今 某电商平台 推荐算法工程师"
+        }
+      },
+      {
+        "id": "skill:搜索算法",
+        "type": "Skill",
+        "label": "搜索算法",
+        "properties": {
+          "skill_type": "算法能力"
+        }
+      },
+      {
+        "id": "skill:数据分析",
+        "type": "Skill",
+        "label": "数据分析",
+        "properties": {
+          "skill_type": "数据能力"
+        }
+      },
+      {
+        "id": "skill_type:数据能力",
+        "type": "SkillType",
+        "label": "数据能力",
+        "properties": {}
+      },
+      {
+        "id": "evidence:jd:jd_e008",
+        "type": "Evidence",
+        "label": "具备数据分析、特征工程和实验分析能力",
+        "properties": {
+          "source_type": "jd",
+          "section": "requirements",
+          "text": "具备数据分析、特征工程和实验分析能力"
+        }
+      },
+      {
+        "id": "skill:机器学习",
+        "type": "Skill",
+        "label": "机器学习",
+        "properties": {
+          "skill_type": "算法能力"
+        }
+      },
+      {
+        "id": "skill:模型优化",
+        "type": "Skill",
+        "label": "模型优化",
+        "properties": {
+          "skill_type": "算法能力"
+        }
+      },
+      {
+        "id": "skill:模型训练",
+        "type": "Skill",
+        "label": "模型训练",
+        "properties": {
+          "skill_type": "算法能力"
+        }
+      },
+      {
+        "id": "skill:沟通协作",
+        "type": "Skill",
+        "label": "沟通协作",
+        "properties": {
+          "skill_type": "通用能力"
+        }
+      },
+      {
+        "id": "skill_type:通用能力",
+        "type": "SkillType",
+        "label": "通用能力",
+        "properties": {}
+      },
+      {
+        "id": "skill:深度学习",
+        "type": "Skill",
+        "label": "深度学习",
+        "properties": {
+          "skill_type": "算法能力"
+        }
+      },
+      {
+        "id": "skill:特征工程",
+        "type": "Skill",
+        "label": "特征工程",
+        "properties": {
+          "skill_type": "算法能力"
+        }
+      },
+      {
+        "id": "skill:电商",
+        "type": "Skill",
+        "label": "电商",
+        "properties": {
+          "skill_type": "业务能力"
+        }
+      },
+      {
+        "id": "skill:高并发",
+        "type": "Skill",
+        "label": "高并发",
+        "properties": {
+          "skill_type": "工程能力"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source": "resume:primary",
+        "target": "job:primary",
+        "type": "matches",
+        "weight": 0.863,
+        "properties": {
+          "final_score": 86.29
+        }
+      },
+      {
+        "source": "skill:ab测试",
+        "target": "skill_type:算法能力",
+        "type": "belongs_to",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "job:primary",
+        "target": "skill:ab测试",
+        "type": "requires",
+        "weight": 0.8,
+        "properties": {
+          "requirement_level": "required"
+        }
+      },
+      {
+        "source": "skill:ab测试",
+        "target": "evidence:jd:jd_e003",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "resume:primary",
+        "target": "skill:ab测试",
+        "type": "has",
+        "weight": 0.75,
+        "properties": {
+          "confidence": 0.95,
+          "recency": 0.8
+        }
+      },
+      {
+        "source": "skill:ab测试",
+        "target": "evidence:resume:resume_e005",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:ab测试",
+        "target": "evidence:resume:resume_e012",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:git",
+        "target": "skill_type:框架工具",
+        "type": "belongs_to",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "resume:primary",
+        "target": "skill:git",
+        "type": "has",
+        "weight": 0.5,
+        "properties": {
+          "confidence": 0.95,
+          "recency": 0.8
+        }
+      },
+      {
+        "source": "skill:git",
+        "target": "evidence:resume:resume_e013",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:kafka",
+        "target": "skill_type:框架工具",
+        "type": "belongs_to",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "job:primary",
+        "target": "skill:kafka",
+        "type": "requires",
+        "weight": 1.2,
+        "properties": {
+          "requirement_level": "required"
+        }
+      },
+      {
+        "source": "skill:kafka",
+        "target": "evidence:jd:jd_e007",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "resume:primary",
+        "target": "skill:kafka",
+        "type": "has",
+        "weight": 1.0,
+        "properties": {
+          "confidence": 0.95,
+          "recency": 0.8
+        }
+      },
+      {
+        "source": "skill:kafka",
+        "target": "evidence:resume:resume_e006",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:kafka",
+        "target": "evidence:resume:resume_e013",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:linux",
+        "target": "skill_type:框架工具",
+        "type": "belongs_to",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "resume:primary",
+        "target": "skill:linux",
+        "type": "has",
+        "weight": 0.5,
+        "properties": {
+          "confidence": 0.95,
+          "recency": 0.8
+        }
+      },
+      {
+        "source": "skill:linux",
+        "target": "evidence:resume:resume_e013",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:pytorch",
+        "target": "skill_type:框架工具",
+        "type": "belongs_to",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "job:primary",
+        "target": "skill:pytorch",
+        "type": "requires",
+        "weight": 1.2,
+        "properties": {
+          "requirement_level": "required"
+        }
+      },
+      {
+        "source": "skill:pytorch",
+        "target": "evidence:jd:jd_e007",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "resume:primary",
+        "target": "skill:pytorch",
+        "type": "has",
+        "weight": 0.8,
+        "properties": {
+          "confidence": 0.95,
+          "recency": 0.8
+        }
+      },
+      {
+        "source": "skill:pytorch",
+        "target": "evidence:resume:resume_e008",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:pytorch",
+        "target": "evidence:resume:resume_e013",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:python",
+        "target": "skill_type:编程语言",
+        "type": "belongs_to",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "job:primary",
+        "target": "skill:python",
+        "type": "requires",
+        "weight": 1.2,
+        "properties": {
+          "requirement_level": "required"
+        }
+      },
+      {
+        "source": "skill:python",
+        "target": "evidence:jd:jd_e006",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "resume:primary",
+        "target": "skill:python",
+        "type": "has",
+        "weight": 0.75,
+        "properties": {
+          "confidence": 0.95,
+          "recency": 0.8
+        }
+      },
+      {
+        "source": "skill:python",
+        "target": "evidence:resume:resume_e005",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:python",
+        "target": "evidence:resume:resume_e012",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:redis",
+        "target": "skill_type:框架工具",
+        "type": "belongs_to",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "job:primary",
+        "target": "skill:redis",
+        "type": "requires",
+        "weight": 1.2,
+        "properties": {
+          "requirement_level": "required"
+        }
+      },
+      {
+        "source": "skill:redis",
+        "target": "evidence:jd:jd_e007",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "resume:primary",
+        "target": "skill:redis",
+        "type": "has",
+        "weight": 1.0,
+        "properties": {
+          "confidence": 0.95,
+          "recency": 0.8
+        }
+      },
+      {
+        "source": "skill:redis",
+        "target": "evidence:resume:resume_e006",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:redis",
+        "target": "evidence:resume:resume_e013",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:sql",
+        "target": "skill_type:编程语言",
+        "type": "belongs_to",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "job:primary",
+        "target": "skill:sql",
+        "type": "requires",
+        "weight": 1.2,
+        "properties": {
+          "requirement_level": "required"
+        }
+      },
+      {
+        "source": "skill:sql",
+        "target": "evidence:jd:jd_e006",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "resume:primary",
+        "target": "skill:sql",
+        "type": "has",
+        "weight": 0.75,
+        "properties": {
+          "confidence": 0.95,
+          "recency": 0.8
+        }
+      },
+      {
+        "source": "skill:sql",
+        "target": "evidence:resume:resume_e005",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:sql",
+        "target": "evidence:resume:resume_e012",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:spark",
+        "target": "skill_type:框架工具",
+        "type": "belongs_to",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "job:primary",
+        "target": "skill:spark",
+        "type": "requires",
+        "weight": 1.2,
+        "properties": {
+          "requirement_level": "required"
+        }
+      },
+      {
+        "source": "skill:spark",
+        "target": "evidence:jd:jd_e007",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "resume:primary",
+        "target": "skill:spark",
+        "type": "has",
+        "weight": 0.75,
+        "properties": {
+          "confidence": 0.95,
+          "recency": 0.8
+        }
+      },
+      {
+        "source": "skill:spark",
+        "target": "evidence:resume:resume_e005",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:spark",
+        "target": "evidence:resume:resume_e013",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:tensorflow",
+        "target": "skill_type:框架工具",
+        "type": "belongs_to",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "job:primary",
+        "target": "skill:tensorflow",
+        "type": "requires",
+        "weight": 1.2,
+        "properties": {
+          "requirement_level": "required"
+        }
+      },
+      {
+        "source": "skill:tensorflow",
+        "target": "evidence:jd:jd_e007",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "resume:primary",
+        "target": "skill:tensorflow",
+        "type": "has",
+        "weight": 0.8,
+        "properties": {
+          "confidence": 0.95,
+          "recency": 0.8
+        }
+      },
+      {
+        "source": "skill:tensorflow",
+        "target": "evidence:resume:resume_e008",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:tensorflow",
+        "target": "evidence:resume:resume_e013",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:内容推荐",
+        "target": "skill_type:业务能力",
+        "type": "belongs_to",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "job:primary",
+        "target": "skill:内容推荐",
+        "type": "requires",
+        "weight": 0.8,
+        "properties": {
+          "requirement_level": "preferred"
+        }
+      },
+      {
+        "source": "skill:内容推荐",
+        "target": "evidence:jd:jd_e002",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:内容推荐",
+        "target": "evidence:jd:jd_e009",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "resume:primary",
+        "target": "skill:内容推荐",
+        "type": "has",
+        "weight": 1.0,
+        "properties": {
+          "confidence": 0.95,
+          "recency": 0.8
+        }
+      },
+      {
+        "source": "skill:内容推荐",
+        "target": "evidence:resume:resume_e008",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:召回模型",
+        "target": "skill_type:算法能力",
+        "type": "belongs_to",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "job:primary",
+        "target": "skill:召回模型",
+        "type": "requires",
+        "weight": 1.5,
+        "properties": {
+          "requirement_level": "required"
+        }
+      },
+      {
+        "source": "skill:召回模型",
+        "target": "evidence:jd:jd_e002",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:召回模型",
+        "target": "evidence:jd:jd_e006",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "resume:primary",
+        "target": "skill:召回模型",
+        "type": "has",
+        "weight": 0.95,
+        "properties": {
+          "confidence": 0.95,
+          "recency": 0.8
+        }
+      },
+      {
+        "source": "skill:召回模型",
+        "target": "evidence:resume:resume_e004",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:召回模型",
+        "target": "evidence:resume:resume_e009",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:召回模型",
+        "target": "evidence:resume:resume_e012",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:工程化",
+        "target": "skill_type:工程能力",
+        "type": "belongs_to",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "job:primary",
+        "target": "skill:工程化",
+        "type": "requires",
+        "weight": 0.2,
+        "properties": {
+          "requirement_level": "preferred"
+        }
+      },
+      {
+        "source": "skill:工程化",
+        "target": "evidence:jd:jd_e010",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:性能优化",
+        "target": "skill_type:工程能力",
+        "type": "belongs_to",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "job:primary",
+        "target": "skill:性能优化",
+        "type": "requires",
+        "weight": 0.8,
+        "properties": {
+          "requirement_level": "required"
+        }
+      },
+      {
+        "source": "skill:性能优化",
+        "target": "evidence:jd:jd_e004",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:排序模型",
+        "target": "skill_type:算法能力",
+        "type": "belongs_to",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "job:primary",
+        "target": "skill:排序模型",
+        "type": "requires",
+        "weight": 1.5,
+        "properties": {
+          "requirement_level": "required"
+        }
+      },
+      {
+        "source": "skill:排序模型",
+        "target": "evidence:jd:jd_e002",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:排序模型",
+        "target": "evidence:jd:jd_e006",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "resume:primary",
+        "target": "skill:排序模型",
+        "type": "has",
+        "weight": 0.8,
+        "properties": {
+          "confidence": 0.95,
+          "recency": 0.8
+        }
+      },
+      {
+        "source": "skill:排序模型",
+        "target": "evidence:resume:resume_e004",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:排序模型",
+        "target": "evidence:resume:resume_e012",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:推荐算法",
+        "target": "skill_type:算法能力",
+        "type": "belongs_to",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "job:primary",
+        "target": "skill:推荐算法",
+        "type": "requires",
+        "weight": 1.3,
+        "properties": {
+          "requirement_level": "required"
+        }
+      },
+      {
+        "source": "skill:推荐算法",
+        "target": "evidence:jd:jd_e001",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:推荐算法",
+        "target": "evidence:jd:jd_e005",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "resume:primary",
+        "target": "skill:推荐算法",
+        "type": "has",
+        "weight": 0.75,
+        "properties": {
+          "confidence": 0.95,
+          "recency": 0.8
+        }
+      },
+      {
+        "source": "skill:推荐算法",
+        "target": "evidence:resume:resume_e001",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:推荐算法",
+        "target": "evidence:resume:resume_e003",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:推荐算法",
+        "target": "evidence:resume:resume_e012",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:搜索算法",
+        "target": "skill_type:算法能力",
+        "type": "belongs_to",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "job:primary",
+        "target": "skill:搜索算法",
+        "type": "requires",
+        "weight": 1.3,
+        "properties": {
+          "requirement_level": "required"
+        }
+      },
+      {
+        "source": "skill:搜索算法",
+        "target": "evidence:jd:jd_e005",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:数据分析",
+        "target": "skill_type:数据能力",
+        "type": "belongs_to",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "job:primary",
+        "target": "skill:数据分析",
+        "type": "requires",
+        "weight": 1.2,
+        "properties": {
+          "requirement_level": "required"
+        }
+      },
+      {
+        "source": "skill:数据分析",
+        "target": "evidence:jd:jd_e008",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "resume:primary",
+        "target": "skill:数据分析",
+        "type": "has",
+        "weight": 0.75,
+        "properties": {
+          "confidence": 0.95,
+          "recency": 0.8
+        }
+      },
+      {
+        "source": "skill:数据分析",
+        "target": "evidence:resume:resume_e005",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:机器学习",
+        "target": "skill_type:算法能力",
+        "type": "belongs_to",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "job:primary",
+        "target": "skill:机器学习",
+        "type": "requires",
+        "weight": 1.3,
+        "properties": {
+          "requirement_level": "required"
+        }
+      },
+      {
+        "source": "skill:机器学习",
+        "target": "evidence:jd:jd_e005",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:机器学习",
+        "target": "evidence:jd:jd_e006",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "resume:primary",
+        "target": "skill:机器学习",
+        "type": "has",
+        "weight": 0.8,
+        "properties": {
+          "confidence": 0.95,
+          "recency": 0.8
+        }
+      },
+      {
+        "source": "skill:机器学习",
+        "target": "evidence:resume:resume_e008",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:模型优化",
+        "target": "skill_type:算法能力",
+        "type": "belongs_to",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "job:primary",
+        "target": "skill:模型优化",
+        "type": "requires",
+        "weight": 0.2,
+        "properties": {
+          "requirement_level": "preferred"
+        }
+      },
+      {
+        "source": "skill:模型优化",
+        "target": "evidence:jd:jd_e010",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:模型训练",
+        "target": "skill_type:算法能力",
+        "type": "belongs_to",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "job:primary",
+        "target": "skill:模型训练",
+        "type": "requires",
+        "weight": 0.8,
+        "properties": {
+          "requirement_level": "required"
+        }
+      },
+      {
+        "source": "skill:模型训练",
+        "target": "evidence:jd:jd_e004",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "resume:primary",
+        "target": "skill:模型训练",
+        "type": "has",
+        "weight": 0.75,
+        "properties": {
+          "confidence": 0.95,
+          "recency": 0.8
+        }
+      },
+      {
+        "source": "skill:模型训练",
+        "target": "evidence:resume:resume_e005",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:沟通协作",
+        "target": "skill_type:通用能力",
+        "type": "belongs_to",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "job:primary",
+        "target": "skill:沟通协作",
+        "type": "requires",
+        "weight": 0.3,
+        "properties": {
+          "requirement_level": "required"
+        }
+      },
+      {
+        "source": "skill:沟通协作",
+        "target": "evidence:jd:jd_e004",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "resume:primary",
+        "target": "skill:沟通协作",
+        "type": "has",
+        "weight": 1.0,
+        "properties": {
+          "confidence": 0.88,
+          "recency": 0.8
+        }
+      },
+      {
+        "source": "skill:沟通协作",
+        "target": "evidence:resume:resume_e006",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:深度学习",
+        "target": "skill_type:算法能力",
+        "type": "belongs_to",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "job:primary",
+        "target": "skill:深度学习",
+        "type": "requires",
+        "weight": 1.2,
+        "properties": {
+          "requirement_level": "required"
+        }
+      },
+      {
+        "source": "skill:深度学习",
+        "target": "evidence:jd:jd_e006",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "resume:primary",
+        "target": "skill:深度学习",
+        "type": "has",
+        "weight": 0.8,
+        "properties": {
+          "confidence": 0.95,
+          "recency": 0.8
+        }
+      },
+      {
+        "source": "skill:深度学习",
+        "target": "evidence:resume:resume_e008",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:特征工程",
+        "target": "skill_type:算法能力",
+        "type": "belongs_to",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "job:primary",
+        "target": "skill:特征工程",
+        "type": "requires",
+        "weight": 1.3,
+        "properties": {
+          "requirement_level": "required"
+        }
+      },
+      {
+        "source": "skill:特征工程",
+        "target": "evidence:jd:jd_e002",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:特征工程",
+        "target": "evidence:jd:jd_e008",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "resume:primary",
+        "target": "skill:特征工程",
+        "type": "has",
+        "weight": 0.8,
+        "properties": {
+          "confidence": 0.95,
+          "recency": 0.8
+        }
+      },
+      {
+        "source": "skill:特征工程",
+        "target": "evidence:resume:resume_e004",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:特征工程",
+        "target": "evidence:resume:resume_e012",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:电商",
+        "target": "skill_type:业务能力",
+        "type": "belongs_to",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "job:primary",
+        "target": "skill:电商",
+        "type": "requires",
+        "weight": 0.7,
+        "properties": {
+          "requirement_level": "preferred"
+        }
+      },
+      {
+        "source": "skill:电商",
+        "target": "evidence:jd:jd_e002",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:电商",
+        "target": "evidence:jd:jd_e009",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "resume:primary",
+        "target": "skill:电商",
+        "type": "has",
+        "weight": 0.95,
+        "properties": {
+          "confidence": 0.95,
+          "recency": 0.8
+        }
+      },
+      {
+        "source": "skill:电商",
+        "target": "evidence:resume:resume_e003",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:电商",
+        "target": "evidence:resume:resume_e009",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:高并发",
+        "target": "skill_type:工程能力",
+        "type": "belongs_to",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "job:primary",
+        "target": "skill:高并发",
+        "type": "requires",
+        "weight": 0.2,
+        "properties": {
+          "requirement_level": "preferred"
+        }
+      },
+      {
+        "source": "skill:高并发",
+        "target": "evidence:jd:jd_e010",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "resume:primary",
+        "target": "skill:性能优化",
+        "type": "lacks",
+        "weight": 0.8,
+        "properties": {
+          "priority": "medium"
+        }
+      },
+      {
+        "source": "skill:机器学习",
+        "target": "skill:特征工程",
+        "type": "related_to",
+        "weight": 0.5,
+        "properties": {
+          "relation_type": "related"
+        }
+      },
+      {
+        "source": "skill:机器学习",
+        "target": "skill:推荐算法",
+        "type": "related_to",
+        "weight": 0.5,
+        "properties": {
+          "relation_type": "related"
+        }
+      },
+      {
+        "source": "skill:机器学习",
+        "target": "skill:模型训练",
+        "type": "related_to",
+        "weight": 0.5,
+        "properties": {
+          "relation_type": "related"
+        }
+      },
+      {
+        "source": "skill:特征工程",
+        "target": "skill:机器学习",
+        "type": "related_to",
+        "weight": 0.5,
+        "properties": {
+          "relation_type": "related"
+        }
+      },
+      {
+        "source": "skill:推荐算法",
+        "target": "skill:机器学习",
+        "type": "related_to",
+        "weight": 0.5,
+        "properties": {
+          "relation_type": "related"
+        }
+      },
+      {
+        "source": "skill:推荐算法",
+        "target": "skill:召回模型",
+        "type": "related_to",
+        "weight": 0.5,
+        "properties": {
+          "relation_type": "child"
+        }
+      },
+      {
+        "source": "skill:推荐算法",
+        "target": "skill:排序模型",
+        "type": "related_to",
+        "weight": 0.5,
+        "properties": {
+          "relation_type": "child"
+        }
+      },
+      {
+        "source": "skill:推荐算法",
+        "target": "skill:内容推荐",
+        "type": "related_to",
+        "weight": 0.5,
+        "properties": {
+          "relation_type": "related"
+        }
+      },
+      {
+        "source": "skill:推荐算法",
+        "target": "skill:搜索算法",
+        "type": "related_to",
+        "weight": 0.5,
+        "properties": {
+          "relation_type": "related"
+        }
+      },
+      {
+        "source": "skill:推荐算法",
+        "target": "skill:ab测试",
+        "type": "related_to",
+        "weight": 0.5,
+        "properties": {
+          "relation_type": "related"
+        }
+      },
+      {
+        "source": "skill:模型训练",
+        "target": "skill:机器学习",
+        "type": "related_to",
+        "weight": 0.5,
+        "properties": {
+          "relation_type": "related"
+        }
+      },
+      {
+        "source": "skill:深度学习",
+        "target": "skill:pytorch",
+        "type": "related_to",
+        "weight": 0.5,
+        "properties": {
+          "relation_type": "tool"
+        }
+      },
+      {
+        "source": "skill:深度学习",
+        "target": "skill:tensorflow",
+        "type": "related_to",
+        "weight": 0.5,
+        "properties": {
+          "relation_type": "tool"
+        }
+      },
+      {
+        "source": "skill:pytorch",
+        "target": "skill:深度学习",
+        "type": "related_to",
+        "weight": 0.5,
+        "properties": {
+          "relation_type": "related"
+        }
+      },
+      {
+        "source": "skill:tensorflow",
+        "target": "skill:深度学习",
+        "type": "related_to",
+        "weight": 0.5,
+        "properties": {
+          "relation_type": "related"
+        }
+      },
+      {
+        "source": "skill:召回模型",
+        "target": "skill:推荐算法",
+        "type": "related_to",
+        "weight": 0.5,
+        "properties": {
+          "relation_type": "parent"
+        }
+      },
+      {
+        "source": "skill:排序模型",
+        "target": "skill:推荐算法",
+        "type": "related_to",
+        "weight": 0.5,
+        "properties": {
+          "relation_type": "parent"
+        }
+      },
+      {
+        "source": "skill:内容推荐",
+        "target": "skill:推荐算法",
+        "type": "related_to",
+        "weight": 0.5,
+        "properties": {
+          "relation_type": "related"
+        }
+      },
+      {
+        "source": "skill:搜索算法",
+        "target": "skill:推荐算法",
+        "type": "related_to",
+        "weight": 0.5,
+        "properties": {
+          "relation_type": "related"
+        }
+      },
+      {
+        "source": "skill:ab测试",
+        "target": "skill:推荐算法",
+        "type": "related_to",
+        "weight": 0.5,
+        "properties": {
+          "relation_type": "related"
+        }
+      },
+      {
+        "source": "skill:数据分析",
+        "target": "skill:sql",
+        "type": "related_to",
+        "weight": 0.5,
+        "properties": {
+          "relation_type": "tool"
+        }
+      },
+      {
+        "source": "skill:sql",
+        "target": "skill:数据分析",
+        "type": "related_to",
+        "weight": 0.5,
+        "properties": {
+          "relation_type": "related"
+        }
+      }
+    ],
+    "graph_metadata": {
+      "created_at": "2026-06-18T12:04:54Z",
+      "schema_version": "demo-v1",
+      "source_ids": {
+        "jd": "job:primary",
+        "resume": "resume:primary"
+      },
+      "gap_summary": "缺失 1 项技能，优先补齐 性能优化；6 项技能证据或熟练度不足；1 项技能仅存在相关能力支撑"
+    },
+    "graph_id": "graph_match_jd_1._2._ab_3._1._2_2._pythonsql_3_candidate_b_2024366b87_e5df5d3869",
+    "match_id": "match_jd_1._2._ab_3._1._2_2._pythonsql_3_candidate_b_2024366b87_e5df5d3869",
+    "jd_id": "jd_1._2._ab_3._1._2_2._pythonsql_3._spa_7e0f3829dd",
+    "resume_id": "candidate_b_2024366b87"
+  },
+  "path": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/graph/graph_match_jd_1._2._ab_3._1._2_2._pythonsql_3_candidate_b_2024366b87_e5df5d3869.json"
+}

@@ -1,0 +1,223 @@
+{
+  "doc_id": "jd_raglangchain_67d725de41",
+  "profile_type": "jd",
+  "created_at": "2026-06-18T12:34:11Z",
+  "profile": {
+    "doc_id": "jd_raglangchain_67d725de41",
+    "position_id": "position_position_61c4057d2a",
+    "jd_parse": {
+      "job_title": "大模型应用工程师",
+      "job_category": "算法岗",
+      "responsibilities": [],
+      "requirements": [],
+      "preferred": [],
+      "education_requirement": null,
+      "experience_requirement": null,
+      "domain_requirement": [
+        "知识库问答"
+      ],
+      "raw_skill_mentions": [
+        {
+          "mention_id": "jd_m001",
+          "raw_text": "大模型",
+          "source_type": "jd",
+          "source_section": "job_title",
+          "evidence_text": "大模型应用工程师",
+          "evidence_id": "jd_e001",
+          "position": 0,
+          "confidence": 0.88
+        },
+        {
+          "mention_id": "jd_m002",
+          "raw_text": "RAG",
+          "source_type": "jd",
+          "source_section": "job_title",
+          "evidence_text": "要求: RAG、LangChain、知识库问答、模型部署",
+          "evidence_id": "jd_e002",
+          "position": 5,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "jd_m003",
+          "raw_text": "LangChain",
+          "source_type": "jd",
+          "source_section": "job_title",
+          "evidence_text": "要求: RAG、LangChain、知识库问答、模型部署",
+          "evidence_id": "jd_e002",
+          "position": 9,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "jd_m004",
+          "raw_text": "知识库问答",
+          "source_type": "jd",
+          "source_section": "job_title",
+          "evidence_text": "要求: RAG、LangChain、知识库问答、模型部署",
+          "evidence_id": "jd_e002",
+          "position": 19,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "jd_m005",
+          "raw_text": "模型部署",
+          "source_type": "jd",
+          "source_section": "job_title",
+          "evidence_text": "要求: RAG、LangChain、知识库问答、模型部署",
+          "evidence_id": "jd_e002",
+          "position": 25,
+          "confidence": 0.95
+        }
+      ],
+      "evidence_items": [
+        {
+          "evidence_id": "jd_e001",
+          "source_type": "jd",
+          "section": "job_title",
+          "text": "大模型应用工程师",
+          "position": 0
+        },
+        {
+          "evidence_id": "jd_e002",
+          "source_type": "jd",
+          "section": "job_title",
+          "text": "要求: RAG、LangChain、知识库问答、模型部署",
+          "position": 1
+        }
+      ],
+      "parse_warnings": [
+        "未识别到显式岗位职责，已使用规则兜底",
+        "未识别到显式任职要求，已使用规则兜底"
+      ]
+    },
+    "job_profile": {
+      "profile_id": "job:primary",
+      "profile_type": "job",
+      "skills": [
+        {
+          "skill_id": "skill:langchain",
+          "name": "LangChain",
+          "skill_type": "框架工具",
+          "weight": 0.9,
+          "requirement_level": "required",
+          "confidence": 0.95,
+          "aliases": [
+            "LangChain"
+          ],
+          "evidence_refs": [
+            "jd_m003"
+          ],
+          "evidence_texts": [
+            "要求: RAG、LangChain、知识库问答、模型部署"
+          ],
+          "source_sections": [
+            "job_title"
+          ]
+        },
+        {
+          "skill_id": "skill:rag",
+          "name": "RAG",
+          "skill_type": "算法能力",
+          "weight": 0.9,
+          "requirement_level": "required",
+          "confidence": 0.95,
+          "aliases": [
+            "RAG"
+          ],
+          "evidence_refs": [
+            "jd_m002"
+          ],
+          "evidence_texts": [
+            "要求: RAG、LangChain、知识库问答、模型部署"
+          ],
+          "source_sections": [
+            "job_title"
+          ]
+        },
+        {
+          "skill_id": "skill:大语言模型",
+          "name": "大语言模型",
+          "skill_type": "算法能力",
+          "weight": 0.9,
+          "requirement_level": "required",
+          "confidence": 0.88,
+          "aliases": [
+            "大模型"
+          ],
+          "evidence_refs": [
+            "jd_m001"
+          ],
+          "evidence_texts": [
+            "大模型应用工程师"
+          ],
+          "source_sections": [
+            "job_title"
+          ]
+        },
+        {
+          "skill_id": "skill:模型部署",
+          "name": "模型部署",
+          "skill_type": "工程能力",
+          "weight": 0.9,
+          "requirement_level": "required",
+          "confidence": 0.95,
+          "aliases": [
+            "模型部署"
+          ],
+          "evidence_refs": [
+            "jd_m005"
+          ],
+          "evidence_texts": [
+            "要求: RAG、LangChain、知识库问答、模型部署"
+          ],
+          "source_sections": [
+            "job_title"
+          ]
+        },
+        {
+          "skill_id": "skill:知识库问答",
+          "name": "知识库问答",
+          "skill_type": "业务能力",
+          "weight": 0.9,
+          "requirement_level": "required",
+          "confidence": 0.95,
+          "aliases": [
+            "知识库问答"
+          ],
+          "evidence_refs": [
+            "jd_m004"
+          ],
+          "evidence_texts": [
+            "要求: RAG、LangChain、知识库问答、模型部署"
+          ],
+          "source_sections": [
+            "job_title"
+          ]
+        }
+      ],
+      "skill_distribution": {
+        "LangChain": 0.9,
+        "RAG": 0.9,
+        "大语言模型": 0.9,
+        "模型部署": 0.9,
+        "知识库问答": 0.9
+      },
+      "vector": [
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9
+      ],
+      "metadata": {
+        "job_title": "大模型应用工程师",
+        "job_category": "算法岗",
+        "education_requirement": null,
+        "experience_requirement": null,
+        "domain_requirement": [
+          "知识库问答"
+        ]
+      }
+    }
+  },
+  "path": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/parsed/jd_profiles/jd_raglangchain_67d725de41.json"
+}

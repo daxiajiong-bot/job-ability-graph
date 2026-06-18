@@ -1,0 +1,10 @@
+{
+  "source": "zhaopin",
+  "keyword": "Python",
+  "pages": 5,
+  "fetched": 100,
+  "deduped": 100,
+  "saved": 100,
+  "output": "C:\\Users\\suyucum\\Desktop\\挑战杯\\job-ability-graph\\data\\outputs\\jd_raw.jsonl",
+  "generated_at": "2026-06-18T09:55:02.060Z"
+}

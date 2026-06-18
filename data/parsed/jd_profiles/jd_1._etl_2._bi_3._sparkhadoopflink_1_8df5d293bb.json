@@ -1,0 +1,845 @@
+{
+  "doc_id": "jd_1._etl_2._bi_3._sparkhadoopflink_1_8df5d293bb",
+  "profile_type": "jd",
+  "created_at": "2026-06-18T13:32:28Z",
+  "profile": {
+    "doc_id": "jd_1._etl_2._bi_3._sparkhadoopflink_1_8df5d293bb",
+    "position_id": "position_position_5d25a1e24a",
+    "jd_parse": {
+      "job_title": "数据开发工程师",
+      "job_category": "数据岗",
+      "responsibilities": [
+        "负责金融风控业务的数据仓库建设、ETL 流程开发和数据质量治理",
+        "设计指标体系和主题数据集市, 支撑 BI 报表、风险监控和数据分析需求",
+        "优化 Spark、Hadoop、Flink 任务性能, 提升离线和准实时数据链路稳定性"
+      ],
+      "requirements": [
+        "本科及以上学历, 3 年以上数据开发、数据仓库或大数据平台经验",
+        "熟练掌握 SQL、Python 或 Scala, 熟悉 Spark、Hadoop、Flink、Airflow",
+        "理解数据治理、数据建模、ETL、数据质量和调度监控体系",
+        "具备良好的沟通协作、需求分析和文档能力"
+      ],
+      "preferred": [
+        "有金融、风控、反欺诈或监管报送数据项目经验优先",
+        "熟悉 Kafka、ClickHouse、数据血缘或数据安全治理者优先"
+      ],
+      "education_requirement": "本科",
+      "experience_requirement": 3.0,
+      "domain_requirement": [
+        "金融",
+        "风控"
+      ],
+      "raw_skill_mentions": [
+        {
+          "mention_id": "jd_m001",
+          "raw_text": "金融",
+          "source_type": "jd",
+          "source_section": "responsibilities",
+          "evidence_text": "负责金融风控业务的数据仓库建设、ETL 流程开发和数据质量治理",
+          "evidence_id": "jd_e002",
+          "position": 3,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "jd_m002",
+          "raw_text": "风控",
+          "source_type": "jd",
+          "source_section": "responsibilities",
+          "evidence_text": "负责金融风控业务的数据仓库建设、ETL 流程开发和数据质量治理",
+          "evidence_id": "jd_e002",
+          "position": 5,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "jd_m003",
+          "raw_text": "数据仓库",
+          "source_type": "jd",
+          "source_section": "responsibilities",
+          "evidence_text": "负责金融风控业务的数据仓库建设、ETL 流程开发和数据质量治理",
+          "evidence_id": "jd_e002",
+          "position": 10,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "jd_m004",
+          "raw_text": "ETL",
+          "source_type": "jd",
+          "source_section": "responsibilities",
+          "evidence_text": "负责金融风控业务的数据仓库建设、ETL 流程开发和数据质量治理",
+          "evidence_id": "jd_e002",
+          "position": 17,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "jd_m005",
+          "raw_text": "BI",
+          "source_type": "jd",
+          "source_section": "responsibilities",
+          "evidence_text": "支撑 BI 报表、风险监控和数据分析需求",
+          "evidence_id": "jd_e003",
+          "position": 20,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "jd_m006",
+          "raw_text": "数据分析",
+          "source_type": "jd",
+          "source_section": "responsibilities",
+          "evidence_text": "支撑 BI 报表、风险监控和数据分析需求",
+          "evidence_id": "jd_e003",
+          "position": 31,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "jd_m007",
+          "raw_text": "Spark",
+          "source_type": "jd",
+          "source_section": "responsibilities",
+          "evidence_text": "优化 Spark、Hadoop、Flink 任务性能",
+          "evidence_id": "jd_e004",
+          "position": 6,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "jd_m008",
+          "raw_text": "Hadoop",
+          "source_type": "jd",
+          "source_section": "responsibilities",
+          "evidence_text": "优化 Spark、Hadoop、Flink 任务性能",
+          "evidence_id": "jd_e004",
+          "position": 12,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "jd_m009",
+          "raw_text": "Flink",
+          "source_type": "jd",
+          "source_section": "responsibilities",
+          "evidence_text": "优化 Spark、Hadoop、Flink 任务性能",
+          "evidence_id": "jd_e004",
+          "position": 19,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "jd_m010",
+          "raw_text": "数据仓库",
+          "source_type": "jd",
+          "source_section": "requirements",
+          "evidence_text": "3 年以上数据开发、数据仓库或大数据平台经验",
+          "evidence_id": "jd_e005",
+          "position": 23,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "jd_m011",
+          "raw_text": "SQL",
+          "source_type": "jd",
+          "source_section": "requirements",
+          "evidence_text": "熟练掌握 SQL、Python 或 Scala",
+          "evidence_id": "jd_e006",
+          "position": 10,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "jd_m012",
+          "raw_text": "Python",
+          "source_type": "jd",
+          "source_section": "requirements",
+          "evidence_text": "熟练掌握 SQL、Python 或 Scala",
+          "evidence_id": "jd_e006",
+          "position": 14,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "jd_m013",
+          "raw_text": "Scala",
+          "source_type": "jd",
+          "source_section": "requirements",
+          "evidence_text": "熟练掌握 SQL、Python 或 Scala",
+          "evidence_id": "jd_e006",
+          "position": 23,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "jd_m014",
+          "raw_text": "Spark",
+          "source_type": "jd",
+          "source_section": "requirements",
+          "evidence_text": "熟悉 Spark、Hadoop、Flink、Airflow",
+          "evidence_id": "jd_e006",
+          "position": 33,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "jd_m015",
+          "raw_text": "Hadoop",
+          "source_type": "jd",
+          "source_section": "requirements",
+          "evidence_text": "熟悉 Spark、Hadoop、Flink、Airflow",
+          "evidence_id": "jd_e006",
+          "position": 39,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "jd_m016",
+          "raw_text": "Flink",
+          "source_type": "jd",
+          "source_section": "requirements",
+          "evidence_text": "熟悉 Spark、Hadoop、Flink、Airflow",
+          "evidence_id": "jd_e006",
+          "position": 46,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "jd_m017",
+          "raw_text": "Airflow",
+          "source_type": "jd",
+          "source_section": "requirements",
+          "evidence_text": "熟悉 Spark、Hadoop、Flink、Airflow",
+          "evidence_id": "jd_e006",
+          "position": 52,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "jd_m018",
+          "raw_text": "数据治理",
+          "source_type": "jd",
+          "source_section": "requirements",
+          "evidence_text": "理解数据治理、数据建模、ETL、数据质量和调度监控体系",
+          "evidence_id": "jd_e007",
+          "position": 8,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "jd_m019",
+          "raw_text": "ETL",
+          "source_type": "jd",
+          "source_section": "requirements",
+          "evidence_text": "理解数据治理、数据建模、ETL、数据质量和调度监控体系",
+          "evidence_id": "jd_e007",
+          "position": 18,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "jd_m020",
+          "raw_text": "沟通协作",
+          "source_type": "jd",
+          "source_section": "requirements",
+          "evidence_text": "具备良好的沟通协作、需求分析和文档能力",
+          "evidence_id": "jd_e008",
+          "position": 12,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "jd_m021",
+          "raw_text": "沟通",
+          "source_type": "jd",
+          "source_section": "requirements",
+          "evidence_text": "具备良好的沟通协作、需求分析和文档能力",
+          "evidence_id": "jd_e008",
+          "position": 12,
+          "confidence": 0.88
+        },
+        {
+          "mention_id": "jd_m022",
+          "raw_text": "协作",
+          "source_type": "jd",
+          "source_section": "requirements",
+          "evidence_text": "具备良好的沟通协作、需求分析和文档能力",
+          "evidence_id": "jd_e008",
+          "position": 14,
+          "confidence": 0.88
+        },
+        {
+          "mention_id": "jd_m023",
+          "raw_text": "需求分析",
+          "source_type": "jd",
+          "source_section": "requirements",
+          "evidence_text": "具备良好的沟通协作、需求分析和文档能力",
+          "evidence_id": "jd_e008",
+          "position": 17,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "jd_m024",
+          "raw_text": "文档能力",
+          "source_type": "jd",
+          "source_section": "requirements",
+          "evidence_text": "具备良好的沟通协作、需求分析和文档能力",
+          "evidence_id": "jd_e008",
+          "position": 22,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "jd_m025",
+          "raw_text": "文档",
+          "source_type": "jd",
+          "source_section": "requirements",
+          "evidence_text": "具备良好的沟通协作、需求分析和文档能力",
+          "evidence_id": "jd_e008",
+          "position": 22,
+          "confidence": 0.88
+        },
+        {
+          "mention_id": "jd_m026",
+          "raw_text": "金融",
+          "source_type": "jd",
+          "source_section": "preferred",
+          "evidence_text": "有金融、风控、反欺诈或监管报送数据项目经验优先",
+          "evidence_id": "jd_e009",
+          "position": 9,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "jd_m027",
+          "raw_text": "风控",
+          "source_type": "jd",
+          "source_section": "preferred",
+          "evidence_text": "有金融、风控、反欺诈或监管报送数据项目经验优先",
+          "evidence_id": "jd_e009",
+          "position": 12,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "jd_m028",
+          "raw_text": "反欺诈",
+          "source_type": "jd",
+          "source_section": "preferred",
+          "evidence_text": "有金融、风控、反欺诈或监管报送数据项目经验优先",
+          "evidence_id": "jd_e009",
+          "position": 15,
+          "confidence": 0.88
+        },
+        {
+          "mention_id": "jd_m029",
+          "raw_text": "Kafka",
+          "source_type": "jd",
+          "source_section": "preferred",
+          "evidence_text": "熟悉 Kafka、ClickHouse、数据血缘或数据安全治理者优先",
+          "evidence_id": "jd_e010",
+          "position": 12,
+          "confidence": 0.95
+        }
+      ],
+      "evidence_items": [
+        {
+          "evidence_id": "jd_e001",
+          "source_type": "jd",
+          "section": "job_title",
+          "text": "数据开发工程师",
+          "position": 0
+        },
+        {
+          "evidence_id": "jd_e002",
+          "source_type": "jd",
+          "section": "responsibilities",
+          "text": "负责金融风控业务的数据仓库建设、ETL 流程开发和数据质量治理",
+          "position": 1
+        },
+        {
+          "evidence_id": "jd_e003",
+          "source_type": "jd",
+          "section": "responsibilities",
+          "text": "设计指标体系和主题数据集市, 支撑 BI 报表、风险监控和数据分析需求",
+          "position": 2
+        },
+        {
+          "evidence_id": "jd_e004",
+          "source_type": "jd",
+          "section": "responsibilities",
+          "text": "优化 Spark、Hadoop、Flink 任务性能, 提升离线和准实时数据链路稳定性",
+          "position": 3
+        },
+        {
+          "evidence_id": "jd_e005",
+          "source_type": "jd",
+          "section": "requirements",
+          "text": "本科及以上学历, 3 年以上数据开发、数据仓库或大数据平台经验",
+          "position": 4
+        },
+        {
+          "evidence_id": "jd_e006",
+          "source_type": "jd",
+          "section": "requirements",
+          "text": "熟练掌握 SQL、Python 或 Scala, 熟悉 Spark、Hadoop、Flink、Airflow",
+          "position": 5
+        },
+        {
+          "evidence_id": "jd_e007",
+          "source_type": "jd",
+          "section": "requirements",
+          "text": "理解数据治理、数据建模、ETL、数据质量和调度监控体系",
+          "position": 6
+        },
+        {
+          "evidence_id": "jd_e008",
+          "source_type": "jd",
+          "section": "requirements",
+          "text": "具备良好的沟通协作、需求分析和文档能力",
+          "position": 7
+        },
+        {
+          "evidence_id": "jd_e009",
+          "source_type": "jd",
+          "section": "preferred",
+          "text": "有金融、风控、反欺诈或监管报送数据项目经验优先",
+          "position": 8
+        },
+        {
+          "evidence_id": "jd_e010",
+          "source_type": "jd",
+          "section": "preferred",
+          "text": "熟悉 Kafka、ClickHouse、数据血缘或数据安全治理者优先",
+          "position": 9
+        }
+      ],
+      "parse_warnings": []
+    },
+    "job_profile": {
+      "profile_id": "job:primary",
+      "profile_type": "job",
+      "skills": [
+        {
+          "skill_id": "skill:flink",
+          "name": "Flink",
+          "skill_type": "框架工具",
+          "weight": 1.3,
+          "requirement_level": "required",
+          "confidence": 0.95,
+          "aliases": [
+            "Flink"
+          ],
+          "evidence_refs": [
+            "jd_m009",
+            "jd_m016"
+          ],
+          "evidence_texts": [
+            "优化 Spark、Hadoop、Flink 任务性能",
+            "熟悉 Spark、Hadoop、Flink、Airflow"
+          ],
+          "source_sections": [
+            "requirements",
+            "responsibilities"
+          ]
+        },
+        {
+          "skill_id": "skill:hadoop",
+          "name": "Hadoop",
+          "skill_type": "框架工具",
+          "weight": 1.3,
+          "requirement_level": "required",
+          "confidence": 0.95,
+          "aliases": [
+            "Hadoop"
+          ],
+          "evidence_refs": [
+            "jd_m008",
+            "jd_m015"
+          ],
+          "evidence_texts": [
+            "优化 Spark、Hadoop、Flink 任务性能",
+            "熟悉 Spark、Hadoop、Flink、Airflow"
+          ],
+          "source_sections": [
+            "requirements",
+            "responsibilities"
+          ]
+        },
+        {
+          "skill_id": "skill:spark",
+          "name": "Spark",
+          "skill_type": "框架工具",
+          "weight": 1.3,
+          "requirement_level": "required",
+          "confidence": 0.95,
+          "aliases": [
+            "Spark"
+          ],
+          "evidence_refs": [
+            "jd_m007",
+            "jd_m014"
+          ],
+          "evidence_texts": [
+            "优化 Spark、Hadoop、Flink 任务性能",
+            "熟悉 Spark、Hadoop、Flink、Airflow"
+          ],
+          "source_sections": [
+            "requirements",
+            "responsibilities"
+          ]
+        },
+        {
+          "skill_id": "skill:数据仓库",
+          "name": "数据仓库",
+          "skill_type": "数据能力",
+          "weight": 1.3,
+          "requirement_level": "required",
+          "confidence": 0.95,
+          "aliases": [
+            "数据仓库"
+          ],
+          "evidence_refs": [
+            "jd_m003",
+            "jd_m010"
+          ],
+          "evidence_texts": [
+            "3 年以上数据开发、数据仓库或大数据平台经验",
+            "负责金融风控业务的数据仓库建设、ETL 流程开发和数据质量治理"
+          ],
+          "source_sections": [
+            "requirements",
+            "responsibilities"
+          ]
+        },
+        {
+          "skill_id": "skill:airflow",
+          "name": "Airflow",
+          "skill_type": "框架工具",
+          "weight": 1.2,
+          "requirement_level": "required",
+          "confidence": 0.95,
+          "aliases": [
+            "Airflow"
+          ],
+          "evidence_refs": [
+            "jd_m017"
+          ],
+          "evidence_texts": [
+            "熟悉 Spark、Hadoop、Flink、Airflow"
+          ],
+          "source_sections": [
+            "requirements"
+          ]
+        },
+        {
+          "skill_id": "skill:python",
+          "name": "Python",
+          "skill_type": "编程语言",
+          "weight": 1.2,
+          "requirement_level": "required",
+          "confidence": 0.95,
+          "aliases": [
+            "Python"
+          ],
+          "evidence_refs": [
+            "jd_m012"
+          ],
+          "evidence_texts": [
+            "熟练掌握 SQL、Python 或 Scala"
+          ],
+          "source_sections": [
+            "requirements"
+          ]
+        },
+        {
+          "skill_id": "skill:sql",
+          "name": "SQL",
+          "skill_type": "编程语言",
+          "weight": 1.2,
+          "requirement_level": "required",
+          "confidence": 0.95,
+          "aliases": [
+            "SQL"
+          ],
+          "evidence_refs": [
+            "jd_m011"
+          ],
+          "evidence_texts": [
+            "熟练掌握 SQL、Python 或 Scala"
+          ],
+          "source_sections": [
+            "requirements"
+          ]
+        },
+        {
+          "skill_id": "skill:scala",
+          "name": "Scala",
+          "skill_type": "编程语言",
+          "weight": 1.2,
+          "requirement_level": "required",
+          "confidence": 0.95,
+          "aliases": [
+            "Scala"
+          ],
+          "evidence_refs": [
+            "jd_m013"
+          ],
+          "evidence_texts": [
+            "熟练掌握 SQL、Python 或 Scala"
+          ],
+          "source_sections": [
+            "requirements"
+          ]
+        },
+        {
+          "skill_id": "skill:etl",
+          "name": "ETL",
+          "skill_type": "数据能力",
+          "weight": 1.1,
+          "requirement_level": "required",
+          "confidence": 0.95,
+          "aliases": [
+            "ETL"
+          ],
+          "evidence_refs": [
+            "jd_m004",
+            "jd_m019"
+          ],
+          "evidence_texts": [
+            "理解数据治理、数据建模、ETL、数据质量和调度监控体系",
+            "负责金融风控业务的数据仓库建设、ETL 流程开发和数据质量治理"
+          ],
+          "source_sections": [
+            "requirements",
+            "responsibilities"
+          ]
+        },
+        {
+          "skill_id": "skill:数据治理",
+          "name": "数据治理",
+          "skill_type": "数据能力",
+          "weight": 1.0,
+          "requirement_level": "required",
+          "confidence": 0.95,
+          "aliases": [
+            "数据治理"
+          ],
+          "evidence_refs": [
+            "jd_m018"
+          ],
+          "evidence_texts": [
+            "理解数据治理、数据建模、ETL、数据质量和调度监控体系"
+          ],
+          "source_sections": [
+            "requirements"
+          ]
+        },
+        {
+          "skill_id": "skill:bi",
+          "name": "BI",
+          "skill_type": "数据能力",
+          "weight": 0.8,
+          "requirement_level": "required",
+          "confidence": 0.95,
+          "aliases": [
+            "BI"
+          ],
+          "evidence_refs": [
+            "jd_m005"
+          ],
+          "evidence_texts": [
+            "支撑 BI 报表、风险监控和数据分析需求"
+          ],
+          "source_sections": [
+            "responsibilities"
+          ]
+        },
+        {
+          "skill_id": "skill:数据分析",
+          "name": "数据分析",
+          "skill_type": "数据能力",
+          "weight": 0.8,
+          "requirement_level": "required",
+          "confidence": 0.95,
+          "aliases": [
+            "数据分析"
+          ],
+          "evidence_refs": [
+            "jd_m006"
+          ],
+          "evidence_texts": [
+            "支撑 BI 报表、风险监控和数据分析需求"
+          ],
+          "source_sections": [
+            "responsibilities"
+          ]
+        },
+        {
+          "skill_id": "skill:风控",
+          "name": "风控",
+          "skill_type": "业务能力",
+          "weight": 0.8,
+          "requirement_level": "preferred",
+          "confidence": 0.927,
+          "aliases": [
+            "反欺诈",
+            "风控"
+          ],
+          "evidence_refs": [
+            "jd_m002",
+            "jd_m027",
+            "jd_m028"
+          ],
+          "evidence_texts": [
+            "有金融、风控、反欺诈或监管报送数据项目经验优先",
+            "负责金融风控业务的数据仓库建设、ETL 流程开发和数据质量治理"
+          ],
+          "source_sections": [
+            "preferred",
+            "responsibilities"
+          ]
+        },
+        {
+          "skill_id": "skill:沟通协作",
+          "name": "沟通协作",
+          "skill_type": "通用能力",
+          "weight": 0.7,
+          "requirement_level": "required",
+          "confidence": 0.903,
+          "aliases": [
+            "协作",
+            "沟通",
+            "沟通协作"
+          ],
+          "evidence_refs": [
+            "jd_m020",
+            "jd_m021",
+            "jd_m022"
+          ],
+          "evidence_texts": [
+            "具备良好的沟通协作、需求分析和文档能力"
+          ],
+          "source_sections": [
+            "requirements"
+          ]
+        },
+        {
+          "skill_id": "skill:金融",
+          "name": "金融",
+          "skill_type": "业务能力",
+          "weight": 0.7,
+          "requirement_level": "preferred",
+          "confidence": 0.95,
+          "aliases": [
+            "金融"
+          ],
+          "evidence_refs": [
+            "jd_m001",
+            "jd_m026"
+          ],
+          "evidence_texts": [
+            "有金融、风控、反欺诈或监管报送数据项目经验优先",
+            "负责金融风控业务的数据仓库建设、ETL 流程开发和数据质量治理"
+          ],
+          "source_sections": [
+            "preferred",
+            "responsibilities"
+          ]
+        },
+        {
+          "skill_id": "skill:文档能力",
+          "name": "文档能力",
+          "skill_type": "通用能力",
+          "weight": 0.6,
+          "requirement_level": "required",
+          "confidence": 0.915,
+          "aliases": [
+            "文档",
+            "文档能力"
+          ],
+          "evidence_refs": [
+            "jd_m024",
+            "jd_m025"
+          ],
+          "evidence_texts": [
+            "具备良好的沟通协作、需求分析和文档能力"
+          ],
+          "source_sections": [
+            "requirements"
+          ]
+        },
+        {
+          "skill_id": "skill:需求分析",
+          "name": "需求分析",
+          "skill_type": "通用能力",
+          "weight": 0.5,
+          "requirement_level": "required",
+          "confidence": 0.95,
+          "aliases": [
+            "需求分析"
+          ],
+          "evidence_refs": [
+            "jd_m023"
+          ],
+          "evidence_texts": [
+            "具备良好的沟通协作、需求分析和文档能力"
+          ],
+          "source_sections": [
+            "requirements"
+          ]
+        },
+        {
+          "skill_id": "skill:kafka",
+          "name": "Kafka",
+          "skill_type": "框架工具",
+          "weight": 0.2,
+          "requirement_level": "preferred",
+          "confidence": 0.95,
+          "aliases": [
+            "Kafka"
+          ],
+          "evidence_refs": [
+            "jd_m029"
+          ],
+          "evidence_texts": [
+            "熟悉 Kafka、ClickHouse、数据血缘或数据安全治理者优先"
+          ],
+          "source_sections": [
+            "preferred"
+          ]
+        }
+      ],
+      "skill_distribution": {
+        "Airflow": 1.2,
+        "BI": 0.8,
+        "ETL": 1.1,
+        "Flink": 1.3,
+        "Hadoop": 1.3,
+        "Kafka": 0.2,
+        "Python": 1.2,
+        "SQL": 1.2,
+        "Scala": 1.2,
+        "Spark": 1.3,
+        "数据仓库": 1.3,
+        "数据分析": 0.8,
+        "数据治理": 1.0,
+        "文档能力": 0.6,
+        "沟通协作": 0.7,
+        "金融": 0.7,
+        "需求分析": 0.5,
+        "风控": 0.8
+      },
+      "vector": [
+        1.2,
+        0.8,
+        1.1,
+        1.3,
+        1.3,
+        0.2,
+        1.2,
+        1.2,
+        1.2,
+        1.3,
+        1.3,
+        0.8,
+        1.0,
+        0.6,
+        0.7,
+        0.7,
+        0.5,
+        0.8
+      ],
+      "metadata": {
+        "job_title": "数据开发工程师",
+        "job_category": "数据岗",
+        "education_requirement": "本科",
+        "experience_requirement": 3.0,
+        "domain_requirement": [
+          "金融",
+          "风控"
+        ]
+      }
+    }
+  },
+  "path": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/parsed/jd_profiles/jd_1._etl_2._bi_3._sparkhadoopflink_1_8df5d293bb.json"
+}

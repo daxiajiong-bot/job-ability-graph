@@ -1,0 +1,76 @@
+{
+  "doc_id": "jd_raglangchain_67d725de41",
+  "source_type": "jd",
+  "created_at": "2026-06-18T12:34:11Z",
+  "normalized_skills": [
+    {
+      "skill_id": "skill:langchain",
+      "name": "LangChain",
+      "skill_type": "框架工具",
+      "aliases": [
+        "LangChain"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "jd_m003"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:rag",
+      "name": "RAG",
+      "skill_type": "算法能力",
+      "aliases": [
+        "RAG"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "jd_m002"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:大语言模型",
+      "name": "大语言模型",
+      "skill_type": "算法能力",
+      "aliases": [
+        "大模型"
+      ],
+      "relation_type": "alias",
+      "evidence_refs": [
+        "jd_m001"
+      ],
+      "confidence": 0.88
+    },
+    {
+      "skill_id": "skill:模型部署",
+      "name": "模型部署",
+      "skill_type": "工程能力",
+      "aliases": [
+        "模型部署"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "jd_m005"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:知识库问答",
+      "name": "知识库问答",
+      "skill_type": "业务能力",
+      "aliases": [
+        "知识库问答"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "jd_m004"
+      ],
+      "confidence": 0.95
+    }
+  ],
+  "unmatched_mentions": [],
+  "normalization_logs": [
+    "大模型 -> 大语言模型"
+  ]
+}

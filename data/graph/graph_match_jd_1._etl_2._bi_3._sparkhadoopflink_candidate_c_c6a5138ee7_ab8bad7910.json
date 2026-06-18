@@ -1,0 +1,1380 @@
+{
+  "graph_id": "graph_match_jd_1._etl_2._bi_3._sparkhadoopflink_candidate_c_c6a5138ee7_ab8bad7910",
+  "graph_name": "graph_match_jd_1._etl_2._bi_3._sparkhadoopflink_candidate_c_c6a5138ee7_ab8bad7910",
+  "created_at": "2026-06-18T12:04:55Z",
+  "graph": {
+    "nodes": [
+      {
+        "id": "job:primary",
+        "type": "Job",
+        "label": "数据开发工程师",
+        "properties": {
+          "job_category": "数据岗"
+        }
+      },
+      {
+        "id": "resume:primary",
+        "type": "Resume",
+        "label": "候选人C",
+        "properties": {
+          "education": "本科",
+          "experience_years": 7.0
+        }
+      },
+      {
+        "id": "skill:airflow",
+        "type": "Skill",
+        "label": "Airflow",
+        "properties": {
+          "skill_type": "框架工具"
+        }
+      },
+      {
+        "id": "skill_type:框架工具",
+        "type": "SkillType",
+        "label": "框架工具",
+        "properties": {}
+      },
+      {
+        "id": "evidence:jd:jd_e006",
+        "type": "Evidence",
+        "label": "熟练掌握 SQL、Python 或 Scala, 熟悉 Spark、Ha",
+        "properties": {
+          "source_type": "jd",
+          "section": "requirements",
+          "text": "熟练掌握 SQL、Python 或 Scala, 熟悉 Spark、Hadoop、Flink、Airflow"
+        }
+      },
+      {
+        "id": "evidence:resume:resume_e005",
+        "type": "Evidence",
+        "label": "使用 SQL、Python、Scala、Spark、Hadoop 开发 ",
+        "properties": {
+          "source_type": "resume",
+          "section": "work_experiences",
+          "text": "使用 SQL、Python、Scala、Spark、Hadoop 开发 ETL 任务, 通过 Airflow 完成调度监控和失败重跑"
+        }
+      },
+      {
+        "id": "evidence:resume:resume_e011",
+        "type": "Evidence",
+        "label": "熟练掌握 SQL、Python、Scala、Spark、Hadoop、F",
+        "properties": {
+          "source_type": "resume",
+          "section": "skills",
+          "text": "熟练掌握 SQL、Python、Scala、Spark、Hadoop、Flink、Airflow、ETL、数据仓库、数据治理"
+        }
+      },
+      {
+        "id": "skill:bi",
+        "type": "Skill",
+        "label": "BI",
+        "properties": {
+          "skill_type": "数据能力"
+        }
+      },
+      {
+        "id": "skill_type:数据能力",
+        "type": "SkillType",
+        "label": "数据能力",
+        "properties": {}
+      },
+      {
+        "id": "evidence:jd:jd_e003",
+        "type": "Evidence",
+        "label": "设计指标体系和主题数据集市, 支撑 BI 报表、风险监控和数据分析需求",
+        "properties": {
+          "source_type": "jd",
+          "section": "responsibilities",
+          "text": "设计指标体系和主题数据集市, 支撑 BI 报表、风险监控和数据分析需求"
+        }
+      },
+      {
+        "id": "evidence:resume:resume_e006",
+        "type": "Evidence",
+        "label": "推进数据治理和数据质量校验规则, 支撑 BI 报表、风险监控和监管报送",
+        "properties": {
+          "source_type": "resume",
+          "section": "work_experiences",
+          "text": "推进数据治理和数据质量校验规则, 支撑 BI 报表、风险监控和监管报送"
+        }
+      },
+      {
+        "id": "evidence:resume:resume_e012",
+        "type": "Evidence",
+        "label": "熟悉 BI、数据分析、需求分析、文档能力和沟通协作",
+        "properties": {
+          "source_type": "resume",
+          "section": "skills",
+          "text": "熟悉 BI、数据分析、需求分析、文档能力和沟通协作"
+        }
+      },
+      {
+        "id": "skill:etl",
+        "type": "Skill",
+        "label": "ETL",
+        "properties": {
+          "skill_type": "数据能力"
+        }
+      },
+      {
+        "id": "evidence:jd:jd_e002",
+        "type": "Evidence",
+        "label": "负责金融风控业务的数据仓库建设、ETL 流程开发和数据质量治理",
+        "properties": {
+          "source_type": "jd",
+          "section": "responsibilities",
+          "text": "负责金融风控业务的数据仓库建设、ETL 流程开发和数据质量治理"
+        }
+      },
+      {
+        "id": "evidence:jd:jd_e007",
+        "type": "Evidence",
+        "label": "理解数据治理、数据建模、ETL、数据质量和调度监控体系",
+        "properties": {
+          "source_type": "jd",
+          "section": "requirements",
+          "text": "理解数据治理、数据建模、ETL、数据质量和调度监控体系"
+        }
+      },
+      {
+        "id": "skill:flink",
+        "type": "Skill",
+        "label": "Flink",
+        "properties": {
+          "skill_type": "框架工具"
+        }
+      },
+      {
+        "id": "evidence:jd:jd_e004",
+        "type": "Evidence",
+        "label": "优化 Spark、Hadoop、Flink 任务性能, 提升离线和准实时",
+        "properties": {
+          "source_type": "jd",
+          "section": "responsibilities",
+          "text": "优化 Spark、Hadoop、Flink 任务性能, 提升离线和准实时数据链路稳定性"
+        }
+      },
+      {
+        "id": "evidence:resume:resume_e008",
+        "type": "Evidence",
+        "label": "参与准实时风控数据链路开发, 使用 Flink 和 Kafka 处理交易",
+        "properties": {
+          "source_type": "resume",
+          "section": "work_experiences",
+          "text": "参与准实时风控数据链路开发, 使用 Flink 和 Kafka 处理交易事件流"
+        }
+      },
+      {
+        "id": "skill:hadoop",
+        "type": "Skill",
+        "label": "Hadoop",
+        "properties": {
+          "skill_type": "框架工具"
+        }
+      },
+      {
+        "id": "skill:kafka",
+        "type": "Skill",
+        "label": "Kafka",
+        "properties": {
+          "skill_type": "框架工具"
+        }
+      },
+      {
+        "id": "evidence:jd:jd_e010",
+        "type": "Evidence",
+        "label": "熟悉 Kafka、ClickHouse、数据血缘或数据安全治理者优先",
+        "properties": {
+          "source_type": "jd",
+          "section": "preferred",
+          "text": "熟悉 Kafka、ClickHouse、数据血缘或数据安全治理者优先"
+        }
+      },
+      {
+        "id": "skill:python",
+        "type": "Skill",
+        "label": "Python",
+        "properties": {
+          "skill_type": "编程语言"
+        }
+      },
+      {
+        "id": "skill_type:编程语言",
+        "type": "SkillType",
+        "label": "编程语言",
+        "properties": {}
+      },
+      {
+        "id": "skill:sql",
+        "type": "Skill",
+        "label": "SQL",
+        "properties": {
+          "skill_type": "编程语言"
+        }
+      },
+      {
+        "id": "skill:scala",
+        "type": "Skill",
+        "label": "Scala",
+        "properties": {
+          "skill_type": "编程语言"
+        }
+      },
+      {
+        "id": "skill:spark",
+        "type": "Skill",
+        "label": "Spark",
+        "properties": {
+          "skill_type": "框架工具"
+        }
+      },
+      {
+        "id": "skill:数据仓库",
+        "type": "Skill",
+        "label": "数据仓库",
+        "properties": {
+          "skill_type": "数据能力"
+        }
+      },
+      {
+        "id": "evidence:jd:jd_e005",
+        "type": "Evidence",
+        "label": "本科及以上学历, 3 年以上数据开发、数据仓库或大数据平台经验",
+        "properties": {
+          "source_type": "jd",
+          "section": "requirements",
+          "text": "本科及以上学历, 3 年以上数据开发、数据仓库或大数据平台经验"
+        }
+      },
+      {
+        "id": "evidence:resume:resume_e004",
+        "type": "Evidence",
+        "label": "负责风控主题数据仓库建设, 设计客户、交易、授信、反欺诈等主题模型和指标",
+        "properties": {
+          "source_type": "resume",
+          "section": "work_experiences",
+          "text": "负责风控主题数据仓库建设, 设计客户、交易、授信、反欺诈等主题模型和指标口径"
+        }
+      },
+      {
+        "id": "skill:数据分析",
+        "type": "Skill",
+        "label": "数据分析",
+        "properties": {
+          "skill_type": "数据能力"
+        }
+      },
+      {
+        "id": "skill:数据治理",
+        "type": "Skill",
+        "label": "数据治理",
+        "properties": {
+          "skill_type": "数据能力"
+        }
+      },
+      {
+        "id": "skill:文档能力",
+        "type": "Skill",
+        "label": "文档能力",
+        "properties": {
+          "skill_type": "通用能力"
+        }
+      },
+      {
+        "id": "skill_type:通用能力",
+        "type": "SkillType",
+        "label": "通用能力",
+        "properties": {}
+      },
+      {
+        "id": "evidence:jd:jd_e008",
+        "type": "Evidence",
+        "label": "具备良好的沟通协作、需求分析和文档能力",
+        "properties": {
+          "source_type": "jd",
+          "section": "requirements",
+          "text": "具备良好的沟通协作、需求分析和文档能力"
+        }
+      },
+      {
+        "id": "skill:沟通协作",
+        "type": "Skill",
+        "label": "沟通协作",
+        "properties": {
+          "skill_type": "通用能力"
+        }
+      },
+      {
+        "id": "skill:金融",
+        "type": "Skill",
+        "label": "金融",
+        "properties": {
+          "skill_type": "业务能力"
+        }
+      },
+      {
+        "id": "skill_type:业务能力",
+        "type": "SkillType",
+        "label": "业务能力",
+        "properties": {}
+      },
+      {
+        "id": "evidence:jd:jd_e009",
+        "type": "Evidence",
+        "label": "有金融、风控、反欺诈或监管报送数据项目经验优先",
+        "properties": {
+          "source_type": "jd",
+          "section": "preferred",
+          "text": "有金融、风控、反欺诈或监管报送数据项目经验优先"
+        }
+      },
+      {
+        "id": "evidence:resume:resume_e003",
+        "type": "Evidence",
+        "label": "2021.04-至今 某金融科技公司 数据开发工程师",
+        "properties": {
+          "source_type": "resume",
+          "section": "work_experiences",
+          "text": "2021.04-至今 某金融科技公司 数据开发工程师"
+        }
+      },
+      {
+        "id": "evidence:resume:resume_e007",
+        "type": "Evidence",
+        "label": "2019.07-2021.03 某银行科技部 数据工程师",
+        "properties": {
+          "source_type": "resume",
+          "section": "work_experiences",
+          "text": "2019.07-2021.03 某银行科技部 数据工程师"
+        }
+      },
+      {
+        "id": "skill:需求分析",
+        "type": "Skill",
+        "label": "需求分析",
+        "properties": {
+          "skill_type": "通用能力"
+        }
+      },
+      {
+        "id": "skill:风控",
+        "type": "Skill",
+        "label": "风控",
+        "properties": {
+          "skill_type": "业务能力"
+        }
+      },
+      {
+        "id": "evidence:resume:resume_e009",
+        "type": "Evidence",
+        "label": "风控指标平台: 负责核心指标建模与数据质量规则, 将日常报表出数时间从 ",
+        "properties": {
+          "source_type": "resume",
+          "section": "projects",
+          "text": "风控指标平台: 负责核心指标建模与数据质量规则, 将日常报表出数时间从 4 小时缩短到"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source": "resume:primary",
+        "target": "job:primary",
+        "type": "matches",
+        "weight": 0.954,
+        "properties": {
+          "final_score": 95.39
+        }
+      },
+      {
+        "source": "skill:airflow",
+        "target": "skill_type:框架工具",
+        "type": "belongs_to",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "job:primary",
+        "target": "skill:airflow",
+        "type": "requires",
+        "weight": 1.2,
+        "properties": {
+          "requirement_level": "required"
+        }
+      },
+      {
+        "source": "skill:airflow",
+        "target": "evidence:jd:jd_e006",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "resume:primary",
+        "target": "skill:airflow",
+        "type": "has",
+        "weight": 0.75,
+        "properties": {
+          "confidence": 0.95,
+          "recency": 0.8
+        }
+      },
+      {
+        "source": "skill:airflow",
+        "target": "evidence:resume:resume_e005",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:airflow",
+        "target": "evidence:resume:resume_e011",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:bi",
+        "target": "skill_type:数据能力",
+        "type": "belongs_to",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "job:primary",
+        "target": "skill:bi",
+        "type": "requires",
+        "weight": 0.8,
+        "properties": {
+          "requirement_level": "required"
+        }
+      },
+      {
+        "source": "skill:bi",
+        "target": "evidence:jd:jd_e003",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "resume:primary",
+        "target": "skill:bi",
+        "type": "has",
+        "weight": 0.75,
+        "properties": {
+          "confidence": 0.95,
+          "recency": 0.8
+        }
+      },
+      {
+        "source": "skill:bi",
+        "target": "evidence:resume:resume_e006",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:bi",
+        "target": "evidence:resume:resume_e012",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:etl",
+        "target": "skill_type:数据能力",
+        "type": "belongs_to",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "job:primary",
+        "target": "skill:etl",
+        "type": "requires",
+        "weight": 1.1,
+        "properties": {
+          "requirement_level": "required"
+        }
+      },
+      {
+        "source": "skill:etl",
+        "target": "evidence:jd:jd_e002",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:etl",
+        "target": "evidence:jd:jd_e007",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "resume:primary",
+        "target": "skill:etl",
+        "type": "has",
+        "weight": 0.8,
+        "properties": {
+          "confidence": 0.95,
+          "recency": 0.8
+        }
+      },
+      {
+        "source": "skill:etl",
+        "target": "evidence:resume:resume_e005",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:etl",
+        "target": "evidence:resume:resume_e011",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:flink",
+        "target": "skill_type:框架工具",
+        "type": "belongs_to",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "job:primary",
+        "target": "skill:flink",
+        "type": "requires",
+        "weight": 1.3,
+        "properties": {
+          "requirement_level": "required"
+        }
+      },
+      {
+        "source": "skill:flink",
+        "target": "evidence:jd:jd_e004",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:flink",
+        "target": "evidence:jd:jd_e006",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "resume:primary",
+        "target": "skill:flink",
+        "type": "has",
+        "weight": 0.8,
+        "properties": {
+          "confidence": 0.95,
+          "recency": 0.8
+        }
+      },
+      {
+        "source": "skill:flink",
+        "target": "evidence:resume:resume_e008",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:flink",
+        "target": "evidence:resume:resume_e011",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:hadoop",
+        "target": "skill_type:框架工具",
+        "type": "belongs_to",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "job:primary",
+        "target": "skill:hadoop",
+        "type": "requires",
+        "weight": 1.3,
+        "properties": {
+          "requirement_level": "required"
+        }
+      },
+      {
+        "source": "skill:hadoop",
+        "target": "evidence:jd:jd_e004",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:hadoop",
+        "target": "evidence:jd:jd_e006",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "resume:primary",
+        "target": "skill:hadoop",
+        "type": "has",
+        "weight": 0.8,
+        "properties": {
+          "confidence": 0.95,
+          "recency": 0.8
+        }
+      },
+      {
+        "source": "skill:hadoop",
+        "target": "evidence:resume:resume_e005",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:hadoop",
+        "target": "evidence:resume:resume_e011",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:kafka",
+        "target": "skill_type:框架工具",
+        "type": "belongs_to",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "job:primary",
+        "target": "skill:kafka",
+        "type": "requires",
+        "weight": 0.2,
+        "properties": {
+          "requirement_level": "preferred"
+        }
+      },
+      {
+        "source": "skill:kafka",
+        "target": "evidence:jd:jd_e010",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "resume:primary",
+        "target": "skill:kafka",
+        "type": "has",
+        "weight": 0.8,
+        "properties": {
+          "confidence": 0.95,
+          "recency": 0.8
+        }
+      },
+      {
+        "source": "skill:kafka",
+        "target": "evidence:resume:resume_e008",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:python",
+        "target": "skill_type:编程语言",
+        "type": "belongs_to",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "job:primary",
+        "target": "skill:python",
+        "type": "requires",
+        "weight": 1.2,
+        "properties": {
+          "requirement_level": "required"
+        }
+      },
+      {
+        "source": "skill:python",
+        "target": "evidence:jd:jd_e006",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "resume:primary",
+        "target": "skill:python",
+        "type": "has",
+        "weight": 0.8,
+        "properties": {
+          "confidence": 0.95,
+          "recency": 0.8
+        }
+      },
+      {
+        "source": "skill:python",
+        "target": "evidence:resume:resume_e005",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:python",
+        "target": "evidence:resume:resume_e011",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:sql",
+        "target": "skill_type:编程语言",
+        "type": "belongs_to",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "job:primary",
+        "target": "skill:sql",
+        "type": "requires",
+        "weight": 1.2,
+        "properties": {
+          "requirement_level": "required"
+        }
+      },
+      {
+        "source": "skill:sql",
+        "target": "evidence:jd:jd_e006",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "resume:primary",
+        "target": "skill:sql",
+        "type": "has",
+        "weight": 0.8,
+        "properties": {
+          "confidence": 0.95,
+          "recency": 0.8
+        }
+      },
+      {
+        "source": "skill:sql",
+        "target": "evidence:resume:resume_e005",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:sql",
+        "target": "evidence:resume:resume_e011",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:scala",
+        "target": "skill_type:编程语言",
+        "type": "belongs_to",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "job:primary",
+        "target": "skill:scala",
+        "type": "requires",
+        "weight": 1.2,
+        "properties": {
+          "requirement_level": "required"
+        }
+      },
+      {
+        "source": "skill:scala",
+        "target": "evidence:jd:jd_e006",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "resume:primary",
+        "target": "skill:scala",
+        "type": "has",
+        "weight": 0.8,
+        "properties": {
+          "confidence": 0.95,
+          "recency": 0.8
+        }
+      },
+      {
+        "source": "skill:scala",
+        "target": "evidence:resume:resume_e005",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:scala",
+        "target": "evidence:resume:resume_e011",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:spark",
+        "target": "skill_type:框架工具",
+        "type": "belongs_to",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "job:primary",
+        "target": "skill:spark",
+        "type": "requires",
+        "weight": 1.3,
+        "properties": {
+          "requirement_level": "required"
+        }
+      },
+      {
+        "source": "skill:spark",
+        "target": "evidence:jd:jd_e004",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:spark",
+        "target": "evidence:jd:jd_e006",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "resume:primary",
+        "target": "skill:spark",
+        "type": "has",
+        "weight": 0.8,
+        "properties": {
+          "confidence": 0.95,
+          "recency": 0.8
+        }
+      },
+      {
+        "source": "skill:spark",
+        "target": "evidence:resume:resume_e005",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:spark",
+        "target": "evidence:resume:resume_e011",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:数据仓库",
+        "target": "skill_type:数据能力",
+        "type": "belongs_to",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "job:primary",
+        "target": "skill:数据仓库",
+        "type": "requires",
+        "weight": 1.3,
+        "properties": {
+          "requirement_level": "required"
+        }
+      },
+      {
+        "source": "skill:数据仓库",
+        "target": "evidence:jd:jd_e002",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:数据仓库",
+        "target": "evidence:jd:jd_e005",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "resume:primary",
+        "target": "skill:数据仓库",
+        "type": "has",
+        "weight": 0.8,
+        "properties": {
+          "confidence": 0.95,
+          "recency": 0.8
+        }
+      },
+      {
+        "source": "skill:数据仓库",
+        "target": "evidence:resume:resume_e004",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:数据仓库",
+        "target": "evidence:resume:resume_e011",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:数据分析",
+        "target": "skill_type:数据能力",
+        "type": "belongs_to",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "job:primary",
+        "target": "skill:数据分析",
+        "type": "requires",
+        "weight": 0.8,
+        "properties": {
+          "requirement_level": "required"
+        }
+      },
+      {
+        "source": "skill:数据分析",
+        "target": "evidence:jd:jd_e003",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "resume:primary",
+        "target": "skill:数据分析",
+        "type": "has",
+        "weight": 0.5,
+        "properties": {
+          "confidence": 0.95,
+          "recency": 0.8
+        }
+      },
+      {
+        "source": "skill:数据分析",
+        "target": "evidence:resume:resume_e012",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:数据治理",
+        "target": "skill_type:数据能力",
+        "type": "belongs_to",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "job:primary",
+        "target": "skill:数据治理",
+        "type": "requires",
+        "weight": 1.0,
+        "properties": {
+          "requirement_level": "required"
+        }
+      },
+      {
+        "source": "skill:数据治理",
+        "target": "evidence:jd:jd_e007",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "resume:primary",
+        "target": "skill:数据治理",
+        "type": "has",
+        "weight": 0.75,
+        "properties": {
+          "confidence": 0.95,
+          "recency": 0.8
+        }
+      },
+      {
+        "source": "skill:数据治理",
+        "target": "evidence:resume:resume_e006",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:数据治理",
+        "target": "evidence:resume:resume_e011",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:文档能力",
+        "target": "skill_type:通用能力",
+        "type": "belongs_to",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "job:primary",
+        "target": "skill:文档能力",
+        "type": "requires",
+        "weight": 0.6,
+        "properties": {
+          "requirement_level": "required"
+        }
+      },
+      {
+        "source": "skill:文档能力",
+        "target": "evidence:jd:jd_e008",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "resume:primary",
+        "target": "skill:文档能力",
+        "type": "has",
+        "weight": 0.5,
+        "properties": {
+          "confidence": 0.95,
+          "recency": 0.8
+        }
+      },
+      {
+        "source": "skill:文档能力",
+        "target": "evidence:resume:resume_e012",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:沟通协作",
+        "target": "skill_type:通用能力",
+        "type": "belongs_to",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "job:primary",
+        "target": "skill:沟通协作",
+        "type": "requires",
+        "weight": 0.7,
+        "properties": {
+          "requirement_level": "required"
+        }
+      },
+      {
+        "source": "skill:沟通协作",
+        "target": "evidence:jd:jd_e008",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "resume:primary",
+        "target": "skill:沟通协作",
+        "type": "has",
+        "weight": 0.5,
+        "properties": {
+          "confidence": 0.95,
+          "recency": 0.8
+        }
+      },
+      {
+        "source": "skill:沟通协作",
+        "target": "evidence:resume:resume_e012",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:金融",
+        "target": "skill_type:业务能力",
+        "type": "belongs_to",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "job:primary",
+        "target": "skill:金融",
+        "type": "requires",
+        "weight": 0.7,
+        "properties": {
+          "requirement_level": "preferred"
+        }
+      },
+      {
+        "source": "skill:金融",
+        "target": "evidence:jd:jd_e002",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:金融",
+        "target": "evidence:jd:jd_e009",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "resume:primary",
+        "target": "skill:金融",
+        "type": "has",
+        "weight": 0.7,
+        "properties": {
+          "confidence": 0.95,
+          "recency": 0.5
+        }
+      },
+      {
+        "source": "skill:金融",
+        "target": "evidence:resume:resume_e003",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:金融",
+        "target": "evidence:resume:resume_e007",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:需求分析",
+        "target": "skill_type:通用能力",
+        "type": "belongs_to",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "job:primary",
+        "target": "skill:需求分析",
+        "type": "requires",
+        "weight": 0.5,
+        "properties": {
+          "requirement_level": "required"
+        }
+      },
+      {
+        "source": "skill:需求分析",
+        "target": "evidence:jd:jd_e008",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "resume:primary",
+        "target": "skill:需求分析",
+        "type": "has",
+        "weight": 0.5,
+        "properties": {
+          "confidence": 0.95,
+          "recency": 0.8
+        }
+      },
+      {
+        "source": "skill:需求分析",
+        "target": "evidence:resume:resume_e012",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:风控",
+        "target": "skill_type:业务能力",
+        "type": "belongs_to",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "job:primary",
+        "target": "skill:风控",
+        "type": "requires",
+        "weight": 0.8,
+        "properties": {
+          "requirement_level": "preferred"
+        }
+      },
+      {
+        "source": "skill:风控",
+        "target": "evidence:jd:jd_e002",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:风控",
+        "target": "evidence:jd:jd_e009",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "resume:primary",
+        "target": "skill:风控",
+        "type": "has",
+        "weight": 0.8,
+        "properties": {
+          "confidence": 0.95,
+          "recency": 0.8
+        }
+      },
+      {
+        "source": "skill:风控",
+        "target": "evidence:resume:resume_e004",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:风控",
+        "target": "evidence:resume:resume_e008",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:风控",
+        "target": "evidence:resume:resume_e009",
+        "type": "evidenced_by",
+        "weight": 1.0,
+        "properties": {}
+      },
+      {
+        "source": "skill:数据分析",
+        "target": "skill:sql",
+        "type": "related_to",
+        "weight": 0.5,
+        "properties": {
+          "relation_type": "tool"
+        }
+      },
+      {
+        "source": "skill:数据分析",
+        "target": "skill:bi",
+        "type": "related_to",
+        "weight": 0.5,
+        "properties": {
+          "relation_type": "related"
+        }
+      },
+      {
+        "source": "skill:sql",
+        "target": "skill:数据分析",
+        "type": "related_to",
+        "weight": 0.5,
+        "properties": {
+          "relation_type": "related"
+        }
+      },
+      {
+        "source": "skill:sql",
+        "target": "skill:数据仓库",
+        "type": "related_to",
+        "weight": 0.5,
+        "properties": {
+          "relation_type": "related"
+        }
+      },
+      {
+        "source": "skill:bi",
+        "target": "skill:数据分析",
+        "type": "related_to",
+        "weight": 0.5,
+        "properties": {
+          "relation_type": "related"
+        }
+      },
+      {
+        "source": "skill:数据仓库",
+        "target": "skill:sql",
+        "type": "related_to",
+        "weight": 0.5,
+        "properties": {
+          "relation_type": "tool"
+        }
+      },
+      {
+        "source": "skill:数据仓库",
+        "target": "skill:etl",
+        "type": "related_to",
+        "weight": 0.5,
+        "properties": {
+          "relation_type": "related"
+        }
+      },
+      {
+        "source": "skill:数据仓库",
+        "target": "skill:spark",
+        "type": "related_to",
+        "weight": 0.5,
+        "properties": {
+          "relation_type": "tool"
+        }
+      },
+      {
+        "source": "skill:数据仓库",
+        "target": "skill:hadoop",
+        "type": "related_to",
+        "weight": 0.5,
+        "properties": {
+          "relation_type": "tool"
+        }
+      },
+      {
+        "source": "skill:etl",
+        "target": "skill:数据仓库",
+        "type": "related_to",
+        "weight": 0.5,
+        "properties": {
+          "relation_type": "related"
+        }
+      },
+      {
+        "source": "skill:spark",
+        "target": "skill:数据仓库",
+        "type": "related_to",
+        "weight": 0.5,
+        "properties": {
+          "relation_type": "related"
+        }
+      },
+      {
+        "source": "skill:hadoop",
+        "target": "skill:数据仓库",
+        "type": "related_to",
+        "weight": 0.5,
+        "properties": {
+          "relation_type": "related"
+        }
+      }
+    ],
+    "graph_metadata": {
+      "created_at": "2026-06-18T12:04:55Z",
+      "schema_version": "demo-v1",
+      "source_ids": {
+        "jd": "job:primary",
+        "resume": "resume:primary"
+      },
+      "gap_summary": "1 项技能证据或熟练度不足"
+    },
+    "graph_id": "graph_match_jd_1._etl_2._bi_3._sparkhadoopflink_candidate_c_c6a5138ee7_ab8bad7910",
+    "match_id": "match_jd_1._etl_2._bi_3._sparkhadoopflink_candidate_c_c6a5138ee7_ab8bad7910",
+    "jd_id": "jd_1._etl_2._bi_3._sparkhadoopflink_1_8df5d293bb",
+    "resume_id": "candidate_c_c6a5138ee7"
+  },
+  "path": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/graph/graph_match_jd_1._etl_2._bi_3._sparkhadoopflink_candidate_c_c6a5138ee7_ab8bad7910.json"
+}

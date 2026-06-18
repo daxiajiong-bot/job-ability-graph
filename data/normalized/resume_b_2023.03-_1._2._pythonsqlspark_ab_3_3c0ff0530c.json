@@ -1,0 +1,317 @@
+{
+  "doc_id": "resume_b_2023.03-_1._2._pythonsqlspark_ab_3_3c0ff0530c",
+  "source_type": "resume",
+  "created_at": "2026-06-18T13:32:28Z",
+  "normalized_skills": [
+    {
+      "skill_id": "skill:ab测试",
+      "name": "A/B测试",
+      "skill_type": "算法能力",
+      "aliases": [
+        "A/B测试"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "resume_m014",
+        "resume_m036"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:git",
+      "name": "Git",
+      "skill_type": "框架工具",
+      "aliases": [
+        "Git"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "resume_m043"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:kafka",
+      "name": "Kafka",
+      "skill_type": "框架工具",
+      "aliases": [
+        "Kafka"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "resume_m017",
+        "resume_m038"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:linux",
+      "name": "Linux",
+      "skill_type": "框架工具",
+      "aliases": [
+        "Linux"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "resume_m042"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:pytorch",
+      "name": "PyTorch",
+      "skill_type": "框架工具",
+      "aliases": [
+        "PyTorch"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "resume_m023",
+        "resume_m041"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:python",
+      "name": "Python",
+      "skill_type": "编程语言",
+      "aliases": [
+        "Python"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "resume_m009",
+        "resume_m028"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:redis",
+      "name": "Redis",
+      "skill_type": "框架工具",
+      "aliases": [
+        "Redis"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "resume_m016",
+        "resume_m039"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:sql",
+      "name": "SQL",
+      "skill_type": "编程语言",
+      "aliases": [
+        "SQL"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "resume_m010",
+        "resume_m029"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:spark",
+      "name": "Spark",
+      "skill_type": "框架工具",
+      "aliases": [
+        "Spark"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "resume_m011",
+        "resume_m037"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:tensorflow",
+      "name": "TensorFlow",
+      "skill_type": "框架工具",
+      "aliases": [
+        "TensorFlow"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "resume_m022",
+        "resume_m040"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:内容推荐",
+      "name": "内容推荐",
+      "skill_type": "业务能力",
+      "aliases": [
+        "信息流",
+        "内容推荐"
+      ],
+      "relation_type": "alias",
+      "evidence_refs": [
+        "resume_m018",
+        "resume_m019"
+      ],
+      "confidence": 0.915
+    },
+    {
+      "skill_id": "skill:召回模型",
+      "name": "召回模型",
+      "skill_type": "算法能力",
+      "aliases": [
+        "双塔召回",
+        "召回",
+        "召回模型"
+      ],
+      "relation_type": "alias",
+      "evidence_refs": [
+        "resume_m004",
+        "resume_m005",
+        "resume_m025",
+        "resume_m026",
+        "resume_m027",
+        "resume_m031",
+        "resume_m032"
+      ],
+      "confidence": 0.91
+    },
+    {
+      "skill_id": "skill:排序模型",
+      "name": "排序模型",
+      "skill_type": "算法能力",
+      "aliases": [
+        "排序",
+        "排序模型"
+      ],
+      "relation_type": "alias",
+      "evidence_refs": [
+        "resume_m006",
+        "resume_m007",
+        "resume_m033",
+        "resume_m034"
+      ],
+      "confidence": 0.915
+    },
+    {
+      "skill_id": "skill:推荐算法",
+      "name": "推荐算法",
+      "skill_type": "算法能力",
+      "aliases": [
+        "推荐算法"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "resume_m001",
+        "resume_m003",
+        "resume_m030"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:数据分析",
+      "name": "数据分析",
+      "skill_type": "数据能力",
+      "aliases": [
+        "数据分析"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "resume_m013"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:机器学习",
+      "name": "机器学习",
+      "skill_type": "算法能力",
+      "aliases": [
+        "机器学习"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "resume_m020"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:模型训练",
+      "name": "模型训练",
+      "skill_type": "算法能力",
+      "aliases": [
+        "模型训练"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "resume_m012"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:沟通协作",
+      "name": "沟通协作",
+      "skill_type": "通用能力",
+      "aliases": [
+        "协作"
+      ],
+      "relation_type": "alias",
+      "evidence_refs": [
+        "resume_m015"
+      ],
+      "confidence": 0.88
+    },
+    {
+      "skill_id": "skill:深度学习",
+      "name": "深度学习",
+      "skill_type": "算法能力",
+      "aliases": [
+        "深度学习"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "resume_m021"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:特征工程",
+      "name": "特征工程",
+      "skill_type": "算法能力",
+      "aliases": [
+        "特征工程"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "resume_m008",
+        "resume_m035"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:电商",
+      "name": "电商",
+      "skill_type": "业务能力",
+      "aliases": [
+        "电商"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "resume_m002",
+        "resume_m024"
+      ],
+      "confidence": 0.95
+    }
+  ],
+  "unmatched_mentions": [],
+  "normalization_logs": [
+    "召回 -> 召回模型",
+    "排序 -> 排序模型",
+    "协作 -> 沟通协作",
+    "信息流 -> 内容推荐",
+    "双塔召回 -> 召回模型",
+    "召回 -> 召回模型",
+    "召回 -> 召回模型",
+    "排序 -> 排序模型"
+  ]
+}

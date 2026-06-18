@@ -1,0 +1,1230 @@
+{
+  "match_id": "match_jd_1._rag_prompt_2._3._api_1._3_nlp_candidate_a_1d5f8a9864_dc7694ce0d",
+  "created_at": "2026-06-18T13:32:28Z",
+  "final_score": 85.08,
+  "skill_coverage": 0.83,
+  "distribution_similarity": 0.846,
+  "experience_fit": 1.0,
+  "education_fit": 1.0,
+  "domain_fit": 1.0,
+  "semantic_fit": 0.332,
+  "matched_skills": [
+    {
+      "skill_id": "skill:大语言模型",
+      "name": "大语言模型",
+      "match_type": "exact",
+      "jd_weight": 1.5,
+      "resume_proficiency": 0.8,
+      "contribution": 1.5,
+      "evidence_refs": {
+        "jd": [
+          "jd_m001",
+          "jd_m003",
+          "jd_m016",
+          "jd_m021"
+        ],
+        "resume": [
+          "resume_m001",
+          "resume_m016",
+          "resume_m034"
+        ]
+      },
+      "evidence_from_jd": [
+        "3 年以上 NLP 或大模型相关经验",
+        "大模型算法工程师"
+      ],
+      "evidence_from_resume": [
+        "参与大语言模型微调和推理服务部署",
+        "大模型算法工程师 / NLP 算法工程师"
+      ]
+    },
+    {
+      "skill_id": "skill:bert",
+      "name": "BERT",
+      "match_type": "exact",
+      "jd_weight": 1.2,
+      "resume_proficiency": 1.0,
+      "contribution": 1.2,
+      "evidence_refs": {
+        "jd": [
+          "jd_m020"
+        ],
+        "resume": [
+          "resume_m012"
+        ]
+      },
+      "evidence_from_jd": [
+        "熟悉 PyTorch、Transformer、BERT 或大语言模型训练与推理流程"
+      ],
+      "evidence_from_resume": [
+        "基于 PyTorch、Transformer 和 BERT 完成意图识别、问题改写和答案相关性排序模型优化"
+      ]
+    },
+    {
+      "skill_id": "skill:docker",
+      "name": "Docker",
+      "match_type": "exact",
+      "jd_weight": 1.2,
+      "resume_proficiency": 0.8,
+      "contribution": 1.2,
+      "evidence_refs": {
+        "jd": [
+          "jd_m029"
+        ],
+        "resume": [
+          "resume_m020",
+          "resume_m040"
+        ]
+      },
+      "evidence_from_jd": [
+        "熟悉 Docker、FastAPI、Linux 和 Git"
+      ],
+      "evidence_from_resume": [
+        "使用 FastAPI、Docker、Linux 提供内部 API 服务",
+        "熟悉 Git、Linux、Docker、FastAPI"
+      ]
+    },
+    {
+      "skill_id": "skill:fastapi",
+      "name": "FastAPI",
+      "match_type": "exact",
+      "jd_weight": 1.2,
+      "resume_proficiency": 0.8,
+      "contribution": 1.2,
+      "evidence_refs": {
+        "jd": [
+          "jd_m030"
+        ],
+        "resume": [
+          "resume_m019",
+          "resume_m041"
+        ]
+      },
+      "evidence_from_jd": [
+        "熟悉 Docker、FastAPI、Linux 和 Git"
+      ],
+      "evidence_from_resume": [
+        "使用 FastAPI、Docker、Linux 提供内部 API 服务",
+        "熟悉 Git、Linux、Docker、FastAPI"
+      ]
+    },
+    {
+      "skill_id": "skill:linux",
+      "name": "Linux",
+      "match_type": "exact",
+      "jd_weight": 1.2,
+      "resume_proficiency": 0.8,
+      "contribution": 1.2,
+      "evidence_refs": {
+        "jd": [
+          "jd_m031"
+        ],
+        "resume": [
+          "resume_m021",
+          "resume_m039"
+        ]
+      },
+      "evidence_from_jd": [
+        "熟悉 Docker、FastAPI、Linux 和 Git"
+      ],
+      "evidence_from_resume": [
+        "使用 FastAPI、Docker、Linux 提供内部 API 服务",
+        "熟悉 Git、Linux、Docker、FastAPI"
+      ]
+    },
+    {
+      "skill_id": "skill:pytorch",
+      "name": "PyTorch",
+      "match_type": "exact",
+      "jd_weight": 1.2,
+      "resume_proficiency": 1.0,
+      "contribution": 1.2,
+      "evidence_refs": {
+        "jd": [
+          "jd_m018"
+        ],
+        "resume": [
+          "resume_m010",
+          "resume_m029"
+        ]
+      },
+      "evidence_from_jd": [
+        "熟悉 PyTorch、Transformer、BERT 或大语言模型训练与推理流程"
+      ],
+      "evidence_from_resume": [
+        "基于 PyTorch、Transformer 和 BERT 完成意图识别、问题改写和答案相关性排序模型优化",
+        "熟练掌握 Python、PyTorch、NLP、机器学习、深度学习、RAG、大语言模型、LangChain、Milvus、Elasticsearch"
+      ]
+    },
+    {
+      "skill_id": "skill:transformer",
+      "name": "Transformer",
+      "match_type": "exact",
+      "jd_weight": 1.2,
+      "resume_proficiency": 1.0,
+      "contribution": 1.2,
+      "evidence_refs": {
+        "jd": [
+          "jd_m019"
+        ],
+        "resume": [
+          "resume_m011"
+        ]
+      },
+      "evidence_from_jd": [
+        "熟悉 PyTorch、Transformer、BERT 或大语言模型训练与推理流程"
+      ],
+      "evidence_from_resume": [
+        "基于 PyTorch、Transformer 和 BERT 完成意图识别、问题改写和答案相关性排序模型优化"
+      ]
+    },
+    {
+      "skill_id": "skill:模型训练",
+      "name": "模型训练",
+      "match_type": "exact",
+      "jd_weight": 1.2,
+      "resume_proficiency": 0.8,
+      "contribution": 1.2,
+      "evidence_refs": {
+        "jd": [
+          "jd_m022"
+        ],
+        "resume": [
+          "resume_m024"
+        ]
+      },
+      "evidence_from_jd": [
+        "熟悉 PyTorch、Transformer、BERT 或大语言模型训练与推理流程"
+      ],
+      "evidence_from_resume": [
+        "负责数据清洗、模型训练、离线评估和线上效果分析"
+      ]
+    },
+    {
+      "skill_id": "skill:知识库问答",
+      "name": "知识库问答",
+      "match_type": "exact",
+      "jd_weight": 1.1,
+      "resume_proficiency": 1.0,
+      "contribution": 1.1,
+      "evidence_refs": {
+        "jd": [
+          "jd_m002",
+          "jd_m035"
+        ],
+        "resume": [
+          "resume_m004",
+          "resume_m023",
+          "resume_m025"
+        ]
+      },
+      "evidence_from_jd": [
+        "有企业服务 ToB、知识库问答或智能客服项目落地经验",
+        "负责企业知识库问答场景的大语言模型应用建设"
+      ],
+      "evidence_from_resume": [
+        "企业知识库问答平台: 主导 RAG 方案设计",
+        "参与客服问答系统建设"
+      ]
+    },
+    {
+      "skill_id": "skill:rag",
+      "name": "RAG",
+      "match_type": "exact",
+      "jd_weight": 1.0,
+      "resume_proficiency": 1.0,
+      "contribution": 1.0,
+      "evidence_refs": {
+        "jd": [
+          "jd_m004",
+          "jd_m005",
+          "jd_m027"
+        ],
+        "resume": [
+          "resume_m005",
+          "resume_m006",
+          "resume_m026",
+          "resume_m033"
+        ]
+      },
+      "evidence_from_jd": [
+        "包括 RAG 检索增强生成、Prompt 优化和效果评估",
+        "熟悉 LangChain、LlamaIndex、Milvus、Elasticsearch 等 RAG 相关工具者优先"
+      ],
+      "evidence_from_resume": [
+        "企业知识库问答平台: 主导 RAG 方案设计",
+        "熟练掌握 Python、PyTorch、NLP、机器学习、深度学习、RAG、大语言模型、LangChain、Milvus、Elasticsearch"
+      ]
+    },
+    {
+      "skill_id": "skill:大模型微调",
+      "name": "大模型微调",
+      "match_type": "exact",
+      "jd_weight": 0.9,
+      "resume_proficiency": 0.8,
+      "contribution": 0.9,
+      "evidence_refs": {
+        "jd": [
+          "jd_m009",
+          "jd_m036",
+          "jd_m037",
+          "jd_m038"
+        ],
+        "resume": [
+          "resume_m017",
+          "resume_m044"
+        ]
+      },
+      "evidence_from_jd": [
+        "参与模型微调、模型部署和推理服务工程化",
+        "有 LoRA、SFT、模型微调、MLOps 或 Kubernetes 经验优先"
+      ],
+      "evidence_from_resume": [
+        "了解 Kubernetes、MLOps 和 LoRA 微调",
+        "参与大语言模型微调和推理服务部署"
+      ]
+    },
+    {
+      "skill_id": "skill:排序模型",
+      "name": "排序模型",
+      "match_type": "exact",
+      "jd_weight": 0.9,
+      "resume_proficiency": 1.0,
+      "contribution": 0.9,
+      "evidence_refs": {
+        "jd": [
+          "jd_m007",
+          "jd_m008"
+        ],
+        "resume": [
+          "resume_m013",
+          "resume_m014"
+        ]
+      },
+      "evidence_from_jd": [
+        "设计并优化向量召回、排序模型和问答链路"
+      ],
+      "evidence_from_resume": [
+        "基于 PyTorch、Transformer 和 BERT 完成意图识别、问题改写和答案相关性排序模型优化"
+      ]
+    },
+    {
+      "skill_id": "skill:模型部署",
+      "name": "模型部署",
+      "match_type": "exact",
+      "jd_weight": 0.9,
+      "resume_proficiency": 0.8,
+      "contribution": 0.9,
+      "evidence_refs": {
+        "jd": [
+          "jd_m010",
+          "jd_m011"
+        ],
+        "resume": [
+          "resume_m018"
+        ]
+      },
+      "evidence_from_jd": [
+        "参与模型微调、模型部署和推理服务工程化"
+      ],
+      "evidence_from_resume": [
+        "参与大语言模型微调和推理服务部署"
+      ]
+    },
+    {
+      "skill_id": "skill:nlp",
+      "name": "NLP",
+      "match_type": "exact",
+      "jd_weight": 1.2,
+      "resume_proficiency": 0.7,
+      "contribution": 0.84,
+      "evidence_refs": {
+        "jd": [
+          "jd_m015"
+        ],
+        "resume": [
+          "resume_m002",
+          "resume_m022",
+          "resume_m030"
+        ]
+      },
+      "evidence_from_jd": [
+        "3 年以上 NLP 或大模型相关经验"
+      ],
+      "evidence_from_resume": [
+        "2020.07-2022.06 某智能客服公司 NLP 工程师",
+        "大模型算法工程师 / NLP 算法工程师"
+      ]
+    },
+    {
+      "skill_id": "skill:python",
+      "name": "Python",
+      "match_type": "exact",
+      "jd_weight": 1.2,
+      "resume_proficiency": 0.7,
+      "contribution": 0.84,
+      "evidence_refs": {
+        "jd": [
+          "jd_m017"
+        ],
+        "resume": [
+          "resume_m028"
+        ]
+      },
+      "evidence_from_jd": [
+        "熟练掌握 Python"
+      ],
+      "evidence_from_resume": [
+        "熟练掌握 Python、PyTorch、NLP、机器学习、深度学习、RAG、大语言模型、LangChain、Milvus、Elasticsearch"
+      ]
+    },
+    {
+      "skill_id": "skill:elasticsearch",
+      "name": "Elasticsearch",
+      "match_type": "exact",
+      "jd_weight": 0.8,
+      "resume_proficiency": 0.8,
+      "contribution": 0.8,
+      "evidence_refs": {
+        "jd": [
+          "jd_m026"
+        ],
+        "resume": [
+          "resume_m009",
+          "resume_m037"
+        ]
+      },
+      "evidence_from_jd": [
+        "熟悉 LangChain、LlamaIndex、Milvus、Elasticsearch 等 RAG 相关工具者优先"
+      ],
+      "evidence_from_resume": [
+        "使用 LangChain、Milvus、Elasticsearch 搭建混合检索和重排流程",
+        "熟练掌握 Python、PyTorch、NLP、机器学习、深度学习、RAG、大语言模型、LangChain、Milvus、Elasticsearch"
+      ]
+    },
+    {
+      "skill_id": "skill:langchain",
+      "name": "LangChain",
+      "match_type": "exact",
+      "jd_weight": 0.8,
+      "resume_proficiency": 0.8,
+      "contribution": 0.8,
+      "evidence_refs": {
+        "jd": [
+          "jd_m023"
+        ],
+        "resume": [
+          "resume_m007",
+          "resume_m035"
+        ]
+      },
+      "evidence_from_jd": [
+        "熟悉 LangChain、LlamaIndex、Milvus、Elasticsearch 等 RAG 相关工具者优先"
+      ],
+      "evidence_from_resume": [
+        "使用 LangChain、Milvus、Elasticsearch 搭建混合检索和重排流程",
+        "熟练掌握 Python、PyTorch、NLP、机器学习、深度学习、RAG、大语言模型、LangChain、Milvus、Elasticsearch"
+      ]
+    },
+    {
+      "skill_id": "skill:milvus",
+      "name": "Milvus",
+      "match_type": "exact",
+      "jd_weight": 0.8,
+      "resume_proficiency": 0.8,
+      "contribution": 0.8,
+      "evidence_refs": {
+        "jd": [
+          "jd_m025"
+        ],
+        "resume": [
+          "resume_m008",
+          "resume_m036"
+        ]
+      },
+      "evidence_from_jd": [
+        "熟悉 LangChain、LlamaIndex、Milvus、Elasticsearch 等 RAG 相关工具者优先"
+      ],
+      "evidence_from_resume": [
+        "使用 LangChain、Milvus、Elasticsearch 搭建混合检索和重排流程",
+        "熟练掌握 Python、PyTorch、NLP、机器学习、深度学习、RAG、大语言模型、LangChain、Milvus、Elasticsearch"
+      ]
+    },
+    {
+      "skill_id": "skill:企业服务",
+      "name": "企业服务",
+      "match_type": "exact",
+      "jd_weight": 0.7,
+      "resume_proficiency": 0.7,
+      "contribution": 0.7,
+      "evidence_refs": {
+        "jd": [
+          "jd_m033",
+          "jd_m034"
+        ],
+        "resume": [
+          "resume_m003",
+          "resume_m027"
+        ]
+      },
+      "evidence_from_jd": [
+        "有企业服务 ToB、知识库问答或智能客服项目落地经验"
+      ],
+      "evidence_from_resume": [
+        "2022.07-至今 某企业服务科技公司 算法工程师",
+        "支撑 ToB 客户私有知识库接入"
+      ]
+    },
+    {
+      "skill_id": "skill:工程化",
+      "name": "工程化",
+      "match_type": "related",
+      "related_resume_skill": "Docker",
+      "relation_type": "tool",
+      "jd_weight": 1.3,
+      "resume_proficiency": 0.8,
+      "contribution": 0.65,
+      "evidence_refs": {
+        "jd": [
+          "jd_m012",
+          "jd_m028"
+        ],
+        "resume": [
+          "resume_m020",
+          "resume_m040"
+        ]
+      },
+      "evidence_from_jd": [
+        "具备良好的工程化能力",
+        "参与模型微调、模型部署和推理服务工程化"
+      ],
+      "evidence_from_resume": [
+        "使用 FastAPI、Docker、Linux 提供内部 API 服务",
+        "熟悉 Git、Linux、Docker、FastAPI"
+      ]
+    },
+    {
+      "skill_id": "skill:git",
+      "name": "Git",
+      "match_type": "exact",
+      "jd_weight": 1.2,
+      "resume_proficiency": 0.5,
+      "contribution": 0.6,
+      "evidence_refs": {
+        "jd": [
+          "jd_m032"
+        ],
+        "resume": [
+          "resume_m038"
+        ]
+      },
+      "evidence_from_jd": [
+        "熟悉 Docker、FastAPI、Linux 和 Git"
+      ],
+      "evidence_from_resume": [
+        "熟悉 Git、Linux、Docker、FastAPI"
+      ]
+    },
+    {
+      "skill_id": "skill:llamaindex",
+      "name": "LlamaIndex",
+      "match_type": "related",
+      "related_resume_skill": "RAG",
+      "relation_type": "related",
+      "jd_weight": 0.8,
+      "resume_proficiency": 1.0,
+      "contribution": 0.4,
+      "evidence_refs": {
+        "jd": [
+          "jd_m024"
+        ],
+        "resume": [
+          "resume_m005",
+          "resume_m006",
+          "resume_m026",
+          "resume_m033"
+        ]
+      },
+      "evidence_from_jd": [
+        "熟悉 LangChain、LlamaIndex、Milvus、Elasticsearch 等 RAG 相关工具者优先"
+      ],
+      "evidence_from_resume": [
+        "企业知识库问答平台: 主导 RAG 方案设计",
+        "熟练掌握 Python、PyTorch、NLP、机器学习、深度学习、RAG、大语言模型、LangChain、Milvus、Elasticsearch"
+      ]
+    },
+    {
+      "skill_id": "skill:kubernetes",
+      "name": "Kubernetes",
+      "match_type": "exact",
+      "jd_weight": 0.2,
+      "resume_proficiency": 0.2,
+      "contribution": 0.14,
+      "evidence_refs": {
+        "jd": [
+          "jd_m040"
+        ],
+        "resume": [
+          "resume_m042"
+        ]
+      },
+      "evidence_from_jd": [
+        "有 LoRA、SFT、模型微调、MLOps 或 Kubernetes 经验优先"
+      ],
+      "evidence_from_resume": [
+        "了解 Kubernetes、MLOps 和 LoRA 微调"
+      ]
+    },
+    {
+      "skill_id": "skill:mlops",
+      "name": "MLOps",
+      "match_type": "exact",
+      "jd_weight": 0.2,
+      "resume_proficiency": 0.2,
+      "contribution": 0.14,
+      "evidence_refs": {
+        "jd": [
+          "jd_m039"
+        ],
+        "resume": [
+          "resume_m043"
+        ]
+      },
+      "evidence_from_jd": [
+        "有 LoRA、SFT、模型微调、MLOps 或 Kubernetes 经验优先"
+      ],
+      "evidence_from_resume": [
+        "了解 Kubernetes、MLOps 和 LoRA 微调"
+      ]
+    }
+  ],
+  "missing_skills": [
+    {
+      "skill_id": "skill:召回模型",
+      "name": "召回模型",
+      "jd_weight": 0.8,
+      "priority": "medium",
+      "gap_priority": 0.8,
+      "evidence_refs": {
+        "jd": [
+          "jd_m006"
+        ]
+      },
+      "evidence_from_jd": [
+        "设计并优化向量召回、排序模型和问答链路"
+      ]
+    },
+    {
+      "skill_id": "skill:接口开发",
+      "name": "接口开发",
+      "jd_weight": 0.8,
+      "priority": "medium",
+      "gap_priority": 0.8,
+      "evidence_refs": {
+        "jd": [
+          "jd_m014"
+        ]
+      },
+      "evidence_from_jd": [
+        "与后端团队协作完成 API 接口开发"
+      ]
+    },
+    {
+      "skill_id": "skill:沟通协作",
+      "name": "沟通协作",
+      "jd_weight": 0.3,
+      "priority": "low",
+      "gap_priority": 0.3,
+      "evidence_refs": {
+        "jd": [
+          "jd_m013"
+        ]
+      },
+      "evidence_from_jd": [
+        "与后端团队协作完成 API 接口开发"
+      ]
+    }
+  ],
+  "insufficient_skills": [
+    {
+      "skill_id": "skill:工程化",
+      "name": "工程化",
+      "required_level": 0.8,
+      "resume_level": 0.8,
+      "jd_weight": 1.3,
+      "gap_type": "related_only",
+      "evidence_refs": {
+        "jd": [
+          "jd_m012",
+          "jd_m028"
+        ],
+        "resume": [
+          "resume_m020",
+          "resume_m040"
+        ]
+      }
+    },
+    {
+      "skill_id": "skill:git",
+      "name": "Git",
+      "required_level": 0.8,
+      "resume_level": 0.5,
+      "jd_weight": 1.2,
+      "gap_type": "insufficient",
+      "evidence_refs": {
+        "jd": [
+          "jd_m032"
+        ],
+        "resume": [
+          "resume_m038"
+        ]
+      }
+    },
+    {
+      "skill_id": "skill:nlp",
+      "name": "NLP",
+      "required_level": 0.8,
+      "resume_level": 0.7,
+      "jd_weight": 1.2,
+      "gap_type": "insufficient",
+      "evidence_refs": {
+        "jd": [
+          "jd_m015"
+        ],
+        "resume": [
+          "resume_m002",
+          "resume_m022",
+          "resume_m030"
+        ]
+      }
+    },
+    {
+      "skill_id": "skill:python",
+      "name": "Python",
+      "required_level": 0.8,
+      "resume_level": 0.7,
+      "jd_weight": 1.2,
+      "gap_type": "insufficient",
+      "evidence_refs": {
+        "jd": [
+          "jd_m017"
+        ],
+        "resume": [
+          "resume_m028"
+        ]
+      }
+    },
+    {
+      "skill_id": "skill:llamaindex",
+      "name": "LlamaIndex",
+      "required_level": 0.4,
+      "resume_level": 1.0,
+      "jd_weight": 0.8,
+      "gap_type": "related_only",
+      "evidence_refs": {
+        "jd": [
+          "jd_m024"
+        ],
+        "resume": [
+          "resume_m005",
+          "resume_m006",
+          "resume_m026",
+          "resume_m033"
+        ]
+      }
+    },
+    {
+      "skill_id": "skill:kubernetes",
+      "name": "Kubernetes",
+      "required_level": 0.4,
+      "resume_level": 0.2,
+      "jd_weight": 0.2,
+      "gap_type": "insufficient",
+      "evidence_refs": {
+        "jd": [
+          "jd_m040"
+        ],
+        "resume": [
+          "resume_m042"
+        ]
+      }
+    },
+    {
+      "skill_id": "skill:mlops",
+      "name": "MLOps",
+      "required_level": 0.4,
+      "resume_level": 0.2,
+      "jd_weight": 0.2,
+      "gap_type": "insufficient",
+      "evidence_refs": {
+        "jd": [
+          "jd_m039"
+        ],
+        "resume": [
+          "resume_m043"
+        ]
+      }
+    }
+  ],
+  "hard_penalties": [],
+  "explanation": "候选人与岗位在 大语言模型、BERT、Docker、FastAPI 等核心技能上匹配度较高，项目或工作经历中存在可解释证据；主要缺口为 召回模型、接口开发、沟通协作。",
+  "jd_id": "jd_1._rag_prompt_2._3._api_1._3_nlp_2_324b7b97b8",
+  "resume_id": "candidate_a_1d5f8a9864",
+  "decision": "strong_match",
+  "gap_analysis": {
+    "missing_skills": [
+      {
+        "skill_id": "skill:召回模型",
+        "name": "召回模型",
+        "priority": "medium",
+        "reason": "JD 中权重为 0.8，简历未提供直接或相关证据。",
+        "jd_evidence_refs": [
+          "jd_m006"
+        ]
+      },
+      {
+        "skill_id": "skill:接口开发",
+        "name": "接口开发",
+        "priority": "medium",
+        "reason": "JD 中权重为 0.8，简历未提供直接或相关证据。",
+        "jd_evidence_refs": [
+          "jd_m014"
+        ]
+      },
+      {
+        "skill_id": "skill:沟通协作",
+        "name": "沟通协作",
+        "priority": "low",
+        "reason": "JD 中权重为 0.3，简历未提供直接或相关证据。",
+        "jd_evidence_refs": [
+          "jd_m013"
+        ]
+      }
+    ],
+    "insufficient_skills": [
+      {
+        "skill_id": "skill:工程化",
+        "name": "工程化",
+        "required_level": 0.8,
+        "current_level": 0.8,
+        "reason": "简历有相关证据，但熟练度或技能关系不足以完全满足岗位要求。",
+        "resume_evidence_refs": [
+          "resume_m020",
+          "resume_m040"
+        ]
+      },
+      {
+        "skill_id": "skill:git",
+        "name": "Git",
+        "required_level": 0.8,
+        "current_level": 0.5,
+        "reason": "简历有相关证据，但熟练度或技能关系不足以完全满足岗位要求。",
+        "resume_evidence_refs": [
+          "resume_m038"
+        ]
+      },
+      {
+        "skill_id": "skill:nlp",
+        "name": "NLP",
+        "required_level": 0.8,
+        "current_level": 0.7,
+        "reason": "简历有相关证据，但熟练度或技能关系不足以完全满足岗位要求。",
+        "resume_evidence_refs": [
+          "resume_m002",
+          "resume_m022",
+          "resume_m030"
+        ]
+      },
+      {
+        "skill_id": "skill:python",
+        "name": "Python",
+        "required_level": 0.8,
+        "current_level": 0.7,
+        "reason": "简历有相关证据，但熟练度或技能关系不足以完全满足岗位要求。",
+        "resume_evidence_refs": [
+          "resume_m028"
+        ]
+      },
+      {
+        "skill_id": "skill:llamaindex",
+        "name": "LlamaIndex",
+        "required_level": 0.4,
+        "current_level": 1.0,
+        "reason": "简历有相关证据，但熟练度或技能关系不足以完全满足岗位要求。",
+        "resume_evidence_refs": [
+          "resume_m005",
+          "resume_m006",
+          "resume_m026",
+          "resume_m033"
+        ]
+      },
+      {
+        "skill_id": "skill:kubernetes",
+        "name": "Kubernetes",
+        "required_level": 0.4,
+        "current_level": 0.2,
+        "reason": "简历有相关证据，但熟练度或技能关系不足以完全满足岗位要求。",
+        "resume_evidence_refs": [
+          "resume_m042"
+        ]
+      },
+      {
+        "skill_id": "skill:mlops",
+        "name": "MLOps",
+        "required_level": 0.4,
+        "current_level": 0.2,
+        "reason": "简历有相关证据，但熟练度或技能关系不足以完全满足岗位要求。",
+        "resume_evidence_refs": [
+          "resume_m043"
+        ]
+      }
+    ],
+    "related_only_skills": [
+      {
+        "required_skill_id": "skill:工程化",
+        "required_skill_name": "工程化",
+        "resume_related_skill": "Docker",
+        "relation_type": "tool",
+        "reason": "简历具备相关技能，但缺少 JD 技能的直接证据。"
+      },
+      {
+        "required_skill_id": "skill:llamaindex",
+        "required_skill_name": "LlamaIndex",
+        "resume_related_skill": "RAG",
+        "relation_type": "related",
+        "reason": "简历具备相关技能，但缺少 JD 技能的直接证据。"
+      }
+    ],
+    "improvement_suggestions": [
+      {
+        "skill_id": "skill:召回模型",
+        "suggestion": "补充 召回模型 的学习、项目或工作证据，优先覆盖 JD 中的核心场景。",
+        "priority": "medium"
+      },
+      {
+        "skill_id": "skill:接口开发",
+        "suggestion": "补充 接口开发 的学习、项目或工作证据，优先覆盖 JD 中的核心场景。",
+        "priority": "medium"
+      },
+      {
+        "skill_id": "skill:沟通协作",
+        "suggestion": "补充 沟通协作 的学习、项目或工作证据，优先覆盖 JD 中的核心场景。",
+        "priority": "low"
+      },
+      {
+        "skill_id": "skill:工程化",
+        "suggestion": "强化 工程化 的项目深度描述，例如职责、产出、指标或上线结果。",
+        "priority": "medium"
+      },
+      {
+        "skill_id": "skill:git",
+        "suggestion": "强化 Git 的项目深度描述，例如职责、产出、指标或上线结果。",
+        "priority": "medium"
+      },
+      {
+        "skill_id": "skill:nlp",
+        "suggestion": "强化 NLP 的项目深度描述，例如职责、产出、指标或上线结果。",
+        "priority": "medium"
+      }
+    ],
+    "gap_summary": "缺失 3 项技能，优先补齐 召回模型, 接口开发, 沟通协作；7 项技能证据或熟练度不足；2 项技能仅存在相关能力支撑"
+  },
+  "model_output": {
+    "semantic_score": 0.332,
+    "job_embedding": null,
+    "resume_embedding": null,
+    "skill_contributions": [
+      {
+        "skill_id": "skill:大语言模型",
+        "name": "大语言模型",
+        "contribution_score": 1.2,
+        "evidence_refs": [
+          "jd_m001",
+          "jd_m003",
+          "jd_m016",
+          "jd_m021"
+        ]
+      },
+      {
+        "skill_id": "skill:bert",
+        "name": "BERT",
+        "contribution_score": 1.2,
+        "evidence_refs": [
+          "jd_m020"
+        ]
+      },
+      {
+        "skill_id": "skill:pytorch",
+        "name": "PyTorch",
+        "contribution_score": 1.2,
+        "evidence_refs": [
+          "jd_m018"
+        ]
+      },
+      {
+        "skill_id": "skill:transformer",
+        "name": "Transformer",
+        "contribution_score": 1.2,
+        "evidence_refs": [
+          "jd_m019"
+        ]
+      },
+      {
+        "skill_id": "skill:知识库问答",
+        "name": "知识库问答",
+        "contribution_score": 1.1,
+        "evidence_refs": [
+          "jd_m002",
+          "jd_m035"
+        ]
+      },
+      {
+        "skill_id": "skill:rag",
+        "name": "RAG",
+        "contribution_score": 1.0,
+        "evidence_refs": [
+          "jd_m004",
+          "jd_m005",
+          "jd_m027"
+        ]
+      },
+      {
+        "skill_id": "skill:docker",
+        "name": "Docker",
+        "contribution_score": 0.96,
+        "evidence_refs": [
+          "jd_m029"
+        ]
+      },
+      {
+        "skill_id": "skill:fastapi",
+        "name": "FastAPI",
+        "contribution_score": 0.96,
+        "evidence_refs": [
+          "jd_m030"
+        ]
+      },
+      {
+        "skill_id": "skill:linux",
+        "name": "Linux",
+        "contribution_score": 0.96,
+        "evidence_refs": [
+          "jd_m031"
+        ]
+      },
+      {
+        "skill_id": "skill:模型训练",
+        "name": "模型训练",
+        "contribution_score": 0.96,
+        "evidence_refs": [
+          "jd_m022"
+        ]
+      },
+      {
+        "skill_id": "skill:排序模型",
+        "name": "排序模型",
+        "contribution_score": 0.9,
+        "evidence_refs": [
+          "jd_m007",
+          "jd_m008"
+        ]
+      },
+      {
+        "skill_id": "skill:nlp",
+        "name": "NLP",
+        "contribution_score": 0.84,
+        "evidence_refs": [
+          "jd_m015"
+        ]
+      },
+      {
+        "skill_id": "skill:python",
+        "name": "Python",
+        "contribution_score": 0.84,
+        "evidence_refs": [
+          "jd_m017"
+        ]
+      },
+      {
+        "skill_id": "skill:大模型微调",
+        "name": "大模型微调",
+        "contribution_score": 0.72,
+        "evidence_refs": [
+          "jd_m009",
+          "jd_m036",
+          "jd_m037",
+          "jd_m038"
+        ]
+      },
+      {
+        "skill_id": "skill:模型部署",
+        "name": "模型部署",
+        "contribution_score": 0.72,
+        "evidence_refs": [
+          "jd_m010",
+          "jd_m011"
+        ]
+      },
+      {
+        "skill_id": "skill:elasticsearch",
+        "name": "Elasticsearch",
+        "contribution_score": 0.64,
+        "evidence_refs": [
+          "jd_m026"
+        ]
+      },
+      {
+        "skill_id": "skill:langchain",
+        "name": "LangChain",
+        "contribution_score": 0.64,
+        "evidence_refs": [
+          "jd_m023"
+        ]
+      },
+      {
+        "skill_id": "skill:milvus",
+        "name": "Milvus",
+        "contribution_score": 0.64,
+        "evidence_refs": [
+          "jd_m025"
+        ]
+      },
+      {
+        "skill_id": "skill:git",
+        "name": "Git",
+        "contribution_score": 0.6,
+        "evidence_refs": [
+          "jd_m032"
+        ]
+      },
+      {
+        "skill_id": "skill:企业服务",
+        "name": "企业服务",
+        "contribution_score": 0.49,
+        "evidence_refs": [
+          "jd_m033",
+          "jd_m034"
+        ]
+      },
+      {
+        "skill_id": "skill:工程化",
+        "name": "工程化",
+        "contribution_score": 0.455,
+        "evidence_refs": [
+          "jd_m012",
+          "jd_m028"
+        ]
+      },
+      {
+        "skill_id": "skill:llamaindex",
+        "name": "LlamaIndex",
+        "contribution_score": 0.28,
+        "evidence_refs": [
+          "jd_m024"
+        ]
+      },
+      {
+        "skill_id": "skill:kubernetes",
+        "name": "Kubernetes",
+        "contribution_score": 0.04,
+        "evidence_refs": [
+          "jd_m040"
+        ]
+      },
+      {
+        "skill_id": "skill:mlops",
+        "name": "MLOps",
+        "contribution_score": 0.04,
+        "evidence_refs": [
+          "jd_m039"
+        ]
+      },
+      {
+        "skill_id": "skill:召回模型",
+        "name": "召回模型",
+        "contribution_score": 0.0,
+        "evidence_refs": [
+          "jd_m006"
+        ]
+      },
+      {
+        "skill_id": "skill:接口开发",
+        "name": "接口开发",
+        "contribution_score": 0.0,
+        "evidence_refs": [
+          "jd_m014"
+        ]
+      },
+      {
+        "skill_id": "skill:沟通协作",
+        "name": "沟通协作",
+        "contribution_score": 0.0,
+        "evidence_refs": [
+          "jd_m013"
+        ]
+      }
+    ],
+    "item_weights": [
+      {
+        "evidence_id": "jd_e001",
+        "weight": 0.012
+      },
+      {
+        "evidence_id": "jd_e002",
+        "weight": 0.328
+      },
+      {
+        "evidence_id": "jd_e003",
+        "weight": 0.284
+      },
+      {
+        "evidence_id": "jd_e004",
+        "weight": 0.168
+      },
+      {
+        "evidence_id": "jd_e005",
+        "weight": 0.033
+      },
+      {
+        "evidence_id": "jd_e006",
+        "weight": 0.09
+      },
+      {
+        "evidence_id": "jd_e007",
+        "weight": 0.091
+      },
+      {
+        "evidence_id": "jd_e008",
+        "weight": 0.067
+      },
+      {
+        "evidence_id": "jd_e009",
+        "weight": 0.035
+      },
+      {
+        "evidence_id": "jd_e010",
+        "weight": 0.011
+      }
+    ],
+    "model_explanation": "规则适配器基于职责/经历关键词重合与技能上下文计算语义分。",
+    "model_metadata": {
+      "model_name": "rule",
+      "version": "demo-v1",
+      "uses_jobformer": false
+    }
+  },
+  "llm_used": false,
+  "llm_status": {
+    "requested": false,
+    "available": false,
+    "message": "LLM was not requested. Using rule-based pipeline."
+  },
+  "llm_explanation": {
+    "llm_used": false,
+    "available": false,
+    "message": "LLM was not requested. Using rule-based pipeline.",
+    "explanation": "候选人与岗位在 大语言模型、BERT、Docker、FastAPI 等核心技能上匹配度较高，项目或工作经历中存在可解释证据；主要缺口为 召回模型、接口开发、沟通协作。",
+    "source": "rule_based"
+  },
+  "path": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/matches/match_jd_1._rag_prompt_2._3._api_1._3_nlp_candidate_a_1d5f8a9864_dc7694ce0d.json"
+}

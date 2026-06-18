@@ -1,0 +1,195 @@
+{
+  "doc_id": "resume_a_pythonpytorchrag_f5c8255e62",
+  "profile_type": "resume",
+  "created_at": "2026-06-18T12:34:11Z",
+  "profile": {
+    "doc_id": "resume_a_pythonpytorchrag_f5c8255e62",
+    "resume_id": "candidate_a_1d5f8a9864",
+    "resume_parse": {
+      "candidate_id": "候选人A",
+      "education": null,
+      "experience_years": 0.0,
+      "target_position": null,
+      "work_experiences": [],
+      "projects": [
+        "使用 Python、PyTorch、RAG 完成知识库问答系统"
+      ],
+      "certificates": [],
+      "domain_experiences": [
+        "知识库问答"
+      ],
+      "raw_skill_mentions": [
+        {
+          "mention_id": "resume_m001",
+          "raw_text": "Python",
+          "source_type": "resume",
+          "source_section": "projects",
+          "evidence_text": "使用 Python、PyTorch、RAG 完成知识库问答系统",
+          "evidence_id": "resume_e001",
+          "position": 3,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "resume_m002",
+          "raw_text": "PyTorch",
+          "source_type": "resume",
+          "source_section": "projects",
+          "evidence_text": "使用 Python、PyTorch、RAG 完成知识库问答系统",
+          "evidence_id": "resume_e001",
+          "position": 10,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "resume_m003",
+          "raw_text": "RAG",
+          "source_type": "resume",
+          "source_section": "projects",
+          "evidence_text": "使用 Python、PyTorch、RAG 完成知识库问答系统",
+          "evidence_id": "resume_e001",
+          "position": 18,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "resume_m004",
+          "raw_text": "知识库问答",
+          "source_type": "resume",
+          "source_section": "projects",
+          "evidence_text": "使用 Python、PyTorch、RAG 完成知识库问答系统",
+          "evidence_id": "resume_e001",
+          "position": 24,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "resume_m005",
+          "raw_text": "问答系统",
+          "source_type": "resume",
+          "source_section": "projects",
+          "evidence_text": "使用 Python、PyTorch、RAG 完成知识库问答系统",
+          "evidence_id": "resume_e001",
+          "position": 27,
+          "confidence": 0.88
+        }
+      ],
+      "evidence_items": [
+        {
+          "evidence_id": "resume_e001",
+          "source_type": "resume",
+          "section": "projects",
+          "text": "使用 Python、PyTorch、RAG 完成知识库问答系统",
+          "position": 0
+        }
+      ],
+      "parse_warnings": []
+    },
+    "resume_profile": {
+      "profile_id": "resume:primary",
+      "profile_type": "resume",
+      "skills": [
+        {
+          "skill_id": "skill:pytorch",
+          "name": "PyTorch",
+          "skill_type": "框架工具",
+          "proficiency": 0.75,
+          "confidence": 0.95,
+          "recency": 0.8,
+          "aliases": [
+            "PyTorch"
+          ],
+          "evidence_refs": [
+            "resume_m002"
+          ],
+          "evidence_texts": [
+            "使用 Python、PyTorch、RAG 完成知识库问答系统"
+          ],
+          "source_sections": [
+            "projects"
+          ]
+        },
+        {
+          "skill_id": "skill:python",
+          "name": "Python",
+          "skill_type": "编程语言",
+          "proficiency": 0.75,
+          "confidence": 0.95,
+          "recency": 0.8,
+          "aliases": [
+            "Python"
+          ],
+          "evidence_refs": [
+            "resume_m001"
+          ],
+          "evidence_texts": [
+            "使用 Python、PyTorch、RAG 完成知识库问答系统"
+          ],
+          "source_sections": [
+            "projects"
+          ]
+        },
+        {
+          "skill_id": "skill:rag",
+          "name": "RAG",
+          "skill_type": "算法能力",
+          "proficiency": 0.75,
+          "confidence": 0.95,
+          "recency": 0.8,
+          "aliases": [
+            "RAG"
+          ],
+          "evidence_refs": [
+            "resume_m003"
+          ],
+          "evidence_texts": [
+            "使用 Python、PyTorch、RAG 完成知识库问答系统"
+          ],
+          "source_sections": [
+            "projects"
+          ]
+        },
+        {
+          "skill_id": "skill:知识库问答",
+          "name": "知识库问答",
+          "skill_type": "业务能力",
+          "proficiency": 0.75,
+          "confidence": 0.95,
+          "recency": 0.8,
+          "aliases": [
+            "知识库问答",
+            "问答系统"
+          ],
+          "evidence_refs": [
+            "resume_m004",
+            "resume_m005"
+          ],
+          "evidence_texts": [
+            "使用 Python、PyTorch、RAG 完成知识库问答系统"
+          ],
+          "source_sections": [
+            "projects"
+          ]
+        }
+      ],
+      "skill_distribution": {
+        "PyTorch": 0.712,
+        "Python": 0.712,
+        "RAG": 0.712,
+        "知识库问答": 0.712
+      },
+      "vector": [
+        0.712,
+        0.712,
+        0.712,
+        0.712
+      ],
+      "metadata": {
+        "candidate_id": "候选人A",
+        "education": null,
+        "experience_years": 0.0,
+        "target_position": null,
+        "domain_experiences": [
+          "知识库问答"
+        ]
+      }
+    }
+  },
+  "path": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/parsed/resume_profiles/resume_a_pythonpytorchrag_f5c8255e62.json"
+}

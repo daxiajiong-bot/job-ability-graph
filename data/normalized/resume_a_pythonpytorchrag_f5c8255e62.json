@@ -1,0 +1,65 @@
+{
+  "doc_id": "resume_a_pythonpytorchrag_f5c8255e62",
+  "source_type": "resume",
+  "created_at": "2026-06-18T12:34:11Z",
+  "normalized_skills": [
+    {
+      "skill_id": "skill:pytorch",
+      "name": "PyTorch",
+      "skill_type": "框架工具",
+      "aliases": [
+        "PyTorch"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "resume_m002"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:python",
+      "name": "Python",
+      "skill_type": "编程语言",
+      "aliases": [
+        "Python"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "resume_m001"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:rag",
+      "name": "RAG",
+      "skill_type": "算法能力",
+      "aliases": [
+        "RAG"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "resume_m003"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:知识库问答",
+      "name": "知识库问答",
+      "skill_type": "业务能力",
+      "aliases": [
+        "知识库问答",
+        "问答系统"
+      ],
+      "relation_type": "alias",
+      "evidence_refs": [
+        "resume_m004",
+        "resume_m005"
+      ],
+      "confidence": 0.915
+    }
+  ],
+  "unmatched_mentions": [],
+  "normalization_logs": [
+    "问答系统 -> 知识库问答"
+  ]
+}
