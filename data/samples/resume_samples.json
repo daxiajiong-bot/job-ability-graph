@@ -1,1 +1,894 @@
+[
+    {
+        "resume_id":  "R0001",
+        "candidate_label":  "匿名候选人001",
+        "source_method":  "public_dataset_style",
+        "source_method_cn":  "公开匿名数据集风格参考",
+        "source_note":  "参考公开匿名简历/职业轨迹数据集的字段结构与职业经历写法，未复制真实个人简历。",
+        "privacy_level":  "anonymous_or_synthetic",
+        "target_job_id":  "40857992907",
+        "target_job_title":  "python自动化测试工程师（双休/福利好）",
+        "target_company_name":  "深圳市汇合发展有限公司",
+        "target_industry":  "咨询服务",
+        "target_location":  "深圳 南山 科技园",
+        "target_url":  "http://www.zhaopin.com/jobdetail/CC160407910J40857992907.htm",
+        "target_skills_norm":  [
+                                   "Python",
+                                   "C/C++",
+                                   "Linux",
+                                   "Windows",
+                                   "Oracle",
+                                   "MySQL",
+                                   "SQLServer",
+                                   "接口自动化测试",
+                                   "UI自动化测试"
+                               ],
+        "match_level":  "high",
+        "match_level_cn":  "高匹配",
+        "expected_match_score":  88.9,
+        "education":  "本科",
+        "experience_years":  4,
+        "current_role":  "python自动化测试工程师",
+        "skills":  [
+                       "Python",
+                       "C/C++",
+                       "Linux",
+                       "Windows",
+                       "Oracle",
+                       "MySQL",
+                       "SQLServer",
+                       "接口自动化测试",
+                       "Git",
+                       "SQL"
+                   ],
+        "matched_skills_seed":  [
+                                    "Python",
+                                    "C/C++",
+                                    "Linux",
+                                    "Windows",
+                                    "Oracle",
+                                    "MySQL",
+                                    "SQLServer",
+                                    "接口自动化测试"
+                                ],
+        "missing_skills_seed":  [
+                                    "UI自动化测试"
+                                ],
+        "projects":  [
+                         {
+                             "name":  "匿名项目A-python自动化测试工程师",
+                             "role":  "核心成员",
+                             "skills":  [
+                                            "Python",
+                                            "C/C++",
+                                            "Linux",
+                                            "Windows"
+                                        ],
+                             "description":  "围绕目标岗位 python自动化测试工程师（双休/福利好） 的核心能力，完成需求拆解、功能实现、测试验证和文档沉淀。"
+                         },
+                         {
+                             "name":  "企业内部效率工具改造",
+                             "role":  "参与成员",
+                             "skills":  [
+                                            "C/C++",
+                                            "Linux",
+                                            "Windows",
+                                            "Oracle"
+                                        ],
+                             "description":  "参与业务流程梳理、脚本/工具开发、数据处理和问题定位，提升团队交付效率。"
+                         }
+                     ],
+        "work_experience":  [
+                                {
+                                    "company":  "匿名科技公司A",
+                                    "role":  "python自动化测试工程师",
+                                    "years":  4,
+                                    "description":  "负责与 咨询服务 相关的研发/测试/数据处理工作，主要使用 Python、C/C++、Linux、Windows、Oracle、MySQL、SQLServer、接口自动化测试、Git、SQL。"
+                                }
+                            ],
+        "resume_text":  "候选人编号：R0001。教育背景：本科。工作经验：4 年。目标岗位：python自动化测试工程师（双休/福利好）。核心技能：Python、C/C++、Linux、Windows、Oracle、MySQL、SQLServer、接口自动化测试、Git、SQL。项目经历：参与 python自动化测试工程师 相关项目，围绕 Python、C/C++、Linux、Windows、Oracle、MySQL、SQLServer、接口自动化测试、UI自动化测试 完成需求分析、开发测试、问题定位与交付文档整理。该样例为匿名/合成简历，不包含真实个人身份信息。",
+        "created_at":  "2026-06-18T10:42:49Z"
+    },
+    {
+        "resume_id":  "R0002",
+        "candidate_label":  "匿名候选人002",
+        "source_method":  "anonymous_template",
+        "source_method_cn":  "人工匿名化样例",
+        "source_note":  "按常见技术简历模板手工匿名化构造，不含姓名、电话、邮箱、学校等个人身份信息。",
+        "privacy_level":  "anonymous_or_synthetic",
+        "target_job_id":  "40735553916",
+        "target_job_title":  "算法工程师（大模型、机器学习/深度学习、Python）",
+        "target_company_name":  "软通动力信息技术(集团)股份有限公司",
+        "target_industry":  "软件/IT服务",
+        "target_location":  "深圳 龙岗",
+        "target_url":  "http://www.zhaopin.com/jobdetail/CC000544460J40735553916.htm",
+        "target_skills_norm":  [
+                                   "深度学习",
+                                   "机器学习",
+                                   "大模型算法",
+                                   "运筹优化",
+                                   "时间序列",
+                                   "PYTHON算法",
+                                   "大模型"
+                               ],
+        "match_level":  "medium",
+        "match_level_cn":  "中匹配",
+        "expected_match_score":  71.4,
+        "education":  "本科",
+        "experience_years":  3,
+        "current_role":  "算法工程师",
+        "skills":  [
+                       "深度学习",
+                       "机器学习",
+                       "大模型算法",
+                       "运筹优化",
+                       "时间序列",
+                       "SQL",
+                       "Linux",
+                       "Excel"
+                   ],
+        "matched_skills_seed":  [
+                                    "深度学习",
+                                    "机器学习",
+                                    "大模型算法",
+                                    "运筹优化",
+                                    "时间序列"
+                                ],
+        "missing_skills_seed":  [
+                                    "PYTHON算法",
+                                    "大模型"
+                                ],
+        "projects":  [
+                         {
+                             "name":  "匿名项目A-算法工程师",
+                             "role":  "核心成员",
+                             "skills":  [
+                                            "深度学习",
+                                            "机器学习",
+                                            "大模型算法",
+                                            "运筹优化"
+                                        ],
+                             "description":  "围绕目标岗位 算法工程师（大模型、机器学习/深度学习、Python） 的核心能力，完成需求拆解、功能实现、测试验证和文档沉淀。"
+                         },
+                         {
+                             "name":  "企业内部效率工具改造",
+                             "role":  "参与成员",
+                             "skills":  [
+                                            "机器学习",
+                                            "大模型算法",
+                                            "运筹优化",
+                                            "时间序列"
+                                        ],
+                             "description":  "参与业务流程梳理、脚本/工具开发、数据处理和问题定位，提升团队交付效率。"
+                         }
+                     ],
+        "work_experience":  [
+                                {
+                                    "company":  "匿名科技公司A",
+                                    "role":  "算法工程师",
+                                    "years":  3,
+                                    "description":  "负责与 软件/IT服务 相关的研发/测试/数据处理工作，主要使用 深度学习、机器学习、大模型算法、运筹优化、时间序列、SQL、Linux、Excel。"
+                                }
+                            ],
+        "resume_text":  "候选人编号：R0002。教育背景：本科。工作经验：3 年。目标岗位：算法工程师（大模型、机器学习/深度学习、Python）。核心技能：深度学习、机器学习、大模型算法、运筹优化、时间序列、SQL、Linux、Excel。项目经历：参与 算法工程师 相关项目，围绕 深度学习、机器学习、大模型算法、运筹优化、时间序列、PYTHON算法、大模型 完成需求分析、开发测试、问题定位与交付文档整理。该样例为匿名/合成简历，不包含真实个人身份信息。",
+        "created_at":  "2026-06-18T10:42:49Z"
+    },
+    {
+        "resume_id":  "R0003",
+        "candidate_label":  "匿名候选人003",
+        "source_method":  "jd_backfilled_synthetic",
+        "source_method_cn":  "JD 反向合成",
+        "source_note":  "根据目标 JD 的岗位名称、经验、学历和技能需求反向生成测试简历。",
+        "privacy_level":  "anonymous_or_synthetic",
+        "target_job_id":  "40933155415",
+        "target_job_title":  "python/c++开发工程师",
+        "target_company_name":  "深圳市凯瑞佳易科技有限公司",
+        "target_industry":  "通信/网络设备",
+        "target_location":  "深圳 福田",
+        "target_url":  "http://www.zhaopin.com/jobdetail/CCL1461615970J40933155415.htm",
+        "target_skills_norm":  [
+                                   "本科"
+                               ],
+        "match_level":  "low",
+        "match_level_cn":  "低匹配",
+        "expected_match_score":  100,
+        "education":  "本科",
+        "experience_years":  2,
+        "current_role":  "python/c++开发工程师",
+        "skills":  [
+                       "本科",
+                       "Linux",
+                       "Excel",
+                       "需求分析",
+                       "文档编写"
+                   ],
+        "matched_skills_seed":  [
+                                    "本科"
+                                ],
+        "missing_skills_seed":  [
 
+                                ],
+        "projects":  [
+                         {
+                             "name":  "匿名项目A-python/c++开发工程师",
+                             "role":  "核心成员",
+                             "skills":  [
+                                            "本科",
+                                            "Linux",
+                                            "Excel",
+                                            "需求分析"
+                                        ],
+                             "description":  "围绕目标岗位 python/c++开发工程师 的核心能力，完成需求拆解、功能实现、测试验证和文档沉淀。"
+                         },
+                         {
+                             "name":  "企业内部效率工具改造",
+                             "role":  "参与成员",
+                             "skills":  [
+                                            "Linux",
+                                            "Excel",
+                                            "需求分析",
+                                            "文档编写"
+                                        ],
+                             "description":  "参与业务流程梳理、脚本/工具开发、数据处理和问题定位，提升团队交付效率。"
+                         }
+                     ],
+        "work_experience":  [
+                                {
+                                    "company":  "匿名科技公司A",
+                                    "role":  "python/c++开发工程师",
+                                    "years":  2,
+                                    "description":  "负责与 通信/网络设备 相关的研发/测试/数据处理工作，主要使用 本科、Linux、Excel、需求分析、文档编写。"
+                                }
+                            ],
+        "resume_text":  "候选人编号：R0003。教育背景：本科。工作经验：2 年。目标岗位：python/c++开发工程师。核心技能：本科、Linux、Excel、需求分析、文档编写。项目经历：参与 python/c++开发工程师 相关项目，围绕 本科 完成需求分析、开发测试、问题定位与交付文档整理。该样例为匿名/合成简历，不包含真实个人身份信息。",
+        "created_at":  "2026-06-18T10:42:49Z"
+    },
+    {
+        "resume_id":  "R0004",
+        "candidate_label":  "匿名候选人004",
+        "source_method":  "public_dataset_style",
+        "source_method_cn":  "公开匿名数据集风格参考",
+        "source_note":  "参考公开匿名简历/职业轨迹数据集的字段结构与职业经历写法，未复制真实个人简历。",
+        "privacy_level":  "anonymous_or_synthetic",
+        "target_job_id":  "40874740405",
+        "target_job_title":  "感知算法测试验证工程师（数据采集、python）",
+        "target_company_name":  "外企德科数字技术有限公司",
+        "target_industry":  "软件/IT服务",
+        "target_location":  "深圳 龙华",
+        "target_url":  "http://www.zhaopin.com/jobdetail/CCL1480117890J40874740405.htm",
+        "target_skills_norm":  [
+                                   "Python",
+                                   "数据采集"
+                               ],
+        "match_level":  "medium",
+        "match_level_cn":  "中匹配",
+        "expected_match_score":  100,
+        "education":  "大专",
+        "experience_years":  3,
+        "current_role":  "感知算法测试验证工程师",
+        "skills":  [
+                       "Python",
+                       "数据采集",
+                       "Excel",
+                       "需求分析"
+                   ],
+        "matched_skills_seed":  [
+                                    "Python",
+                                    "数据采集"
+                                ],
+        "missing_skills_seed":  [
+
+                                ],
+        "projects":  [
+                         {
+                             "name":  "匿名项目A-感知算法测试验证工程师",
+                             "role":  "核心成员",
+                             "skills":  [
+                                            "Python",
+                                            "数据采集",
+                                            "Excel",
+                                            "需求分析"
+                                        ],
+                             "description":  "围绕目标岗位 感知算法测试验证工程师（数据采集、python） 的核心能力，完成需求拆解、功能实现、测试验证和文档沉淀。"
+                         },
+                         {
+                             "name":  "企业内部效率工具改造",
+                             "role":  "参与成员",
+                             "skills":  [
+                                            "数据采集",
+                                            "Excel",
+                                            "需求分析"
+                                        ],
+                             "description":  "参与业务流程梳理、脚本/工具开发、数据处理和问题定位，提升团队交付效率。"
+                         }
+                     ],
+        "work_experience":  [
+                                {
+                                    "company":  "匿名科技公司A",
+                                    "role":  "感知算法测试验证工程师",
+                                    "years":  3,
+                                    "description":  "负责与 软件/IT服务 相关的研发/测试/数据处理工作，主要使用 Python、数据采集、Excel、需求分析。"
+                                }
+                            ],
+        "resume_text":  "候选人编号：R0004。教育背景：大专。工作经验：3 年。目标岗位：感知算法测试验证工程师（数据采集、python）。核心技能：Python、数据采集、Excel、需求分析。项目经历：参与 感知算法测试验证工程师 相关项目，围绕 Python、数据采集 完成需求分析、开发测试、问题定位与交付文档整理。该样例为匿名/合成简历，不包含真实个人身份信息。",
+        "created_at":  "2026-06-18T10:42:49Z"
+    },
+    {
+        "resume_id":  "R0005",
+        "candidate_label":  "匿名候选人005",
+        "source_method":  "anonymous_template",
+        "source_method_cn":  "人工匿名化样例",
+        "source_note":  "按常见技术简历模板手工匿名化构造，不含姓名、电话、邮箱、学校等个人身份信息。",
+        "privacy_level":  "anonymous_or_synthetic",
+        "target_job_id":  "40903521003",
+        "target_job_title":  "软件测试开发工程师（RF框架/Python自动化）",
+        "target_company_name":  "科锐尔人力资源服务(苏州)有限公司",
+        "target_industry":  "人力资源",
+        "target_location":  "深圳 南山",
+        "target_url":  "http://www.zhaopin.com/jobdetail/CC453635220J40903521003.htm",
+        "target_skills_norm":  [
+                                   "Python",
+                                   "RobotFramework"
+                               ],
+        "match_level":  "high",
+        "match_level_cn":  "高匹配",
+        "expected_match_score":  100,
+        "education":  "本科",
+        "experience_years":  4,
+        "current_role":  "软件测试开发工程师",
+        "skills":  [
+                       "Python",
+                       "RobotFramework",
+                       "需求分析",
+                       "文档编写",
+                       "沟通协作"
+                   ],
+        "matched_skills_seed":  [
+                                    "Python",
+                                    "RobotFramework"
+                                ],
+        "missing_skills_seed":  [
+
+                                ],
+        "projects":  [
+                         {
+                             "name":  "匿名项目A-软件测试开发工程师",
+                             "role":  "核心成员",
+                             "skills":  [
+                                            "Python",
+                                            "RobotFramework",
+                                            "需求分析",
+                                            "文档编写"
+                                        ],
+                             "description":  "围绕目标岗位 软件测试开发工程师（RF框架/Python自动化） 的核心能力，完成需求拆解、功能实现、测试验证和文档沉淀。"
+                         },
+                         {
+                             "name":  "企业内部效率工具改造",
+                             "role":  "参与成员",
+                             "skills":  [
+                                            "RobotFramework",
+                                            "需求分析",
+                                            "文档编写",
+                                            "沟通协作"
+                                        ],
+                             "description":  "参与业务流程梳理、脚本/工具开发、数据处理和问题定位，提升团队交付效率。"
+                         }
+                     ],
+        "work_experience":  [
+                                {
+                                    "company":  "匿名科技公司A",
+                                    "role":  "软件测试开发工程师",
+                                    "years":  4,
+                                    "description":  "负责与 人力资源 相关的研发/测试/数据处理工作，主要使用 Python、RobotFramework、需求分析、文档编写、沟通协作。"
+                                }
+                            ],
+        "resume_text":  "候选人编号：R0005。教育背景：本科。工作经验：4 年。目标岗位：软件测试开发工程师（RF框架/Python自动化）。核心技能：Python、RobotFramework、需求分析、文档编写、沟通协作。项目经历：参与 软件测试开发工程师 相关项目，围绕 Python、RobotFramework 完成需求分析、开发测试、问题定位与交付文档整理。该样例为匿名/合成简历，不包含真实个人身份信息。",
+        "created_at":  "2026-06-18T10:42:49Z"
+    },
+    {
+        "resume_id":  "R0006",
+        "candidate_label":  "匿名候选人006",
+        "source_method":  "jd_backfilled_synthetic",
+        "source_method_cn":  "JD 反向合成",
+        "source_note":  "根据目标 JD 的岗位名称、经验、学历和技能需求反向生成测试简历。",
+        "privacy_level":  "anonymous_or_synthetic",
+        "target_job_id":  "40945011215",
+        "target_job_title":  "Python开发工程师",
+        "target_company_name":  "深圳市凯瑞佳易科技有限公司",
+        "target_industry":  "通信/网络设备",
+        "target_location":  "深圳 龙岗",
+        "target_url":  "http://www.zhaopin.com/jobdetail/CCL1461615970J40945011215.htm",
+        "target_skills_norm":  [
+                                   "本科"
+                               ],
+        "match_level":  "medium",
+        "match_level_cn":  "中匹配",
+        "expected_match_score":  100,
+        "education":  "本科",
+        "experience_years":  1,
+        "current_role":  "Python开发工程师",
+        "skills":  [
+                       "本科",
+                       "文档编写",
+                       "沟通协作",
+                       "单元测试",
+                       "数据分析"
+                   ],
+        "matched_skills_seed":  [
+                                    "本科"
+                                ],
+        "missing_skills_seed":  [
+
+                                ],
+        "projects":  [
+                         {
+                             "name":  "匿名项目A-Python开发工程师",
+                             "role":  "核心成员",
+                             "skills":  [
+                                            "本科",
+                                            "文档编写",
+                                            "沟通协作",
+                                            "单元测试"
+                                        ],
+                             "description":  "围绕目标岗位 Python开发工程师 的核心能力，完成需求拆解、功能实现、测试验证和文档沉淀。"
+                         },
+                         {
+                             "name":  "企业内部效率工具改造",
+                             "role":  "参与成员",
+                             "skills":  [
+                                            "文档编写",
+                                            "沟通协作",
+                                            "单元测试",
+                                            "数据分析"
+                                        ],
+                             "description":  "参与业务流程梳理、脚本/工具开发、数据处理和问题定位，提升团队交付效率。"
+                         }
+                     ],
+        "work_experience":  [
+                                {
+                                    "company":  "匿名科技公司A",
+                                    "role":  "Python开发工程师",
+                                    "years":  1,
+                                    "description":  "负责与 通信/网络设备 相关的研发/测试/数据处理工作，主要使用 本科、文档编写、沟通协作、单元测试、数据分析。"
+                                }
+                            ],
+        "resume_text":  "候选人编号：R0006。教育背景：本科。工作经验：1 年。目标岗位：Python开发工程师。核心技能：本科、文档编写、沟通协作、单元测试、数据分析。项目经历：参与 Python开发工程师 相关项目，围绕 本科 完成需求分析、开发测试、问题定位与交付文档整理。该样例为匿名/合成简历，不包含真实个人身份信息。",
+        "created_at":  "2026-06-18T10:42:49Z"
+    },
+    {
+        "resume_id":  "R0007",
+        "candidate_label":  "匿名候选人007",
+        "source_method":  "public_dataset_style",
+        "source_method_cn":  "公开匿名数据集风格参考",
+        "source_note":  "参考公开匿名简历/职业轨迹数据集的字段结构与职业经历写法，未复制真实个人简历。",
+        "privacy_level":  "anonymous_or_synthetic",
+        "target_job_id":  "40853602005",
+        "target_job_title":  "python开发【Java可投】",
+        "target_company_name":  "外企德科数字技术有限公司",
+        "target_industry":  "软件/IT服务",
+        "target_location":  "深圳 龙华",
+        "target_url":  "http://www.zhaopin.com/jobdetail/CCL1480117890J40853602005.htm",
+        "target_skills_norm":  [
+                                   "Java",
+                                   "Python",
+                                   "蓝桥杯",
+                                   "代码习惯好"
+                               ],
+        "match_level":  "low",
+        "match_level_cn":  "低匹配",
+        "expected_match_score":  50,
+        "education":  "本科",
+        "experience_years":  1,
+        "current_role":  "python开发【Java可投】",
+        "skills":  [
+                       "Java",
+                       "Python",
+                       "沟通协作",
+                       "单元测试"
+                   ],
+        "matched_skills_seed":  [
+                                    "Java",
+                                    "Python"
+                                ],
+        "missing_skills_seed":  [
+                                    "蓝桥杯",
+                                    "代码习惯好"
+                                ],
+        "projects":  [
+                         {
+                             "name":  "匿名项目A-python开发【Java可投】",
+                             "role":  "核心成员",
+                             "skills":  [
+                                            "Java",
+                                            "Python",
+                                            "沟通协作",
+                                            "单元测试"
+                                        ],
+                             "description":  "围绕目标岗位 python开发【Java可投】 的核心能力，完成需求拆解、功能实现、测试验证和文档沉淀。"
+                         },
+                         {
+                             "name":  "企业内部效率工具改造",
+                             "role":  "参与成员",
+                             "skills":  [
+                                            "Python",
+                                            "沟通协作",
+                                            "单元测试"
+                                        ],
+                             "description":  "参与业务流程梳理、脚本/工具开发、数据处理和问题定位，提升团队交付效率。"
+                         }
+                     ],
+        "work_experience":  [
+                                {
+                                    "company":  "匿名科技公司A",
+                                    "role":  "python开发【Java可投】",
+                                    "years":  1,
+                                    "description":  "负责与 软件/IT服务 相关的研发/测试/数据处理工作，主要使用 Java、Python、沟通协作、单元测试。"
+                                }
+                            ],
+        "resume_text":  "候选人编号：R0007。教育背景：本科。工作经验：1 年。目标岗位：python开发【Java可投】。核心技能：Java、Python、沟通协作、单元测试。项目经历：参与 python开发【Java可投】 相关项目，围绕 Java、Python、蓝桥杯、代码习惯好 完成需求分析、开发测试、问题定位与交付文档整理。该样例为匿名/合成简历，不包含真实个人身份信息。",
+        "created_at":  "2026-06-18T10:42:49Z"
+    },
+    {
+        "resume_id":  "R0008",
+        "candidate_label":  "匿名候选人008",
+        "source_method":  "anonymous_template",
+        "source_method_cn":  "人工匿名化样例",
+        "source_note":  "按常见技术简历模板手工匿名化构造，不含姓名、电话、邮箱、学校等个人身份信息。",
+        "privacy_level":  "anonymous_or_synthetic",
+        "target_job_id":  "40491067716",
+        "target_job_title":  "Python开发",
+        "target_company_name":  "软通动力信息技术(集团)股份有限公司",
+        "target_industry":  "软件/IT服务",
+        "target_location":  "深圳 龙岗",
+        "target_url":  "http://www.zhaopin.com/jobdetail/CC000544460J40491067716.htm",
+        "target_skills_norm":  [
+                                   "Django",
+                                   "Flask"
+                               ],
+        "match_level":  "medium",
+        "match_level_cn":  "中匹配",
+        "expected_match_score":  100,
+        "education":  "本科",
+        "experience_years":  1,
+        "current_role":  "Python开发",
+        "skills":  [
+                       "Django",
+                       "Flask",
+                       "单元测试",
+                       "数据分析",
+                       "接口测试"
+                   ],
+        "matched_skills_seed":  [
+                                    "Django",
+                                    "Flask"
+                                ],
+        "missing_skills_seed":  [
+
+                                ],
+        "projects":  [
+                         {
+                             "name":  "匿名项目A-Python开发",
+                             "role":  "核心成员",
+                             "skills":  [
+                                            "Django",
+                                            "Flask",
+                                            "单元测试",
+                                            "数据分析"
+                                        ],
+                             "description":  "围绕目标岗位 Python开发 的核心能力，完成需求拆解、功能实现、测试验证和文档沉淀。"
+                         },
+                         {
+                             "name":  "企业内部效率工具改造",
+                             "role":  "参与成员",
+                             "skills":  [
+                                            "Flask",
+                                            "单元测试",
+                                            "数据分析",
+                                            "接口测试"
+                                        ],
+                             "description":  "参与业务流程梳理、脚本/工具开发、数据处理和问题定位，提升团队交付效率。"
+                         }
+                     ],
+        "work_experience":  [
+                                {
+                                    "company":  "匿名科技公司A",
+                                    "role":  "Python开发",
+                                    "years":  1,
+                                    "description":  "负责与 软件/IT服务 相关的研发/测试/数据处理工作，主要使用 Django、Flask、单元测试、数据分析、接口测试。"
+                                }
+                            ],
+        "resume_text":  "候选人编号：R0008。教育背景：本科。工作经验：1 年。目标岗位：Python开发。核心技能：Django、Flask、单元测试、数据分析、接口测试。项目经历：参与 Python开发 相关项目，围绕 Django、Flask 完成需求分析、开发测试、问题定位与交付文档整理。该样例为匿名/合成简历，不包含真实个人身份信息。",
+        "created_at":  "2026-06-18T10:42:49Z"
+    },
+    {
+        "resume_id":  "R0009",
+        "candidate_label":  "匿名候选人009",
+        "source_method":  "jd_backfilled_synthetic",
+        "source_method_cn":  "JD 反向合成",
+        "source_note":  "根据目标 JD 的岗位名称、经验、学历和技能需求反向生成测试简历。",
+        "privacy_level":  "anonymous_or_synthetic",
+        "target_job_id":  "40895868812",
+        "target_job_title":  "python自动化测试",
+        "target_company_name":  "中软国际",
+        "target_industry":  "软件/IT服务",
+        "target_location":  "深圳 龙岗",
+        "target_url":  "http://www.zhaopin.com/jobdetail/CC508620120J40895868812.htm",
+        "target_skills_norm":  [
+                                   "Python",
+                                   "Java",
+                                   "接口自动化测试",
+                                   "持续集成与部署",
+                                   "测试报告分析"
+                               ],
+        "match_level":  "high",
+        "match_level_cn":  "高匹配",
+        "expected_match_score":  100,
+        "education":  "本科",
+        "experience_years":  4,
+        "current_role":  "python自动化测试",
+        "skills":  [
+                       "Python",
+                       "Java",
+                       "接口自动化测试",
+                       "持续集成与部署",
+                       "测试报告分析",
+                       "数据分析",
+                       "接口测试",
+                       "问题定位",
+                       "版本管理"
+                   ],
+        "matched_skills_seed":  [
+                                    "Python",
+                                    "Java",
+                                    "接口自动化测试",
+                                    "持续集成与部署",
+                                    "测试报告分析"
+                                ],
+        "missing_skills_seed":  [
+
+                                ],
+        "projects":  [
+                         {
+                             "name":  "匿名项目A-python自动化测试",
+                             "role":  "核心成员",
+                             "skills":  [
+                                            "Python",
+                                            "Java",
+                                            "接口自动化测试",
+                                            "持续集成与部署"
+                                        ],
+                             "description":  "围绕目标岗位 python自动化测试 的核心能力，完成需求拆解、功能实现、测试验证和文档沉淀。"
+                         },
+                         {
+                             "name":  "企业内部效率工具改造",
+                             "role":  "参与成员",
+                             "skills":  [
+                                            "Java",
+                                            "接口自动化测试",
+                                            "持续集成与部署",
+                                            "测试报告分析"
+                                        ],
+                             "description":  "参与业务流程梳理、脚本/工具开发、数据处理和问题定位，提升团队交付效率。"
+                         }
+                     ],
+        "work_experience":  [
+                                {
+                                    "company":  "匿名科技公司A",
+                                    "role":  "python自动化测试",
+                                    "years":  4,
+                                    "description":  "负责与 软件/IT服务 相关的研发/测试/数据处理工作，主要使用 Python、Java、接口自动化测试、持续集成与部署、测试报告分析、数据分析、接口测试、问题定位、版本管理。"
+                                }
+                            ],
+        "resume_text":  "候选人编号：R0009。教育背景：本科。工作经验：4 年。目标岗位：python自动化测试。核心技能：Python、Java、接口自动化测试、持续集成与部署、测试报告分析、数据分析、接口测试、问题定位、版本管理。项目经历：参与 python自动化测试 相关项目，围绕 Python、Java、接口自动化测试、持续集成与部署、测试报告分析 完成需求分析、开发测试、问题定位与交付文档整理。该样例为匿名/合成简历，不包含真实个人身份信息。",
+        "created_at":  "2026-06-18T10:42:49Z"
+    },
+    {
+        "resume_id":  "R0010",
+        "candidate_label":  "匿名候选人010",
+        "source_method":  "public_dataset_style",
+        "source_method_cn":  "公开匿名数据集风格参考",
+        "source_note":  "参考公开匿名简历/职业轨迹数据集的字段结构与职业经历写法，未复制真实个人简历。",
+        "privacy_level":  "anonymous_or_synthetic",
+        "target_job_id":  "40866497505",
+        "target_job_title":  "C/C++/JAVA/Python/大数据/AI/开发/测试（一二线城市均有岗位需求）",
+        "target_company_name":  "外企德科数字技术有限公司",
+        "target_industry":  "软件/IT服务",
+        "target_location":  "深圳 龙岗",
+        "target_url":  "http://www.zhaopin.com/jobdetail/CCL1480117890J40866497505.htm",
+        "target_skills_norm":  [
+                                   "C++",
+                                   "Python",
+                                   "C#"
+                               ],
+        "match_level":  "medium",
+        "match_level_cn":  "中匹配",
+        "expected_match_score":  66.7,
+        "education":  "本科",
+        "experience_years":  1,
+        "current_role":  "C/C++/JAVA/Python/大数据/",
+        "skills":  [
+                       "C++",
+                       "Python",
+                       "接口测试",
+                       "问题定位"
+                   ],
+        "matched_skills_seed":  [
+                                    "C++",
+                                    "Python"
+                                ],
+        "missing_skills_seed":  [
+                                    "C#"
+                                ],
+        "projects":  [
+                         {
+                             "name":  "匿名项目A-C/C++/JAVA/Python/大数据/",
+                             "role":  "核心成员",
+                             "skills":  [
+                                            "C++",
+                                            "Python",
+                                            "接口测试",
+                                            "问题定位"
+                                        ],
+                             "description":  "围绕目标岗位 C/C++/JAVA/Python/大数据/AI/开发/测试（一二线城市均有岗位需求） 的核心能力，完成需求拆解、功能实现、测试验证和文档沉淀。"
+                         },
+                         {
+                             "name":  "企业内部效率工具改造",
+                             "role":  "参与成员",
+                             "skills":  [
+                                            "Python",
+                                            "接口测试",
+                                            "问题定位"
+                                        ],
+                             "description":  "参与业务流程梳理、脚本/工具开发、数据处理和问题定位，提升团队交付效率。"
+                         }
+                     ],
+        "work_experience":  [
+                                {
+                                    "company":  "匿名科技公司A",
+                                    "role":  "C/C++/JAVA/Python/大数据/",
+                                    "years":  1,
+                                    "description":  "负责与 软件/IT服务 相关的研发/测试/数据处理工作，主要使用 C++、Python、接口测试、问题定位。"
+                                }
+                            ],
+        "resume_text":  "候选人编号：R0010。教育背景：本科。工作经验：1 年。目标岗位：C/C++/JAVA/Python/大数据/AI/开发/测试（一二线城市均有岗位需求）。核心技能：C++、Python、接口测试、问题定位。项目经历：参与 C/C++/JAVA/Python/大数据/ 相关项目，围绕 C++、Python、C# 完成需求分析、开发测试、问题定位与交付文档整理。该样例为匿名/合成简历，不包含真实个人身份信息。",
+        "created_at":  "2026-06-18T10:42:49Z"
+    },
+    {
+        "resume_id":  "R0011",
+        "candidate_label":  "匿名候选人011",
+        "source_method":  "anonymous_template",
+        "source_method_cn":  "人工匿名化样例",
+        "source_note":  "按常见技术简历模板手工匿名化构造，不含姓名、电话、邮箱、学校等个人身份信息。",
+        "privacy_level":  "anonymous_or_synthetic",
+        "target_job_id":  "40833770810",
+        "target_job_title":  "python开发工程师/python爬虫方向",
+        "target_company_name":  "深圳市猎芯科技有限公司",
+        "target_industry":  "半导体/芯片",
+        "target_location":  "深圳 龙岗",
+        "target_url":  "http://www.zhaopin.com/jobdetail/CC347226980J40833770810.htm",
+        "target_skills_norm":  [
+                                   "数据采集"
+                               ],
+        "match_level":  "low",
+        "match_level_cn":  "低匹配",
+        "expected_match_score":  100,
+        "education":  "本科",
+        "experience_years":  2,
+        "current_role":  "python开发工程师/python爬虫方向",
+        "skills":  [
+                       "数据采集",
+                       "问题定位",
+                       "版本管理",
+                       "系统设计"
+                   ],
+        "matched_skills_seed":  [
+                                    "数据采集"
+                                ],
+        "missing_skills_seed":  [
+
+                                ],
+        "projects":  [
+                         {
+                             "name":  "匿名项目A-python开发工程师/python爬虫方向",
+                             "role":  "核心成员",
+                             "skills":  [
+                                            "数据采集",
+                                            "问题定位",
+                                            "版本管理",
+                                            "系统设计"
+                                        ],
+                             "description":  "围绕目标岗位 python开发工程师/python爬虫方向 的核心能力，完成需求拆解、功能实现、测试验证和文档沉淀。"
+                         },
+                         {
+                             "name":  "企业内部效率工具改造",
+                             "role":  "参与成员",
+                             "skills":  [
+                                            "问题定位",
+                                            "版本管理",
+                                            "系统设计"
+                                        ],
+                             "description":  "参与业务流程梳理、脚本/工具开发、数据处理和问题定位，提升团队交付效率。"
+                         }
+                     ],
+        "work_experience":  [
+                                {
+                                    "company":  "匿名科技公司A",
+                                    "role":  "python开发工程师/python爬虫方向",
+                                    "years":  2,
+                                    "description":  "负责与 半导体/芯片 相关的研发/测试/数据处理工作，主要使用 数据采集、问题定位、版本管理、系统设计。"
+                                }
+                            ],
+        "resume_text":  "候选人编号：R0011。教育背景：本科。工作经验：2 年。目标岗位：python开发工程师/python爬虫方向。核心技能：数据采集、问题定位、版本管理、系统设计。项目经历：参与 python开发工程师/python爬虫方向 相关项目，围绕 数据采集 完成需求分析、开发测试、问题定位与交付文档整理。该样例为匿名/合成简历，不包含真实个人身份信息。",
+        "created_at":  "2026-06-18T10:42:49Z"
+    },
+    {
+        "resume_id":  "R0012",
+        "candidate_label":  "匿名候选人012",
+        "source_method":  "jd_backfilled_synthetic",
+        "source_method_cn":  "JD 反向合成",
+        "source_note":  "根据目标 JD 的岗位名称、经验、学历和技能需求反向生成测试简历。",
+        "privacy_level":  "anonymous_or_synthetic",
+        "target_job_id":  "40933154315",
+        "target_job_title":  "软件开发-Python",
+        "target_company_name":  "深圳市凯瑞佳易科技有限公司",
+        "target_industry":  "通信/网络设备",
+        "target_location":  "深圳 福田",
+        "target_url":  "http://www.zhaopin.com/jobdetail/CCL1461615970J40933154315.htm",
+        "target_skills_norm":  [
+                                   "本科"
+                               ],
+        "match_level":  "medium",
+        "match_level_cn":  "中匹配",
+        "expected_match_score":  100,
+        "education":  "本科",
+        "experience_years":  3,
+        "current_role":  "软件开发-Python",
+        "skills":  [
+                       "本科",
+                       "版本管理",
+                       "系统设计",
+                       "数据清洗",
+                       "API 调试"
+                   ],
+        "matched_skills_seed":  [
+                                    "本科"
+                                ],
+        "missing_skills_seed":  [
+
+                                ],
+        "projects":  [
+                         {
+                             "name":  "匿名项目A-软件开发-Python",
+                             "role":  "核心成员",
+                             "skills":  [
+                                            "本科",
+                                            "版本管理",
+                                            "系统设计",
+                                            "数据清洗"
+                                        ],
+                             "description":  "围绕目标岗位 软件开发-Python 的核心能力，完成需求拆解、功能实现、测试验证和文档沉淀。"
+                         },
+                         {
+                             "name":  "企业内部效率工具改造",
+                             "role":  "参与成员",
+                             "skills":  [
+                                            "版本管理",
+                                            "系统设计",
+                                            "数据清洗",
+                                            "API 调试"
+                                        ],
+                             "description":  "参与业务流程梳理、脚本/工具开发、数据处理和问题定位，提升团队交付效率。"
+                         }
+                     ],
+        "work_experience":  [
+                                {
+                                    "company":  "匿名科技公司A",
+                                    "role":  "软件开发-Python",
+                                    "years":  3,
+                                    "description":  "负责与 通信/网络设备 相关的研发/测试/数据处理工作，主要使用 本科、版本管理、系统设计、数据清洗、API 调试。"
+                                }
+                            ],
+        "resume_text":  "候选人编号：R0012。教育背景：本科。工作经验：3 年。目标岗位：软件开发-Python。核心技能：本科、版本管理、系统设计、数据清洗、API 调试。项目经历：参与 软件开发-Python 相关项目，围绕 本科 完成需求分析、开发测试、问题定位与交付文档整理。该样例为匿名/合成简历，不包含真实个人身份信息。",
+        "created_at":  "2026-06-18T10:42:49Z"
+    }
+]

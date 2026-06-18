@@ -1,0 +1,41 @@
+{
+    "total_resumes":  100,
+    "mapped_jd_count":  100,
+    "jd_source_file":  "data/outputs/jd_raw.csv",
+    "output_files":  [
+                         "data/outputs/resume_raw.jsonl",
+                         "data/outputs/resume_raw.csv",
+                         "data/outputs/resume_raw_summary.json",
+                         "data/samples/resume_samples.json",
+                         "data/samples/resume_data_source_plan.md"
+                     ],
+    "source_method_counts":  {
+                                 "public_dataset_style":  34,
+                                 "anonymous_template":  33,
+                                 "jd_backfilled_synthetic":  33
+                             },
+    "match_level_counts":  {
+                               "high":  25,
+                               "medium":  50,
+                               "low":  25
+                           },
+    "privacy_policy":  "不爬取真实个人简历；公开数据集仅作字段结构/职业轨迹参考；落地数据为匿名化样例和合成测试简历。",
+    "public_references":  [
+                              {
+                                  "name":  "JobHop: A Large-Scale Dataset of Career Trajectories",
+                                  "url":  "https://arxiv.org/abs/2505.07653",
+                                  "usage":  "参考匿名职业轨迹结构和 ESCO 映射思想"
+                              },
+                              {
+                                  "name":  "Career Path Prediction using Resume Representation Learning and Skill-based Matching",
+                                  "url":  "https://arxiv.org/abs/2310.15636",
+                                  "usage":  "参考匿名职业历史和技能匹配任务设定"
+                              },
+                              {
+                                  "name":  "ESCO ESCOpedia",
+                                  "url":  "https://esco.ec.europa.eu/en/about-esco/escopedia/escopedia",
+                                  "usage":  "参考职业/技能标准化体系"
+                              }
+                          ],
+    "created_at":  "2026-06-18T10:42:49Z"
+}
