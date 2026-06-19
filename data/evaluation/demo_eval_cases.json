@@ -1,0 +1,91 @@
+{
+  "metadata": {
+    "name": "demo_eval_cases",
+    "description": "Small labeled evaluation set for first-stage demo. Extend this file to 100+ JD cases for competition validation.",
+    "target_jd_parse_accuracy": 0.9,
+    "target_resume_parse_accuracy": 0.9,
+    "target_match_accuracy": 0.9
+  },
+  "jd_cases": [
+    {
+      "id": "jd_llm_rag_001",
+      "sample_index": 0,
+      "expected_title": "大模型算法工程师",
+      "expected_category": "算法岗",
+      "expected_min_skills": ["Python", "PyTorch", "RAG", "大语言模型", "模型部署"]
+    },
+    {
+      "id": "jd_recommendation_001",
+      "sample_index": 1,
+      "expected_title": "推荐算法工程师",
+      "expected_category": "算法岗",
+      "expected_min_skills": ["Python", "SQL", "推荐算法", "召回模型", "排序模型"]
+    },
+    {
+      "id": "jd_data_warehouse_001",
+      "sample_index": 2,
+      "expected_title": "数据开发工程师",
+      "expected_category": "数据岗",
+      "expected_min_skills": ["SQL", "Python", "Spark", "Hadoop", "数据仓库"]
+    },
+    {
+      "id": "jd_backend_platform_001",
+      "sample_index": 3,
+      "expected_title": "后端开发工程师",
+      "expected_category": "后端开发岗",
+      "expected_min_skills": ["Java", "Spring Boot", "MySQL", "Redis", "微服务"]
+    }
+  ],
+  "resume_cases": [
+    {
+      "id": "resume_llm_rag_001",
+      "sample_index": 0,
+      "expected_candidate": "候选人A",
+      "expected_education": "硕士",
+      "expected_min_skills": ["Python", "PyTorch", "RAG", "大语言模型", "LangChain"]
+    },
+    {
+      "id": "resume_recommendation_001",
+      "sample_index": 1,
+      "expected_candidate": "候选人B",
+      "expected_education": "本科",
+      "expected_min_skills": ["Python", "SQL", "推荐算法", "召回模型", "排序模型"]
+    },
+    {
+      "id": "resume_data_warehouse_001",
+      "sample_index": 2,
+      "expected_candidate": "候选人C",
+      "expected_education": "本科",
+      "expected_min_skills": ["SQL", "Python", "Spark", "Hadoop", "数据仓库"]
+    },
+    {
+      "id": "resume_backend_platform_001",
+      "sample_index": 3,
+      "expected_candidate": "候选人D",
+      "expected_education": "本科",
+      "expected_min_skills": ["Java", "Spring Boot", "MySQL", "Redis", "微服务"]
+    }
+  ],
+  "match_cases": [
+    {
+      "jd_id": "jd_llm_rag_001",
+      "positive_resume_id": "resume_llm_rag_001",
+      "negative_resume_ids": ["resume_recommendation_001", "resume_data_warehouse_001", "resume_backend_platform_001"]
+    },
+    {
+      "jd_id": "jd_recommendation_001",
+      "positive_resume_id": "resume_recommendation_001",
+      "negative_resume_ids": ["resume_llm_rag_001", "resume_data_warehouse_001", "resume_backend_platform_001"]
+    },
+    {
+      "jd_id": "jd_data_warehouse_001",
+      "positive_resume_id": "resume_data_warehouse_001",
+      "negative_resume_ids": ["resume_llm_rag_001", "resume_recommendation_001", "resume_backend_platform_001"]
+    },
+    {
+      "jd_id": "jd_backend_platform_001",
+      "positive_resume_id": "resume_backend_platform_001",
+      "negative_resume_ids": ["resume_llm_rag_001", "resume_recommendation_001", "resume_data_warehouse_001"]
+    }
+  ]
+}

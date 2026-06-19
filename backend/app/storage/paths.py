@@ -44,23 +44,3 @@ def ensure_data_dirs(extra_dirs: Iterable[Path] = ()) -> None:
 
 
 ensure_data_dirs()
-
-
-def get_normalized_path(text_hash: str, prefix: str = "jd") -> Path:
-    """获取标准化数据的文件路径"""
-    filename = f"{prefix}_{text_hash}.json"
-    return NORMALIZED_DIR / filename
-
-
-def get_match_path(jd_id: str, resume_id: str) -> Path:
-    """获取匹配结果的文件路径"""
-    safe_jd_id = jd_id.replace("/", "_").replace("\\", "_")
-    safe_resume_id = resume_id.replace("/", "_").replace("\\", "_")
-    filename = f"match_{safe_jd_id}_{safe_resume_id}.json"
-    return MATCHES_DIR / filename
-
-
-def get_graph_path(match_id: str) -> Path:
-    """获取图谱数据的文件路径"""
-    filename = f"graph_{match_id}.json"
-    return GRAPH_DIR / filename

@@ -1,3 +1,6 @@
+.DS_Store
+**/.DS_Store
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
@@ -216,3 +219,15 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Demo runtime artifacts
+data/matches/*.json
+data/graph/graph_match_jd_*.json
+
+# Keep core graph snapshots tracked
+!data/graph/graph_full.json
+!data/graph/graph_position_view.json
+!data/graph/graph_tech_stack_view.json
+!data/graph/graph_level_view.json
+!data/graph/graph_match_view.json
+!data/graph/graph_evolution_view.json

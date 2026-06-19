@@ -1,4 +1,4 @@
-﻿"""Public rule-based demo pipeline composed from algorithm modules."""
+"""Public rule-based demo pipeline composed from algorithm modules."""
 
 from __future__ import annotations
 
@@ -57,7 +57,8 @@ class RuleBasedDemoPipeline:
         """Parse a JD and build a reusable job skill profile.
 
         This keeps the JD capability independent from resume matching, which is
-        important for competition tasks such as宀椾綅鑳藉姏鍥捐氨鏋勫缓銆佹棦鏈夊矖浣嶈兘鍔涙洿鏂?        and鏂板矖浣嶅畾涔?
+        important for competition tasks such as岗位能力图谱构建、既有岗位能力更新
+        and新岗位定义.
         """
         jd_parse = self.jd_parser.parse(jd_text)
         jd_normalized = self.normalizer.normalize(jd_parse.raw_skill_mentions)

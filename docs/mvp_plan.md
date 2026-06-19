@@ -1,4 +1,3 @@
-
 # MVP Plan
 
 ## 1. 项目一句话目标
@@ -31,7 +30,6 @@
 6. 真正的大规模动态图谱
 
 ## 4. JD 解析 JSON 格式
-
 {
   "job_title": "大模型算法工程师",
   "education": "硕士",
@@ -42,7 +40,6 @@
 }
 
 ## 5. 简历解析 JSON 格式
-
 {
   "education": "硕士",
   "experience_years": 1,
@@ -56,7 +53,6 @@
 }
 
 ## 6. 匹配结果JSON格式
-
 {
   "match_score": 82.5,
   "matched_skills": ["Python", "PyTorch", "RAG"],

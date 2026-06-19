@@ -1,1 +1,1 @@
-"""Schemas package for API request/response models."""
+"""API schema package."""

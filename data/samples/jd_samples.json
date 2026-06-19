@@ -1,1 +1,38 @@
-
+[
+  {
+    "id": "jd_llm_rag_001",
+    "title": "大模型算法工程师",
+    "category": "算法岗",
+    "domain": ["企业服务", "知识库问答"],
+    "seniority": "3-5年",
+    "expected_match_resumes": ["resume_llm_rag_001"],
+    "text": "岗位名称: 大模型算法工程师\n岗位职责:\n1. 负责企业知识库问答场景的大语言模型应用建设, 包括 RAG 检索增强生成、Prompt 优化和效果评估。\n2. 设计并优化向量召回、排序模型和问答链路, 提升答案准确率、可解释性和稳定性。\n3. 参与模型微调、模型部署和推理服务工程化, 与后端团队协作完成 API 接口开发。\n任职要求:\n1. 本科及以上学历, 计算机、人工智能、软件工程等相关专业, 3 年以上 NLP 或大模型相关经验。\n2. 熟练掌握 Python, 熟悉 PyTorch、Transformer、BERT 或大语言模型训练与推理流程。\n3. 熟悉 LangChain、LlamaIndex、Milvus、Elasticsearch 等 RAG 相关工具者优先。\n4. 具备良好的工程化能力, 熟悉 Docker、FastAPI、Linux 和 Git。\n加分项:\n1. 有企业服务 ToB、知识库问答或智能客服项目落地经验。\n2. 有 LoRA、SFT、模型微调、MLOps 或 Kubernetes 经验优先。"
+  },
+  {
+    "id": "jd_recommendation_001",
+    "title": "推荐算法工程师",
+    "category": "算法岗",
+    "domain": ["电商", "内容推荐"],
+    "seniority": "2-5年",
+    "expected_match_resumes": ["resume_recommendation_001"],
+    "text": "岗位名称: 推荐算法工程师\n岗位职责:\n1. 负责电商和内容推荐场景的召回模型、排序模型和特征工程建设。\n2. 结合用户行为、商品画像和实时反馈数据, 迭代推荐策略并推动 A/B测试。\n3. 与数据开发和后端团队协作, 完成推荐链路的模型训练、离线评估、在线部署和性能优化。\n任职要求:\n1. 本科及以上学历, 2 年以上推荐算法、搜索算法或机器学习相关经验。\n2. 熟练掌握 Python、SQL, 熟悉机器学习、深度学习、召回模型、排序模型。\n3. 熟悉 Spark、Kafka、Redis、TensorFlow 或 PyTorch 中至少两项。\n4. 具备数据分析、特征工程和实验分析能力。\n加分项:\n1. 有电商、信息流、广告或内容推荐业务经验优先。\n2. 熟悉高并发推荐服务、模型优化或工程化落地者优先。"
+  },
+  {
+    "id": "jd_data_warehouse_001",
+    "title": "数据开发工程师",
+    "category": "数据岗",
+    "domain": ["金融", "风控"],
+    "seniority": "3年以上",
+    "expected_match_resumes": ["resume_data_warehouse_001"],
+    "text": "岗位名称: 数据开发工程师\n岗位职责:\n1. 负责金融风控业务的数据仓库建设、ETL 流程开发和数据质量治理。\n2. 设计指标体系和主题数据集市, 支撑 BI 报表、风险监控和数据分析需求。\n3. 优化 Spark、Hadoop、Flink 任务性能, 提升离线和准实时数据链路稳定性。\n任职要求:\n1. 本科及以上学历, 3 年以上数据开发、数据仓库或大数据平台经验。\n2. 熟练掌握 SQL、Python 或 Scala, 熟悉 Spark、Hadoop、Flink、Airflow。\n3. 理解数据治理、数据建模、ETL、数据质量和调度监控体系。\n4. 具备良好的沟通协作、需求分析和文档能力。\n加分项:\n1. 有金融、风控、反欺诈或监管报送数据项目经验优先。\n2. 熟悉 Kafka、ClickHouse、数据血缘或数据安全治理者优先。"
+  },
+  {
+    "id": "jd_backend_platform_001",
+    "title": "后端开发工程师",
+    "category": "后端开发岗",
+    "domain": ["招聘业务", "企业服务"],
+    "seniority": "3-6年",
+    "expected_match_resumes": ["resume_backend_platform_001"],
+    "text": "岗位名称: 后端开发工程师\n岗位职责:\n1. 负责招聘业务和企业服务平台的后端开发, 包括用户、岗位、简历、匹配结果等核心模块。\n2. 设计 RESTful API、微服务和数据访问层, 保障系统高并发、可扩展和可维护。\n3. 参与岗位能力图谱、搜索推荐、消息队列和缓存体系建设。\n任职要求:\n1. 本科及以上学历, 3 年以上 Java 或 Python 后端开发经验。\n2. 熟练掌握 Java、Spring Boot、MySQL、Redis、Kafka, 熟悉 Linux、Git 和 Docker。\n3. 具备系统设计、接口开发、性能优化、分布式系统和微服务实践经验。\n4. 有良好的沟通协作、项目管理和文档能力。\n加分项:\n1. 有招聘业务、人力资源 SaaS、搜索推荐或知识图谱项目经验优先。\n2. 熟悉 Kubernetes、CI/CD、DevOps 或云原生技术者优先。"
+  }
+]

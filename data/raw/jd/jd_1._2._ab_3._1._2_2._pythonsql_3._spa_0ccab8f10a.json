@@ -1,0 +1,13 @@
+{
+  "doc_id": "jd_1._2._ab_3._1._2_2._pythonsql_3._spa_0ccab8f10a",
+  "doc_type": "jd",
+  "created_at": "2026-06-18T12:33:01Z",
+  "raw_text": "岗位名称: 推荐算法工程师\n岗位职责:\n1. 负责电商和内容推荐场景的召回模型、排序模型和特征工程建设。\n2. 结合用户行为、商品画像和实时反馈数据, 迭代推荐策略并推动 A/B测试。\n3. 与数据开发和后端团队协作, 完成推荐链路的模型训练、离线评估、在线部署和性能优化。\n任职要求:\n1. 本科及以上学历, 2 年以上推荐算法、搜索算法或机器学习相关经验。\n2. 熟练掌握 Python、SQL, 熟悉机器学习、深度学习、召回模型、排序模型。\n3. 熟悉 Spark、Kafka、Redis、TensorFlow 或 PyTorch 中至少两项。\n4. 具备数据分析、特征工程和实验分析能力。\n加分项:\n1. 有电商、信息流、广告或内容推荐业务经验优先。\n2. 熟悉高并发推荐服务、模型优化或工程化落地者优先。\n新增要求:\n熟悉 RAG、大语言模型、知识图谱 和 Kubernetes 者优先。",
+  "metadata": {
+    "doc_id": "jd_1._2._ab_3._1._2_2._pythonsql_3._spa_0ccab8f10a",
+    "position_id": "position_position_610d8211c4",
+    "job_title": "推荐算法工程师",
+    "job_category": "算法岗"
+  },
+  "path": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/raw/jd/jd_1._2._ab_3._1._2_2._pythonsql_3._spa_0ccab8f10a.json"
+}
