@@ -115,7 +115,7 @@ class RuleBasedDemoPipeline:
             },
         }
 
-    def run(self, jd_text: str, resume_text: str, use_llm: bool = USE_LLM) -> Dict[str, Any]:
+    def run(self, jd_text: str, resume_text: str, use_llm: bool = USE_LLM, save_artifacts: bool = True) -> Dict[str, Any]:
         jd_parse = self.jd_parser.parse(jd_text)
         resume_parse = self.resume_parser.parse(resume_text)
 
@@ -124,8 +124,8 @@ class RuleBasedDemoPipeline:
 
         job_profile = self.profile_builder.build_job_profile(jd_parse, jd_normalized.normalized_skills)
         resume_profile = self.profile_builder.build_resume_profile(resume_parse, resume_normalized.normalized_skills)
-        jd_artifacts = self._persist_jd(jd_text, jd_parse, jd_normalized, job_profile)
-        resume_artifacts = self._persist_resume(resume_text, resume_parse, resume_normalized, resume_profile)
+        jd_artifacts = self._persist_jd(jd_text, jd_parse, jd_normalized, job_profile, save=save_artifacts)
+        resume_artifacts = self._persist_resume(resume_text, resume_parse, resume_normalized, resume_profile, save=save_artifacts)
 
         model_output = self.model_adapter.predict(
             job_profile=job_profile,
@@ -181,7 +181,8 @@ class RuleBasedDemoPipeline:
             "message": llm_explanation.get("message", "LLM was not requested."),
         }
         match_result_dict["llm_explanation"] = llm_explanation
-        json_store.save_match_result(match_result_dict)
+        if save_artifacts:
+            json_store.save_match_result(match_result_dict)
 
         evidence_items = [*jd_artifacts["evidence_items"], *resume_artifacts["evidence_items"]]
         graph_dict = self.graph_builder.build(
@@ -196,9 +197,10 @@ class RuleBasedDemoPipeline:
         graph_dict["metadata"]["graph_views"] = {}
         graph_views = build_graph_views(graph_dict)
         graph_dict["metadata"]["graph_views"] = {view_type: view["graph_id"] for view_type, view in graph_views.items()}
-        graph_paths = save_graph_bundle(graph_dict, graph_views)
+        graph_paths = save_graph_bundle(graph_dict, graph_views) if save_artifacts else {}
         graph_dict["metadata"]["graph_paths"] = graph_paths
-        json_store.save_evidence_items(evidence_items)
+        if save_artifacts:
+            json_store.save_evidence_items(evidence_items)
 
         return {
             "jd_parse": jd_parse_dict,
@@ -207,58 +209,60 @@ class RuleBasedDemoPipeline:
             "graph": graph_dict,
         }
 
-    def _persist_jd(self, jd_text: str, jd_parse: Any, jd_normalized: Any, job_profile: Any) -> Dict[str, Any]:
+    def _persist_jd(self, jd_text: str, jd_parse: Any, jd_normalized: Any, job_profile: Any, save: bool = True) -> Dict[str, Any]:
         doc_id = make_doc_id("jd", jd_text)
         position_id = make_position_id(jd_parse.job_title)
-        json_store.save_raw_document(
-            "jd",
-            jd_text,
-            {
-                "doc_id": doc_id,
-                "position_id": position_id,
-                "job_title": jd_parse.job_title,
-                "job_category": jd_parse.job_category,
-            },
-        )
-        json_store.save_parsed_profile(
-            "jd",
-            {
-                "doc_id": doc_id,
-                "position_id": position_id,
-                "jd_parse": dataclass_to_dict(jd_parse),
-                "job_profile": dataclass_to_dict(job_profile),
-            },
-        )
-        self._save_normalized("jd", doc_id, jd_normalized)
         evidence_items = self._stable_evidence_items("jd", doc_id, jd_parse.evidence_items)
-        json_store.save_evidence_items(evidence_items)
+        if save:
+            json_store.save_raw_document(
+                "jd",
+                jd_text,
+                {
+                    "doc_id": doc_id,
+                    "position_id": position_id,
+                    "job_title": jd_parse.job_title,
+                    "job_category": jd_parse.job_category,
+                },
+            )
+            json_store.save_parsed_profile(
+                "jd",
+                {
+                    "doc_id": doc_id,
+                    "position_id": position_id,
+                    "jd_parse": dataclass_to_dict(jd_parse),
+                    "job_profile": dataclass_to_dict(job_profile),
+                },
+            )
+            self._save_normalized("jd", doc_id, jd_normalized)
+            json_store.save_evidence_items(evidence_items)
         return {"doc_id": doc_id, "position_id": position_id, "evidence_items": evidence_items}
 
-    def _persist_resume(self, resume_text: str, resume_parse: Any, resume_normalized: Any, resume_profile: Any) -> Dict[str, Any]:
+    def _persist_resume(self, resume_text: str, resume_parse: Any, resume_normalized: Any, resume_profile: Any, save: bool = True) -> Dict[str, Any]:
         doc_id = make_doc_id("resume", resume_text)
         resume_id = make_candidate_id(resume_parse.candidate_id or doc_id)
-        json_store.save_raw_document(
-            "resume",
-            resume_text,
-            {
-                "doc_id": doc_id,
-                "resume_id": resume_id,
-                "candidate_id": resume_parse.candidate_id,
-                "target_position": resume_parse.target_position,
-            },
-        )
-        json_store.save_parsed_profile(
-            "resume",
-            {
-                "doc_id": doc_id,
-                "resume_id": resume_id,
-                "resume_parse": dataclass_to_dict(resume_parse),
-                "resume_profile": dataclass_to_dict(resume_profile),
-            },
-        )
-        self._save_normalized("resume", doc_id, resume_normalized)
         evidence_items = self._stable_evidence_items("resume", doc_id, resume_parse.evidence_items)
-        json_store.save_evidence_items(evidence_items)
+        if save:
+            json_store.save_raw_document(
+                "resume",
+                resume_text,
+                {
+                    "doc_id": doc_id,
+                    "resume_id": resume_id,
+                    "candidate_id": resume_parse.candidate_id,
+                    "target_position": resume_parse.target_position,
+                },
+            )
+            json_store.save_parsed_profile(
+                "resume",
+                {
+                    "doc_id": doc_id,
+                    "resume_id": resume_id,
+                    "resume_parse": dataclass_to_dict(resume_parse),
+                    "resume_profile": dataclass_to_dict(resume_profile),
+                },
+            )
+            self._save_normalized("resume", doc_id, resume_normalized)
+            json_store.save_evidence_items(evidence_items)
         return {"doc_id": doc_id, "resume_id": resume_id, "evidence_items": evidence_items}
 
     def _save_normalized(self, source_type: str, doc_id: str, normalized: Any) -> None:
@@ -314,9 +318,14 @@ class RuleBasedDemoPipeline:
         }
 
 
-def match_jd_resume(jd_text: str, resume_text: str, use_llm: bool = USE_LLM) -> Dict[str, Any]:
+def match_jd_resume(
+    jd_text: str,
+    resume_text: str,
+    use_llm: bool = USE_LLM,
+    save_artifacts: bool = True,
+) -> Dict[str, Any]:
     """Run the first-stage rule-based demo and return JSON-serializable data."""
-    return RuleBasedDemoPipeline().run(jd_text, resume_text, use_llm=use_llm)
+    return RuleBasedDemoPipeline().run(jd_text, resume_text, use_llm=use_llm, save_artifacts=save_artifacts)
 
 
 def parse_jd(jd_text: str, use_llm: bool = USE_LLM) -> Dict[str, Any]:
