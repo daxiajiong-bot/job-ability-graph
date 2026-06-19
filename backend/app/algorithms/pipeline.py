@@ -53,7 +53,7 @@ class RuleBasedDemoPipeline:
         self.gap_analyzer = gap_analyzer or GapAnalyzer()
         self.graph_builder = graph_builder or GraphBuilder()
 
-    def analyze_jd(self, jd_text: str, use_llm: bool = USE_LLM) -> Dict[str, Any]:
+    def analyze_jd(self, jd_text: str, use_llm: bool = USE_LLM, save_artifacts: bool = True) -> Dict[str, Any]:
         """Parse a JD and build a reusable job skill profile.
 
         This keeps the JD capability independent from resume matching, which is
@@ -63,7 +63,7 @@ class RuleBasedDemoPipeline:
         jd_parse = self.jd_parser.parse(jd_text)
         jd_normalized = self.normalizer.normalize(jd_parse.raw_skill_mentions)
         job_profile = self.profile_builder.build_job_profile(jd_parse, jd_normalized.normalized_skills)
-        artifact_refs = self._persist_jd(jd_text, jd_parse, jd_normalized, job_profile)
+        artifact_refs = self._persist_jd(jd_text, jd_parse, jd_normalized, job_profile, save=save_artifacts)
 
         jd_parse_dict = dataclass_to_dict(jd_parse)
         jd_parse_dict["doc_id"] = artifact_refs["doc_id"]
@@ -87,12 +87,12 @@ class RuleBasedDemoPipeline:
             },
         }
 
-    def analyze_resume(self, resume_text: str, use_llm: bool = USE_LLM) -> Dict[str, Any]:
+    def analyze_resume(self, resume_text: str, use_llm: bool = USE_LLM, save_artifacts: bool = True) -> Dict[str, Any]:
         """Parse a resume and build a reusable candidate skill profile."""
         resume_parse = self.resume_parser.parse(resume_text)
         resume_normalized = self.normalizer.normalize(resume_parse.raw_skill_mentions)
         resume_profile = self.profile_builder.build_resume_profile(resume_parse, resume_normalized.normalized_skills)
-        artifact_refs = self._persist_resume(resume_text, resume_parse, resume_normalized, resume_profile)
+        artifact_refs = self._persist_resume(resume_text, resume_parse, resume_normalized, resume_profile, save=save_artifacts)
 
         resume_parse_dict = dataclass_to_dict(resume_parse)
         resume_parse_dict["doc_id"] = artifact_refs["doc_id"]
@@ -328,14 +328,14 @@ def match_jd_resume(
     return RuleBasedDemoPipeline().run(jd_text, resume_text, use_llm=use_llm, save_artifacts=save_artifacts)
 
 
-def parse_jd(jd_text: str, use_llm: bool = USE_LLM) -> Dict[str, Any]:
+def parse_jd(jd_text: str, use_llm: bool = USE_LLM, save_artifacts: bool = True) -> Dict[str, Any]:
     """Parse a JD without requiring a resume."""
-    return RuleBasedDemoPipeline().analyze_jd(jd_text, use_llm=use_llm)
+    return RuleBasedDemoPipeline().analyze_jd(jd_text, use_llm=use_llm, save_artifacts=save_artifacts)
 
 
-def parse_resume(resume_text: str, use_llm: bool = USE_LLM) -> Dict[str, Any]:
+def parse_resume(resume_text: str, use_llm: bool = USE_LLM, save_artifacts: bool = True) -> Dict[str, Any]:
     """Parse a resume without requiring a JD."""
-    return RuleBasedDemoPipeline().analyze_resume(resume_text, use_llm=use_llm)
+    return RuleBasedDemoPipeline().analyze_resume(resume_text, use_llm=use_llm, save_artifacts=save_artifacts)
 
 
 def analyze_match(jd_text: str, resume_text: str, use_llm: bool = USE_LLM) -> Dict[str, Any]:

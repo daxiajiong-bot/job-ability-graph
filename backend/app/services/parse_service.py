@@ -16,7 +16,7 @@ def parse_jd_profile(text: str, use_llm: bool = False, save_artifacts: bool = Tr
         use_llm: 是否使用LLM增强
         save_artifacts: 是否保存中间产物（默认True）
     """
-    return parse_jd(text, use_llm=use_llm)
+    return parse_jd(text, use_llm=use_llm, save_artifacts=save_artifacts)
 
 
 def parse_resume_profile(text: str, use_llm: bool = False, save_artifacts: bool = True) -> Dict[str, Any]:
@@ -28,4 +28,4 @@ def parse_resume_profile(text: str, use_llm: bool = False, save_artifacts: bool 
         use_llm: 是否使用LLM增强
         save_artifacts: 是否保存中间产物（默认True）
     """
-    return parse_resume(text, use_llm=use_llm)
+    return parse_resume(text, use_llm=use_llm, save_artifacts=save_artifacts)
