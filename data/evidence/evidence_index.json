@@ -1,0 +1,52 @@
+{
+  "created_at": "2026-06-18T17:17:43Z",
+  "count": 5,
+  "items": [
+    {
+      "evidence_id": "evidence_jd_3_nlp_python_pytorchtransformerbe_001",
+      "source_doc_id": "jd_3_nlp_python_pytorchtransformerbert_379c784aea",
+      "source_type": "jd",
+      "original_evidence_id": "jd_e001",
+      "section": "job_title",
+      "text": "大模型算法工程师",
+      "position": 0
+    },
+    {
+      "evidence_id": "evidence_jd_3_nlp_python_pytorchtransformerbe_002",
+      "source_doc_id": "jd_3_nlp_python_pytorchtransformerbert_379c784aea",
+      "source_type": "jd",
+      "original_evidence_id": "jd_e002",
+      "section": "requirements",
+      "text": "本科及以上学历, 计算机、人工智能、软件工程等相关专业, 3 年以上 NLP 或大模型相关经验",
+      "position": 1
+    },
+    {
+      "evidence_id": "evidence_jd_3_nlp_python_pytorchtransformerbe_003",
+      "source_doc_id": "jd_3_nlp_python_pytorchtransformerbert_379c784aea",
+      "source_type": "jd",
+      "original_evidence_id": "jd_e003",
+      "section": "requirements",
+      "text": "熟练掌握 Python, 熟悉 PyTorch、Transformer、BERT 或大语言模型训练与推理流程",
+      "position": 2
+    },
+    {
+      "evidence_id": "evidence_jd_3_nlp_python_pytorchtransformerbe_004",
+      "source_doc_id": "jd_3_nlp_python_pytorchtransformerbert_379c784aea",
+      "source_type": "jd",
+      "original_evidence_id": "jd_e004",
+      "section": "requirements",
+      "text": "熟悉 LangChain、LlamaIndex、Milvus、Elasticsearch 等 RAG 相关工具者优先",
+      "position": 3
+    },
+    {
+      "evidence_id": "evidence_jd_3_nlp_python_pytorchtransformerbe_005",
+      "source_doc_id": "jd_3_nlp_python_pytorchtransformerbert_379c784aea",
+      "source_type": "jd",
+      "original_evidence_id": "jd_e005",
+      "section": "requirements",
+      "text": "具备良好的工程化能力, 熟悉 Docker、FastAPI、Linux 和 Git",
+      "position": 4
+    }
+  ],
+  "path": "D:\\JobSystem\\job-ability-graph\\data\\evidence\\evidence_index.json"
+}

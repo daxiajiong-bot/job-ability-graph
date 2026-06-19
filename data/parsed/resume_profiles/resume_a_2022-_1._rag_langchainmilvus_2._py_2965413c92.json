@@ -1,0 +1,449 @@
+{
+  "doc_id": "resume_a_2022-_1._rag_langchainmilvus_2._py_2965413c92",
+  "profile_type": "resume",
+  "created_at": "2026-06-18T16:31:05Z",
+  "profile": {
+    "doc_id": "resume_a_2022-_1._rag_langchainmilvus_2._py_2965413c92",
+    "resume_id": "candidate_a_1d5f8a9864",
+    "resume_parse": {
+      "candidate_id": "候选人A",
+      "education": "硕士",
+      "experience_years": 4.5,
+      "target_position": null,
+      "work_experiences": [
+        "2022-至今 算法工程师",
+        "负责RAG检索增强生成链路, 使用LangChain、Milvus搭建混合检索",
+        "基于PyTorch完成意图识别和排序模型优化"
+      ],
+      "projects": [],
+      "certificates": [],
+      "domain_experiences": [
+        "教育"
+      ],
+      "raw_skill_mentions": [
+        {
+          "mention_id": "resume_m001",
+          "raw_text": "RAG",
+          "source_type": "resume",
+          "source_section": "work_experiences",
+          "evidence_text": "负责RAG检索增强生成链路",
+          "evidence_id": "resume_e003",
+          "position": 4,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "resume_m002",
+          "raw_text": "检索增强生成",
+          "source_type": "resume",
+          "source_section": "work_experiences",
+          "evidence_text": "负责RAG检索增强生成链路",
+          "evidence_id": "resume_e003",
+          "position": 7,
+          "confidence": 0.88
+        },
+        {
+          "mention_id": "resume_m003",
+          "raw_text": "LangChain",
+          "source_type": "resume",
+          "source_section": "work_experiences",
+          "evidence_text": "使用LangChain、Milvus搭建混合检索",
+          "evidence_id": "resume_e003",
+          "position": 19,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "resume_m004",
+          "raw_text": "Milvus",
+          "source_type": "resume",
+          "source_section": "work_experiences",
+          "evidence_text": "使用LangChain、Milvus搭建混合检索",
+          "evidence_id": "resume_e003",
+          "position": 29,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "resume_m005",
+          "raw_text": "PyTorch",
+          "source_type": "resume",
+          "source_section": "work_experiences",
+          "evidence_text": "基于PyTorch完成意图识别和排序模型优化",
+          "evidence_id": "resume_e004",
+          "position": 5,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "resume_m006",
+          "raw_text": "排序模型",
+          "source_type": "resume",
+          "source_section": "work_experiences",
+          "evidence_text": "基于PyTorch完成意图识别和排序模型优化",
+          "evidence_id": "resume_e004",
+          "position": 19,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "resume_m007",
+          "raw_text": "排序",
+          "source_type": "resume",
+          "source_section": "work_experiences",
+          "evidence_text": "基于PyTorch完成意图识别和排序模型优化",
+          "evidence_id": "resume_e004",
+          "position": 19,
+          "confidence": 0.88
+        },
+        {
+          "mention_id": "resume_m008",
+          "raw_text": "模型优化",
+          "source_type": "resume",
+          "source_section": "work_experiences",
+          "evidence_text": "基于PyTorch完成意图识别和排序模型优化",
+          "evidence_id": "resume_e004",
+          "position": 21,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "resume_m009",
+          "raw_text": "Python",
+          "source_type": "resume",
+          "source_section": "skills",
+          "evidence_text": "Python、PyTorch、NLP、RAG、LangChain、Milvus、FastAPI",
+          "evidence_id": "resume_e005",
+          "position": 4,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "resume_m010",
+          "raw_text": "PyTorch",
+          "source_type": "resume",
+          "source_section": "skills",
+          "evidence_text": "Python、PyTorch、NLP、RAG、LangChain、Milvus、FastAPI",
+          "evidence_id": "resume_e005",
+          "position": 11,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "resume_m011",
+          "raw_text": "NLP",
+          "source_type": "resume",
+          "source_section": "skills",
+          "evidence_text": "Python、PyTorch、NLP、RAG、LangChain、Milvus、FastAPI",
+          "evidence_id": "resume_e005",
+          "position": 19,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "resume_m012",
+          "raw_text": "RAG",
+          "source_type": "resume",
+          "source_section": "skills",
+          "evidence_text": "Python、PyTorch、NLP、RAG、LangChain、Milvus、FastAPI",
+          "evidence_id": "resume_e005",
+          "position": 23,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "resume_m013",
+          "raw_text": "LangChain",
+          "source_type": "resume",
+          "source_section": "skills",
+          "evidence_text": "Python、PyTorch、NLP、RAG、LangChain、Milvus、FastAPI",
+          "evidence_id": "resume_e005",
+          "position": 27,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "resume_m014",
+          "raw_text": "Milvus",
+          "source_type": "resume",
+          "source_section": "skills",
+          "evidence_text": "Python、PyTorch、NLP、RAG、LangChain、Milvus、FastAPI",
+          "evidence_id": "resume_e005",
+          "position": 37,
+          "confidence": 0.95
+        },
+        {
+          "mention_id": "resume_m015",
+          "raw_text": "FastAPI",
+          "source_type": "resume",
+          "source_section": "skills",
+          "evidence_text": "Python、PyTorch、NLP、RAG、LangChain、Milvus、FastAPI",
+          "evidence_id": "resume_e005",
+          "position": 44,
+          "confidence": 0.95
+        }
+      ],
+      "evidence_items": [
+        {
+          "evidence_id": "resume_e001",
+          "source_type": "resume",
+          "section": "education",
+          "text": "硕士 计算机科学",
+          "position": 0
+        },
+        {
+          "evidence_id": "resume_e002",
+          "source_type": "resume",
+          "section": "work_experiences",
+          "text": "2022-至今 算法工程师",
+          "position": 1
+        },
+        {
+          "evidence_id": "resume_e003",
+          "source_type": "resume",
+          "section": "work_experiences",
+          "text": "负责RAG检索增强生成链路, 使用LangChain、Milvus搭建混合检索",
+          "position": 2
+        },
+        {
+          "evidence_id": "resume_e004",
+          "source_type": "resume",
+          "section": "work_experiences",
+          "text": "基于PyTorch完成意图识别和排序模型优化",
+          "position": 3
+        },
+        {
+          "evidence_id": "resume_e005",
+          "source_type": "resume",
+          "section": "skills",
+          "text": "Python、PyTorch、NLP、RAG、LangChain、Milvus、FastAPI",
+          "position": 4
+        }
+      ],
+      "parse_warnings": []
+    },
+    "resume_profile": {
+      "profile_id": "resume:primary",
+      "profile_type": "resume",
+      "skills": [
+        {
+          "skill_id": "skill:pytorch",
+          "name": "PyTorch",
+          "skill_type": "框架工具",
+          "proficiency": 1.0,
+          "confidence": 0.95,
+          "recency": 0.8,
+          "aliases": [
+            "PyTorch"
+          ],
+          "evidence_refs": [
+            "resume_m005",
+            "resume_m010"
+          ],
+          "evidence_texts": [
+            "Python、PyTorch、NLP、RAG、LangChain、Milvus、FastAPI",
+            "基于PyTorch完成意图识别和排序模型优化"
+          ],
+          "source_sections": [
+            "skills",
+            "work_experiences"
+          ]
+        },
+        {
+          "skill_id": "skill:排序模型",
+          "name": "排序模型",
+          "skill_type": "算法能力",
+          "proficiency": 1.0,
+          "confidence": 0.95,
+          "recency": 0.8,
+          "aliases": [
+            "排序",
+            "排序模型"
+          ],
+          "evidence_refs": [
+            "resume_m006",
+            "resume_m007"
+          ],
+          "evidence_texts": [
+            "基于PyTorch完成意图识别和排序模型优化"
+          ],
+          "source_sections": [
+            "work_experiences"
+          ]
+        },
+        {
+          "skill_id": "skill:模型优化",
+          "name": "模型优化",
+          "skill_type": "算法能力",
+          "proficiency": 1.0,
+          "confidence": 0.95,
+          "recency": 0.8,
+          "aliases": [
+            "模型优化"
+          ],
+          "evidence_refs": [
+            "resume_m008"
+          ],
+          "evidence_texts": [
+            "基于PyTorch完成意图识别和排序模型优化"
+          ],
+          "source_sections": [
+            "work_experiences"
+          ]
+        },
+        {
+          "skill_id": "skill:langchain",
+          "name": "LangChain",
+          "skill_type": "框架工具",
+          "proficiency": 0.8,
+          "confidence": 0.95,
+          "recency": 0.8,
+          "aliases": [
+            "LangChain"
+          ],
+          "evidence_refs": [
+            "resume_m003",
+            "resume_m013"
+          ],
+          "evidence_texts": [
+            "Python、PyTorch、NLP、RAG、LangChain、Milvus、FastAPI",
+            "使用LangChain、Milvus搭建混合检索"
+          ],
+          "source_sections": [
+            "skills",
+            "work_experiences"
+          ]
+        },
+        {
+          "skill_id": "skill:milvus",
+          "name": "Milvus",
+          "skill_type": "框架工具",
+          "proficiency": 0.8,
+          "confidence": 0.95,
+          "recency": 0.8,
+          "aliases": [
+            "Milvus"
+          ],
+          "evidence_refs": [
+            "resume_m004",
+            "resume_m014"
+          ],
+          "evidence_texts": [
+            "Python、PyTorch、NLP、RAG、LangChain、Milvus、FastAPI",
+            "使用LangChain、Milvus搭建混合检索"
+          ],
+          "source_sections": [
+            "skills",
+            "work_experiences"
+          ]
+        },
+        {
+          "skill_id": "skill:rag",
+          "name": "RAG",
+          "skill_type": "算法能力",
+          "proficiency": 0.8,
+          "confidence": 0.95,
+          "recency": 0.8,
+          "aliases": [
+            "RAG",
+            "检索增强生成"
+          ],
+          "evidence_refs": [
+            "resume_m001",
+            "resume_m002",
+            "resume_m012"
+          ],
+          "evidence_texts": [
+            "Python、PyTorch、NLP、RAG、LangChain、Milvus、FastAPI",
+            "负责RAG检索增强生成链路"
+          ],
+          "source_sections": [
+            "skills",
+            "work_experiences"
+          ]
+        },
+        {
+          "skill_id": "skill:fastapi",
+          "name": "FastAPI",
+          "skill_type": "框架工具",
+          "proficiency": 0.45,
+          "confidence": 0.95,
+          "recency": 0.8,
+          "aliases": [
+            "FastAPI"
+          ],
+          "evidence_refs": [
+            "resume_m015"
+          ],
+          "evidence_texts": [
+            "Python、PyTorch、NLP、RAG、LangChain、Milvus、FastAPI"
+          ],
+          "source_sections": [
+            "skills"
+          ]
+        },
+        {
+          "skill_id": "skill:nlp",
+          "name": "NLP",
+          "skill_type": "算法能力",
+          "proficiency": 0.45,
+          "confidence": 0.95,
+          "recency": 0.8,
+          "aliases": [
+            "NLP"
+          ],
+          "evidence_refs": [
+            "resume_m011"
+          ],
+          "evidence_texts": [
+            "Python、PyTorch、NLP、RAG、LangChain、Milvus、FastAPI"
+          ],
+          "source_sections": [
+            "skills"
+          ]
+        },
+        {
+          "skill_id": "skill:python",
+          "name": "Python",
+          "skill_type": "编程语言",
+          "proficiency": 0.45,
+          "confidence": 0.95,
+          "recency": 0.8,
+          "aliases": [
+            "Python"
+          ],
+          "evidence_refs": [
+            "resume_m009"
+          ],
+          "evidence_texts": [
+            "Python、PyTorch、NLP、RAG、LangChain、Milvus、FastAPI"
+          ],
+          "source_sections": [
+            "skills"
+          ]
+        }
+      ],
+      "skill_distribution": {
+        "FastAPI": 0.428,
+        "LangChain": 0.76,
+        "Milvus": 0.76,
+        "NLP": 0.428,
+        "PyTorch": 0.95,
+        "Python": 0.428,
+        "RAG": 0.76,
+        "排序模型": 0.95,
+        "模型优化": 0.95
+      },
+      "vector": [
+        0.428,
+        0.76,
+        0.76,
+        0.428,
+        0.95,
+        0.428,
+        0.76,
+        0.95,
+        0.95
+      ],
+      "metadata": {
+        "candidate_id": "候选人A",
+        "education": "硕士",
+        "experience_years": 4.5,
+        "target_position": null,
+        "domain_experiences": [
+          "教育"
+        ]
+      }
+    }
+  },
+  "path": "D:\\JobSystem\\job-ability-graph\\data\\parsed\\resume_profiles\\resume_a_2022-_1._rag_langchainmilvus_2._py_2965413c92.json"
+}

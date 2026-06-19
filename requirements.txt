@@ -1,0 +1,48 @@
+<<<<<<< Updated upstream
+requests>=2.31.0
+beautifulsoup4>=4.12.3
+lxml>=5.2.2
+PyYAML>=6.0.2
+pydantic>=2.7.0
+=======
+# ============================================
+# Job Ability Graph - 整合版后端依赖
+# 来源: job-ability-graph (Demo) + JD_py (生产后端)
+# ============================================
+
+# FastAPI 核心框架
+fastapi>=0.109.0,<1.0
+uvicorn[standard]>=0.27.0,<1.0
+python-multipart>=0.0.6
+
+# 数据库相关 (从JD_py迁移)
+sqlalchemy>=2.0.25,<3.0
+mysqlclient>=2.2.1,<3.0
+pydantic-settings>=2.1.0,<3.0
+
+# 数据验证
+pydantic>=2.5.3,<3.0
+
+# 文档处理 (Demo原有)
+pypdf>=4.0,<7.0
+python-docx>=1.1,<2.0
+
+# 算法和数据处理 (从JD_py迁移)
+numpy>=1.26.3,<2.0
+pandas>=2.2.0,<3.0
+scikit-learn>=1.4.0,<2.0
+
+# NLP和文本处理 (从JD_py迁移)
+jieba>=0.42.1,<1.0
+nltk>=3.8.1,<4.0
+
+# API文档
+swagger-ui-bundle>=0.0.9,<1.0
+
+# 日志和监控 (从JD_py迁移)
+loguru>=0.7.2,<1.0
+
+# 测试
+pytest>=7.4.4,<9.0
+httpx>=0.26.0,<1.0
+>>>>>>> Stashed changes

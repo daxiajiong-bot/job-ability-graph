@@ -1,0 +1,13 @@
+{
+  "doc_id": "jd_1._rag_prompt_2._1._3_nlp_2._python_602c8af818",
+  "doc_type": "jd",
+  "created_at": "2026-06-18T16:40:58Z",
+  "raw_text": "岗位名称: 大模型算法工程师\n岗位职责:\n1. 负责企业知识库问答场景的大语言模型应用建设, 包括 RAG 检索增强生成、Prompt 优化和效果评估。\n2. 设计并优化向量召回、排序模型和问答链路, 提升答案准确率、可解释性和稳定性。\n任职要求:\n1. 本科及以上学历, 计算机、人工智能、软件工程等相关专业, 3 年以上 NLP 或大模型相关经验。\n2. 熟练掌握 Python, 熟悉 PyTorch、Transformer、BERT 或大语言模型训练与推理流程。\n3. 熟悉 LangChain、LlamaIndex、Milvus、Elasticsearch 等 RAG 相关工具者优先。",
+  "metadata": {
+    "doc_id": "jd_1._rag_prompt_2._1._3_nlp_2._python_602c8af818",
+    "position_id": "position_position_178ff61c24",
+    "job_title": "大模型算法工程师",
+    "job_category": "算法岗"
+  },
+  "path": "D:\\JobSystem\\job-ability-graph\\data\\raw\\jd\\jd_1._rag_prompt_2._1._3_nlp_2._python_602c8af818.json"
+}

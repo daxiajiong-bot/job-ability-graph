@@ -1,0 +1,13 @@
+{
+  "doc_id": "resume_a_2022-_1._rag_langchainmilvus_2._py_2965413c92",
+  "doc_type": "resume",
+  "created_at": "2026-06-18T16:31:05Z",
+  "raw_text": "姓名: 候选人A\n教育经历: 硕士 计算机科学\n工作经历:\n2022-至今 算法工程师\n1. 负责RAG检索增强生成链路, 使用LangChain、Milvus搭建混合检索\n2. 基于PyTorch完成意图识别和排序模型优化\n专业技能: Python、PyTorch、NLP、RAG、LangChain、Milvus、FastAPI",
+  "metadata": {
+    "doc_id": "resume_a_2022-_1._rag_langchainmilvus_2._py_2965413c92",
+    "resume_id": "candidate_a_1d5f8a9864",
+    "candidate_id": "候选人A",
+    "target_position": null
+  },
+  "path": "D:\\JobSystem\\job-ability-graph\\data\\raw\\resume\\resume_a_2022-_1._rag_langchainmilvus_2._py_2965413c92.json"
+}

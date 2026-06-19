@@ -1,0 +1,559 @@
+{
+  "graph_id": "graph_evolution_view",
+  "version": "demo-v1",
+  "generated_at": "2026-06-18T17:17:43Z",
+  "nodes": [
+    {
+      "id": "position_position_178ff61c24",
+      "label": "大模型算法工程师",
+      "type": "Position",
+      "level": 0,
+      "properties": {
+        "job_category": "算法岗",
+        "education_requirement": "本科",
+        "experience_requirement": 3.0,
+        "domain_requirement": [],
+        "doc_id": "jd_3_nlp_python_pytorchtransformerbert_379c784aea"
+      }
+    },
+    {
+      "id": "version:demo-v1",
+      "label": "demo-v1",
+      "type": "Version",
+      "level": 0,
+      "properties": {
+        "version": "demo-v1",
+        "match_id": "match_jd_3_nlp_python_pytorchtransformerbe_candidate_a_1d5f8a9864_c9bfafdacc"
+      }
+    },
+    {
+      "id": "skill:bert",
+      "label": "BERT",
+      "type": "Skill",
+      "level": 2,
+      "properties": {
+        "skill_type": "算法能力",
+        "aliases": [
+          "BERT"
+        ]
+      }
+    },
+    {
+      "id": "skill:docker",
+      "label": "Docker",
+      "type": "Skill",
+      "level": 2,
+      "properties": {
+        "skill_type": "框架工具",
+        "aliases": [
+          "Docker"
+        ]
+      }
+    },
+    {
+      "id": "skill:elasticsearch",
+      "label": "Elasticsearch",
+      "type": "Skill",
+      "level": 2,
+      "properties": {
+        "skill_type": "框架工具",
+        "aliases": [
+          "Elasticsearch"
+        ]
+      }
+    },
+    {
+      "id": "skill:fastapi",
+      "label": "FastAPI",
+      "type": "Skill",
+      "level": 2,
+      "properties": {
+        "skill_type": "框架工具",
+        "aliases": [
+          "FastAPI"
+        ]
+      }
+    },
+    {
+      "id": "skill:git",
+      "label": "Git",
+      "type": "Skill",
+      "level": 2,
+      "properties": {
+        "skill_type": "框架工具",
+        "aliases": [
+          "Git"
+        ]
+      }
+    },
+    {
+      "id": "skill:langchain",
+      "label": "LangChain",
+      "type": "Skill",
+      "level": 2,
+      "properties": {
+        "skill_type": "框架工具",
+        "aliases": [
+          "LangChain"
+        ]
+      }
+    },
+    {
+      "id": "skill:linux",
+      "label": "Linux",
+      "type": "Skill",
+      "level": 2,
+      "properties": {
+        "skill_type": "框架工具",
+        "aliases": [
+          "Linux"
+        ]
+      }
+    },
+    {
+      "id": "skill:llamaindex",
+      "label": "LlamaIndex",
+      "type": "Skill",
+      "level": 2,
+      "properties": {
+        "skill_type": "框架工具",
+        "aliases": [
+          "LlamaIndex"
+        ]
+      }
+    },
+    {
+      "id": "skill:milvus",
+      "label": "Milvus",
+      "type": "Skill",
+      "level": 2,
+      "properties": {
+        "skill_type": "框架工具",
+        "aliases": [
+          "Milvus"
+        ]
+      }
+    },
+    {
+      "id": "skill:nlp",
+      "label": "NLP",
+      "type": "Skill",
+      "level": 2,
+      "properties": {
+        "skill_type": "算法能力",
+        "aliases": [
+          "NLP"
+        ]
+      }
+    },
+    {
+      "id": "skill:pytorch",
+      "label": "PyTorch",
+      "type": "Skill",
+      "level": 2,
+      "properties": {
+        "skill_type": "框架工具",
+        "aliases": [
+          "PyTorch"
+        ]
+      }
+    },
+    {
+      "id": "skill:python",
+      "label": "Python",
+      "type": "Skill",
+      "level": 2,
+      "properties": {
+        "skill_type": "编程语言",
+        "aliases": [
+          "Python"
+        ]
+      }
+    },
+    {
+      "id": "skill:rag",
+      "label": "RAG",
+      "type": "Skill",
+      "level": 2,
+      "properties": {
+        "skill_type": "算法能力",
+        "aliases": [
+          "RAG"
+        ]
+      }
+    },
+    {
+      "id": "skill:transformer",
+      "label": "Transformer",
+      "type": "Skill",
+      "level": 2,
+      "properties": {
+        "skill_type": "算法能力",
+        "aliases": [
+          "Transformer"
+        ]
+      }
+    },
+    {
+      "id": "skill:大语言模型",
+      "label": "大语言模型",
+      "type": "Skill",
+      "level": 2,
+      "properties": {
+        "skill_type": "算法能力",
+        "aliases": [
+          "大模型",
+          "大语言模型"
+        ]
+      }
+    },
+    {
+      "id": "skill:工程化",
+      "label": "工程化",
+      "type": "Skill",
+      "level": 2,
+      "properties": {
+        "skill_type": "工程能力",
+        "aliases": [
+          "工程化"
+        ]
+      }
+    },
+    {
+      "id": "skill:模型训练",
+      "label": "模型训练",
+      "type": "Skill",
+      "level": 2,
+      "properties": {
+        "skill_type": "算法能力",
+        "aliases": [
+          "模型训练"
+        ]
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "position_position_178ff61c24",
+      "target": "skill:bert",
+      "relation": "rising_in",
+      "weight": 1.2,
+      "properties": {
+        "version_id": "version:demo-v1"
+      }
+    },
+    {
+      "source": "skill:bert",
+      "target": "version:demo-v1",
+      "relation": "rising_in",
+      "weight": 1.2,
+      "properties": {
+        "position_id": "position_position_178ff61c24"
+      }
+    },
+    {
+      "source": "position_position_178ff61c24",
+      "target": "skill:docker",
+      "relation": "rising_in",
+      "weight": 1.2,
+      "properties": {
+        "version_id": "version:demo-v1"
+      }
+    },
+    {
+      "source": "skill:docker",
+      "target": "version:demo-v1",
+      "relation": "rising_in",
+      "weight": 1.2,
+      "properties": {
+        "position_id": "position_position_178ff61c24"
+      }
+    },
+    {
+      "source": "position_position_178ff61c24",
+      "target": "skill:elasticsearch",
+      "relation": "declining_in",
+      "weight": 0.8,
+      "properties": {
+        "version_id": "version:demo-v1"
+      }
+    },
+    {
+      "source": "skill:elasticsearch",
+      "target": "version:demo-v1",
+      "relation": "declining_in",
+      "weight": 0.8,
+      "properties": {
+        "position_id": "position_position_178ff61c24"
+      }
+    },
+    {
+      "source": "position_position_178ff61c24",
+      "target": "skill:fastapi",
+      "relation": "rising_in",
+      "weight": 1.2,
+      "properties": {
+        "version_id": "version:demo-v1"
+      }
+    },
+    {
+      "source": "skill:fastapi",
+      "target": "version:demo-v1",
+      "relation": "rising_in",
+      "weight": 1.2,
+      "properties": {
+        "position_id": "position_position_178ff61c24"
+      }
+    },
+    {
+      "source": "position_position_178ff61c24",
+      "target": "skill:git",
+      "relation": "rising_in",
+      "weight": 1.2,
+      "properties": {
+        "version_id": "version:demo-v1"
+      }
+    },
+    {
+      "source": "skill:git",
+      "target": "version:demo-v1",
+      "relation": "rising_in",
+      "weight": 1.2,
+      "properties": {
+        "position_id": "position_position_178ff61c24"
+      }
+    },
+    {
+      "source": "position_position_178ff61c24",
+      "target": "skill:langchain",
+      "relation": "declining_in",
+      "weight": 0.8,
+      "properties": {
+        "version_id": "version:demo-v1"
+      }
+    },
+    {
+      "source": "skill:langchain",
+      "target": "version:demo-v1",
+      "relation": "declining_in",
+      "weight": 0.8,
+      "properties": {
+        "position_id": "position_position_178ff61c24"
+      }
+    },
+    {
+      "source": "position_position_178ff61c24",
+      "target": "skill:linux",
+      "relation": "rising_in",
+      "weight": 1.2,
+      "properties": {
+        "version_id": "version:demo-v1"
+      }
+    },
+    {
+      "source": "skill:linux",
+      "target": "version:demo-v1",
+      "relation": "rising_in",
+      "weight": 1.2,
+      "properties": {
+        "position_id": "position_position_178ff61c24"
+      }
+    },
+    {
+      "source": "position_position_178ff61c24",
+      "target": "skill:llamaindex",
+      "relation": "declining_in",
+      "weight": 0.8,
+      "properties": {
+        "version_id": "version:demo-v1"
+      }
+    },
+    {
+      "source": "skill:llamaindex",
+      "target": "version:demo-v1",
+      "relation": "declining_in",
+      "weight": 0.8,
+      "properties": {
+        "position_id": "position_position_178ff61c24"
+      }
+    },
+    {
+      "source": "position_position_178ff61c24",
+      "target": "skill:milvus",
+      "relation": "declining_in",
+      "weight": 0.8,
+      "properties": {
+        "version_id": "version:demo-v1"
+      }
+    },
+    {
+      "source": "skill:milvus",
+      "target": "version:demo-v1",
+      "relation": "declining_in",
+      "weight": 0.8,
+      "properties": {
+        "position_id": "position_position_178ff61c24"
+      }
+    },
+    {
+      "source": "position_position_178ff61c24",
+      "target": "skill:nlp",
+      "relation": "rising_in",
+      "weight": 1.2,
+      "properties": {
+        "version_id": "version:demo-v1"
+      }
+    },
+    {
+      "source": "skill:nlp",
+      "target": "version:demo-v1",
+      "relation": "rising_in",
+      "weight": 1.2,
+      "properties": {
+        "position_id": "position_position_178ff61c24"
+      }
+    },
+    {
+      "source": "position_position_178ff61c24",
+      "target": "skill:pytorch",
+      "relation": "rising_in",
+      "weight": 1.2,
+      "properties": {
+        "version_id": "version:demo-v1"
+      }
+    },
+    {
+      "source": "skill:pytorch",
+      "target": "version:demo-v1",
+      "relation": "rising_in",
+      "weight": 1.2,
+      "properties": {
+        "position_id": "position_position_178ff61c24"
+      }
+    },
+    {
+      "source": "position_position_178ff61c24",
+      "target": "skill:python",
+      "relation": "rising_in",
+      "weight": 1.2,
+      "properties": {
+        "version_id": "version:demo-v1"
+      }
+    },
+    {
+      "source": "skill:python",
+      "target": "version:demo-v1",
+      "relation": "rising_in",
+      "weight": 1.2,
+      "properties": {
+        "position_id": "position_position_178ff61c24"
+      }
+    },
+    {
+      "source": "position_position_178ff61c24",
+      "target": "skill:rag",
+      "relation": "declining_in",
+      "weight": 0.8,
+      "properties": {
+        "version_id": "version:demo-v1"
+      }
+    },
+    {
+      "source": "skill:rag",
+      "target": "version:demo-v1",
+      "relation": "declining_in",
+      "weight": 0.8,
+      "properties": {
+        "position_id": "position_position_178ff61c24"
+      }
+    },
+    {
+      "source": "position_position_178ff61c24",
+      "target": "skill:transformer",
+      "relation": "rising_in",
+      "weight": 1.2,
+      "properties": {
+        "version_id": "version:demo-v1"
+      }
+    },
+    {
+      "source": "skill:transformer",
+      "target": "version:demo-v1",
+      "relation": "rising_in",
+      "weight": 1.2,
+      "properties": {
+        "position_id": "position_position_178ff61c24"
+      }
+    },
+    {
+      "source": "position_position_178ff61c24",
+      "target": "skill:大语言模型",
+      "relation": "rising_in",
+      "weight": 1.4,
+      "properties": {
+        "version_id": "version:demo-v1"
+      }
+    },
+    {
+      "source": "skill:大语言模型",
+      "target": "version:demo-v1",
+      "relation": "rising_in",
+      "weight": 1.4,
+      "properties": {
+        "position_id": "position_position_178ff61c24"
+      }
+    },
+    {
+      "source": "position_position_178ff61c24",
+      "target": "skill:工程化",
+      "relation": "rising_in",
+      "weight": 1.2,
+      "properties": {
+        "version_id": "version:demo-v1"
+      }
+    },
+    {
+      "source": "skill:工程化",
+      "target": "version:demo-v1",
+      "relation": "rising_in",
+      "weight": 1.2,
+      "properties": {
+        "position_id": "position_position_178ff61c24"
+      }
+    },
+    {
+      "source": "position_position_178ff61c24",
+      "target": "skill:模型训练",
+      "relation": "rising_in",
+      "weight": 1.2,
+      "properties": {
+        "version_id": "version:demo-v1"
+      }
+    },
+    {
+      "source": "skill:模型训练",
+      "target": "version:demo-v1",
+      "relation": "rising_in",
+      "weight": 1.2,
+      "properties": {
+        "position_id": "position_position_178ff61c24"
+      }
+    }
+  ],
+  "metadata": {
+    "match_id": "match_jd_3_nlp_python_pytorchtransformerbe_candidate_a_1d5f8a9864_c9bfafdacc",
+    "jd_id": "jd_3_nlp_python_pytorchtransformerbert_379c784aea",
+    "resume_id": "candidate_a_1d5f8a9864",
+    "position_id": "position_position_178ff61c24",
+    "candidate_id": "candidate_a_1d5f8a9864",
+    "final_score": 0,
+    "decision": "low_match",
+    "gap_summary": "缺失 12 项技能，优先补齐 大语言模型, BERT, Docker",
+    "node_count": 37,
+    "edge_count": 157,
+    "legacy_graph_id": "graph_match_jd_3_nlp_python_pytorchtransformerbe_candidate_a_1d5f8a9864_c9bfafdacc",
+    "graph_views": {},
+    "view_type": "evolution",
+    "source_graph_id": "graph_full"
+  }
+}

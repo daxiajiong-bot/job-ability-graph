@@ -1,0 +1,543 @@
+{
+  "match_id": "match_jd_3_nlp_python_pytorchtransformerbe_candidate_a_1d5f8a9864_c9bfafdacc",
+  "created_at": "2026-06-18T17:17:43Z",
+  "final_score": 0,
+  "skill_coverage": 0.0,
+  "distribution_similarity": 0.0,
+  "experience_fit": 0.2,
+  "education_fit": 1.0,
+  "domain_fit": 0.8,
+  "semantic_fit": 0.0,
+  "matched_skills": [],
+  "missing_skills": [
+    {
+      "skill_id": "skill:大语言模型",
+      "name": "大语言模型",
+      "jd_weight": 1.4,
+      "priority": "high",
+      "gap_priority": 1.4,
+      "evidence_refs": {
+        "jd": [
+          "jd_m001",
+          "jd_m003",
+          "jd_m008"
+        ]
+      },
+      "evidence_from_jd": [
+        "3 年以上 NLP 或大模型相关经验",
+        "大模型算法工程师"
+      ]
+    },
+    {
+      "skill_id": "skill:bert",
+      "name": "BERT",
+      "jd_weight": 1.2,
+      "priority": "high",
+      "gap_priority": 1.2,
+      "evidence_refs": {
+        "jd": [
+          "jd_m007"
+        ]
+      },
+      "evidence_from_jd": [
+        "熟悉 PyTorch、Transformer、BERT 或大语言模型训练与推理流程"
+      ]
+    },
+    {
+      "skill_id": "skill:docker",
+      "name": "Docker",
+      "jd_weight": 1.2,
+      "priority": "high",
+      "gap_priority": 1.2,
+      "evidence_refs": {
+        "jd": [
+          "jd_m016"
+        ]
+      },
+      "evidence_from_jd": [
+        "熟悉 Docker、FastAPI、Linux 和 Git"
+      ]
+    },
+    {
+      "skill_id": "skill:fastapi",
+      "name": "FastAPI",
+      "jd_weight": 1.2,
+      "priority": "high",
+      "gap_priority": 1.2,
+      "evidence_refs": {
+        "jd": [
+          "jd_m017"
+        ]
+      },
+      "evidence_from_jd": [
+        "熟悉 Docker、FastAPI、Linux 和 Git"
+      ]
+    },
+    {
+      "skill_id": "skill:git",
+      "name": "Git",
+      "jd_weight": 1.2,
+      "priority": "high",
+      "gap_priority": 1.2,
+      "evidence_refs": {
+        "jd": [
+          "jd_m019"
+        ]
+      },
+      "evidence_from_jd": [
+        "熟悉 Docker、FastAPI、Linux 和 Git"
+      ]
+    },
+    {
+      "skill_id": "skill:linux",
+      "name": "Linux",
+      "jd_weight": 1.2,
+      "priority": "high",
+      "gap_priority": 1.2,
+      "evidence_refs": {
+        "jd": [
+          "jd_m018"
+        ]
+      },
+      "evidence_from_jd": [
+        "熟悉 Docker、FastAPI、Linux 和 Git"
+      ]
+    },
+    {
+      "skill_id": "skill:nlp",
+      "name": "NLP",
+      "jd_weight": 1.2,
+      "priority": "high",
+      "gap_priority": 1.2,
+      "evidence_refs": {
+        "jd": [
+          "jd_m002"
+        ]
+      },
+      "evidence_from_jd": [
+        "3 年以上 NLP 或大模型相关经验"
+      ]
+    },
+    {
+      "skill_id": "skill:pytorch",
+      "name": "PyTorch",
+      "jd_weight": 1.2,
+      "priority": "high",
+      "gap_priority": 1.2,
+      "evidence_refs": {
+        "jd": [
+          "jd_m005"
+        ]
+      },
+      "evidence_from_jd": [
+        "熟悉 PyTorch、Transformer、BERT 或大语言模型训练与推理流程"
+      ]
+    },
+    {
+      "skill_id": "skill:python",
+      "name": "Python",
+      "jd_weight": 1.2,
+      "priority": "high",
+      "gap_priority": 1.2,
+      "evidence_refs": {
+        "jd": [
+          "jd_m004"
+        ]
+      },
+      "evidence_from_jd": [
+        "熟练掌握 Python"
+      ]
+    },
+    {
+      "skill_id": "skill:transformer",
+      "name": "Transformer",
+      "jd_weight": 1.2,
+      "priority": "high",
+      "gap_priority": 1.2,
+      "evidence_refs": {
+        "jd": [
+          "jd_m006"
+        ]
+      },
+      "evidence_from_jd": [
+        "熟悉 PyTorch、Transformer、BERT 或大语言模型训练与推理流程"
+      ]
+    },
+    {
+      "skill_id": "skill:工程化",
+      "name": "工程化",
+      "jd_weight": 1.2,
+      "priority": "high",
+      "gap_priority": 1.2,
+      "evidence_refs": {
+        "jd": [
+          "jd_m015"
+        ]
+      },
+      "evidence_from_jd": [
+        "具备良好的工程化能力"
+      ]
+    },
+    {
+      "skill_id": "skill:模型训练",
+      "name": "模型训练",
+      "jd_weight": 1.2,
+      "priority": "high",
+      "gap_priority": 1.2,
+      "evidence_refs": {
+        "jd": [
+          "jd_m009"
+        ]
+      },
+      "evidence_from_jd": [
+        "熟悉 PyTorch、Transformer、BERT 或大语言模型训练与推理流程"
+      ]
+    }
+  ],
+  "insufficient_skills": [],
+  "hard_penalties": [
+    {
+      "reason": "核心必备技能缺失 2 个及以上",
+      "penalty": 20
+    },
+    {
+      "reason": "年限严重不足",
+      "penalty": 15
+    }
+  ],
+  "explanation": "岗位要求集中在 大语言模型、BERT、Docker、FastAPI 等能力，简历当前只体现 暂无核心技能，核心技能覆盖不足，因此匹配度偏低。",
+  "jd_id": "jd_3_nlp_python_pytorchtransformerbert_379c784aea",
+  "resume_id": "candidate_a_1d5f8a9864",
+  "decision": "low_match",
+  "gap_analysis": {
+    "missing_skills": [
+      {
+        "skill_id": "skill:大语言模型",
+        "name": "大语言模型",
+        "priority": "high",
+        "reason": "JD 中权重为 1.4，简历未提供直接或相关证据。",
+        "jd_evidence_refs": [
+          "jd_m001",
+          "jd_m003",
+          "jd_m008"
+        ]
+      },
+      {
+        "skill_id": "skill:bert",
+        "name": "BERT",
+        "priority": "high",
+        "reason": "JD 中权重为 1.2，简历未提供直接或相关证据。",
+        "jd_evidence_refs": [
+          "jd_m007"
+        ]
+      },
+      {
+        "skill_id": "skill:docker",
+        "name": "Docker",
+        "priority": "high",
+        "reason": "JD 中权重为 1.2，简历未提供直接或相关证据。",
+        "jd_evidence_refs": [
+          "jd_m016"
+        ]
+      },
+      {
+        "skill_id": "skill:fastapi",
+        "name": "FastAPI",
+        "priority": "high",
+        "reason": "JD 中权重为 1.2，简历未提供直接或相关证据。",
+        "jd_evidence_refs": [
+          "jd_m017"
+        ]
+      },
+      {
+        "skill_id": "skill:git",
+        "name": "Git",
+        "priority": "high",
+        "reason": "JD 中权重为 1.2，简历未提供直接或相关证据。",
+        "jd_evidence_refs": [
+          "jd_m019"
+        ]
+      },
+      {
+        "skill_id": "skill:linux",
+        "name": "Linux",
+        "priority": "high",
+        "reason": "JD 中权重为 1.2，简历未提供直接或相关证据。",
+        "jd_evidence_refs": [
+          "jd_m018"
+        ]
+      },
+      {
+        "skill_id": "skill:nlp",
+        "name": "NLP",
+        "priority": "high",
+        "reason": "JD 中权重为 1.2，简历未提供直接或相关证据。",
+        "jd_evidence_refs": [
+          "jd_m002"
+        ]
+      },
+      {
+        "skill_id": "skill:pytorch",
+        "name": "PyTorch",
+        "priority": "high",
+        "reason": "JD 中权重为 1.2，简历未提供直接或相关证据。",
+        "jd_evidence_refs": [
+          "jd_m005"
+        ]
+      },
+      {
+        "skill_id": "skill:python",
+        "name": "Python",
+        "priority": "high",
+        "reason": "JD 中权重为 1.2，简历未提供直接或相关证据。",
+        "jd_evidence_refs": [
+          "jd_m004"
+        ]
+      },
+      {
+        "skill_id": "skill:transformer",
+        "name": "Transformer",
+        "priority": "high",
+        "reason": "JD 中权重为 1.2，简历未提供直接或相关证据。",
+        "jd_evidence_refs": [
+          "jd_m006"
+        ]
+      },
+      {
+        "skill_id": "skill:工程化",
+        "name": "工程化",
+        "priority": "high",
+        "reason": "JD 中权重为 1.2，简历未提供直接或相关证据。",
+        "jd_evidence_refs": [
+          "jd_m015"
+        ]
+      },
+      {
+        "skill_id": "skill:模型训练",
+        "name": "模型训练",
+        "priority": "high",
+        "reason": "JD 中权重为 1.2，简历未提供直接或相关证据。",
+        "jd_evidence_refs": [
+          "jd_m009"
+        ]
+      }
+    ],
+    "insufficient_skills": [],
+    "related_only_skills": [],
+    "improvement_suggestions": [
+      {
+        "skill_id": "skill:大语言模型",
+        "suggestion": "补充 大语言模型 的学习、项目或工作证据，优先覆盖 JD 中的核心场景。",
+        "priority": "high"
+      },
+      {
+        "skill_id": "skill:bert",
+        "suggestion": "补充 BERT 的学习、项目或工作证据，优先覆盖 JD 中的核心场景。",
+        "priority": "high"
+      },
+      {
+        "skill_id": "skill:docker",
+        "suggestion": "补充 Docker 的学习、项目或工作证据，优先覆盖 JD 中的核心场景。",
+        "priority": "high"
+      },
+      {
+        "skill_id": "skill:fastapi",
+        "suggestion": "补充 FastAPI 的学习、项目或工作证据，优先覆盖 JD 中的核心场景。",
+        "priority": "high"
+      },
+      {
+        "skill_id": "skill:git",
+        "suggestion": "补充 Git 的学习、项目或工作证据，优先覆盖 JD 中的核心场景。",
+        "priority": "high"
+      }
+    ],
+    "gap_summary": "缺失 12 项技能，优先补齐 大语言模型, BERT, Docker"
+  },
+  "model_output": {
+    "semantic_score": 0.0,
+    "job_embedding": null,
+    "resume_embedding": null,
+    "skill_contributions": [
+      {
+        "skill_id": "skill:大语言模型",
+        "name": "大语言模型",
+        "contribution_score": 0.0,
+        "evidence_refs": [
+          "jd_m001",
+          "jd_m003",
+          "jd_m008"
+        ]
+      },
+      {
+        "skill_id": "skill:bert",
+        "name": "BERT",
+        "contribution_score": 0.0,
+        "evidence_refs": [
+          "jd_m007"
+        ]
+      },
+      {
+        "skill_id": "skill:docker",
+        "name": "Docker",
+        "contribution_score": 0.0,
+        "evidence_refs": [
+          "jd_m016"
+        ]
+      },
+      {
+        "skill_id": "skill:fastapi",
+        "name": "FastAPI",
+        "contribution_score": 0.0,
+        "evidence_refs": [
+          "jd_m017"
+        ]
+      },
+      {
+        "skill_id": "skill:git",
+        "name": "Git",
+        "contribution_score": 0.0,
+        "evidence_refs": [
+          "jd_m019"
+        ]
+      },
+      {
+        "skill_id": "skill:linux",
+        "name": "Linux",
+        "contribution_score": 0.0,
+        "evidence_refs": [
+          "jd_m018"
+        ]
+      },
+      {
+        "skill_id": "skill:nlp",
+        "name": "NLP",
+        "contribution_score": 0.0,
+        "evidence_refs": [
+          "jd_m002"
+        ]
+      },
+      {
+        "skill_id": "skill:pytorch",
+        "name": "PyTorch",
+        "contribution_score": 0.0,
+        "evidence_refs": [
+          "jd_m005"
+        ]
+      },
+      {
+        "skill_id": "skill:python",
+        "name": "Python",
+        "contribution_score": 0.0,
+        "evidence_refs": [
+          "jd_m004"
+        ]
+      },
+      {
+        "skill_id": "skill:transformer",
+        "name": "Transformer",
+        "contribution_score": 0.0,
+        "evidence_refs": [
+          "jd_m006"
+        ]
+      },
+      {
+        "skill_id": "skill:工程化",
+        "name": "工程化",
+        "contribution_score": 0.0,
+        "evidence_refs": [
+          "jd_m015"
+        ]
+      },
+      {
+        "skill_id": "skill:模型训练",
+        "name": "模型训练",
+        "contribution_score": 0.0,
+        "evidence_refs": [
+          "jd_m009"
+        ]
+      },
+      {
+        "skill_id": "skill:elasticsearch",
+        "name": "Elasticsearch",
+        "contribution_score": 0.0,
+        "evidence_refs": [
+          "jd_m013"
+        ]
+      },
+      {
+        "skill_id": "skill:langchain",
+        "name": "LangChain",
+        "contribution_score": 0.0,
+        "evidence_refs": [
+          "jd_m010"
+        ]
+      },
+      {
+        "skill_id": "skill:llamaindex",
+        "name": "LlamaIndex",
+        "contribution_score": 0.0,
+        "evidence_refs": [
+          "jd_m011"
+        ]
+      },
+      {
+        "skill_id": "skill:milvus",
+        "name": "Milvus",
+        "contribution_score": 0.0,
+        "evidence_refs": [
+          "jd_m012"
+        ]
+      },
+      {
+        "skill_id": "skill:rag",
+        "name": "RAG",
+        "contribution_score": 0.0,
+        "evidence_refs": [
+          "jd_m014"
+        ]
+      }
+    ],
+    "item_weights": [
+      {
+        "evidence_id": "jd_e001",
+        "weight": 0.0
+      },
+      {
+        "evidence_id": "jd_e002",
+        "weight": 0.0
+      },
+      {
+        "evidence_id": "jd_e003",
+        "weight": 0.0
+      },
+      {
+        "evidence_id": "jd_e004",
+        "weight": 0.0
+      },
+      {
+        "evidence_id": "jd_e005",
+        "weight": 0.0
+      }
+    ],
+    "model_explanation": "规则适配器基于职责/经历关键词重合与技能上下文计算语义分。",
+    "model_metadata": {
+      "model_name": "rule",
+      "version": "demo-v1",
+      "uses_jobformer": false
+    }
+  },
+  "llm_used": false,
+  "llm_status": {
+    "requested": false,
+    "available": false,
+    "message": "LLM was not requested. Using rule-based pipeline."
+  },
+  "llm_explanation": {
+    "llm_used": false,
+    "available": false,
+    "message": "LLM was not requested. Using rule-based pipeline.",
+    "explanation": "岗位要求集中在 大语言模型、BERT、Docker、FastAPI 等能力，简历当前只体现 暂无核心技能，核心技能覆盖不足，因此匹配度偏低。",
+    "source": "rule_based"
+  },
+  "path": "D:\\JobSystem\\job-ability-graph\\data\\matches\\match_jd_3_nlp_python_pytorchtransformerbe_candidate_a_1d5f8a9864_c9bfafdacc.json"
+}

@@ -1,0 +1,219 @@
+{
+  "doc_id": "jd_1._rag_prompt_2._1._3_nlp_2._python_602c8af818",
+  "source_type": "jd",
+  "created_at": "2026-06-18T16:40:58Z",
+  "normalized_skills": [
+    {
+      "skill_id": "skill:bert",
+      "name": "BERT",
+      "skill_type": "算法能力",
+      "aliases": [
+        "BERT"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "jd_m014"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:elasticsearch",
+      "name": "Elasticsearch",
+      "skill_type": "框架工具",
+      "aliases": [
+        "Elasticsearch"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "jd_m020"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:langchain",
+      "name": "LangChain",
+      "skill_type": "框架工具",
+      "aliases": [
+        "LangChain"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "jd_m017"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:llamaindex",
+      "name": "LlamaIndex",
+      "skill_type": "框架工具",
+      "aliases": [
+        "LlamaIndex"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "jd_m018"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:milvus",
+      "name": "Milvus",
+      "skill_type": "框架工具",
+      "aliases": [
+        "Milvus"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "jd_m019"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:nlp",
+      "name": "NLP",
+      "skill_type": "算法能力",
+      "aliases": [
+        "NLP"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "jd_m009"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:pytorch",
+      "name": "PyTorch",
+      "skill_type": "框架工具",
+      "aliases": [
+        "PyTorch"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "jd_m012"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:python",
+      "name": "Python",
+      "skill_type": "编程语言",
+      "aliases": [
+        "Python"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "jd_m011"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:rag",
+      "name": "RAG",
+      "skill_type": "算法能力",
+      "aliases": [
+        "RAG",
+        "检索增强生成"
+      ],
+      "relation_type": "alias",
+      "evidence_refs": [
+        "jd_m004",
+        "jd_m005",
+        "jd_m021"
+      ],
+      "confidence": 0.927
+    },
+    {
+      "skill_id": "skill:transformer",
+      "name": "Transformer",
+      "skill_type": "算法能力",
+      "aliases": [
+        "Transformer"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "jd_m013"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:召回模型",
+      "name": "召回模型",
+      "skill_type": "算法能力",
+      "aliases": [
+        "召回"
+      ],
+      "relation_type": "alias",
+      "evidence_refs": [
+        "jd_m006"
+      ],
+      "confidence": 0.88
+    },
+    {
+      "skill_id": "skill:大语言模型",
+      "name": "大语言模型",
+      "skill_type": "算法能力",
+      "aliases": [
+        "大模型",
+        "大语言模型"
+      ],
+      "relation_type": "alias",
+      "evidence_refs": [
+        "jd_m001",
+        "jd_m003",
+        "jd_m010",
+        "jd_m015"
+      ],
+      "confidence": 0.915
+    },
+    {
+      "skill_id": "skill:排序模型",
+      "name": "排序模型",
+      "skill_type": "算法能力",
+      "aliases": [
+        "排序",
+        "排序模型"
+      ],
+      "relation_type": "alias",
+      "evidence_refs": [
+        "jd_m007",
+        "jd_m008"
+      ],
+      "confidence": 0.915
+    },
+    {
+      "skill_id": "skill:模型训练",
+      "name": "模型训练",
+      "skill_type": "算法能力",
+      "aliases": [
+        "模型训练"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "jd_m016"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:知识库问答",
+      "name": "知识库问答",
+      "skill_type": "业务能力",
+      "aliases": [
+        "知识库问答"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "jd_m002"
+      ],
+      "confidence": 0.95
+    }
+  ],
+  "unmatched_mentions": [],
+  "normalization_logs": [
+    "大模型 -> 大语言模型",
+    "检索增强生成 -> RAG",
+    "召回 -> 召回模型",
+    "排序 -> 排序模型",
+    "大模型 -> 大语言模型"
+  ]
+}

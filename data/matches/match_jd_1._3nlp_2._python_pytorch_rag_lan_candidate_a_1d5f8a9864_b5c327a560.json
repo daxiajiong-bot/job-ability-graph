@@ -1,0 +1,451 @@
+{
+  "match_id": "match_jd_1._3nlp_2._python_pytorch_rag_lan_candidate_a_1d5f8a9864_b5c327a560",
+  "created_at": "2026-06-18T16:31:05Z",
+  "final_score": 65.46,
+  "skill_coverage": 0.688,
+  "distribution_similarity": 0.514,
+  "experience_fit": 1.0,
+  "education_fit": 1.0,
+  "domain_fit": 0.4,
+  "semantic_fit": 0.0,
+  "matched_skills": [
+    {
+      "skill_id": "skill:langchain",
+      "name": "LangChain",
+      "match_type": "exact",
+      "jd_weight": 1.0,
+      "resume_proficiency": 0.8,
+      "contribution": 1.0,
+      "evidence_refs": {
+        "jd": [
+          "jd_m007"
+        ],
+        "resume": [
+          "resume_m003",
+          "resume_m013"
+        ]
+      },
+      "evidence_from_jd": [
+        "LangChain"
+      ],
+      "evidence_from_resume": [
+        "Python、PyTorch、NLP、RAG、LangChain、Milvus、FastAPI",
+        "使用LangChain、Milvus搭建混合检索"
+      ]
+    },
+    {
+      "skill_id": "skill:pytorch",
+      "name": "PyTorch",
+      "match_type": "exact",
+      "jd_weight": 1.0,
+      "resume_proficiency": 1.0,
+      "contribution": 1.0,
+      "evidence_refs": {
+        "jd": [
+          "jd_m005"
+        ],
+        "resume": [
+          "resume_m005",
+          "resume_m010"
+        ]
+      },
+      "evidence_from_jd": [
+        "PyTorch"
+      ],
+      "evidence_from_resume": [
+        "Python、PyTorch、NLP、RAG、LangChain、Milvus、FastAPI",
+        "基于PyTorch完成意图识别和排序模型优化"
+      ]
+    },
+    {
+      "skill_id": "skill:rag",
+      "name": "RAG",
+      "match_type": "exact",
+      "jd_weight": 1.0,
+      "resume_proficiency": 0.8,
+      "contribution": 1.0,
+      "evidence_refs": {
+        "jd": [
+          "jd_m006"
+        ],
+        "resume": [
+          "resume_m001",
+          "resume_m002",
+          "resume_m012"
+        ]
+      },
+      "evidence_from_jd": [
+        "RAG"
+      ],
+      "evidence_from_resume": [
+        "Python、PyTorch、NLP、RAG、LangChain、Milvus、FastAPI",
+        "负责RAG检索增强生成链路"
+      ]
+    },
+    {
+      "skill_id": "skill:大语言模型",
+      "name": "大语言模型",
+      "match_type": "related",
+      "related_resume_skill": "RAG",
+      "relation_type": "related",
+      "jd_weight": 1.3,
+      "resume_proficiency": 0.8,
+      "contribution": 0.65,
+      "evidence_refs": {
+        "jd": [
+          "jd_m001",
+          "jd_m003"
+        ],
+        "resume": [
+          "resume_m001",
+          "resume_m002",
+          "resume_m012"
+        ]
+      },
+      "evidence_from_jd": [
+        "3年以上NLP或大模型相关经验",
+        "大模型算法工程师"
+      ],
+      "evidence_from_resume": [
+        "Python、PyTorch、NLP、RAG、LangChain、Milvus、FastAPI",
+        "负责RAG检索增强生成链路"
+      ]
+    },
+    {
+      "skill_id": "skill:知识库问答",
+      "name": "知识库问答",
+      "match_type": "related",
+      "related_resume_skill": "RAG",
+      "relation_type": "related",
+      "jd_weight": 1.3,
+      "resume_proficiency": 0.8,
+      "contribution": 0.65,
+      "evidence_refs": {
+        "jd": [
+          "jd_m008",
+          "jd_m009"
+        ],
+        "resume": [
+          "resume_m001",
+          "resume_m002",
+          "resume_m012"
+        ]
+      },
+      "evidence_from_jd": [
+        "熟悉知识库问答系统建设"
+      ],
+      "evidence_from_resume": [
+        "Python、PyTorch、NLP、RAG、LangChain、Milvus、FastAPI",
+        "负责RAG检索增强生成链路"
+      ]
+    },
+    {
+      "skill_id": "skill:nlp",
+      "name": "NLP",
+      "match_type": "exact",
+      "jd_weight": 1.2,
+      "resume_proficiency": 0.45,
+      "contribution": 0.6,
+      "evidence_refs": {
+        "jd": [
+          "jd_m002"
+        ],
+        "resume": [
+          "resume_m011"
+        ]
+      },
+      "evidence_from_jd": [
+        "3年以上NLP或大模型相关经验"
+      ],
+      "evidence_from_resume": [
+        "Python、PyTorch、NLP、RAG、LangChain、Milvus、FastAPI"
+      ]
+    },
+    {
+      "skill_id": "skill:python",
+      "name": "Python",
+      "match_type": "exact",
+      "jd_weight": 1.2,
+      "resume_proficiency": 0.45,
+      "contribution": 0.6,
+      "evidence_refs": {
+        "jd": [
+          "jd_m004"
+        ],
+        "resume": [
+          "resume_m009"
+        ]
+      },
+      "evidence_from_jd": [
+        "熟练掌握Python"
+      ],
+      "evidence_from_resume": [
+        "Python、PyTorch、NLP、RAG、LangChain、Milvus、FastAPI"
+      ]
+    }
+  ],
+  "missing_skills": [],
+  "insufficient_skills": [
+    {
+      "skill_id": "skill:大语言模型",
+      "name": "大语言模型",
+      "required_level": 0.8,
+      "resume_level": 0.8,
+      "jd_weight": 1.3,
+      "gap_type": "related_only",
+      "evidence_refs": {
+        "jd": [
+          "jd_m001",
+          "jd_m003"
+        ],
+        "resume": [
+          "resume_m001",
+          "resume_m002",
+          "resume_m012"
+        ]
+      }
+    },
+    {
+      "skill_id": "skill:知识库问答",
+      "name": "知识库问答",
+      "required_level": 0.8,
+      "resume_level": 0.8,
+      "jd_weight": 1.3,
+      "gap_type": "related_only",
+      "evidence_refs": {
+        "jd": [
+          "jd_m008",
+          "jd_m009"
+        ],
+        "resume": [
+          "resume_m001",
+          "resume_m002",
+          "resume_m012"
+        ]
+      }
+    },
+    {
+      "skill_id": "skill:nlp",
+      "name": "NLP",
+      "required_level": 0.8,
+      "resume_level": 0.45,
+      "jd_weight": 1.2,
+      "gap_type": "insufficient",
+      "evidence_refs": {
+        "jd": [
+          "jd_m002"
+        ],
+        "resume": [
+          "resume_m011"
+        ]
+      }
+    },
+    {
+      "skill_id": "skill:python",
+      "name": "Python",
+      "required_level": 0.8,
+      "resume_level": 0.45,
+      "jd_weight": 1.2,
+      "gap_type": "insufficient",
+      "evidence_refs": {
+        "jd": [
+          "jd_m004"
+        ],
+        "resume": [
+          "resume_m009"
+        ]
+      }
+    }
+  ],
+  "hard_penalties": [],
+  "explanation": "候选人具备部分核心技能，如 LangChain、PyTorch、RAG、大语言模型，其中 大语言模型、知识库问答、NLP 的证据仍需加强；但在 无明显核心缺口 等岗位重点能力上证据不足，因此整体匹配度中等。",
+  "jd_id": "jd_1._3nlp_2._python_pytorch_rag_langch_760e591fc2",
+  "resume_id": "candidate_a_1d5f8a9864",
+  "decision": "partial_match",
+  "gap_analysis": {
+    "missing_skills": [],
+    "insufficient_skills": [
+      {
+        "skill_id": "skill:大语言模型",
+        "name": "大语言模型",
+        "required_level": 0.8,
+        "current_level": 0.8,
+        "reason": "简历有相关证据，但熟练度或技能关系不足以完全满足岗位要求。",
+        "resume_evidence_refs": [
+          "resume_m001",
+          "resume_m002",
+          "resume_m012"
+        ]
+      },
+      {
+        "skill_id": "skill:知识库问答",
+        "name": "知识库问答",
+        "required_level": 0.8,
+        "current_level": 0.8,
+        "reason": "简历有相关证据，但熟练度或技能关系不足以完全满足岗位要求。",
+        "resume_evidence_refs": [
+          "resume_m001",
+          "resume_m002",
+          "resume_m012"
+        ]
+      },
+      {
+        "skill_id": "skill:nlp",
+        "name": "NLP",
+        "required_level": 0.8,
+        "current_level": 0.45,
+        "reason": "简历有相关证据，但熟练度或技能关系不足以完全满足岗位要求。",
+        "resume_evidence_refs": [
+          "resume_m011"
+        ]
+      },
+      {
+        "skill_id": "skill:python",
+        "name": "Python",
+        "required_level": 0.8,
+        "current_level": 0.45,
+        "reason": "简历有相关证据，但熟练度或技能关系不足以完全满足岗位要求。",
+        "resume_evidence_refs": [
+          "resume_m009"
+        ]
+      }
+    ],
+    "related_only_skills": [
+      {
+        "required_skill_id": "skill:大语言模型",
+        "required_skill_name": "大语言模型",
+        "resume_related_skill": "RAG",
+        "relation_type": "related",
+        "reason": "简历具备相关技能，但缺少 JD 技能的直接证据。"
+      },
+      {
+        "required_skill_id": "skill:知识库问答",
+        "required_skill_name": "知识库问答",
+        "resume_related_skill": "RAG",
+        "relation_type": "related",
+        "reason": "简历具备相关技能，但缺少 JD 技能的直接证据。"
+      }
+    ],
+    "improvement_suggestions": [
+      {
+        "skill_id": "skill:大语言模型",
+        "suggestion": "强化 大语言模型 的项目深度描述，例如职责、产出、指标或上线结果。",
+        "priority": "medium"
+      },
+      {
+        "skill_id": "skill:知识库问答",
+        "suggestion": "强化 知识库问答 的项目深度描述，例如职责、产出、指标或上线结果。",
+        "priority": "medium"
+      },
+      {
+        "skill_id": "skill:nlp",
+        "suggestion": "强化 NLP 的项目深度描述，例如职责、产出、指标或上线结果。",
+        "priority": "medium"
+      }
+    ],
+    "gap_summary": "4 项技能证据或熟练度不足；2 项技能仅存在相关能力支撑"
+  },
+  "model_output": {
+    "semantic_score": 0.0,
+    "job_embedding": null,
+    "resume_embedding": null,
+    "skill_contributions": [
+      {
+        "skill_id": "skill:pytorch",
+        "name": "PyTorch",
+        "contribution_score": 1.0,
+        "evidence_refs": [
+          "jd_m005"
+        ]
+      },
+      {
+        "skill_id": "skill:langchain",
+        "name": "LangChain",
+        "contribution_score": 0.8,
+        "evidence_refs": [
+          "jd_m007"
+        ]
+      },
+      {
+        "skill_id": "skill:rag",
+        "name": "RAG",
+        "contribution_score": 0.8,
+        "evidence_refs": [
+          "jd_m006"
+        ]
+      },
+      {
+        "skill_id": "skill:nlp",
+        "name": "NLP",
+        "contribution_score": 0.54,
+        "evidence_refs": [
+          "jd_m002"
+        ]
+      },
+      {
+        "skill_id": "skill:python",
+        "name": "Python",
+        "contribution_score": 0.54,
+        "evidence_refs": [
+          "jd_m004"
+        ]
+      },
+      {
+        "skill_id": "skill:大语言模型",
+        "name": "大语言模型",
+        "contribution_score": 0.455,
+        "evidence_refs": [
+          "jd_m001",
+          "jd_m003"
+        ]
+      },
+      {
+        "skill_id": "skill:知识库问答",
+        "name": "知识库问答",
+        "contribution_score": 0.455,
+        "evidence_refs": [
+          "jd_m008",
+          "jd_m009"
+        ]
+      }
+    ],
+    "item_weights": [
+      {
+        "evidence_id": "jd_e001",
+        "weight": 0.0
+      },
+      {
+        "evidence_id": "jd_e002",
+        "weight": 0.0
+      },
+      {
+        "evidence_id": "jd_e003",
+        "weight": 0.196
+      },
+      {
+        "evidence_id": "jd_e004",
+        "weight": 0.0
+      }
+    ],
+    "model_explanation": "规则适配器基于职责/经历关键词重合与技能上下文计算语义分。",
+    "model_metadata": {
+      "model_name": "rule",
+      "version": "demo-v1",
+      "uses_jobformer": false
+    }
+  },
+  "llm_used": false,
+  "llm_status": {
+    "requested": false,
+    "available": false,
+    "message": "LLM was not requested. Using rule-based pipeline."
+  },
+  "llm_explanation": {
+    "llm_used": false,
+    "available": false,
+    "message": "LLM was not requested. Using rule-based pipeline.",
+    "explanation": "候选人具备部分核心技能，如 LangChain、PyTorch、RAG、大语言模型，其中 大语言模型、知识库问答、NLP 的证据仍需加强；但在 无明显核心缺口 等岗位重点能力上证据不足，因此整体匹配度中等。",
+    "source": "rule_based"
+  },
+  "path": "D:\\JobSystem\\job-ability-graph\\data\\matches\\match_jd_1._3nlp_2._python_pytorch_rag_lan_candidate_a_1d5f8a9864_b5c327a560.json"
+}
