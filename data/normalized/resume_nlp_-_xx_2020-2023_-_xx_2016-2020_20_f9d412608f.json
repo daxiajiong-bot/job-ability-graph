@@ -1,6 +1,6 @@
 {
-  "doc_id": "jd_1._rag_prompt_2._3._api_1._3_nlp_2_324b7b97b8",
-  "source_type": "jd",
+  "doc_id": "resume_nlp_-_xx_2020-2023_-_xx_2016-2020_20_f9d412608f",
+  "source_type": "resume",
   "created_at": "2026-06-19T09:00:07Z",
   "normalized_skills": [
     {
@@ -12,7 +12,7 @@
       ],
       "relation_type": "exact",
       "evidence_refs": [
-        "jd_m020"
+        "resume_m009"
       ],
       "confidence": 0.95
     },
@@ -25,7 +25,8 @@
       ],
       "relation_type": "exact",
       "evidence_refs": [
-        "jd_m029"
+        "resume_m015",
+        "resume_m025"
       ],
       "confidence": 0.95
     },
@@ -38,7 +39,7 @@
       ],
       "relation_type": "exact",
       "evidence_refs": [
-        "jd_m026"
+        "resume_m023"
       ],
       "confidence": 0.95
     },
@@ -51,7 +52,8 @@
       ],
       "relation_type": "exact",
       "evidence_refs": [
-        "jd_m030"
+        "resume_m013",
+        "resume_m024"
       ],
       "confidence": 0.95
     },
@@ -64,7 +66,7 @@
       ],
       "relation_type": "exact",
       "evidence_refs": [
-        "jd_m032"
+        "resume_m031"
       ],
       "confidence": 0.95
     },
@@ -77,7 +79,7 @@
       ],
       "relation_type": "exact",
       "evidence_refs": [
-        "jd_m040"
+        "resume_m033"
       ],
       "confidence": 0.95
     },
@@ -90,7 +92,8 @@
       ],
       "relation_type": "exact",
       "evidence_refs": [
-        "jd_m023"
+        "resume_m006",
+        "resume_m020"
       ],
       "confidence": 0.95
     },
@@ -103,7 +106,7 @@
       ],
       "relation_type": "exact",
       "evidence_refs": [
-        "jd_m031"
+        "resume_m032"
       ],
       "confidence": 0.95
     },
@@ -116,20 +119,7 @@
       ],
       "relation_type": "exact",
       "evidence_refs": [
-        "jd_m024"
-      ],
-      "confidence": 0.95
-    },
-    {
-      "skill_id": "skill:mlops",
-      "name": "MLOps",
-      "skill_type": "工程能力",
-      "aliases": [
-        "MLOps"
-      ],
-      "relation_type": "exact",
-      "evidence_refs": [
-        "jd_m039"
+        "resume_m021"
       ],
       "confidence": 0.95
     },
@@ -142,7 +132,8 @@
       ],
       "relation_type": "exact",
       "evidence_refs": [
-        "jd_m025"
+        "resume_m007",
+        "resume_m022"
       ],
       "confidence": 0.95
     },
@@ -155,7 +146,8 @@
       ],
       "relation_type": "exact",
       "evidence_refs": [
-        "jd_m015"
+        "resume_m002",
+        "resume_m026"
       ],
       "confidence": 0.95
     },
@@ -168,7 +160,8 @@
       ],
       "relation_type": "exact",
       "evidence_refs": [
-        "jd_m018"
+        "resume_m008",
+        "resume_m019"
       ],
       "confidence": 0.95
     },
@@ -181,7 +174,7 @@
       ],
       "relation_type": "exact",
       "evidence_refs": [
-        "jd_m017"
+        "resume_m017"
       ],
       "confidence": 0.95
     },
@@ -195,11 +188,24 @@
       ],
       "relation_type": "alias",
       "evidence_refs": [
-        "jd_m004",
-        "jd_m005",
-        "jd_m027"
+        "resume_m004",
+        "resume_m005",
+        "resume_m029"
       ],
       "confidence": 0.927
+    },
+    {
+      "skill_id": "skill:sql",
+      "name": "SQL",
+      "skill_type": "编程语言",
+      "aliases": [
+        "SQL"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "resume_m018"
+      ],
+      "confidence": 0.95
     },
     {
       "skill_id": "skill:transformer",
@@ -210,37 +216,9 @@
       ],
       "relation_type": "exact",
       "evidence_refs": [
-        "jd_m019"
+        "resume_m030"
       ],
       "confidence": 0.95
-    },
-    {
-      "skill_id": "skill:企业服务",
-      "name": "企业服务",
-      "skill_type": "业务能力",
-      "aliases": [
-        "ToB",
-        "企业服务"
-      ],
-      "relation_type": "alias",
-      "evidence_refs": [
-        "jd_m033",
-        "jd_m034"
-      ],
-      "confidence": 0.915
-    },
-    {
-      "skill_id": "skill:召回模型",
-      "name": "召回模型",
-      "skill_type": "算法能力",
-      "aliases": [
-        "召回"
-      ],
-      "relation_type": "alias",
-      "evidence_refs": [
-        "jd_m006"
-      ],
-      "confidence": 0.88
     },
     {
       "skill_id": "skill:大模型微调",
@@ -248,15 +226,12 @@
       "skill_type": "算法能力",
       "aliases": [
         "LoRA",
-        "SFT",
-        "模型微调"
+        "SFT"
       ],
       "relation_type": "alias",
       "evidence_refs": [
-        "jd_m009",
-        "jd_m036",
-        "jd_m037",
-        "jd_m038"
+        "resume_m011",
+        "resume_m012"
       ],
       "confidence": 0.88
     },
@@ -265,98 +240,29 @@
       "name": "大语言模型",
       "skill_type": "算法能力",
       "aliases": [
+        "LLM",
         "大模型",
         "大语言模型"
       ],
       "relation_type": "alias",
       "evidence_refs": [
-        "jd_m001",
-        "jd_m003",
-        "jd_m016",
-        "jd_m021"
+        "resume_m001",
+        "resume_m010",
+        "resume_m027",
+        "resume_m028"
       ],
       "confidence": 0.915
-    },
-    {
-      "skill_id": "skill:工程化",
-      "name": "工程化",
-      "skill_type": "工程能力",
-      "aliases": [
-        "工程化"
-      ],
-      "relation_type": "exact",
-      "evidence_refs": [
-        "jd_m012",
-        "jd_m028"
-      ],
-      "confidence": 0.95
-    },
-    {
-      "skill_id": "skill:排序模型",
-      "name": "排序模型",
-      "skill_type": "算法能力",
-      "aliases": [
-        "排序",
-        "排序模型"
-      ],
-      "relation_type": "alias",
-      "evidence_refs": [
-        "jd_m007",
-        "jd_m008"
-      ],
-      "confidence": 0.915
-    },
-    {
-      "skill_id": "skill:接口开发",
-      "name": "接口开发",
-      "skill_type": "工程能力",
-      "aliases": [
-        "接口开发"
-      ],
-      "relation_type": "exact",
-      "evidence_refs": [
-        "jd_m014"
-      ],
-      "confidence": 0.95
-    },
-    {
-      "skill_id": "skill:模型训练",
-      "name": "模型训练",
-      "skill_type": "算法能力",
-      "aliases": [
-        "模型训练"
-      ],
-      "relation_type": "exact",
-      "evidence_refs": [
-        "jd_m022"
-      ],
-      "confidence": 0.95
     },
     {
       "skill_id": "skill:模型部署",
       "name": "模型部署",
       "skill_type": "工程能力",
       "aliases": [
-        "推理服务",
-        "模型部署"
+        "推理服务"
       ],
       "relation_type": "alias",
       "evidence_refs": [
-        "jd_m010",
-        "jd_m011"
-      ],
-      "confidence": 0.915
-    },
-    {
-      "skill_id": "skill:沟通协作",
-      "name": "沟通协作",
-      "skill_type": "通用能力",
-      "aliases": [
-        "协作"
-      ],
-      "relation_type": "alias",
-      "evidence_refs": [
-        "jd_m013"
+        "resume_m014"
       ],
       "confidence": 0.88
     },
@@ -365,29 +271,25 @@
       "name": "知识库问答",
       "skill_type": "业务能力",
       "aliases": [
-        "知识库问答"
+        "知识库问答",
+        "问答系统"
       ],
-      "relation_type": "exact",
+      "relation_type": "alias",
       "evidence_refs": [
-        "jd_m002",
-        "jd_m035"
+        "resume_m003",
+        "resume_m016"
       ],
-      "confidence": 0.95
+      "confidence": 0.915
     }
   ],
   "unmatched_mentions": [],
   "normalization_logs": [
     "大模型 -> 大语言模型",
     "检索增强生成 -> RAG",
-    "召回 -> 召回模型",
-    "排序 -> 排序模型",
-    "模型微调 -> 大模型微调",
-    "推理服务 -> 模型部署",
-    "协作 -> 沟通协作",
-    "大模型 -> 大语言模型",
-    "ToB -> 企业服务",
     "LoRA -> 大模型微调",
     "SFT -> 大模型微调",
-    "模型微调 -> 大模型微调"
+    "推理服务 -> 模型部署",
+    "问答系统 -> 知识库问答",
+    "LLM -> 大语言模型"
   ]
 }

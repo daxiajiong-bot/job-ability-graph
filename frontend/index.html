@@ -33,10 +33,25 @@
           </div>
 
           <div id="matchControls" class="control-group hidden">
-            <label for="matchJdSelect">目标岗位</label>
-            <select id="matchJdSelect"></select>
-            <label for="matchResumeSelect">候选简历</label>
-            <select id="matchResumeSelect"></select>
+            <div class="input-mode-switch">
+              <button id="modeSample" class="switch-btn active" type="button">选择样例</button>
+              <button id="modeCustom" class="switch-btn" type="button">手动输入</button>
+            </div>
+
+            <div id="matchSampleArea">
+              <label for="matchJdSelect">目标岗位</label>
+              <select id="matchJdSelect"></select>
+              <label for="matchResumeSelect">候选简历</label>
+              <select id="matchResumeSelect"></select>
+            </div>
+
+            <div id="matchCustomArea" class="hidden">
+              <label for="customJdText">岗位描述 (JD)</label>
+              <textarea id="customJdText" class="input-textarea" placeholder="在此粘贴或输入岗位JD内容..."></textarea>
+              <label for="customResumeText">简历内容</label>
+              <textarea id="customResumeText" class="input-textarea" placeholder="在此粘贴或输入简历内容..."></textarea>
+            </div>
+
             <button id="runMatchBtn" class="primary-button" type="button">运行匹配诊断</button>
           </div>
 

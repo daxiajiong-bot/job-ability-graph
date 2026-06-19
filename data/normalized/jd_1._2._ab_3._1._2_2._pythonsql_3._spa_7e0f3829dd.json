@@ -1,0 +1,346 @@
+{
+  "doc_id": "jd_1._2._ab_3._1._2_2._pythonsql_3._spa_7e0f3829dd",
+  "source_type": "jd",
+  "created_at": "2026-06-19T08:23:18Z",
+  "normalized_skills": [
+    {
+      "skill_id": "skill:ab测试",
+      "name": "A/B测试",
+      "skill_type": "算法能力",
+      "aliases": [
+        "A/B测试"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "jd_m009"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:kafka",
+      "name": "Kafka",
+      "skill_type": "框架工具",
+      "aliases": [
+        "Kafka"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "jd_m026"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:pytorch",
+      "name": "PyTorch",
+      "skill_type": "框架工具",
+      "aliases": [
+        "PyTorch"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "jd_m029"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:python",
+      "name": "Python",
+      "skill_type": "编程语言",
+      "aliases": [
+        "Python"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "jd_m017"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:redis",
+      "name": "Redis",
+      "skill_type": "框架工具",
+      "aliases": [
+        "Redis"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "jd_m027"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:sql",
+      "name": "SQL",
+      "skill_type": "编程语言",
+      "aliases": [
+        "SQL"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "jd_m018"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:spark",
+      "name": "Spark",
+      "skill_type": "框架工具",
+      "aliases": [
+        "Spark"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "jd_m025"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:tensorflow",
+      "name": "TensorFlow",
+      "skill_type": "框架工具",
+      "aliases": [
+        "TensorFlow"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "jd_m028"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:内容推荐",
+      "name": "内容推荐",
+      "skill_type": "业务能力",
+      "aliases": [
+        "信息流",
+        "内容推荐"
+      ],
+      "relation_type": "alias",
+      "evidence_refs": [
+        "jd_m003",
+        "jd_m033",
+        "jd_m034"
+      ],
+      "confidence": 0.927
+    },
+    {
+      "skill_id": "skill:召回模型",
+      "name": "召回模型",
+      "skill_type": "算法能力",
+      "aliases": [
+        "召回",
+        "召回模型"
+      ],
+      "relation_type": "alias",
+      "evidence_refs": [
+        "jd_m004",
+        "jd_m005",
+        "jd_m021",
+        "jd_m022"
+      ],
+      "confidence": 0.915
+    },
+    {
+      "skill_id": "skill:工程化",
+      "name": "工程化",
+      "skill_type": "工程能力",
+      "aliases": [
+        "工程化"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "jd_m037"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:性能优化",
+      "name": "性能优化",
+      "skill_type": "工程能力",
+      "aliases": [
+        "性能优化"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "jd_m012"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:排序模型",
+      "name": "排序模型",
+      "skill_type": "算法能力",
+      "aliases": [
+        "排序",
+        "排序模型"
+      ],
+      "relation_type": "alias",
+      "evidence_refs": [
+        "jd_m006",
+        "jd_m007",
+        "jd_m023",
+        "jd_m024"
+      ],
+      "confidence": 0.915
+    },
+    {
+      "skill_id": "skill:推荐算法",
+      "name": "推荐算法",
+      "skill_type": "算法能力",
+      "aliases": [
+        "推荐算法"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "jd_m001",
+        "jd_m013"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:搜索算法",
+      "name": "搜索算法",
+      "skill_type": "算法能力",
+      "aliases": [
+        "搜索",
+        "搜索算法"
+      ],
+      "relation_type": "alias",
+      "evidence_refs": [
+        "jd_m014",
+        "jd_m015"
+      ],
+      "confidence": 0.915
+    },
+    {
+      "skill_id": "skill:数据分析",
+      "name": "数据分析",
+      "skill_type": "数据能力",
+      "aliases": [
+        "数据分析"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "jd_m030"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:机器学习",
+      "name": "机器学习",
+      "skill_type": "算法能力",
+      "aliases": [
+        "机器学习"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "jd_m016",
+        "jd_m019"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:模型优化",
+      "name": "模型优化",
+      "skill_type": "算法能力",
+      "aliases": [
+        "模型优化"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "jd_m036"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:模型训练",
+      "name": "模型训练",
+      "skill_type": "算法能力",
+      "aliases": [
+        "模型训练"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "jd_m011"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:沟通协作",
+      "name": "沟通协作",
+      "skill_type": "通用能力",
+      "aliases": [
+        "协作"
+      ],
+      "relation_type": "alias",
+      "evidence_refs": [
+        "jd_m010"
+      ],
+      "confidence": 0.88
+    },
+    {
+      "skill_id": "skill:深度学习",
+      "name": "深度学习",
+      "skill_type": "算法能力",
+      "aliases": [
+        "深度学习"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "jd_m020"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:特征工程",
+      "name": "特征工程",
+      "skill_type": "算法能力",
+      "aliases": [
+        "特征工程"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "jd_m008",
+        "jd_m031"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:电商",
+      "name": "电商",
+      "skill_type": "业务能力",
+      "aliases": [
+        "电商"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "jd_m002",
+        "jd_m032"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "skill_id": "skill:高并发",
+      "name": "高并发",
+      "skill_type": "工程能力",
+      "aliases": [
+        "高并发"
+      ],
+      "relation_type": "exact",
+      "evidence_refs": [
+        "jd_m035"
+      ],
+      "confidence": 0.95
+    }
+  ],
+  "unmatched_mentions": [],
+  "normalization_logs": [
+    "召回 -> 召回模型",
+    "排序 -> 排序模型",
+    "协作 -> 沟通协作",
+    "搜索 -> 搜索算法",
+    "召回 -> 召回模型",
+    "排序 -> 排序模型",
+    "信息流 -> 内容推荐"
+  ]
+}

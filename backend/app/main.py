@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 
@@ -17,6 +18,15 @@ app = FastAPI(
     title="Job Ability Graph Demo API",
     description="Rule-based JD/resume matching API for the competition demo.",
     version="0.1.0",
+)
+
+# 允许 Vue 前端跨域访问
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 if FRONTEND_DIR.exists():
@@ -39,3 +49,9 @@ def index() -> object:
 @app.get("/health")
 def health() -> dict[str, str]:
     return {"status": "ok"}
+
+
+if __name__ == "__main__":
+    import uvicorn
+
+    uvicorn.run(app, host="127.0.0.1", port=8000)

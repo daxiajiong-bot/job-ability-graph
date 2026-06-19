@@ -194,6 +194,41 @@ textarea {
   display: none;
 }
 
+.input-mode-switch {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  gap: 4px;
+  padding: 4px;
+  border: 1px solid var(--line);
+  background: var(--surface-alt);
+  border-radius: 4px;
+}
+
+.switch-btn {
+  min-height: 30px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  color: var(--muted);
+  background: transparent;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.switch-btn.active {
+  border-color: var(--line-strong);
+  background: var(--surface);
+  color: var(--text);
+}
+
+.input-textarea {
+  min-height: 140px;
+  resize: vertical;
+  padding: 8px;
+  line-height: 1.5;
+  font-size: 12.5px;
+}
+
 .graph-toolbar {
   display: flex;
   align-items: center;

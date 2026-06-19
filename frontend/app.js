@@ -1,5 +1,6 @@
 const state = {
   mode: "panorama",
+  matchInputMode: "sample",
   graphView: "all",
   samples: { jds: [], resumes: [] },
   currentGraph: null,
@@ -81,6 +82,12 @@ function bindElements() {
     "summaryMetrics",
     "skillList",
     "explanation",
+    "modeSample",
+    "modeCustom",
+    "matchSampleArea",
+    "matchCustomArea",
+    "customJdText",
+    "customResumeText",
   ].forEach((id) => {
     els[id] = document.getElementById(id);
   });
@@ -94,6 +101,10 @@ function bindEvents() {
   els.jobSelect.addEventListener("change", updatePayloadPreview);
   els.matchJdSelect.addEventListener("change", updatePayloadPreview);
   els.matchResumeSelect.addEventListener("change", updatePayloadPreview);
+  els.modeSample.addEventListener("click", () => setMatchInputMode("sample"));
+  els.modeCustom.addEventListener("click", () => setMatchInputMode("custom"));
+  els.customJdText.addEventListener("input", updatePayloadPreview);
+  els.customResumeText.addEventListener("input", updatePayloadPreview);
   els.viewAll.addEventListener("click", () => setGraphView("all"));
   els.viewStack.addEventListener("click", () => setGraphView("stack"));
   els.viewLevel.addEventListener("click", () => setGraphView("level"));
@@ -118,7 +129,19 @@ async function loadSamples() {
     state.samples = fallbackSamples;
   }
   fillSelects();
+  fillCustomDefaults();
   updatePayloadPreview();
+}
+
+function fillCustomDefaults() {
+  if (!els.customJdText.value) {
+    const jdSample = state.samples.jds[0];
+    if (jdSample) els.customJdText.value = jdSample.text;
+  }
+  if (!els.customResumeText.value) {
+    const resumeSample = state.samples.resumes[0];
+    if (resumeSample) els.customResumeText.value = resumeSample.text;
+  }
 }
 
 function fillSelects() {
@@ -145,6 +168,15 @@ function setMode(mode) {
   updatePayloadPreview();
 }
 
+function setMatchInputMode(mode) {
+  state.matchInputMode = mode;
+  els.modeSample.classList.toggle("active", mode === "sample");
+  els.modeCustom.classList.toggle("active", mode === "custom");
+  els.matchSampleArea.classList.toggle("hidden", mode !== "sample");
+  els.matchCustomArea.classList.toggle("hidden", mode !== "custom");
+  updatePayloadPreview();
+}
+
 function setGraphView(view) {
   state.graphView = view;
   els.viewAll.classList.toggle("active", view === "all");
@@ -160,10 +192,18 @@ function selectedJobs() {
 }
 
 function selectedJd() {
+  if (state.matchInputMode === "custom") {
+    const text = els.customJdText.value.trim();
+    return text ? { id: "custom_jd", title: "自定义岗位", text } : null;
+  }
   return state.samples.jds.find((item) => item.id === els.matchJdSelect.value) || state.samples.jds[0];
 }
 
 function selectedResume() {
+  if (state.matchInputMode === "custom") {
+    const text = els.customResumeText.value.trim();
+    return text ? { id: "custom_resume", name: "自定义简历", text } : null;
+  }
   return state.samples.resumes.find((item) => item.id === els.matchResumeSelect.value) || state.samples.resumes[0];
 }
 
@@ -181,7 +221,13 @@ function updatePayloadPreview() {
   } else {
     const jd = selectedJd();
     const resume = selectedResume();
-    els.payloadBox.value = JSON.stringify({ jd_text: jd?.text || "", resume_text: resume?.text || "" }, null, 2);
+    if (!jd || !resume) {
+      els.payloadBox.value = state.matchInputMode === "custom"
+        ? '{"提示": "请输入岗位JD和简历内容"}'
+        : JSON.stringify({ jd_text: "", resume_text: "" }, null, 2);
+      return;
+    }
+    els.payloadBox.value = JSON.stringify({ jd_text: jd.text, resume_text: resume.text }, null, 2);
   }
 }
 
@@ -202,6 +248,15 @@ async function buildPanorama() {
 async function runMatch() {
   state.mode = "match";
   updatePayloadPreview();
+  const jd = selectedJd();
+  const resume = selectedResume();
+  if (!jd || !resume) {
+    els.graphMeta.textContent = "输入为空";
+    els.explanation.textContent = state.matchInputMode === "custom"
+      ? "请先输入岗位JD和简历内容"
+      : "请选择岗位和简历";
+    return;
+  }
   try {
     const result = await apiPost("/match", JSON.parse(els.payloadBox.value));
     state.currentGraph = result.graph;

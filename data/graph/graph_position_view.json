@@ -1,56 +1,44 @@
 {
   "graph_id": "graph_position_view",
   "version": "demo-v1",
-  "generated_at": "2026-06-18T13:32:28Z",
+  "generated_at": "2026-06-19T09:00:07Z",
   "nodes": [
     {
-      "id": "position_position_77d933980a",
-      "label": "后端开发工程师",
+      "id": "position_position_178ff61c24",
+      "label": "大模型算法工程师",
       "type": "Position",
       "level": 0,
       "properties": {
-        "job_category": "后端开发岗",
+        "job_category": "算法岗",
         "education_requirement": "本科",
         "experience_requirement": 3.0,
         "domain_requirement": [
-          "SaaS",
+          "ToB",
           "企业服务",
-          "招聘业务"
+          "知识库问答"
         ],
-        "doc_id": "jd_1._2._restful_api_3._1._3_java_pytho_a7c2993fe5"
+        "doc_id": "jd_1._rag_prompt_2._3._api_1._3_nlp_2_324b7b97b8"
       }
     },
     {
-      "id": "skill:cicd",
-      "label": "CI/CD",
+      "id": "skill:bert",
+      "label": "BERT",
       "type": "Skill",
       "level": 2,
       "properties": {
-        "skill_type": "工程能力",
+        "skill_type": "算法能力",
         "aliases": [
-          "CI/CD"
+          "BERT"
         ]
       }
     },
     {
-      "id": "capability:软件工程能力",
-      "label": "软件工程能力",
+      "id": "capability:智能算法能力",
+      "label": "智能算法能力",
       "type": "Capability",
       "level": 1,
       "properties": {
-        "skill_type": "工程能力"
-      }
-    },
-    {
-      "id": "skill:devops",
-      "label": "DevOps",
-      "type": "Skill",
-      "level": 2,
-      "properties": {
-        "skill_type": "工程能力",
-        "aliases": [
-          "DevOps"
-        ]
+        "skill_type": "算法能力"
       }
     },
     {
@@ -75,6 +63,30 @@
       }
     },
     {
+      "id": "skill:elasticsearch",
+      "label": "Elasticsearch",
+      "type": "Skill",
+      "level": 2,
+      "properties": {
+        "skill_type": "框架工具",
+        "aliases": [
+          "Elasticsearch"
+        ]
+      }
+    },
+    {
+      "id": "skill:fastapi",
+      "label": "FastAPI",
+      "type": "Skill",
+      "level": 2,
+      "properties": {
+        "skill_type": "框架工具",
+        "aliases": [
+          "FastAPI"
+        ]
+      }
+    },
+    {
       "id": "skill:git",
       "label": "Git",
       "type": "Skill",
@@ -83,39 +95,6 @@
         "skill_type": "框架工具",
         "aliases": [
           "Git"
-        ]
-      }
-    },
-    {
-      "id": "skill:java",
-      "label": "Java",
-      "type": "Skill",
-      "level": 2,
-      "properties": {
-        "skill_type": "编程语言",
-        "aliases": [
-          "Java"
-        ]
-      }
-    },
-    {
-      "id": "capability:工程实现能力",
-      "label": "工程实现能力",
-      "type": "Capability",
-      "level": 1,
-      "properties": {
-        "skill_type": "编程语言"
-      }
-    },
-    {
-      "id": "skill:kafka",
-      "label": "Kafka",
-      "type": "Skill",
-      "level": 2,
-      "properties": {
-        "skill_type": "框架工具",
-        "aliases": [
-          "Kafka"
         ]
       }
     },
@@ -132,6 +111,18 @@
       }
     },
     {
+      "id": "skill:langchain",
+      "label": "LangChain",
+      "type": "Skill",
+      "level": 2,
+      "properties": {
+        "skill_type": "框架工具",
+        "aliases": [
+          "LangChain"
+        ]
+      }
+    },
+    {
       "id": "skill:linux",
       "label": "Linux",
       "type": "Skill",
@@ -144,14 +135,71 @@
       }
     },
     {
-      "id": "skill:mysql",
-      "label": "MySQL",
+      "id": "skill:llamaindex",
+      "label": "LlamaIndex",
       "type": "Skill",
       "level": 2,
       "properties": {
         "skill_type": "框架工具",
         "aliases": [
-          "MySQL"
+          "LlamaIndex"
+        ]
+      }
+    },
+    {
+      "id": "skill:mlops",
+      "label": "MLOps",
+      "type": "Skill",
+      "level": 2,
+      "properties": {
+        "skill_type": "工程能力",
+        "aliases": [
+          "MLOps"
+        ]
+      }
+    },
+    {
+      "id": "capability:软件工程能力",
+      "label": "软件工程能力",
+      "type": "Capability",
+      "level": 1,
+      "properties": {
+        "skill_type": "工程能力"
+      }
+    },
+    {
+      "id": "skill:milvus",
+      "label": "Milvus",
+      "type": "Skill",
+      "level": 2,
+      "properties": {
+        "skill_type": "框架工具",
+        "aliases": [
+          "Milvus"
+        ]
+      }
+    },
+    {
+      "id": "skill:nlp",
+      "label": "NLP",
+      "type": "Skill",
+      "level": 2,
+      "properties": {
+        "skill_type": "算法能力",
+        "aliases": [
+          "NLP"
+        ]
+      }
+    },
+    {
+      "id": "skill:pytorch",
+      "label": "PyTorch",
+      "type": "Skill",
+      "level": 2,
+      "properties": {
+        "skill_type": "框架工具",
+        "aliases": [
+          "PyTorch"
         ]
       }
     },
@@ -168,38 +216,48 @@
       }
     },
     {
-      "id": "skill:redis",
-      "label": "Redis",
+      "id": "capability:工程实现能力",
+      "label": "工程实现能力",
+      "type": "Capability",
+      "level": 1,
+      "properties": {
+        "skill_type": "编程语言"
+      }
+    },
+    {
+      "id": "skill:rag",
+      "label": "RAG",
       "type": "Skill",
       "level": 2,
       "properties": {
-        "skill_type": "框架工具",
+        "skill_type": "算法能力",
         "aliases": [
-          "Redis"
+          "RAG",
+          "检索增强生成"
         ]
       }
     },
     {
-      "id": "skill:spring_boot",
-      "label": "Spring Boot",
+      "id": "skill:sql",
+      "label": "SQL",
       "type": "Skill",
       "level": 2,
       "properties": {
-        "skill_type": "框架工具",
+        "skill_type": "编程语言",
         "aliases": [
-          "Spring Boot"
+          "SQL"
         ]
       }
     },
     {
-      "id": "skill:云原生",
-      "label": "云原生",
+      "id": "skill:transformer",
+      "label": "Transformer",
       "type": "Skill",
       "level": 2,
       "properties": {
-        "skill_type": "工程能力",
+        "skill_type": "算法能力",
         "aliases": [
-          "云原生"
+          "Transformer"
         ]
       }
     },
@@ -211,7 +269,7 @@
       "properties": {
         "skill_type": "业务能力",
         "aliases": [
-          "SaaS",
+          "ToB",
           "企业服务"
         ]
       }
@@ -226,65 +284,66 @@
       }
     },
     {
-      "id": "skill:分布式系统",
-      "label": "分布式系统",
+      "id": "skill:召回模型",
+      "label": "召回模型",
+      "type": "Skill",
+      "level": 2,
+      "properties": {
+        "skill_type": "算法能力",
+        "aliases": [
+          "召回"
+        ]
+      }
+    },
+    {
+      "id": "skill:大模型微调",
+      "label": "大模型微调",
+      "type": "Skill",
+      "level": 2,
+      "properties": {
+        "skill_type": "算法能力",
+        "aliases": [
+          "LoRA",
+          "SFT",
+          "模型微调"
+        ]
+      }
+    },
+    {
+      "id": "skill:大语言模型",
+      "label": "大语言模型",
+      "type": "Skill",
+      "level": 2,
+      "properties": {
+        "skill_type": "算法能力",
+        "aliases": [
+          "大模型",
+          "大语言模型"
+        ]
+      }
+    },
+    {
+      "id": "skill:工程化",
+      "label": "工程化",
       "type": "Skill",
       "level": 2,
       "properties": {
         "skill_type": "工程能力",
         "aliases": [
-          "分布式",
-          "分布式系统"
+          "工程化"
         ]
       }
     },
     {
-      "id": "skill:后端开发",
-      "label": "后端开发",
+      "id": "skill:排序模型",
+      "label": "排序模型",
       "type": "Skill",
       "level": 2,
       "properties": {
-        "skill_type": "工程能力",
+        "skill_type": "算法能力",
         "aliases": [
-          "后端开发"
-        ]
-      }
-    },
-    {
-      "id": "skill:微服务",
-      "label": "微服务",
-      "type": "Skill",
-      "level": 2,
-      "properties": {
-        "skill_type": "工程能力",
-        "aliases": [
-          "微服务"
-        ]
-      }
-    },
-    {
-      "id": "skill:性能优化",
-      "label": "性能优化",
-      "type": "Skill",
-      "level": 2,
-      "properties": {
-        "skill_type": "工程能力",
-        "aliases": [
-          "性能优化"
-        ]
-      }
-    },
-    {
-      "id": "skill:招聘业务",
-      "label": "招聘业务",
-      "type": "Skill",
-      "level": 2,
-      "properties": {
-        "skill_type": "业务能力",
-        "aliases": [
-          "人力资源",
-          "招聘",
-          "招聘业务"
+          "排序",
+          "排序模型"
         ]
       }
     },
@@ -296,42 +355,44 @@
       "properties": {
         "skill_type": "工程能力",
         "aliases": [
-          "RESTful",
           "接口开发"
         ]
       }
     },
     {
-      "id": "skill:搜索算法",
-      "label": "搜索算法",
+      "id": "skill:模型训练",
+      "label": "模型训练",
       "type": "Skill",
       "level": 2,
       "properties": {
         "skill_type": "算法能力",
         "aliases": [
-          "搜索"
+          "模型训练"
         ]
       }
     },
     {
-      "id": "capability:智能算法能力",
-      "label": "智能算法能力",
-      "type": "Capability",
-      "level": 1,
+      "id": "skill:模型部署",
+      "label": "模型部署",
+      "type": "Skill",
+      "level": 2,
       "properties": {
-        "skill_type": "算法能力"
+        "skill_type": "工程能力",
+        "aliases": [
+          "推理服务",
+          "模型部署"
+        ]
       }
     },
     {
-      "id": "skill:文档能力",
-      "label": "文档能力",
+      "id": "skill:沟通协作",
+      "label": "沟通协作",
       "type": "Skill",
       "level": 2,
       "properties": {
         "skill_type": "通用能力",
         "aliases": [
-          "文档",
-          "文档能力"
+          "协作"
         ]
       }
     },
@@ -345,118 +406,49 @@
       }
     },
     {
-      "id": "skill:沟通协作",
-      "label": "沟通协作",
+      "id": "skill:知识库问答",
+      "label": "知识库问答",
       "type": "Skill",
       "level": 2,
       "properties": {
-        "skill_type": "通用能力",
+        "skill_type": "业务能力",
         "aliases": [
-          "协作",
-          "沟通",
-          "沟通协作"
-        ]
-      }
-    },
-    {
-      "id": "skill:知识图谱",
-      "label": "知识图谱",
-      "type": "Skill",
-      "level": 2,
-      "properties": {
-        "skill_type": "算法能力",
-        "aliases": [
-          "知识图谱"
-        ]
-      }
-    },
-    {
-      "id": "skill:系统设计",
-      "label": "系统设计",
-      "type": "Skill",
-      "level": 2,
-      "properties": {
-        "skill_type": "工程能力",
-        "aliases": [
-          "系统设计"
-        ]
-      }
-    },
-    {
-      "id": "skill:项目管理",
-      "label": "项目管理",
-      "type": "Skill",
-      "level": 2,
-      "properties": {
-        "skill_type": "通用能力",
-        "aliases": [
-          "项目管理"
-        ]
-      }
-    },
-    {
-      "id": "skill:高并发",
-      "label": "高并发",
-      "type": "Skill",
-      "level": 2,
-      "properties": {
-        "skill_type": "工程能力",
-        "aliases": [
-          "高并发"
+          "知识库问答"
         ]
       }
     }
   ],
   "edges": [
     {
-      "source": "position_position_77d933980a",
-      "target": "capability:软件工程能力",
+      "source": "position_position_178ff61c24",
+      "target": "capability:智能算法能力",
       "relation": "requires_capability",
       "weight": 1.0,
       "properties": {
-        "skill_type": "工程能力"
+        "skill_type": "算法能力"
       }
     },
     {
-      "source": "capability:软件工程能力",
-      "target": "skill:cicd",
+      "source": "capability:智能算法能力",
+      "target": "skill:bert",
       "relation": "contains_skill",
-      "weight": 0.2,
+      "weight": 1.2,
       "properties": {
-        "skill_type": "工程能力"
+        "skill_type": "算法能力"
       }
     },
     {
-      "source": "position_position_77d933980a",
-      "target": "skill:cicd",
+      "source": "position_position_178ff61c24",
+      "target": "skill:bert",
       "relation": "requires_skill",
-      "weight": 0.2,
+      "weight": 1.2,
       "properties": {
-        "requirement_level": "preferred",
-        "match_id": "match_jd_1._2._restful_api_3._1._3_java_py_candidate_d_1ad7247696_38c7912377"
+        "requirement_level": "required",
+        "match_id": "match_jd_1._rag_prompt_2._3._api_1._3_nlp_candidate_candidate_ced07fb42b_0975865f2c"
       }
     },
     {
-      "source": "capability:软件工程能力",
-      "target": "skill:devops",
-      "relation": "contains_skill",
-      "weight": 0.2,
-      "properties": {
-        "skill_type": "工程能力"
-      }
-    },
-    {
-      "source": "position_position_77d933980a",
-      "target": "skill:devops",
-      "relation": "requires_skill",
-      "weight": 0.2,
-      "properties": {
-        "requirement_level": "preferred",
-        "match_id": "match_jd_1._2._restful_api_3._1._3_java_py_candidate_d_1ad7247696_38c7912377"
-      }
-    },
-    {
-      "source": "position_position_77d933980a",
+      "source": "position_position_178ff61c24",
       "target": "capability:技术栈应用能力",
       "relation": "requires_capability",
       "weight": 1.0,
@@ -474,13 +466,51 @@
       }
     },
     {
-      "source": "position_position_77d933980a",
+      "source": "position_position_178ff61c24",
       "target": "skill:docker",
       "relation": "requires_skill",
       "weight": 1.2,
       "properties": {
         "requirement_level": "required",
-        "match_id": "match_jd_1._2._restful_api_3._1._3_java_py_candidate_d_1ad7247696_38c7912377"
+        "match_id": "match_jd_1._rag_prompt_2._3._api_1._3_nlp_candidate_candidate_ced07fb42b_0975865f2c"
+      }
+    },
+    {
+      "source": "capability:技术栈应用能力",
+      "target": "skill:elasticsearch",
+      "relation": "contains_skill",
+      "weight": 0.8,
+      "properties": {
+        "skill_type": "框架工具"
+      }
+    },
+    {
+      "source": "position_position_178ff61c24",
+      "target": "skill:elasticsearch",
+      "relation": "requires_skill",
+      "weight": 0.8,
+      "properties": {
+        "requirement_level": "preferred",
+        "match_id": "match_jd_1._rag_prompt_2._3._api_1._3_nlp_candidate_candidate_ced07fb42b_0975865f2c"
+      }
+    },
+    {
+      "source": "capability:技术栈应用能力",
+      "target": "skill:fastapi",
+      "relation": "contains_skill",
+      "weight": 1.2,
+      "properties": {
+        "skill_type": "框架工具"
+      }
+    },
+    {
+      "source": "position_position_178ff61c24",
+      "target": "skill:fastapi",
+      "relation": "requires_skill",
+      "weight": 1.2,
+      "properties": {
+        "requirement_level": "required",
+        "match_id": "match_jd_1._rag_prompt_2._3._api_1._3_nlp_candidate_candidate_ced07fb42b_0975865f2c"
       }
     },
     {
@@ -493,17 +523,178 @@
       }
     },
     {
-      "source": "position_position_77d933980a",
+      "source": "position_position_178ff61c24",
       "target": "skill:git",
       "relation": "requires_skill",
       "weight": 1.2,
       "properties": {
         "requirement_level": "required",
-        "match_id": "match_jd_1._2._restful_api_3._1._3_java_py_candidate_d_1ad7247696_38c7912377"
+        "match_id": "match_jd_1._rag_prompt_2._3._api_1._3_nlp_candidate_candidate_ced07fb42b_0975865f2c"
       }
     },
     {
-      "source": "position_position_77d933980a",
+      "source": "capability:技术栈应用能力",
+      "target": "skill:kubernetes",
+      "relation": "contains_skill",
+      "weight": 0.2,
+      "properties": {
+        "skill_type": "框架工具"
+      }
+    },
+    {
+      "source": "position_position_178ff61c24",
+      "target": "skill:kubernetes",
+      "relation": "requires_skill",
+      "weight": 0.2,
+      "properties": {
+        "requirement_level": "preferred",
+        "match_id": "match_jd_1._rag_prompt_2._3._api_1._3_nlp_candidate_candidate_ced07fb42b_0975865f2c"
+      }
+    },
+    {
+      "source": "capability:技术栈应用能力",
+      "target": "skill:langchain",
+      "relation": "contains_skill",
+      "weight": 0.8,
+      "properties": {
+        "skill_type": "框架工具"
+      }
+    },
+    {
+      "source": "position_position_178ff61c24",
+      "target": "skill:langchain",
+      "relation": "requires_skill",
+      "weight": 0.8,
+      "properties": {
+        "requirement_level": "preferred",
+        "match_id": "match_jd_1._rag_prompt_2._3._api_1._3_nlp_candidate_candidate_ced07fb42b_0975865f2c"
+      }
+    },
+    {
+      "source": "capability:技术栈应用能力",
+      "target": "skill:linux",
+      "relation": "contains_skill",
+      "weight": 1.2,
+      "properties": {
+        "skill_type": "框架工具"
+      }
+    },
+    {
+      "source": "position_position_178ff61c24",
+      "target": "skill:linux",
+      "relation": "requires_skill",
+      "weight": 1.2,
+      "properties": {
+        "requirement_level": "required",
+        "match_id": "match_jd_1._rag_prompt_2._3._api_1._3_nlp_candidate_candidate_ced07fb42b_0975865f2c"
+      }
+    },
+    {
+      "source": "capability:技术栈应用能力",
+      "target": "skill:llamaindex",
+      "relation": "contains_skill",
+      "weight": 0.8,
+      "properties": {
+        "skill_type": "框架工具"
+      }
+    },
+    {
+      "source": "position_position_178ff61c24",
+      "target": "skill:llamaindex",
+      "relation": "requires_skill",
+      "weight": 0.8,
+      "properties": {
+        "requirement_level": "preferred",
+        "match_id": "match_jd_1._rag_prompt_2._3._api_1._3_nlp_candidate_candidate_ced07fb42b_0975865f2c"
+      }
+    },
+    {
+      "source": "position_position_178ff61c24",
+      "target": "capability:软件工程能力",
+      "relation": "requires_capability",
+      "weight": 1.0,
+      "properties": {
+        "skill_type": "工程能力"
+      }
+    },
+    {
+      "source": "capability:软件工程能力",
+      "target": "skill:mlops",
+      "relation": "contains_skill",
+      "weight": 0.2,
+      "properties": {
+        "skill_type": "工程能力"
+      }
+    },
+    {
+      "source": "position_position_178ff61c24",
+      "target": "skill:mlops",
+      "relation": "requires_skill",
+      "weight": 0.2,
+      "properties": {
+        "requirement_level": "preferred",
+        "match_id": "match_jd_1._rag_prompt_2._3._api_1._3_nlp_candidate_candidate_ced07fb42b_0975865f2c"
+      }
+    },
+    {
+      "source": "capability:技术栈应用能力",
+      "target": "skill:milvus",
+      "relation": "contains_skill",
+      "weight": 0.8,
+      "properties": {
+        "skill_type": "框架工具"
+      }
+    },
+    {
+      "source": "position_position_178ff61c24",
+      "target": "skill:milvus",
+      "relation": "requires_skill",
+      "weight": 0.8,
+      "properties": {
+        "requirement_level": "preferred",
+        "match_id": "match_jd_1._rag_prompt_2._3._api_1._3_nlp_candidate_candidate_ced07fb42b_0975865f2c"
+      }
+    },
+    {
+      "source": "capability:智能算法能力",
+      "target": "skill:nlp",
+      "relation": "contains_skill",
+      "weight": 1.2,
+      "properties": {
+        "skill_type": "算法能力"
+      }
+    },
+    {
+      "source": "position_position_178ff61c24",
+      "target": "skill:nlp",
+      "relation": "requires_skill",
+      "weight": 1.2,
+      "properties": {
+        "requirement_level": "required",
+        "match_id": "match_jd_1._rag_prompt_2._3._api_1._3_nlp_candidate_candidate_ced07fb42b_0975865f2c"
+      }
+    },
+    {
+      "source": "capability:技术栈应用能力",
+      "target": "skill:pytorch",
+      "relation": "contains_skill",
+      "weight": 1.2,
+      "properties": {
+        "skill_type": "框架工具"
+      }
+    },
+    {
+      "source": "position_position_178ff61c24",
+      "target": "skill:pytorch",
+      "relation": "requires_skill",
+      "weight": 1.2,
+      "properties": {
+        "requirement_level": "required",
+        "match_id": "match_jd_1._rag_prompt_2._3._api_1._3_nlp_candidate_candidate_ced07fb42b_0975865f2c"
+      }
+    },
+    {
+      "source": "position_position_178ff61c24",
       "target": "capability:工程实现能力",
       "relation": "requires_capability",
       "weight": 1.0,
@@ -513,177 +704,72 @@
     },
     {
       "source": "capability:工程实现能力",
-      "target": "skill:java",
+      "target": "skill:python",
       "relation": "contains_skill",
-      "weight": 1.3,
+      "weight": 1.2,
       "properties": {
         "skill_type": "编程语言"
       }
     },
     {
-      "source": "position_position_77d933980a",
-      "target": "skill:java",
-      "relation": "requires_skill",
-      "weight": 1.3,
-      "properties": {
-        "requirement_level": "required",
-        "match_id": "match_jd_1._2._restful_api_3._1._3_java_py_candidate_d_1ad7247696_38c7912377"
-      }
-    },
-    {
-      "source": "capability:技术栈应用能力",
-      "target": "skill:kafka",
-      "relation": "contains_skill",
-      "weight": 1.2,
-      "properties": {
-        "skill_type": "框架工具"
-      }
-    },
-    {
-      "source": "position_position_77d933980a",
-      "target": "skill:kafka",
+      "source": "position_position_178ff61c24",
+      "target": "skill:python",
       "relation": "requires_skill",
       "weight": 1.2,
       "properties": {
         "requirement_level": "required",
-        "match_id": "match_jd_1._2._restful_api_3._1._3_java_py_candidate_d_1ad7247696_38c7912377"
+        "match_id": "match_jd_1._rag_prompt_2._3._api_1._3_nlp_candidate_candidate_ced07fb42b_0975865f2c"
       }
     },
     {
-      "source": "capability:技术栈应用能力",
-      "target": "skill:kubernetes",
+      "source": "capability:智能算法能力",
+      "target": "skill:rag",
       "relation": "contains_skill",
-      "weight": 0.2,
+      "weight": 1.0,
       "properties": {
-        "skill_type": "框架工具"
+        "skill_type": "算法能力"
       }
     },
     {
-      "source": "position_position_77d933980a",
-      "target": "skill:kubernetes",
+      "source": "position_position_178ff61c24",
+      "target": "skill:rag",
       "relation": "requires_skill",
-      "weight": 0.2,
+      "weight": 1.0,
       "properties": {
         "requirement_level": "preferred",
-        "match_id": "match_jd_1._2._restful_api_3._1._3_java_py_candidate_d_1ad7247696_38c7912377"
-      }
-    },
-    {
-      "source": "capability:技术栈应用能力",
-      "target": "skill:linux",
-      "relation": "contains_skill",
-      "weight": 1.2,
-      "properties": {
-        "skill_type": "框架工具"
-      }
-    },
-    {
-      "source": "position_position_77d933980a",
-      "target": "skill:linux",
-      "relation": "requires_skill",
-      "weight": 1.2,
-      "properties": {
-        "requirement_level": "required",
-        "match_id": "match_jd_1._2._restful_api_3._1._3_java_py_candidate_d_1ad7247696_38c7912377"
-      }
-    },
-    {
-      "source": "capability:技术栈应用能力",
-      "target": "skill:mysql",
-      "relation": "contains_skill",
-      "weight": 1.2,
-      "properties": {
-        "skill_type": "框架工具"
-      }
-    },
-    {
-      "source": "position_position_77d933980a",
-      "target": "skill:mysql",
-      "relation": "requires_skill",
-      "weight": 1.2,
-      "properties": {
-        "requirement_level": "required",
-        "match_id": "match_jd_1._2._restful_api_3._1._3_java_py_candidate_d_1ad7247696_38c7912377"
+        "match_id": "match_jd_1._rag_prompt_2._3._api_1._3_nlp_candidate_candidate_ced07fb42b_0975865f2c"
       }
     },
     {
       "source": "capability:工程实现能力",
-      "target": "skill:python",
+      "target": "skill:sql",
       "relation": "contains_skill",
-      "weight": 1.2,
+      "weight": 1.0,
       "properties": {
         "skill_type": "编程语言"
       }
     },
     {
-      "source": "position_position_77d933980a",
-      "target": "skill:python",
+      "source": "capability:智能算法能力",
+      "target": "skill:transformer",
+      "relation": "contains_skill",
+      "weight": 1.2,
+      "properties": {
+        "skill_type": "算法能力"
+      }
+    },
+    {
+      "source": "position_position_178ff61c24",
+      "target": "skill:transformer",
       "relation": "requires_skill",
       "weight": 1.2,
       "properties": {
         "requirement_level": "required",
-        "match_id": "match_jd_1._2._restful_api_3._1._3_java_py_candidate_d_1ad7247696_38c7912377"
+        "match_id": "match_jd_1._rag_prompt_2._3._api_1._3_nlp_candidate_candidate_ced07fb42b_0975865f2c"
       }
     },
     {
-      "source": "capability:技术栈应用能力",
-      "target": "skill:redis",
-      "relation": "contains_skill",
-      "weight": 1.2,
-      "properties": {
-        "skill_type": "框架工具"
-      }
-    },
-    {
-      "source": "position_position_77d933980a",
-      "target": "skill:redis",
-      "relation": "requires_skill",
-      "weight": 1.2,
-      "properties": {
-        "requirement_level": "required",
-        "match_id": "match_jd_1._2._restful_api_3._1._3_java_py_candidate_d_1ad7247696_38c7912377"
-      }
-    },
-    {
-      "source": "capability:技术栈应用能力",
-      "target": "skill:spring_boot",
-      "relation": "contains_skill",
-      "weight": 1.2,
-      "properties": {
-        "skill_type": "框架工具"
-      }
-    },
-    {
-      "source": "position_position_77d933980a",
-      "target": "skill:spring_boot",
-      "relation": "requires_skill",
-      "weight": 1.2,
-      "properties": {
-        "requirement_level": "required",
-        "match_id": "match_jd_1._2._restful_api_3._1._3_java_py_candidate_d_1ad7247696_38c7912377"
-      }
-    },
-    {
-      "source": "capability:软件工程能力",
-      "target": "skill:云原生",
-      "relation": "contains_skill",
-      "weight": 0.2,
-      "properties": {
-        "skill_type": "工程能力"
-      }
-    },
-    {
-      "source": "position_position_77d933980a",
-      "target": "skill:云原生",
-      "relation": "requires_skill",
-      "weight": 0.2,
-      "properties": {
-        "requirement_level": "preferred",
-        "match_id": "match_jd_1._2._restful_api_3._1._3_java_py_candidate_d_1ad7247696_38c7912377"
-      }
-    },
-    {
-      "source": "position_position_77d933980a",
+      "source": "position_position_178ff61c24",
       "target": "capability:行业业务理解能力",
       "relation": "requires_capability",
       "weight": 1.0,
@@ -701,159 +787,169 @@
       }
     },
     {
-      "source": "position_position_77d933980a",
+      "source": "position_position_178ff61c24",
       "target": "skill:企业服务",
       "relation": "requires_skill",
       "weight": 0.7,
       "properties": {
         "requirement_level": "preferred",
-        "match_id": "match_jd_1._2._restful_api_3._1._3_java_py_candidate_d_1ad7247696_38c7912377"
-      }
-    },
-    {
-      "source": "capability:软件工程能力",
-      "target": "skill:分布式系统",
-      "relation": "contains_skill",
-      "weight": 1.3,
-      "properties": {
-        "skill_type": "工程能力"
-      }
-    },
-    {
-      "source": "position_position_77d933980a",
-      "target": "skill:分布式系统",
-      "relation": "requires_skill",
-      "weight": 1.3,
-      "properties": {
-        "requirement_level": "required",
-        "match_id": "match_jd_1._2._restful_api_3._1._3_java_py_candidate_d_1ad7247696_38c7912377"
-      }
-    },
-    {
-      "source": "capability:软件工程能力",
-      "target": "skill:后端开发",
-      "relation": "contains_skill",
-      "weight": 1.4,
-      "properties": {
-        "skill_type": "工程能力"
-      }
-    },
-    {
-      "source": "position_position_77d933980a",
-      "target": "skill:后端开发",
-      "relation": "requires_skill",
-      "weight": 1.4,
-      "properties": {
-        "requirement_level": "required",
-        "match_id": "match_jd_1._2._restful_api_3._1._3_java_py_candidate_d_1ad7247696_38c7912377"
-      }
-    },
-    {
-      "source": "capability:软件工程能力",
-      "target": "skill:微服务",
-      "relation": "contains_skill",
-      "weight": 1.3,
-      "properties": {
-        "skill_type": "工程能力"
-      }
-    },
-    {
-      "source": "position_position_77d933980a",
-      "target": "skill:微服务",
-      "relation": "requires_skill",
-      "weight": 1.3,
-      "properties": {
-        "requirement_level": "required",
-        "match_id": "match_jd_1._2._restful_api_3._1._3_java_py_candidate_d_1ad7247696_38c7912377"
-      }
-    },
-    {
-      "source": "capability:软件工程能力",
-      "target": "skill:性能优化",
-      "relation": "contains_skill",
-      "weight": 1.2,
-      "properties": {
-        "skill_type": "工程能力"
-      }
-    },
-    {
-      "source": "position_position_77d933980a",
-      "target": "skill:性能优化",
-      "relation": "requires_skill",
-      "weight": 1.2,
-      "properties": {
-        "requirement_level": "required",
-        "match_id": "match_jd_1._2._restful_api_3._1._3_java_py_candidate_d_1ad7247696_38c7912377"
-      }
-    },
-    {
-      "source": "capability:行业业务理解能力",
-      "target": "skill:招聘业务",
-      "relation": "contains_skill",
-      "weight": 0.9,
-      "properties": {
-        "skill_type": "业务能力"
-      }
-    },
-    {
-      "source": "position_position_77d933980a",
-      "target": "skill:招聘业务",
-      "relation": "requires_skill",
-      "weight": 0.9,
-      "properties": {
-        "requirement_level": "preferred",
-        "match_id": "match_jd_1._2._restful_api_3._1._3_java_py_candidate_d_1ad7247696_38c7912377"
-      }
-    },
-    {
-      "source": "capability:软件工程能力",
-      "target": "skill:接口开发",
-      "relation": "contains_skill",
-      "weight": 1.3,
-      "properties": {
-        "skill_type": "工程能力"
-      }
-    },
-    {
-      "source": "position_position_77d933980a",
-      "target": "skill:接口开发",
-      "relation": "requires_skill",
-      "weight": 1.3,
-      "properties": {
-        "requirement_level": "required",
-        "match_id": "match_jd_1._2._restful_api_3._1._3_java_py_candidate_d_1ad7247696_38c7912377"
-      }
-    },
-    {
-      "source": "position_position_77d933980a",
-      "target": "capability:智能算法能力",
-      "relation": "requires_capability",
-      "weight": 1.0,
-      "properties": {
-        "skill_type": "算法能力"
+        "match_id": "match_jd_1._rag_prompt_2._3._api_1._3_nlp_candidate_candidate_ced07fb42b_0975865f2c"
       }
     },
     {
       "source": "capability:智能算法能力",
-      "target": "skill:搜索算法",
+      "target": "skill:召回模型",
       "relation": "contains_skill",
-      "weight": 0.7,
+      "weight": 0.8,
       "properties": {
         "skill_type": "算法能力"
       }
     },
     {
-      "source": "position_position_77d933980a",
-      "target": "skill:搜索算法",
+      "source": "position_position_178ff61c24",
+      "target": "skill:召回模型",
       "relation": "requires_skill",
-      "weight": 0.7,
+      "weight": 0.8,
       "properties": {
-        "requirement_level": "preferred",
-        "match_id": "match_jd_1._2._restful_api_3._1._3_java_py_candidate_d_1ad7247696_38c7912377"
+        "requirement_level": "required",
+        "match_id": "match_jd_1._rag_prompt_2._3._api_1._3_nlp_candidate_candidate_ced07fb42b_0975865f2c"
       }
     },
     {
-      "source": "position_position_77d933980a",
+      "source": "capability:智能算法能力",
+      "target": "skill:大模型微调",
+      "relation": "contains_skill",
+      "weight": 0.9,
+      "properties": {
+        "skill_type": "算法能力"
+      }
+    },
+    {
+      "source": "position_position_178ff61c24",
+      "target": "skill:大模型微调",
+      "relation": "requires_skill",
+      "weight": 0.9,
+      "properties": {
+        "requirement_level": "preferred",
+        "match_id": "match_jd_1._rag_prompt_2._3._api_1._3_nlp_candidate_candidate_ced07fb42b_0975865f2c"
+      }
+    },
+    {
+      "source": "capability:智能算法能力",
+      "target": "skill:大语言模型",
+      "relation": "contains_skill",
+      "weight": 1.5,
+      "properties": {
+        "skill_type": "算法能力"
+      }
+    },
+    {
+      "source": "position_position_178ff61c24",
+      "target": "skill:大语言模型",
+      "relation": "requires_skill",
+      "weight": 1.5,
+      "properties": {
+        "requirement_level": "required",
+        "match_id": "match_jd_1._rag_prompt_2._3._api_1._3_nlp_candidate_candidate_ced07fb42b_0975865f2c"
+      }
+    },
+    {
+      "source": "capability:软件工程能力",
+      "target": "skill:工程化",
+      "relation": "contains_skill",
+      "weight": 1.3,
+      "properties": {
+        "skill_type": "工程能力"
+      }
+    },
+    {
+      "source": "position_position_178ff61c24",
+      "target": "skill:工程化",
+      "relation": "requires_skill",
+      "weight": 1.3,
+      "properties": {
+        "requirement_level": "required",
+        "match_id": "match_jd_1._rag_prompt_2._3._api_1._3_nlp_candidate_candidate_ced07fb42b_0975865f2c"
+      }
+    },
+    {
+      "source": "capability:智能算法能力",
+      "target": "skill:排序模型",
+      "relation": "contains_skill",
+      "weight": 0.9,
+      "properties": {
+        "skill_type": "算法能力"
+      }
+    },
+    {
+      "source": "position_position_178ff61c24",
+      "target": "skill:排序模型",
+      "relation": "requires_skill",
+      "weight": 0.9,
+      "properties": {
+        "requirement_level": "required",
+        "match_id": "match_jd_1._rag_prompt_2._3._api_1._3_nlp_candidate_candidate_ced07fb42b_0975865f2c"
+      }
+    },
+    {
+      "source": "capability:软件工程能力",
+      "target": "skill:接口开发",
+      "relation": "contains_skill",
+      "weight": 0.8,
+      "properties": {
+        "skill_type": "工程能力"
+      }
+    },
+    {
+      "source": "position_position_178ff61c24",
+      "target": "skill:接口开发",
+      "relation": "requires_skill",
+      "weight": 0.8,
+      "properties": {
+        "requirement_level": "required",
+        "match_id": "match_jd_1._rag_prompt_2._3._api_1._3_nlp_candidate_candidate_ced07fb42b_0975865f2c"
+      }
+    },
+    {
+      "source": "capability:智能算法能力",
+      "target": "skill:模型训练",
+      "relation": "contains_skill",
+      "weight": 1.2,
+      "properties": {
+        "skill_type": "算法能力"
+      }
+    },
+    {
+      "source": "position_position_178ff61c24",
+      "target": "skill:模型训练",
+      "relation": "requires_skill",
+      "weight": 1.2,
+      "properties": {
+        "requirement_level": "required",
+        "match_id": "match_jd_1._rag_prompt_2._3._api_1._3_nlp_candidate_candidate_ced07fb42b_0975865f2c"
+      }
+    },
+    {
+      "source": "capability:软件工程能力",
+      "target": "skill:模型部署",
+      "relation": "contains_skill",
+      "weight": 0.9,
+      "properties": {
+        "skill_type": "工程能力"
+      }
+    },
+    {
+      "source": "position_position_178ff61c24",
+      "target": "skill:模型部署",
+      "relation": "requires_skill",
+      "weight": 0.9,
+      "properties": {
+        "requirement_level": "required",
+        "match_id": "match_jd_1._rag_prompt_2._3._api_1._3_nlp_candidate_candidate_ced07fb42b_0975865f2c"
+      }
+    },
+    {
+      "source": "position_position_178ff61c24",
       "target": "capability:职业通用能力",
       "relation": "requires_capability",
       "weight": 1.0,
@@ -863,131 +959,55 @@
     },
     {
       "source": "capability:职业通用能力",
-      "target": "skill:文档能力",
+      "target": "skill:沟通协作",
       "relation": "contains_skill",
-      "weight": 0.4,
+      "weight": 0.3,
       "properties": {
         "skill_type": "通用能力"
       }
     },
     {
-      "source": "position_position_77d933980a",
-      "target": "skill:文档能力",
-      "relation": "requires_skill",
-      "weight": 0.4,
-      "properties": {
-        "requirement_level": "required",
-        "match_id": "match_jd_1._2._restful_api_3._1._3_java_py_candidate_d_1ad7247696_38c7912377"
-      }
-    },
-    {
-      "source": "capability:职业通用能力",
-      "target": "skill:沟通协作",
-      "relation": "contains_skill",
-      "weight": 0.5,
-      "properties": {
-        "skill_type": "通用能力"
-      }
-    },
-    {
-      "source": "position_position_77d933980a",
+      "source": "position_position_178ff61c24",
       "target": "skill:沟通协作",
       "relation": "requires_skill",
-      "weight": 0.5,
+      "weight": 0.3,
       "properties": {
         "requirement_level": "required",
-        "match_id": "match_jd_1._2._restful_api_3._1._3_java_py_candidate_d_1ad7247696_38c7912377"
+        "match_id": "match_jd_1._rag_prompt_2._3._api_1._3_nlp_candidate_candidate_ced07fb42b_0975865f2c"
       }
     },
     {
-      "source": "capability:智能算法能力",
-      "target": "skill:知识图谱",
+      "source": "capability:行业业务理解能力",
+      "target": "skill:知识库问答",
       "relation": "contains_skill",
-      "weight": 0.2,
+      "weight": 1.1,
       "properties": {
-        "skill_type": "算法能力"
+        "skill_type": "业务能力"
       }
     },
     {
-      "source": "position_position_77d933980a",
-      "target": "skill:知识图谱",
+      "source": "position_position_178ff61c24",
+      "target": "skill:知识库问答",
       "relation": "requires_skill",
-      "weight": 0.2,
+      "weight": 1.1,
       "properties": {
         "requirement_level": "preferred",
-        "match_id": "match_jd_1._2._restful_api_3._1._3_java_py_candidate_d_1ad7247696_38c7912377"
-      }
-    },
-    {
-      "source": "capability:软件工程能力",
-      "target": "skill:系统设计",
-      "relation": "contains_skill",
-      "weight": 1.2,
-      "properties": {
-        "skill_type": "工程能力"
-      }
-    },
-    {
-      "source": "position_position_77d933980a",
-      "target": "skill:系统设计",
-      "relation": "requires_skill",
-      "weight": 1.2,
-      "properties": {
-        "requirement_level": "required",
-        "match_id": "match_jd_1._2._restful_api_3._1._3_java_py_candidate_d_1ad7247696_38c7912377"
-      }
-    },
-    {
-      "source": "capability:职业通用能力",
-      "target": "skill:项目管理",
-      "relation": "contains_skill",
-      "weight": 0.3,
-      "properties": {
-        "skill_type": "通用能力"
-      }
-    },
-    {
-      "source": "position_position_77d933980a",
-      "target": "skill:项目管理",
-      "relation": "requires_skill",
-      "weight": 0.3,
-      "properties": {
-        "requirement_level": "required",
-        "match_id": "match_jd_1._2._restful_api_3._1._3_java_py_candidate_d_1ad7247696_38c7912377"
-      }
-    },
-    {
-      "source": "capability:软件工程能力",
-      "target": "skill:高并发",
-      "relation": "contains_skill",
-      "weight": 0.8,
-      "properties": {
-        "skill_type": "工程能力"
-      }
-    },
-    {
-      "source": "position_position_77d933980a",
-      "target": "skill:高并发",
-      "relation": "requires_skill",
-      "weight": 0.8,
-      "properties": {
-        "requirement_level": "required",
-        "match_id": "match_jd_1._2._restful_api_3._1._3_java_py_candidate_d_1ad7247696_38c7912377"
+        "match_id": "match_jd_1._rag_prompt_2._3._api_1._3_nlp_candidate_candidate_ced07fb42b_0975865f2c"
       }
     }
   ],
   "metadata": {
-    "match_id": "match_jd_1._2._restful_api_3._1._3_java_py_candidate_d_1ad7247696_38c7912377",
-    "jd_id": "jd_1._2._restful_api_3._1._3_java_pytho_a7c2993fe5",
-    "resume_id": "candidate_d_1ad7247696",
-    "position_id": "position_position_77d933980a",
-    "candidate_id": "candidate_d_1ad7247696",
-    "final_score": 87.57,
-    "decision": "strong_match",
-    "gap_summary": "缺失 1 项技能，优先补齐 沟通协作；5 项技能证据或熟练度不足；2 项技能仅存在相关能力支撑",
-    "node_count": 71,
-    "edge_count": 327,
-    "legacy_graph_id": "graph_match_jd_1._2._restful_api_3._1._3_java_py_candidate_d_1ad7247696_38c7912377",
+    "match_id": "match_jd_1._rag_prompt_2._3._api_1._3_nlp_candidate_candidate_ced07fb42b_0975865f2c",
+    "jd_id": "jd_1._rag_prompt_2._3._api_1._3_nlp_2_324b7b97b8",
+    "resume_id": "candidate_candidate_ced07fb42b",
+    "position_id": "position_position_178ff61c24",
+    "candidate_id": "candidate_candidate_ced07fb42b",
+    "final_score": 53.54,
+    "decision": "low_match",
+    "gap_summary": "缺失 5 项技能，优先补齐 模型训练, 排序模型, 召回模型；11 项技能证据或熟练度不足；2 项技能仅存在相关能力支撑",
+    "node_count": 74,
+    "edge_count": 322,
+    "legacy_graph_id": "graph_match_jd_1._rag_prompt_2._3._api_1._3_nlp_candidate_candidate_ced07fb42b_0975865f2c",
     "graph_views": {},
     "view_type": "position",
     "source_graph_id": "graph_full"
