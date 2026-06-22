@@ -1,1 +1,1 @@
-"""Application package for the FastAPI demo backend."""
+"""v3 Contract Skeleton application package."""

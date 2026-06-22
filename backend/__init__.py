@@ -1,1 +1,1 @@
-"""Backend package for the job ability graph demo."""
+"""Backend package for the v3 Contract Skeleton."""

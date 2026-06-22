@@ -222,14 +222,5 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 
-# Demo runtime artifacts
-data/matches/*.json
-data/graph/graph_match_jd_*.json
-
-# Keep core graph snapshots tracked
-!data/graph/graph_full.json
-!data/graph/graph_position_view.json
-!data/graph/graph_tech_stack_view.json
-!data/graph/graph_level_view.json
-!data/graph/graph_match_view.json
-!data/graph/graph_evolution_view.json
+# v3 intentionally keeps no runtime data directory. Any future local state must
+# be configured outside the repository and added here before implementation.

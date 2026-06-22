@@ -1,57 +1,60 @@
-"""FastAPI application entrypoint for the demo backend."""
+"""FastAPI entrypoint for v3 Contract Skeleton."""
 
 from __future__ import annotations
 
-from fastapi import FastAPI
-from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import FileResponse
-from fastapi.staticfiles import StaticFiles
+from uuid import uuid4
 
-from backend.app.api.routes_evolution import router as evolution_router
-from backend.app.api.routes_graph import router as graph_router
-from backend.app.api.routes_match import router as match_router
-from backend.app.api.routes_parse import router as parse_router
-from backend.app.core.config import FRONTEND_DIR
+from fastapi import FastAPI, Request
+from fastapi.responses import JSONResponse
+
+from backend.app.api.v1.errors import install_exception_handlers
+from backend.app.api.v1.router import router as v1_router
+from backend.app.infrastructure.wiring import build_container
 
 
 app = FastAPI(
-    title="Job Ability Graph Demo API",
-    description="Rule-based JD/resume matching API for the competition demo.",
-    version="0.1.0",
+    title="v3 Contract Skeleton",
+    description="Formal resource contracts for future LLM, RAG, Neo4j, and graph-enhanced matching integrations.",
+    version="3.0.0",
 )
+app.state.container = build_container()
 
-# 允许 Vue 前端跨域访问
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
 
-if FRONTEND_DIR.exists():
-    app.mount("/static", StaticFiles(directory=FRONTEND_DIR), name="static")
+@app.middleware("http")
+async def attach_request_id(request: Request, call_next):
+    request.state.request_id = request.headers.get("X-Request-ID") or uuid4().hex
+    response = await call_next(request)
+    response.headers["X-Request-ID"] = request.state.request_id
+    return response
 
-app.include_router(parse_router)
-app.include_router(match_router)
-app.include_router(graph_router)
-app.include_router(evolution_router)
+
+install_exception_handlers(app)
+app.include_router(v1_router)
 
 
 @app.get("/", include_in_schema=False)
-def index() -> object:
-    index_path = FRONTEND_DIR / "index.html"
-    if index_path.exists():
-        return FileResponse(index_path)
-    return {"status": "ok", "frontend": "not_found"}
+def index() -> dict[str, str]:
+    return {
+        "service": "v3 Contract Skeleton",
+        "docs": "/docs",
+        "api_base": "/api/v1",
+    }
 
 
-@app.get("/health")
-def health() -> dict[str, str]:
-    return {"status": "ok"}
+@app.get("/health", tags=["System"])
+def health(request: Request) -> JSONResponse:
+    repository_health = request.app.state.container.repository.health()
+    return JSONResponse(
+        {
+            "status": "ok",
+            "service": "v3 Contract Skeleton",
+            "persistence": repository_health["persistence"],
+            "repository": repository_health,
+        }
+    )
 
 
 if __name__ == "__main__":
     import uvicorn
 
-    uvicorn.run(app, host="127.0.0.1", port=8000)
+    uvicorn.run("backend.app.main:app", host="127.0.0.1", port=8000, reload=True)

@@ -1,1 +1,1 @@
-"""API route package."""
+"""HTTP API layer."""
