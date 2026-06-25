@@ -5,10 +5,27 @@ import unittest
 from fastapi.testclient import TestClient
 
 from backend.app.main import app
+from backend.app.infrastructure.wiring import build_container
+
+
+class FakeOcr:
+    def extract_text(self, **kwargs):
+        return {
+            "state": "available",
+            "implementation": "fake-ocr",
+            "lang": kwargs["lang"],
+            "text": "private OCR resume text",
+            "page_count": 1,
+            "line_count": 1,
+            "average_confidence": 0.98,
+            "pages": [{"index": 0, "lines": [{"index": 0, "text": "private OCR resume text", "confidence": 0.98}]}],
+            "warnings": [],
+        }
 
 
 class V3ContractTest(unittest.TestCase):
     def setUp(self) -> None:
+        app.state.container = build_container(ocr=FakeOcr())
         self.client = TestClient(app)
 
     def _document(self, document_type: str, text: str) -> str:
@@ -89,3 +106,20 @@ class V3ContractTest(unittest.TestCase):
         legacy = self.client.get("/samples")
         self.assertEqual(legacy.status_code, 404)
         self.assertEqual(legacy.json()["error"]["code"], "http_404")
+
+    def test_ocr_upload_creates_document_without_echoing_text(self) -> None:
+        response = self.client.post(
+            "/api/v1/documents/ocr",
+            data={"document_type": "resume", "lang": "ch", "metadata_json": '{"scan":"campus-fair"}'},
+            files={"file": ("resume.png", b"fake image bytes", "image/png")},
+        )
+        self.assertEqual(response.status_code, 201, response.text)
+        body = response.json()
+        self.assertNotIn("private OCR resume text", str(body))
+
+        document = body["data"]["document"]
+        self.assertEqual(document["document_type"], "resume")
+        self.assertEqual(document["char_count"], len("private OCR resume text"))
+        self.assertEqual(document["metadata"]["scan"], "campus-fair")
+        self.assertEqual(document["metadata"]["ocr"]["implementation"], "fake-ocr")
+        self.assertEqual(body["data"]["ocr"]["line_count"], 1)

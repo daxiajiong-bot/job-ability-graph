@@ -119,6 +119,7 @@ class MockReportGenerator:
 def capability_catalog() -> list[dict[str, str]]:
     return [
         {"name": "document_repository", "implementation": "memory", "state": "available"},
+        {"name": "ocr", "implementation": "paddleocr", "state": "available"},
         {"name": "structured_extraction", "implementation": "mock", "state": NOT_IMPLEMENTED},
         {"name": "skill_normalization", "implementation": "mock", "state": NOT_IMPLEMENTED},
         {"name": "profile_builder", "implementation": "mock", "state": NOT_IMPLEMENTED},

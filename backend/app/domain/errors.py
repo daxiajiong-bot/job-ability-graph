@@ -23,3 +23,28 @@ class ResourceNotFoundError(DomainError):
 class ResourceConflictError(DomainError):
     code = "resource_conflict"
     status_code = 409
+
+
+class InvalidInputError(DomainError):
+    code = "invalid_input"
+    status_code = 400
+
+
+class UnsupportedMediaTypeError(DomainError):
+    code = "unsupported_media_type"
+    status_code = 415
+
+
+class PayloadTooLargeError(DomainError):
+    code = "payload_too_large"
+    status_code = 413
+
+
+class OcrProcessingError(DomainError):
+    code = "ocr_processing_error"
+    status_code = 422
+
+
+class OcrUnavailableError(DomainError):
+    code = "ocr_unavailable"
+    status_code = 503

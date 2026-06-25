@@ -31,6 +31,7 @@ class ContractFacade:
         evolution: Any,
         matcher: Any,
         report_generator: Any,
+        ocr: Any,
         capabilities: list[dict[str, str]],
     ) -> None:
         self.repository = repository
@@ -43,6 +44,7 @@ class ContractFacade:
         self.evolution = evolution
         self.matcher = matcher
         self.report_generator = report_generator
+        self.ocr = ocr
         self._capabilities = capabilities
 
     def capabilities(self) -> dict[str, Any]:
@@ -60,6 +62,46 @@ class ContractFacade:
 
     def get_document(self, document_id: str) -> dict[str, Any]:
         return self.repository.get_document(document_id).public()
+
+    def create_document_from_ocr(
+        self,
+        document_type: DocumentType,
+        file_name: str,
+        content: bytes,
+        content_type: str | None,
+        source: dict[str, Any],
+        metadata: dict[str, Any],
+        lang: str,
+        options: dict[str, Any],
+    ) -> dict[str, Any]:
+        ocr_result = self.ocr.extract_text(
+            file_name=file_name,
+            content=content,
+            content_type=content_type,
+            lang=lang,
+            options=options,
+        )
+        ocr_metadata = self._ocr_metadata(ocr_result, file_name, content_type)
+        document_metadata = {**metadata, "ocr": ocr_metadata}
+        document = SourceDocument.create(document_type, ocr_result["text"], source, document_metadata)
+        return {
+            "document": self.repository.add_document(document).public(),
+            "ocr": ocr_metadata,
+        }
+
+    @staticmethod
+    def _ocr_metadata(ocr_result: dict[str, Any], file_name: str, content_type: str | None) -> dict[str, Any]:
+        return {
+            "state": ocr_result["state"],
+            "implementation": ocr_result["implementation"],
+            "lang": ocr_result["lang"],
+            "source_file_name": file_name,
+            "source_content_type": content_type,
+            "page_count": ocr_result["page_count"],
+            "line_count": ocr_result["line_count"],
+            "average_confidence": ocr_result["average_confidence"],
+            "warnings": ocr_result.get("warnings", []),
+        }
 
     def create_candidate_profile(self, resume_document_id: str) -> dict[str, Any]:
         return self._create_profile(resume_document_id, DocumentType.RESUME, ProfileType.CANDIDATE)

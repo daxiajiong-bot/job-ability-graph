@@ -23,4 +23,15 @@ curl -X POST http://127.0.0.1:8000/api/v1/documents \
 
 响应仅返回文档元数据、长度和摘要校验值，不回显原文。服务重启后，所有资源都会清空。
 
+OCR 上传会将图片或 PDF 识别为文档文本并入库，响应同样不回显识别全文：
+
+```bash
+curl -X POST http://127.0.0.1:8000/api/v1/documents/ocr \
+  -F document_type=resume \
+  -F lang=ch \
+  -F file=@/path/to/resume.png
+```
+
+OCR 默认使用 CPU 版 PaddleOCR。可通过 `OCR_DEVICE`、`OCR_DEFAULT_LANG`、`OCR_MAX_UPLOAD_MB` 调整设备、默认语言和上传大小限制。
+
 详细接口契约见 [docs/api-v3.md](docs/api-v3.md)。第一次接触项目或准备替换论文算法时，建议先读[零基础项目导读与算法替换指南](docs/零基础项目导读与算法替换指南.md)。

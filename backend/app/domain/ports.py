@@ -61,6 +61,18 @@ class DocumentRetrievalPort(Protocol):
     def retrieve(self, query: str, document_ids: list[str], filters: dict[str, Any]) -> dict[str, Any]: ...
 
 
+class OcrPort(Protocol):
+    def extract_text(
+        self,
+        *,
+        file_name: str,
+        content: bytes,
+        content_type: Optional[str],
+        lang: str,
+        options: dict[str, Any],
+    ) -> dict[str, Any]: ...
+
+
 class KnowledgeGraphPort(Protocol):
     def build(
         self,
