@@ -116,7 +116,13 @@ class MockReportGenerator:
         return _mock("Report generation is reserved for a future local LLM.", sections=[])
 
 
-def capability_catalog() -> list[dict[str, str]]:
+def capability_catalog(
+    *,
+    knowledge_graph_implementation: str = "mock",
+    knowledge_graph_state: str = NOT_IMPLEMENTED,
+    graph_rag_implementation: str = "mock",
+    graph_rag_state: str = NOT_IMPLEMENTED,
+) -> list[dict[str, str]]:
     return [
         {"name": "document_repository", "implementation": "memory", "state": "available"},
         {"name": "ocr", "implementation": "paddleocr", "state": "available"},
@@ -124,8 +130,8 @@ def capability_catalog() -> list[dict[str, str]]:
         {"name": "skill_normalization", "implementation": "mock", "state": NOT_IMPLEMENTED},
         {"name": "profile_builder", "implementation": "mock", "state": NOT_IMPLEMENTED},
         {"name": "document_rag", "implementation": "mock", "state": NOT_IMPLEMENTED},
-        {"name": "knowledge_graph", "implementation": "mock", "state": NOT_IMPLEMENTED},
-        {"name": "graph_rag", "implementation": "mock", "state": NOT_IMPLEMENTED},
+        {"name": "knowledge_graph", "implementation": knowledge_graph_implementation, "state": knowledge_graph_state},
+        {"name": "graph_rag", "implementation": graph_rag_implementation, "state": graph_rag_state},
         {"name": "position_evolution", "implementation": "mock", "state": NOT_IMPLEMENTED},
         {"name": "matching", "implementation": "mock", "state": NOT_IMPLEMENTED},
         {"name": "report_generation", "implementation": "mock", "state": NOT_IMPLEMENTED},

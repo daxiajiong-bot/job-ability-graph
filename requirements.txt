@@ -2,6 +2,7 @@ fastapi>=0.110,<1.0
 uvicorn[standard]>=0.27,<1.0
 httpx>=0.27,<1.0
 python-multipart>=0.0.32,<1.0
+neo4j>=6.0,<7.0
 
 --extra-index-url https://www.paddlepaddle.org.cn/packages/stable/cpu/
 paddlepaddle==3.3.1
