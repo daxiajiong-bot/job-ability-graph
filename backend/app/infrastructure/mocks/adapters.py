@@ -118,6 +118,12 @@ class MockReportGenerator:
 
 def capability_catalog(
     *,
+    structured_extraction_implementation: str = "mock",
+    structured_extraction_state: str = NOT_IMPLEMENTED,
+    skill_normalization_implementation: str = "mock",
+    skill_normalization_state: str = NOT_IMPLEMENTED,
+    profile_builder_implementation: str = "mock",
+    profile_builder_state: str = NOT_IMPLEMENTED,
     knowledge_graph_implementation: str = "mock",
     knowledge_graph_state: str = NOT_IMPLEMENTED,
     graph_rag_implementation: str = "mock",
@@ -126,9 +132,21 @@ def capability_catalog(
     return [
         {"name": "document_repository", "implementation": "memory", "state": "available"},
         {"name": "ocr", "implementation": "paddleocr", "state": "available"},
-        {"name": "structured_extraction", "implementation": "mock", "state": NOT_IMPLEMENTED},
-        {"name": "skill_normalization", "implementation": "mock", "state": NOT_IMPLEMENTED},
-        {"name": "profile_builder", "implementation": "mock", "state": NOT_IMPLEMENTED},
+        {
+            "name": "structured_extraction",
+            "implementation": structured_extraction_implementation,
+            "state": structured_extraction_state,
+        },
+        {
+            "name": "skill_normalization",
+            "implementation": skill_normalization_implementation,
+            "state": skill_normalization_state,
+        },
+        {
+            "name": "profile_builder",
+            "implementation": profile_builder_implementation,
+            "state": profile_builder_state,
+        },
         {"name": "document_rag", "implementation": "mock", "state": NOT_IMPLEMENTED},
         {"name": "knowledge_graph", "implementation": knowledge_graph_implementation, "state": knowledge_graph_state},
         {"name": "graph_rag", "implementation": graph_rag_implementation, "state": graph_rag_state},

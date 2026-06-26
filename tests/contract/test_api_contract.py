@@ -1,6 +1,8 @@
 from __future__ import annotations
 
+import json
 import unittest
+from unittest.mock import patch
 
 from fastapi.testclient import TestClient
 
@@ -23,13 +25,36 @@ class FakeOcr:
         }
 
 
+class FakeChatClient:
+    def chat(self, messages):
+        return json.dumps(
+            {
+                "document_type": "resume",
+                "candidate": {"name": "张三", "target_position": "数据分析师"},
+                "education": [],
+                "experience": [],
+                "projects": [],
+                "skills": [{"name": "JS", "category": "编程语言", "level": "了解", "evidence_ids": ["ev_001"]}],
+                "capabilities": [{"name": "数据分析", "description": "能分析业务数据", "evidence_ids": ["ev_002"]}],
+                "responsibilities": [],
+                "requirements": [],
+                "evidence": [
+                    {"id": "ev_001", "field": "skills", "text": "掌握 JS"},
+                    {"id": "ev_002", "field": "capabilities", "text": "能分析业务数据"},
+                ],
+            },
+            ensure_ascii=False,
+        )
+
+
 class V3ContractTest(unittest.TestCase):
     def setUp(self) -> None:
         app.state.container = build_container(ocr=FakeOcr())
         self.client = TestClient(app)
 
-    def _document(self, document_type: str, text: str) -> str:
-        response = self.client.post(
+    def _document(self, document_type: str, text: str, client: TestClient | None = None) -> str:
+        api_client = client or self.client
+        response = api_client.post(
             "/api/v1/documents",
             json={"document_type": document_type, "text": text, "source": {"source_system": "contract-test"}},
         )
@@ -123,3 +148,22 @@ class V3ContractTest(unittest.TestCase):
         self.assertEqual(document["metadata"]["scan"], "campus-fair")
         self.assertEqual(document["metadata"]["ocr"]["implementation"], "fake-ocr")
         self.assertEqual(body["data"]["ocr"]["line_count"], 1)
+
+    def test_ollama_mode_profiles_and_capabilities_are_available(self) -> None:
+        with patch.dict("os.environ", {"LLM_BACKEND": "ollama"}, clear=False):
+            app.state.container = build_container(ocr=FakeOcr(), llm_chat_client=FakeChatClient())
+            client = TestClient(app)
+
+            resume_id = self._document("resume", "张三掌握 JS，能分析业务数据。", client)
+            profile_response = client.post("/api/v1/candidate-profiles", json={"document_id": resume_id})
+            self.assertEqual(profile_response.status_code, 201, profile_response.text)
+            profile = profile_response.json()["data"]["profile"]
+            self.assertEqual(profile["state"], "available")
+            self.assertEqual(profile["implementation"], "llm_profile_builder")
+            self.assertEqual(profile["attributes"]["skills"][0]["name"], "JavaScript")
+
+            capabilities = client.get("/api/v1/capabilities").json()["data"]["capabilities"]
+            by_name = {item["name"]: item for item in capabilities}
+            self.assertEqual(by_name["structured_extraction"]["implementation"], "ollama")
+            self.assertEqual(by_name["structured_extraction"]["state"], "available")
+            self.assertEqual(by_name["profile_builder"]["implementation"], "llm_profile_builder")

@@ -8,6 +8,7 @@
 - 可选 Neo4j 知识图谱写入与图谱路径检索。
 
 默认配置仍使用 mock，不执行规则抽取、打分、LLM、RAG 或爬虫。设置 `GRAPH_BACKEND=neo4j` 后，`knowledge_graph` 与 `graph_rag` 会切换到 Neo4j adapter，用于后续部署岗位—技能—能力知识图谱。
+设置 `LLM_BACKEND=ollama` 后，简历/JD 画像会通过本地 Ollama 模型做结构化抽取；模型不可用或输出不合规时会降级为 mock 并在响应 `warnings` 中说明原因。
 
 ## 启动
 
@@ -85,5 +86,56 @@ curl -X POST http://127.0.0.1:8000/api/v1/documents/ocr \
 ```
 
 OCR 默认使用 CPU 版 PaddleOCR。可通过 `OCR_DEVICE`、`OCR_DEFAULT_LANG`、`OCR_MAX_UPLOAD_MB` 调整设备、默认语言和上传大小限制。
+
+## 启用本地 Ollama 大模型抽取
+
+安装 Ollama macOS app：
+
+1. 从 `https://ollama.com/download/mac` 下载官方 macOS 安装包；
+2. 将 `Ollama.app` 放入 `/Applications`；
+3. 确认命令行可用：
+
+```bash
+ollama --version
+```
+
+如果桌面 app 没有自动启动本地服务，可以用命令行启动：
+
+```bash
+OLLAMA_HOST=127.0.0.1:11434 ollama serve
+```
+
+拉取推荐的千问 7B 模型：
+
+```bash
+ollama pull qwen2.5:7b
+ollama list
+```
+
+启用后端本地 LLM adapter：
+
+```bash
+export LLM_BACKEND=ollama
+export LLM_BASE_URL=http://127.0.0.1:11434/v1
+export LLM_API_KEY=ollama
+export LLM_MODEL=qwen2.5:7b
+export LLM_TIMEOUT_SECONDS=60
+export LLM_MAX_INPUT_CHARS=12000
+python3 -m uvicorn backend.app.main:app --reload --host 0.0.0.0 --port 8000
+```
+
+验证 Ollama 服务与后端能力状态：
+
+```bash
+curl http://127.0.0.1:11434/api/tags
+curl http://127.0.0.1:8000/api/v1/capabilities
+```
+
+常见排错：
+
+- `curl: Failed to connect to 127.0.0.1 port 11434`：先启动 `ollama serve` 或打开 `Ollama.app`；
+- `model not found`：执行 `ollama pull qwen2.5:7b`；
+- 画像接口返回 `state=not_implemented` 且有 `warnings`：模型调用失败或模型没有输出严格 JSON，后端已自动降级为 mock，服务不会中断；
+- 本地模型响应慢：减小 `LLM_MAX_INPUT_CHARS`，或换更小模型。
 
 详细接口契约见 [docs/api-v3.md](docs/api-v3.md)。Neo4j 与知识图谱使用方法见 [docs/项目工作与Neo4j知识图谱使用说明.md](docs/项目工作与Neo4j知识图谱使用说明.md)。第一次接触项目或准备替换论文算法时，建议先读 [docs/零基础项目导读与算法替换指南.md](docs/零基础项目导读与算法替换指南.md)。

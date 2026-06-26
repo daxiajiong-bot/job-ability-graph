@@ -21,6 +21,12 @@ from backend.app.infrastructure.mocks.adapters import (
     capability_catalog,
 )
 from backend.app.infrastructure.ocr import PaddleOcrAdapter
+from backend.app.infrastructure.llm import (
+    LLMProfileBuilder,
+    LLMSettings,
+    LightweightSkillNormalizer,
+    OllamaStructuredExtractor,
+)
 
 
 @dataclass(frozen=True)
@@ -29,7 +35,7 @@ class ApplicationContainer:
     facade: ContractFacade
 
 
-def build_container(ocr: Any | None = None) -> ApplicationContainer:
+def build_container(ocr: Any | None = None, llm_chat_client: Any | None = None) -> ApplicationContainer:
     max_upload_mb = int(getenv("OCR_MAX_UPLOAD_MB", "20"))
     ocr_adapter = ocr or PaddleOcrAdapter(
         default_lang=getenv("OCR_DEFAULT_LANG", "ch"),
@@ -37,9 +43,28 @@ def build_container(ocr: Any | None = None) -> ApplicationContainer:
         max_upload_bytes=max_upload_mb * 1024 * 1024,
     )
     repository = InMemoryResourceRepository()
+    extractor: Any = MockStructuredExtractor()
+    normalizer: Any = MockSkillNormalizer()
+    profile_builder: Any = MockProfileBuilder()
     graph_builder: Any = MockKnowledgeGraphBuilder()
     graph_retriever: Any = MockGraphRetriever()
-    capabilities = capability_catalog()
+    capability_options: dict[str, str] = {}
+
+    llm_settings = LLMSettings.from_env()
+    if llm_settings.backend == "ollama":
+        extractor = OllamaStructuredExtractor(llm_settings, chat_client=llm_chat_client)
+        normalizer = LightweightSkillNormalizer()
+        profile_builder = LLMProfileBuilder()
+        capability_options.update(
+            structured_extraction_implementation="ollama",
+            structured_extraction_state="available",
+            skill_normalization_implementation="lightweight",
+            skill_normalization_state="available",
+            profile_builder_implementation="llm_profile_builder",
+            profile_builder_state="available",
+        )
+    elif llm_settings.backend != "mock":
+        raise ValueError("LLM_BACKEND must be either 'mock' or 'ollama'")
 
     graph_backend = getenv("GRAPH_BACKEND", "mock").strip().lower()
     if graph_backend == "neo4j":
@@ -53,7 +78,7 @@ def build_container(ocr: Any | None = None) -> ApplicationContainer:
         neo4j_store = Neo4jGraphStore(Neo4jSettings.from_env())
         graph_builder = Neo4jKnowledgeGraphBuilder(repository, neo4j_store)
         graph_retriever = Neo4jGraphRetriever(neo4j_store)
-        capabilities = capability_catalog(
+        capability_options.update(
             knowledge_graph_implementation="neo4j",
             knowledge_graph_state="available",
             graph_rag_implementation="neo4j",
@@ -62,11 +87,12 @@ def build_container(ocr: Any | None = None) -> ApplicationContainer:
     elif graph_backend != "mock":
         raise ValueError("GRAPH_BACKEND must be either 'mock' or 'neo4j'")
 
+    capabilities = capability_catalog(**capability_options)
     facade = ContractFacade(
         repository=repository,
-        extractor=MockStructuredExtractor(),
-        normalizer=MockSkillNormalizer(),
-        profile_builder=MockProfileBuilder(),
+        extractor=extractor,
+        normalizer=normalizer,
+        profile_builder=profile_builder,
         document_retriever=MockDocumentRetriever(),
         graph_builder=graph_builder,
         graph_retriever=graph_retriever,
