@@ -1,0 +1,16 @@
+{
+  "schema_version": "esco-index/v1",
+  "version": "v1.2.1",
+  "concept_count": 14579,
+  "source": "https://ec.europa.eu/esco/api/resource/skill",
+  "source_strategy": "official_esco_api_skill_hierarchy_bfs",
+  "source_roots": [
+    "http://data.europa.eu/esco/skill/04a13491-b58c-4d33-8b59-8fad0d55fe9e",
+    "http://data.europa.eu/esco/skill/335228d2-297d-4e0e-a6ee-bc6a8dc110d9",
+    "http://data.europa.eu/esco/skill/c46fcb45-5c14-4ffa-abed-5a43f104bb22",
+    "http://data.europa.eu/esco/skill/e35a5936-091d-4e87-bafe-f264e55bd656"
+  ],
+  "source_raw_jsonl": "data/esco/source/esco_api_v1.2.1_skill_hierarchy_en.jsonl",
+  "concepts_path": "data/esco/index/concepts.jsonl",
+  "downloaded_at": "2026-06-30T08:21:38Z"
+}

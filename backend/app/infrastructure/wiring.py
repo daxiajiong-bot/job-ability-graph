@@ -4,9 +4,11 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from os import getenv
+from pathlib import Path
 from typing import Any
 
 from backend.app.application.use_cases.contract_facade import ContractFacade
+from backend.app.data_governance import DataGovernanceService
 from backend.app.infrastructure.memory.repositories import InMemoryResourceRepository
 from backend.app.infrastructure.mocks.adapters import (
     MockDocumentRetriever,
@@ -21,6 +23,7 @@ from backend.app.infrastructure.mocks.adapters import (
     capability_catalog,
 )
 from backend.app.infrastructure.ocr import PaddleOcrAdapter
+from backend.app.infrastructure.files import ProfileArtifactStore
 from backend.app.infrastructure.llm import (
     LLMProfileBuilder,
     LLMSettings,
@@ -32,10 +35,16 @@ from backend.app.infrastructure.llm import (
 @dataclass(frozen=True)
 class ApplicationContainer:
     repository: InMemoryResourceRepository
+    data_governance: DataGovernanceService
     facade: ContractFacade
 
 
-def build_container(ocr: Any | None = None, llm_chat_client: Any | None = None) -> ApplicationContainer:
+def build_container(
+    ocr: Any | None = None,
+    llm_chat_client: Any | None = None,
+    data_governance_root: str | None = None,
+    profile_artifact_root: str | None = None,
+) -> ApplicationContainer:
     max_upload_mb = int(getenv("OCR_MAX_UPLOAD_MB", "20"))
     ocr_adapter = ocr or PaddleOcrAdapter(
         default_lang=getenv("OCR_DEFAULT_LANG", "ch"),
@@ -87,6 +96,14 @@ def build_container(ocr: Any | None = None, llm_chat_client: Any | None = None) 
     elif graph_backend != "mock":
         raise ValueError("GRAPH_BACKEND must be either 'mock' or 'neo4j'")
 
+    governance_root = data_governance_root or getenv("DATA_GOVERNANCE_ROOT", "data")
+    data_governance = DataGovernanceService(
+        root=governance_root,
+        llm_chat_client=llm_chat_client,
+    )
+    profile_artifacts = ProfileArtifactStore(
+        profile_artifact_root or getenv("PROFILE_ARTIFACT_ROOT") or Path(governance_root) / "structured" / "profiles"
+    )
     capabilities = capability_catalog(**capability_options)
     facade = ContractFacade(
         repository=repository,
@@ -100,6 +117,8 @@ def build_container(ocr: Any | None = None, llm_chat_client: Any | None = None) 
         matcher=MockMatcher(),
         report_generator=MockReportGenerator(),
         ocr=ocr_adapter,
+        data_governance=data_governance,
         capabilities=capabilities,
+        profile_artifact_store=profile_artifacts,
     )
-    return ApplicationContainer(repository=repository, facade=facade)
+    return ApplicationContainer(repository=repository, data_governance=data_governance, facade=facade)

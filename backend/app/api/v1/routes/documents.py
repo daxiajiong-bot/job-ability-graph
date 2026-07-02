@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 import json
-from typing import Any
+from typing import Any, Optional
 
 from fastapi import APIRouter, Depends, File, Form, Request, UploadFile, status
 
@@ -41,19 +41,19 @@ async def create_document_from_ocr(
     file: UploadFile = File(...),
     lang: str = Form(default="ch"),
     source_system: str = Form(default="ocr_upload"),
-    external_id: str | None = Form(default=None),
-    uri: str | None = Form(default=None),
-    published_at: str | None = Form(default=None),
-    metadata_json: str | None = Form(default=None),
-    use_doc_orientation_classify: bool | None = Form(default=None),
-    use_doc_unwarping: bool | None = Form(default=None),
-    use_textline_orientation: bool | None = Form(default=None),
-    text_det_limit_side_len: int | None = Form(default=None),
-    text_det_limit_type: str | None = Form(default=None),
-    text_det_thresh: float | None = Form(default=None),
-    text_det_box_thresh: float | None = Form(default=None),
-    text_det_unclip_ratio: float | None = Form(default=None),
-    text_rec_score_thresh: float | None = Form(default=None),
+    external_id: Optional[str] = Form(default=None),
+    uri: Optional[str] = Form(default=None),
+    published_at: Optional[str] = Form(default=None),
+    metadata_json: Optional[str] = Form(default=None),
+    use_doc_orientation_classify: Optional[bool] = Form(default=None),
+    use_doc_unwarping: Optional[bool] = Form(default=None),
+    use_textline_orientation: Optional[bool] = Form(default=None),
+    text_det_limit_side_len: Optional[int] = Form(default=None),
+    text_det_limit_type: Optional[str] = Form(default=None),
+    text_det_thresh: Optional[float] = Form(default=None),
+    text_det_box_thresh: Optional[float] = Form(default=None),
+    text_det_unclip_ratio: Optional[float] = Form(default=None),
+    text_rec_score_thresh: Optional[float] = Form(default=None),
     facade: ContractFacade = Depends(get_facade),
 ) -> dict:
     payload = await file.read()
@@ -89,7 +89,7 @@ def get_document(
     return success(request, {"document": facade.get_document(document_id)})
 
 
-def _metadata_from_json(value: str | None) -> dict[str, Any]:
+def _metadata_from_json(value: Optional[str]) -> dict[str, Any]:
     if not value:
         return {}
     try:
@@ -103,9 +103,9 @@ def _metadata_from_json(value: str | None) -> dict[str, Any]:
 
 def _document_source(
     source_system: str,
-    external_id: str | None,
-    uri: str | None,
-    published_at: str | None,
+    external_id: Optional[str],
+    uri: Optional[str],
+    published_at: Optional[str],
 ) -> dict[str, Any]:
     return {
         key: value

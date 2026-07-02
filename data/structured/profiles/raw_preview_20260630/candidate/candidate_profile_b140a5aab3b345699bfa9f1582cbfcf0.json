@@ -1,0 +1,477 @@
+{
+  "artifact_type": "candidate_profile",
+  "created_at": "2026-06-30T08:52:42Z",
+  "extraction": {
+    "evidence": [
+      {
+        "field": "skills",
+        "id": "ev_001",
+        "text": "参与 C/C++/JAVA/Python/大数据/ 相关项目，围绕 C++、Python、C# 完成需求分析、开发测试、问题定位与交付文档整理。"
+      },
+      {
+        "field": "capabilities",
+        "id": "ev_002",
+        "text": "围绕目标岗位 C/C++/JAVA/Python/大数据/AI/开发/测试（一二线城市均有岗位需求） 的核心能力，完成需求拆解、功能实现、测试验证和文档沉淀。"
+      },
+      {
+        "field": "capabilities",
+        "id": "ev_003",
+        "text": "参与业务流程梳理、脚本/工具开发、数据处理和问题定位，提升团队交付效率。"
+      }
+    ],
+    "fields": {
+      "achievements": [],
+      "candidate": {
+        "current_title": null,
+        "location": null,
+        "name": null,
+        "years_of_experience": 1
+      },
+      "capabilities": [
+        {
+          "description": "完成需求拆解、功能实现、测试验证和文档沉淀。",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "level": "working",
+          "name": "需求分析"
+        },
+        {
+          "description": "参与业务流程梳理、脚本/工具开发、数据处理和问题定位，提升团队交付效率。",
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "level": "working",
+          "name": "工具开发与优化"
+        }
+      ],
+      "career_intent": {
+        "target_industry": "软件/IT服务",
+        "target_location": "一二线城市",
+        "target_position": "C/C++/JAVA/Python/大数据/AI/开发/测试"
+      },
+      "certificates": [],
+      "document_type": "resume",
+      "education": [],
+      "evidence": [
+        {
+          "field": "skills",
+          "id": "ev_001",
+          "text": "参与 C/C++/JAVA/Python/大数据/ 相关项目，围绕 C++、Python、C# 完成需求分析、开发测试、问题定位与交付文档整理。"
+        },
+        {
+          "field": "capabilities",
+          "id": "ev_002",
+          "text": "围绕目标岗位 C/C++/JAVA/Python/大数据/AI/开发/测试（一二线城市均有岗位需求） 的核心能力，完成需求拆解、功能实现、测试验证和文档沉淀。"
+        },
+        {
+          "field": "capabilities",
+          "id": "ev_003",
+          "text": "参与业务流程梳理、脚本/工具开发、数据处理和问题定位，提升团队交付效率。"
+        }
+      ],
+      "experience": [],
+      "languages": [],
+      "project_experience": [],
+      "projects": [],
+      "requirements": [],
+      "responsibilities": [],
+      "schema_version": "profile-extraction/v2",
+      "skills": [
+        {
+          "category": "programming_language",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "level": "proficient",
+          "lskt_label": "S",
+          "name": "C++",
+          "raw_name": "C++",
+          "years": null
+        },
+        {
+          "category": "programming_language",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "level": "proficient",
+          "lskt_label": "S",
+          "name": "Python",
+          "raw_name": "Python",
+          "years": null
+        },
+        {
+          "category": "testing",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "level": "proficient",
+          "lskt_label": "S",
+          "name": "接口测试",
+          "raw_name": "接口测试",
+          "years": null
+        },
+        {
+          "category": "testing",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "level": "proficient",
+          "lskt_label": "S",
+          "name": "问题定位",
+          "raw_name": "问题定位",
+          "years": null
+        }
+      ],
+      "work_experience": []
+    },
+    "implementation": "ollama",
+    "model": "qwen2.5:7b",
+    "raw_model_output": "",
+    "reason": "",
+    "schema": "profile-extraction/v2",
+    "state": "available",
+    "validation_error": "",
+    "warnings": [
+      "education[1] ignored: missing evidence_text",
+      "work_experience[1] ignored: missing evidence_text",
+      "project_experience[1] ignored: missing evidence_text",
+      "project_experience[2] ignored: missing evidence_text"
+    ]
+  },
+  "normalization": {
+    "implementation": "lightweight_skill_normalizer",
+    "skills": [
+      {
+        "category": "programming_language",
+        "esco_preferred_label": "C++",
+        "esco_uri": "http://data.europa.eu/esco/skill/b633eb55-8f1f-4ae6-ab4c-2022ffe2cb7f",
+        "esco_version": "v1.2.1",
+        "evidence_ids": [
+          "ev_001"
+        ],
+        "level": "proficient",
+        "linking_confidence": 1.0,
+        "linking_status": "linked",
+        "lskt_label": "S",
+        "name": "C++",
+        "raw_name": "C++",
+        "years": null
+      },
+      {
+        "category": "programming_language",
+        "esco_preferred_label": "Python (computer programming)",
+        "esco_uri": "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d",
+        "esco_version": "v1.2.1",
+        "evidence_ids": [
+          "ev_001"
+        ],
+        "level": "proficient",
+        "linking_confidence": 1.0,
+        "linking_status": "linked",
+        "lskt_label": "S",
+        "name": "Python (computer programming)",
+        "raw_name": "Python",
+        "years": null
+      },
+      {
+        "category": "testing",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_001"
+        ],
+        "level": "proficient",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "接口测试",
+        "raw_name": "接口测试",
+        "years": null
+      },
+      {
+        "category": "testing",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_001"
+        ],
+        "level": "proficient",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "问题定位",
+        "raw_name": "问题定位",
+        "years": null
+      }
+    ],
+    "state": "available",
+    "warnings": []
+  },
+  "profile": {
+    "artifacts": {
+      "profile_json": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/structured/profiles/raw_preview_20260630/candidate/candidate_profile_b140a5aab3b345699bfa9f1582cbfcf0.json",
+      "schema_version": "profile-extraction/v2",
+      "storage": "filesystem"
+    },
+    "attributes": {
+      "candidate": {
+        "current_title": null,
+        "location": null,
+        "name": null,
+        "years_of_experience": 1
+      },
+      "capabilities": [
+        {
+          "description": "完成需求拆解、功能实现、测试验证和文档沉淀。",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "level": "working",
+          "name": "需求分析"
+        },
+        {
+          "description": "参与业务流程梳理、脚本/工具开发、数据处理和问题定位，提升团队交付效率。",
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "level": "working",
+          "name": "工具开发与优化"
+        }
+      ],
+      "career_intent": {
+        "target_industry": "软件/IT服务",
+        "target_location": "一二线城市",
+        "target_position": "C/C++/JAVA/Python/大数据/AI/开发/测试"
+      },
+      "education": [],
+      "experience": [],
+      "profile_schema": "profile-extraction/v2",
+      "projects": [],
+      "resume_profile": {
+        "achievements": [],
+        "candidate": {
+          "current_title": null,
+          "location": null,
+          "name": null,
+          "years_of_experience": 1
+        },
+        "capabilities": [
+          {
+            "description": "完成需求拆解、功能实现、测试验证和文档沉淀。",
+            "evidence_ids": [
+              "ev_002"
+            ],
+            "level": "working",
+            "name": "需求分析"
+          },
+          {
+            "description": "参与业务流程梳理、脚本/工具开发、数据处理和问题定位，提升团队交付效率。",
+            "evidence_ids": [
+              "ev_003"
+            ],
+            "level": "working",
+            "name": "工具开发与优化"
+          }
+        ],
+        "career_intent": {
+          "target_industry": "软件/IT服务",
+          "target_location": "一二线城市",
+          "target_position": "C/C++/JAVA/Python/大数据/AI/开发/测试"
+        },
+        "certificates": [],
+        "document_type": "resume",
+        "education": [],
+        "languages": [],
+        "project_experience": [],
+        "schema_version": "profile-extraction/v2",
+        "skills": [
+          {
+            "category": "programming_language",
+            "esco_preferred_label": "C++",
+            "esco_uri": "http://data.europa.eu/esco/skill/b633eb55-8f1f-4ae6-ab4c-2022ffe2cb7f",
+            "esco_version": "v1.2.1",
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "level": "proficient",
+            "linking_confidence": 1.0,
+            "linking_status": "linked",
+            "lskt_label": "S",
+            "name": "C++",
+            "raw_name": "C++",
+            "years": null
+          },
+          {
+            "category": "programming_language",
+            "esco_preferred_label": "Python (computer programming)",
+            "esco_uri": "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d",
+            "esco_version": "v1.2.1",
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "level": "proficient",
+            "linking_confidence": 1.0,
+            "linking_status": "linked",
+            "lskt_label": "S",
+            "name": "Python (computer programming)",
+            "raw_name": "Python",
+            "years": null
+          },
+          {
+            "category": "testing",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "level": "proficient",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "接口测试",
+            "raw_name": "接口测试",
+            "years": null
+          },
+          {
+            "category": "testing",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "level": "proficient",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "问题定位",
+            "raw_name": "问题定位",
+            "years": null
+          }
+        ],
+        "work_experience": []
+      },
+      "skills": [
+        {
+          "category": "programming_language",
+          "esco_preferred_label": "C++",
+          "esco_uri": "http://data.europa.eu/esco/skill/b633eb55-8f1f-4ae6-ab4c-2022ffe2cb7f",
+          "esco_version": "v1.2.1",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "level": "proficient",
+          "linking_confidence": 1.0,
+          "linking_status": "linked",
+          "lskt_label": "S",
+          "name": "C++",
+          "raw_name": "C++",
+          "years": null
+        },
+        {
+          "category": "programming_language",
+          "esco_preferred_label": "Python (computer programming)",
+          "esco_uri": "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d",
+          "esco_version": "v1.2.1",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "level": "proficient",
+          "linking_confidence": 1.0,
+          "linking_status": "linked",
+          "lskt_label": "S",
+          "name": "Python (computer programming)",
+          "raw_name": "Python",
+          "years": null
+        },
+        {
+          "category": "testing",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "level": "proficient",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "接口测试",
+          "raw_name": "接口测试",
+          "years": null
+        },
+        {
+          "category": "testing",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "level": "proficient",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "问题定位",
+          "raw_name": "问题定位",
+          "years": null
+        }
+      ],
+      "target_position": "C/C++/JAVA/Python/大数据/AI/开发/测试"
+    },
+    "created_at": "2026-06-30T08:52:42Z",
+    "evidence": [
+      {
+        "field": "skills",
+        "id": "ev_001",
+        "text": "参与 C/C++/JAVA/Python/大数据/ 相关项目，围绕 C++、Python、C# 完成需求分析、开发测试、问题定位与交付文档整理。"
+      },
+      {
+        "field": "capabilities",
+        "id": "ev_002",
+        "text": "围绕目标岗位 C/C++/JAVA/Python/大数据/AI/开发/测试（一二线城市均有岗位需求） 的核心能力，完成需求拆解、功能实现、测试验证和文档沉淀。"
+      },
+      {
+        "field": "capabilities",
+        "id": "ev_003",
+        "text": "参与业务流程梳理、脚本/工具开发、数据处理和问题定位，提升团队交付效率。"
+      }
+    ],
+    "id": "candidate_profile_b140a5aab3b345699bfa9f1582cbfcf0",
+    "implementation": "llm_profile_builder",
+    "profile_type": "candidate",
+    "source_document_id": "doc_1848259b50654f4d90e3f067a0f89b68",
+    "state": "available",
+    "warnings": [
+      "education[1] ignored: missing evidence_text",
+      "work_experience[1] ignored: missing evidence_text",
+      "project_experience[1] ignored: missing evidence_text",
+      "project_experience[2] ignored: missing evidence_text"
+    ]
+  },
+  "schema_version": "profile-extraction/v2",
+  "source_document": {
+    "char_count": 884,
+    "content_digest": "6bd4d358a925029945ed445b73a976e31cf12737784bd859c8d61b79e5801dd0",
+    "created_at": "2026-06-30T08:51:40Z",
+    "document_type": "resume",
+    "id": "doc_1848259b50654f4d90e3f067a0f89b68",
+    "metadata": {
+      "privacy_level": "anonymous_or_synthetic",
+      "raw_file": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/small-raw/resume_raw.jsonl",
+      "raw_index": 10,
+      "raw_type": "resume",
+      "target_job_id": "40866497505"
+    },
+    "source": {
+      "external_id": "R0010",
+      "source_system": "small-raw",
+      "uri": "http://www.zhaopin.com/jobdetail/CCL1480117890J40866497505.htm"
+    },
+    "storage": "memory"
+  }
+}

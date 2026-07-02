@@ -1,0 +1,76 @@
+{
+  "artifact_type": "candidate_profile",
+  "created_at": "2026-06-30T08:42:57Z",
+  "extraction": {
+    "evidence": [],
+    "fields": {},
+    "implementation": "mock",
+    "model": null,
+    "raw_model_output": "",
+    "reason": "Ollama structured extraction failed: local LLM request failed: timed out",
+    "schema": null,
+    "state": "not_implemented",
+    "validation_error": "local LLM request failed: timed out",
+    "warnings": [
+      "Ollama structured extraction failed: local LLM request failed: timed out"
+    ]
+  },
+  "normalization": {
+    "implementation": "lightweight_skill_normalizer",
+    "skills": [],
+    "state": "not_implemented",
+    "warnings": [
+      "Ollama structured extraction failed: local LLM request failed: timed out"
+    ]
+  },
+  "profile": {
+    "artifacts": {
+      "profile_json": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/structured/profiles/raw_preview_20260630/candidate/candidate_profile_9cf308206954442c9b3c593633907cf2.json",
+      "schema_version": "profile-extraction/v2",
+      "storage": "filesystem"
+    },
+    "attributes": {
+      "candidate": {},
+      "capabilities": [],
+      "career_intent": {},
+      "education": [],
+      "experience": [],
+      "profile_schema": "profile-extraction/v2",
+      "projects": [],
+      "resume_profile": {},
+      "skills": [],
+      "target_position": null
+    },
+    "created_at": "2026-06-30T08:42:57Z",
+    "evidence": [],
+    "id": "candidate_profile_9cf308206954442c9b3c593633907cf2",
+    "implementation": "mock",
+    "profile_type": "candidate",
+    "source_document_id": "doc_1c8232d7011b4e2286f40578f6f00931",
+    "state": "not_implemented",
+    "warnings": [
+      "Ollama structured extraction failed: local LLM request failed: timed out"
+    ]
+  },
+  "schema_version": "profile-extraction/v2",
+  "source_document": {
+    "char_count": 894,
+    "content_digest": "8b5173e70e01d58006003f476f09144272db65eb9bc41fa87114d3306eb0d954",
+    "created_at": "2026-06-30T08:40:57Z",
+    "document_type": "resume",
+    "id": "doc_1c8232d7011b4e2286f40578f6f00931",
+    "metadata": {
+      "privacy_level": "anonymous_or_synthetic",
+      "raw_file": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/small-raw/resume_raw.jsonl",
+      "raw_index": 2,
+      "raw_type": "resume",
+      "target_job_id": "40735553916"
+    },
+    "source": {
+      "external_id": "R0002",
+      "source_system": "small-raw",
+      "uri": "http://www.zhaopin.com/jobdetail/CC000544460J40735553916.htm"
+    },
+    "storage": "memory"
+  }
+}

@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+from dataclasses import replace
 from typing import Any
 
 from backend.app.domain.entities import (
@@ -32,7 +33,9 @@ class ContractFacade:
         matcher: Any,
         report_generator: Any,
         ocr: Any,
+        data_governance: Any,
         capabilities: list[dict[str, str]],
+        profile_artifact_store: Any | None = None,
     ) -> None:
         self.repository = repository
         self.extractor = extractor
@@ -45,6 +48,8 @@ class ContractFacade:
         self.matcher = matcher
         self.report_generator = report_generator
         self.ocr = ocr
+        self.data_governance = data_governance
+        self.profile_artifact_store = profile_artifact_store
         self._capabilities = capabilities
 
     def capabilities(self) -> dict[str, Any]:
@@ -130,6 +135,14 @@ class ContractFacade:
         normalization = self.normalizer.normalize(extraction)
         result = self.profile_builder.build(profile_type, document, extraction, normalization)
         profile = Profile.create(profile_type, document.id, result)
+        if self.profile_artifact_store is not None:
+            artifacts = self.profile_artifact_store.write(
+                profile=profile,
+                document=document,
+                extraction=extraction,
+                normalization=normalization,
+            )
+            profile = replace(profile, artifacts=artifacts)
         return self.repository.add_profile(profile).public()
 
     def retrieve_document_evidence(
@@ -208,3 +221,50 @@ class ContractFacade:
         result = self.report_generator.generate(match, language)
         report = GeneratedReport.create(match_id, language, result)
         return self.repository.add_report(report).public()
+
+    def register_governance_file(
+        self,
+        document_type: DocumentType,
+        content: bytes,
+        file_name: str,
+        mime_type: str | None,
+        source: dict[str, Any],
+        metadata: dict[str, Any],
+    ) -> dict[str, Any]:
+        return self.data_governance.register_upload(
+            document_type=document_type.value,
+            content=content,
+            file_name=file_name,
+            mime_type=mime_type,
+            source=source,
+            metadata=metadata,
+        )
+
+    def register_governance_path(
+        self,
+        document_type: DocumentType,
+        path: str,
+        source: dict[str, Any],
+        metadata: dict[str, Any],
+    ) -> dict[str, Any]:
+        return self.data_governance.register_path(
+            document_type=document_type.value,
+            path=path,
+            source=source,
+            metadata=metadata,
+        )
+
+    def process_governance_document(self, doc_id: str, version: int | None = None) -> dict[str, Any]:
+        return self.data_governance.process_document(doc_id, version)
+
+    def get_governance_document(self, doc_id: str, version: int | None = None) -> dict[str, Any]:
+        return self.data_governance.get_document(doc_id, version)
+
+    def get_governance_lineage(self, doc_id: str, version: int | None = None) -> dict[str, Any]:
+        return self.data_governance.lineage(doc_id, version)
+
+    def search_governance_rag(self, query: str, doc_ids: list[str], top_k: int) -> dict[str, Any]:
+        return self.data_governance.retrieve(query, doc_ids or None, top_k)
+
+    def answer_governance_rag(self, query: str, doc_ids: list[str], top_k: int) -> dict[str, Any]:
+        return self.data_governance.answer(query, doc_ids or None, top_k)

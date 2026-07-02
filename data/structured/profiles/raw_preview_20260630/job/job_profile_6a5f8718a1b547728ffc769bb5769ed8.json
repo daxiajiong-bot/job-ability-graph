@@ -1,0 +1,1035 @@
+{
+  "artifact_type": "job_profile",
+  "created_at": "2026-06-30T08:36:31Z",
+  "extraction": {
+    "evidence": [
+      {
+        "field": "responsibilities",
+        "id": "ev_001",
+        "text": "负责Python软件界面开发、开发自测DT及自动化脚本编写"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_002",
+        "text": "统招本科及以上学历，计算机相关专业优先"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_003",
+        "text": "1年以上Python开发经验，熟练掌握Python 3.X，具备扎实的编码能力"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_004",
+        "text": "精通Python语言特性及常用框架，熟悉虚拟环境配置（如venv）及依赖管理"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_005",
+        "text": "熟悉Linux/Windows操作系统及常用命令"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_006",
+        "text": "熟练编写Shell脚本（Linux）及批处理脚本（Windows）"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_007",
+        "text": "熟悉持续集成（CI/CD）流程与工具（如Jenkins/GitLab CI）"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_008",
+        "text": "有C/C++基础或混合编程经验者优先"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_009",
+        "text": "了解前端基础技术（如Electron/PyQt等界面开发框架）"
+      }
+    ],
+    "fields": {
+      "application_scenarios": [
+        {
+          "description": "负责Python软件界面开发、开发自测DT及自动化脚本编写",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "name": "Python软件界面开发"
+        }
+      ],
+      "candidate": {
+        "name": null,
+        "target_position": null
+      },
+      "capabilities": [],
+      "company": {
+        "industry": "软件/IT服务",
+        "location": "深圳 龙岗",
+        "name": "软通动力信息技术(集团)股份有限公司"
+      },
+      "document_type": "jd",
+      "education": [],
+      "employment": {
+        "employment_type": "full_time",
+        "published_at": "2026-06-17 10:19:54",
+        "salary_max": 16000,
+        "salary_min": 1000
+      },
+      "evaluation_signals": [],
+      "evidence": [
+        {
+          "field": "responsibilities",
+          "id": "ev_001",
+          "text": "负责Python软件界面开发、开发自测DT及自动化脚本编写"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_002",
+          "text": "统招本科及以上学历，计算机相关专业优先"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_003",
+          "text": "1年以上Python开发经验，熟练掌握Python 3.X，具备扎实的编码能力"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_004",
+          "text": "精通Python语言特性及常用框架，熟悉虚拟环境配置（如venv）及依赖管理"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_005",
+          "text": "熟悉Linux/Windows操作系统及常用命令"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_006",
+          "text": "熟练编写Shell脚本（Linux）及批处理脚本（Windows）"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_007",
+          "text": "熟悉持续集成（CI/CD）流程与工具（如Jenkins/GitLab CI）"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_008",
+          "text": "有C/C++基础或混合编程经验者优先"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_009",
+          "text": "了解前端基础技术（如Electron/PyQt等界面开发框架）"
+        }
+      ],
+      "experience": [],
+      "job": {
+        "department": null,
+        "normalized_title": "python developer",
+        "seniority": null,
+        "title": "Python开发"
+      },
+      "projects": [],
+      "requirements": [
+        {
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "importance": "required",
+          "requirement_type": "education",
+          "text": "统招本科及以上学历，计算机相关专业优先"
+        },
+        {
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "importance": "required",
+          "requirement_type": "experience",
+          "text": "1年以上Python开发经验，熟练掌握Python 3.X，具备扎实的编码能力"
+        },
+        {
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "精通Python语言特性及常用框架，熟悉虚拟环境配置（如venv）及依赖管理"
+        },
+        {
+          "evidence_ids": [
+            "ev_005"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "熟悉Linux/Windows操作系统及常用命令"
+        },
+        {
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "熟练编写Shell脚本（Linux）及批处理脚本（Windows）"
+        },
+        {
+          "evidence_ids": [
+            "ev_007"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "熟悉持续集成（CI/CD）流程与工具（如Jenkins/GitLab CI）"
+        },
+        {
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "importance": "preferred",
+          "requirement_type": "skill",
+          "text": "有C/C++基础或混合编程经验者优先"
+        },
+        {
+          "evidence_ids": [
+            "ev_009"
+          ],
+          "importance": "preferred",
+          "requirement_type": "skill",
+          "text": "了解前端基础技术（如Electron/PyQt等界面开发框架）"
+        }
+      ],
+      "responsibilities": [
+        {
+          "action": "负责",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "object": "Python软件界面开发、开发自测DT及自动化脚本编写",
+          "text": "负责Python软件界面开发、开发自测DT及自动化脚本编写"
+        }
+      ],
+      "schema_version": "profile-extraction/v2",
+      "skills": [
+        {
+          "category": "programming_language",
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "Python语言特性及常用框架",
+          "raw_name": "精通Python语言特性及常用框架"
+        },
+        {
+          "category": "tool",
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "虚拟环境配置(venv)",
+          "raw_name": "熟悉虚拟环境配置（如venv）"
+        },
+        {
+          "category": "tool",
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "依赖管理",
+          "raw_name": "熟悉虚拟环境配置（如venv）及依赖管理"
+        },
+        {
+          "category": "platform",
+          "evidence_ids": [
+            "ev_005"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "Linux操作系统",
+          "raw_name": "熟悉Linux/Windows操作系统及常用命令"
+        },
+        {
+          "category": "platform",
+          "evidence_ids": [
+            "ev_005"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "Windows操作系统",
+          "raw_name": "熟悉Linux/Windows操作系统及常用命令"
+        },
+        {
+          "category": "tool",
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "Shell脚本编写（Linux）",
+          "raw_name": "熟练编写Shell脚本（Linux）"
+        },
+        {
+          "category": "tool",
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "批处理脚本编写（Windows）",
+          "raw_name": "熟练编写Shell脚本（Linux）及批处理脚本（Windows）"
+        },
+        {
+          "category": "devops",
+          "evidence_ids": [
+            "ev_007"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "持续集成（CI/CD）流程与工具（如Jenkins/GitLab CI）",
+          "raw_name": "熟悉持续集成（CI/CD）流程与工具（如Jenkins/GitLab CI）"
+        },
+        {
+          "category": "programming_language",
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "importance": "preferred",
+          "lskt_label": "S",
+          "name": "C/C++基础或混合编程经验",
+          "raw_name": "有C/C++基础或混合编程经验者优先"
+        },
+        {
+          "category": "framework",
+          "evidence_ids": [
+            "ev_009"
+          ],
+          "importance": "preferred",
+          "lskt_label": "S",
+          "name": "前端基础技术（如Electron/PyQt等界面开发框架）",
+          "raw_name": "了解前端基础技术（如Electron/PyQt等界面开发框架）"
+        }
+      ]
+    },
+    "implementation": "ollama",
+    "model": "qwen2.5:7b",
+    "raw_model_output": "",
+    "reason": "",
+    "schema": "profile-extraction/v2",
+    "state": "available",
+    "validation_error": "",
+    "warnings": [
+      "capabilities[1] ignored: missing evidence_text"
+    ]
+  },
+  "normalization": {
+    "implementation": "lightweight_skill_normalizer",
+    "skills": [
+      {
+        "category": "programming_language",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_004"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "精通Python语言特性及常用框架",
+        "raw_name": "精通Python语言特性及常用框架"
+      },
+      {
+        "category": "tool",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_004"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "熟悉虚拟环境配置（如venv）",
+        "raw_name": "熟悉虚拟环境配置（如venv）"
+      },
+      {
+        "category": "tool",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_004"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "熟悉虚拟环境配置（如venv）及依赖管理",
+        "raw_name": "熟悉虚拟环境配置（如venv）及依赖管理"
+      },
+      {
+        "category": "platform",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_005"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "熟悉Linux/Windows操作系统及常用命令",
+        "raw_name": "熟悉Linux/Windows操作系统及常用命令"
+      },
+      {
+        "category": "tool",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_006"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "熟练编写Shell脚本（Linux）",
+        "raw_name": "熟练编写Shell脚本（Linux）"
+      },
+      {
+        "category": "tool",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_006"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "熟练编写Shell脚本（Linux）及批处理脚本（Windows）",
+        "raw_name": "熟练编写Shell脚本（Linux）及批处理脚本（Windows）"
+      },
+      {
+        "category": "devops",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_007"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "熟悉持续集成（CI/CD）流程与工具（如Jenkins/GitLab CI）",
+        "raw_name": "熟悉持续集成（CI/CD）流程与工具（如Jenkins/GitLab CI）"
+      },
+      {
+        "category": "programming_language",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_008"
+        ],
+        "importance": "preferred",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "有C/C++基础或混合编程经验者优先",
+        "raw_name": "有C/C++基础或混合编程经验者优先"
+      },
+      {
+        "category": "framework",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_009"
+        ],
+        "importance": "preferred",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "了解前端基础技术（如Electron/PyQt等界面开发框架）",
+        "raw_name": "了解前端基础技术（如Electron/PyQt等界面开发框架）"
+      }
+    ],
+    "state": "available",
+    "warnings": []
+  },
+  "profile": {
+    "artifacts": {
+      "profile_json": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/structured/profiles/raw_preview_20260630/job/job_profile_6a5f8718a1b547728ffc769bb5769ed8.json",
+      "schema_version": "profile-extraction/v2",
+      "storage": "filesystem"
+    },
+    "attributes": {
+      "capabilities": [],
+      "company": {
+        "industry": "软件/IT服务",
+        "location": "深圳 龙岗",
+        "name": "软通动力信息技术(集团)股份有限公司"
+      },
+      "education": [],
+      "employment": {
+        "employment_type": "full_time",
+        "published_at": "2026-06-17 10:19:54",
+        "salary_max": 16000,
+        "salary_min": 1000
+      },
+      "experience": [],
+      "jd_profile": {
+        "application_scenarios": [
+          {
+            "description": "负责Python软件界面开发、开发自测DT及自动化脚本编写",
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "name": "Python软件界面开发"
+          }
+        ],
+        "capabilities": [],
+        "company": {
+          "industry": "软件/IT服务",
+          "location": "深圳 龙岗",
+          "name": "软通动力信息技术(集团)股份有限公司"
+        },
+        "document_type": "jd",
+        "employment": {
+          "employment_type": "full_time",
+          "published_at": "2026-06-17 10:19:54",
+          "salary_max": 16000,
+          "salary_min": 1000
+        },
+        "evaluation_signals": [],
+        "job": {
+          "department": null,
+          "normalized_title": "python developer",
+          "seniority": null,
+          "title": "Python开发"
+        },
+        "requirements": [
+          {
+            "evidence_ids": [
+              "ev_002"
+            ],
+            "importance": "required",
+            "requirement_type": "education",
+            "text": "统招本科及以上学历，计算机相关专业优先"
+          },
+          {
+            "evidence_ids": [
+              "ev_003"
+            ],
+            "importance": "required",
+            "requirement_type": "experience",
+            "text": "1年以上Python开发经验，熟练掌握Python 3.X，具备扎实的编码能力"
+          },
+          {
+            "evidence_ids": [
+              "ev_004"
+            ],
+            "importance": "required",
+            "requirement_type": "skill",
+            "text": "精通Python语言特性及常用框架，熟悉虚拟环境配置（如venv）及依赖管理"
+          },
+          {
+            "evidence_ids": [
+              "ev_005"
+            ],
+            "importance": "required",
+            "requirement_type": "skill",
+            "text": "熟悉Linux/Windows操作系统及常用命令"
+          },
+          {
+            "evidence_ids": [
+              "ev_006"
+            ],
+            "importance": "required",
+            "requirement_type": "skill",
+            "text": "熟练编写Shell脚本（Linux）及批处理脚本（Windows）"
+          },
+          {
+            "evidence_ids": [
+              "ev_007"
+            ],
+            "importance": "required",
+            "requirement_type": "skill",
+            "text": "熟悉持续集成（CI/CD）流程与工具（如Jenkins/GitLab CI）"
+          },
+          {
+            "evidence_ids": [
+              "ev_008"
+            ],
+            "importance": "preferred",
+            "requirement_type": "skill",
+            "text": "有C/C++基础或混合编程经验者优先"
+          },
+          {
+            "evidence_ids": [
+              "ev_009"
+            ],
+            "importance": "preferred",
+            "requirement_type": "skill",
+            "text": "了解前端基础技术（如Electron/PyQt等界面开发框架）"
+          }
+        ],
+        "responsibilities": [
+          {
+            "action": "负责",
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "object": "Python软件界面开发、开发自测DT及自动化脚本编写",
+            "text": "负责Python软件界面开发、开发自测DT及自动化脚本编写"
+          }
+        ],
+        "schema_version": "profile-extraction/v2",
+        "skills": [
+          {
+            "category": "programming_language",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_004"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "精通Python语言特性及常用框架",
+            "raw_name": "精通Python语言特性及常用框架"
+          },
+          {
+            "category": "tool",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_004"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "熟悉虚拟环境配置（如venv）",
+            "raw_name": "熟悉虚拟环境配置（如venv）"
+          },
+          {
+            "category": "tool",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_004"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "熟悉虚拟环境配置（如venv）及依赖管理",
+            "raw_name": "熟悉虚拟环境配置（如venv）及依赖管理"
+          },
+          {
+            "category": "platform",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_005"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "熟悉Linux/Windows操作系统及常用命令",
+            "raw_name": "熟悉Linux/Windows操作系统及常用命令"
+          },
+          {
+            "category": "tool",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_006"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "熟练编写Shell脚本（Linux）",
+            "raw_name": "熟练编写Shell脚本（Linux）"
+          },
+          {
+            "category": "tool",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_006"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "熟练编写Shell脚本（Linux）及批处理脚本（Windows）",
+            "raw_name": "熟练编写Shell脚本（Linux）及批处理脚本（Windows）"
+          },
+          {
+            "category": "devops",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_007"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "熟悉持续集成（CI/CD）流程与工具（如Jenkins/GitLab CI）",
+            "raw_name": "熟悉持续集成（CI/CD）流程与工具（如Jenkins/GitLab CI）"
+          },
+          {
+            "category": "programming_language",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_008"
+            ],
+            "importance": "preferred",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "有C/C++基础或混合编程经验者优先",
+            "raw_name": "有C/C++基础或混合编程经验者优先"
+          },
+          {
+            "category": "framework",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_009"
+            ],
+            "importance": "preferred",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "了解前端基础技术（如Electron/PyQt等界面开发框架）",
+            "raw_name": "了解前端基础技术（如Electron/PyQt等界面开发框架）"
+          }
+        ]
+      },
+      "job": {
+        "department": null,
+        "normalized_title": "python developer",
+        "seniority": null,
+        "title": "Python开发"
+      },
+      "job_title": "Python开发",
+      "profile_schema": "profile-extraction/v2",
+      "projects": [],
+      "requirements": [
+        {
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "importance": "required",
+          "requirement_type": "education",
+          "text": "统招本科及以上学历，计算机相关专业优先"
+        },
+        {
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "importance": "required",
+          "requirement_type": "experience",
+          "text": "1年以上Python开发经验，熟练掌握Python 3.X，具备扎实的编码能力"
+        },
+        {
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "精通Python语言特性及常用框架，熟悉虚拟环境配置（如venv）及依赖管理"
+        },
+        {
+          "evidence_ids": [
+            "ev_005"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "熟悉Linux/Windows操作系统及常用命令"
+        },
+        {
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "熟练编写Shell脚本（Linux）及批处理脚本（Windows）"
+        },
+        {
+          "evidence_ids": [
+            "ev_007"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "熟悉持续集成（CI/CD）流程与工具（如Jenkins/GitLab CI）"
+        },
+        {
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "importance": "preferred",
+          "requirement_type": "skill",
+          "text": "有C/C++基础或混合编程经验者优先"
+        },
+        {
+          "evidence_ids": [
+            "ev_009"
+          ],
+          "importance": "preferred",
+          "requirement_type": "skill",
+          "text": "了解前端基础技术（如Electron/PyQt等界面开发框架）"
+        }
+      ],
+      "responsibilities": [
+        {
+          "action": "负责",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "object": "Python软件界面开发、开发自测DT及自动化脚本编写",
+          "text": "负责Python软件界面开发、开发自测DT及自动化脚本编写"
+        }
+      ],
+      "skills": [
+        {
+          "category": "programming_language",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "精通Python语言特性及常用框架",
+          "raw_name": "精通Python语言特性及常用框架"
+        },
+        {
+          "category": "tool",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "熟悉虚拟环境配置（如venv）",
+          "raw_name": "熟悉虚拟环境配置（如venv）"
+        },
+        {
+          "category": "tool",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "熟悉虚拟环境配置（如venv）及依赖管理",
+          "raw_name": "熟悉虚拟环境配置（如venv）及依赖管理"
+        },
+        {
+          "category": "platform",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_005"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "熟悉Linux/Windows操作系统及常用命令",
+          "raw_name": "熟悉Linux/Windows操作系统及常用命令"
+        },
+        {
+          "category": "tool",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "熟练编写Shell脚本（Linux）",
+          "raw_name": "熟练编写Shell脚本（Linux）"
+        },
+        {
+          "category": "tool",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "熟练编写Shell脚本（Linux）及批处理脚本（Windows）",
+          "raw_name": "熟练编写Shell脚本（Linux）及批处理脚本（Windows）"
+        },
+        {
+          "category": "devops",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_007"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "熟悉持续集成（CI/CD）流程与工具（如Jenkins/GitLab CI）",
+          "raw_name": "熟悉持续集成（CI/CD）流程与工具（如Jenkins/GitLab CI）"
+        },
+        {
+          "category": "programming_language",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "importance": "preferred",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "有C/C++基础或混合编程经验者优先",
+          "raw_name": "有C/C++基础或混合编程经验者优先"
+        },
+        {
+          "category": "framework",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_009"
+          ],
+          "importance": "preferred",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "了解前端基础技术（如Electron/PyQt等界面开发框架）",
+          "raw_name": "了解前端基础技术（如Electron/PyQt等界面开发框架）"
+        }
+      ]
+    },
+    "created_at": "2026-06-30T08:36:31Z",
+    "evidence": [
+      {
+        "field": "responsibilities",
+        "id": "ev_001",
+        "text": "负责Python软件界面开发、开发自测DT及自动化脚本编写"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_002",
+        "text": "统招本科及以上学历，计算机相关专业优先"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_003",
+        "text": "1年以上Python开发经验，熟练掌握Python 3.X，具备扎实的编码能力"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_004",
+        "text": "精通Python语言特性及常用框架，熟悉虚拟环境配置（如venv）及依赖管理"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_005",
+        "text": "熟悉Linux/Windows操作系统及常用命令"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_006",
+        "text": "熟练编写Shell脚本（Linux）及批处理脚本（Windows）"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_007",
+        "text": "熟悉持续集成（CI/CD）流程与工具（如Jenkins/GitLab CI）"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_008",
+        "text": "有C/C++基础或混合编程经验者优先"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_009",
+        "text": "了解前端基础技术（如Electron/PyQt等界面开发框架）"
+      }
+    ],
+    "id": "job_profile_6a5f8718a1b547728ffc769bb5769ed8",
+    "implementation": "llm_profile_builder",
+    "profile_type": "job",
+    "source_document_id": "doc_580ad50793304de58aa4d722721f2c6b",
+    "state": "available",
+    "warnings": [
+      "capabilities[1] ignored: missing evidence_text"
+    ]
+  },
+  "schema_version": "profile-extraction/v2",
+  "source_document": {
+    "char_count": 471,
+    "content_digest": "02a811633e33e19446069d9aa44bd29511b44cbea7134df5a580c83dd73a4dc4",
+    "created_at": "2026-06-30T08:34:47Z",
+    "document_type": "jd",
+    "id": "doc_580ad50793304de58aa4d722721f2c6b",
+    "metadata": {
+      "raw_file": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/small-raw/jd_raw.jsonl",
+      "raw_index": 8,
+      "raw_type": "jd"
+    },
+    "source": {
+      "external_id": "40491067716",
+      "published_at": "2026-06-17 10:19:54",
+      "source_system": "zhaopin",
+      "uri": "http://www.zhaopin.com/jobdetail/CC000544460J40491067716.htm"
+    },
+    "storage": "memory"
+  }
+}

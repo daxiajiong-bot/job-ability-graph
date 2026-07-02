@@ -1,6 +1,8 @@
 from __future__ import annotations
 
 import json
+from pathlib import Path
+import tempfile
 import unittest
 from unittest.mock import patch
 
@@ -8,6 +10,7 @@ from fastapi.testclient import TestClient
 
 from backend.app.main import app
 from backend.app.infrastructure.wiring import build_container
+from backend.app.domain.profile_schemas import PROFILE_SCHEMA_VERSION
 
 
 class FakeOcr:
@@ -29,19 +32,18 @@ class FakeChatClient:
     def chat(self, messages):
         return json.dumps(
             {
+                "schema_version": PROFILE_SCHEMA_VERSION,
                 "document_type": "resume",
-                "candidate": {"name": "张三", "target_position": "数据分析师"},
+                "candidate": {"name": "张三", "current_title": None, "years_of_experience": None, "location": None},
+                "career_intent": {"target_position": "数据分析师", "target_industry": None, "target_location": None},
                 "education": [],
-                "experience": [],
-                "projects": [],
-                "skills": [{"name": "JS", "category": "编程语言", "level": "了解", "evidence_ids": ["ev_001"]}],
-                "capabilities": [{"name": "数据分析", "description": "能分析业务数据", "evidence_ids": ["ev_002"]}],
-                "responsibilities": [],
-                "requirements": [],
-                "evidence": [
-                    {"id": "ev_001", "field": "skills", "text": "掌握 JS"},
-                    {"id": "ev_002", "field": "capabilities", "text": "能分析业务数据"},
-                ],
+                "work_experience": [],
+                "project_experience": [],
+                "skills": [{"name": "JS", "raw_name": "JS", "category": "programming_language", "lskt_label": "S", "level": "working", "years": None, "evidence_text": "掌握 JS"}],
+                "capabilities": [{"name": "数据分析", "description": "能分析业务数据", "level": "working", "evidence_text": "能分析业务数据"}],
+                "certificates": [],
+                "languages": [],
+                "achievements": [],
             },
             ensure_ascii=False,
         )
@@ -49,8 +51,12 @@ class FakeChatClient:
 
 class V3ContractTest(unittest.TestCase):
     def setUp(self) -> None:
-        app.state.container = build_container(ocr=FakeOcr())
+        self.tempdir = tempfile.TemporaryDirectory()
+        app.state.container = build_container(ocr=FakeOcr(), data_governance_root=self.tempdir.name)
         self.client = TestClient(app)
+
+    def tearDown(self) -> None:
+        self.tempdir.cleanup()
 
     def _document(self, document_type: str, text: str, client: TestClient | None = None) -> str:
         api_client = client or self.client
@@ -151,7 +157,11 @@ class V3ContractTest(unittest.TestCase):
 
     def test_ollama_mode_profiles_and_capabilities_are_available(self) -> None:
         with patch.dict("os.environ", {"LLM_BACKEND": "ollama"}, clear=False):
-            app.state.container = build_container(ocr=FakeOcr(), llm_chat_client=FakeChatClient())
+            app.state.container = build_container(
+                ocr=FakeOcr(),
+                llm_chat_client=FakeChatClient(),
+                data_governance_root=self.tempdir.name,
+            )
             client = TestClient(app)
 
             resume_id = self._document("resume", "张三掌握 JS，能分析业务数据。", client)
@@ -160,7 +170,13 @@ class V3ContractTest(unittest.TestCase):
             profile = profile_response.json()["data"]["profile"]
             self.assertEqual(profile["state"], "available")
             self.assertEqual(profile["implementation"], "llm_profile_builder")
-            self.assertEqual(profile["attributes"]["skills"][0]["name"], "JavaScript")
+            self.assertEqual(profile["attributes"]["skills"][0]["name"], "JS")
+            self.assertEqual(profile["attributes"]["resume_profile"]["schema_version"], PROFILE_SCHEMA_VERSION)
+            artifact_path = Path(profile["artifacts"]["profile_json"])
+            self.assertTrue(artifact_path.exists())
+            artifact = json.loads(artifact_path.read_text(encoding="utf-8"))
+            self.assertEqual(artifact["schema_version"], PROFILE_SCHEMA_VERSION)
+            self.assertEqual(artifact["profile"]["id"], profile["id"])
 
             capabilities = client.get("/api/v1/capabilities").json()["data"]["capabilities"]
             by_name = {item["name"]: item for item in capabilities}

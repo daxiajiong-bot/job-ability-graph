@@ -1,0 +1,463 @@
+{
+  "artifact_type": "candidate_profile",
+  "created_at": "2026-06-30T08:46:11Z",
+  "extraction": {
+    "evidence": [
+      {
+        "field": "skills",
+        "id": "ev_001",
+        "text": "参与 软件测试开发工程师 相关项目，围绕 Python、RobotFramework 完成需求分析、开发测试、问题定位与交付文档整理。"
+      }
+    ],
+    "fields": {
+      "achievements": [],
+      "candidate": {
+        "current_title": "软件测试开发工程师",
+        "location": null,
+        "name": null,
+        "years_of_experience": 4
+      },
+      "capabilities": [],
+      "career_intent": {
+        "target_industry": "人力资源",
+        "target_location": "深圳 南山",
+        "target_position": "软件测试开发工程师（RF框架/Python自动化）"
+      },
+      "certificates": [],
+      "document_type": "resume",
+      "education": [],
+      "evidence": [
+        {
+          "field": "skills",
+          "id": "ev_001",
+          "text": "参与 软件测试开发工程师 相关项目，围绕 Python、RobotFramework 完成需求分析、开发测试、问题定位与交付文档整理。"
+        }
+      ],
+      "experience": [],
+      "languages": [],
+      "project_experience": [],
+      "projects": [],
+      "requirements": [],
+      "responsibilities": [],
+      "schema_version": "profile-extraction/v2",
+      "skills": [
+        {
+          "category": "programming_language",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "level": "proficient",
+          "lskt_label": "S",
+          "name": "Python",
+          "raw_name": "Python",
+          "years": null
+        },
+        {
+          "category": "framework",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "level": "proficient",
+          "lskt_label": "S",
+          "name": "RobotFramework",
+          "raw_name": "RobotFramework",
+          "years": null
+        },
+        {
+          "category": "algorithm",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "level": "proficient",
+          "lskt_label": "S",
+          "name": "需求分析",
+          "raw_name": "需求分析",
+          "years": null
+        },
+        {
+          "category": "data_processing",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "level": "proficient",
+          "lskt_label": "S",
+          "name": "文档编写",
+          "raw_name": "文档编写",
+          "years": null
+        },
+        {
+          "category": "soft_skill",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "level": "working",
+          "lskt_label": "L",
+          "name": "沟通协作",
+          "raw_name": "沟通协作",
+          "years": null
+        }
+      ],
+      "work_experience": []
+    },
+    "implementation": "ollama",
+    "model": "qwen2.5:7b",
+    "raw_model_output": "",
+    "reason": "",
+    "schema": "profile-extraction/v2",
+    "state": "available",
+    "validation_error": "",
+    "warnings": [
+      "education[1] ignored: missing evidence_text",
+      "work_experience[1] ignored: missing evidence_text",
+      "project_experience[1] ignored: missing evidence_text",
+      "project_experience[2] ignored: missing evidence_text",
+      "capabilities[1] ignored: missing evidence_text",
+      "capabilities[2] ignored: missing evidence_text",
+      "capabilities[3] ignored: missing evidence_text",
+      "capabilities[4] ignored: missing evidence_text"
+    ]
+  },
+  "normalization": {
+    "implementation": "lightweight_skill_normalizer",
+    "skills": [
+      {
+        "category": "programming_language",
+        "esco_preferred_label": "Python (computer programming)",
+        "esco_uri": "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d",
+        "esco_version": "v1.2.1",
+        "evidence_ids": [
+          "ev_001"
+        ],
+        "level": "proficient",
+        "linking_confidence": 1.0,
+        "linking_status": "linked",
+        "lskt_label": "S",
+        "name": "Python (computer programming)",
+        "raw_name": "Python",
+        "years": null
+      },
+      {
+        "category": "framework",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_001"
+        ],
+        "level": "proficient",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "RobotFramework",
+        "raw_name": "RobotFramework",
+        "years": null
+      },
+      {
+        "category": "algorithm",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_001"
+        ],
+        "level": "proficient",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "需求分析",
+        "raw_name": "需求分析",
+        "years": null
+      },
+      {
+        "category": "data_processing",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_001"
+        ],
+        "level": "proficient",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "文档编写",
+        "raw_name": "文档编写",
+        "years": null
+      },
+      {
+        "category": "soft_skill",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_001"
+        ],
+        "level": "working",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "L",
+        "name": "沟通协作",
+        "raw_name": "沟通协作",
+        "years": null
+      }
+    ],
+    "state": "available",
+    "warnings": []
+  },
+  "profile": {
+    "artifacts": {
+      "profile_json": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/structured/profiles/raw_preview_20260630/candidate/candidate_profile_877d8124f84f47c6aa9f874ef12c16cc.json",
+      "schema_version": "profile-extraction/v2",
+      "storage": "filesystem"
+    },
+    "attributes": {
+      "candidate": {
+        "current_title": "软件测试开发工程师",
+        "location": null,
+        "name": null,
+        "years_of_experience": 4
+      },
+      "capabilities": [],
+      "career_intent": {
+        "target_industry": "人力资源",
+        "target_location": "深圳 南山",
+        "target_position": "软件测试开发工程师（RF框架/Python自动化）"
+      },
+      "education": [],
+      "experience": [],
+      "profile_schema": "profile-extraction/v2",
+      "projects": [],
+      "resume_profile": {
+        "achievements": [],
+        "candidate": {
+          "current_title": "软件测试开发工程师",
+          "location": null,
+          "name": null,
+          "years_of_experience": 4
+        },
+        "capabilities": [],
+        "career_intent": {
+          "target_industry": "人力资源",
+          "target_location": "深圳 南山",
+          "target_position": "软件测试开发工程师（RF框架/Python自动化）"
+        },
+        "certificates": [],
+        "document_type": "resume",
+        "education": [],
+        "languages": [],
+        "project_experience": [],
+        "schema_version": "profile-extraction/v2",
+        "skills": [
+          {
+            "category": "programming_language",
+            "esco_preferred_label": "Python (computer programming)",
+            "esco_uri": "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d",
+            "esco_version": "v1.2.1",
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "level": "proficient",
+            "linking_confidence": 1.0,
+            "linking_status": "linked",
+            "lskt_label": "S",
+            "name": "Python (computer programming)",
+            "raw_name": "Python",
+            "years": null
+          },
+          {
+            "category": "framework",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "level": "proficient",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "RobotFramework",
+            "raw_name": "RobotFramework",
+            "years": null
+          },
+          {
+            "category": "algorithm",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "level": "proficient",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "需求分析",
+            "raw_name": "需求分析",
+            "years": null
+          },
+          {
+            "category": "data_processing",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "level": "proficient",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "文档编写",
+            "raw_name": "文档编写",
+            "years": null
+          },
+          {
+            "category": "soft_skill",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "level": "working",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "L",
+            "name": "沟通协作",
+            "raw_name": "沟通协作",
+            "years": null
+          }
+        ],
+        "work_experience": []
+      },
+      "skills": [
+        {
+          "category": "programming_language",
+          "esco_preferred_label": "Python (computer programming)",
+          "esco_uri": "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d",
+          "esco_version": "v1.2.1",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "level": "proficient",
+          "linking_confidence": 1.0,
+          "linking_status": "linked",
+          "lskt_label": "S",
+          "name": "Python (computer programming)",
+          "raw_name": "Python",
+          "years": null
+        },
+        {
+          "category": "framework",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "level": "proficient",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "RobotFramework",
+          "raw_name": "RobotFramework",
+          "years": null
+        },
+        {
+          "category": "algorithm",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "level": "proficient",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "需求分析",
+          "raw_name": "需求分析",
+          "years": null
+        },
+        {
+          "category": "data_processing",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "level": "proficient",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "文档编写",
+          "raw_name": "文档编写",
+          "years": null
+        },
+        {
+          "category": "soft_skill",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "level": "working",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "L",
+          "name": "沟通协作",
+          "raw_name": "沟通协作",
+          "years": null
+        }
+      ],
+      "target_position": "软件测试开发工程师（RF框架/Python自动化）"
+    },
+    "created_at": "2026-06-30T08:46:11Z",
+    "evidence": [
+      {
+        "field": "skills",
+        "id": "ev_001",
+        "text": "参与 软件测试开发工程师 相关项目，围绕 Python、RobotFramework 完成需求分析、开发测试、问题定位与交付文档整理。"
+      }
+    ],
+    "id": "candidate_profile_877d8124f84f47c6aa9f874ef12c16cc",
+    "implementation": "llm_profile_builder",
+    "profile_type": "candidate",
+    "source_document_id": "doc_f15696b367ee419a956366b7cbdb1dc7",
+    "state": "available",
+    "warnings": [
+      "education[1] ignored: missing evidence_text",
+      "work_experience[1] ignored: missing evidence_text",
+      "project_experience[1] ignored: missing evidence_text",
+      "project_experience[2] ignored: missing evidence_text",
+      "capabilities[1] ignored: missing evidence_text",
+      "capabilities[2] ignored: missing evidence_text",
+      "capabilities[3] ignored: missing evidence_text",
+      "capabilities[4] ignored: missing evidence_text"
+    ]
+  },
+  "schema_version": "profile-extraction/v2",
+  "source_document": {
+    "char_count": 869,
+    "content_digest": "ec9eba68d4e099909eaa86120cff3d03d41bdf34736913fae09b4ffd309e3c2c",
+    "created_at": "2026-06-30T08:45:02Z",
+    "document_type": "resume",
+    "id": "doc_f15696b367ee419a956366b7cbdb1dc7",
+    "metadata": {
+      "privacy_level": "anonymous_or_synthetic",
+      "raw_file": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/small-raw/resume_raw.jsonl",
+      "raw_index": 5,
+      "raw_type": "resume",
+      "target_job_id": "40903521003"
+    },
+    "source": {
+      "external_id": "R0005",
+      "source_system": "small-raw",
+      "uri": "http://www.zhaopin.com/jobdetail/CC453635220J40903521003.htm"
+    },
+    "storage": "memory"
+  }
+}

@@ -1,0 +1,771 @@
+{
+  "artifact_type": "job_profile",
+  "created_at": "2026-06-30T08:32:13Z",
+  "extraction": {
+    "evidence": [
+      {
+        "field": "responsibilities",
+        "id": "ev_001",
+        "text": "负责RF框架开发与维护，持续优化RF框架架构，提升框架运行效率"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_002",
+        "text": "负责开发RF用例库和关键字，提高自动化测试脚本的复用率"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_003",
+        "text": "负责RF框架的版本升级、性能优化和问题排查"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_004",
+        "text": "负责Python自动化测试开发，基于Python开发高质量、可维护的自动化测试用例"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_005",
+        "text": "负责自动化用例的评审，提升用例有效性、规范性"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_006",
+        "text": "编写测试工具和辅助脚本，提升测试效率和覆盖率"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_007",
+        "text": "精通Robot Framework：至少3年以上RF框架使用和开发经验，深刻理解RF框架原理"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_008",
+        "text": "熟练掌握Python：3年以上Python开发经验，熟悉Python测试框架（pytest/unittest）"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_009",
+        "text": "有大型互联网企业或软件公司测试开发经验者优先"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_010",
+        "text": "计算机科学、软件工程或相关专业本科及以上学历"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_011",
+        "text": "3年及以上软件测试开发或自动化测试相关经验"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_012",
+        "text": "了解软件测试理论和方法，熟悉敏捷开发流程"
+      }
+    ],
+    "fields": {
+      "application_scenarios": [
+        {
+          "description": "负责RF框架开发与维护，持续优化RF框架架构",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "name": "RF框架开发与维护"
+        },
+        {
+          "description": "基于Python开发高质量、可维护的自动化测试用例",
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "name": "自动化测试用例开发"
+        }
+      ],
+      "candidate": {
+        "name": null,
+        "target_position": null
+      },
+      "capabilities": [],
+      "company": {
+        "industry": "人力资源",
+        "location": "深圳 南山",
+        "name": "科锐尔人力资源服务(苏州)有限公司"
+      },
+      "document_type": "jd",
+      "education": [],
+      "employment": {
+        "employment_type": "full_time",
+        "published_at": "2026-06-17 10:01:50",
+        "salary_max": 17000,
+        "salary_min": 1000
+      },
+      "evaluation_signals": [],
+      "evidence": [
+        {
+          "field": "responsibilities",
+          "id": "ev_001",
+          "text": "负责RF框架开发与维护，持续优化RF框架架构，提升框架运行效率"
+        },
+        {
+          "field": "responsibilities",
+          "id": "ev_002",
+          "text": "负责开发RF用例库和关键字，提高自动化测试脚本的复用率"
+        },
+        {
+          "field": "responsibilities",
+          "id": "ev_003",
+          "text": "负责RF框架的版本升级、性能优化和问题排查"
+        },
+        {
+          "field": "responsibilities",
+          "id": "ev_004",
+          "text": "负责Python自动化测试开发，基于Python开发高质量、可维护的自动化测试用例"
+        },
+        {
+          "field": "responsibilities",
+          "id": "ev_005",
+          "text": "负责自动化用例的评审，提升用例有效性、规范性"
+        },
+        {
+          "field": "responsibilities",
+          "id": "ev_006",
+          "text": "编写测试工具和辅助脚本，提升测试效率和覆盖率"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_007",
+          "text": "精通Robot Framework：至少3年以上RF框架使用和开发经验，深刻理解RF框架原理"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_008",
+          "text": "熟练掌握Python：3年以上Python开发经验，熟悉Python测试框架（pytest/unittest）"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_009",
+          "text": "有大型互联网企业或软件公司测试开发经验者优先"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_010",
+          "text": "计算机科学、软件工程或相关专业本科及以上学历"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_011",
+          "text": "3年及以上软件测试开发或自动化测试相关经验"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_012",
+          "text": "了解软件测试理论和方法，熟悉敏捷开发流程"
+        }
+      ],
+      "experience": [],
+      "job": {
+        "department": null,
+        "normalized_title": null,
+        "seniority": null,
+        "title": "软件测试开发工程师（RF框架/Python自动化）"
+      },
+      "projects": [],
+      "requirements": [
+        {
+          "evidence_ids": [
+            "ev_007"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "精通Robot Framework：至少3年以上RF框架使用和开发经验，深刻理解RF框架原理"
+        },
+        {
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "熟练掌握Python：3年以上Python开发经验，熟悉Python测试框架（pytest/unittest）"
+        },
+        {
+          "evidence_ids": [
+            "ev_009"
+          ],
+          "importance": "preferred",
+          "requirement_type": "experience",
+          "text": "有大型互联网企业或软件公司测试开发经验者优先"
+        },
+        {
+          "evidence_ids": [
+            "ev_010"
+          ],
+          "importance": "required",
+          "requirement_type": "education",
+          "text": "计算机科学、软件工程或相关专业本科及以上学历"
+        },
+        {
+          "evidence_ids": [
+            "ev_011"
+          ],
+          "importance": "required",
+          "requirement_type": "experience",
+          "text": "3年及以上软件测试开发或自动化测试相关经验"
+        },
+        {
+          "evidence_ids": [
+            "ev_012"
+          ],
+          "importance": "unknown",
+          "requirement_type": "domain",
+          "text": "了解软件测试理论和方法，熟悉敏捷开发流程"
+        }
+      ],
+      "responsibilities": [
+        {
+          "action": "负责",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "object": "RF框架开发与维护",
+          "text": "负责RF框架开发与维护，持续优化RF框架架构"
+        },
+        {
+          "action": "负责",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "object": "开发RF用例库和关键字",
+          "text": "负责开发RF用例库和关键字"
+        },
+        {
+          "action": "负责",
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "object": "RF框架的版本升级、性能优化和问题排查",
+          "text": "负责RF框架的版本升级、性能优化和问题排查"
+        },
+        {
+          "action": "负责",
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "object": "Python自动化测试开发",
+          "text": "负责Python自动化测试开发，基于Python开发高质量、可维护的自动化测试用例"
+        },
+        {
+          "action": "负责",
+          "evidence_ids": [
+            "ev_005"
+          ],
+          "object": "自动化用例的评审",
+          "text": "负责自动化用例的评审，提升用例有效性、规范性"
+        },
+        {
+          "action": "编写",
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "object": "测试工具和辅助脚本",
+          "text": "编写测试工具和辅助脚本，提升测试效率和覆盖率"
+        }
+      ],
+      "schema_version": "profile-extraction/v2",
+      "skills": [
+        {
+          "category": "framework",
+          "evidence_ids": [
+            "ev_007"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "Robot Framework",
+          "raw_name": "RobotFramework"
+        },
+        {
+          "category": "programming_language",
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "Python",
+          "raw_name": "Python"
+        }
+      ]
+    },
+    "implementation": "ollama",
+    "model": "qwen2.5:7b",
+    "raw_model_output": "",
+    "reason": "",
+    "schema": "profile-extraction/v2",
+    "state": "available",
+    "validation_error": "",
+    "warnings": [
+      "capabilities[1] ignored: missing evidence_text"
+    ]
+  },
+  "normalization": {
+    "implementation": "lightweight_skill_normalizer",
+    "skills": [
+      {
+        "category": "framework",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_007"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "RobotFramework",
+        "raw_name": "RobotFramework"
+      },
+      {
+        "category": "programming_language",
+        "esco_preferred_label": "Python (computer programming)",
+        "esco_uri": "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d",
+        "esco_version": "v1.2.1",
+        "evidence_ids": [
+          "ev_008"
+        ],
+        "importance": "required",
+        "linking_confidence": 1.0,
+        "linking_status": "linked",
+        "lskt_label": "S",
+        "name": "Python (computer programming)",
+        "raw_name": "Python"
+      }
+    ],
+    "state": "available",
+    "warnings": []
+  },
+  "profile": {
+    "artifacts": {
+      "profile_json": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/structured/profiles/raw_preview_20260630/job/job_profile_be1ec125b6e5435c8cbfdb0e095a2651.json",
+      "schema_version": "profile-extraction/v2",
+      "storage": "filesystem"
+    },
+    "attributes": {
+      "capabilities": [],
+      "company": {
+        "industry": "人力资源",
+        "location": "深圳 南山",
+        "name": "科锐尔人力资源服务(苏州)有限公司"
+      },
+      "education": [],
+      "employment": {
+        "employment_type": "full_time",
+        "published_at": "2026-06-17 10:01:50",
+        "salary_max": 17000,
+        "salary_min": 1000
+      },
+      "experience": [],
+      "jd_profile": {
+        "application_scenarios": [
+          {
+            "description": "负责RF框架开发与维护，持续优化RF框架架构",
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "name": "RF框架开发与维护"
+          },
+          {
+            "description": "基于Python开发高质量、可维护的自动化测试用例",
+            "evidence_ids": [
+              "ev_004"
+            ],
+            "name": "自动化测试用例开发"
+          }
+        ],
+        "capabilities": [],
+        "company": {
+          "industry": "人力资源",
+          "location": "深圳 南山",
+          "name": "科锐尔人力资源服务(苏州)有限公司"
+        },
+        "document_type": "jd",
+        "employment": {
+          "employment_type": "full_time",
+          "published_at": "2026-06-17 10:01:50",
+          "salary_max": 17000,
+          "salary_min": 1000
+        },
+        "evaluation_signals": [],
+        "job": {
+          "department": null,
+          "normalized_title": null,
+          "seniority": null,
+          "title": "软件测试开发工程师（RF框架/Python自动化）"
+        },
+        "requirements": [
+          {
+            "evidence_ids": [
+              "ev_007"
+            ],
+            "importance": "required",
+            "requirement_type": "skill",
+            "text": "精通Robot Framework：至少3年以上RF框架使用和开发经验，深刻理解RF框架原理"
+          },
+          {
+            "evidence_ids": [
+              "ev_008"
+            ],
+            "importance": "required",
+            "requirement_type": "skill",
+            "text": "熟练掌握Python：3年以上Python开发经验，熟悉Python测试框架（pytest/unittest）"
+          },
+          {
+            "evidence_ids": [
+              "ev_009"
+            ],
+            "importance": "preferred",
+            "requirement_type": "experience",
+            "text": "有大型互联网企业或软件公司测试开发经验者优先"
+          },
+          {
+            "evidence_ids": [
+              "ev_010"
+            ],
+            "importance": "required",
+            "requirement_type": "education",
+            "text": "计算机科学、软件工程或相关专业本科及以上学历"
+          },
+          {
+            "evidence_ids": [
+              "ev_011"
+            ],
+            "importance": "required",
+            "requirement_type": "experience",
+            "text": "3年及以上软件测试开发或自动化测试相关经验"
+          },
+          {
+            "evidence_ids": [
+              "ev_012"
+            ],
+            "importance": "unknown",
+            "requirement_type": "domain",
+            "text": "了解软件测试理论和方法，熟悉敏捷开发流程"
+          }
+        ],
+        "responsibilities": [
+          {
+            "action": "负责",
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "object": "RF框架开发与维护",
+            "text": "负责RF框架开发与维护，持续优化RF框架架构"
+          },
+          {
+            "action": "负责",
+            "evidence_ids": [
+              "ev_002"
+            ],
+            "object": "开发RF用例库和关键字",
+            "text": "负责开发RF用例库和关键字"
+          },
+          {
+            "action": "负责",
+            "evidence_ids": [
+              "ev_003"
+            ],
+            "object": "RF框架的版本升级、性能优化和问题排查",
+            "text": "负责RF框架的版本升级、性能优化和问题排查"
+          },
+          {
+            "action": "负责",
+            "evidence_ids": [
+              "ev_004"
+            ],
+            "object": "Python自动化测试开发",
+            "text": "负责Python自动化测试开发，基于Python开发高质量、可维护的自动化测试用例"
+          },
+          {
+            "action": "负责",
+            "evidence_ids": [
+              "ev_005"
+            ],
+            "object": "自动化用例的评审",
+            "text": "负责自动化用例的评审，提升用例有效性、规范性"
+          },
+          {
+            "action": "编写",
+            "evidence_ids": [
+              "ev_006"
+            ],
+            "object": "测试工具和辅助脚本",
+            "text": "编写测试工具和辅助脚本，提升测试效率和覆盖率"
+          }
+        ],
+        "schema_version": "profile-extraction/v2",
+        "skills": [
+          {
+            "category": "framework",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_007"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "RobotFramework",
+            "raw_name": "RobotFramework"
+          },
+          {
+            "category": "programming_language",
+            "esco_preferred_label": "Python (computer programming)",
+            "esco_uri": "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d",
+            "esco_version": "v1.2.1",
+            "evidence_ids": [
+              "ev_008"
+            ],
+            "importance": "required",
+            "linking_confidence": 1.0,
+            "linking_status": "linked",
+            "lskt_label": "S",
+            "name": "Python (computer programming)",
+            "raw_name": "Python"
+          }
+        ]
+      },
+      "job": {
+        "department": null,
+        "normalized_title": null,
+        "seniority": null,
+        "title": "软件测试开发工程师（RF框架/Python自动化）"
+      },
+      "job_title": "软件测试开发工程师（RF框架/Python自动化）",
+      "profile_schema": "profile-extraction/v2",
+      "projects": [],
+      "requirements": [
+        {
+          "evidence_ids": [
+            "ev_007"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "精通Robot Framework：至少3年以上RF框架使用和开发经验，深刻理解RF框架原理"
+        },
+        {
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "熟练掌握Python：3年以上Python开发经验，熟悉Python测试框架（pytest/unittest）"
+        },
+        {
+          "evidence_ids": [
+            "ev_009"
+          ],
+          "importance": "preferred",
+          "requirement_type": "experience",
+          "text": "有大型互联网企业或软件公司测试开发经验者优先"
+        },
+        {
+          "evidence_ids": [
+            "ev_010"
+          ],
+          "importance": "required",
+          "requirement_type": "education",
+          "text": "计算机科学、软件工程或相关专业本科及以上学历"
+        },
+        {
+          "evidence_ids": [
+            "ev_011"
+          ],
+          "importance": "required",
+          "requirement_type": "experience",
+          "text": "3年及以上软件测试开发或自动化测试相关经验"
+        },
+        {
+          "evidence_ids": [
+            "ev_012"
+          ],
+          "importance": "unknown",
+          "requirement_type": "domain",
+          "text": "了解软件测试理论和方法，熟悉敏捷开发流程"
+        }
+      ],
+      "responsibilities": [
+        {
+          "action": "负责",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "object": "RF框架开发与维护",
+          "text": "负责RF框架开发与维护，持续优化RF框架架构"
+        },
+        {
+          "action": "负责",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "object": "开发RF用例库和关键字",
+          "text": "负责开发RF用例库和关键字"
+        },
+        {
+          "action": "负责",
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "object": "RF框架的版本升级、性能优化和问题排查",
+          "text": "负责RF框架的版本升级、性能优化和问题排查"
+        },
+        {
+          "action": "负责",
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "object": "Python自动化测试开发",
+          "text": "负责Python自动化测试开发，基于Python开发高质量、可维护的自动化测试用例"
+        },
+        {
+          "action": "负责",
+          "evidence_ids": [
+            "ev_005"
+          ],
+          "object": "自动化用例的评审",
+          "text": "负责自动化用例的评审，提升用例有效性、规范性"
+        },
+        {
+          "action": "编写",
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "object": "测试工具和辅助脚本",
+          "text": "编写测试工具和辅助脚本，提升测试效率和覆盖率"
+        }
+      ],
+      "skills": [
+        {
+          "category": "framework",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_007"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "RobotFramework",
+          "raw_name": "RobotFramework"
+        },
+        {
+          "category": "programming_language",
+          "esco_preferred_label": "Python (computer programming)",
+          "esco_uri": "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d",
+          "esco_version": "v1.2.1",
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "importance": "required",
+          "linking_confidence": 1.0,
+          "linking_status": "linked",
+          "lskt_label": "S",
+          "name": "Python (computer programming)",
+          "raw_name": "Python"
+        }
+      ]
+    },
+    "created_at": "2026-06-30T08:32:13Z",
+    "evidence": [
+      {
+        "field": "responsibilities",
+        "id": "ev_001",
+        "text": "负责RF框架开发与维护，持续优化RF框架架构，提升框架运行效率"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_002",
+        "text": "负责开发RF用例库和关键字，提高自动化测试脚本的复用率"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_003",
+        "text": "负责RF框架的版本升级、性能优化和问题排查"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_004",
+        "text": "负责Python自动化测试开发，基于Python开发高质量、可维护的自动化测试用例"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_005",
+        "text": "负责自动化用例的评审，提升用例有效性、规范性"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_006",
+        "text": "编写测试工具和辅助脚本，提升测试效率和覆盖率"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_007",
+        "text": "精通Robot Framework：至少3年以上RF框架使用和开发经验，深刻理解RF框架原理"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_008",
+        "text": "熟练掌握Python：3年以上Python开发经验，熟悉Python测试框架（pytest/unittest）"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_009",
+        "text": "有大型互联网企业或软件公司测试开发经验者优先"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_010",
+        "text": "计算机科学、软件工程或相关专业本科及以上学历"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_011",
+        "text": "3年及以上软件测试开发或自动化测试相关经验"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_012",
+        "text": "了解软件测试理论和方法，熟悉敏捷开发流程"
+      }
+    ],
+    "id": "job_profile_be1ec125b6e5435c8cbfdb0e095a2651",
+    "implementation": "llm_profile_builder",
+    "profile_type": "job",
+    "source_document_id": "doc_33525f5ee8354583988f055a7e77d1af",
+    "state": "available",
+    "warnings": [
+      "capabilities[1] ignored: missing evidence_text"
+    ]
+  },
+  "schema_version": "profile-extraction/v2",
+  "source_document": {
+    "char_count": 587,
+    "content_digest": "28bb946c521ff8d7ffc385f08ac0bb4d1395b5e2faf13f679aa76d31b89161ad",
+    "created_at": "2026-06-30T08:30:56Z",
+    "document_type": "jd",
+    "id": "doc_33525f5ee8354583988f055a7e77d1af",
+    "metadata": {
+      "raw_file": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/small-raw/jd_raw.jsonl",
+      "raw_index": 5,
+      "raw_type": "jd"
+    },
+    "source": {
+      "external_id": "40903521003",
+      "published_at": "2026-06-17 10:01:50",
+      "source_system": "zhaopin",
+      "uri": "http://www.zhaopin.com/jobdetail/CC453635220J40903521003.htm"
+    },
+    "storage": "memory"
+  }
+}

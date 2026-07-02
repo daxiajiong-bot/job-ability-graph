@@ -1,0 +1,867 @@
+{
+  "artifact_type": "job_profile",
+  "created_at": "2026-06-30T08:28:50Z",
+  "extraction": {
+    "evidence": [
+      {
+        "field": "responsibilities",
+        "id": "ev_001",
+        "text": "1、负责算法模型的效果测试、问题定位等，输出测试报告"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_002",
+        "text": "2、负责算法模型的工程化部署，性能提升"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_003",
+        "text": "3、负责多模态/NLP/CV等领域下游任务中算法数据的处理工作以及进行模型试算与训练，包括不限于OCR识别、表格还原、信息提取等"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_004",
+        "text": "--必须项！"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_005",
+        "text": "1) 2年以上工作算法相关工作经验"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_006",
+        "text": "1）熟悉算法服务部署者优先；"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_007",
+        "text": "2）熟悉常见的视觉AI算法模型（ResNet/ YOLO/Attention/Transfomer等）者优先。"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_008",
+        "text": "3）熟悉Opencv、Numpy、Pandas等工具包优先"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_009",
+        "text": "4)从事过类似文档信息抽取、要素抽取的项目"
+      },
+      {
+        "field": "skills",
+        "id": "ev_010",
+        "text": "1）熟练掌握Python/C++/C等语言中的一种或多种。"
+      },
+      {
+        "field": "skills",
+        "id": "ev_011",
+        "text": "关键字：大模型、机器学习、深度学习"
+      },
+      {
+        "field": "skills",
+        "id": "ev_012",
+        "text": "技能标准列表：深度学习、机器学习、大模型算法、运筹优化、时间序列、PYTHON算法、大模型"
+      },
+      {
+        "field": "capabilities",
+        "id": "ev_013",
+        "text": "3）良好的沟通学习能力，可以快速融入团队，学习新知识。"
+      }
+    ],
+    "fields": {
+      "application_scenarios": [
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "name": "算法模型的效果测试、问题定位等"
+        },
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "name": "算法模型的工程化部署，性能提升"
+        },
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "name": "多模态/NLP/CV等领域下游任务中算法数据的处理工作以及进行模型试算与训练"
+        }
+      ],
+      "candidate": {
+        "name": null,
+        "target_position": null
+      },
+      "capabilities": [
+        {
+          "description": "良好的沟通学习能力，可以快速融入团队，学习新知识。",
+          "evidence_ids": [
+            "ev_013"
+          ],
+          "importance": "unknown",
+          "name": "沟通学习能力"
+        }
+      ],
+      "company": {
+        "industry": "软件/IT服务",
+        "location": "深圳 龙岗",
+        "name": "软通动力信息技术(集团)股份有限公司"
+      },
+      "document_type": "jd",
+      "education": [],
+      "employment": {
+        "employment_type": "full_time",
+        "published_at": "2026-06-18 12:15:15",
+        "salary_max": 16000,
+        "salary_min": 1000
+      },
+      "evaluation_signals": [],
+      "evidence": [
+        {
+          "field": "responsibilities",
+          "id": "ev_001",
+          "text": "1、负责算法模型的效果测试、问题定位等，输出测试报告"
+        },
+        {
+          "field": "responsibilities",
+          "id": "ev_002",
+          "text": "2、负责算法模型的工程化部署，性能提升"
+        },
+        {
+          "field": "responsibilities",
+          "id": "ev_003",
+          "text": "3、负责多模态/NLP/CV等领域下游任务中算法数据的处理工作以及进行模型试算与训练，包括不限于OCR识别、表格还原、信息提取等"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_004",
+          "text": "--必须项！"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_005",
+          "text": "1) 2年以上工作算法相关工作经验"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_006",
+          "text": "1）熟悉算法服务部署者优先；"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_007",
+          "text": "2）熟悉常见的视觉AI算法模型（ResNet/ YOLO/Attention/Transfomer等）者优先。"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_008",
+          "text": "3）熟悉Opencv、Numpy、Pandas等工具包优先"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_009",
+          "text": "4)从事过类似文档信息抽取、要素抽取的项目"
+        },
+        {
+          "field": "skills",
+          "id": "ev_010",
+          "text": "1）熟练掌握Python/C++/C等语言中的一种或多种。"
+        },
+        {
+          "field": "skills",
+          "id": "ev_011",
+          "text": "关键字：大模型、机器学习、深度学习"
+        },
+        {
+          "field": "skills",
+          "id": "ev_012",
+          "text": "技能标准列表：深度学习、机器学习、大模型算法、运筹优化、时间序列、PYTHON算法、大模型"
+        },
+        {
+          "field": "capabilities",
+          "id": "ev_013",
+          "text": "3）良好的沟通学习能力，可以快速融入团队，学习新知识。"
+        }
+      ],
+      "experience": [],
+      "job": {
+        "department": null,
+        "normalized_title": "算法工程师",
+        "seniority": null,
+        "title": "算法工程师（大模型、机器学习/深度学习、Python）"
+      },
+      "projects": [],
+      "requirements": [
+        {
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "importance": "required",
+          "requirement_type": "education",
+          "text": "本科可查，理工科专业"
+        },
+        {
+          "evidence_ids": [
+            "ev_005"
+          ],
+          "importance": "required",
+          "requirement_type": "experience",
+          "text": "2年以上工作算法相关工作经验"
+        },
+        {
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "importance": "preferred",
+          "requirement_type": "skill",
+          "text": "熟悉算法服务部署者优先"
+        },
+        {
+          "evidence_ids": [
+            "ev_007"
+          ],
+          "importance": "preferred",
+          "requirement_type": "skill",
+          "text": "熟悉常见的视觉AI算法模型（ResNet/ YOLO/Attention/Transfomer等）者优先"
+        },
+        {
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "importance": "preferred",
+          "requirement_type": "skill",
+          "text": "熟悉Opencv、Numpy、Pandas等工具包优先"
+        },
+        {
+          "evidence_ids": [
+            "ev_009"
+          ],
+          "importance": "preferred",
+          "requirement_type": "experience",
+          "text": "从事过类似文档信息抽取、要素抽取的项目"
+        }
+      ],
+      "responsibilities": [
+        {
+          "action": "负责",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "object": "算法模型的效果测试、问题定位等",
+          "text": "负责算法模型的效果测试、问题定位等，输出测试报告"
+        },
+        {
+          "action": "负责",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "object": "算法模型的工程化部署，性能提升",
+          "text": "负责算法模型的工程化部署，性能提升"
+        },
+        {
+          "action": "负责",
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "object": "多模态/NLP/CV等领域下游任务中算法数据的处理工作以及进行模型试算与训练",
+          "text": "负责多模态/NLP/CV等领域下游任务中算法数据的处理工作以及进行模型试算与训练"
+        }
+      ],
+      "schema_version": "profile-extraction/v2",
+      "skills": [
+        {
+          "category": "programming_language",
+          "evidence_ids": [
+            "ev_010"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "Python",
+          "raw_name": "PYTHON算法"
+        },
+        {
+          "category": "algorithm",
+          "evidence_ids": [
+            "ev_011"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "机器学习",
+          "raw_name": "机器学习"
+        },
+        {
+          "category": "algorithm",
+          "evidence_ids": [
+            "ev_011"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "深度学习",
+          "raw_name": "深度学习"
+        },
+        {
+          "category": "algorithm",
+          "evidence_ids": [
+            "ev_012"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "大模型算法",
+          "raw_name": "大模型算法"
+        }
+      ]
+    },
+    "implementation": "ollama",
+    "model": "qwen2.5:7b",
+    "raw_model_output": "",
+    "reason": "",
+    "schema": "profile-extraction/v2",
+    "state": "available",
+    "validation_error": "",
+    "warnings": [
+      "skills[4] ignored: missing evidence_text",
+      "skills[5] ignored: missing evidence_text"
+    ]
+  },
+  "normalization": {
+    "implementation": "lightweight_skill_normalizer",
+    "skills": [
+      {
+        "category": "programming_language",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_010"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "PYTHON算法",
+        "raw_name": "PYTHON算法"
+      },
+      {
+        "category": "algorithm",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_011"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "机器学习",
+        "raw_name": "机器学习"
+      },
+      {
+        "category": "algorithm",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_011"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "深度学习",
+        "raw_name": "深度学习"
+      },
+      {
+        "category": "algorithm",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_012"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "大模型算法",
+        "raw_name": "大模型算法"
+      }
+    ],
+    "state": "available",
+    "warnings": []
+  },
+  "profile": {
+    "artifacts": {
+      "profile_json": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/structured/profiles/raw_preview_20260630/job/job_profile_022f4fe3935145beb0682e2e91fc3685.json",
+      "schema_version": "profile-extraction/v2",
+      "storage": "filesystem"
+    },
+    "attributes": {
+      "capabilities": [
+        {
+          "description": "良好的沟通学习能力，可以快速融入团队，学习新知识。",
+          "evidence_ids": [
+            "ev_013"
+          ],
+          "importance": "unknown",
+          "name": "沟通学习能力"
+        }
+      ],
+      "company": {
+        "industry": "软件/IT服务",
+        "location": "深圳 龙岗",
+        "name": "软通动力信息技术(集团)股份有限公司"
+      },
+      "education": [],
+      "employment": {
+        "employment_type": "full_time",
+        "published_at": "2026-06-18 12:15:15",
+        "salary_max": 16000,
+        "salary_min": 1000
+      },
+      "experience": [],
+      "jd_profile": {
+        "application_scenarios": [
+          {
+            "description": null,
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "name": "算法模型的效果测试、问题定位等"
+          },
+          {
+            "description": null,
+            "evidence_ids": [
+              "ev_002"
+            ],
+            "name": "算法模型的工程化部署，性能提升"
+          },
+          {
+            "description": null,
+            "evidence_ids": [
+              "ev_003"
+            ],
+            "name": "多模态/NLP/CV等领域下游任务中算法数据的处理工作以及进行模型试算与训练"
+          }
+        ],
+        "capabilities": [
+          {
+            "description": "良好的沟通学习能力，可以快速融入团队，学习新知识。",
+            "evidence_ids": [
+              "ev_013"
+            ],
+            "importance": "unknown",
+            "name": "沟通学习能力"
+          }
+        ],
+        "company": {
+          "industry": "软件/IT服务",
+          "location": "深圳 龙岗",
+          "name": "软通动力信息技术(集团)股份有限公司"
+        },
+        "document_type": "jd",
+        "employment": {
+          "employment_type": "full_time",
+          "published_at": "2026-06-18 12:15:15",
+          "salary_max": 16000,
+          "salary_min": 1000
+        },
+        "evaluation_signals": [],
+        "job": {
+          "department": null,
+          "normalized_title": "算法工程师",
+          "seniority": null,
+          "title": "算法工程师（大模型、机器学习/深度学习、Python）"
+        },
+        "requirements": [
+          {
+            "evidence_ids": [
+              "ev_004"
+            ],
+            "importance": "required",
+            "requirement_type": "education",
+            "text": "本科可查，理工科专业"
+          },
+          {
+            "evidence_ids": [
+              "ev_005"
+            ],
+            "importance": "required",
+            "requirement_type": "experience",
+            "text": "2年以上工作算法相关工作经验"
+          },
+          {
+            "evidence_ids": [
+              "ev_006"
+            ],
+            "importance": "preferred",
+            "requirement_type": "skill",
+            "text": "熟悉算法服务部署者优先"
+          },
+          {
+            "evidence_ids": [
+              "ev_007"
+            ],
+            "importance": "preferred",
+            "requirement_type": "skill",
+            "text": "熟悉常见的视觉AI算法模型（ResNet/ YOLO/Attention/Transfomer等）者优先"
+          },
+          {
+            "evidence_ids": [
+              "ev_008"
+            ],
+            "importance": "preferred",
+            "requirement_type": "skill",
+            "text": "熟悉Opencv、Numpy、Pandas等工具包优先"
+          },
+          {
+            "evidence_ids": [
+              "ev_009"
+            ],
+            "importance": "preferred",
+            "requirement_type": "experience",
+            "text": "从事过类似文档信息抽取、要素抽取的项目"
+          }
+        ],
+        "responsibilities": [
+          {
+            "action": "负责",
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "object": "算法模型的效果测试、问题定位等",
+            "text": "负责算法模型的效果测试、问题定位等，输出测试报告"
+          },
+          {
+            "action": "负责",
+            "evidence_ids": [
+              "ev_002"
+            ],
+            "object": "算法模型的工程化部署，性能提升",
+            "text": "负责算法模型的工程化部署，性能提升"
+          },
+          {
+            "action": "负责",
+            "evidence_ids": [
+              "ev_003"
+            ],
+            "object": "多模态/NLP/CV等领域下游任务中算法数据的处理工作以及进行模型试算与训练",
+            "text": "负责多模态/NLP/CV等领域下游任务中算法数据的处理工作以及进行模型试算与训练"
+          }
+        ],
+        "schema_version": "profile-extraction/v2",
+        "skills": [
+          {
+            "category": "programming_language",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_010"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "PYTHON算法",
+            "raw_name": "PYTHON算法"
+          },
+          {
+            "category": "algorithm",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_011"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "机器学习",
+            "raw_name": "机器学习"
+          },
+          {
+            "category": "algorithm",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_011"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "深度学习",
+            "raw_name": "深度学习"
+          },
+          {
+            "category": "algorithm",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_012"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "大模型算法",
+            "raw_name": "大模型算法"
+          }
+        ]
+      },
+      "job": {
+        "department": null,
+        "normalized_title": "算法工程师",
+        "seniority": null,
+        "title": "算法工程师（大模型、机器学习/深度学习、Python）"
+      },
+      "job_title": "算法工程师（大模型、机器学习/深度学习、Python）",
+      "profile_schema": "profile-extraction/v2",
+      "projects": [],
+      "requirements": [
+        {
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "importance": "required",
+          "requirement_type": "education",
+          "text": "本科可查，理工科专业"
+        },
+        {
+          "evidence_ids": [
+            "ev_005"
+          ],
+          "importance": "required",
+          "requirement_type": "experience",
+          "text": "2年以上工作算法相关工作经验"
+        },
+        {
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "importance": "preferred",
+          "requirement_type": "skill",
+          "text": "熟悉算法服务部署者优先"
+        },
+        {
+          "evidence_ids": [
+            "ev_007"
+          ],
+          "importance": "preferred",
+          "requirement_type": "skill",
+          "text": "熟悉常见的视觉AI算法模型（ResNet/ YOLO/Attention/Transfomer等）者优先"
+        },
+        {
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "importance": "preferred",
+          "requirement_type": "skill",
+          "text": "熟悉Opencv、Numpy、Pandas等工具包优先"
+        },
+        {
+          "evidence_ids": [
+            "ev_009"
+          ],
+          "importance": "preferred",
+          "requirement_type": "experience",
+          "text": "从事过类似文档信息抽取、要素抽取的项目"
+        }
+      ],
+      "responsibilities": [
+        {
+          "action": "负责",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "object": "算法模型的效果测试、问题定位等",
+          "text": "负责算法模型的效果测试、问题定位等，输出测试报告"
+        },
+        {
+          "action": "负责",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "object": "算法模型的工程化部署，性能提升",
+          "text": "负责算法模型的工程化部署，性能提升"
+        },
+        {
+          "action": "负责",
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "object": "多模态/NLP/CV等领域下游任务中算法数据的处理工作以及进行模型试算与训练",
+          "text": "负责多模态/NLP/CV等领域下游任务中算法数据的处理工作以及进行模型试算与训练"
+        }
+      ],
+      "skills": [
+        {
+          "category": "programming_language",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_010"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "PYTHON算法",
+          "raw_name": "PYTHON算法"
+        },
+        {
+          "category": "algorithm",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_011"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "机器学习",
+          "raw_name": "机器学习"
+        },
+        {
+          "category": "algorithm",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_011"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "深度学习",
+          "raw_name": "深度学习"
+        },
+        {
+          "category": "algorithm",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_012"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "大模型算法",
+          "raw_name": "大模型算法"
+        }
+      ]
+    },
+    "created_at": "2026-06-30T08:28:50Z",
+    "evidence": [
+      {
+        "field": "responsibilities",
+        "id": "ev_001",
+        "text": "1、负责算法模型的效果测试、问题定位等，输出测试报告"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_002",
+        "text": "2、负责算法模型的工程化部署，性能提升"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_003",
+        "text": "3、负责多模态/NLP/CV等领域下游任务中算法数据的处理工作以及进行模型试算与训练，包括不限于OCR识别、表格还原、信息提取等"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_004",
+        "text": "--必须项！"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_005",
+        "text": "1) 2年以上工作算法相关工作经验"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_006",
+        "text": "1）熟悉算法服务部署者优先；"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_007",
+        "text": "2）熟悉常见的视觉AI算法模型（ResNet/ YOLO/Attention/Transfomer等）者优先。"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_008",
+        "text": "3）熟悉Opencv、Numpy、Pandas等工具包优先"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_009",
+        "text": "4)从事过类似文档信息抽取、要素抽取的项目"
+      },
+      {
+        "field": "skills",
+        "id": "ev_010",
+        "text": "1）熟练掌握Python/C++/C等语言中的一种或多种。"
+      },
+      {
+        "field": "skills",
+        "id": "ev_011",
+        "text": "关键字：大模型、机器学习、深度学习"
+      },
+      {
+        "field": "skills",
+        "id": "ev_012",
+        "text": "技能标准列表：深度学习、机器学习、大模型算法、运筹优化、时间序列、PYTHON算法、大模型"
+      },
+      {
+        "field": "capabilities",
+        "id": "ev_013",
+        "text": "3）良好的沟通学习能力，可以快速融入团队，学习新知识。"
+      }
+    ],
+    "id": "job_profile_022f4fe3935145beb0682e2e91fc3685",
+    "implementation": "llm_profile_builder",
+    "profile_type": "job",
+    "source_document_id": "doc_f0946d3288c24462b9ab64fb83d0fe76",
+    "state": "available",
+    "warnings": [
+      "skills[4] ignored: missing evidence_text",
+      "skills[5] ignored: missing evidence_text"
+    ]
+  },
+  "schema_version": "profile-extraction/v2",
+  "source_document": {
+    "char_count": 634,
+    "content_digest": "cf755bff2e915bea5327a003594b19b5fc4e8cb0319cd765341b90a0b0361849",
+    "created_at": "2026-06-30T08:27:22Z",
+    "document_type": "jd",
+    "id": "doc_f0946d3288c24462b9ab64fb83d0fe76",
+    "metadata": {
+      "raw_file": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/small-raw/jd_raw.jsonl",
+      "raw_index": 2,
+      "raw_type": "jd"
+    },
+    "source": {
+      "external_id": "40735553916",
+      "published_at": "2026-06-18 12:15:15",
+      "source_system": "zhaopin",
+      "uri": "http://www.zhaopin.com/jobdetail/CC000544460J40735553916.htm"
+    },
+    "storage": "memory"
+  }
+}

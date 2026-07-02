@@ -1,0 +1,717 @@
+{
+  "artifact_type": "job_profile",
+  "created_at": "2026-06-30T08:29:49Z",
+  "extraction": {
+    "evidence": [
+      {
+        "field": "responsibilities",
+        "id": "ev_001",
+        "text": "- 负责使用Python/C++进行软件程序的设计与开发"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_002",
+        "text": "- 参与软件项目的需求分析与系统设计"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_003",
+        "text": "- 完成编码、测试以及文档编写等相关工作"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_004",
+        "text": "- 配合团队进行软件维护和升级"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_005",
+        "text": "1. 本科及以上学历"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_006",
+        "text": "2. 了解Python/C++编程语言及相应的开发环境"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_007",
+        "text": "3. 具备良好的软件设计能力和编程习惯"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_008",
+        "text": "4. 有较强的团队协作和沟通能力"
+      }
+    ],
+    "fields": {
+      "application_scenarios": [
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "name": "软件开发"
+        },
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "name": "需求分析"
+        }
+      ],
+      "candidate": {
+        "name": null,
+        "target_position": null
+      },
+      "capabilities": [
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "importance": "preferred",
+          "name": "团队协作能力"
+        },
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "importance": "preferred",
+          "name": "沟通能力"
+        }
+      ],
+      "company": {
+        "industry": "通信/网络设备",
+        "location": "深圳 福田",
+        "name": "深圳市凯瑞佳易科技有限公司"
+      },
+      "document_type": "jd",
+      "education": [],
+      "employment": {
+        "employment_type": "full_time",
+        "published_at": null,
+        "salary_max": 15000,
+        "salary_min": 9000
+      },
+      "evaluation_signals": [],
+      "evidence": [
+        {
+          "field": "responsibilities",
+          "id": "ev_001",
+          "text": "- 负责使用Python/C++进行软件程序的设计与开发"
+        },
+        {
+          "field": "responsibilities",
+          "id": "ev_002",
+          "text": "- 参与软件项目的需求分析与系统设计"
+        },
+        {
+          "field": "responsibilities",
+          "id": "ev_003",
+          "text": "- 完成编码、测试以及文档编写等相关工作"
+        },
+        {
+          "field": "responsibilities",
+          "id": "ev_004",
+          "text": "- 配合团队进行软件维护和升级"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_005",
+          "text": "1. 本科及以上学历"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_006",
+          "text": "2. 了解Python/C++编程语言及相应的开发环境"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_007",
+          "text": "3. 具备良好的软件设计能力和编程习惯"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_008",
+          "text": "4. 有较强的团队协作和沟通能力"
+        }
+      ],
+      "experience": [],
+      "job": {
+        "department": null,
+        "normalized_title": null,
+        "seniority": null,
+        "title": "python/c++开发工程师"
+      },
+      "projects": [],
+      "requirements": [
+        {
+          "evidence_ids": [
+            "ev_005"
+          ],
+          "importance": "required",
+          "requirement_type": "education",
+          "text": "本科及以上学历"
+        },
+        {
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "importance": "preferred",
+          "requirement_type": "skill",
+          "text": "了解Python/C++编程语言及相应的开发环境"
+        },
+        {
+          "evidence_ids": [
+            "ev_007"
+          ],
+          "importance": "preferred",
+          "requirement_type": "skill",
+          "text": "具备良好的软件设计能力和编程习惯"
+        },
+        {
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "importance": "preferred",
+          "requirement_type": "soft_skill",
+          "text": "有较强的团队协作和沟通能力"
+        }
+      ],
+      "responsibilities": [
+        {
+          "action": "负责",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "object": "使用Python/C++进行软件程序的设计与开发",
+          "text": "负责使用Python/C++进行软件程序的设计与开发"
+        },
+        {
+          "action": "参与",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "object": "软件项目的需求分析与系统设计",
+          "text": "参与软件项目的需求分析与系统设计"
+        },
+        {
+          "action": "完成",
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "object": "编码、测试以及文档编写等相关工作",
+          "text": "完成编码、测试以及文档编写等相关工作"
+        },
+        {
+          "action": "配合",
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "object": "团队进行软件维护和升级",
+          "text": "配合团队进行软件维护和升级"
+        }
+      ],
+      "schema_version": "profile-extraction/v2",
+      "skills": [
+        {
+          "category": "programming_language",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "Python",
+          "raw_name": "Python"
+        },
+        {
+          "category": "programming_language",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "C++",
+          "raw_name": "C++"
+        },
+        {
+          "category": "domain_knowledge",
+          "evidence_ids": [
+            "ev_007"
+          ],
+          "importance": "preferred",
+          "lskt_label": "S",
+          "name": "软件设计能力",
+          "raw_name": "具备良好的软件设计能力和编程习惯"
+        }
+      ]
+    },
+    "implementation": "ollama",
+    "model": "qwen2.5:7b",
+    "raw_model_output": "",
+    "reason": "",
+    "schema": "profile-extraction/v2",
+    "state": "available",
+    "validation_error": "",
+    "warnings": []
+  },
+  "normalization": {
+    "implementation": "lightweight_skill_normalizer",
+    "skills": [
+      {
+        "category": "programming_language",
+        "esco_preferred_label": "Python (computer programming)",
+        "esco_uri": "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d",
+        "esco_version": "v1.2.1",
+        "evidence_ids": [
+          "ev_001"
+        ],
+        "importance": "required",
+        "linking_confidence": 1.0,
+        "linking_status": "linked",
+        "lskt_label": "S",
+        "name": "Python (computer programming)",
+        "raw_name": "Python"
+      },
+      {
+        "category": "programming_language",
+        "esco_preferred_label": "C++",
+        "esco_uri": "http://data.europa.eu/esco/skill/b633eb55-8f1f-4ae6-ab4c-2022ffe2cb7f",
+        "esco_version": "v1.2.1",
+        "evidence_ids": [
+          "ev_001"
+        ],
+        "importance": "required",
+        "linking_confidence": 1.0,
+        "linking_status": "linked",
+        "lskt_label": "S",
+        "name": "C++",
+        "raw_name": "C++"
+      },
+      {
+        "category": "domain_knowledge",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_007"
+        ],
+        "importance": "preferred",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "具备良好的软件设计能力和编程习惯",
+        "raw_name": "具备良好的软件设计能力和编程习惯"
+      }
+    ],
+    "state": "available",
+    "warnings": []
+  },
+  "profile": {
+    "artifacts": {
+      "profile_json": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/structured/profiles/raw_preview_20260630/job/job_profile_383efd85188d40a8a0ac9e13db9d0340.json",
+      "schema_version": "profile-extraction/v2",
+      "storage": "filesystem"
+    },
+    "attributes": {
+      "capabilities": [
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "importance": "preferred",
+          "name": "团队协作能力"
+        },
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "importance": "preferred",
+          "name": "沟通能力"
+        }
+      ],
+      "company": {
+        "industry": "通信/网络设备",
+        "location": "深圳 福田",
+        "name": "深圳市凯瑞佳易科技有限公司"
+      },
+      "education": [],
+      "employment": {
+        "employment_type": "full_time",
+        "published_at": null,
+        "salary_max": 15000,
+        "salary_min": 9000
+      },
+      "experience": [],
+      "jd_profile": {
+        "application_scenarios": [
+          {
+            "description": null,
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "name": "软件开发"
+          },
+          {
+            "description": null,
+            "evidence_ids": [
+              "ev_002"
+            ],
+            "name": "需求分析"
+          }
+        ],
+        "capabilities": [
+          {
+            "description": null,
+            "evidence_ids": [
+              "ev_008"
+            ],
+            "importance": "preferred",
+            "name": "团队协作能力"
+          },
+          {
+            "description": null,
+            "evidence_ids": [
+              "ev_008"
+            ],
+            "importance": "preferred",
+            "name": "沟通能力"
+          }
+        ],
+        "company": {
+          "industry": "通信/网络设备",
+          "location": "深圳 福田",
+          "name": "深圳市凯瑞佳易科技有限公司"
+        },
+        "document_type": "jd",
+        "employment": {
+          "employment_type": "full_time",
+          "published_at": null,
+          "salary_max": 15000,
+          "salary_min": 9000
+        },
+        "evaluation_signals": [],
+        "job": {
+          "department": null,
+          "normalized_title": null,
+          "seniority": null,
+          "title": "python/c++开发工程师"
+        },
+        "requirements": [
+          {
+            "evidence_ids": [
+              "ev_005"
+            ],
+            "importance": "required",
+            "requirement_type": "education",
+            "text": "本科及以上学历"
+          },
+          {
+            "evidence_ids": [
+              "ev_006"
+            ],
+            "importance": "preferred",
+            "requirement_type": "skill",
+            "text": "了解Python/C++编程语言及相应的开发环境"
+          },
+          {
+            "evidence_ids": [
+              "ev_007"
+            ],
+            "importance": "preferred",
+            "requirement_type": "skill",
+            "text": "具备良好的软件设计能力和编程习惯"
+          },
+          {
+            "evidence_ids": [
+              "ev_008"
+            ],
+            "importance": "preferred",
+            "requirement_type": "soft_skill",
+            "text": "有较强的团队协作和沟通能力"
+          }
+        ],
+        "responsibilities": [
+          {
+            "action": "负责",
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "object": "使用Python/C++进行软件程序的设计与开发",
+            "text": "负责使用Python/C++进行软件程序的设计与开发"
+          },
+          {
+            "action": "参与",
+            "evidence_ids": [
+              "ev_002"
+            ],
+            "object": "软件项目的需求分析与系统设计",
+            "text": "参与软件项目的需求分析与系统设计"
+          },
+          {
+            "action": "完成",
+            "evidence_ids": [
+              "ev_003"
+            ],
+            "object": "编码、测试以及文档编写等相关工作",
+            "text": "完成编码、测试以及文档编写等相关工作"
+          },
+          {
+            "action": "配合",
+            "evidence_ids": [
+              "ev_004"
+            ],
+            "object": "团队进行软件维护和升级",
+            "text": "配合团队进行软件维护和升级"
+          }
+        ],
+        "schema_version": "profile-extraction/v2",
+        "skills": [
+          {
+            "category": "programming_language",
+            "esco_preferred_label": "Python (computer programming)",
+            "esco_uri": "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d",
+            "esco_version": "v1.2.1",
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "importance": "required",
+            "linking_confidence": 1.0,
+            "linking_status": "linked",
+            "lskt_label": "S",
+            "name": "Python (computer programming)",
+            "raw_name": "Python"
+          },
+          {
+            "category": "programming_language",
+            "esco_preferred_label": "C++",
+            "esco_uri": "http://data.europa.eu/esco/skill/b633eb55-8f1f-4ae6-ab4c-2022ffe2cb7f",
+            "esco_version": "v1.2.1",
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "importance": "required",
+            "linking_confidence": 1.0,
+            "linking_status": "linked",
+            "lskt_label": "S",
+            "name": "C++",
+            "raw_name": "C++"
+          },
+          {
+            "category": "domain_knowledge",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_007"
+            ],
+            "importance": "preferred",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "具备良好的软件设计能力和编程习惯",
+            "raw_name": "具备良好的软件设计能力和编程习惯"
+          }
+        ]
+      },
+      "job": {
+        "department": null,
+        "normalized_title": null,
+        "seniority": null,
+        "title": "python/c++开发工程师"
+      },
+      "job_title": "python/c++开发工程师",
+      "profile_schema": "profile-extraction/v2",
+      "projects": [],
+      "requirements": [
+        {
+          "evidence_ids": [
+            "ev_005"
+          ],
+          "importance": "required",
+          "requirement_type": "education",
+          "text": "本科及以上学历"
+        },
+        {
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "importance": "preferred",
+          "requirement_type": "skill",
+          "text": "了解Python/C++编程语言及相应的开发环境"
+        },
+        {
+          "evidence_ids": [
+            "ev_007"
+          ],
+          "importance": "preferred",
+          "requirement_type": "skill",
+          "text": "具备良好的软件设计能力和编程习惯"
+        },
+        {
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "importance": "preferred",
+          "requirement_type": "soft_skill",
+          "text": "有较强的团队协作和沟通能力"
+        }
+      ],
+      "responsibilities": [
+        {
+          "action": "负责",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "object": "使用Python/C++进行软件程序的设计与开发",
+          "text": "负责使用Python/C++进行软件程序的设计与开发"
+        },
+        {
+          "action": "参与",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "object": "软件项目的需求分析与系统设计",
+          "text": "参与软件项目的需求分析与系统设计"
+        },
+        {
+          "action": "完成",
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "object": "编码、测试以及文档编写等相关工作",
+          "text": "完成编码、测试以及文档编写等相关工作"
+        },
+        {
+          "action": "配合",
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "object": "团队进行软件维护和升级",
+          "text": "配合团队进行软件维护和升级"
+        }
+      ],
+      "skills": [
+        {
+          "category": "programming_language",
+          "esco_preferred_label": "Python (computer programming)",
+          "esco_uri": "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d",
+          "esco_version": "v1.2.1",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "importance": "required",
+          "linking_confidence": 1.0,
+          "linking_status": "linked",
+          "lskt_label": "S",
+          "name": "Python (computer programming)",
+          "raw_name": "Python"
+        },
+        {
+          "category": "programming_language",
+          "esco_preferred_label": "C++",
+          "esco_uri": "http://data.europa.eu/esco/skill/b633eb55-8f1f-4ae6-ab4c-2022ffe2cb7f",
+          "esco_version": "v1.2.1",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "importance": "required",
+          "linking_confidence": 1.0,
+          "linking_status": "linked",
+          "lskt_label": "S",
+          "name": "C++",
+          "raw_name": "C++"
+        },
+        {
+          "category": "domain_knowledge",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_007"
+          ],
+          "importance": "preferred",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "具备良好的软件设计能力和编程习惯",
+          "raw_name": "具备良好的软件设计能力和编程习惯"
+        }
+      ]
+    },
+    "created_at": "2026-06-30T08:29:49Z",
+    "evidence": [
+      {
+        "field": "responsibilities",
+        "id": "ev_001",
+        "text": "- 负责使用Python/C++进行软件程序的设计与开发"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_002",
+        "text": "- 参与软件项目的需求分析与系统设计"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_003",
+        "text": "- 完成编码、测试以及文档编写等相关工作"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_004",
+        "text": "- 配合团队进行软件维护和升级"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_005",
+        "text": "1. 本科及以上学历"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_006",
+        "text": "2. 了解Python/C++编程语言及相应的开发环境"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_007",
+        "text": "3. 具备良好的软件设计能力和编程习惯"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_008",
+        "text": "4. 有较强的团队协作和沟通能力"
+      }
+    ],
+    "id": "job_profile_383efd85188d40a8a0ac9e13db9d0340",
+    "implementation": "llm_profile_builder",
+    "profile_type": "job",
+    "source_document_id": "doc_56a6c8629ef3471797a797bff7362301",
+    "state": "available",
+    "warnings": []
+  },
+  "schema_version": "profile-extraction/v2",
+  "source_document": {
+    "char_count": 313,
+    "content_digest": "696bdd9ca1a56036e2072672ce05b7e61d748d997b37a68940751e56f3b1f567",
+    "created_at": "2026-06-30T08:28:50Z",
+    "document_type": "jd",
+    "id": "doc_56a6c8629ef3471797a797bff7362301",
+    "metadata": {
+      "raw_file": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/small-raw/jd_raw.jsonl",
+      "raw_index": 3,
+      "raw_type": "jd"
+    },
+    "source": {
+      "external_id": "40933155415",
+      "published_at": "2026-06-18 01:49:54",
+      "source_system": "zhaopin",
+      "uri": "http://www.zhaopin.com/jobdetail/CCL1461615970J40933155415.htm"
+    },
+    "storage": "memory"
+  }
+}

@@ -1,0 +1,1007 @@
+{
+  "artifact_type": "job_profile",
+  "created_at": "2026-06-30T08:27:22Z",
+  "extraction": {
+    "evidence": [
+      {
+        "field": "responsibilities",
+        "id": "ev_001",
+        "text": "岗位职责：负责业务测试相关工作"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_002",
+        "text": "1.学历：本科及以上学历。"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_003",
+        "text": "2.工作经验：具有3年及以上计算机软件测试经验，金融行业背景优先。"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_004",
+        "text": "(1)熟悉常用数据库如TDSQL、GaussDB、TiDB、Oracle、MySQL一个或以上的常用操作；"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_005",
+        "text": "(2)熟悉常用操作系统如Windows Server、Linux、统信OS等的日常操作；"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_006",
+        "text": "(3)熟悉Python、C/C++或 Java 等开发语言，有Python编程能力；"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_007",
+        "text": "(4)具有扎实的网络基础知识。"
+      },
+      {
+        "field": "skills",
+        "id": "ev_008",
+        "text": "熟悉Python、C/C++或 Java 等开发语言，有Python编程能力；"
+      },
+      {
+        "field": "skills",
+        "id": "ev_009",
+        "text": "熟悉常用操作系统如Windows Server、Linux、统信OS等的日常操作；"
+      },
+      {
+        "field": "skills",
+        "id": "ev_010",
+        "text": "熟悉常用数据库如TDSQL、GaussDB、TiDB、Oracle、MySQL一个或以上的常用操作；"
+      },
+      {
+        "field": "skills",
+        "id": "ev_011",
+        "text": "负责业务测试相关工作"
+      }
+    ],
+    "fields": {
+      "application_scenarios": [
+        {
+          "description": "",
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "name": "金融行业软件测试"
+        }
+      ],
+      "candidate": {
+        "name": null,
+        "target_position": null
+      },
+      "capabilities": [],
+      "company": {
+        "industry": "咨询服务",
+        "location": "深圳 南山 科技园",
+        "name": "深圳市汇合发展有限公司"
+      },
+      "document_type": "jd",
+      "education": [],
+      "employment": {
+        "employment_type": "full_time",
+        "published_at": "2026-06-18 15:26:11",
+        "salary_max": 13000,
+        "salary_min": 9000
+      },
+      "evaluation_signals": [],
+      "evidence": [
+        {
+          "field": "responsibilities",
+          "id": "ev_001",
+          "text": "岗位职责：负责业务测试相关工作"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_002",
+          "text": "1.学历：本科及以上学历。"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_003",
+          "text": "2.工作经验：具有3年及以上计算机软件测试经验，金融行业背景优先。"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_004",
+          "text": "(1)熟悉常用数据库如TDSQL、GaussDB、TiDB、Oracle、MySQL一个或以上的常用操作；"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_005",
+          "text": "(2)熟悉常用操作系统如Windows Server、Linux、统信OS等的日常操作；"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_006",
+          "text": "(3)熟悉Python、C/C++或 Java 等开发语言，有Python编程能力；"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_007",
+          "text": "(4)具有扎实的网络基础知识。"
+        },
+        {
+          "field": "skills",
+          "id": "ev_008",
+          "text": "熟悉Python、C/C++或 Java 等开发语言，有Python编程能力；"
+        },
+        {
+          "field": "skills",
+          "id": "ev_009",
+          "text": "熟悉常用操作系统如Windows Server、Linux、统信OS等的日常操作；"
+        },
+        {
+          "field": "skills",
+          "id": "ev_010",
+          "text": "熟悉常用数据库如TDSQL、GaussDB、TiDB、Oracle、MySQL一个或以上的常用操作；"
+        },
+        {
+          "field": "skills",
+          "id": "ev_011",
+          "text": "负责业务测试相关工作"
+        }
+      ],
+      "experience": [],
+      "job": {
+        "department": null,
+        "normalized_title": "Python Automation Test Engineer",
+        "seniority": null,
+        "title": "python自动化测试工程师"
+      },
+      "projects": [],
+      "requirements": [
+        {
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "importance": "required",
+          "requirement_type": "education",
+          "text": "学历：本科及以上学历。"
+        },
+        {
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "importance": "preferred",
+          "requirement_type": "experience",
+          "text": "具有3年及以上计算机软件测试经验，金融行业背景优先。"
+        },
+        {
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "熟悉常用数据库如TDSQL、GaussDB、TiDB、Oracle、MySQL一个或以上的常用操作；"
+        },
+        {
+          "evidence_ids": [
+            "ev_005"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "熟悉常用操作系统如Windows Server、Linux、统信OS等的日常操作；"
+        },
+        {
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "熟悉Python、C/C++或 Java 等开发语言，有Python编程能力；"
+        },
+        {
+          "evidence_ids": [
+            "ev_007"
+          ],
+          "importance": "required",
+          "requirement_type": "knowledge",
+          "text": "具有扎实的网络基础知识。"
+        }
+      ],
+      "responsibilities": [
+        {
+          "action": "",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "object": "",
+          "text": "负责业务测试相关工作"
+        }
+      ],
+      "schema_version": "profile-extraction/v2",
+      "skills": [
+        {
+          "category": "programming_language",
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "importance": "preferred",
+          "lskt_label": "S",
+          "name": "Python",
+          "raw_name": "Python"
+        },
+        {
+          "category": "programming_language",
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "importance": "preferred",
+          "lskt_label": "S",
+          "name": "C/C++",
+          "raw_name": "C/C++"
+        },
+        {
+          "category": "programming_language",
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "importance": "preferred",
+          "lskt_label": "S",
+          "name": "Java",
+          "raw_name": "Java"
+        },
+        {
+          "category": "platform",
+          "evidence_ids": [
+            "ev_009"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "Linux",
+          "raw_name": "Linux"
+        },
+        {
+          "category": "platform",
+          "evidence_ids": [
+            "ev_009"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "Windows",
+          "raw_name": "Windows"
+        },
+        {
+          "category": "database",
+          "evidence_ids": [
+            "ev_010"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "Oracle",
+          "raw_name": "Oracle"
+        },
+        {
+          "category": "database",
+          "evidence_ids": [
+            "ev_010"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "MySQL",
+          "raw_name": "MySQL"
+        },
+        {
+          "category": "database",
+          "evidence_ids": [
+            "ev_010"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "SQLServer",
+          "raw_name": "SQLServer"
+        },
+        {
+          "category": "testing",
+          "evidence_ids": [
+            "ev_011"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "接口自动化测试",
+          "raw_name": "接口自动化测试"
+        }
+      ]
+    },
+    "implementation": "ollama",
+    "model": "qwen2.5:7b",
+    "raw_model_output": "",
+    "reason": "",
+    "schema": "profile-extraction/v2",
+    "state": "available",
+    "validation_error": "",
+    "warnings": [
+      "skills[10] ignored: missing evidence_text"
+    ]
+  },
+  "normalization": {
+    "implementation": "lightweight_skill_normalizer",
+    "skills": [
+      {
+        "category": "programming_language",
+        "esco_preferred_label": "Python (computer programming)",
+        "esco_uri": "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d",
+        "esco_version": "v1.2.1",
+        "evidence_ids": [
+          "ev_008"
+        ],
+        "importance": "preferred",
+        "linking_confidence": 1.0,
+        "linking_status": "linked",
+        "lskt_label": "S",
+        "name": "Python (computer programming)",
+        "raw_name": "Python"
+      },
+      {
+        "category": "programming_language",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_008"
+        ],
+        "importance": "preferred",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "C/C++",
+        "raw_name": "C/C++"
+      },
+      {
+        "category": "programming_language",
+        "esco_preferred_label": "Java (computer programming)",
+        "esco_uri": "http://data.europa.eu/esco/skill/19a8293b-8e95-4de3-983f-77484079c389",
+        "esco_version": "v1.2.1",
+        "evidence_ids": [
+          "ev_008"
+        ],
+        "importance": "preferred",
+        "linking_confidence": 1.0,
+        "linking_status": "linked",
+        "lskt_label": "S",
+        "name": "Java (computer programming)",
+        "raw_name": "Java"
+      },
+      {
+        "category": "platform",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_009"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "Linux",
+        "raw_name": "Linux"
+      },
+      {
+        "category": "platform",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_009"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "Windows",
+        "raw_name": "Windows"
+      },
+      {
+        "category": "database",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_010"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "Oracle",
+        "raw_name": "Oracle"
+      },
+      {
+        "category": "database",
+        "esco_preferred_label": "MySQL",
+        "esco_uri": "http://data.europa.eu/esco/skill/4da171e5-779c-4983-a76f-91c16751e99f",
+        "esco_version": "v1.2.1",
+        "evidence_ids": [
+          "ev_010"
+        ],
+        "importance": "required",
+        "linking_confidence": 1.0,
+        "linking_status": "linked",
+        "lskt_label": "S",
+        "name": "MySQL",
+        "raw_name": "MySQL"
+      },
+      {
+        "category": "database",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_010"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "SQLServer",
+        "raw_name": "SQLServer"
+      },
+      {
+        "category": "testing",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_011"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "接口自动化测试",
+        "raw_name": "接口自动化测试"
+      }
+    ],
+    "state": "available",
+    "warnings": []
+  },
+  "profile": {
+    "artifacts": {
+      "profile_json": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/structured/profiles/raw_preview_20260630/job/job_profile_2ea34e23194d49aaafbe921f4ac9cbae.json",
+      "schema_version": "profile-extraction/v2",
+      "storage": "filesystem"
+    },
+    "attributes": {
+      "capabilities": [],
+      "company": {
+        "industry": "咨询服务",
+        "location": "深圳 南山 科技园",
+        "name": "深圳市汇合发展有限公司"
+      },
+      "education": [],
+      "employment": {
+        "employment_type": "full_time",
+        "published_at": "2026-06-18 15:26:11",
+        "salary_max": 13000,
+        "salary_min": 9000
+      },
+      "experience": [],
+      "jd_profile": {
+        "application_scenarios": [
+          {
+            "description": "",
+            "evidence_ids": [
+              "ev_003"
+            ],
+            "name": "金融行业软件测试"
+          }
+        ],
+        "capabilities": [],
+        "company": {
+          "industry": "咨询服务",
+          "location": "深圳 南山 科技园",
+          "name": "深圳市汇合发展有限公司"
+        },
+        "document_type": "jd",
+        "employment": {
+          "employment_type": "full_time",
+          "published_at": "2026-06-18 15:26:11",
+          "salary_max": 13000,
+          "salary_min": 9000
+        },
+        "evaluation_signals": [],
+        "job": {
+          "department": null,
+          "normalized_title": "Python Automation Test Engineer",
+          "seniority": null,
+          "title": "python自动化测试工程师"
+        },
+        "requirements": [
+          {
+            "evidence_ids": [
+              "ev_002"
+            ],
+            "importance": "required",
+            "requirement_type": "education",
+            "text": "学历：本科及以上学历。"
+          },
+          {
+            "evidence_ids": [
+              "ev_003"
+            ],
+            "importance": "preferred",
+            "requirement_type": "experience",
+            "text": "具有3年及以上计算机软件测试经验，金融行业背景优先。"
+          },
+          {
+            "evidence_ids": [
+              "ev_004"
+            ],
+            "importance": "required",
+            "requirement_type": "skill",
+            "text": "熟悉常用数据库如TDSQL、GaussDB、TiDB、Oracle、MySQL一个或以上的常用操作；"
+          },
+          {
+            "evidence_ids": [
+              "ev_005"
+            ],
+            "importance": "required",
+            "requirement_type": "skill",
+            "text": "熟悉常用操作系统如Windows Server、Linux、统信OS等的日常操作；"
+          },
+          {
+            "evidence_ids": [
+              "ev_006"
+            ],
+            "importance": "required",
+            "requirement_type": "skill",
+            "text": "熟悉Python、C/C++或 Java 等开发语言，有Python编程能力；"
+          },
+          {
+            "evidence_ids": [
+              "ev_007"
+            ],
+            "importance": "required",
+            "requirement_type": "knowledge",
+            "text": "具有扎实的网络基础知识。"
+          }
+        ],
+        "responsibilities": [
+          {
+            "action": "",
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "object": "",
+            "text": "负责业务测试相关工作"
+          }
+        ],
+        "schema_version": "profile-extraction/v2",
+        "skills": [
+          {
+            "category": "programming_language",
+            "esco_preferred_label": "Python (computer programming)",
+            "esco_uri": "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d",
+            "esco_version": "v1.2.1",
+            "evidence_ids": [
+              "ev_008"
+            ],
+            "importance": "preferred",
+            "linking_confidence": 1.0,
+            "linking_status": "linked",
+            "lskt_label": "S",
+            "name": "Python (computer programming)",
+            "raw_name": "Python"
+          },
+          {
+            "category": "programming_language",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_008"
+            ],
+            "importance": "preferred",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "C/C++",
+            "raw_name": "C/C++"
+          },
+          {
+            "category": "programming_language",
+            "esco_preferred_label": "Java (computer programming)",
+            "esco_uri": "http://data.europa.eu/esco/skill/19a8293b-8e95-4de3-983f-77484079c389",
+            "esco_version": "v1.2.1",
+            "evidence_ids": [
+              "ev_008"
+            ],
+            "importance": "preferred",
+            "linking_confidence": 1.0,
+            "linking_status": "linked",
+            "lskt_label": "S",
+            "name": "Java (computer programming)",
+            "raw_name": "Java"
+          },
+          {
+            "category": "platform",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_009"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "Linux",
+            "raw_name": "Linux"
+          },
+          {
+            "category": "platform",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_009"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "Windows",
+            "raw_name": "Windows"
+          },
+          {
+            "category": "database",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_010"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "Oracle",
+            "raw_name": "Oracle"
+          },
+          {
+            "category": "database",
+            "esco_preferred_label": "MySQL",
+            "esco_uri": "http://data.europa.eu/esco/skill/4da171e5-779c-4983-a76f-91c16751e99f",
+            "esco_version": "v1.2.1",
+            "evidence_ids": [
+              "ev_010"
+            ],
+            "importance": "required",
+            "linking_confidence": 1.0,
+            "linking_status": "linked",
+            "lskt_label": "S",
+            "name": "MySQL",
+            "raw_name": "MySQL"
+          },
+          {
+            "category": "database",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_010"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "SQLServer",
+            "raw_name": "SQLServer"
+          },
+          {
+            "category": "testing",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_011"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "接口自动化测试",
+            "raw_name": "接口自动化测试"
+          }
+        ]
+      },
+      "job": {
+        "department": null,
+        "normalized_title": "Python Automation Test Engineer",
+        "seniority": null,
+        "title": "python自动化测试工程师"
+      },
+      "job_title": "python自动化测试工程师",
+      "profile_schema": "profile-extraction/v2",
+      "projects": [],
+      "requirements": [
+        {
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "importance": "required",
+          "requirement_type": "education",
+          "text": "学历：本科及以上学历。"
+        },
+        {
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "importance": "preferred",
+          "requirement_type": "experience",
+          "text": "具有3年及以上计算机软件测试经验，金融行业背景优先。"
+        },
+        {
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "熟悉常用数据库如TDSQL、GaussDB、TiDB、Oracle、MySQL一个或以上的常用操作；"
+        },
+        {
+          "evidence_ids": [
+            "ev_005"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "熟悉常用操作系统如Windows Server、Linux、统信OS等的日常操作；"
+        },
+        {
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "熟悉Python、C/C++或 Java 等开发语言，有Python编程能力；"
+        },
+        {
+          "evidence_ids": [
+            "ev_007"
+          ],
+          "importance": "required",
+          "requirement_type": "knowledge",
+          "text": "具有扎实的网络基础知识。"
+        }
+      ],
+      "responsibilities": [
+        {
+          "action": "",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "object": "",
+          "text": "负责业务测试相关工作"
+        }
+      ],
+      "skills": [
+        {
+          "category": "programming_language",
+          "esco_preferred_label": "Python (computer programming)",
+          "esco_uri": "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d",
+          "esco_version": "v1.2.1",
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "importance": "preferred",
+          "linking_confidence": 1.0,
+          "linking_status": "linked",
+          "lskt_label": "S",
+          "name": "Python (computer programming)",
+          "raw_name": "Python"
+        },
+        {
+          "category": "programming_language",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "importance": "preferred",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "C/C++",
+          "raw_name": "C/C++"
+        },
+        {
+          "category": "programming_language",
+          "esco_preferred_label": "Java (computer programming)",
+          "esco_uri": "http://data.europa.eu/esco/skill/19a8293b-8e95-4de3-983f-77484079c389",
+          "esco_version": "v1.2.1",
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "importance": "preferred",
+          "linking_confidence": 1.0,
+          "linking_status": "linked",
+          "lskt_label": "S",
+          "name": "Java (computer programming)",
+          "raw_name": "Java"
+        },
+        {
+          "category": "platform",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_009"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "Linux",
+          "raw_name": "Linux"
+        },
+        {
+          "category": "platform",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_009"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "Windows",
+          "raw_name": "Windows"
+        },
+        {
+          "category": "database",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_010"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "Oracle",
+          "raw_name": "Oracle"
+        },
+        {
+          "category": "database",
+          "esco_preferred_label": "MySQL",
+          "esco_uri": "http://data.europa.eu/esco/skill/4da171e5-779c-4983-a76f-91c16751e99f",
+          "esco_version": "v1.2.1",
+          "evidence_ids": [
+            "ev_010"
+          ],
+          "importance": "required",
+          "linking_confidence": 1.0,
+          "linking_status": "linked",
+          "lskt_label": "S",
+          "name": "MySQL",
+          "raw_name": "MySQL"
+        },
+        {
+          "category": "database",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_010"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "SQLServer",
+          "raw_name": "SQLServer"
+        },
+        {
+          "category": "testing",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_011"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "接口自动化测试",
+          "raw_name": "接口自动化测试"
+        }
+      ]
+    },
+    "created_at": "2026-06-30T08:27:22Z",
+    "evidence": [
+      {
+        "field": "responsibilities",
+        "id": "ev_001",
+        "text": "岗位职责：负责业务测试相关工作"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_002",
+        "text": "1.学历：本科及以上学历。"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_003",
+        "text": "2.工作经验：具有3年及以上计算机软件测试经验，金融行业背景优先。"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_004",
+        "text": "(1)熟悉常用数据库如TDSQL、GaussDB、TiDB、Oracle、MySQL一个或以上的常用操作；"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_005",
+        "text": "(2)熟悉常用操作系统如Windows Server、Linux、统信OS等的日常操作；"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_006",
+        "text": "(3)熟悉Python、C/C++或 Java 等开发语言，有Python编程能力；"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_007",
+        "text": "(4)具有扎实的网络基础知识。"
+      },
+      {
+        "field": "skills",
+        "id": "ev_008",
+        "text": "熟悉Python、C/C++或 Java 等开发语言，有Python编程能力；"
+      },
+      {
+        "field": "skills",
+        "id": "ev_009",
+        "text": "熟悉常用操作系统如Windows Server、Linux、统信OS等的日常操作；"
+      },
+      {
+        "field": "skills",
+        "id": "ev_010",
+        "text": "熟悉常用数据库如TDSQL、GaussDB、TiDB、Oracle、MySQL一个或以上的常用操作；"
+      },
+      {
+        "field": "skills",
+        "id": "ev_011",
+        "text": "负责业务测试相关工作"
+      }
+    ],
+    "id": "job_profile_2ea34e23194d49aaafbe921f4ac9cbae",
+    "implementation": "llm_profile_builder",
+    "profile_type": "job",
+    "source_document_id": "doc_66fcf23069304ca0b01089f31c67439b",
+    "state": "available",
+    "warnings": [
+      "skills[10] ignored: missing evidence_text"
+    ]
+  },
+  "schema_version": "profile-extraction/v2",
+  "source_document": {
+    "char_count": 447,
+    "content_digest": "24b23f3b41fe8d1d9368d89115d1c21a9e117a0a63e0f1c3d3a95409c85dd138",
+    "created_at": "2026-06-30T08:25:52Z",
+    "document_type": "jd",
+    "id": "doc_66fcf23069304ca0b01089f31c67439b",
+    "metadata": {
+      "raw_file": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/small-raw/jd_raw.jsonl",
+      "raw_index": 1,
+      "raw_type": "jd"
+    },
+    "source": {
+      "external_id": "40857992907",
+      "published_at": "2026-06-18 15:26:11",
+      "source_system": "zhaopin",
+      "uri": "http://www.zhaopin.com/jobdetail/CC160407910J40857992907.htm"
+    },
+    "storage": "memory"
+  }
+}

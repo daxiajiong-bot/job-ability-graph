@@ -1,0 +1,734 @@
+{
+  "artifact_type": "job_profile",
+  "created_at": "2026-06-30T08:33:26Z",
+  "extraction": {
+    "evidence": [
+      {
+        "field": "responsibilities",
+        "id": "ev_001",
+        "text": "负责通信设备相关业务系统的Python开发与维护，支撑设备监控、数据采集或自动化运维需求。"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_002",
+        "text": "参与系统架构设计与优化，保障通信数据处理的高效性与稳定性。"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_003",
+        "text": "对接通信设备接口，实现数据交互与业务逻辑的落地。"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_004",
+        "text": "编写技术文档，推动团队代码规范与工程化实践。"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_005",
+        "text": "本科及以上学历,，周末双休。"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_006",
+        "text": "3年以上Python开发经验，精通Python基础语法及常用库（如requests、pandas、Django/Flask等）优先。"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_007",
+        "text": "熟悉TCP/IP、HTTP等网络协议，有通信设备或网络系统开发经验者优先。"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_008",
+        "text": "具备良好的问题分析与解决能力，能独立完成模块设计与编码。"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_009",
+        "text": "有自动化测试、数据处理或分布式系统经验者优先。"
+      },
+      {
+        "field": "skills",
+        "id": "ev_010",
+        "text": "精通Python基础语法及常用库（如requests、pandas、Django/Flask等）优先。"
+      }
+    ],
+    "fields": {
+      "application_scenarios": [
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "name": "通信设备相关业务系统的Python开发与维护"
+        },
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "name": "系统架构设计与优化"
+        },
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "name": "对接通信设备接口, 实现数据交互与业务逻辑的落地"
+        }
+      ],
+      "candidate": {
+        "name": null,
+        "target_position": null
+      },
+      "capabilities": [],
+      "company": {
+        "industry": "通信/网络设备",
+        "location": "深圳 龙岗",
+        "name": "深圳市凯瑞佳易科技有限公司"
+      },
+      "document_type": "jd",
+      "education": [],
+      "employment": {
+        "employment_type": "full_time",
+        "published_at": "2026-06-17 14:44:15",
+        "salary_max": 13000,
+        "salary_min": 9000
+      },
+      "evaluation_signals": [],
+      "evidence": [
+        {
+          "field": "responsibilities",
+          "id": "ev_001",
+          "text": "负责通信设备相关业务系统的Python开发与维护，支撑设备监控、数据采集或自动化运维需求。"
+        },
+        {
+          "field": "responsibilities",
+          "id": "ev_002",
+          "text": "参与系统架构设计与优化，保障通信数据处理的高效性与稳定性。"
+        },
+        {
+          "field": "responsibilities",
+          "id": "ev_003",
+          "text": "对接通信设备接口，实现数据交互与业务逻辑的落地。"
+        },
+        {
+          "field": "responsibilities",
+          "id": "ev_004",
+          "text": "编写技术文档，推动团队代码规范与工程化实践。"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_005",
+          "text": "本科及以上学历,，周末双休。"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_006",
+          "text": "3年以上Python开发经验，精通Python基础语法及常用库（如requests、pandas、Django/Flask等）优先。"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_007",
+          "text": "熟悉TCP/IP、HTTP等网络协议，有通信设备或网络系统开发经验者优先。"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_008",
+          "text": "具备良好的问题分析与解决能力，能独立完成模块设计与编码。"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_009",
+          "text": "有自动化测试、数据处理或分布式系统经验者优先。"
+        },
+        {
+          "field": "skills",
+          "id": "ev_010",
+          "text": "精通Python基础语法及常用库（如requests、pandas、Django/Flask等）优先。"
+        }
+      ],
+      "experience": [],
+      "job": {
+        "department": null,
+        "normalized_title": "python developer",
+        "seniority": null,
+        "title": "Python开发工程师"
+      },
+      "projects": [],
+      "requirements": [
+        {
+          "evidence_ids": [
+            "ev_005"
+          ],
+          "importance": "required",
+          "requirement_type": "education",
+          "text": "本科及以上学历"
+        },
+        {
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "importance": "preferred",
+          "requirement_type": "experience",
+          "text": "3年以上Python开发经验"
+        },
+        {
+          "evidence_ids": [
+            "ev_007"
+          ],
+          "importance": "preferred",
+          "requirement_type": "skill",
+          "text": "熟悉TCP/IP、HTTP等网络协议"
+        },
+        {
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "具备良好的问题分析与解决能力, 能独立完成模块设计与编码"
+        },
+        {
+          "evidence_ids": [
+            "ev_009"
+          ],
+          "importance": "preferred",
+          "requirement_type": "experience",
+          "text": "有自动化测试、数据处理或分布式系统经验者优先"
+        }
+      ],
+      "responsibilities": [
+        {
+          "action": "负责",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "object": "通信设备相关业务系统的Python开发与维护",
+          "text": "负责通信设备相关业务系统的Python开发与维护"
+        },
+        {
+          "action": "参与",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "object": "系统架构设计与优化",
+          "text": "参与系统架构设计与优化"
+        },
+        {
+          "action": "对接",
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "object": "通信设备接口, 实现数据交互与业务逻辑的落地",
+          "text": "对接通信设备接口, 实现数据交互与业务逻辑的落地"
+        },
+        {
+          "action": "编写",
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "object": "技术文档, 推动团队代码规范与工程化实践",
+          "text": "编写技术文档, 推动团队代码规范与工程化实践"
+        }
+      ],
+      "schema_version": "profile-extraction/v2",
+      "skills": [
+        {
+          "category": "programming_language",
+          "evidence_ids": [
+            "ev_010"
+          ],
+          "importance": "preferred",
+          "lskt_label": "S",
+          "name": "Python基础语法及常用库",
+          "raw_name": "Python基础语法及常用库（如requests、pandas、Django/Flask等）"
+        },
+        {
+          "category": "protocol",
+          "evidence_ids": [
+            "ev_007"
+          ],
+          "importance": "preferred",
+          "lskt_label": "S",
+          "name": "TCP/IP协议",
+          "raw_name": "熟悉TCP/IP、HTTP等网络协议"
+        },
+        {
+          "category": "soft_skill",
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "问题分析与解决能力",
+          "raw_name": "具备良好的问题分析与解决能力, 能独立完成模块设计与编码"
+        }
+      ]
+    },
+    "implementation": "ollama",
+    "model": "qwen2.5:7b",
+    "raw_model_output": "",
+    "reason": "",
+    "schema": "profile-extraction/v2",
+    "state": "available",
+    "validation_error": "",
+    "warnings": []
+  },
+  "normalization": {
+    "implementation": "lightweight_skill_normalizer",
+    "skills": [
+      {
+        "category": "programming_language",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_010"
+        ],
+        "importance": "preferred",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "Python基础语法及常用库（如requests、pandas、Django/Flask等）",
+        "raw_name": "Python基础语法及常用库（如requests、pandas、Django/Flask等）"
+      },
+      {
+        "category": "protocol",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_007"
+        ],
+        "importance": "preferred",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "熟悉TCP/IP、HTTP等网络协议",
+        "raw_name": "熟悉TCP/IP、HTTP等网络协议"
+      },
+      {
+        "category": "soft_skill",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_008"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "具备良好的问题分析与解决能力, 能独立完成模块设计与编码",
+        "raw_name": "具备良好的问题分析与解决能力, 能独立完成模块设计与编码"
+      }
+    ],
+    "state": "available",
+    "warnings": []
+  },
+  "profile": {
+    "artifacts": {
+      "profile_json": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/structured/profiles/raw_preview_20260630/job/job_profile_49874ca483c04d858fbdd0ba614b84d0.json",
+      "schema_version": "profile-extraction/v2",
+      "storage": "filesystem"
+    },
+    "attributes": {
+      "capabilities": [],
+      "company": {
+        "industry": "通信/网络设备",
+        "location": "深圳 龙岗",
+        "name": "深圳市凯瑞佳易科技有限公司"
+      },
+      "education": [],
+      "employment": {
+        "employment_type": "full_time",
+        "published_at": "2026-06-17 14:44:15",
+        "salary_max": 13000,
+        "salary_min": 9000
+      },
+      "experience": [],
+      "jd_profile": {
+        "application_scenarios": [
+          {
+            "description": null,
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "name": "通信设备相关业务系统的Python开发与维护"
+          },
+          {
+            "description": null,
+            "evidence_ids": [
+              "ev_002"
+            ],
+            "name": "系统架构设计与优化"
+          },
+          {
+            "description": null,
+            "evidence_ids": [
+              "ev_003"
+            ],
+            "name": "对接通信设备接口, 实现数据交互与业务逻辑的落地"
+          }
+        ],
+        "capabilities": [],
+        "company": {
+          "industry": "通信/网络设备",
+          "location": "深圳 龙岗",
+          "name": "深圳市凯瑞佳易科技有限公司"
+        },
+        "document_type": "jd",
+        "employment": {
+          "employment_type": "full_time",
+          "published_at": "2026-06-17 14:44:15",
+          "salary_max": 13000,
+          "salary_min": 9000
+        },
+        "evaluation_signals": [],
+        "job": {
+          "department": null,
+          "normalized_title": "python developer",
+          "seniority": null,
+          "title": "Python开发工程师"
+        },
+        "requirements": [
+          {
+            "evidence_ids": [
+              "ev_005"
+            ],
+            "importance": "required",
+            "requirement_type": "education",
+            "text": "本科及以上学历"
+          },
+          {
+            "evidence_ids": [
+              "ev_006"
+            ],
+            "importance": "preferred",
+            "requirement_type": "experience",
+            "text": "3年以上Python开发经验"
+          },
+          {
+            "evidence_ids": [
+              "ev_007"
+            ],
+            "importance": "preferred",
+            "requirement_type": "skill",
+            "text": "熟悉TCP/IP、HTTP等网络协议"
+          },
+          {
+            "evidence_ids": [
+              "ev_008"
+            ],
+            "importance": "required",
+            "requirement_type": "skill",
+            "text": "具备良好的问题分析与解决能力, 能独立完成模块设计与编码"
+          },
+          {
+            "evidence_ids": [
+              "ev_009"
+            ],
+            "importance": "preferred",
+            "requirement_type": "experience",
+            "text": "有自动化测试、数据处理或分布式系统经验者优先"
+          }
+        ],
+        "responsibilities": [
+          {
+            "action": "负责",
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "object": "通信设备相关业务系统的Python开发与维护",
+            "text": "负责通信设备相关业务系统的Python开发与维护"
+          },
+          {
+            "action": "参与",
+            "evidence_ids": [
+              "ev_002"
+            ],
+            "object": "系统架构设计与优化",
+            "text": "参与系统架构设计与优化"
+          },
+          {
+            "action": "对接",
+            "evidence_ids": [
+              "ev_003"
+            ],
+            "object": "通信设备接口, 实现数据交互与业务逻辑的落地",
+            "text": "对接通信设备接口, 实现数据交互与业务逻辑的落地"
+          },
+          {
+            "action": "编写",
+            "evidence_ids": [
+              "ev_004"
+            ],
+            "object": "技术文档, 推动团队代码规范与工程化实践",
+            "text": "编写技术文档, 推动团队代码规范与工程化实践"
+          }
+        ],
+        "schema_version": "profile-extraction/v2",
+        "skills": [
+          {
+            "category": "programming_language",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_010"
+            ],
+            "importance": "preferred",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "Python基础语法及常用库（如requests、pandas、Django/Flask等）",
+            "raw_name": "Python基础语法及常用库（如requests、pandas、Django/Flask等）"
+          },
+          {
+            "category": "protocol",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_007"
+            ],
+            "importance": "preferred",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "熟悉TCP/IP、HTTP等网络协议",
+            "raw_name": "熟悉TCP/IP、HTTP等网络协议"
+          },
+          {
+            "category": "soft_skill",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_008"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "具备良好的问题分析与解决能力, 能独立完成模块设计与编码",
+            "raw_name": "具备良好的问题分析与解决能力, 能独立完成模块设计与编码"
+          }
+        ]
+      },
+      "job": {
+        "department": null,
+        "normalized_title": "python developer",
+        "seniority": null,
+        "title": "Python开发工程师"
+      },
+      "job_title": "Python开发工程师",
+      "profile_schema": "profile-extraction/v2",
+      "projects": [],
+      "requirements": [
+        {
+          "evidence_ids": [
+            "ev_005"
+          ],
+          "importance": "required",
+          "requirement_type": "education",
+          "text": "本科及以上学历"
+        },
+        {
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "importance": "preferred",
+          "requirement_type": "experience",
+          "text": "3年以上Python开发经验"
+        },
+        {
+          "evidence_ids": [
+            "ev_007"
+          ],
+          "importance": "preferred",
+          "requirement_type": "skill",
+          "text": "熟悉TCP/IP、HTTP等网络协议"
+        },
+        {
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "具备良好的问题分析与解决能力, 能独立完成模块设计与编码"
+        },
+        {
+          "evidence_ids": [
+            "ev_009"
+          ],
+          "importance": "preferred",
+          "requirement_type": "experience",
+          "text": "有自动化测试、数据处理或分布式系统经验者优先"
+        }
+      ],
+      "responsibilities": [
+        {
+          "action": "负责",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "object": "通信设备相关业务系统的Python开发与维护",
+          "text": "负责通信设备相关业务系统的Python开发与维护"
+        },
+        {
+          "action": "参与",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "object": "系统架构设计与优化",
+          "text": "参与系统架构设计与优化"
+        },
+        {
+          "action": "对接",
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "object": "通信设备接口, 实现数据交互与业务逻辑的落地",
+          "text": "对接通信设备接口, 实现数据交互与业务逻辑的落地"
+        },
+        {
+          "action": "编写",
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "object": "技术文档, 推动团队代码规范与工程化实践",
+          "text": "编写技术文档, 推动团队代码规范与工程化实践"
+        }
+      ],
+      "skills": [
+        {
+          "category": "programming_language",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_010"
+          ],
+          "importance": "preferred",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "Python基础语法及常用库（如requests、pandas、Django/Flask等）",
+          "raw_name": "Python基础语法及常用库（如requests、pandas、Django/Flask等）"
+        },
+        {
+          "category": "protocol",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_007"
+          ],
+          "importance": "preferred",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "熟悉TCP/IP、HTTP等网络协议",
+          "raw_name": "熟悉TCP/IP、HTTP等网络协议"
+        },
+        {
+          "category": "soft_skill",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "具备良好的问题分析与解决能力, 能独立完成模块设计与编码",
+          "raw_name": "具备良好的问题分析与解决能力, 能独立完成模块设计与编码"
+        }
+      ]
+    },
+    "created_at": "2026-06-30T08:33:26Z",
+    "evidence": [
+      {
+        "field": "responsibilities",
+        "id": "ev_001",
+        "text": "负责通信设备相关业务系统的Python开发与维护，支撑设备监控、数据采集或自动化运维需求。"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_002",
+        "text": "参与系统架构设计与优化，保障通信数据处理的高效性与稳定性。"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_003",
+        "text": "对接通信设备接口，实现数据交互与业务逻辑的落地。"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_004",
+        "text": "编写技术文档，推动团队代码规范与工程化实践。"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_005",
+        "text": "本科及以上学历,，周末双休。"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_006",
+        "text": "3年以上Python开发经验，精通Python基础语法及常用库（如requests、pandas、Django/Flask等）优先。"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_007",
+        "text": "熟悉TCP/IP、HTTP等网络协议，有通信设备或网络系统开发经验者优先。"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_008",
+        "text": "具备良好的问题分析与解决能力，能独立完成模块设计与编码。"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_009",
+        "text": "有自动化测试、数据处理或分布式系统经验者优先。"
+      },
+      {
+        "field": "skills",
+        "id": "ev_010",
+        "text": "精通Python基础语法及常用库（如requests、pandas、Django/Flask等）优先。"
+      }
+    ],
+    "id": "job_profile_49874ca483c04d858fbdd0ba614b84d0",
+    "implementation": "llm_profile_builder",
+    "profile_type": "job",
+    "source_document_id": "doc_0ef4a1276b6b4233ab918a5fa019a774",
+    "state": "available",
+    "warnings": []
+  },
+  "schema_version": "profile-extraction/v2",
+  "source_document": {
+    "char_count": 469,
+    "content_digest": "6587704cf9f2adebec9f7c7e238f1774055a14509335b655eab1fe49a20409a6",
+    "created_at": "2026-06-30T08:32:13Z",
+    "document_type": "jd",
+    "id": "doc_0ef4a1276b6b4233ab918a5fa019a774",
+    "metadata": {
+      "raw_file": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/small-raw/jd_raw.jsonl",
+      "raw_index": 6,
+      "raw_type": "jd"
+    },
+    "source": {
+      "external_id": "40945011215",
+      "published_at": "2026-06-17 14:44:15",
+      "source_system": "zhaopin",
+      "uri": "http://www.zhaopin.com/jobdetail/CCL1461615970J40945011215.htm"
+    },
+    "storage": "memory"
+  }
+}

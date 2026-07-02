@@ -1,0 +1,78 @@
+{
+  "artifact_type": "job_profile",
+  "created_at": "2026-06-30T08:37:53Z",
+  "extraction": {
+    "evidence": [],
+    "fields": {},
+    "implementation": "mock",
+    "model": null,
+    "raw_model_output": "{\n  \"schema_version\": \"profile-extraction/v2\",\n  \"document_type\": \"jd\",\n  \"job\": {\"title\": \"python自动化测试\", \"normalized_title\": \"Python 自动化测试工程师\", \"department\": null, \"seniority\": null},\n  \"company\": {\"name\": \"中软国际\", \"industry\": \"软件/IT服务\", \"location\": \"深圳 龙岗\"},\n  \"employment\": {\"employment_type\": \"full_time\", \"salary_min\": null, \"salary_max\": null, \"published_at\": \"2026-06-17 11:07:30\"},\n  \"responsibilities\": [\n    {\"text\": \"依据现有自动化框架提升自动化测试脚本覆盖率\", \"action\": \"提升\", \"object\": \"自动化测试脚本覆盖率\", \"evidence_text\": \"依据现有自动化框架提升自动化测试脚本覆盖率\"},\n    {\"text\": \"根据手工测试用例，编写高效、稳定的自动化测试用例脚本\", \"action\": \"编写\", \"object\": \"高效、稳定的自动化测试用例脚本\", \"evidence_text\": \"根据手工测试用例，编写高效、稳定的自动化测试用例脚本\"},\n    {\"text\": \"实现自动化过程中测试数据设计与维护，执行测试脚本、定位简单问题\", \"action\": \"实现\", \"object\": \"自动化过程中的测试数据设计与维护、执行测试脚本、定位简单问题\", \"evidence_text\": \"实现自动化过程中测试数据设计与维护，执行测试脚本、定位简单问题\"},\n    {\"text\": \"负责现有自动化测试用例的维护和优化\", \"action\": \"负责\", \"object\": \"现有自动化测试用例的维护和优化\", \"evidence_text\": \"负责现有自动化测试用例的维护和优化\"}\n  ],\n  \"requirements\": [\n    {\"text\": \"熟悉软件测试理论与流程，3年以上软件测试经验\", \"requirement_type\": \"experience\", \"importance\": \"required\", \"evidence_text\": \"熟悉软件测试理论与流程，3年以上软件测试经验\"},\n    {\"text\": \"有互联网产品或金融资管领域测试经验者优先\", \"requirement_type\": \"experience\", \"importance\": \"preferred\", \"evidence_text\": \"有互联网产品或金融资管领域测试经验者优先\"},\n    {\"text\": \"熟练掌握功能、接口、自动化等测试方法，具备扎实的测试用例设计与缺陷分析能力\", \"requirement_type\": \"skill\", \"importance\": \"required\", \"evidence_text\": \"熟练掌握功能、接口、自动化等测试方法，具备扎实的测试用例设计与缺陷分析能力\"},\n    {\"text\": \"熟悉Java或Python等至少一种编程语言，具备测试脚本开发或自动化测试工具（如Selenium、JUnit、TestNG等）使用经验\", \"requirement_type\": \"skill\", \"importance\": \"required\", \"evidence_text\": \"熟悉Java或Python等至少一种编程语言，具备测试脚本开发或自动化测试工具（如Selenium、JUnit、TestNG等）使用经验\"},\n    {\"text\": \"熟悉MySQL、Oracle等主流数据库的基本操作与SQL编写，能够独立完成数据构造与校验\", \"requirement_type\": \"skill\", \"importance\": \"required\", \"evidence_text\": \"熟悉MySQL、Oracle等主流数据库的基本操作与SQL编写，能够独立完成数据构造与校验\"},\n    {\"text\": \"熟悉Linux操作系统常用命令，具备服务部署、日志查看与环境调试的基本能力\", \"requirement_type\": \"skill\", \"importance\": \"required\", \"evidence_text\": \"熟悉Linux操作系统常用命令，具备服务部署、日志查看与环境调试的基本能力\"},\n    {\"text\": \"了解持续集成/持续交付（CI/CD）流程，熟悉Git、Jenkins、JIRA等相关工具\", \"requirement_type\": \"skill\", \"importance\": \"required\", \"evidence_text\": \"了解持续集成/持续交付（CI/CD）流程，熟悉Git、Jenkins、JIRA等相关工具\"}\n  ],\n  \"skills\": [\n    {\"name\": \"Python\", \"raw_name\": \"Python\", \"category\": \"programming_language\", \"lskt_label\": \"S\", \"importance\": \"required\", \"evidence_text\": \"熟悉Java或Python等至少一种编程语言\"},\n    {\"name\": \"Java\", \"raw_name\": \"Java\", \"category\": \"programming_language\", \"lskt_label\": \"S\", \"importance\": \"unknown\", \"evidence_text\": \"熟悉Java或Python等至少一种编程语言\"},\n    {\"name\": \"接口自动化测试\", \"raw_name\": \"接口自动化测试\", \"category\": \"testing\", \"lskt_label\": \"S\", \"importance\": \"required\", \"evidence_text\": \"熟练掌握功能、接口、自动化等测试方法\"},\n    {\"name\": \"持续集成与部署\", \"raw_name\": \"持续集成与部署\", \"category\": \"devops\", \"lskt_label\": \"S\", \"importance\": \"unknown\", \"evidence_text\": \"了解持续集成/持续交付（CI/CD）流程，熟悉Git、Jenkins、JIRA等相关工具\"},\n    {\"name\": \"测试报告分析\", \"raw_name\": \"测试报告分析\", \"category\": \"testing\", \"lskt_label\": \"S\", \"importance\": \"unknown\", \"evidence_text\": null}\n  ],\n  \"capabilities\": [\n    {\"name\": \"软件测试理论与流程\", \"description\": null, \"importance\": \"required\", \"evidence_text\": \"熟悉软件测试理论与流程，3年以上软件测试经验\"}\n  ],\n  \"application_scenarios\": [\n    {\"name\": \"互联网产品或金融资管领域测试\", \"description\": null, \"evidence_text\": \"有互联网产品或金融资管领域测试经验者优先\"}\n  ]\n}",
+    "reason": "Ollama structured extraction failed: model output is missing required keys: evaluation_signals",
+    "schema": null,
+    "state": "not_implemented",
+    "validation_error": "model output is missing required keys: evaluation_signals",
+    "warnings": [
+      "Ollama structured extraction failed: model output is missing required keys: evaluation_signals"
+    ]
+  },
+  "normalization": {
+    "implementation": "lightweight_skill_normalizer",
+    "skills": [],
+    "state": "not_implemented",
+    "warnings": [
+      "Ollama structured extraction failed: model output is missing required keys: evaluation_signals"
+    ]
+  },
+  "profile": {
+    "artifacts": {
+      "profile_json": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/structured/profiles/raw_preview_20260630/job/job_profile_f5db464872ee429da6bad63cb1789af2.json",
+      "schema_version": "profile-extraction/v2",
+      "storage": "filesystem"
+    },
+    "attributes": {
+      "capabilities": [],
+      "company": {},
+      "education": [],
+      "employment": {},
+      "experience": [],
+      "jd_profile": {},
+      "job": {},
+      "job_title": null,
+      "profile_schema": "profile-extraction/v2",
+      "projects": [],
+      "requirements": [],
+      "responsibilities": [],
+      "skills": []
+    },
+    "created_at": "2026-06-30T08:37:53Z",
+    "evidence": [],
+    "id": "job_profile_f5db464872ee429da6bad63cb1789af2",
+    "implementation": "mock",
+    "profile_type": "job",
+    "source_document_id": "doc_7f05ee084c144afe8145ec47a61fca7b",
+    "state": "not_implemented",
+    "warnings": [
+      "Ollama structured extraction failed: model output is missing required keys: evaluation_signals"
+    ]
+  },
+  "schema_version": "profile-extraction/v2",
+  "source_document": {
+    "char_count": 570,
+    "content_digest": "cfe16cd1020ce115a1df1718e24af64b4a9f2b3d2e556aa33f5c4925cdbabb81",
+    "created_at": "2026-06-30T08:36:31Z",
+    "document_type": "jd",
+    "id": "doc_7f05ee084c144afe8145ec47a61fca7b",
+    "metadata": {
+      "raw_file": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/small-raw/jd_raw.jsonl",
+      "raw_index": 9,
+      "raw_type": "jd"
+    },
+    "source": {
+      "external_id": "40895868812",
+      "published_at": "2026-06-17 11:07:30",
+      "source_system": "zhaopin",
+      "uri": "http://www.zhaopin.com/jobdetail/CC508620120J40895868812.htm"
+    },
+    "storage": "memory"
+  }
+}

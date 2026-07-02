@@ -1,0 +1,828 @@
+{
+  "counts": {
+    "available": 16,
+    "by_type": {
+      "jd": {
+        "available": 9,
+        "not_implemented": 1,
+        "total": 10
+      },
+      "resume": {
+        "available": 7,
+        "not_implemented": 3,
+        "total": 10
+      }
+    },
+    "not_implemented": 4,
+    "total": 20
+  },
+  "examples": {
+    "jd": {
+      "artifact_path": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/structured/profiles/raw_preview_20260630/job/job_profile_2ea34e23194d49aaafbe921f4ac9cbae.json",
+      "evidence": [
+        {
+          "field": "responsibilities",
+          "id": "ev_001",
+          "text": "岗位职责：负责业务测试相关工作"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_002",
+          "text": "1.学历：本科及以上学历。"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_003",
+          "text": "2.工作经验：具有3年及以上计算机软件测试经验，金融行业背景优先。"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_004",
+          "text": "(1)熟悉常用数据库如TDSQL、GaussDB、TiDB、Oracle、MySQL一个或以上的常用操作；"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_005",
+          "text": "(2)熟悉常用操作系统如Windows Server、Linux、统信OS等的日常操作；"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_006",
+          "text": "(3)熟悉Python、C/C++或 Java 等开发语言，有Python编程能力；"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_007",
+          "text": "(4)具有扎实的网络基础知识。"
+        },
+        {
+          "field": "skills",
+          "id": "ev_008",
+          "text": "熟悉Python、C/C++或 Java 等开发语言，有Python编程能力；"
+        },
+        {
+          "field": "skills",
+          "id": "ev_009",
+          "text": "熟悉常用操作系统如Windows Server、Linux、统信OS等的日常操作；"
+        },
+        {
+          "field": "skills",
+          "id": "ev_010",
+          "text": "熟悉常用数据库如TDSQL、GaussDB、TiDB、Oracle、MySQL一个或以上的常用操作；"
+        },
+        {
+          "field": "skills",
+          "id": "ev_011",
+          "text": "负责业务测试相关工作"
+        }
+      ],
+      "job": {
+        "department": null,
+        "normalized_title": "Python Automation Test Engineer",
+        "seniority": null,
+        "title": "python自动化测试工程师"
+      },
+      "skills": [
+        {
+          "category": "programming_language",
+          "esco_preferred_label": "Python (computer programming)",
+          "esco_uri": "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d",
+          "esco_version": "v1.2.1",
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "importance": "preferred",
+          "linking_confidence": 1.0,
+          "linking_status": "linked",
+          "lskt_label": "S",
+          "name": "Python (computer programming)",
+          "raw_name": "Python"
+        },
+        {
+          "category": "programming_language",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "importance": "preferred",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "C/C++",
+          "raw_name": "C/C++"
+        },
+        {
+          "category": "programming_language",
+          "esco_preferred_label": "Java (computer programming)",
+          "esco_uri": "http://data.europa.eu/esco/skill/19a8293b-8e95-4de3-983f-77484079c389",
+          "esco_version": "v1.2.1",
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "importance": "preferred",
+          "linking_confidence": 1.0,
+          "linking_status": "linked",
+          "lskt_label": "S",
+          "name": "Java (computer programming)",
+          "raw_name": "Java"
+        },
+        {
+          "category": "platform",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_009"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "Linux",
+          "raw_name": "Linux"
+        },
+        {
+          "category": "platform",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_009"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "Windows",
+          "raw_name": "Windows"
+        },
+        {
+          "category": "database",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_010"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "Oracle",
+          "raw_name": "Oracle"
+        },
+        {
+          "category": "database",
+          "esco_preferred_label": "MySQL",
+          "esco_uri": "http://data.europa.eu/esco/skill/4da171e5-779c-4983-a76f-91c16751e99f",
+          "esco_version": "v1.2.1",
+          "evidence_ids": [
+            "ev_010"
+          ],
+          "importance": "required",
+          "linking_confidence": 1.0,
+          "linking_status": "linked",
+          "lskt_label": "S",
+          "name": "MySQL",
+          "raw_name": "MySQL"
+        },
+        {
+          "category": "database",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_010"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "SQLServer",
+          "raw_name": "SQLServer"
+        },
+        {
+          "category": "testing",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_011"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "接口自动化测试",
+          "raw_name": "接口自动化测试"
+        }
+      ]
+    },
+    "resume": {
+      "artifact_path": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/structured/profiles/raw_preview_20260630/candidate/candidate_profile_2a6e5bce610c462bb9beb83e346bd034.json",
+      "career_intent": {
+        "target_industry": "咨询服务",
+        "target_location": "深圳 南山 科技园",
+        "target_position": "python自动化测试工程师（双休/福利好）"
+      },
+      "evidence": [
+        {
+          "field": "capabilities",
+          "id": "ev_001",
+          "text": "围绕目标岗位 python自动化测试工程师（双休/福利好） 的核心能力，完成需求拆解、功能实现、测试验证和文档沉淀。"
+        }
+      ],
+      "skills": []
+    }
+  },
+  "output_root": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/structured/profiles/raw_preview_20260630",
+  "raw_inputs": {
+    "jd": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/small-raw/jd_raw.jsonl",
+    "resume": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/small-raw/resume_raw.jsonl"
+  },
+  "records": [
+    {
+      "artifact_path": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/structured/profiles/raw_preview_20260630/job/job_profile_2ea34e23194d49aaafbe921f4ac9cbae.json",
+      "document_id": "doc_66fcf23069304ca0b01089f31c67439b",
+      "evidence_count": 11,
+      "implementation": "llm_profile_builder",
+      "profile_id": "job_profile_2ea34e23194d49aaafbe921f4ac9cbae",
+      "profile_keys": [
+        "application_scenarios",
+        "capabilities",
+        "company",
+        "document_type",
+        "employment",
+        "evaluation_signals",
+        "job",
+        "requirements",
+        "responsibilities",
+        "schema_version",
+        "skills"
+      ],
+      "profile_schema": "profile-extraction/v2",
+      "raw_id": "40857992907",
+      "raw_index": 1,
+      "record_type": "jd",
+      "skill_count": 9,
+      "state": "available",
+      "warnings": [
+        "skills[10] ignored: missing evidence_text"
+      ]
+    },
+    {
+      "artifact_path": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/structured/profiles/raw_preview_20260630/job/job_profile_022f4fe3935145beb0682e2e91fc3685.json",
+      "document_id": "doc_f0946d3288c24462b9ab64fb83d0fe76",
+      "evidence_count": 13,
+      "implementation": "llm_profile_builder",
+      "profile_id": "job_profile_022f4fe3935145beb0682e2e91fc3685",
+      "profile_keys": [
+        "application_scenarios",
+        "capabilities",
+        "company",
+        "document_type",
+        "employment",
+        "evaluation_signals",
+        "job",
+        "requirements",
+        "responsibilities",
+        "schema_version",
+        "skills"
+      ],
+      "profile_schema": "profile-extraction/v2",
+      "raw_id": "40735553916",
+      "raw_index": 2,
+      "record_type": "jd",
+      "skill_count": 4,
+      "state": "available",
+      "warnings": [
+        "skills[4] ignored: missing evidence_text",
+        "skills[5] ignored: missing evidence_text"
+      ]
+    },
+    {
+      "artifact_path": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/structured/profiles/raw_preview_20260630/job/job_profile_383efd85188d40a8a0ac9e13db9d0340.json",
+      "document_id": "doc_56a6c8629ef3471797a797bff7362301",
+      "evidence_count": 8,
+      "implementation": "llm_profile_builder",
+      "profile_id": "job_profile_383efd85188d40a8a0ac9e13db9d0340",
+      "profile_keys": [
+        "application_scenarios",
+        "capabilities",
+        "company",
+        "document_type",
+        "employment",
+        "evaluation_signals",
+        "job",
+        "requirements",
+        "responsibilities",
+        "schema_version",
+        "skills"
+      ],
+      "profile_schema": "profile-extraction/v2",
+      "raw_id": "40933155415",
+      "raw_index": 3,
+      "record_type": "jd",
+      "skill_count": 3,
+      "state": "available",
+      "warnings": []
+    },
+    {
+      "artifact_path": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/structured/profiles/raw_preview_20260630/job/job_profile_93281b6918274e3185f8a47f5e840abc.json",
+      "document_id": "doc_42b9afeeb0f042d09a84a423a2ecc744",
+      "evidence_count": 10,
+      "implementation": "llm_profile_builder",
+      "profile_id": "job_profile_93281b6918274e3185f8a47f5e840abc",
+      "profile_keys": [
+        "application_scenarios",
+        "capabilities",
+        "company",
+        "document_type",
+        "employment",
+        "evaluation_signals",
+        "job",
+        "requirements",
+        "responsibilities",
+        "schema_version",
+        "skills"
+      ],
+      "profile_schema": "profile-extraction/v2",
+      "raw_id": "40874740405",
+      "raw_index": 4,
+      "record_type": "jd",
+      "skill_count": 2,
+      "state": "available",
+      "warnings": []
+    },
+    {
+      "artifact_path": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/structured/profiles/raw_preview_20260630/job/job_profile_be1ec125b6e5435c8cbfdb0e095a2651.json",
+      "document_id": "doc_33525f5ee8354583988f055a7e77d1af",
+      "evidence_count": 12,
+      "implementation": "llm_profile_builder",
+      "profile_id": "job_profile_be1ec125b6e5435c8cbfdb0e095a2651",
+      "profile_keys": [
+        "application_scenarios",
+        "capabilities",
+        "company",
+        "document_type",
+        "employment",
+        "evaluation_signals",
+        "job",
+        "requirements",
+        "responsibilities",
+        "schema_version",
+        "skills"
+      ],
+      "profile_schema": "profile-extraction/v2",
+      "raw_id": "40903521003",
+      "raw_index": 5,
+      "record_type": "jd",
+      "skill_count": 2,
+      "state": "available",
+      "warnings": [
+        "capabilities[1] ignored: missing evidence_text"
+      ]
+    },
+    {
+      "artifact_path": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/structured/profiles/raw_preview_20260630/job/job_profile_49874ca483c04d858fbdd0ba614b84d0.json",
+      "document_id": "doc_0ef4a1276b6b4233ab918a5fa019a774",
+      "evidence_count": 10,
+      "implementation": "llm_profile_builder",
+      "profile_id": "job_profile_49874ca483c04d858fbdd0ba614b84d0",
+      "profile_keys": [
+        "application_scenarios",
+        "capabilities",
+        "company",
+        "document_type",
+        "employment",
+        "evaluation_signals",
+        "job",
+        "requirements",
+        "responsibilities",
+        "schema_version",
+        "skills"
+      ],
+      "profile_schema": "profile-extraction/v2",
+      "raw_id": "40945011215",
+      "raw_index": 6,
+      "record_type": "jd",
+      "skill_count": 3,
+      "state": "available",
+      "warnings": []
+    },
+    {
+      "artifact_path": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/structured/profiles/raw_preview_20260630/job/job_profile_b6b46115d4ce4b07a3befae678e03f90.json",
+      "document_id": "doc_e45d854e62bf4a71bf57964852e425f6",
+      "evidence_count": 11,
+      "implementation": "llm_profile_builder",
+      "profile_id": "job_profile_b6b46115d4ce4b07a3befae678e03f90",
+      "profile_keys": [
+        "application_scenarios",
+        "capabilities",
+        "company",
+        "document_type",
+        "employment",
+        "evaluation_signals",
+        "job",
+        "requirements",
+        "responsibilities",
+        "schema_version",
+        "skills"
+      ],
+      "profile_schema": "profile-extraction/v2",
+      "raw_id": "40853602005",
+      "raw_index": 7,
+      "record_type": "jd",
+      "skill_count": 4,
+      "state": "available",
+      "warnings": []
+    },
+    {
+      "artifact_path": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/structured/profiles/raw_preview_20260630/job/job_profile_6a5f8718a1b547728ffc769bb5769ed8.json",
+      "document_id": "doc_580ad50793304de58aa4d722721f2c6b",
+      "evidence_count": 9,
+      "implementation": "llm_profile_builder",
+      "profile_id": "job_profile_6a5f8718a1b547728ffc769bb5769ed8",
+      "profile_keys": [
+        "application_scenarios",
+        "capabilities",
+        "company",
+        "document_type",
+        "employment",
+        "evaluation_signals",
+        "job",
+        "requirements",
+        "responsibilities",
+        "schema_version",
+        "skills"
+      ],
+      "profile_schema": "profile-extraction/v2",
+      "raw_id": "40491067716",
+      "raw_index": 8,
+      "record_type": "jd",
+      "skill_count": 9,
+      "state": "available",
+      "warnings": [
+        "capabilities[1] ignored: missing evidence_text"
+      ]
+    },
+    {
+      "artifact_path": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/structured/profiles/raw_preview_20260630/job/job_profile_f5db464872ee429da6bad63cb1789af2.json",
+      "document_id": "doc_7f05ee084c144afe8145ec47a61fca7b",
+      "evidence_count": 0,
+      "implementation": "mock",
+      "profile_id": "job_profile_f5db464872ee429da6bad63cb1789af2",
+      "profile_keys": [],
+      "profile_schema": "profile-extraction/v2",
+      "raw_id": "40895868812",
+      "raw_index": 9,
+      "record_type": "jd",
+      "skill_count": 0,
+      "state": "not_implemented",
+      "warnings": [
+        "Ollama structured extraction failed: model output is missing required keys: evaluation_signals"
+      ]
+    },
+    {
+      "artifact_path": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/structured/profiles/raw_preview_20260630/job/job_profile_7b39c60700784604ac591e9a54ffde29.json",
+      "document_id": "doc_7b32f819c1ef451eb588a7b53aae9b45",
+      "evidence_count": 6,
+      "implementation": "llm_profile_builder",
+      "profile_id": "job_profile_7b39c60700784604ac591e9a54ffde29",
+      "profile_keys": [
+        "application_scenarios",
+        "capabilities",
+        "company",
+        "document_type",
+        "employment",
+        "evaluation_signals",
+        "job",
+        "requirements",
+        "responsibilities",
+        "schema_version",
+        "skills"
+      ],
+      "profile_schema": "profile-extraction/v2",
+      "raw_id": "40866497505",
+      "raw_index": 10,
+      "record_type": "jd",
+      "skill_count": 5,
+      "state": "available",
+      "warnings": [
+        "skills[6] ignored: missing evidence_text",
+        "skills[7] ignored: missing evidence_text",
+        "capabilities[1] ignored: missing evidence_text"
+      ]
+    },
+    {
+      "artifact_path": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/structured/profiles/raw_preview_20260630/candidate/candidate_profile_2a6e5bce610c462bb9beb83e346bd034.json",
+      "document_id": "doc_5c4e276d6fdf430d8cb305b87325fe5f",
+      "evidence_count": 1,
+      "implementation": "llm_profile_builder",
+      "profile_id": "candidate_profile_2a6e5bce610c462bb9beb83e346bd034",
+      "profile_keys": [
+        "achievements",
+        "candidate",
+        "capabilities",
+        "career_intent",
+        "certificates",
+        "document_type",
+        "education",
+        "languages",
+        "project_experience",
+        "schema_version",
+        "skills",
+        "work_experience"
+      ],
+      "profile_schema": "profile-extraction/v2",
+      "raw_id": "R0001",
+      "raw_index": 1,
+      "record_type": "resume",
+      "skill_count": 0,
+      "state": "available",
+      "warnings": [
+        "education[1] ignored: missing evidence_text",
+        "work_experience[1] ignored: missing evidence_text",
+        "project_experience[1] ignored: missing evidence_text",
+        "project_experience[2] ignored: missing evidence_text",
+        "skills[1] ignored: evidence_text must be copied from the source document",
+        "skills[2] ignored: evidence_text must be copied from the source document",
+        "skills[3] ignored: evidence_text must be copied from the source document",
+        "skills[4] ignored: evidence_text must be copied from the source document",
+        "skills[5] ignored: evidence_text must be copied from the source document",
+        "skills[6] ignored: evidence_text must be copied from the source document",
+        "skills[7] ignored: evidence_text must be copied from the source document",
+        "skills[8] ignored: evidence_text must be copied from the source document",
+        "skills[9] ignored: evidence_text must be copied from the source document",
+        "skills[10] ignored: evidence_text must be copied from the source document",
+        "capabilities[2] ignored: evidence_text must be copied from the source document"
+      ]
+    },
+    {
+      "artifact_path": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/structured/profiles/raw_preview_20260630/candidate/candidate_profile_9cf308206954442c9b3c593633907cf2.json",
+      "document_id": "doc_1c8232d7011b4e2286f40578f6f00931",
+      "evidence_count": 0,
+      "implementation": "mock",
+      "profile_id": "candidate_profile_9cf308206954442c9b3c593633907cf2",
+      "profile_keys": [],
+      "profile_schema": "profile-extraction/v2",
+      "raw_id": "R0002",
+      "raw_index": 2,
+      "record_type": "resume",
+      "skill_count": 0,
+      "state": "not_implemented",
+      "warnings": [
+        "Ollama structured extraction failed: local LLM request failed: timed out"
+      ]
+    },
+    {
+      "artifact_path": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/structured/profiles/raw_preview_20260630/candidate/candidate_profile_dff1accdf94f42f4927e25a85177a961.json",
+      "document_id": "doc_89b6ab1f583546e2946574fcbe525df6",
+      "evidence_count": 1,
+      "implementation": "llm_profile_builder",
+      "profile_id": "candidate_profile_dff1accdf94f42f4927e25a85177a961",
+      "profile_keys": [
+        "achievements",
+        "candidate",
+        "capabilities",
+        "career_intent",
+        "certificates",
+        "document_type",
+        "education",
+        "languages",
+        "project_experience",
+        "schema_version",
+        "skills",
+        "work_experience"
+      ],
+      "profile_schema": "profile-extraction/v2",
+      "raw_id": "R0003",
+      "raw_index": 3,
+      "record_type": "resume",
+      "skill_count": 5,
+      "state": "available",
+      "warnings": [
+        "education[1] ignored: missing evidence_text",
+        "work_experience[1] ignored: missing evidence_text",
+        "project_experience[1] ignored: missing evidence_text",
+        "project_experience[2] ignored: missing evidence_text",
+        "capabilities[1] ignored: missing evidence_text",
+        "capabilities[2] ignored: missing evidence_text",
+        "capabilities[3] ignored: missing evidence_text",
+        "capabilities[4] ignored: missing evidence_text",
+        "capabilities[5] ignored: missing evidence_text"
+      ]
+    },
+    {
+      "artifact_path": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/structured/profiles/raw_preview_20260630/candidate/candidate_profile_9aaceeec190c4105bc00773f13ed6835.json",
+      "document_id": "doc_5c0a806527e7415e9508e8b7bb195778",
+      "evidence_count": 0,
+      "implementation": "mock",
+      "profile_id": "candidate_profile_9aaceeec190c4105bc00773f13ed6835",
+      "profile_keys": [],
+      "profile_schema": "profile-extraction/v2",
+      "raw_id": "R0004",
+      "raw_index": 4,
+      "record_type": "resume",
+      "skill_count": 0,
+      "state": "not_implemented",
+      "warnings": [
+        "Ollama structured extraction failed: no evidence-backed list items remained: education[1] ignored: missing evidence_text; work_experience[1] ignored: missing evidence_text; project_experience[1] ignored: missing evidence_text"
+      ]
+    },
+    {
+      "artifact_path": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/structured/profiles/raw_preview_20260630/candidate/candidate_profile_877d8124f84f47c6aa9f874ef12c16cc.json",
+      "document_id": "doc_f15696b367ee419a956366b7cbdb1dc7",
+      "evidence_count": 1,
+      "implementation": "llm_profile_builder",
+      "profile_id": "candidate_profile_877d8124f84f47c6aa9f874ef12c16cc",
+      "profile_keys": [
+        "achievements",
+        "candidate",
+        "capabilities",
+        "career_intent",
+        "certificates",
+        "document_type",
+        "education",
+        "languages",
+        "project_experience",
+        "schema_version",
+        "skills",
+        "work_experience"
+      ],
+      "profile_schema": "profile-extraction/v2",
+      "raw_id": "R0005",
+      "raw_index": 5,
+      "record_type": "resume",
+      "skill_count": 5,
+      "state": "available",
+      "warnings": [
+        "education[1] ignored: missing evidence_text",
+        "work_experience[1] ignored: missing evidence_text",
+        "project_experience[1] ignored: missing evidence_text",
+        "project_experience[2] ignored: missing evidence_text",
+        "capabilities[1] ignored: missing evidence_text",
+        "capabilities[2] ignored: missing evidence_text",
+        "capabilities[3] ignored: missing evidence_text",
+        "capabilities[4] ignored: missing evidence_text"
+      ]
+    },
+    {
+      "artifact_path": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/structured/profiles/raw_preview_20260630/candidate/candidate_profile_dcccefae53f843549ab9e0a1cf999d49.json",
+      "document_id": "doc_2f10586f24e04aa882dac96540a62758",
+      "evidence_count": 1,
+      "implementation": "llm_profile_builder",
+      "profile_id": "candidate_profile_dcccefae53f843549ab9e0a1cf999d49",
+      "profile_keys": [
+        "achievements",
+        "candidate",
+        "capabilities",
+        "career_intent",
+        "certificates",
+        "document_type",
+        "education",
+        "languages",
+        "project_experience",
+        "schema_version",
+        "skills",
+        "work_experience"
+      ],
+      "profile_schema": "profile-extraction/v2",
+      "raw_id": "R0006",
+      "raw_index": 6,
+      "record_type": "resume",
+      "skill_count": 5,
+      "state": "available",
+      "warnings": [
+        "education[1] ignored: missing evidence_text",
+        "work_experience[1] ignored: missing evidence_text",
+        "project_experience[1] ignored: missing evidence_text",
+        "project_experience[2] ignored: missing evidence_text",
+        "capabilities[1] ignored: missing evidence_text",
+        "capabilities[2] ignored: missing evidence_text",
+        "capabilities[3] ignored: missing evidence_text",
+        "capabilities[4] ignored: missing evidence_text"
+      ]
+    },
+    {
+      "artifact_path": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/structured/profiles/raw_preview_20260630/candidate/candidate_profile_0ecb2a7ddfbf4eefbded5c39ba4387a5.json",
+      "document_id": "doc_5351d8bf2275404da6b0985b66cf314d",
+      "evidence_count": 1,
+      "implementation": "llm_profile_builder",
+      "profile_id": "candidate_profile_0ecb2a7ddfbf4eefbded5c39ba4387a5",
+      "profile_keys": [
+        "achievements",
+        "candidate",
+        "capabilities",
+        "career_intent",
+        "certificates",
+        "document_type",
+        "education",
+        "languages",
+        "project_experience",
+        "schema_version",
+        "skills",
+        "work_experience"
+      ],
+      "profile_schema": "profile-extraction/v2",
+      "raw_id": "R0007",
+      "raw_index": 7,
+      "record_type": "resume",
+      "skill_count": 4,
+      "state": "available",
+      "warnings": [
+        "education[1] ignored: missing evidence_text",
+        "work_experience[1] ignored: missing evidence_text",
+        "project_experience[1] ignored: missing evidence_text",
+        "project_experience[2] ignored: missing evidence_text"
+      ]
+    },
+    {
+      "artifact_path": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/structured/profiles/raw_preview_20260630/candidate/candidate_profile_a0688f1a9f244a4e9cf77f4335be4778.json",
+      "document_id": "doc_4603c4af41ae4d7a93e272d91067cafa",
+      "evidence_count": 0,
+      "implementation": "mock",
+      "profile_id": "candidate_profile_a0688f1a9f244a4e9cf77f4335be4778",
+      "profile_keys": [],
+      "profile_schema": "profile-extraction/v2",
+      "raw_id": "R0008",
+      "raw_index": 8,
+      "record_type": "resume",
+      "skill_count": 0,
+      "state": "not_implemented",
+      "warnings": [
+        "Ollama structured extraction failed: model output is missing required keys: achievements"
+      ]
+    },
+    {
+      "artifact_path": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/structured/profiles/raw_preview_20260630/candidate/candidate_profile_0263e5459fe6431480131c22c56769c9.json",
+      "document_id": "doc_712766e73c214d8b8bd16deb1ee17b05",
+      "evidence_count": 2,
+      "implementation": "llm_profile_builder",
+      "profile_id": "candidate_profile_0263e5459fe6431480131c22c56769c9",
+      "profile_keys": [
+        "achievements",
+        "candidate",
+        "capabilities",
+        "career_intent",
+        "certificates",
+        "document_type",
+        "education",
+        "languages",
+        "project_experience",
+        "schema_version",
+        "skills",
+        "work_experience"
+      ],
+      "profile_schema": "profile-extraction/v2",
+      "raw_id": "R0009",
+      "raw_index": 9,
+      "record_type": "resume",
+      "skill_count": 9,
+      "state": "available",
+      "warnings": [
+        "education[1] ignored: missing evidence_text",
+        "work_experience[1] ignored: missing evidence_text",
+        "project_experience[1] ignored: missing evidence_text",
+        "project_experience[2] ignored: missing evidence_text"
+      ]
+    },
+    {
+      "artifact_path": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/structured/profiles/raw_preview_20260630/candidate/candidate_profile_b140a5aab3b345699bfa9f1582cbfcf0.json",
+      "document_id": "doc_1848259b50654f4d90e3f067a0f89b68",
+      "evidence_count": 3,
+      "implementation": "llm_profile_builder",
+      "profile_id": "candidate_profile_b140a5aab3b345699bfa9f1582cbfcf0",
+      "profile_keys": [
+        "achievements",
+        "candidate",
+        "capabilities",
+        "career_intent",
+        "certificates",
+        "document_type",
+        "education",
+        "languages",
+        "project_experience",
+        "schema_version",
+        "skills",
+        "work_experience"
+      ],
+      "profile_schema": "profile-extraction/v2",
+      "raw_id": "R0010",
+      "raw_index": 10,
+      "record_type": "resume",
+      "skill_count": 4,
+      "state": "available",
+      "warnings": [
+        "education[1] ignored: missing evidence_text",
+        "work_experience[1] ignored: missing evidence_text",
+        "project_experience[1] ignored: missing evidence_text",
+        "project_experience[2] ignored: missing evidence_text"
+      ]
+    }
+  ],
+  "sample_limit": 10,
+  "schema_version": "profile-preview/v1"
+}

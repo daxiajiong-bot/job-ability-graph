@@ -222,5 +222,6 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 
-# v3 intentionally keeps no runtime data directory. Any future local state must
-# be configured outside the repository and added here before implementation.
+# Keep large reproducible source snapshots local; commit compact indexes and
+# curated preview artifacts when they are part of a reviewed experiment.
+data/esco/source/*.jsonl

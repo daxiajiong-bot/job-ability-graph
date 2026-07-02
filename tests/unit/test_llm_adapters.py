@@ -10,6 +10,7 @@ from backend.app.infrastructure.llm import (
     LightweightSkillNormalizer,
     OllamaStructuredExtractor,
 )
+from backend.app.domain.profile_schemas import PROFILE_SCHEMA_VERSION
 
 
 class FakeChatClient:
@@ -39,25 +40,22 @@ def _settings() -> LLMSettings:
 def _resume_payload() -> str:
     return json.dumps(
         {
+            "schema_version": PROFILE_SCHEMA_VERSION,
             "document_type": "resume",
-            "candidate": {"name": "张三", "target_position": "数据分析师"},
-            "education": [{"school": "A大学", "degree": "本科", "major": "统计学", "period": "2020-2024", "evidence_ids": ["ev_001"]}],
-            "experience": [{"company": "B公司", "role": "实习生", "period": "2024", "description": "数据清洗", "evidence_ids": ["ev_002"]}],
-            "projects": [{"name": "推荐系统", "role": "负责人", "description": "建模", "technologies": ["Pytorch"], "evidence_ids": ["ev_003"]}],
+            "candidate": {"name": "张三", "current_title": "数据分析师", "years_of_experience": 4, "location": None},
+            "career_intent": {"target_position": "数据分析师", "target_industry": None, "target_location": None},
+            "education": [{"school": "A大学", "degree": "本科", "major": "统计学", "period": "2020-2024", "evidence_text": "A大学统计学本科"}],
+            "work_experience": [{"company": "B公司", "role": "实习生", "industry": "", "period": "2024", "description": "数据清洗", "evidence_text": "B公司实习生负责数据清洗"}],
+            "project_experience": [{"name": "推荐系统", "role": "负责人", "description": "建模", "technologies": ["Pytorch"], "outcomes": [], "evidence_text": "推荐系统项目使用 Pytorch 建模"}],
             "skills": [
-                {"name": " Pytorch ", "category": "深度学习", "level": "熟练", "evidence_ids": ["ev_003"]},
-                {"name": "JS", "category": "编程语言", "level": "了解", "evidence_ids": ["ev_004"]},
-                {"name": "ML", "category": "算法", "level": "熟练", "evidence_ids": ["ev_005"]},
+                {"name": " Pytorch ", "raw_name": "Pytorch", "category": "framework", "lskt_label": "S", "level": "proficient", "years": None, "evidence_text": "推荐系统项目使用 Pytorch 建模"},
+                {"name": "JS", "raw_name": "JS", "category": "programming_language", "lskt_label": "S", "level": "working", "years": None, "evidence_text": "掌握 JS"},
+                {"name": "ML", "raw_name": "ML", "category": "algorithm", "lskt_label": "K", "level": "proficient", "years": None, "evidence_text": "熟悉 ML"},
             ],
-            "capabilities": [{"name": "数据建模", "description": "能完成建模分析", "evidence_ids": ["ev_003"]}],
-            "responsibilities": [],
-            "requirements": [],
-            "evidence": [
-                {"id": "ev_001", "field": "education", "text": "A大学统计学本科"},
-                {"id": "ev_003", "field": "projects", "text": "推荐系统项目使用 Pytorch 建模"},
-                {"id": "ev_004", "field": "skills", "text": "掌握 JS"},
-                {"id": "ev_005", "field": "skills", "text": "熟悉 ML"},
-            ],
+            "capabilities": [{"name": "数据建模", "description": "能完成建模分析", "level": "proficient", "evidence_text": "能完成建模分析"}],
+            "certificates": [],
+            "languages": [],
+            "achievements": [],
         },
         ensure_ascii=False,
     )
@@ -66,20 +64,17 @@ def _resume_payload() -> str:
 def _jd_payload() -> str:
     return json.dumps(
         {
+            "schema_version": PROFILE_SCHEMA_VERSION,
             "document_type": "jd",
-            "candidate": {"name": None, "target_position": None},
             "job": {"title": "数据分析师", "department": "业务分析部", "seniority": "初级"},
-            "education": [],
-            "experience": [],
-            "projects": [],
-            "skills": [{"name": "Python", "category": "编程语言", "importance": "required", "evidence_ids": ["ev_001"]}],
-            "capabilities": [{"name": "数据分析", "description": "能分析业务指标", "evidence_ids": ["ev_002"]}],
-            "responsibilities": [{"text": "负责业务数据分析", "evidence_ids": ["ev_002"]}],
-            "requirements": [{"text": "熟悉 Python", "importance": "required", "evidence_ids": ["ev_001"]}],
-            "evidence": [
-                {"id": "ev_001", "field": "requirements", "text": "要求熟悉 Python"},
-                {"id": "ev_002", "field": "responsibilities", "text": "负责业务数据分析"},
-            ],
+            "company": {"name": "某科技公司", "industry": "软件/IT服务", "location": "深圳"},
+            "employment": {"employment_type": "full_time", "salary_min": None, "salary_max": None, "published_at": "2026-06-18"},
+            "skills": [{"name": "Python", "raw_name": "Python", "category": "programming_language", "lskt_label": "S", "importance": "required", "evidence_text": "要求熟悉 Python"}],
+            "capabilities": [{"name": "数据分析", "description": "能分析业务指标", "importance": "required", "evidence_text": "能分析业务指标"}],
+            "responsibilities": [{"text": "负责业务数据分析", "evidence_text": "负责业务数据分析"}],
+            "requirements": [{"text": "要求熟悉 Python", "requirement_type": "skill", "importance": "required", "evidence_text": "要求熟悉 Python"}],
+            "application_scenarios": [{"name": "经营指标监控", "description": "经营指标监控", "evidence_text": "经营指标监控"}],
+            "evaluation_signals": [{"name": "BI 看板", "description": "熟悉 BI 看板", "evidence_text": "熟悉 BI 看板"}],
         },
         ensure_ascii=False,
     )
@@ -89,7 +84,7 @@ class LLMAdapterTest(unittest.TestCase):
     def test_resume_extraction_normalization_and_profile_building(self) -> None:
         document = SourceDocument.create(
             DocumentType.RESUME,
-            "张三，目标数据分析师。推荐系统项目使用 Pytorch 建模，掌握 JS，熟悉 ML。",
+            "张三，现任数据分析师，4年经验，目标岗位数据分析师。A大学统计学本科。B公司实习生负责数据清洗。推荐系统项目使用 Pytorch 建模，掌握 JS，熟悉 ML，能完成建模分析。",
             {"source_system": "unit-test"},
             {},
         )
@@ -100,17 +95,23 @@ class LLMAdapterTest(unittest.TestCase):
 
         self.assertEqual(extraction["state"], "available")
         self.assertEqual(extraction["implementation"], "ollama")
+        self.assertEqual(extraction["schema"], PROFILE_SCHEMA_VERSION)
         self.assertEqual(normalization["state"], "available")
-        self.assertEqual([skill["name"] for skill in normalization["skills"]], ["PyTorch", "JavaScript", "机器学习"])
+        self.assertEqual([skill["name"] for skill in normalization["skills"]], ["Pytorch", "JS", "machine learning"])
+        self.assertEqual([skill["linking_status"] for skill in normalization["skills"]], ["unmapped", "unmapped", "linked"])
         self.assertEqual(profile["state"], "available")
         self.assertEqual(profile["implementation"], "llm_profile_builder")
         self.assertEqual(profile["attributes"]["target_position"], "数据分析师")
+        self.assertEqual(profile["attributes"]["resume_profile"]["schema_version"], PROFILE_SCHEMA_VERSION)
+        self.assertEqual(profile["attributes"]["resume_profile"]["skills"][1]["name"], "JS")
+        self.assertEqual(profile["attributes"]["resume_profile"]["skills"][1]["evidence_ids"], ["ev_004"])
         self.assertEqual(profile["evidence"][0]["id"], "ev_001")
+        self.assertEqual(profile["evidence"][0]["text"], "A大学统计学本科")
 
     def test_jd_profile_includes_requirements_and_responsibilities(self) -> None:
         document = SourceDocument.create(
             DocumentType.JD,
-            "数据分析师，要求熟悉 Python，负责业务数据分析。",
+            "数据分析师，业务分析部，初级。公司：某科技公司，软件/IT服务，深圳。全职，2026-06-18发布。要求熟悉 Python。负责业务数据分析。能分析业务指标。应用场景：经营指标监控。加分项：熟悉 BI 看板。",
             {"source_system": "unit-test"},
             {},
         )
@@ -122,6 +123,9 @@ class LLMAdapterTest(unittest.TestCase):
         self.assertEqual(profile["attributes"]["job_title"], "数据分析师")
         self.assertEqual(profile["attributes"]["requirements"][0]["importance"], "required")
         self.assertEqual(profile["attributes"]["responsibilities"][0]["text"], "负责业务数据分析")
+        self.assertEqual(profile["attributes"]["requirements"][0]["evidence_ids"], ["ev_002"])
+        self.assertEqual(profile["attributes"]["jd_profile"]["application_scenarios"][0]["name"], "经营指标监控")
+        self.assertEqual(profile["evidence"][0]["text"], "负责业务数据分析")
 
     def test_connection_failure_falls_back_to_mock_profile(self) -> None:
         document = SourceDocument.create(DocumentType.RESUME, "简历文本", {"source_system": "unit-test"}, {})
@@ -148,11 +152,13 @@ class LLMAdapterTest(unittest.TestCase):
         ).extract(document)
         missing_key_extraction = OllamaStructuredExtractor(
             _settings(),
-            FakeChatClient('{"document_type":"resume","candidate":{},"skills":[],"evidence":[]}'),
+            FakeChatClient('{"schema_version":"profile-extraction/v2","document_type":"resume","candidate":{},"skills":[]}'),
         ).extract(document)
 
         self.assertEqual(markdown_extraction["state"], "not_implemented")
         self.assertIn("Markdown", markdown_extraction["warnings"][0])
+        self.assertIn("```json", markdown_extraction["raw_model_output"])
+        self.assertIn("Markdown", markdown_extraction["validation_error"])
         self.assertEqual(missing_key_extraction["state"], "not_implemented")
         self.assertIn("missing required keys", missing_key_extraction["warnings"][0])
 

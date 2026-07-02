@@ -1,0 +1,447 @@
+{
+  "artifact_type": "candidate_profile",
+  "created_at": "2026-06-30T08:48:10Z",
+  "extraction": {
+    "evidence": [
+      {
+        "field": "skills",
+        "id": "ev_001",
+        "text": "参与业务流程梳理、脚本/工具开发、数据处理和问题定位，提升团队交付效率。"
+      }
+    ],
+    "fields": {
+      "achievements": [],
+      "candidate": {
+        "current_title": "python开发【Java可投】",
+        "location": null,
+        "name": null,
+        "years_of_experience": 1
+      },
+      "capabilities": [
+        {
+          "description": "围绕目标岗位 python开发【Java可投】 的核心能力，完成需求拆解、功能实现、测试验证和文档沉淀。",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "level": "working",
+          "name": "需求分析与实现"
+        },
+        {
+          "description": "围绕目标岗位 python开发【Java可投】 的核心能力，完成需求拆解、功能实现、测试验证和文档沉淀。",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "level": "working",
+          "name": "问题定位与解决"
+        }
+      ],
+      "career_intent": {
+        "target_industry": "软件/IT服务",
+        "target_location": "深圳 龙华",
+        "target_position": "python开发"
+      },
+      "certificates": [],
+      "document_type": "resume",
+      "education": [],
+      "evidence": [
+        {
+          "field": "skills",
+          "id": "ev_001",
+          "text": "参与业务流程梳理、脚本/工具开发、数据处理和问题定位，提升团队交付效率。"
+        }
+      ],
+      "experience": [],
+      "languages": [],
+      "project_experience": [],
+      "projects": [],
+      "requirements": [],
+      "responsibilities": [],
+      "schema_version": "profile-extraction/v2",
+      "skills": [
+        {
+          "category": "programming_language",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "level": "working",
+          "lskt_label": "S",
+          "name": "Java",
+          "raw_name": "Java",
+          "years": null
+        },
+        {
+          "category": "programming_language",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "level": "working",
+          "lskt_label": "S",
+          "name": "Python",
+          "raw_name": "Python",
+          "years": null
+        },
+        {
+          "category": "soft_skill",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "level": "working",
+          "lskt_label": "T",
+          "name": "沟通协作",
+          "raw_name": "沟通协作",
+          "years": null
+        },
+        {
+          "category": "testing",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "level": "working",
+          "lskt_label": "S",
+          "name": "单元测试",
+          "raw_name": "单元测试",
+          "years": null
+        }
+      ],
+      "work_experience": []
+    },
+    "implementation": "ollama",
+    "model": "qwen2.5:7b",
+    "raw_model_output": "",
+    "reason": "",
+    "schema": "profile-extraction/v2",
+    "state": "available",
+    "validation_error": "",
+    "warnings": [
+      "education[1] ignored: missing evidence_text",
+      "work_experience[1] ignored: missing evidence_text",
+      "project_experience[1] ignored: missing evidence_text",
+      "project_experience[2] ignored: missing evidence_text"
+    ]
+  },
+  "normalization": {
+    "implementation": "lightweight_skill_normalizer",
+    "skills": [
+      {
+        "category": "programming_language",
+        "esco_preferred_label": "Java (computer programming)",
+        "esco_uri": "http://data.europa.eu/esco/skill/19a8293b-8e95-4de3-983f-77484079c389",
+        "esco_version": "v1.2.1",
+        "evidence_ids": [
+          "ev_001"
+        ],
+        "level": "working",
+        "linking_confidence": 1.0,
+        "linking_status": "linked",
+        "lskt_label": "S",
+        "name": "Java (computer programming)",
+        "raw_name": "Java",
+        "years": null
+      },
+      {
+        "category": "programming_language",
+        "esco_preferred_label": "Python (computer programming)",
+        "esco_uri": "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d",
+        "esco_version": "v1.2.1",
+        "evidence_ids": [
+          "ev_001"
+        ],
+        "level": "working",
+        "linking_confidence": 1.0,
+        "linking_status": "linked",
+        "lskt_label": "S",
+        "name": "Python (computer programming)",
+        "raw_name": "Python",
+        "years": null
+      },
+      {
+        "category": "soft_skill",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_001"
+        ],
+        "level": "working",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "T",
+        "name": "沟通协作",
+        "raw_name": "沟通协作",
+        "years": null
+      },
+      {
+        "category": "testing",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_001"
+        ],
+        "level": "working",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "单元测试",
+        "raw_name": "单元测试",
+        "years": null
+      }
+    ],
+    "state": "available",
+    "warnings": []
+  },
+  "profile": {
+    "artifacts": {
+      "profile_json": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/structured/profiles/raw_preview_20260630/candidate/candidate_profile_0ecb2a7ddfbf4eefbded5c39ba4387a5.json",
+      "schema_version": "profile-extraction/v2",
+      "storage": "filesystem"
+    },
+    "attributes": {
+      "candidate": {
+        "current_title": "python开发【Java可投】",
+        "location": null,
+        "name": null,
+        "years_of_experience": 1
+      },
+      "capabilities": [
+        {
+          "description": "围绕目标岗位 python开发【Java可投】 的核心能力，完成需求拆解、功能实现、测试验证和文档沉淀。",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "level": "working",
+          "name": "需求分析与实现"
+        },
+        {
+          "description": "围绕目标岗位 python开发【Java可投】 的核心能力，完成需求拆解、功能实现、测试验证和文档沉淀。",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "level": "working",
+          "name": "问题定位与解决"
+        }
+      ],
+      "career_intent": {
+        "target_industry": "软件/IT服务",
+        "target_location": "深圳 龙华",
+        "target_position": "python开发"
+      },
+      "education": [],
+      "experience": [],
+      "profile_schema": "profile-extraction/v2",
+      "projects": [],
+      "resume_profile": {
+        "achievements": [],
+        "candidate": {
+          "current_title": "python开发【Java可投】",
+          "location": null,
+          "name": null,
+          "years_of_experience": 1
+        },
+        "capabilities": [
+          {
+            "description": "围绕目标岗位 python开发【Java可投】 的核心能力，完成需求拆解、功能实现、测试验证和文档沉淀。",
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "level": "working",
+            "name": "需求分析与实现"
+          },
+          {
+            "description": "围绕目标岗位 python开发【Java可投】 的核心能力，完成需求拆解、功能实现、测试验证和文档沉淀。",
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "level": "working",
+            "name": "问题定位与解决"
+          }
+        ],
+        "career_intent": {
+          "target_industry": "软件/IT服务",
+          "target_location": "深圳 龙华",
+          "target_position": "python开发"
+        },
+        "certificates": [],
+        "document_type": "resume",
+        "education": [],
+        "languages": [],
+        "project_experience": [],
+        "schema_version": "profile-extraction/v2",
+        "skills": [
+          {
+            "category": "programming_language",
+            "esco_preferred_label": "Java (computer programming)",
+            "esco_uri": "http://data.europa.eu/esco/skill/19a8293b-8e95-4de3-983f-77484079c389",
+            "esco_version": "v1.2.1",
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "level": "working",
+            "linking_confidence": 1.0,
+            "linking_status": "linked",
+            "lskt_label": "S",
+            "name": "Java (computer programming)",
+            "raw_name": "Java",
+            "years": null
+          },
+          {
+            "category": "programming_language",
+            "esco_preferred_label": "Python (computer programming)",
+            "esco_uri": "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d",
+            "esco_version": "v1.2.1",
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "level": "working",
+            "linking_confidence": 1.0,
+            "linking_status": "linked",
+            "lskt_label": "S",
+            "name": "Python (computer programming)",
+            "raw_name": "Python",
+            "years": null
+          },
+          {
+            "category": "soft_skill",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "level": "working",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "T",
+            "name": "沟通协作",
+            "raw_name": "沟通协作",
+            "years": null
+          },
+          {
+            "category": "testing",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "level": "working",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "单元测试",
+            "raw_name": "单元测试",
+            "years": null
+          }
+        ],
+        "work_experience": []
+      },
+      "skills": [
+        {
+          "category": "programming_language",
+          "esco_preferred_label": "Java (computer programming)",
+          "esco_uri": "http://data.europa.eu/esco/skill/19a8293b-8e95-4de3-983f-77484079c389",
+          "esco_version": "v1.2.1",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "level": "working",
+          "linking_confidence": 1.0,
+          "linking_status": "linked",
+          "lskt_label": "S",
+          "name": "Java (computer programming)",
+          "raw_name": "Java",
+          "years": null
+        },
+        {
+          "category": "programming_language",
+          "esco_preferred_label": "Python (computer programming)",
+          "esco_uri": "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d",
+          "esco_version": "v1.2.1",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "level": "working",
+          "linking_confidence": 1.0,
+          "linking_status": "linked",
+          "lskt_label": "S",
+          "name": "Python (computer programming)",
+          "raw_name": "Python",
+          "years": null
+        },
+        {
+          "category": "soft_skill",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "level": "working",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "T",
+          "name": "沟通协作",
+          "raw_name": "沟通协作",
+          "years": null
+        },
+        {
+          "category": "testing",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "level": "working",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "单元测试",
+          "raw_name": "单元测试",
+          "years": null
+        }
+      ],
+      "target_position": "python开发"
+    },
+    "created_at": "2026-06-30T08:48:10Z",
+    "evidence": [
+      {
+        "field": "skills",
+        "id": "ev_001",
+        "text": "参与业务流程梳理、脚本/工具开发、数据处理和问题定位，提升团队交付效率。"
+      }
+    ],
+    "id": "candidate_profile_0ecb2a7ddfbf4eefbded5c39ba4387a5",
+    "implementation": "llm_profile_builder",
+    "profile_type": "candidate",
+    "source_document_id": "doc_5351d8bf2275404da6b0985b66cf314d",
+    "state": "available",
+    "warnings": [
+      "education[1] ignored: missing evidence_text",
+      "work_experience[1] ignored: missing evidence_text",
+      "project_experience[1] ignored: missing evidence_text",
+      "project_experience[2] ignored: missing evidence_text"
+    ]
+  },
+  "schema_version": "profile-extraction/v2",
+  "source_document": {
+    "char_count": 799,
+    "content_digest": "1369780f3c5732fbd6dd398f224d14c3501077dae1e21da5fab8c58483744d91",
+    "created_at": "2026-06-30T08:47:16Z",
+    "document_type": "resume",
+    "id": "doc_5351d8bf2275404da6b0985b66cf314d",
+    "metadata": {
+      "privacy_level": "anonymous_or_synthetic",
+      "raw_file": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/small-raw/resume_raw.jsonl",
+      "raw_index": 7,
+      "raw_type": "resume",
+      "target_job_id": "40853602005"
+    },
+    "source": {
+      "external_id": "R0007",
+      "source_system": "small-raw",
+      "uri": "http://www.zhaopin.com/jobdetail/CCL1480117890J40853602005.htm"
+    },
+    "storage": "memory"
+  }
+}

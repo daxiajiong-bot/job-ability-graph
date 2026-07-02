@@ -5,6 +5,7 @@ from __future__ import annotations
 from typing import Any
 
 from backend.app.domain.entities import KnowledgeGraphSnapshot, MatchAssessment, Profile, ProfileType, SourceDocument
+from backend.app.domain.profile_schemas import PROFILE_SCHEMA_VERSION
 
 
 NOT_IMPLEMENTED = "not_implemented"
@@ -37,9 +38,21 @@ class MockProfileBuilder:
         extraction: dict[str, Any],
         normalization: dict[str, Any],
     ) -> dict[str, Any]:
+        attributes: dict[str, Any] = {
+            "profile_schema": PROFILE_SCHEMA_VERSION,
+            "skills": [],
+            "capabilities": [],
+            "experience": [],
+            "education": [],
+            "projects": [],
+        }
+        if profile_type is ProfileType.JOB:
+            attributes.update({"job": {}, "job_title": None, "requirements": [], "responsibilities": [], "jd_profile": {}})
+        else:
+            attributes.update({"candidate": {}, "career_intent": {}, "target_position": None, "resume_profile": {}})
         return _mock(
             "Profile construction is reserved for structured extraction and normalization adapters.",
-            attributes={"skills": [], "capabilities": [], "experience": [], "education": None},
+            attributes=attributes,
             evidence=[],
             warnings=["No extraction, normalization, or inference has been performed."],
         )
@@ -132,6 +145,8 @@ def capability_catalog(
     return [
         {"name": "document_repository", "implementation": "memory", "state": "available"},
         {"name": "ocr", "implementation": "paddleocr", "state": "available"},
+        {"name": "data_governance", "implementation": "filesystem", "state": "available"},
+        {"name": "data_governance_rag", "implementation": "lexical_chunk_retrieval", "state": "available"},
         {
             "name": "structured_extraction",
             "implementation": structured_extraction_implementation,

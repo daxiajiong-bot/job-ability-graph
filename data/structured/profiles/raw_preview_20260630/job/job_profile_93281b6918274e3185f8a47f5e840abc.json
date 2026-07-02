@@ -1,0 +1,669 @@
+{
+  "artifact_type": "job_profile",
+  "created_at": "2026-06-30T08:30:56Z",
+  "extraction": {
+    "evidence": [
+      {
+        "field": "responsibilities",
+        "id": "ev_001",
+        "text": "1. 负责无人机/机器人测试场景搭建及测试执行；"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_002",
+        "text": "2. 负责视觉、深度、IMU等传感器标定、数据采集和管理；"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_003",
+        "text": "3. 负责数据标注及数据质量检查；"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_004",
+        "text": "4. 协助研发团队进行算法性能统计分析及测试报告输出。"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_005",
+        "text": "1. 本科及以上学历，计算机、自动化、电子信息、机器人、航空航天等相关专业；"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_006",
+        "text": "2. 熟悉Linux环境，具备基本命令行操作能力，熟悉Python，能够用AI编写简单脚本进行数据处理、统计分析和结果可视化；"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_007",
+        "text": "3. 具备数据采集、数据管理或数据标注相关经验；"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_008",
+        "text": "4. 具备较强责任心和沟通能力，能够与算法研发团队高效协作。"
+      },
+      {
+        "field": "skills",
+        "id": "ev_009",
+        "text": "熟悉Python，能够用AI编写简单脚本进行数据处理、统计分析和结果可视化；"
+      },
+      {
+        "field": "skills",
+        "id": "ev_010",
+        "text": "具备数据采集、数据管理或数据标注相关经验；"
+      }
+    ],
+    "fields": {
+      "application_scenarios": [
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "name": "无人机/机器人测试场景搭建及测试执行"
+        },
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "name": "视觉、深度、IMU等传感器标定、数据采集和管理"
+        },
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "name": "数据标注及数据质量检查"
+        },
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "name": "算法性能统计分析及测试报告输出"
+        }
+      ],
+      "candidate": {
+        "name": null,
+        "target_position": null
+      },
+      "capabilities": [],
+      "company": {
+        "industry": "软件/IT服务",
+        "location": "深圳 龙华",
+        "name": "外企德科数字技术有限公司"
+      },
+      "document_type": "jd",
+      "education": [],
+      "employment": {
+        "employment_type": "full_time",
+        "published_at": "2026-06-18 00:33:54",
+        "salary_max": 15000,
+        "salary_min": 1
+      },
+      "evaluation_signals": [],
+      "evidence": [
+        {
+          "field": "responsibilities",
+          "id": "ev_001",
+          "text": "1. 负责无人机/机器人测试场景搭建及测试执行；"
+        },
+        {
+          "field": "responsibilities",
+          "id": "ev_002",
+          "text": "2. 负责视觉、深度、IMU等传感器标定、数据采集和管理；"
+        },
+        {
+          "field": "responsibilities",
+          "id": "ev_003",
+          "text": "3. 负责数据标注及数据质量检查；"
+        },
+        {
+          "field": "responsibilities",
+          "id": "ev_004",
+          "text": "4. 协助研发团队进行算法性能统计分析及测试报告输出。"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_005",
+          "text": "1. 本科及以上学历，计算机、自动化、电子信息、机器人、航空航天等相关专业；"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_006",
+          "text": "2. 熟悉Linux环境，具备基本命令行操作能力，熟悉Python，能够用AI编写简单脚本进行数据处理、统计分析和结果可视化；"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_007",
+          "text": "3. 具备数据采集、数据管理或数据标注相关经验；"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_008",
+          "text": "4. 具备较强责任心和沟通能力，能够与算法研发团队高效协作。"
+        },
+        {
+          "field": "skills",
+          "id": "ev_009",
+          "text": "熟悉Python，能够用AI编写简单脚本进行数据处理、统计分析和结果可视化；"
+        },
+        {
+          "field": "skills",
+          "id": "ev_010",
+          "text": "具备数据采集、数据管理或数据标注相关经验；"
+        }
+      ],
+      "experience": [],
+      "job": {
+        "department": null,
+        "normalized_title": "感知算法测试验证工程师",
+        "seniority": null,
+        "title": "感知算法测试验证工程师"
+      },
+      "projects": [],
+      "requirements": [
+        {
+          "evidence_ids": [
+            "ev_005"
+          ],
+          "importance": "required",
+          "requirement_type": "education",
+          "text": "本科及以上学历，计算机、自动化、电子信息、机器人、航空航天等相关专业"
+        },
+        {
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "熟悉Linux环境，具备基本命令行操作能力，熟悉Python，能够用AI编写简单脚本进行数据处理、统计分析和结果可视化"
+        },
+        {
+          "evidence_ids": [
+            "ev_007"
+          ],
+          "importance": "required",
+          "requirement_type": "experience",
+          "text": "具备数据采集、数据管理或数据标注相关经验"
+        },
+        {
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "importance": "preferred",
+          "requirement_type": "soft_skill",
+          "text": "具备较强责任心和沟通能力，能够与算法研发团队高效协作"
+        }
+      ],
+      "responsibilities": [
+        {
+          "action": "负责",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "object": "无人机/机器人测试场景搭建及测试执行",
+          "text": "负责无人机/机器人测试场景搭建及测试执行"
+        },
+        {
+          "action": "负责",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "object": "视觉、深度、IMU等传感器标定、数据采集和管理",
+          "text": "负责视觉、深度、IMU等传感器标定、数据采集和管理"
+        },
+        {
+          "action": "负责",
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "object": "数据标注及数据质量检查",
+          "text": "负责数据标注及数据质量检查"
+        },
+        {
+          "action": "协助",
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "object": "研发团队进行算法性能统计分析及测试报告输出",
+          "text": "协助研发团队进行算法性能统计分析及测试报告输出"
+        }
+      ],
+      "schema_version": "profile-extraction/v2",
+      "skills": [
+        {
+          "category": "programming_language",
+          "evidence_ids": [
+            "ev_009"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "Python",
+          "raw_name": "Python"
+        },
+        {
+          "category": "data_processing",
+          "evidence_ids": [
+            "ev_010"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "数据采集",
+          "raw_name": "数据采集"
+        }
+      ]
+    },
+    "implementation": "ollama",
+    "model": "qwen2.5:7b",
+    "raw_model_output": "",
+    "reason": "",
+    "schema": "profile-extraction/v2",
+    "state": "available",
+    "validation_error": "",
+    "warnings": []
+  },
+  "normalization": {
+    "implementation": "lightweight_skill_normalizer",
+    "skills": [
+      {
+        "category": "programming_language",
+        "esco_preferred_label": "Python (computer programming)",
+        "esco_uri": "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d",
+        "esco_version": "v1.2.1",
+        "evidence_ids": [
+          "ev_009"
+        ],
+        "importance": "required",
+        "linking_confidence": 1.0,
+        "linking_status": "linked",
+        "lskt_label": "S",
+        "name": "Python (computer programming)",
+        "raw_name": "Python"
+      },
+      {
+        "category": "data_processing",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_010"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "数据采集",
+        "raw_name": "数据采集"
+      }
+    ],
+    "state": "available",
+    "warnings": []
+  },
+  "profile": {
+    "artifacts": {
+      "profile_json": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/structured/profiles/raw_preview_20260630/job/job_profile_93281b6918274e3185f8a47f5e840abc.json",
+      "schema_version": "profile-extraction/v2",
+      "storage": "filesystem"
+    },
+    "attributes": {
+      "capabilities": [],
+      "company": {
+        "industry": "软件/IT服务",
+        "location": "深圳 龙华",
+        "name": "外企德科数字技术有限公司"
+      },
+      "education": [],
+      "employment": {
+        "employment_type": "full_time",
+        "published_at": "2026-06-18 00:33:54",
+        "salary_max": 15000,
+        "salary_min": 1
+      },
+      "experience": [],
+      "jd_profile": {
+        "application_scenarios": [
+          {
+            "description": null,
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "name": "无人机/机器人测试场景搭建及测试执行"
+          },
+          {
+            "description": null,
+            "evidence_ids": [
+              "ev_002"
+            ],
+            "name": "视觉、深度、IMU等传感器标定、数据采集和管理"
+          },
+          {
+            "description": null,
+            "evidence_ids": [
+              "ev_003"
+            ],
+            "name": "数据标注及数据质量检查"
+          },
+          {
+            "description": null,
+            "evidence_ids": [
+              "ev_004"
+            ],
+            "name": "算法性能统计分析及测试报告输出"
+          }
+        ],
+        "capabilities": [],
+        "company": {
+          "industry": "软件/IT服务",
+          "location": "深圳 龙华",
+          "name": "外企德科数字技术有限公司"
+        },
+        "document_type": "jd",
+        "employment": {
+          "employment_type": "full_time",
+          "published_at": "2026-06-18 00:33:54",
+          "salary_max": 15000,
+          "salary_min": 1
+        },
+        "evaluation_signals": [],
+        "job": {
+          "department": null,
+          "normalized_title": "感知算法测试验证工程师",
+          "seniority": null,
+          "title": "感知算法测试验证工程师"
+        },
+        "requirements": [
+          {
+            "evidence_ids": [
+              "ev_005"
+            ],
+            "importance": "required",
+            "requirement_type": "education",
+            "text": "本科及以上学历，计算机、自动化、电子信息、机器人、航空航天等相关专业"
+          },
+          {
+            "evidence_ids": [
+              "ev_006"
+            ],
+            "importance": "required",
+            "requirement_type": "skill",
+            "text": "熟悉Linux环境，具备基本命令行操作能力，熟悉Python，能够用AI编写简单脚本进行数据处理、统计分析和结果可视化"
+          },
+          {
+            "evidence_ids": [
+              "ev_007"
+            ],
+            "importance": "required",
+            "requirement_type": "experience",
+            "text": "具备数据采集、数据管理或数据标注相关经验"
+          },
+          {
+            "evidence_ids": [
+              "ev_008"
+            ],
+            "importance": "preferred",
+            "requirement_type": "soft_skill",
+            "text": "具备较强责任心和沟通能力，能够与算法研发团队高效协作"
+          }
+        ],
+        "responsibilities": [
+          {
+            "action": "负责",
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "object": "无人机/机器人测试场景搭建及测试执行",
+            "text": "负责无人机/机器人测试场景搭建及测试执行"
+          },
+          {
+            "action": "负责",
+            "evidence_ids": [
+              "ev_002"
+            ],
+            "object": "视觉、深度、IMU等传感器标定、数据采集和管理",
+            "text": "负责视觉、深度、IMU等传感器标定、数据采集和管理"
+          },
+          {
+            "action": "负责",
+            "evidence_ids": [
+              "ev_003"
+            ],
+            "object": "数据标注及数据质量检查",
+            "text": "负责数据标注及数据质量检查"
+          },
+          {
+            "action": "协助",
+            "evidence_ids": [
+              "ev_004"
+            ],
+            "object": "研发团队进行算法性能统计分析及测试报告输出",
+            "text": "协助研发团队进行算法性能统计分析及测试报告输出"
+          }
+        ],
+        "schema_version": "profile-extraction/v2",
+        "skills": [
+          {
+            "category": "programming_language",
+            "esco_preferred_label": "Python (computer programming)",
+            "esco_uri": "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d",
+            "esco_version": "v1.2.1",
+            "evidence_ids": [
+              "ev_009"
+            ],
+            "importance": "required",
+            "linking_confidence": 1.0,
+            "linking_status": "linked",
+            "lskt_label": "S",
+            "name": "Python (computer programming)",
+            "raw_name": "Python"
+          },
+          {
+            "category": "data_processing",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_010"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "数据采集",
+            "raw_name": "数据采集"
+          }
+        ]
+      },
+      "job": {
+        "department": null,
+        "normalized_title": "感知算法测试验证工程师",
+        "seniority": null,
+        "title": "感知算法测试验证工程师"
+      },
+      "job_title": "感知算法测试验证工程师",
+      "profile_schema": "profile-extraction/v2",
+      "projects": [],
+      "requirements": [
+        {
+          "evidence_ids": [
+            "ev_005"
+          ],
+          "importance": "required",
+          "requirement_type": "education",
+          "text": "本科及以上学历，计算机、自动化、电子信息、机器人、航空航天等相关专业"
+        },
+        {
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "熟悉Linux环境，具备基本命令行操作能力，熟悉Python，能够用AI编写简单脚本进行数据处理、统计分析和结果可视化"
+        },
+        {
+          "evidence_ids": [
+            "ev_007"
+          ],
+          "importance": "required",
+          "requirement_type": "experience",
+          "text": "具备数据采集、数据管理或数据标注相关经验"
+        },
+        {
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "importance": "preferred",
+          "requirement_type": "soft_skill",
+          "text": "具备较强责任心和沟通能力，能够与算法研发团队高效协作"
+        }
+      ],
+      "responsibilities": [
+        {
+          "action": "负责",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "object": "无人机/机器人测试场景搭建及测试执行",
+          "text": "负责无人机/机器人测试场景搭建及测试执行"
+        },
+        {
+          "action": "负责",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "object": "视觉、深度、IMU等传感器标定、数据采集和管理",
+          "text": "负责视觉、深度、IMU等传感器标定、数据采集和管理"
+        },
+        {
+          "action": "负责",
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "object": "数据标注及数据质量检查",
+          "text": "负责数据标注及数据质量检查"
+        },
+        {
+          "action": "协助",
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "object": "研发团队进行算法性能统计分析及测试报告输出",
+          "text": "协助研发团队进行算法性能统计分析及测试报告输出"
+        }
+      ],
+      "skills": [
+        {
+          "category": "programming_language",
+          "esco_preferred_label": "Python (computer programming)",
+          "esco_uri": "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d",
+          "esco_version": "v1.2.1",
+          "evidence_ids": [
+            "ev_009"
+          ],
+          "importance": "required",
+          "linking_confidence": 1.0,
+          "linking_status": "linked",
+          "lskt_label": "S",
+          "name": "Python (computer programming)",
+          "raw_name": "Python"
+        },
+        {
+          "category": "data_processing",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_010"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "数据采集",
+          "raw_name": "数据采集"
+        }
+      ]
+    },
+    "created_at": "2026-06-30T08:30:56Z",
+    "evidence": [
+      {
+        "field": "responsibilities",
+        "id": "ev_001",
+        "text": "1. 负责无人机/机器人测试场景搭建及测试执行；"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_002",
+        "text": "2. 负责视觉、深度、IMU等传感器标定、数据采集和管理；"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_003",
+        "text": "3. 负责数据标注及数据质量检查；"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_004",
+        "text": "4. 协助研发团队进行算法性能统计分析及测试报告输出。"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_005",
+        "text": "1. 本科及以上学历，计算机、自动化、电子信息、机器人、航空航天等相关专业；"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_006",
+        "text": "2. 熟悉Linux环境，具备基本命令行操作能力，熟悉Python，能够用AI编写简单脚本进行数据处理、统计分析和结果可视化；"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_007",
+        "text": "3. 具备数据采集、数据管理或数据标注相关经验；"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_008",
+        "text": "4. 具备较强责任心和沟通能力，能够与算法研发团队高效协作。"
+      },
+      {
+        "field": "skills",
+        "id": "ev_009",
+        "text": "熟悉Python，能够用AI编写简单脚本进行数据处理、统计分析和结果可视化；"
+      },
+      {
+        "field": "skills",
+        "id": "ev_010",
+        "text": "具备数据采集、数据管理或数据标注相关经验；"
+      }
+    ],
+    "id": "job_profile_93281b6918274e3185f8a47f5e840abc",
+    "implementation": "llm_profile_builder",
+    "profile_type": "job",
+    "source_document_id": "doc_42b9afeeb0f042d09a84a423a2ecc744",
+    "state": "available",
+    "warnings": []
+  },
+  "schema_version": "profile-extraction/v2",
+  "source_document": {
+    "char_count": 425,
+    "content_digest": "dc7bcc739571d46b959e8c95a2a090c3e14ffa964ce18b61f5f02c8e060cca59",
+    "created_at": "2026-06-30T08:29:49Z",
+    "document_type": "jd",
+    "id": "doc_42b9afeeb0f042d09a84a423a2ecc744",
+    "metadata": {
+      "raw_file": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/small-raw/jd_raw.jsonl",
+      "raw_index": 4,
+      "raw_type": "jd"
+    },
+    "source": {
+      "external_id": "40874740405",
+      "published_at": "2026-06-18 00:33:54",
+      "source_system": "zhaopin",
+      "uri": "http://www.zhaopin.com/jobdetail/CCL1480117890J40874740405.htm"
+    },
+    "storage": "memory"
+  }
+}

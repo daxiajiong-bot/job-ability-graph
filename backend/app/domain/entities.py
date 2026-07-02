@@ -83,6 +83,7 @@ class Profile:
     warnings: list[str]
     implementation: str
     created_at: str
+    artifacts: dict[str, Any] = field(default_factory=dict)
 
     @classmethod
     def create(
@@ -101,6 +102,7 @@ class Profile:
             warnings=list(result.get("warnings", [])),
             implementation=str(result.get("implementation", "mock")),
             created_at=utc_now(),
+            artifacts=dict(result.get("artifacts", {})),
         )
 
     def public(self) -> dict[str, Any]:
@@ -113,6 +115,7 @@ class Profile:
             "evidence": self.evidence,
             "warnings": self.warnings,
             "implementation": self.implementation,
+            "artifacts": self.artifacts,
             "created_at": self.created_at,
         }
 
