@@ -1,10 +1,31 @@
 {
   "source": "zhaopin",
   "keyword": "Python",
-  "pages": 5,
-  "fetched": 100,
-  "deduped": 100,
-  "saved": 100,
-  "output": "C:\\Users\\suyucum\\Desktop\\挑战杯\\job-ability-graph\\data\\outputs\\jd_raw.jsonl",
-  "generated_at": "2026-06-18T09:55:02.060Z"
+  "pages": 9,
+  "fetched": 180,
+  "deduped": 200,
+  "saved": 200,
+  "output": "C:\\Users\\suyucum\\Desktop\\挑战杯\\job-ability-graph\\data\\small-raw\\jd_raw.jsonl",
+  "generated_at": "2026-07-04T08:09:11.797Z",
+  "last_append": {
+    "source": "zhaopin_search_page",
+    "keyword": "Python",
+    "city": "Shenzhen",
+    "pages_used": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "fetched_in_run": 180,
+    "existing_before": 100,
+    "added": 100,
+    "total_after": 200,
+    "scrape_time": "2026-07-04T08:09:11.797Z"
+  }
 }
