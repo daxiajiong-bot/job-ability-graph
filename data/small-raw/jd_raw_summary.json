@@ -1,264 +1,344 @@
 {
   "source": "zhaopin",
-  "keyword": "AI/ML related",
+  "keyword": "domestic strong AI/ML technical jobs only; sorted by job_title; selected AIGC rows removed",
   "pages": 9,
   "fetched": 180,
   "deduped": 3000,
   "saved": 3000,
   "output": "C:\\Users\\suyucum\\Desktop\\挑战杯\\job-ability-graph\\data\\small-raw\\jd_raw.jsonl",
-  "generated_at": "2026-07-06T08:48:50.545Z",
+  "generated_at": "2026-07-07T07:28:26Z",
   "last_append": {
-    "source": "zhaopin_search_page_cache",
-    "topic": "AI/ML related jobs",
-    "keywords": [
+    "source": "zhaopin_search_page",
+    "topic": "domestic strong AI/ML technical jobs only",
+    "target_total": 3000,
+    "candidate_total_before_trim": 6464,
+    "qualified_before_trim": 3008,
+    "total_after": 3000,
+    "scrape_time": "2026-07-07T07:28:26Z",
+    "sort": "job_title, company_name, location, job_id",
+    "cache_pages": 894,
+    "cache_pages_parsed": 632,
+    "cache_positions_seen": 10660,
+    "stats": {
+      "add_jd_raw.jsonl": 1625,
+      "skip_jd_raw.jsonl": 563,
+      "dup_jd_raw.jsonl.bak": 2188,
+      "add_jd_raw.jsonl.bak": 22,
+      "skip_jd_raw.jsonl.bak": 140,
+      "add_cache": 1361,
+      "dup_cache": 6546,
+      "skip_cache": 2753
+    },
+    "filter": {
+      "domestic_only": true,
+      "source_name": "zhaopin",
+      "nontechnical_titles_removed": true,
+      "strong_ai_ml_related": true
+    },
+    "manual_cleanup": "removed original sorted lines 138-141 AIGC rows and replenished non-AIGC domestic strong AI jobs",
+    "removed_rows": [
+      {
+        "line": 138,
+        "job_id": 40950541915,
+        "job_title": "AIGC创新教育导师",
+        "company_name": "西安纬纳空间教育科技有限公司"
+      },
+      {
+        "line": 139,
+        "job_id": 40785208911,
+        "job_title": "AIGC生成算法工程师",
+        "company_name": "湖北微模式科技发展有限公司"
+      },
+      {
+        "line": 140,
+        "job_id": 40946603408,
+        "job_title": "AIGC算法工程师",
+        "company_name": "上海有色网信息科技股份有限公司"
+      },
+      {
+        "line": 141,
+        "job_id": 40873656905,
+        "job_title": "Aigc美学工程师（可灵）",
+        "company_name": "外企德科"
+      }
+    ],
+    "replacement_rows": [
+      {
+        "job_id": 40857513607,
+        "job_title": "（031）计算机视觉研究员",
+        "company_name": "中国科学院微电子研究所"
+      },
+      {
+        "job_id": 40857956407,
+        "job_title": "（075）人工智能芯片研发岗",
+        "company_name": "中国科学院微电子研究所"
+      },
+      {
+        "job_id": 40857957007,
+        "job_title": "（076）人工智能芯片架构研发岗",
+        "company_name": "中国科学院微电子研究所"
+      },
+      {
+        "job_id": 40868764305,
+        "job_title": "（具身机器人）算法工程师",
+        "company_name": "万宝瑞华人才管理咨询(上海)有限公司"
+      }
+    ]
+  },
+  "source_counts": {
+    "zhaopin": 3000
+  },
+  "last_filter": {
+    "topic": "remove every record containing forbidden-AI-generated-content in any field; title must contain AI/ML core keywords and exclude weak related jobs",
+    "required_title_terms": [
       "人工智能",
       "机器学习",
-      "深度学习",
+      "算法",
       "大模型",
-      "算法工程师",
-      "AI算法",
+      "大语言模型",
       "自然语言处理",
-      "NLP",
       "计算机视觉",
-      "图像算法",
-      "推荐算法",
-      "数据挖掘",
-      "AIGC",
-      "多模态",
+      "NLP",
+      "CV",
       "LLM",
-      "PyTorch",
-      "TensorFlow",
-      "模型训练"
+      "深度学习",
+      "AI",
+      "Machine Learning",
+      "ML",
+      "Algorithm",
+      "Algorithms",
+      "Deep Learning",
+      "Large Language Model",
+      "Large Language Models",
+      "Natural Language Processing",
+      "Computer Vision",
+      "Artificial Intelligence",
+      "AI/ML",
+      "AIML"
     ],
-    "cities": [
-      "北京",
-      "上海",
-      "广州",
-      "深圳",
-      "杭州",
-      "成都",
-      "南京",
-      "武汉",
-      "西安",
-      "天津",
-      "苏州",
-      "重庆"
+    "weak_title_terms": [
+      "前端",
+      "后端",
+      "全栈",
+      "软件测试",
+      "测试开发",
+      "测试工程师",
+      "测试助理",
+      "测试",
+      "Frontend",
+      "Front End",
+      "Backend",
+      "Back End",
+      "Full Stack",
+      "Fullstack",
+      "QA",
+      "Quality Engineer",
+      "Test Engineer",
+      "Testing",
+      "SDET",
+      "销售",
+      "顾问",
+      "咨询",
+      "客服",
+      "运营",
+      "教师",
+      "老师",
+      "讲师",
+      "助教",
+      "招生",
+      "市场",
+      "商务",
+      "编导",
+      "导演",
+      "短剧",
+      "设计师",
+      "画师",
+      "美工",
+      "主播",
+      "文案",
+      "剪辑",
+      "视频制作",
+      "内容制作",
+      "管培",
+      "课程",
+      "教培",
+      "外观结构",
+      "Sales",
+      "Marketing",
+      "Customer",
+      "Support",
+      "Account Executive",
+      "Recruiter",
+      "Copywriter",
+      "Content",
+      "Designer",
+      "Product Manager",
+      "Project Manager",
+      "Program Manager",
+      "Community",
+      "SEO",
+      "Coordinator",
+      "Assistant"
     ],
-    "recent_since": "2024-07-06",
-    "existing_before": 0,
-    "added": 3000,
-    "total_after": 3000,
-    "scrape_time": "2026-07-06T08:48:50.545Z",
-    "stats": {
-      "cache_files": 332,
-      "parsed_pages": 281,
-      "positions_seen": 4674,
-      "missing_id_skipped": 0,
-      "duplicate_skipped": 1547,
-      "old_skipped": 3,
-      "irrelevant_skipped": 124,
-      "json_failed": 0
+    "forbidden_anywhere_terms": [],
+    "existing_before": 2485,
+    "kept": 2350,
+    "removed": 135,
+    "source_counts": {
+      "zhaopin": 1806,
+      "themuse": 544
     },
-    "task_samples": [
+    "filtered_at": "2026-07-06T16:54:01.830Z",
+    "removed_samples": [
       {
-        "keyword": "AIGC",
-        "city": "北京",
-        "page": 1
+        "job_id": 40869326610,
+        "job_title": "工业AI应用工程师",
+        "source_name": "zhaopin"
       },
       {
-        "keyword": "AIGC",
-        "city": "上海",
-        "page": 1
+        "job_id": 40837127314,
+        "job_title": "AI产品经理（新零售/电商/消费品）",
+        "source_name": "zhaopin"
       },
       {
-        "keyword": "AIGC",
-        "city": "天津",
-        "page": 1
+        "job_id": 40985826402,
+        "job_title": "AI智能体应用工程师",
+        "source_name": "zhaopin"
       },
       {
-        "keyword": "AIGC",
-        "city": "重庆",
-        "page": 1
+        "job_id": 40841733907,
+        "job_title": "日语AI产品经理",
+        "source_name": "zhaopin"
       },
       {
-        "keyword": "AIGC",
-        "city": "杭州",
-        "page": 1
+        "job_id": 40873359305,
+        "job_title": "数据标注工程师（大模型方向）",
+        "source_name": "zhaopin"
       },
       {
-        "keyword": "AIGC",
-        "city": "苏州",
-        "page": 1
+        "job_id": 40866909609,
+        "job_title": "AI 产品经理",
+        "source_name": "zhaopin"
       },
       {
-        "keyword": "AIGC",
-        "city": "西安",
-        "page": 1
+        "job_id": 40865319410,
+        "job_title": "AI产品经理（大模型场景应用方向）",
+        "source_name": "zhaopin"
       },
       {
-        "keyword": "AIGC",
-        "city": "南京",
-        "page": 1
+        "job_id": 40871586210,
+        "job_title": "AI产品经理-合肥",
+        "source_name": "zhaopin"
       },
       {
-        "keyword": "AIGC",
-        "city": "广州",
-        "page": 1
+        "job_id": 40840641907,
+        "job_title": "AI产品工程师",
+        "source_name": "zhaopin"
       },
       {
-        "keyword": "AIGC",
-        "city": "深圳",
-        "page": 1
+        "job_id": 40901856603,
+        "job_title": "高级ai产品经理",
+        "source_name": "zhaopin"
       },
       {
-        "keyword": "AIGC",
-        "city": "成都",
-        "page": 1
+        "job_id": 40945389415,
+        "job_title": "AI Agent 产品经理",
+        "source_name": "zhaopin"
       },
       {
-        "keyword": "AIGC",
-        "city": "武汉",
-        "page": 1
+        "job_id": 40819623216,
+        "job_title": "AI应用研发岗(J18692)",
+        "source_name": "zhaopin"
       },
       {
-        "keyword": "AI算法",
-        "city": "北京",
-        "page": 1
+        "job_id": 40901421012,
+        "job_title": "AI应用高级经理",
+        "source_name": "zhaopin"
       },
       {
-        "keyword": "AI算法",
-        "city": "上海",
-        "page": 1
+        "job_id": 40947147908,
+        "job_title": "AI原生产品经理（数字人/知识库方向）",
+        "source_name": "zhaopin"
       },
       {
-        "keyword": "AI算法",
-        "city": "天津",
-        "page": 1
+        "job_id": 40853500703,
+        "job_title": "AI产品经理",
+        "source_name": "zhaopin"
       },
       {
-        "keyword": "AI算法",
-        "city": "重庆",
-        "page": 1
+        "job_id": 41020162904,
+        "job_title": "AI项目经理(J19103)【粤语】",
+        "source_name": "zhaopin"
       },
       {
-        "keyword": "AI算法",
-        "city": "杭州",
-        "page": 1
+        "job_id": 40876890813,
+        "job_title": "AI产品负责人（AI电网方向）",
+        "source_name": "zhaopin"
       },
       {
-        "keyword": "AI算法",
-        "city": "苏州",
-        "page": 1
+        "job_id": 40878009705,
+        "job_title": "AI互联网产品经理",
+        "source_name": "zhaopin"
       },
       {
-        "keyword": "AI算法",
-        "city": "西安",
-        "page": 1
+        "job_id": 40877579705,
+        "job_title": "AI应用开发岗",
+        "source_name": "zhaopin"
       },
       {
-        "keyword": "AI算法",
-        "city": "南京",
-        "page": 1
+        "job_id": 40828218916,
+        "job_title": "ai产品经理",
+        "source_name": "zhaopin"
       },
       {
-        "keyword": "AI算法",
-        "city": "广州",
-        "page": 1
+        "job_id": 41018721504,
+        "job_title": "AI Agent 产品⼯程师",
+        "source_name": "zhaopin"
       },
       {
-        "keyword": "AI算法",
-        "city": "深圳",
-        "page": 1
+        "job_id": 40902037303,
+        "job_title": "AI产品经理（PCB）",
+        "source_name": "zhaopin"
       },
       {
-        "keyword": "AI算法",
-        "city": "成都",
-        "page": 1
+        "job_id": 40923790315,
+        "job_title": "高级ai产品经理",
+        "source_name": "zhaopin"
       },
       {
-        "keyword": "AI算法",
-        "city": "武汉",
-        "page": 1
+        "job_id": 40848891205,
+        "job_title": "AI算法工程师（公差/几何方向）",
+        "source_name": "zhaopin"
       },
       {
-        "keyword": "LLM",
-        "city": "北京",
-        "page": 1
+        "job_id": 40850094210,
+        "job_title": "AI算法工程师（大模型+视觉智能方向）",
+        "source_name": "zhaopin"
       },
       {
-        "keyword": "LLM",
-        "city": "上海",
-        "page": 1
+        "job_id": 40876750905,
+        "job_title": "AI算法工程师",
+        "source_name": "zhaopin"
       },
       {
-        "keyword": "LLM",
-        "city": "天津",
-        "page": 1
+        "job_id": 40772783414,
+        "job_title": "高级ai算法工程师",
+        "source_name": "zhaopin"
       },
       {
-        "keyword": "LLM",
-        "city": "重庆",
-        "page": 1
+        "job_id": 40864743609,
+        "job_title": "AI算法工程师（成都）",
+        "source_name": "zhaopin"
       },
       {
-        "keyword": "LLM",
-        "city": "杭州",
-        "page": 1
+        "job_id": 40863004309,
+        "job_title": "初级AI算法工程师（MG）",
+        "source_name": "zhaopin"
       },
       {
-        "keyword": "LLM",
-        "city": "苏州",
-        "page": 1
-      },
-      {
-        "keyword": "LLM",
-        "city": "西安",
-        "page": 1
-      },
-      {
-        "keyword": "LLM",
-        "city": "南京",
-        "page": 1
-      },
-      {
-        "keyword": "LLM",
-        "city": "广州",
-        "page": 1
-      },
-      {
-        "keyword": "LLM",
-        "city": "深圳",
-        "page": 1
-      },
-      {
-        "keyword": "LLM",
-        "city": "成都",
-        "page": 1
-      },
-      {
-        "keyword": "LLM",
-        "city": "武汉",
-        "page": 1
-      },
-      {
-        "keyword": "NLP",
-        "city": "北京",
-        "page": 1
-      },
-      {
-        "keyword": "NLP",
-        "city": "上海",
-        "page": 1
-      },
-      {
-        "keyword": "NLP",
-        "city": "天津",
-        "page": 1
-      },
-      {
-        "keyword": "NLP",
-        "city": "重庆",
-        "page": 1
+        "job_id": 41019505604,
+        "job_title": "大模型AI应用架构师",
+        "source_name": "zhaopin"
       }
     ]
   }
