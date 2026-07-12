@@ -328,14 +328,9 @@ def fetch_html(task: FetchTask, *, cache_only: bool = False) -> str:
 
 
 def parse_positions(html: str) -> list[dict[str, Any]]:
-    array_payload = extract_json_array_after_key(html, '"positionList"')
-    if array_payload:
-        try:
-            items = json.loads(array_payload)
-        except json.JSONDecodeError:
-            items = []
-        if isinstance(items, list):
-            return [item for item in items if isinstance(item, dict)]
+    items = decode_json_array_after_key(html, '"positionList"')
+    if isinstance(items, list):
+        return [item for item in items if isinstance(item, dict)]
 
     match = INITIAL_STATE_RE.search(html)
     if not match:
@@ -346,6 +341,20 @@ def parse_positions(html: str) -> list[dict[str, Any]]:
         return []
     items = state.get("positionList")
     return items if isinstance(items, list) else []
+
+
+def decode_json_array_after_key(text: str, key: str) -> Any:
+    key_index = text.find(key)
+    if key_index < 0:
+        return None
+    start = text.find("[", key_index)
+    if start < 0:
+        return None
+    try:
+        value, _ = json.JSONDecoder().raw_decode(text, start)
+    except json.JSONDecodeError:
+        return None
+    return value
 
 
 def extract_json_array_after_key(text: str, key: str) -> str:

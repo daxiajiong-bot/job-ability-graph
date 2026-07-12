@@ -10,8 +10,10 @@ import html
 import importlib.util
 import json
 import re
+import subprocess
 import sys
 import time
+from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -25,36 +27,107 @@ HELPER_PATH = REPO_ROOT / "scripts" / "append_ai_jd_data.py"
 JD_JSONL = REPO_ROOT / "data" / "small-raw" / "jd_raw.jsonl"
 JD_CSV = REPO_ROOT / "data" / "small-raw" / "jd_raw.csv"
 JD_SUMMARY = REPO_ROOT / "data" / "small-raw" / "jd_raw_summary.json"
+FETCH_ROOT = REPO_ROOT / "data" / "small-raw" / "_jd_ai_fetch_tmp"
 
 STRONG_KEYWORDS = [
     "机器学习",
+    "机器学习工程师",
+    "机器学习算法",
     "深度学习",
+    "深度学习工程师",
+    "深度学习算法",
     "大模型",
+    "大模型开发工程师",
+    "大模型应用开发工程师",
+    "大模型算法工程师",
+    "大模型工程师",
+    "大模型研发工程师",
+    "大语言模型",
     "算法工程师",
+    "算法研究员",
+    "算法研发",
     "AI算法",
+    "人工智能工程师",
+    "人工智能算法",
     "自然语言处理",
+    "自然语言处理工程师",
     "NLP",
+    "NLP算法工程师",
     "计算机视觉",
+    "计算机视觉工程师",
     "图像算法",
+    "图像算法工程师",
     "视觉算法",
+    "视觉算法工程师",
     "推荐算法",
+    "推荐算法工程师",
     "搜索算法",
+    "搜索算法工程师",
     "数据挖掘",
     "多模态",
+    "多模态算法工程师",
     "LLM",
+    "LLM工程师",
+    "LLM算法",
     "PyTorch",
     "TensorFlow",
     "模型训练",
     "模型微调",
+    "模型部署工程师",
+    "模型推理工程师",
+    "模型工程师",
     "RAG",
+    "RAG开发工程师",
     "知识图谱",
+    "知识图谱工程师",
     "强化学习",
+    "强化学习工程师",
     "目标检测",
     "语音识别",
+    "语音识别工程师",
     "机器视觉",
+    "机器视觉工程师",
     "人工智能研发",
     "AI工程师",
+    "AI开发工程师",
+    "AI应用开发",
+    "AI应用工程师",
+    "AI研发工程师",
+    "AI Agent",
+    "Agent开发工程师",
+    "智能体开发",
+    "具身智能",
+    "数据科学家",
+    "Data Scientist",
+    "MLOps",
+    "AI Infra",
+    "OCR算法",
+    "人脸识别",
     "大模型应用开发",
+    "算法",
+    "算法开发",
+    "算法专家",
+    "算法科学家",
+    "人工智能",
+    "AI",
+    "AI技术专家",
+    "AI架构师",
+    "智能算法",
+    "神经网络",
+    "Transformer",
+    "LangChain",
+    "LangGraph",
+    "智能体",
+    "多模态大模型",
+    "视觉大模型",
+    "计算机视觉算法",
+    "CV算法",
+    "NLP工程师",
+    "语音算法",
+    "推荐系统",
+    "搜索推荐",
+    "数据科学",
+    "数据挖掘工程师",
 ]
 
 CORE_TERMS = [
@@ -89,7 +162,6 @@ CORE_TERMS = [
     "机器视觉",
     "数据科学",
     "智能算法",
-    "AIGC算法",
     "生成式AI算法",
     "Machine Learning",
     "ML Engineer",
@@ -141,8 +213,6 @@ TITLE_STRONG_TERMS = [
     "人工智能工程师",
     "AI应用工程师",
     "AI开发工程师",
-    "AIGC算法",
-    "AIGC工程师",
     "AI Agent工程师",
     "AI Agent 产品",
     "AI产品经理",
@@ -203,17 +273,20 @@ TECH_TITLE_TERMS = [
     "技术专家",
     "博士后",
     "实习生",
+    "分析师",
     "Engineer",
     "Scientist",
     "Researcher",
     "Developer",
     "Architect",
+    "Analyst",
     "MLOps",
     "Data Engineer",
     "Applied Scientist",
 ]
 
 WEAK_TITLE_TERMS = [
+    "AIGC",
     "前端",
     "后端",
     "全栈",
@@ -315,6 +388,39 @@ TITLE_STRONG_RE = re.compile("|".join(term_pattern(term) for term in TITLE_STRON
 TECH_TITLE_RE = re.compile("|".join(term_pattern(term) for term in TECH_TITLE_TERMS), re.IGNORECASE)
 WEAK_TITLE_RE = re.compile("|".join(term_pattern(term) for term in WEAK_TITLE_TERMS), re.IGNORECASE)
 
+SOFT_TECH_WEAK_TITLE_TERMS = [
+    "前端",
+    "后端",
+    "全栈",
+    "软件测试",
+    "测试开发",
+    "测试工程师",
+    "测试助理",
+    "测试",
+    "Frontend",
+    "Front End",
+    "Backend",
+    "Back End",
+    "Full Stack",
+    "Fullstack",
+    "QA",
+    "Quality Engineer",
+    "Test Engineer",
+    "Testing",
+    "SDET",
+    "数据分析师",
+    "Data Analyst",
+    "Business Analyst",
+    "Business Intelligence",
+]
+
+HARD_WEAK_TITLE_TERMS = [term for term in WEAK_TITLE_TERMS if term not in set(SOFT_TECH_WEAK_TITLE_TERMS)]
+HARD_WEAK_TITLE_RE = re.compile("|".join(term_pattern(term) for term in HARD_WEAK_TITLE_TERMS), re.IGNORECASE)
+SOFT_TECH_WEAK_TITLE_RE = re.compile(
+    "|".join(term_pattern(term) for term in SOFT_TECH_WEAK_TITLE_TERMS),
+    re.IGNORECASE,
+)
+
 REQUIRED_TITLE_TERMS = [
     "人工智能",
     "机器学习",
@@ -373,7 +479,6 @@ AI_DOMAIN_TERMS = [
     "模型推理",
     "智能体",
     "AI",
-    "AIGC",
     "NLP",
     "CV",
     "LLM",
@@ -439,9 +544,115 @@ NON_AI_TECH_TITLE_TERMS = [
 ]
 
 AI_DOMAIN_RE = re.compile("|".join(term_pattern(term) for term in AI_DOMAIN_TERMS), re.IGNORECASE)
+AI_DOMAIN_TERM_RES = [re.compile(term_pattern(term), re.IGNORECASE) for term in AI_DOMAIN_TERMS]
 ENGINEERING_TITLE_RE = re.compile("|".join(term_pattern(term) for term in ENGINEERING_TITLE_TERMS), re.IGNORECASE)
 NON_AI_TECH_TITLE_RE = re.compile("|".join(term_pattern(term) for term in NON_AI_TECH_TITLE_TERMS), re.IGNORECASE)
 NONTECH_EVAL_RE = re.compile(r"训练|测评|评测|评估|测试")
+
+ZHAOPIN_HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept-Language": "zh-CN,zh;q=0.9",
+    "Referer": "https://sou.zhaopin.com/",
+}
+
+
+@dataclass(frozen=True)
+class NationalFetchTask:
+    keyword: str
+    page: int
+    city_code: str = "all"
+    city_name: str = "全国"
+
+    @property
+    def url(self) -> str:
+        keyword = quote(self.keyword)
+        return f"https://sou.zhaopin.com/?kw={keyword}&kt=3&p={self.page}"
+
+    @property
+    def cache_path(self) -> Path:
+        safe_keyword = re.sub(r"[^0-9A-Za-z\u4e00-\u9fff_-]+", "_", self.keyword)
+        return FETCH_ROOT / f"{self.city_code}_{safe_keyword}_{self.page:03d}.html"
+
+
+@dataclass(frozen=True)
+class CachedFetchTask:
+    keyword: str
+    city_code: str
+    city_name: str
+    page: int
+    cached_path: Path
+
+    @property
+    def url(self) -> str:
+        return ""
+
+    @property
+    def cache_path(self) -> Path:
+        return self.cached_path
+
+
+SEARCH_CITIES = {
+    "530": "北京",
+    "538": "上海",
+    "763": "广州",
+    "765": "深圳",
+    "653": "杭州",
+    "801": "成都",
+    "635": "南京",
+    "736": "武汉",
+    "854": "西安",
+    "531": "天津",
+    "639": "苏州",
+    "551": "重庆",
+    "664": "合肥",
+    "702": "济南",
+    "703": "青岛",
+    "600": "大连",
+    "599": "沈阳",
+    "719": "郑州",
+    "749": "长沙",
+    "654": "宁波",
+    "636": "无锡",
+    "682": "厦门",
+    "681": "福州",
+    "768": "佛山",
+    "779": "东莞",
+    "766": "珠海",
+    "780": "中山",
+    "773": "惠州",
+    "638": "常州",
+    "641": "南通",
+    "637": "徐州",
+    "831": "昆明",
+    "691": "南昌",
+    "822": "贵阳",
+    "613": "长春",
+    "622": "哈尔滨",
+    "565": "石家庄",
+    "576": "太原",
+    "785": "南宁",
+    "864": "兰州",
+    "890": "乌鲁木齐",
+    "799": "海口",
+    "587": "呼和浩特",
+    "886": "银川",
+    "878": "西宁",
+    "655": "温州",
+    "656": "嘉兴",
+    "658": "绍兴",
+    "659": "金华",
+    "662": "台州",
+    "707": "烟台",
+    "708": "潍坊",
+    "685": "泉州",
+    "645": "扬州",
+    "646": "镇江",
+    "665": "芜湖",
+    "721": "洛阳",
+    "740": "襄阳",
+    "739": "宜昌",
+}
 
 THEMUSE_LOCATIONS = [
     "Remote",
@@ -477,12 +688,22 @@ def main() -> int:
     parser.add_argument("--max-pages-per-query-city", type=int, default=30)
     parser.add_argument("--recent-since", default="2024-07-06")
     parser.add_argument("--sleep-seconds", type=float, default=0.1)
+    parser.add_argument("--workers", type=int, default=8)
     parser.add_argument("--cache-only", action="store_true")
     parser.add_argument("--skip-zhaopin", action="store_true")
+    parser.add_argument("--skip-national", action="store_true")
+    parser.add_argument("--expand-citymap", action="store_true")
+    parser.add_argument("--start-page", type=int, default=1)
     args = parser.parse_args()
 
     helper = load_helper()
     helper.FETCH_ROOT.mkdir(parents=True, exist_ok=True)
+    search_cities = SEARCH_CITIES
+    if args.expand_citymap:
+        if args.cache_only:
+            search_cities = {**SEARCH_CITIES, **discover_cached_city_codes()}
+        else:
+            search_cities = {**SEARCH_CITIES, **fetch_zhaopin_citymap_cities()}
     cutoff = helper.parse_date(args.recent_since)
     scrape_time = datetime.now(timezone.utc).isoformat(timespec="milliseconds").replace("+00:00", "Z")
 
@@ -502,6 +723,7 @@ def main() -> int:
         "old_skipped": 0,
         "weak_skipped": 0,
         "foreign_skipped": 0,
+        "workers": max(1, args.workers),
     }
 
     for row in existing_rows:
@@ -528,52 +750,102 @@ def main() -> int:
 
     used_tasks: list[dict[str, Any]] = []
     if len(rows) < args.target_total and not args.skip_zhaopin:
-        for task in iter_tasks(helper, args.max_pages_per_query_city):
+        progress_checkpoint = 0
+        if args.cache_only:
+            tasks = iter_cached_tasks(
+                search_cities=search_cities,
+                start_page=args.start_page,
+                max_page=args.max_pages_per_query_city,
+                include_national=not args.skip_national,
+            )
+        else:
+            tasks = iter_tasks(
+                helper,
+                args.max_pages_per_query_city,
+                include_national=not args.skip_national,
+                search_cities=search_cities,
+                start_page=args.start_page,
+            )
+        batch_size = max(1, args.workers) * 4
+        for start in range(0, len(tasks), batch_size):
             if len(rows) >= args.target_total:
                 break
-            stats["pages_attempted"] += 1
-            html = helper.fetch_html(task, cache_only=args.cache_only)
-            if not html:
-                stats["pages_failed"] += 1
-                continue
-            if args.sleep_seconds > 0:
-                time.sleep(args.sleep_seconds)
-            items = helper.parse_positions(html)
-            if not items:
-                continue
-            stats["pages_parsed"] += 1
-            stats["positions_seen"] += len(items)
-            used_tasks.append(
-                {
-                    "keyword": task.keyword,
-                    "city": task.city_name,
-                    "city_code": task.city_code,
-                    "page": task.page,
+
+            batch = tasks[start : start + batch_size]
+            stats["pages_attempted"] += len(batch)
+            with concurrent.futures.ThreadPoolExecutor(max_workers=max(1, args.workers)) as executor:
+                future_to_task = {
+                    executor.submit(fetch_and_parse_zhaopin, helper, task, args.cache_only): task for task in batch
                 }
-            )
+                for future in concurrent.futures.as_completed(future_to_task):
+                    task = future_to_task[future]
+                    try:
+                        result = future.result()
+                    except Exception as exc:
+                        stats["pages_failed"] += 1
+                        print(
+                            json.dumps(
+                                {
+                                    "zhaopin_parse_failed": {
+                                        "keyword": task.keyword,
+                                        "city": task.city_name,
+                                        "page": task.page,
+                                        "error": str(exc),
+                                    }
+                                },
+                                ensure_ascii=False,
+                            ),
+                            flush=True,
+                        )
+                        continue
 
-            for item in items:
-                if len(rows) >= args.target_total:
-                    break
-                job_id = item.get("jobId")
-                if job_id is None:
-                    stats["missing_id_skipped"] += 1
-                    continue
-                key = str(job_id)
-                if key in seen:
-                    stats["duplicate_skipped"] += 1
-                    continue
-                row = helper.convert_item(item, task, scrape_time)
-                if not helper.is_recent(row["publish_date"], cutoff):
-                    stats["old_skipped"] += 1
-                    continue
-                if not is_strong_ai_ml_related(row):
-                    stats["weak_skipped"] += 1
-                    continue
-                rows.append(row)
-                seen.add(key)
+                    if not result.get("html"):
+                        stats["pages_failed"] += 1
+                        continue
+                    items = result.get("items") or []
+                    if not items:
+                        continue
 
-            if stats["pages_attempted"] % 50 == 0 or len(rows) >= args.target_total:
+                    stats["pages_parsed"] += 1
+                    stats["positions_seen"] += len(items)
+                    used_tasks.append(
+                        {
+                            "keyword": task.keyword,
+                            "city": task.city_name,
+                            "city_code": task.city_code,
+                            "page": task.page,
+                        }
+                    )
+
+                    for item in items:
+                        if len(rows) >= args.target_total:
+                            break
+                        job_id = item.get("jobId")
+                        if job_id is None:
+                            stats["missing_id_skipped"] += 1
+                            continue
+                        key = str(job_id)
+                        if key in seen:
+                            stats["duplicate_skipped"] += 1
+                            continue
+                        if quick_reject_zhaopin_item(item):
+                            stats["weak_skipped"] += 1
+                            continue
+                        row = helper.convert_item(item, task, scrape_time)
+                        if not helper.is_recent(row["publish_date"], cutoff):
+                            stats["old_skipped"] += 1
+                            continue
+                        if not is_strong_ai_ml_related(row):
+                            stats["weak_skipped"] += 1
+                            continue
+                        rows.append(row)
+                        seen.add(key)
+
+            if args.sleep_seconds > 0 and not args.cache_only:
+                time.sleep(args.sleep_seconds)
+
+            if stats["pages_attempted"] - progress_checkpoint >= 200 or len(rows) >= args.target_total:
+                progress_checkpoint = stats["pages_attempted"]
                 print(
                     json.dumps(
                         {
@@ -615,6 +887,7 @@ def main() -> int:
         used_tasks=used_tasks,
         scrape_time=scrape_time,
         recent_since=args.recent_since,
+        search_cities=search_cities,
     )
 
     print(
@@ -645,13 +918,165 @@ def load_helper() -> Any:
     return module
 
 
-def iter_tasks(helper: Any, max_pages: int) -> list[Any]:
+def iter_tasks(
+    helper: Any,
+    max_pages: int,
+    *,
+    include_national: bool,
+    search_cities: dict[str, str],
+    start_page: int = 1,
+) -> list[Any]:
     tasks = []
-    for page in range(1, max_pages + 1):
+    for page in range(max(1, start_page), max_pages + 1):
         for keyword in STRONG_KEYWORDS:
-            for city_code, city_name in helper.CITIES.items():
+            if include_national:
+                tasks.append(NationalFetchTask(keyword=keyword, page=page))
+            for city_code, city_name in search_cities.items():
                 tasks.append(helper.FetchTask(keyword=keyword, city_code=city_code, city_name=city_name, page=page))
     return tasks
+
+
+def iter_cached_tasks(
+    *,
+    search_cities: dict[str, str],
+    start_page: int,
+    max_page: int,
+    include_national: bool,
+) -> list[CachedFetchTask]:
+    matched: list[tuple[int, str, str, Path]] = []
+    for path in FETCH_ROOT.glob("*.html"):
+        match = re.match(r"(?P<city>\d+|all)_(?P<keyword>.+)_(?P<page>\d+)\.html$", path.name)
+        if not match:
+            continue
+        city_code = match.group("city")
+        if city_code == "all" and not include_national:
+            continue
+        page = int(match.group("page"))
+        if page < max(1, start_page) or page > max_page:
+            continue
+        matched.append((page, match.group("keyword"), city_code, path))
+
+    tasks: list[CachedFetchTask] = []
+    for page, keyword, city_code, path in sorted(matched):
+        city_name = "全国" if city_code == "all" else search_cities.get(city_code, city_code)
+        tasks.append(
+            CachedFetchTask(
+                keyword=keyword.replace("_", " "),
+                city_code=city_code,
+                city_name=city_name,
+                page=page,
+                cached_path=path,
+            )
+        )
+    return tasks
+
+
+def fetch_and_parse_zhaopin(helper: Any, task: Any, cache_only: bool) -> dict[str, Any]:
+    html_text = fetch_zhaopin_html(task, cache_only=cache_only)
+    if not html_text:
+        return {"html": False, "items": []}
+    return {"html": True, "items": helper.parse_positions(html_text)}
+
+
+def fetch_zhaopin_html(task: Any, *, cache_only: bool = False) -> str:
+    cache_path = task.cache_path
+    if cache_path.exists():
+        cached = cache_path.read_text(encoding="utf-8", errors="replace")
+        if is_usable_zhaopin_html(cached) or cache_only:
+            return cached
+    if cache_only:
+        return ""
+
+    cache_path.parent.mkdir(parents=True, exist_ok=True)
+    for attempt in range(3):
+        try:
+            text = fetch_zhaopin_html_via_powershell(task.url)
+            if not is_usable_zhaopin_html(text):
+                if attempt < 2:
+                    time.sleep(1.5 * (attempt + 1))
+                    continue
+                return ""
+            cache_path.write_text(text, encoding="utf-8")
+            return text
+        except Exception:
+            if attempt < 2:
+                time.sleep(1.5 * (attempt + 1))
+                continue
+            return ""
+    return ""
+
+
+def is_usable_zhaopin_html(text: str) -> bool:
+    return '"positionList"' in text or "__INITIAL_STATE__" in text
+
+
+def fetch_zhaopin_html_via_powershell(url: str) -> str:
+    ps_command = (
+        "$ProgressPreference='SilentlyContinue'; "
+        f"$uri='{url}'; "
+        "$headers=@{"
+        "'User-Agent'='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126 Safari/537.36';"
+        "'Accept-Language'='zh-CN,zh;q=0.9';"
+        "'Referer'='https://sou.zhaopin.com/'"
+        "}; "
+        "(Invoke-WebRequest -Uri $uri -UseBasicParsing -Headers $headers -TimeoutSec 45).Content"
+    )
+    completed = subprocess.run(
+        ["powershell", "-NoProfile", "-Command", ps_command],
+        check=True,
+        capture_output=True,
+        text=True,
+        encoding="utf-8",
+        errors="replace",
+        timeout=60,
+    )
+    return completed.stdout
+
+
+def fetch_zhaopin_citymap_cities() -> dict[str, str]:
+    ps_command = (
+        "$ProgressPreference='SilentlyContinue'; "
+        "$uri='https://www.zhaopin.com/citymap'; "
+        "$headers=@{"
+        "'User-Agent'='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126 Safari/537.36';"
+        "'Accept-Language'='zh-CN,zh;q=0.9';"
+        "'Referer'='https://www.zhaopin.com/'"
+        "}; "
+        "(Invoke-WebRequest -Uri $uri -UseBasicParsing -Headers $headers -TimeoutSec 45).Content"
+    )
+    completed = subprocess.run(
+        ["powershell", "-NoProfile", "-Command", ps_command],
+        check=True,
+        capture_output=True,
+        text=True,
+        encoding="utf-8",
+        errors="replace",
+        timeout=60,
+    )
+    cities: dict[str, str] = {}
+    pattern = re.compile(
+        r'\{"name":"(?P<name>[^"]+)","url":"(?P<url>//(?:www|jobs)\.zhaopin\.com/[^"]+)",'
+        r'"code":"(?P<code>\d+)","pinyin":"[^"]+"'
+    )
+    excluded = {"香港", "澳门", "台湾"}
+    for match in pattern.finditer(completed.stdout):
+        name = match.group("name")
+        code = match.group("code")
+        if name in excluded:
+            continue
+        cities[code] = name
+    return cities
+
+
+def discover_cached_city_codes() -> dict[str, str]:
+    cities: dict[str, str] = {}
+    for path in FETCH_ROOT.glob("*.html"):
+        match = re.match(r"(?P<city>\d+)_", path.name)
+        if not match:
+            continue
+        code = match.group("city")
+        cities[code] = SEARCH_CITIES.get(code, code)
+    return cities
 
 
 def iter_themuse_jobs(categories: list[str], max_pages: int, workers: int, locations: list[str]) -> Any:
@@ -757,6 +1182,70 @@ def split_lines(text: str) -> list[str]:
     return [line.strip() for line in re.split(r"\r?\n+", text) if line.strip()]
 
 
+def quick_reject_zhaopin_item(item: dict[str, Any]) -> bool:
+    title = first_text(item.get("name"), get_path(item, ["jobDetailData", "position", "base", "positionName"]))
+    if HARD_WEAK_TITLE_RE.search(title):
+        return True
+    if NONTECH_EVAL_RE.search(title) and not ENGINEERING_TITLE_RE.search(title):
+        return True
+
+    text = raw_item_text(item, title)
+    raw_has_domain = bool(AI_DOMAIN_RE.search(text))
+    title_has_domain = bool(REQUIRED_TITLE_RE.search(title) or AI_DOMAIN_RE.search(title))
+    title_is_engineering = bool(ENGINEERING_TITLE_RE.search(title))
+    if NON_AI_TECH_TITLE_RE.search(title) and not raw_has_domain:
+        return True
+    if not title_is_engineering and not (title_has_domain and raw_has_domain):
+        return True
+    return not title_has_domain and not raw_has_domain
+
+
+def raw_item_text(item: dict[str, Any], title: str) -> str:
+    pieces = [
+        title,
+        first_text(item.get("industryName")),
+        first_text(item.get("companyName"), get_path(item, ["jobDetailData", "companyProxy", "companyName"])),
+        first_text(item.get("jobSummary")),
+        first_text(item.get("positionHighlight")),
+        first_text(get_path(item, ["jobDetailData", "position", "desc", "description"])),
+    ]
+    pieces.extend(raw_skill_names(item))
+    return " ".join(piece for piece in pieces if piece)
+
+
+def raw_skill_names(item: dict[str, Any]) -> list[str]:
+    values: list[str] = []
+    for key in ["jobSkillTags", "skillLabel", "showSkillTags"]:
+        for tag in item.get(key) or []:
+            if isinstance(tag, dict):
+                values.append(first_text(tag.get("name"), tag.get("value"), tag.get("tag"), tag.get("itemValue")))
+            else:
+                values.append(first_text(tag))
+    for tag in get_path(item, ["jobKeyword", "keywords"]) or []:
+        values.append(first_text(tag.get("itemValue")) if isinstance(tag, dict) else first_text(tag))
+    labels = get_path(item, ["jobDetailData", "position", "desc", "labels"])
+    if isinstance(labels, list):
+        values.extend(first_text(label) for label in labels)
+    return [value for value in values if value]
+
+
+def get_path(obj: Any, path: list[str]) -> Any:
+    current = obj
+    for key in path:
+        if not isinstance(current, dict):
+            return None
+        current = current.get(key)
+    return current
+
+
+def first_text(*values: Any) -> str:
+    for value in values:
+        text = clean(value)
+        if text:
+            return text
+    return ""
+
+
 def is_themuse_recent(value: str, cutoff: datetime) -> bool:
     try:
         return datetime.strptime(value[:10], "%Y-%m-%d").replace(tzinfo=timezone.utc) >= cutoff
@@ -769,17 +1258,22 @@ def is_strong_ai_ml_related(row: dict[str, Any]) -> bool:
     text = row_text(row)
     if row.get("source_name") != "zhaopin":
         return False
-    if WEAK_TITLE_RE.search(title):
+    if HARD_WEAK_TITLE_RE.search(title):
         return False
     if NONTECH_EVAL_RE.search(title) and not ENGINEERING_TITLE_RE.search(title):
         return False
     if NON_AI_TECH_TITLE_RE.search(title) and not AI_DOMAIN_RE.search(text):
         return False
-    domain_count = sum(1 for term in AI_DOMAIN_TERMS if re.search(term_pattern(term), text, re.IGNORECASE))
+    domain_count = sum(1 for term_re in AI_DOMAIN_TERM_RES if term_re.search(text))
     title_has_domain = bool(REQUIRED_TITLE_RE.search(title) or AI_DOMAIN_RE.search(title))
-    if not ENGINEERING_TITLE_RE.search(title) and not (title_has_domain and domain_count >= 4):
+    title_is_engineering = bool(ENGINEERING_TITLE_RE.search(title))
+    if SOFT_TECH_WEAK_TITLE_RE.search(title) and not (
+        title_is_engineering and ((title_has_domain and domain_count >= 1) or domain_count >= 2)
+    ):
         return False
-    return title_has_domain
+    if not title_is_engineering and not (title_has_domain and domain_count >= 1):
+        return False
+    return title_has_domain or domain_count >= 1
 
 
 def row_text(row: dict[str, Any]) -> str:
@@ -838,6 +1332,7 @@ def update_summary(
     used_tasks: list[dict[str, Any]],
     scrape_time: str,
     recent_since: str,
+    search_cities: dict[str, str],
 ) -> None:
     summary = json.loads(JD_SUMMARY.read_text(encoding="utf-8")) if JD_SUMMARY.exists() else {}
     source_counts: dict[str, int] = {}
@@ -859,18 +1354,21 @@ def update_summary(
         "source": "zhaopin_search_page",
         "topic": "domestic strong AI/ML technical jobs only",
         "keywords": STRONG_KEYWORDS,
-        "cities": list(helper.CITIES.values()),
+        "cities": ["全国", *list(search_cities.values())],
         "fallback_source": None,
         "source_counts": source_counts,
         "recent_since": recent_since,
         "total_after": len(rows),
         "sort": "job_title, company_name, location, job_id",
+        "workers": stats.get("workers"),
         "scrape_time": scrape_time,
         "filter": {
             "required_title_terms": REQUIRED_TITLE_TERMS,
             "core_terms": CORE_TERMS,
             "title_strong_terms": TITLE_STRONG_TERMS,
             "weak_title_terms": WEAK_TITLE_TERMS,
+            "hard_weak_title_terms": HARD_WEAK_TITLE_TERMS,
+            "soft_tech_weak_title_terms": SOFT_TECH_WEAK_TITLE_TERMS,
             "engineering_title_terms": ENGINEERING_TITLE_TERMS,
             "domestic_only": True,
         },
