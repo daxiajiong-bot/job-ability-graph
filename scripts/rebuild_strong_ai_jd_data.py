@@ -549,6 +549,213 @@ ENGINEERING_TITLE_RE = re.compile("|".join(term_pattern(term) for term in ENGINE
 NON_AI_TECH_TITLE_RE = re.compile("|".join(term_pattern(term) for term in NON_AI_TECH_TITLE_TERMS), re.IGNORECASE)
 NONTECH_EVAL_RE = re.compile(r"训练|测评|评测|评估|测试")
 
+# These roles may mention or use AI, but their primary work is not AI software,
+# algorithm, model, or agent development.
+NON_DEVELOPMENT_TITLE_TERMS = [
+    "营销",
+    "渠道",
+    "解决方案",
+    "顾问",
+    "咨询",
+    "运营",
+    "办公助理",
+    "产品经理",
+    "产品负责人",
+    "产品总监",
+    "产品助理",
+    "产品专员",
+    "项目经理",
+    "项目管理",
+    "数据分析师",
+    "业务分析师",
+    "分析专员",
+    "分析师",
+    "美术",
+    "美工",
+    "画师",
+    "动漫",
+    "动画",
+    "制作师",
+    "内容创作",
+    "内容策划",
+    "技术员",
+    "调试",
+    "专员",
+    "标注",
+    "审核",
+    "测评",
+    "评测",
+    "评估",
+    "测试",
+    "检测员",
+    "质检",
+    "质控",
+    "训练师",
+    "实施",
+    "交付",
+    "技术支持",
+    "客户成功",
+    "赋能师",
+    "赋能专员",
+    "预算员",
+    "造价工程师",
+    "Sales",
+    "Marketing",
+    "Solution",
+    "Consultant",
+    "Operations",
+    "Data Analyst",
+    "Business Analyst",
+    "Designer",
+    "Artist",
+    "Animator",
+    "Tester",
+    "Testing",
+    "Support",
+]
+
+SPECIFIC_AI_TITLE_TERMS = [
+    "机器学习",
+    "深度学习",
+    "大模型",
+    "大语言模型",
+    "自然语言处理",
+    "计算机视觉",
+    "机器视觉",
+    "图像算法",
+    "视觉算法",
+    "图像识别",
+    "目标检测",
+    "多模态",
+    "推荐算法",
+    "推荐系统",
+    "搜索算法",
+    "搜索推荐",
+    "强化学习",
+    "知识图谱",
+    "语音识别",
+    "语音算法",
+    "神经网络",
+    "数据挖掘",
+    "模型训练",
+    "模型微调",
+    "模型推理",
+    "模型部署",
+    "推理优化",
+    "智能体开发",
+    "智能体研发",
+    "智能体算法",
+    "智能体",
+    "Agent开发",
+    "Agent研发",
+    "AI Agent",
+    "Agent",
+    "具身智能",
+    "自动驾驶算法",
+    "智能驾驶算法",
+    "MLOps",
+    "AI Infra",
+    "NLP",
+    "LLM",
+    "RAG",
+    "OCR",
+    "ASR",
+    "TTS",
+    "Data Scientist",
+    "Applied Scientist",
+    "Machine Learning",
+    "Deep Learning",
+    "Computer Vision",
+    "Generative AI",
+    "GenAI",
+    "Reinforcement Learning",
+]
+
+DEVELOPMENT_TITLE_TERMS = [
+    "工程师",
+    "开发",
+    "研发",
+    "算法",
+    "研究员",
+    "研究",
+    "博士后",
+    "科学家",
+    "架构师",
+    "技术专家",
+    "程序员",
+    "全栈",
+    "后端",
+    "软件",
+    "平台",
+    "建模",
+    "部署",
+    "推理",
+    "实习生",
+    "Engineer",
+    "Developer",
+    "Scientist",
+    "Researcher",
+    "Architect",
+]
+
+AI_TECHNICAL_EVIDENCE_GROUPS = [
+    ["机器学习", "深度学习", "监督学习", "无监督学习", "分类模型", "回归模型", "聚类算法"],
+    ["PyTorch", "TensorFlow", "MindSpore", "PaddlePaddle", "JAX", "scikit-learn", "XGBoost"],
+    ["模型训练", "预训练", "微调", "LoRA", "SFT", "DPO", "RLHF", "蒸馏", "量化"],
+    ["模型推理", "推理优化", "推理服务", "vLLM", "SGLang", "TensorRT", "ONNX", "CUDA"],
+    ["大语言模型", "大模型", "LLM", "Transformer", "BERT", "GPT", "Qwen", "DeepSeek"],
+    ["RAG", "Embedding", "向量数据库", "向量检索", "Milvus", "FAISS", "Rerank"],
+    [
+        "Function Calling",
+        "Tool Calling",
+        "多Agent",
+        "多智能体",
+        "Agent框架",
+        "智能体框架",
+        "LangChain",
+        "LangGraph",
+        "LlamaIndex",
+        "AutoGen",
+        "CrewAI",
+        "MCP",
+    ],
+    ["计算机视觉", "目标检测", "图像识别", "图像分割", "OpenCV", "YOLO", "卷积神经网络", "CNN"],
+    ["自然语言处理", "NLP", "文本分类", "命名实体识别", "信息抽取", "语义匹配"],
+    ["推荐系统", "推荐算法", "搜索算法", "排序模型", "召回模型", "CTR", "Learning to Rank"],
+    ["语音识别", "语音合成", "语音算法", "ASR", "TTS", "声学模型"],
+    ["强化学习", "知识图谱", "多模态", "扩散模型", "Diffusion", "生成对抗网络", "GAN"],
+]
+
+NON_DEVELOPMENT_TITLE_RE = re.compile(
+    "|".join(term_pattern(term) for term in NON_DEVELOPMENT_TITLE_TERMS),
+    re.IGNORECASE,
+)
+SPECIFIC_AI_TITLE_RE = re.compile(
+    "|".join(term_pattern(term) for term in SPECIFIC_AI_TITLE_TERMS),
+    re.IGNORECASE,
+)
+DEVELOPMENT_TITLE_RE = re.compile(
+    "|".join(term_pattern(term) for term in DEVELOPMENT_TITLE_TERMS),
+    re.IGNORECASE,
+)
+ALGORITHM_TITLE_RE = re.compile(r"算法|模型(?:工程师|研发|开发|科学家|专家)", re.IGNORECASE)
+OPENCLAW_RE = re.compile(r"(?:openclaw|0penclaw|龙虾)", re.IGNORECASE)
+OPENCLAW_DEVELOPMENT_RE = re.compile(
+    r"二次开发|源码|深度定制|重构|核心模块|runtime|executor|skill(?:s)?开发|"
+    r"智能体(?:系统|平台|框架|开发|研发)|agent(?:系统|平台|框架|开发|研发)|"
+    r"function calling|tool calling|多agent|多智能体|langchain|langgraph|llamaindex|autogen|crewai|mcp",
+    re.IGNORECASE,
+)
+AI_BUILD_ACTION_RE = re.compile(
+    r"开发|研发|设计并实现|设计与实现|构建|训练|预训练|微调|推理|部署|工程化|"
+    r"架构设计|二次开发|重构|编程|代码|建模|算法优化|模型优化",
+    re.IGNORECASE,
+)
+AI_TECHNICAL_EVIDENCE_RES = [
+    re.compile("|".join(term_pattern(term) for term in group), re.IGNORECASE)
+    for group in AI_TECHNICAL_EVIDENCE_GROUPS
+]
+
 ZHAOPIN_HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126 Safari/537.36",
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
@@ -1184,20 +1391,13 @@ def split_lines(text: str) -> list[str]:
 
 def quick_reject_zhaopin_item(item: dict[str, Any]) -> bool:
     title = first_text(item.get("name"), get_path(item, ["jobDetailData", "position", "base", "positionName"]))
-    if HARD_WEAK_TITLE_RE.search(title):
+    if HARD_WEAK_TITLE_RE.search(title) or NON_DEVELOPMENT_TITLE_RE.search(title):
         return True
-    if NONTECH_EVAL_RE.search(title) and not ENGINEERING_TITLE_RE.search(title):
+    if NONTECH_EVAL_RE.search(title):
         return True
 
     text = raw_item_text(item, title)
-    raw_has_domain = bool(AI_DOMAIN_RE.search(text))
-    title_has_domain = bool(REQUIRED_TITLE_RE.search(title) or AI_DOMAIN_RE.search(title))
-    title_is_engineering = bool(ENGINEERING_TITLE_RE.search(title))
-    if NON_AI_TECH_TITLE_RE.search(title) and not raw_has_domain:
-        return True
-    if not title_is_engineering and not (title_has_domain and raw_has_domain):
-        return True
-    return not title_has_domain and not raw_has_domain
+    return not has_ai_development_title(title) or not AI_BUILD_ACTION_RE.search(text)
 
 
 def raw_item_text(item: dict[str, Any], title: str) -> str:
@@ -1256,24 +1456,39 @@ def is_themuse_recent(value: str, cutoff: datetime) -> bool:
 def is_strong_ai_ml_related(row: dict[str, Any]) -> bool:
     title = str(row.get("job_title") or "")
     text = row_text(row)
+    body = row_body_text(row)
     if row.get("source_name") != "zhaopin":
         return False
-    if HARD_WEAK_TITLE_RE.search(title):
+    if HARD_WEAK_TITLE_RE.search(title) or NON_DEVELOPMENT_TITLE_RE.search(title):
         return False
-    if NONTECH_EVAL_RE.search(title) and not ENGINEERING_TITLE_RE.search(title):
+    if NONTECH_EVAL_RE.search(title):
         return False
-    if NON_AI_TECH_TITLE_RE.search(title) and not AI_DOMAIN_RE.search(text):
+    if not has_ai_development_title(title):
         return False
-    domain_count = sum(1 for term_re in AI_DOMAIN_TERM_RES if term_re.search(text))
-    title_has_domain = bool(REQUIRED_TITLE_RE.search(title) or AI_DOMAIN_RE.search(title))
-    title_is_engineering = bool(ENGINEERING_TITLE_RE.search(title))
-    if SOFT_TECH_WEAK_TITLE_RE.search(title) and not (
-        title_is_engineering and ((title_has_domain and domain_count >= 1) or domain_count >= 2)
-    ):
+    if not AI_BUILD_ACTION_RE.search(body):
         return False
-    if not title_is_engineering and not (title_has_domain and domain_count >= 1):
+
+    evidence_count = ai_technical_evidence_count(body)
+    if OPENCLAW_RE.search(title):
+        return evidence_count >= 2 and bool(OPENCLAW_DEVELOPMENT_RE.search(text))
+
+    if NON_AI_TECH_TITLE_RE.search(title) and evidence_count < 2:
         return False
-    return title_has_domain or domain_count >= 1
+    if SPECIFIC_AI_TITLE_RE.search(title) or ALGORITHM_TITLE_RE.search(title):
+        return evidence_count >= 1
+
+    # A bare "AI" in an otherwise generic engineering title is not enough.
+    return bool(DEVELOPMENT_TITLE_RE.search(title)) and evidence_count >= 2
+
+
+def has_ai_development_title(title: str) -> bool:
+    if SPECIFIC_AI_TITLE_RE.search(title) or ALGORITHM_TITLE_RE.search(title):
+        return True
+    return bool(REQUIRED_TITLE_RE.search(title) and DEVELOPMENT_TITLE_RE.search(title))
+
+
+def ai_technical_evidence_count(text: str) -> int:
+    return sum(1 for evidence_re in AI_TECHNICAL_EVIDENCE_RES if evidence_re.search(text))
 
 
 def row_text(row: dict[str, Any]) -> str:
@@ -1281,6 +1496,18 @@ def row_text(row: dict[str, Any]) -> str:
         str(row.get("job_title") or ""),
         str(row.get("industry") or ""),
         str(row.get("jd_text") or ""),
+        str(row.get("company_name") or ""),
+    ]
+    for key in ["responsibilities", "requirements", "skills_raw", "skills_norm"]:
+        value = row.get(key) or []
+        pieces.append(" ".join(map(str, value)) if isinstance(value, list) else str(value))
+    return " ".join(pieces)
+
+
+def row_body_text(row: dict[str, Any]) -> str:
+    pieces = [
+        str(row.get("jd_text") or ""),
+        str(row.get("industry") or ""),
         str(row.get("company_name") or ""),
     ]
     for key in ["responsibilities", "requirements", "skills_raw", "skills_norm"]:
@@ -1370,6 +1597,10 @@ def update_summary(
             "hard_weak_title_terms": HARD_WEAK_TITLE_TERMS,
             "soft_tech_weak_title_terms": SOFT_TECH_WEAK_TITLE_TERMS,
             "engineering_title_terms": ENGINEERING_TITLE_TERMS,
+            "non_development_title_terms": NON_DEVELOPMENT_TITLE_TERMS,
+            "specific_ai_title_terms": SPECIFIC_AI_TITLE_TERMS,
+            "technical_evidence_groups": AI_TECHNICAL_EVIDENCE_GROUPS,
+            "selection_rule": "AI-development title plus technical evidence in JD text",
             "domestic_only": True,
         },
         "stats": stats,
