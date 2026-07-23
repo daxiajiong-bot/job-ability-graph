@@ -1,0 +1,65 @@
+{
+  "artifact_type": "job_profile",
+  "created_at": "2026-07-20T15:33:39Z",
+  "extraction": {
+    "evidence": [],
+    "fields": {},
+    "implementation": "mock",
+    "model": null,
+    "raw_model_output": "",
+    "reason": "Structured extraction is reserved for a future local LLM.",
+    "schema": null,
+    "state": "not_implemented",
+    "validation_error": "",
+    "warnings": []
+  },
+  "normalization": {
+    "implementation": "mock",
+    "skills": [],
+    "state": "not_implemented",
+    "warnings": []
+  },
+  "profile": {
+    "artifacts": {
+      "profile_json": "data\\structured\\profiles\\job\\job_profile_b68e4400296540fbb567a2d7e85dd624.json",
+      "schema_version": "profile-extraction/v2",
+      "storage": "filesystem"
+    },
+    "attributes": {
+      "capabilities": [],
+      "education": [],
+      "experience": [],
+      "jd_profile": {},
+      "job": {},
+      "job_title": null,
+      "profile_schema": "profile-extraction/v2",
+      "projects": [],
+      "requirements": [],
+      "responsibilities": [],
+      "skills": []
+    },
+    "created_at": "2026-07-20T15:33:39Z",
+    "evidence": [],
+    "id": "job_profile_b68e4400296540fbb567a2d7e85dd624",
+    "implementation": "mock",
+    "profile_type": "job",
+    "source_document_id": "doc_ed911bb0d426413c883c43480643c940",
+    "state": "not_implemented",
+    "warnings": [
+      "No extraction, normalization, or inference has been performed."
+    ]
+  },
+  "schema_version": "profile-extraction/v2",
+  "source_document": {
+    "char_count": 26,
+    "content_digest": "25db0d1bde15a20db31730a7eedbf13fe77ebfc2c3be7a2efe1a89dbed32fede",
+    "created_at": "2026-07-20T15:33:25Z",
+    "document_type": "jd",
+    "id": "doc_ed911bb0d426413c883c43480643c940",
+    "metadata": {},
+    "source": {
+      "source_system": "manual"
+    },
+    "storage": "memory"
+  }
+}
