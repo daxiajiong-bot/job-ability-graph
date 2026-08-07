@@ -1,0 +1,1247 @@
+{
+  "artifact_type": "job_profile",
+  "created_at": "2026-08-06T12:32:30Z",
+  "extraction": {
+    "evidence": [
+      {
+        "field": "responsibilities",
+        "id": "ev_001",
+        "text": "- 负责公司品牌视觉设计工作，包含LOGO优化、海报、宣传单页、画册、展板、易拉宝等线下物料设计"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_002",
+        "text": "- 负责新媒体视觉物料输出，制作公众号配图、小红书封面、短视频海报、活动banner等线上素材"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_003",
+        "text": "- 根据品牌调性、营销主题、产品卖点独立完成创意构思、版式设计、色彩搭配"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_004",
+        "text": "- 负责产品详情页、主图、包装版式、线下宣传物料的设计与排版"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_005",
+        "text": "- 整理归档设计源文件，建立物料素材库，持续优化视觉风格"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_006",
+        "text": "- 配合团队完成日常设计需求对接、校对、输出，把控画面细节、文字规范、印刷尺寸"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_007",
+        "text": "- 大专及以上学历，视觉传达、平面设计、艺术设计、数字媒体等相关专业"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_008",
+        "text": "- 熟练使用PS、AI、CDR等主流设计软件，具备独立出图、版式排版、色彩搭配能力"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_009",
+        "text": "- 熟悉线上新媒体物料、线下印刷物料设计规范，了解尺寸、分辨率、印刷工艺"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_010",
+        "text": "- 具备良好的创意理解能力，能够快速对接需求、消化修改意见"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_011",
+        "text": "- 拥有个人设计作品集，有品牌宣传、电商视觉、新媒体海报设计经验者优先"
+      }
+    ],
+    "fields": {
+      "application_scenarios": [
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "name": "品牌宣传设计"
+        },
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "name": "电商视觉设计"
+        },
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "name": "新媒体内容制作"
+        }
+      ],
+      "candidate": {
+        "name": null,
+        "target_position": null
+      },
+      "capabilities": [
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "importance": "required",
+          "name": "品牌视觉设计"
+        },
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "importance": "required",
+          "name": "新媒体视觉物料输出"
+        }
+      ],
+      "company": {
+        "industry": null,
+        "location": "一线城市",
+        "name": null
+      },
+      "document_type": "jd",
+      "education": [],
+      "employment": {
+        "employment_type": "full_time",
+        "published_at": null,
+        "salary_max": 12000,
+        "salary_min": 7000
+      },
+      "evaluation_signals": [],
+      "evidence": [
+        {
+          "field": "responsibilities",
+          "id": "ev_001",
+          "text": "- 负责公司品牌视觉设计工作，包含LOGO优化、海报、宣传单页、画册、展板、易拉宝等线下物料设计"
+        },
+        {
+          "field": "responsibilities",
+          "id": "ev_002",
+          "text": "- 负责新媒体视觉物料输出，制作公众号配图、小红书封面、短视频海报、活动banner等线上素材"
+        },
+        {
+          "field": "responsibilities",
+          "id": "ev_003",
+          "text": "- 根据品牌调性、营销主题、产品卖点独立完成创意构思、版式设计、色彩搭配"
+        },
+        {
+          "field": "responsibilities",
+          "id": "ev_004",
+          "text": "- 负责产品详情页、主图、包装版式、线下宣传物料的设计与排版"
+        },
+        {
+          "field": "responsibilities",
+          "id": "ev_005",
+          "text": "- 整理归档设计源文件，建立物料素材库，持续优化视觉风格"
+        },
+        {
+          "field": "responsibilities",
+          "id": "ev_006",
+          "text": "- 配合团队完成日常设计需求对接、校对、输出，把控画面细节、文字规范、印刷尺寸"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_007",
+          "text": "- 大专及以上学历，视觉传达、平面设计、艺术设计、数字媒体等相关专业"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_008",
+          "text": "- 熟练使用PS、AI、CDR等主流设计软件，具备独立出图、版式排版、色彩搭配能力"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_009",
+          "text": "- 熟悉线上新媒体物料、线下印刷物料设计规范，了解尺寸、分辨率、印刷工艺"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_010",
+          "text": "- 具备良好的创意理解能力，能够快速对接需求、消化修改意见"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_011",
+          "text": "- 拥有个人设计作品集，有品牌宣传、电商视觉、新媒体海报设计经验者优先"
+        }
+      ],
+      "experience": [],
+      "job": {
+        "department": "设计部/市场部",
+        "normalized_title": null,
+        "seniority": null,
+        "title": "平面设计师"
+      },
+      "projects": [],
+      "requirements": [
+        {
+          "evidence_ids": [
+            "ev_007"
+          ],
+          "importance": "required",
+          "requirement_type": "education",
+          "text": "大专及以上学历，视觉传达、平面设计、艺术设计、数字媒体等相关专业"
+        },
+        {
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "熟练使用PS、AI、CDR等主流设计软件，具备独立出图、版式排版、色彩搭配能力"
+        },
+        {
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "审美在线，具备成熟的视觉设计思维"
+        },
+        {
+          "evidence_ids": [
+            "ev_009"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "熟悉线上新媒体物料、线下印刷物料设计规范，了解尺寸、分辨率、印刷工艺"
+        },
+        {
+          "evidence_ids": [
+            "ev_009"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "能够独立完成全品类物料设计落地"
+        },
+        {
+          "evidence_ids": [
+            "ev_010"
+          ],
+          "importance": "preferred",
+          "requirement_type": "skill",
+          "text": "具备良好的创意理解能力，能够快速对接需求、消化修改意见"
+        },
+        {
+          "evidence_ids": [
+            "ev_010"
+          ],
+          "importance": "preferred",
+          "requirement_type": "skill",
+          "text": "执行力强，可适配多任务并行、节点紧急的设计工作"
+        },
+        {
+          "evidence_ids": [
+            "ev_011"
+          ],
+          "importance": "preferred",
+          "requirement_type": "experience",
+          "text": "拥有个人设计作品集，有品牌宣传、电商视觉、新媒体海报设计经验者优先"
+        }
+      ],
+      "responsibilities": [
+        {
+          "action": "负责",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "object": "公司品牌视觉设计工作",
+          "text": "负责公司品牌视觉设计工作，包含LOGO优化、海报、宣传单页、画册、展板、易拉宝等线下物料设计"
+        },
+        {
+          "action": "适配",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "object": "品牌视觉规范",
+          "text": "适配品牌视觉规范，保证画面美观、构图完整、配色协调"
+        },
+        {
+          "action": "负责",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "object": "新媒体视觉物料输出",
+          "text": "负责新媒体视觉物料输出，制作公众号配图、小红书封面、短视频海报、活动banner等线上素材"
+        },
+        {
+          "action": "贴合",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "object": "平台风格与营销场景",
+          "text": "贴合平台风格与营销场景，配合内容传播与活动推广"
+        },
+        {
+          "action": "独立完成",
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "object": "创意构思、版式设计、色彩搭配",
+          "text": "根据品牌调性、营销主题、产品卖点独立完成创意构思、版式设计、色彩搭配"
+        },
+        {
+          "action": "输出",
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "object": "符合预期的设计初稿",
+          "text": "能够精准理解需求，输出符合预期的设计初稿，并根据反馈高效修改落地"
+        },
+        {
+          "action": "负责",
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "object": "产品详情页等设计与排版",
+          "text": "负责产品详情页、主图、包装版式、线下宣传物料的设计与排版"
+        },
+        {
+          "action": "配合",
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "object": "电商运营等完成节点性视觉物料输出",
+          "text": "配合电商运营、市场推广完成节点性视觉物料输出，保障营销活动顺利落地"
+        },
+        {
+          "action": "整理归档",
+          "evidence_ids": [
+            "ev_005"
+          ],
+          "object": "设计源文件等",
+          "text": "整理归档设计源文件，建立物料素材库，持续优化视觉风格"
+        },
+        {
+          "action": "跟进行业设计趋势",
+          "evidence_ids": [
+            "ev_005"
+          ],
+          "object": "品牌视觉体系",
+          "text": "跟进行业设计趋势，迭代品牌视觉体系，保证整体视觉统一、美观、年轻化"
+        },
+        {
+          "action": "配合",
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "object": "团队完成日常设计需求对接等",
+          "text": "配合团队完成日常设计需求对接、校对、输出，把控画面细节、文字规范、印刷尺寸"
+        },
+        {
+          "action": "确保",
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "object": "物料落地无偏差等",
+          "text": "确保物料落地无偏差，高效完成日常及紧急设计任务"
+        }
+      ],
+      "schema_version": "profile-extraction/v2",
+      "skills": [
+        {
+          "category": "tool",
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "PS",
+          "raw_name": "PS"
+        },
+        {
+          "category": "tool",
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "AI",
+          "raw_name": "AI"
+        },
+        {
+          "category": "tool",
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "CDR",
+          "raw_name": "CDR"
+        },
+        {
+          "category": "soft_skill",
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "importance": "required",
+          "lskt_label": "T",
+          "name": "视觉设计思维",
+          "raw_name": "视觉设计思维"
+        },
+        {
+          "category": "soft_skill",
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "审美在线",
+          "raw_name": "审美在线"
+        },
+        {
+          "category": "soft_skill",
+          "evidence_ids": [
+            "ev_010"
+          ],
+          "importance": "preferred",
+          "lskt_label": "S",
+          "name": "创意理解能力",
+          "raw_name": "创意理解能力"
+        }
+      ]
+    },
+    "implementation": "ollama",
+    "model": "qwen2.5:7b",
+    "raw_model_output": "",
+    "reason": "",
+    "schema": "profile-extraction/v2",
+    "state": "available",
+    "validation_error": "",
+    "warnings": [
+      "requirements[2] ignored: evidence_text must be copied from the source document",
+      "requirements[10] ignored: evidence_text must be copied from the source document"
+    ]
+  },
+  "normalization": {
+    "implementation": "lightweight_skill_normalizer",
+    "skills": [
+      {
+        "category": "tool",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_008"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "PS",
+        "raw_name": "PS"
+      },
+      {
+        "category": "tool",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_008"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "AI",
+        "raw_name": "AI"
+      },
+      {
+        "category": "tool",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_008"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "CDR",
+        "raw_name": "CDR"
+      },
+      {
+        "category": "soft_skill",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_008"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "T",
+        "name": "视觉设计思维",
+        "raw_name": "视觉设计思维"
+      },
+      {
+        "category": "soft_skill",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_008"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "审美在线",
+        "raw_name": "审美在线"
+      },
+      {
+        "category": "soft_skill",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_010"
+        ],
+        "importance": "preferred",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "创意理解能力",
+        "raw_name": "创意理解能力"
+      }
+    ],
+    "state": "available",
+    "warnings": []
+  },
+  "profile": {
+    "artifacts": {
+      "profile_json": "data\\structured\\profiles\\job\\job_profile_841431afa64a4915ae9cefd8cd03039a.json",
+      "schema_version": "profile-extraction/v2",
+      "storage": "filesystem"
+    },
+    "attributes": {
+      "capabilities": [
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "importance": "required",
+          "name": "品牌视觉设计"
+        },
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "importance": "required",
+          "name": "新媒体视觉物料输出"
+        }
+      ],
+      "company": {
+        "industry": null,
+        "location": "一线城市",
+        "name": null
+      },
+      "education": [],
+      "employment": {
+        "employment_type": "full_time",
+        "published_at": null,
+        "salary_max": 12000,
+        "salary_min": 7000
+      },
+      "experience": [],
+      "jd_profile": {
+        "application_scenarios": [
+          {
+            "description": null,
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "name": "品牌宣传设计"
+          },
+          {
+            "description": null,
+            "evidence_ids": [
+              "ev_004"
+            ],
+            "name": "电商视觉设计"
+          },
+          {
+            "description": null,
+            "evidence_ids": [
+              "ev_002"
+            ],
+            "name": "新媒体内容制作"
+          }
+        ],
+        "capabilities": [
+          {
+            "description": null,
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "importance": "required",
+            "name": "品牌视觉设计"
+          },
+          {
+            "description": null,
+            "evidence_ids": [
+              "ev_002"
+            ],
+            "importance": "required",
+            "name": "新媒体视觉物料输出"
+          }
+        ],
+        "company": {
+          "industry": null,
+          "location": "一线城市",
+          "name": null
+        },
+        "document_type": "jd",
+        "employment": {
+          "employment_type": "full_time",
+          "published_at": null,
+          "salary_max": 12000,
+          "salary_min": 7000
+        },
+        "evaluation_signals": [],
+        "job": {
+          "department": "设计部/市场部",
+          "normalized_title": null,
+          "seniority": null,
+          "title": "平面设计师"
+        },
+        "requirements": [
+          {
+            "evidence_ids": [
+              "ev_007"
+            ],
+            "importance": "required",
+            "requirement_type": "education",
+            "text": "大专及以上学历，视觉传达、平面设计、艺术设计、数字媒体等相关专业"
+          },
+          {
+            "evidence_ids": [
+              "ev_008"
+            ],
+            "importance": "required",
+            "requirement_type": "skill",
+            "text": "熟练使用PS、AI、CDR等主流设计软件，具备独立出图、版式排版、色彩搭配能力"
+          },
+          {
+            "evidence_ids": [
+              "ev_008"
+            ],
+            "importance": "required",
+            "requirement_type": "skill",
+            "text": "审美在线，具备成熟的视觉设计思维"
+          },
+          {
+            "evidence_ids": [
+              "ev_009"
+            ],
+            "importance": "required",
+            "requirement_type": "skill",
+            "text": "熟悉线上新媒体物料、线下印刷物料设计规范，了解尺寸、分辨率、印刷工艺"
+          },
+          {
+            "evidence_ids": [
+              "ev_009"
+            ],
+            "importance": "required",
+            "requirement_type": "skill",
+            "text": "能够独立完成全品类物料设计落地"
+          },
+          {
+            "evidence_ids": [
+              "ev_010"
+            ],
+            "importance": "preferred",
+            "requirement_type": "skill",
+            "text": "具备良好的创意理解能力，能够快速对接需求、消化修改意见"
+          },
+          {
+            "evidence_ids": [
+              "ev_010"
+            ],
+            "importance": "preferred",
+            "requirement_type": "skill",
+            "text": "执行力强，可适配多任务并行、节点紧急的设计工作"
+          },
+          {
+            "evidence_ids": [
+              "ev_011"
+            ],
+            "importance": "preferred",
+            "requirement_type": "experience",
+            "text": "拥有个人设计作品集，有品牌宣传、电商视觉、新媒体海报设计经验者优先"
+          }
+        ],
+        "responsibilities": [
+          {
+            "action": "负责",
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "object": "公司品牌视觉设计工作",
+            "text": "负责公司品牌视觉设计工作，包含LOGO优化、海报、宣传单页、画册、展板、易拉宝等线下物料设计"
+          },
+          {
+            "action": "适配",
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "object": "品牌视觉规范",
+            "text": "适配品牌视觉规范，保证画面美观、构图完整、配色协调"
+          },
+          {
+            "action": "负责",
+            "evidence_ids": [
+              "ev_002"
+            ],
+            "object": "新媒体视觉物料输出",
+            "text": "负责新媒体视觉物料输出，制作公众号配图、小红书封面、短视频海报、活动banner等线上素材"
+          },
+          {
+            "action": "贴合",
+            "evidence_ids": [
+              "ev_002"
+            ],
+            "object": "平台风格与营销场景",
+            "text": "贴合平台风格与营销场景，配合内容传播与活动推广"
+          },
+          {
+            "action": "独立完成",
+            "evidence_ids": [
+              "ev_003"
+            ],
+            "object": "创意构思、版式设计、色彩搭配",
+            "text": "根据品牌调性、营销主题、产品卖点独立完成创意构思、版式设计、色彩搭配"
+          },
+          {
+            "action": "输出",
+            "evidence_ids": [
+              "ev_003"
+            ],
+            "object": "符合预期的设计初稿",
+            "text": "能够精准理解需求，输出符合预期的设计初稿，并根据反馈高效修改落地"
+          },
+          {
+            "action": "负责",
+            "evidence_ids": [
+              "ev_004"
+            ],
+            "object": "产品详情页等设计与排版",
+            "text": "负责产品详情页、主图、包装版式、线下宣传物料的设计与排版"
+          },
+          {
+            "action": "配合",
+            "evidence_ids": [
+              "ev_004"
+            ],
+            "object": "电商运营等完成节点性视觉物料输出",
+            "text": "配合电商运营、市场推广完成节点性视觉物料输出，保障营销活动顺利落地"
+          },
+          {
+            "action": "整理归档",
+            "evidence_ids": [
+              "ev_005"
+            ],
+            "object": "设计源文件等",
+            "text": "整理归档设计源文件，建立物料素材库，持续优化视觉风格"
+          },
+          {
+            "action": "跟进行业设计趋势",
+            "evidence_ids": [
+              "ev_005"
+            ],
+            "object": "品牌视觉体系",
+            "text": "跟进行业设计趋势，迭代品牌视觉体系，保证整体视觉统一、美观、年轻化"
+          },
+          {
+            "action": "配合",
+            "evidence_ids": [
+              "ev_006"
+            ],
+            "object": "团队完成日常设计需求对接等",
+            "text": "配合团队完成日常设计需求对接、校对、输出，把控画面细节、文字规范、印刷尺寸"
+          },
+          {
+            "action": "确保",
+            "evidence_ids": [
+              "ev_006"
+            ],
+            "object": "物料落地无偏差等",
+            "text": "确保物料落地无偏差，高效完成日常及紧急设计任务"
+          }
+        ],
+        "schema_version": "profile-extraction/v2",
+        "skills": [
+          {
+            "category": "tool",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_008"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "PS",
+            "raw_name": "PS"
+          },
+          {
+            "category": "tool",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_008"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "AI",
+            "raw_name": "AI"
+          },
+          {
+            "category": "tool",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_008"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "CDR",
+            "raw_name": "CDR"
+          },
+          {
+            "category": "soft_skill",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_008"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "T",
+            "name": "视觉设计思维",
+            "raw_name": "视觉设计思维"
+          },
+          {
+            "category": "soft_skill",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_008"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "审美在线",
+            "raw_name": "审美在线"
+          },
+          {
+            "category": "soft_skill",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_010"
+            ],
+            "importance": "preferred",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "创意理解能力",
+            "raw_name": "创意理解能力"
+          }
+        ]
+      },
+      "job": {
+        "department": "设计部/市场部",
+        "normalized_title": null,
+        "seniority": null,
+        "title": "平面设计师"
+      },
+      "job_title": "平面设计师",
+      "profile_schema": "profile-extraction/v2",
+      "projects": [],
+      "requirements": [
+        {
+          "evidence_ids": [
+            "ev_007"
+          ],
+          "importance": "required",
+          "requirement_type": "education",
+          "text": "大专及以上学历，视觉传达、平面设计、艺术设计、数字媒体等相关专业"
+        },
+        {
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "熟练使用PS、AI、CDR等主流设计软件，具备独立出图、版式排版、色彩搭配能力"
+        },
+        {
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "审美在线，具备成熟的视觉设计思维"
+        },
+        {
+          "evidence_ids": [
+            "ev_009"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "熟悉线上新媒体物料、线下印刷物料设计规范，了解尺寸、分辨率、印刷工艺"
+        },
+        {
+          "evidence_ids": [
+            "ev_009"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "能够独立完成全品类物料设计落地"
+        },
+        {
+          "evidence_ids": [
+            "ev_010"
+          ],
+          "importance": "preferred",
+          "requirement_type": "skill",
+          "text": "具备良好的创意理解能力，能够快速对接需求、消化修改意见"
+        },
+        {
+          "evidence_ids": [
+            "ev_010"
+          ],
+          "importance": "preferred",
+          "requirement_type": "skill",
+          "text": "执行力强，可适配多任务并行、节点紧急的设计工作"
+        },
+        {
+          "evidence_ids": [
+            "ev_011"
+          ],
+          "importance": "preferred",
+          "requirement_type": "experience",
+          "text": "拥有个人设计作品集，有品牌宣传、电商视觉、新媒体海报设计经验者优先"
+        }
+      ],
+      "responsibilities": [
+        {
+          "action": "负责",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "object": "公司品牌视觉设计工作",
+          "text": "负责公司品牌视觉设计工作，包含LOGO优化、海报、宣传单页、画册、展板、易拉宝等线下物料设计"
+        },
+        {
+          "action": "适配",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "object": "品牌视觉规范",
+          "text": "适配品牌视觉规范，保证画面美观、构图完整、配色协调"
+        },
+        {
+          "action": "负责",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "object": "新媒体视觉物料输出",
+          "text": "负责新媒体视觉物料输出，制作公众号配图、小红书封面、短视频海报、活动banner等线上素材"
+        },
+        {
+          "action": "贴合",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "object": "平台风格与营销场景",
+          "text": "贴合平台风格与营销场景，配合内容传播与活动推广"
+        },
+        {
+          "action": "独立完成",
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "object": "创意构思、版式设计、色彩搭配",
+          "text": "根据品牌调性、营销主题、产品卖点独立完成创意构思、版式设计、色彩搭配"
+        },
+        {
+          "action": "输出",
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "object": "符合预期的设计初稿",
+          "text": "能够精准理解需求，输出符合预期的设计初稿，并根据反馈高效修改落地"
+        },
+        {
+          "action": "负责",
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "object": "产品详情页等设计与排版",
+          "text": "负责产品详情页、主图、包装版式、线下宣传物料的设计与排版"
+        },
+        {
+          "action": "配合",
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "object": "电商运营等完成节点性视觉物料输出",
+          "text": "配合电商运营、市场推广完成节点性视觉物料输出，保障营销活动顺利落地"
+        },
+        {
+          "action": "整理归档",
+          "evidence_ids": [
+            "ev_005"
+          ],
+          "object": "设计源文件等",
+          "text": "整理归档设计源文件，建立物料素材库，持续优化视觉风格"
+        },
+        {
+          "action": "跟进行业设计趋势",
+          "evidence_ids": [
+            "ev_005"
+          ],
+          "object": "品牌视觉体系",
+          "text": "跟进行业设计趋势，迭代品牌视觉体系，保证整体视觉统一、美观、年轻化"
+        },
+        {
+          "action": "配合",
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "object": "团队完成日常设计需求对接等",
+          "text": "配合团队完成日常设计需求对接、校对、输出，把控画面细节、文字规范、印刷尺寸"
+        },
+        {
+          "action": "确保",
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "object": "物料落地无偏差等",
+          "text": "确保物料落地无偏差，高效完成日常及紧急设计任务"
+        }
+      ],
+      "skills": [
+        {
+          "category": "tool",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "PS",
+          "raw_name": "PS"
+        },
+        {
+          "category": "tool",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "AI",
+          "raw_name": "AI"
+        },
+        {
+          "category": "tool",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "CDR",
+          "raw_name": "CDR"
+        },
+        {
+          "category": "soft_skill",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "T",
+          "name": "视觉设计思维",
+          "raw_name": "视觉设计思维"
+        },
+        {
+          "category": "soft_skill",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "审美在线",
+          "raw_name": "审美在线"
+        },
+        {
+          "category": "soft_skill",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_010"
+          ],
+          "importance": "preferred",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "创意理解能力",
+          "raw_name": "创意理解能力"
+        }
+      ]
+    },
+    "created_at": "2026-08-06T12:32:30Z",
+    "evidence": [
+      {
+        "field": "responsibilities",
+        "id": "ev_001",
+        "text": "- 负责公司品牌视觉设计工作，包含LOGO优化、海报、宣传单页、画册、展板、易拉宝等线下物料设计"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_002",
+        "text": "- 负责新媒体视觉物料输出，制作公众号配图、小红书封面、短视频海报、活动banner等线上素材"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_003",
+        "text": "- 根据品牌调性、营销主题、产品卖点独立完成创意构思、版式设计、色彩搭配"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_004",
+        "text": "- 负责产品详情页、主图、包装版式、线下宣传物料的设计与排版"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_005",
+        "text": "- 整理归档设计源文件，建立物料素材库，持续优化视觉风格"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_006",
+        "text": "- 配合团队完成日常设计需求对接、校对、输出，把控画面细节、文字规范、印刷尺寸"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_007",
+        "text": "- 大专及以上学历，视觉传达、平面设计、艺术设计、数字媒体等相关专业"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_008",
+        "text": "- 熟练使用PS、AI、CDR等主流设计软件，具备独立出图、版式排版、色彩搭配能力"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_009",
+        "text": "- 熟悉线上新媒体物料、线下印刷物料设计规范，了解尺寸、分辨率、印刷工艺"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_010",
+        "text": "- 具备良好的创意理解能力，能够快速对接需求、消化修改意见"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_011",
+        "text": "- 拥有个人设计作品集，有品牌宣传、电商视觉、新媒体海报设计经验者优先"
+      }
+    ],
+    "id": "job_profile_841431afa64a4915ae9cefd8cd03039a",
+    "implementation": "llm_profile_builder",
+    "profile_type": "job",
+    "source_document_id": "doc_41c90513146f4515ae357911556d169e",
+    "state": "available",
+    "warnings": [
+      "requirements[2] ignored: evidence_text must be copied from the source document",
+      "requirements[10] ignored: evidence_text must be copied from the source document"
+    ]
+  },
+  "schema_version": "profile-extraction/v2",
+  "source_document": {
+    "char_count": 846,
+    "content_digest": "b9a189f0efc3505f263006c1e306bfa85383676420ca4cf7a6c54b2e613de23f",
+    "created_at": "2026-08-06T12:30:38Z",
+    "document_type": "jd",
+    "id": "doc_41c90513146f4515ae357911556d169e",
+    "metadata": {
+      "company_name": "品牌视觉设计工作，包含LOGO优化、海报、宣传单页、画册、展板、易拉宝等线下物料设计，适配品牌视觉规范，保证画面美观、构图完整、配色协调。",
+      "job_title": "平面设计师",
+      "location": "一线城市",
+      "salary_range": "7k-12k｜双休、五险一金、绩效、节日福利",
+      "skills": [
+        "任职要求",
+        "周末双休",
+        "五险一金",
+        "绩效奖金",
+        "年终福利",
+        "带薪年假",
+        "节日礼品",
+        "定期团建",
+        "设计技能培训",
+        "晋升通道清晰",
+        "年轻化团队氛围"
+      ],
+      "title": "平面设计师"
+    },
+    "source": {
+      "source_system": "manual"
+    },
+    "storage": "memory"
+  }
+}

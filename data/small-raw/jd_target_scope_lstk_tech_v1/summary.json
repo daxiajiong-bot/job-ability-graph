@@ -1,0 +1,46 @@
+{
+  "annotation_count": 32953,
+  "annotation_record_count": 23255,
+  "category_counts": {
+    "K": 12845,
+    "L": 271,
+    "S": 5848,
+    "T": 2590,
+    "Tech": 11399
+  },
+  "entity_candidate_count": 263,
+  "files": {
+    "annotations.jsonl": 23255,
+    "entity_candidates.jsonl": 263,
+    "graph_edges.jsonl": 68451,
+    "graph_nodes.jsonl": 27522,
+    "jd_profiles.jsonl": 2545,
+    "sentence_annotations.jsonl": 23255,
+    "summary.json": 1
+  },
+  "generated_at": "2026-07-06T13:38:20+00:00",
+  "graph_edge_count": 68451,
+  "graph_node_count": 27522,
+  "input": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/知识图谱增强的可解释人岗匹配模型/data/jd-filtered/jd_target_scope.jsonl",
+  "jd_count": 2545,
+  "max_annotations_per_jd": 24,
+  "no_annotation_count": 0,
+  "relation_type_counts": {
+    "REQUIRES_KNOWLEDGE": 12845,
+    "REQUIRES_LANGUAGE": 271,
+    "REQUIRES_SKILL": 5848,
+    "REQUIRES_TECHNOLOGY": 11399,
+    "REQUIRES_TRANSVERSAL": 2590
+  },
+  "role_counts": {
+    "mentioned": 4243,
+    "preferred": 3025,
+    "required": 25685
+  },
+  "schema_version": "jd-lstk-tech/v1",
+  "truncated_jd_count": 193,
+  "validation": {
+    "warning_count": 0,
+    "warnings_sample": []
+  }
+}

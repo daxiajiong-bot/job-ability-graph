@@ -1,0 +1,193 @@
+{
+  "doc_id": "doc_a121bcf8594abf57",
+  "edges": [
+    {
+      "created_at": "2026-08-05T12:48:21Z",
+      "doc_id": "doc_a121bcf8594abf57",
+      "edge_id": "edge_doc_a121bcf8594abf57_v1_contains_0001",
+      "evidence": [
+        {
+          "chunk_id": "doc_a121bcf8594abf57_v1_chunk_0001",
+          "content_hash": "a121bcf8594abf57422b10f253b308f8b43b38e959db90248ffd9c20cb3d1e5f",
+          "created_at": "2026-08-05T12:48:21Z",
+          "doc_id": "doc_a121bcf8594abf57",
+          "end_char": 200,
+          "evidence_id": "ev_doc_a121bcf8594abf57_v1_chunk_0001",
+          "quote": "姓名：XXX｜年龄：24岁｜学历：大专\n专业：新媒体运营｜求职岗位：新媒体运营\n联系电话：138XXXX1234｜邮箱：xxxx@163.com\n求职意向\n全职新媒体运营岗位，深耕全平台账号运营、原创内容创作、线上活动策划、数据复盘优化、用户精细化运营等核心工作，完全匹配岗位任职要求，熟练掌握新媒体全链路运营玩法，适配快节奏职场模式，可快速入职落地各项工作、完成岗位业绩指标。\n教育背景\nXX职业技",
+          "raw_path": "data\\raw\\doc_a121bcf8594abf57\\v1\\doc_394fcb2bf9ad40988ebdf18a290295c3.txt",
+          "source_field": "chunk_text",
+          "start_char": 0,
+          "version": 1
+        }
+      ],
+      "evidence_ids": [
+        "ev_doc_a121bcf8594abf57_v1_chunk_0001"
+      ],
+      "properties": {
+        "sequence": 1
+      },
+      "relation_type": "CONTAINS_CHUNK",
+      "source_id": "document:doc_a121bcf8594abf57:v1",
+      "target_id": "chunk:doc_a121bcf8594abf57_v1_chunk_0001",
+      "version": 1
+    },
+    {
+      "created_at": "2026-08-05T12:48:21Z",
+      "doc_id": "doc_a121bcf8594abf57",
+      "edge_id": "edge_doc_a121bcf8594abf57_v1_contains_0002",
+      "evidence": [
+        {
+          "chunk_id": "doc_a121bcf8594abf57_v1_chunk_0002",
+          "content_hash": "a121bcf8594abf57422b10f253b308f8b43b38e959db90248ffd9c20cb3d1e5f",
+          "created_at": "2026-08-05T12:48:21Z",
+          "doc_id": "doc_a121bcf8594abf57",
+          "end_char": 871,
+          "evidence_id": "ev_doc_a121bcf8594abf57_v1_chunk_0002",
+          "quote": "性、行业热点及用户喜好打磨内容，累计产出优质图文500+篇、短视频脚本300+条，内容审核通过率98%以上，多次产出平台优质推荐内容，大幅提升品牌线上曝光度。\n- 数据复盘与策略优化（对标JD岗位职责3）：建立常态化数据监测与复盘机制，每日追踪各平台阅读、播放、点赞、收藏、涨粉、咨询转化等核心数据，每月输出完整运营复盘报告。精准拆解爆款内容逻辑与低流量内容问题，针对性优化选题方向、文案风格、封面排",
+          "raw_path": "data\\raw\\doc_a121bcf8594abf57\\v1\\doc_394fcb2bf9ad40988ebdf18a290295c3.txt",
+          "source_field": "chunk_text",
+          "start_char": 671,
+          "version": 1
+        }
+      ],
+      "evidence_ids": [
+        "ev_doc_a121bcf8594abf57_v1_chunk_0002"
+      ],
+      "properties": {
+        "sequence": 2
+      },
+      "relation_type": "CONTAINS_CHUNK",
+      "source_id": "document:doc_a121bcf8594abf57:v1",
+      "target_id": "chunk:doc_a121bcf8594abf57_v1_chunk_0002",
+      "version": 1
+    },
+    {
+      "created_at": "2026-08-05T12:48:21Z",
+      "doc_id": "doc_a121bcf8594abf57",
+      "edge_id": "edge_doc_a121bcf8594abf57_v1_contains_0003",
+      "evidence": [
+        {
+          "chunk_id": "doc_a121bcf8594abf57_v1_chunk_0003",
+          "content_hash": "a121bcf8594abf57422b10f253b308f8b43b38e959db90248ffd9c20cb3d1e5f",
+          "created_at": "2026-08-05T12:48:21Z",
+          "doc_id": "doc_a121bcf8594abf57",
+          "end_char": 1567,
+          "evidence_id": "ev_doc_a121bcf8594abf57_v1_chunk_0003",
+          "quote": "的品牌用户互动氛围。通过精细化用户运营提升用户好感度与忠诚度，有效降低用户投诉率，持续优化品牌口碑，沉淀高粘性核心用户群体。\n专业技能（完全对标JD任职要求）\n- 内容创作能力：具备扎实文字功底和良好审美，熟练掌握品牌宣传、产品种草、热点借势、情感干货等多风格文案创作，短视频脚本逻辑清晰、节奏适配平台流量规则，可独立完成全平台内容原创输出。\n- 工具实操能力：精通秀米、135编辑器图文排版，熟练使",
+          "raw_path": "data\\raw\\doc_a121bcf8594abf57\\v1\\doc_394fcb2bf9ad40988ebdf18a290295c3.txt",
+          "source_field": "chunk_text",
+          "start_char": 1367,
+          "version": 1
+        }
+      ],
+      "evidence_ids": [
+        "ev_doc_a121bcf8594abf57_v1_chunk_0003"
+      ],
+      "properties": {
+        "sequence": 3
+      },
+      "relation_type": "CONTAINS_CHUNK",
+      "source_id": "document:doc_a121bcf8594abf57:v1",
+      "target_id": "chunk:doc_a121bcf8594abf57_v1_chunk_0003",
+      "version": 1
+    },
+    {
+      "created_at": "2026-08-05T12:48:21Z",
+      "doc_id": "doc_a121bcf8594abf57",
+      "edge_id": "edge_doc_a121bcf8594abf57_v1_contains_0004",
+      "evidence": [
+        {
+          "chunk_id": "doc_a121bcf8594abf57_v1_chunk_0004",
+          "content_hash": "a121bcf8594abf57422b10f253b308f8b43b38e959db90248ffd9c20cb3d1e5f",
+          "created_at": "2026-08-05T12:48:21Z",
+          "doc_id": "doc_a121bcf8594abf57",
+          "end_char": 2220,
+          "evidence_id": "ev_doc_a121bcf8594abf57_v1_chunk_0004",
+          "quote": "提供强力支撑。\n3. 自主搭建标准化内容发布、数据复盘、用户维护工作流程，规范团队运营标准，整体提升部门运营效率30%，保障账号长期稳定高质量更新。\n自我评价\n具备2年全职新媒体运营实战经验，完全匹配本次岗位各项任职要求，精通全平台新媒体运营规则与流量玩法，熟练掌握内容创作、账号运营、活动策划、数据复盘、用户精细化运营全链路工作。热点敏感度高、内容创作能力突出，擅长结合品牌定位与业务需求落地运营工",
+          "raw_path": "data\\raw\\doc_a121bcf8594abf57\\v1\\doc_394fcb2bf9ad40988ebdf18a290295c3.txt",
+          "source_field": "chunk_text",
+          "start_char": 2020,
+          "version": 1
+        }
+      ],
+      "evidence_ids": [
+        "ev_doc_a121bcf8594abf57_v1_chunk_0004"
+      ],
+      "properties": {
+        "sequence": 4
+      },
+      "relation_type": "CONTAINS_CHUNK",
+      "source_id": "document:doc_a121bcf8594abf57:v1",
+      "target_id": "chunk:doc_a121bcf8594abf57_v1_chunk_0004",
+      "version": 1
+    }
+  ],
+  "nodes": [
+    {
+      "created_at": "2026-08-05T12:48:21Z",
+      "doc_id": "doc_a121bcf8594abf57",
+      "label": "Document",
+      "node_id": "document:doc_a121bcf8594abf57:v1",
+      "properties": {
+        "content_hash": "a121bcf8594abf57422b10f253b308f8b43b38e959db90248ffd9c20cb3d1e5f",
+        "document_type": "resume",
+        "parser": "plain_text_parser",
+        "raw_path": "data\\raw\\doc_a121bcf8594abf57\\v1\\doc_394fcb2bf9ad40988ebdf18a290295c3.txt"
+      },
+      "version": 1
+    },
+    {
+      "created_at": "2026-08-05T12:48:21Z",
+      "doc_id": "doc_a121bcf8594abf57",
+      "label": "Chunk",
+      "node_id": "chunk:doc_a121bcf8594abf57_v1_chunk_0001",
+      "properties": {
+        "chunk_id": "doc_a121bcf8594abf57_v1_chunk_0001",
+        "end_char": 750,
+        "sequence": 1,
+        "start_char": 0
+      },
+      "version": 1
+    },
+    {
+      "created_at": "2026-08-05T12:48:21Z",
+      "doc_id": "doc_a121bcf8594abf57",
+      "label": "Chunk",
+      "node_id": "chunk:doc_a121bcf8594abf57_v1_chunk_0002",
+      "properties": {
+        "chunk_id": "doc_a121bcf8594abf57_v1_chunk_0002",
+        "end_char": 1446,
+        "sequence": 2,
+        "start_char": 671
+      },
+      "version": 1
+    },
+    {
+      "created_at": "2026-08-05T12:48:21Z",
+      "doc_id": "doc_a121bcf8594abf57",
+      "label": "Chunk",
+      "node_id": "chunk:doc_a121bcf8594abf57_v1_chunk_0003",
+      "properties": {
+        "chunk_id": "doc_a121bcf8594abf57_v1_chunk_0003",
+        "end_char": 2099,
+        "sequence": 3,
+        "start_char": 1367
+      },
+      "version": 1
+    },
+    {
+      "created_at": "2026-08-05T12:48:21Z",
+      "doc_id": "doc_a121bcf8594abf57",
+      "label": "Chunk",
+      "node_id": "chunk:doc_a121bcf8594abf57_v1_chunk_0004",
+      "properties": {
+        "chunk_id": "doc_a121bcf8594abf57_v1_chunk_0004",
+        "end_char": 2322,
+        "sequence": 4,
+        "start_char": 2020
+      },
+      "version": 1
+    }
+  ],
+  "version": 1
+}

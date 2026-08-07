@@ -1,0 +1,68 @@
+{
+  "artifact_type": "candidate_profile",
+  "created_at": "2026-08-05T07:25:04Z",
+  "extraction": {
+    "evidence": [],
+    "fields": {},
+    "implementation": "mock",
+    "model": null,
+    "raw_model_output": "{\n  \"schema_version\": \"profile-extraction/v2\",\n  \"document_type\": \"resume\",\n  \"candidate\": {\"name\": null, \"current_title\": null, \"years_of_experience\": 2, \"location\": null},\n  \"career_intent\": {\"target_position\": \"新媒体运营\", \"target_industry\": null, \"target_location\": null},\n  \"education\": [{\"school\": \"XX职业技术学院\", \"degree\": \"大专\", \"major\": \"新媒体运营\", \"period\": \"2019.09-2022.06\", \"evidence_text\": \"\"}],\n  \"work_experience\": [{\"company\": \"XX文化传媒有限公司\", \"role\": \"新媒体运营专员\", \"industry\": null, \"period\": \"2022.07-至今\", \"description\": \"- 账号日常运营；- 原创内容创作；- 数据复盘优化；- 活动策划落地；- 竞品与热点分析；- 用户维护运营。\", \"evidence_text\": \"\"}],\n  \"project_experience\": [{\"name\": null, \"role\": null, \"description\": \"- 负责小红书新号从0到1起号，6个月实现粉丝5w+；- 通过内容优化与活动运营，全年带动公司新媒体渠道产品咨询量同比提升40%；- 搭建标准化内容发布与复盘流程。\", \"technologies\": [], \"outcomes\": [\"粉丝5w+\", \"产品咨询量提升40%\", \"团队运营效率提升30%\"], \"evidence_text\": \"\"}],\n  \"skills\": [{\"name\": null, \"raw_name\": \"内容能力\", \"category\": \"soft_skill\", \"lskt_label\": \"S\", \"level\": \"proficient\", \"years\": null, \"evidence_text\": \"- 扎实的文案功底，擅长品牌种草、热点借势、产品推广类文案创作。\"},\n             {\"name\": null, \"raw_name\": \"工具能力\", \"category\": \"tool\", \"lskt_label\": \"S\", \"level\": \"proficient\", \"years\": null, \"evidence_text\": \"- 熟练使用剪映、PR基础剪辑，秀米、135图文排版。\"},\n             {\"name\": null, \"raw_name\": \"运营能力\", \"category\": \"framework\", \"lskt_label\": \"S\", \"level\": \"proficient\", \"years\": null, \"evidence_text\": \"- 精通主流新媒体平台规则，具备完整的账号运营、活动策划、数据复盘、用户运营经验。\"},\n             {\"name\": null, \"raw_name\": \"数据能力\", \"category\": \"data_processing\", \"lskt_label\": \"S\", \"level\": \"proficient\", \"years\": null, \"evidence_text\": \"- 熟练通过平台后台、第三方工具分析运营数据，精准定位问题并优化运营策略。\"}],\n  \"capabilities\": [{\"name\": null, \"description\": \"思维活跃、热点敏感度高，执行力与责任心强，擅长结合品牌需求打造优质传播内容。\", \"level\": \"proficient\", \"evidence_text\": \"\"}],\n  \"certificates\": [],\n  \"languages\": [],\n  \"achievements\": []\n}",
+    "reason": "Ollama structured extraction failed: no evidence-backed list items remained: education[1] ignored: missing evidence_text; work_experience[1] ignored: missing evidence_text; project_experience[1] ignored: missing evidence_text",
+    "schema": null,
+    "state": "not_implemented",
+    "validation_error": "no evidence-backed list items remained: education[1] ignored: missing evidence_text; work_experience[1] ignored: missing evidence_text; project_experience[1] ignored: missing evidence_text",
+    "warnings": [
+      "Ollama structured extraction failed: no evidence-backed list items remained: education[1] ignored: missing evidence_text; work_experience[1] ignored: missing evidence_text; project_experience[1] ignored: missing evidence_text"
+    ]
+  },
+  "normalization": {
+    "implementation": "lightweight_skill_normalizer",
+    "skills": [],
+    "state": "not_implemented",
+    "warnings": [
+      "Ollama structured extraction failed: no evidence-backed list items remained: education[1] ignored: missing evidence_text; work_experience[1] ignored: missing evidence_text; project_experience[1] ignored: missing evidence_text"
+    ]
+  },
+  "profile": {
+    "artifacts": {
+      "profile_json": "data\\structured\\profiles\\candidate\\candidate_profile_8b459346f89044338b2e9181a203b1db.json",
+      "schema_version": "profile-extraction/v2",
+      "storage": "filesystem"
+    },
+    "attributes": {
+      "candidate": {},
+      "capabilities": [],
+      "career_intent": {},
+      "education": [],
+      "experience": [],
+      "profile_schema": "profile-extraction/v2",
+      "projects": [],
+      "resume_profile": {},
+      "skills": [],
+      "target_position": null
+    },
+    "created_at": "2026-08-05T07:25:04Z",
+    "evidence": [],
+    "id": "candidate_profile_8b459346f89044338b2e9181a203b1db",
+    "implementation": "mock",
+    "profile_type": "candidate",
+    "source_document_id": "doc_9e9a23cf8d044377a1d1722d7f20f032",
+    "state": "not_implemented",
+    "warnings": [
+      "Ollama structured extraction failed: no evidence-backed list items remained: education[1] ignored: missing evidence_text; work_experience[1] ignored: missing evidence_text; project_experience[1] ignored: missing evidence_text"
+    ]
+  },
+  "schema_version": "profile-extraction/v2",
+  "source_document": {
+    "char_count": 1309,
+    "content_digest": "c064c03a89f52a8b8c0592fb0bad60603a58a51da0ecdf16065b8757af9a551b",
+    "created_at": "2026-08-05T07:24:32Z",
+    "document_type": "resume",
+    "id": "doc_9e9a23cf8d044377a1d1722d7f20f032",
+    "metadata": {},
+    "source": {
+      "source_system": "manual"
+    },
+    "storage": "memory"
+  }
+}

@@ -1,0 +1,472 @@
+{
+  "artifact_type": "candidate_profile",
+  "created_at": "2026-08-06T13:19:03Z",
+  "extraction": {
+    "evidence": [
+      {
+        "field": "education",
+        "id": "ev_001",
+        "text": "XX职业技术学院 "
+      },
+      {
+        "field": "work_experience",
+        "id": "ev_002",
+        "text": "- 日常收银结算工作"
+      },
+      {
+        "field": "capabilities",
+        "id": "ev_003",
+        "text": "工作细心严谨、耐心负责、抗压能力强，擅长重复性、规范性结算类工作"
+      },
+      {
+        "field": "achievements",
+        "id": "ev_004",
+        "text": "严格把控每日收银账务"
+      },
+      {
+        "field": "achievements",
+        "id": "ev_005",
+        "text": "高效处理顾客咨询与退换货问题"
+      },
+      {
+        "field": "achievements",
+        "id": "ev_006",
+        "text": "规范收银台账登记流程"
+      }
+    ],
+    "fields": {
+      "achievements": [
+        {
+          "description": "全年无重大账目差错，精准完成每日营收核对、长短款处理，保障收银结算工作零失误。",
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "name": "严格把控每日收银账务"
+        },
+        {
+          "description": "提升门店服务口碑，有效减少客诉，获得门店月度服务之星表彰。",
+          "evidence_ids": [
+            "ev_005"
+          ],
+          "name": "高效处理顾客咨询与退换货问题"
+        },
+        {
+          "description": "整理每日营收数据，协助门店完成月度销售数据汇总，提升门店账务整理效率。",
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "name": "规范收银台账登记流程"
+        }
+      ],
+      "candidate": {
+        "current_title": null,
+        "location": null,
+        "name": "张三",
+        "years_of_experience": 1.5
+      },
+      "capabilities": [
+        {
+          "description": "工作细心严谨、耐心负责、抗压能力强，擅长重复性、规范性结算类工作",
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "level": "working",
+          "name": null
+        }
+      ],
+      "career_intent": {
+        "target_industry": null,
+        "target_location": null,
+        "target_position": "平面设计师"
+      },
+      "certificates": [],
+      "document_type": "resume",
+      "education": [
+        {
+          "degree": "大专",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "major": "财务管理",
+          "period": "2020.09-2023.06",
+          "school": "XX职业技术学院"
+        }
+      ],
+      "evidence": [
+        {
+          "field": "education",
+          "id": "ev_001",
+          "text": "XX职业技术学院 "
+        },
+        {
+          "field": "work_experience",
+          "id": "ev_002",
+          "text": "- 日常收银结算工作"
+        },
+        {
+          "field": "capabilities",
+          "id": "ev_003",
+          "text": "工作细心严谨、耐心负责、抗压能力强，擅长重复性、规范性结算类工作"
+        },
+        {
+          "field": "achievements",
+          "id": "ev_004",
+          "text": "严格把控每日收银账务"
+        },
+        {
+          "field": "achievements",
+          "id": "ev_005",
+          "text": "高效处理顾客咨询与退换货问题"
+        },
+        {
+          "field": "achievements",
+          "id": "ev_006",
+          "text": "规范收银台账登记流程"
+        }
+      ],
+      "experience": [
+        {
+          "company": "XX连锁生活超市",
+          "description": "- 日常收银结算工作；- 顾客基础服务对接；- 商品陈列辅助整理；- 每日账务数据统计。",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "industry": null,
+          "period": "2023.06-至今",
+          "role": "收银员"
+        }
+      ],
+      "languages": [],
+      "project_experience": [],
+      "projects": [],
+      "requirements": [],
+      "responsibilities": [],
+      "schema_version": "profile-extraction/v2",
+      "skills": [
+        {
+          "category": "other",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "level": "working",
+          "lskt_label": "unknown",
+          "name": null,
+          "raw_name": "核心技能：熟练掌握商超收银流程、线上线下收款结算、账务核对、台账登记，具备基础财务统计与数据核对能力。",
+          "years": null
+        }
+      ],
+      "work_experience": [
+        {
+          "company": "XX连锁生活超市",
+          "description": "- 日常收银结算工作；- 顾客基础服务对接；- 商品陈列辅助整理；- 每日账务数据统计。",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "industry": null,
+          "period": "2023.06-至今",
+          "role": "收银员"
+        }
+      ]
+    },
+    "implementation": "ollama",
+    "model": "qwen2.5:7b",
+    "raw_model_output": "",
+    "reason": "",
+    "schema": "profile-extraction/v2",
+    "state": "available",
+    "validation_error": "",
+    "warnings": [
+      "education[1]: auto-generated evidence_text from content",
+      "work_experience[1]: auto-generated evidence_text from content",
+      "capabilities[1]: auto-generated evidence_text from content",
+      "achievements[1]: auto-generated evidence_text from content",
+      "achievements[2]: auto-generated evidence_text from content",
+      "achievements[3]: auto-generated evidence_text from content"
+    ]
+  },
+  "normalization": {
+    "implementation": "lightweight_skill_normalizer",
+    "skills": [
+      {
+        "category": "other",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_002"
+        ],
+        "level": "working",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "unknown",
+        "name": "核心技能：熟练掌握商超收银流程、线上线下收款结算、账务核对、台账登记，具备基础财务统计与数据核对能力。",
+        "raw_name": "核心技能：熟练掌握商超收银流程、线上线下收款结算、账务核对、台账登记，具备基础财务统计与数据核对能力。",
+        "years": null
+      }
+    ],
+    "state": "available",
+    "warnings": []
+  },
+  "profile": {
+    "artifacts": {
+      "profile_json": "data\\structured\\profiles\\candidate\\candidate_profile_c20d017258f446f9808e58e8d88bf15e.json",
+      "schema_version": "profile-extraction/v2",
+      "storage": "filesystem"
+    },
+    "attributes": {
+      "candidate": {
+        "current_title": null,
+        "location": null,
+        "name": "张三",
+        "years_of_experience": 1.5
+      },
+      "capabilities": [
+        {
+          "description": "工作细心严谨、耐心负责、抗压能力强，擅长重复性、规范性结算类工作",
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "level": "working",
+          "name": null
+        }
+      ],
+      "career_intent": {
+        "target_industry": null,
+        "target_location": null,
+        "target_position": "平面设计师"
+      },
+      "education": [
+        {
+          "degree": "大专",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "major": "财务管理",
+          "period": "2020.09-2023.06",
+          "school": "XX职业技术学院"
+        }
+      ],
+      "experience": [
+        {
+          "company": "XX连锁生活超市",
+          "description": "- 日常收银结算工作；- 顾客基础服务对接；- 商品陈列辅助整理；- 每日账务数据统计。",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "industry": null,
+          "period": "2023.06-至今",
+          "role": "收银员"
+        }
+      ],
+      "profile_schema": "profile-extraction/v2",
+      "projects": [],
+      "resume_profile": {
+        "achievements": [
+          {
+            "description": "全年无重大账目差错，精准完成每日营收核对、长短款处理，保障收银结算工作零失误。",
+            "evidence_ids": [
+              "ev_004"
+            ],
+            "name": "严格把控每日收银账务"
+          },
+          {
+            "description": "提升门店服务口碑，有效减少客诉，获得门店月度服务之星表彰。",
+            "evidence_ids": [
+              "ev_005"
+            ],
+            "name": "高效处理顾客咨询与退换货问题"
+          },
+          {
+            "description": "整理每日营收数据，协助门店完成月度销售数据汇总，提升门店账务整理效率。",
+            "evidence_ids": [
+              "ev_006"
+            ],
+            "name": "规范收银台账登记流程"
+          }
+        ],
+        "candidate": {
+          "current_title": null,
+          "location": null,
+          "name": "张三",
+          "years_of_experience": 1.5
+        },
+        "capabilities": [
+          {
+            "description": "工作细心严谨、耐心负责、抗压能力强，擅长重复性、规范性结算类工作",
+            "evidence_ids": [
+              "ev_003"
+            ],
+            "level": "working",
+            "name": null
+          }
+        ],
+        "career_intent": {
+          "target_industry": null,
+          "target_location": null,
+          "target_position": "平面设计师"
+        },
+        "certificates": [],
+        "document_type": "resume",
+        "education": [
+          {
+            "degree": "大专",
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "major": "财务管理",
+            "period": "2020.09-2023.06",
+            "school": "XX职业技术学院"
+          }
+        ],
+        "languages": [],
+        "project_experience": [],
+        "schema_version": "profile-extraction/v2",
+        "skills": [
+          {
+            "category": "other",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_002"
+            ],
+            "level": "working",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "unknown",
+            "name": "核心技能：熟练掌握商超收银流程、线上线下收款结算、账务核对、台账登记，具备基础财务统计与数据核对能力。",
+            "raw_name": "核心技能：熟练掌握商超收银流程、线上线下收款结算、账务核对、台账登记，具备基础财务统计与数据核对能力。",
+            "years": null
+          }
+        ],
+        "work_experience": [
+          {
+            "company": "XX连锁生活超市",
+            "description": "- 日常收银结算工作；- 顾客基础服务对接；- 商品陈列辅助整理；- 每日账务数据统计。",
+            "evidence_ids": [
+              "ev_002"
+            ],
+            "industry": null,
+            "period": "2023.06-至今",
+            "role": "收银员"
+          }
+        ]
+      },
+      "skills": [
+        {
+          "category": "other",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "level": "working",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "unknown",
+          "name": "核心技能：熟练掌握商超收银流程、线上线下收款结算、账务核对、台账登记，具备基础财务统计与数据核对能力。",
+          "raw_name": "核心技能：熟练掌握商超收银流程、线上线下收款结算、账务核对、台账登记，具备基础财务统计与数据核对能力。",
+          "years": null
+        }
+      ],
+      "target_position": "平面设计师"
+    },
+    "created_at": "2026-08-06T13:19:03Z",
+    "evidence": [
+      {
+        "field": "education",
+        "id": "ev_001",
+        "text": "XX职业技术学院 "
+      },
+      {
+        "field": "work_experience",
+        "id": "ev_002",
+        "text": "- 日常收银结算工作"
+      },
+      {
+        "field": "capabilities",
+        "id": "ev_003",
+        "text": "工作细心严谨、耐心负责、抗压能力强，擅长重复性、规范性结算类工作"
+      },
+      {
+        "field": "achievements",
+        "id": "ev_004",
+        "text": "严格把控每日收银账务"
+      },
+      {
+        "field": "achievements",
+        "id": "ev_005",
+        "text": "高效处理顾客咨询与退换货问题"
+      },
+      {
+        "field": "achievements",
+        "id": "ev_006",
+        "text": "规范收银台账登记流程"
+      }
+    ],
+    "id": "candidate_profile_c20d017258f446f9808e58e8d88bf15e",
+    "implementation": "llm_profile_builder",
+    "profile_type": "candidate",
+    "source_document_id": "doc_8c9fcebaf2954cf38b5766807bbda487",
+    "state": "available",
+    "warnings": [
+      "education[1]: auto-generated evidence_text from content",
+      "work_experience[1]: auto-generated evidence_text from content",
+      "capabilities[1]: auto-generated evidence_text from content",
+      "achievements[1]: auto-generated evidence_text from content",
+      "achievements[2]: auto-generated evidence_text from content",
+      "achievements[3]: auto-generated evidence_text from content"
+    ]
+  },
+  "schema_version": "profile-extraction/v2",
+  "source_document": {
+    "char_count": 1245,
+    "content_digest": "5be26f90b7cdc15198a2760c0182925f3d1121f85c9799064e708f121aa2e5c5",
+    "created_at": "2026-08-06T12:30:38Z",
+    "document_type": "resume",
+    "id": "doc_8c9fcebaf2954cf38b5766807bbda487",
+    "metadata": {
+      "candidate_name": "张三｜年龄：22岁｜学历：大专",
+      "display_name": "张三｜年龄：22岁｜学历：大专",
+      "education": "大专",
+      "experience": "，零基础转行，愿意从头学习设计基础技能。",
+      "skills": [
+        "求职平面设计岗位",
+        "长期从事商超收银",
+        "客服结算相关工作",
+        "无设计专业基础",
+        "无软件操作能力",
+        "无视觉物料设计经",
+        "零基础转行",
+        "愿意从头学习设计",
+        "基础技能",
+        "专业技能",
+        "与平面设计岗位高",
+        "度错位",
+        "核心技能",
+        "熟练掌握商超收银",
+        "流程",
+        "线上线下收款结算",
+        "账务核对",
+        "台账登记",
+        "具备基础财务统计",
+        "与数据核对能力",
+        "拥有",
+        "年多超市收银实操",
+        "经验",
+        "工作细致严谨",
+        "责任心强",
+        "服务意识良好",
+        "擅长账务核对",
+        "基础数据统计与客",
+        "户服务工作",
+        "无平面设计相关专"
+      ]
+    },
+    "source": {
+      "source_system": "manual"
+    },
+    "storage": "memory"
+  }
+}

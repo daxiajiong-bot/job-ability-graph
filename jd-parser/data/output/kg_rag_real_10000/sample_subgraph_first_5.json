@@ -1,0 +1,1015 @@
+{
+  "nodes": [
+    {
+      "node_id": "education:0408da9944bc",
+      "label": "Education",
+      "properties": {
+        "value": "本科"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40535263107:0f5445cef696",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40535263107:0f5445cef696",
+        "document_id": "JD_40535263107",
+        "text": "?????本科",
+        "source_field": "constraints.education"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40535263107:1c0435b28694",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40535263107:1c0435b28694",
+        "document_id": "JD_40535263107",
+        "text": "?????3-5年",
+        "source_field": "constraints.experience_years"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40535263107:e047ab683caa",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40535263107:e047ab683caa",
+        "document_id": "JD_40535263107",
+        "text": "精通C/C++开发，有OpenGL编程开发经验",
+        "source_field": "skills"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40703007207:0f5445cef696",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40703007207:0f5445cef696",
+        "document_id": "JD_40703007207",
+        "text": "?????本科",
+        "source_field": "constraints.education"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40703007207:1c0435b28694",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40703007207:1c0435b28694",
+        "document_id": "JD_40703007207",
+        "text": "?????3-5年",
+        "source_field": "constraints.experience_years"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40703007207:e047ab683caa",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40703007207:e047ab683caa",
+        "document_id": "JD_40703007207",
+        "text": "精通C/C++开发，有OpenGL编程开发经验",
+        "source_field": "skills"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40761193903:00277248ddda",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40761193903:00277248ddda",
+        "document_id": "JD_40761193903",
+        "text": "了解图像处理、三维重建及点云处理的基本原理:",
+        "source_field": "skills"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40761193903:0f5445cef696",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40761193903:0f5445cef696",
+        "document_id": "JD_40761193903",
+        "text": "?????本科",
+        "source_field": "constraints.education"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40761193903:2671708011fa",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40761193903:2671708011fa",
+        "document_id": "JD_40761193903",
+        "text": "熟练掌握 C++编程，熟悉 QT界面编程",
+        "source_field": "skills"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40761193903:e7efc749eb3a",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40761193903:e7efc749eb3a",
+        "document_id": "JD_40761193903",
+        "text": "?????1-3年",
+        "source_field": "constraints.experience_years"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40761193903:f5a71a9df642",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40761193903:f5a71a9df642",
+        "document_id": "JD_40761193903",
+        "text": "负责结构光/线激光三维重建算法开发",
+        "source_field": "skills"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40785938606:0f5445cef696",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40785938606:0f5445cef696",
+        "document_id": "JD_40785938606",
+        "text": "?????本科",
+        "source_field": "constraints.education"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40785938606:27a07f998466",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40785938606:27a07f998466",
+        "document_id": "JD_40785938606",
+        "text": "特征提取：提取面部关键点（如眼睛、嘴巴周围肌肉）的运动特征（如光流、动作单元AU），或利用深度学习模型（如CNN）自动学习高层语义特征。",
+        "source_field": "skills"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40785938606:46882f218eac",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40785938606:46882f218eac",
+        "document_id": "JD_40785938606",
+        "text": "数据预处理与特征工程",
+        "source_field": "skills"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40785938606:72c705048b1f",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40785938606:72c705048b1f",
+        "document_id": "JD_40785938606",
+        "text": "跟踪人脸微表情识别领域的前沿技术（如小样本学习、跨文化情感理解、多模态大模型），开展技术预研并输出原型。例如，探索小样本情感迁移学习算法，解决微表情样本量不足的问题；或研究跨文化情感表达差异，优化模型的泛化能力。",
+        "source_field": "skills"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40785938606:7d33ac6b474b",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40785938606:7d33ac6b474b",
+        "document_id": "JD_40785938606",
+        "text": "参与多模态（视觉、语音、生理信号）情绪识别系统的开发，融合人脸微表情特征与其他模态信息（如语音语调、心率变异性），提升情绪理解的全面性与准确性。例如，在智能机器人或心理诊疗场景中，结合微表情识别与文本情感分析，实现更精准的用户情绪状态判断。",
+        "source_field": "skills"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40785938606:9ccb3013db27",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40785938606:9ccb3013db27",
+        "document_id": "JD_40785938606",
+        "text": "人脸微表情情绪识别的神经网络算法设计与优化，针对微表情持续时间短（≤0.5秒）、动作幅度小、样本量少的特点，研发高效的时空特征提取模型（如3D CNN、Transformer、光流法结合的网络架构），提升微表情识别的准确率与鲁棒性。例如，通过改进Farneback光流法提取面部运动特征，结合CBAM注意力机制的3D ResNet（ME-ResNet）模型，增强对关键运动区域的聚焦学习能力。",
+        "source_field": "skills"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40785938606:b3cf045a108d",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40785938606:b3cf045a108d",
+        "document_id": "JD_40785938606",
+        "text": "多模态融合与情绪理解",
+        "source_field": "skills"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40785938606:bd820daf291d",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40785938606:bd820daf291d",
+        "document_id": "JD_40785938606",
+        "text": "将训练好的微表情识别模型部署到目标平台（如机器人端芯片、移动设备、云端服务器），优化模型的推理速度与资源占用。例如，应用动态剪枝、量化感知训练等技术，实现情感大模型在嵌入式环境下的轻量化部署，满足实时性要求（如延迟≤1秒）。",
+        "source_field": "skills"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40785938606:cab3fcab23aa",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40785938606:cab3fcab23aa",
+        "document_id": "JD_40785938606",
+        "text": "模型部署与工程化",
+        "source_field": "skills"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40850802113:0f5445cef696",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40850802113:0f5445cef696",
+        "document_id": "JD_40850802113",
+        "text": "?????本科",
+        "source_field": "constraints.education"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40850802113:2c9a117ac03e",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40850802113:2c9a117ac03e",
+        "document_id": "JD_40850802113",
+        "text": "熟练掌握C/C++编程语言",
+        "source_field": "skills"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40850802113:cc4290ca2327",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40850802113:cc4290ca2327",
+        "document_id": "JD_40850802113",
+        "text": "熟悉Linux软件开发，并有相关程序开发经验",
+        "source_field": "skills"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40850802113:de5df6649f0e",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40850802113:de5df6649f0e",
+        "document_id": "JD_40850802113",
+        "text": "移动通信物理层相关算法设计、仿真及编码实现，项目文档维护",
+        "source_field": "skills"
+      }
+    },
+    {
+      "node_id": "experience_years:1",
+      "label": "ExperienceRequirement",
+      "properties": {
+        "minimum_years": 1
+      }
+    },
+    {
+      "node_id": "experience_years:3",
+      "label": "ExperienceRequirement",
+      "properties": {
+        "minimum_years": 3
+      }
+    },
+    {
+      "node_id": "job:JD_40535263107",
+      "label": "Job",
+      "properties": {
+        "document_id": "JD_40535263107",
+        "title": "?????3D引擎开发（3D图形算法）",
+        "education": "本科",
+        "experience_years": 3,
+        "location": null
+      }
+    },
+    {
+      "node_id": "job:JD_40703007207",
+      "label": "Job",
+      "properties": {
+        "document_id": "JD_40703007207",
+        "title": "?????3d图形算法工程师",
+        "education": "本科",
+        "experience_years": 3,
+        "location": null
+      }
+    },
+    {
+      "node_id": "job:JD_40761193903",
+      "label": "Job",
+      "properties": {
+        "document_id": "JD_40761193903",
+        "title": "?????3D重建算法工程师(谨瑜)",
+        "education": "本科",
+        "experience_years": 1,
+        "location": null
+      }
+    },
+    {
+      "node_id": "job:JD_40785938606",
+      "label": "Job",
+      "properties": {
+        "document_id": "JD_40785938606",
+        "title": "?????2027年毕业的脸部神经网络算法实习生",
+        "education": "本科",
+        "experience_years": null,
+        "location": null
+      }
+    },
+    {
+      "node_id": "job:JD_40850802113",
+      "label": "Job",
+      "properties": {
+        "document_id": "JD_40850802113",
+        "title": "?????5G物理层算法软件开发工程师",
+        "education": "本科",
+        "experience_years": null,
+        "location": null
+      }
+    },
+    {
+      "node_id": "skill:220f168a5db6",
+      "label": "Skill",
+      "properties": {
+        "name": "图像处理",
+        "surface_form_policy": "exact text surface with whitespace compacted; no skill normalization"
+      }
+    },
+    {
+      "node_id": "skill:2fd674df71f9",
+      "label": "Skill",
+      "properties": {
+        "name": "特征工程",
+        "surface_form_policy": "exact text surface with whitespace compacted; no skill normalization"
+      }
+    },
+    {
+      "node_id": "skill:3401ed05a132",
+      "label": "Skill",
+      "properties": {
+        "name": "大模型",
+        "surface_form_policy": "exact text surface with whitespace compacted; no skill normalization"
+      }
+    },
+    {
+      "node_id": "skill:68c170c0011c",
+      "label": "Skill",
+      "properties": {
+        "name": "Transformer",
+        "surface_form_policy": "exact text surface with whitespace compacted; no skill normalization"
+      }
+    },
+    {
+      "node_id": "skill:7de5a8427321",
+      "label": "Skill",
+      "properties": {
+        "name": "算法开发",
+        "surface_form_policy": "exact text surface with whitespace compacted; no skill normalization"
+      }
+    },
+    {
+      "node_id": "skill:83ad8510bbd3",
+      "label": "Skill",
+      "properties": {
+        "name": "Linux",
+        "surface_form_policy": "exact text surface with whitespace compacted; no skill normalization"
+      }
+    },
+    {
+      "node_id": "skill:a32fe198ed5c",
+      "label": "Skill",
+      "properties": {
+        "name": "多模态",
+        "surface_form_policy": "exact text surface with whitespace compacted; no skill normalization"
+      }
+    },
+    {
+      "node_id": "skill:c9fd9db39ef1",
+      "label": "Skill",
+      "properties": {
+        "name": "深度学习",
+        "surface_form_policy": "exact text surface with whitespace compacted; no skill normalization"
+      }
+    },
+    {
+      "node_id": "skill:d765de17a2ff",
+      "label": "Skill",
+      "properties": {
+        "name": "模型部署",
+        "surface_form_policy": "exact text surface with whitespace compacted; no skill normalization"
+      }
+    },
+    {
+      "node_id": "skill:fb03f47034c1",
+      "label": "Skill",
+      "properties": {
+        "name": "算法设计",
+        "surface_form_policy": "exact text surface with whitespace compacted; no skill normalization"
+      }
+    },
+    {
+      "node_id": "skill:fc2b4216164c",
+      "label": "Skill",
+      "properties": {
+        "name": "C++",
+        "surface_form_policy": "exact text surface with whitespace compacted; no skill normalization"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "edge:0481aa6dfe0f0737",
+      "source_id": "job:JD_40785938606",
+      "target_id": "skill:d765de17a2ff",
+      "relation_type": "MENTIONS_SKILL",
+      "properties": {
+        "document_id": "JD_40785938606",
+        "level": "mentioned",
+        "evidence_id": "evidence:JD_40785938606:cab3fcab23aa",
+        "evidence": "模型部署与工程化",
+        "occurrence_index": 7
+      }
+    },
+    {
+      "edge_id": "edge:0cd51c7605100ddd",
+      "source_id": "job:JD_40761193903",
+      "target_id": "experience_years:1",
+      "relation_type": "REQUIRES_EXPERIENCE",
+      "properties": {
+        "document_id": "JD_40761193903",
+        "evidence_id": "evidence:JD_40761193903:e7efc749eb3a",
+        "evidence": "?????1-3年"
+      }
+    },
+    {
+      "edge_id": "edge:185f71e57fd3bb64",
+      "source_id": "job:JD_40761193903",
+      "target_id": "education:0408da9944bc",
+      "relation_type": "REQUIRES_EDUCATION",
+      "properties": {
+        "document_id": "JD_40761193903",
+        "evidence_id": "evidence:JD_40761193903:0f5445cef696",
+        "evidence": "?????本科"
+      }
+    },
+    {
+      "edge_id": "edge:1967c670ad4b7fb6",
+      "source_id": "job:JD_40850802113",
+      "target_id": "skill:fc2b4216164c",
+      "relation_type": "REQUIRES_SKILL",
+      "properties": {
+        "document_id": "JD_40850802113",
+        "level": "required",
+        "evidence_id": "evidence:JD_40850802113:2c9a117ac03e",
+        "evidence": "熟练掌握C/C++编程语言",
+        "occurrence_index": 2
+      }
+    },
+    {
+      "edge_id": "edge:24c62a304bc8a4e7",
+      "source_id": "job:JD_40785938606",
+      "target_id": "education:0408da9944bc",
+      "relation_type": "REQUIRES_EDUCATION",
+      "properties": {
+        "document_id": "JD_40785938606",
+        "evidence_id": "evidence:JD_40785938606:0f5445cef696",
+        "evidence": "?????本科"
+      }
+    },
+    {
+      "edge_id": "edge:27c84080d420dae3",
+      "source_id": "job:JD_40703007207",
+      "target_id": "experience_years:3",
+      "relation_type": "REQUIRES_EXPERIENCE",
+      "properties": {
+        "document_id": "JD_40703007207",
+        "evidence_id": "evidence:JD_40703007207:1c0435b28694",
+        "evidence": "?????3-5年"
+      }
+    },
+    {
+      "edge_id": "edge:2a4e7b2925b8f4e2",
+      "source_id": "job:JD_40761193903",
+      "target_id": "skill:7de5a8427321",
+      "relation_type": "MENTIONS_SKILL",
+      "properties": {
+        "document_id": "JD_40761193903",
+        "level": "mentioned",
+        "evidence_id": "evidence:JD_40761193903:f5a71a9df642",
+        "evidence": "负责结构光/线激光三维重建算法开发",
+        "occurrence_index": 1
+      }
+    },
+    {
+      "edge_id": "edge:2a54e06bc688a96f",
+      "source_id": "job:JD_40785938606",
+      "target_id": "skill:d765de17a2ff",
+      "relation_type": "REQUIRES_SKILL",
+      "properties": {
+        "document_id": "JD_40785938606",
+        "level": "required",
+        "evidence_id": "evidence:JD_40785938606:bd820daf291d",
+        "evidence": "将训练好的微表情识别模型部署到目标平台（如机器人端芯片、移动设备、云端服务器），优化模型的推理速度与资源占用。例如，应用动态剪枝、量化感知训练等技术，实现情感大模型在嵌入式环境下的轻量化部署，满足实时性要求（如延迟≤1秒）。",
+        "occurrence_index": 8
+      }
+    },
+    {
+      "edge_id": "edge:38621afb00e2fc95",
+      "source_id": "job:JD_40535263107",
+      "target_id": "skill:fc2b4216164c",
+      "relation_type": "REQUIRES_SKILL",
+      "properties": {
+        "document_id": "JD_40535263107",
+        "level": "required",
+        "evidence_id": "evidence:JD_40535263107:e047ab683caa",
+        "evidence": "精通C/C++开发，有OpenGL编程开发经验",
+        "occurrence_index": 1
+      }
+    },
+    {
+      "edge_id": "edge:46f70a65a372c4cb",
+      "source_id": "job:JD_40785938606",
+      "target_id": "skill:a32fe198ed5c",
+      "relation_type": "MENTIONS_SKILL",
+      "properties": {
+        "document_id": "JD_40785938606",
+        "level": "mentioned",
+        "evidence_id": "evidence:JD_40785938606:72c705048b1f",
+        "evidence": "跟踪人脸微表情识别领域的前沿技术（如小样本学习、跨文化情感理解、多模态大模型），开展技术预研并输出原型。例如，探索小样本情感迁移学习算法，解决微表情样本量不足的问题；或研究跨文化情感表达差异，优化模型的泛化能力。",
+        "occurrence_index": 10
+      }
+    },
+    {
+      "edge_id": "edge:50b5c368d11e3d01",
+      "source_id": "job:JD_40785938606",
+      "target_id": "skill:a32fe198ed5c",
+      "relation_type": "MENTIONS_SKILL",
+      "properties": {
+        "document_id": "JD_40785938606",
+        "level": "mentioned",
+        "evidence_id": "evidence:JD_40785938606:b3cf045a108d",
+        "evidence": "多模态融合与情绪理解",
+        "occurrence_index": 3
+      }
+    },
+    {
+      "edge_id": "edge:5df2b736d5f36b13",
+      "source_id": "job:JD_40850802113",
+      "target_id": "education:0408da9944bc",
+      "relation_type": "REQUIRES_EDUCATION",
+      "properties": {
+        "document_id": "JD_40850802113",
+        "evidence_id": "evidence:JD_40850802113:0f5445cef696",
+        "evidence": "?????本科"
+      }
+    },
+    {
+      "edge_id": "edge:6e74a8c8dc28f8f9",
+      "source_id": "job:JD_40535263107",
+      "target_id": "experience_years:3",
+      "relation_type": "REQUIRES_EXPERIENCE",
+      "properties": {
+        "document_id": "JD_40535263107",
+        "evidence_id": "evidence:JD_40535263107:1c0435b28694",
+        "evidence": "?????3-5年"
+      }
+    },
+    {
+      "edge_id": "edge:6f7365e1c97471c6",
+      "source_id": "job:JD_40761193903",
+      "target_id": "skill:fc2b4216164c",
+      "relation_type": "REQUIRES_SKILL",
+      "properties": {
+        "document_id": "JD_40761193903",
+        "level": "required",
+        "evidence_id": "evidence:JD_40761193903:2671708011fa",
+        "evidence": "熟练掌握 C++编程，熟悉 QT界面编程",
+        "occurrence_index": 3
+      }
+    },
+    {
+      "edge_id": "edge:76dfdb91b3fae5ba",
+      "source_id": "job:JD_40785938606",
+      "target_id": "skill:3401ed05a132",
+      "relation_type": "MENTIONS_SKILL",
+      "properties": {
+        "document_id": "JD_40785938606",
+        "level": "mentioned",
+        "evidence_id": "evidence:JD_40785938606:72c705048b1f",
+        "evidence": "跟踪人脸微表情识别领域的前沿技术（如小样本学习、跨文化情感理解、多模态大模型），开展技术预研并输出原型。例如，探索小样本情感迁移学习算法，解决微表情样本量不足的问题；或研究跨文化情感表达差异，优化模型的泛化能力。",
+        "occurrence_index": 11
+      }
+    },
+    {
+      "edge_id": "edge:7c9997c8ddcfcc50",
+      "source_id": "job:JD_40761193903",
+      "target_id": "skill:220f168a5db6",
+      "relation_type": "REQUIRES_SKILL",
+      "properties": {
+        "document_id": "JD_40761193903",
+        "level": "required",
+        "evidence_id": "evidence:JD_40761193903:00277248ddda",
+        "evidence": "了解图像处理、三维重建及点云处理的基本原理:",
+        "occurrence_index": 2
+      }
+    },
+    {
+      "edge_id": "edge:84280ba6c749c088",
+      "source_id": "job:JD_40703007207",
+      "target_id": "skill:fc2b4216164c",
+      "relation_type": "REQUIRES_SKILL",
+      "properties": {
+        "document_id": "JD_40703007207",
+        "level": "required",
+        "evidence_id": "evidence:JD_40703007207:e047ab683caa",
+        "evidence": "精通C/C++开发，有OpenGL编程开发经验",
+        "occurrence_index": 1
+      }
+    },
+    {
+      "edge_id": "edge:8494a5d787cb98ee",
+      "source_id": "job:JD_40785938606",
+      "target_id": "skill:3401ed05a132",
+      "relation_type": "REQUIRES_SKILL",
+      "properties": {
+        "document_id": "JD_40785938606",
+        "level": "required",
+        "evidence_id": "evidence:JD_40785938606:bd820daf291d",
+        "evidence": "将训练好的微表情识别模型部署到目标平台（如机器人端芯片、移动设备、云端服务器），优化模型的推理速度与资源占用。例如，应用动态剪枝、量化感知训练等技术，实现情感大模型在嵌入式环境下的轻量化部署，满足实时性要求（如延迟≤1秒）。",
+        "occurrence_index": 9
+      }
+    },
+    {
+      "edge_id": "edge:b91b7614adeab295",
+      "source_id": "job:JD_40785938606",
+      "target_id": "skill:2fd674df71f9",
+      "relation_type": "MENTIONS_SKILL",
+      "properties": {
+        "document_id": "JD_40785938606",
+        "level": "mentioned",
+        "evidence_id": "evidence:JD_40785938606:46882f218eac",
+        "evidence": "数据预处理与特征工程",
+        "occurrence_index": 5
+      }
+    },
+    {
+      "edge_id": "edge:b926535c2064ec5c",
+      "source_id": "job:JD_40850802113",
+      "target_id": "skill:fb03f47034c1",
+      "relation_type": "MENTIONS_SKILL",
+      "properties": {
+        "document_id": "JD_40850802113",
+        "level": "mentioned",
+        "evidence_id": "evidence:JD_40850802113:de5df6649f0e",
+        "evidence": "移动通信物理层相关算法设计、仿真及编码实现，项目文档维护",
+        "occurrence_index": 1
+      }
+    },
+    {
+      "edge_id": "edge:bdf5e70a890cdf16",
+      "source_id": "job:JD_40785938606",
+      "target_id": "skill:a32fe198ed5c",
+      "relation_type": "MENTIONS_SKILL",
+      "properties": {
+        "document_id": "JD_40785938606",
+        "level": "mentioned",
+        "evidence_id": "evidence:JD_40785938606:7d33ac6b474b",
+        "evidence": "参与多模态（视觉、语音、生理信号）情绪识别系统的开发，融合人脸微表情特征与其他模态信息（如语音语调、心率变异性），提升情绪理解的全面性与准确性。例如，在智能机器人或心理诊疗场景中，结合微表情识别与文本情感分析，实现更精准的用户情绪状态判断。",
+        "occurrence_index": 4
+      }
+    },
+    {
+      "edge_id": "edge:c5df5cd7a970a6ad",
+      "source_id": "job:JD_40850802113",
+      "target_id": "skill:83ad8510bbd3",
+      "relation_type": "REQUIRES_SKILL",
+      "properties": {
+        "document_id": "JD_40850802113",
+        "level": "required",
+        "evidence_id": "evidence:JD_40850802113:cc4290ca2327",
+        "evidence": "熟悉Linux软件开发，并有相关程序开发经验",
+        "occurrence_index": 3
+      }
+    },
+    {
+      "edge_id": "edge:c681c8bec765284e",
+      "source_id": "job:JD_40785938606",
+      "target_id": "skill:fb03f47034c1",
+      "relation_type": "MENTIONS_SKILL",
+      "properties": {
+        "document_id": "JD_40785938606",
+        "level": "mentioned",
+        "evidence_id": "evidence:JD_40785938606:9ccb3013db27",
+        "evidence": "人脸微表情情绪识别的神经网络算法设计与优化，针对微表情持续时间短（≤0.5秒）、动作幅度小、样本量少的特点，研发高效的时空特征提取模型（如3D CNN、Transformer、光流法结合的网络架构），提升微表情识别的准确率与鲁棒性。例如，通过改进Farneback光流法提取面部运动特征，结合CBAM注意力机制的3D ResNet（ME-ResNet）模型，增强对关键运动区域的聚焦学习能力。",
+        "occurrence_index": 1
+      }
+    },
+    {
+      "edge_id": "edge:d41bf7faeb2cf761",
+      "source_id": "job:JD_40785938606",
+      "target_id": "skill:c9fd9db39ef1",
+      "relation_type": "MENTIONS_SKILL",
+      "properties": {
+        "document_id": "JD_40785938606",
+        "level": "mentioned",
+        "evidence_id": "evidence:JD_40785938606:27a07f998466",
+        "evidence": "特征提取：提取面部关键点（如眼睛、嘴巴周围肌肉）的运动特征（如光流、动作单元AU），或利用深度学习模型（如CNN）自动学习高层语义特征。",
+        "occurrence_index": 6
+      }
+    },
+    {
+      "edge_id": "edge:da4beeacd1d601ad",
+      "source_id": "job:JD_40535263107",
+      "target_id": "education:0408da9944bc",
+      "relation_type": "REQUIRES_EDUCATION",
+      "properties": {
+        "document_id": "JD_40535263107",
+        "evidence_id": "evidence:JD_40535263107:0f5445cef696",
+        "evidence": "?????本科"
+      }
+    },
+    {
+      "edge_id": "edge:e7e5269023f94a31",
+      "source_id": "job:JD_40703007207",
+      "target_id": "education:0408da9944bc",
+      "relation_type": "REQUIRES_EDUCATION",
+      "properties": {
+        "document_id": "JD_40703007207",
+        "evidence_id": "evidence:JD_40703007207:0f5445cef696",
+        "evidence": "?????本科"
+      }
+    },
+    {
+      "edge_id": "edge:f7e7511e270b5b39",
+      "source_id": "job:JD_40785938606",
+      "target_id": "skill:68c170c0011c",
+      "relation_type": "MENTIONS_SKILL",
+      "properties": {
+        "document_id": "JD_40785938606",
+        "level": "mentioned",
+        "evidence_id": "evidence:JD_40785938606:9ccb3013db27",
+        "evidence": "人脸微表情情绪识别的神经网络算法设计与优化，针对微表情持续时间短（≤0.5秒）、动作幅度小、样本量少的特点，研发高效的时空特征提取模型（如3D CNN、Transformer、光流法结合的网络架构），提升微表情识别的准确率与鲁棒性。例如，通过改进Farneback光流法提取面部运动特征，结合CBAM注意力机制的3D ResNet（ME-ResNet）模型，增强对关键运动区域的聚焦学习能力。",
+        "occurrence_index": 2
+      }
+    },
+    {
+      "edge_id": "edge:09cd826525396196",
+      "source_id": "skill:3401ed05a132",
+      "target_id": "evidence:JD_40785938606:72c705048b1f",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40785938606",
+        "evidence_id": "evidence:JD_40785938606:72c705048b1f"
+      }
+    },
+    {
+      "edge_id": "edge:0c953f5c38e27938",
+      "source_id": "skill:220f168a5db6",
+      "target_id": "evidence:JD_40761193903:00277248ddda",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40761193903",
+        "evidence_id": "evidence:JD_40761193903:00277248ddda"
+      }
+    },
+    {
+      "edge_id": "edge:0e6d6245a0dffec0",
+      "source_id": "education:0408da9944bc",
+      "target_id": "evidence:JD_40535263107:0f5445cef696",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40535263107",
+        "evidence_id": "evidence:JD_40535263107:0f5445cef696"
+      }
+    },
+    {
+      "edge_id": "edge:31b0f8a32df25157",
+      "source_id": "skill:fc2b4216164c",
+      "target_id": "evidence:JD_40535263107:e047ab683caa",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40535263107",
+        "evidence_id": "evidence:JD_40535263107:e047ab683caa"
+      }
+    },
+    {
+      "edge_id": "edge:3f2f1b32fc111b59",
+      "source_id": "skill:fb03f47034c1",
+      "target_id": "evidence:JD_40850802113:de5df6649f0e",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40850802113",
+        "evidence_id": "evidence:JD_40850802113:de5df6649f0e"
+      }
+    },
+    {
+      "edge_id": "edge:410170814e406dbe",
+      "source_id": "skill:a32fe198ed5c",
+      "target_id": "evidence:JD_40785938606:7d33ac6b474b",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40785938606",
+        "evidence_id": "evidence:JD_40785938606:7d33ac6b474b"
+      }
+    },
+    {
+      "edge_id": "edge:49eefa984509b95f",
+      "source_id": "experience_years:1",
+      "target_id": "evidence:JD_40761193903:e7efc749eb3a",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40761193903",
+        "evidence_id": "evidence:JD_40761193903:e7efc749eb3a"
+      }
+    },
+    {
+      "edge_id": "edge:504b0ad08f3a77de",
+      "source_id": "skill:68c170c0011c",
+      "target_id": "evidence:JD_40785938606:9ccb3013db27",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40785938606",
+        "evidence_id": "evidence:JD_40785938606:9ccb3013db27"
+      }
+    },
+    {
+      "edge_id": "edge:5429311333ae3605",
+      "source_id": "skill:2fd674df71f9",
+      "target_id": "evidence:JD_40785938606:46882f218eac",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40785938606",
+        "evidence_id": "evidence:JD_40785938606:46882f218eac"
+      }
+    },
+    {
+      "edge_id": "edge:7653558b1bf30258",
+      "source_id": "skill:83ad8510bbd3",
+      "target_id": "evidence:JD_40850802113:cc4290ca2327",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40850802113",
+        "evidence_id": "evidence:JD_40850802113:cc4290ca2327"
+      }
+    },
+    {
+      "edge_id": "edge:772305e131b68c2c",
+      "source_id": "skill:3401ed05a132",
+      "target_id": "evidence:JD_40785938606:bd820daf291d",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40785938606",
+        "evidence_id": "evidence:JD_40785938606:bd820daf291d"
+      }
+    },
+    {
+      "edge_id": "edge:7aee316695ce748d",
+      "source_id": "skill:fc2b4216164c",
+      "target_id": "evidence:JD_40850802113:2c9a117ac03e",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40850802113",
+        "evidence_id": "evidence:JD_40850802113:2c9a117ac03e"
+      }
+    },
+    {
+      "edge_id": "edge:81e29b4fca2dd283",
+      "source_id": "skill:fc2b4216164c",
+      "target_id": "evidence:JD_40703007207:e047ab683caa",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40703007207",
+        "evidence_id": "evidence:JD_40703007207:e047ab683caa"
+      }
+    },
+    {
+      "edge_id": "edge:86f8a7894e93bc40",
+      "source_id": "experience_years:3",
+      "target_id": "evidence:JD_40703007207:1c0435b28694",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40703007207",
+        "evidence_id": "evidence:JD_40703007207:1c0435b28694"
+      }
+    },
+    {
+      "edge_id": "edge:8cda99d8f5748fc2",
+      "source_id": "skill:7de5a8427321",
+      "target_id": "evidence:JD_40761193903:f5a71a9df642",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40761193903",
+        "evidence_id": "evidence:JD_40761193903:f5a71a9df642"
+      }
+    },
+    {
+      "edge_id": "edge:9875343b571b0011",
+      "source_id": "skill:a32fe198ed5c",
+      "target_id": "evidence:JD_40785938606:72c705048b1f",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40785938606",
+        "evidence_id": "evidence:JD_40785938606:72c705048b1f"
+      }
+    },
+    {
+      "edge_id": "edge:9f160c932ea2f773",
+      "source_id": "education:0408da9944bc",
+      "target_id": "evidence:JD_40850802113:0f5445cef696",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40850802113",
+        "evidence_id": "evidence:JD_40850802113:0f5445cef696"
+      }
+    },
+    {
+      "edge_id": "edge:a05f9e66b6b5ba12",
+      "source_id": "skill:fb03f47034c1",
+      "target_id": "evidence:JD_40785938606:9ccb3013db27",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40785938606",
+        "evidence_id": "evidence:JD_40785938606:9ccb3013db27"
+      }
+    },
+    {
+      "edge_id": "edge:aba6542aa26c076c",
+      "source_id": "skill:d765de17a2ff",
+      "target_id": "evidence:JD_40785938606:bd820daf291d",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40785938606",
+        "evidence_id": "evidence:JD_40785938606:bd820daf291d"
+      }
+    },
+    {
+      "edge_id": "edge:b1adcc57770ecd26",
+      "source_id": "education:0408da9944bc",
+      "target_id": "evidence:JD_40785938606:0f5445cef696",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40785938606",
+        "evidence_id": "evidence:JD_40785938606:0f5445cef696"
+      }
+    },
+    {
+      "edge_id": "edge:b79551ad7872873f",
+      "source_id": "skill:a32fe198ed5c",
+      "target_id": "evidence:JD_40785938606:b3cf045a108d",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40785938606",
+        "evidence_id": "evidence:JD_40785938606:b3cf045a108d"
+      }
+    },
+    {
+      "edge_id": "edge:c139d5c116e6ce3b",
+      "source_id": "skill:c9fd9db39ef1",
+      "target_id": "evidence:JD_40785938606:27a07f998466",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40785938606",
+        "evidence_id": "evidence:JD_40785938606:27a07f998466"
+      }
+    },
+    {
+      "edge_id": "edge:cb1f715d0eab1f43",
+      "source_id": "education:0408da9944bc",
+      "target_id": "evidence:JD_40703007207:0f5445cef696",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40703007207",
+        "evidence_id": "evidence:JD_40703007207:0f5445cef696"
+      }
+    },
+    {
+      "edge_id": "edge:ccfdfba377ede595",
+      "source_id": "skill:fc2b4216164c",
+      "target_id": "evidence:JD_40761193903:2671708011fa",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40761193903",
+        "evidence_id": "evidence:JD_40761193903:2671708011fa"
+      }
+    },
+    {
+      "edge_id": "edge:d615f9b2a058f3ec",
+      "source_id": "education:0408da9944bc",
+      "target_id": "evidence:JD_40761193903:0f5445cef696",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40761193903",
+        "evidence_id": "evidence:JD_40761193903:0f5445cef696"
+      }
+    },
+    {
+      "edge_id": "edge:d653eb3dc0168f5d",
+      "source_id": "skill:d765de17a2ff",
+      "target_id": "evidence:JD_40785938606:cab3fcab23aa",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40785938606",
+        "evidence_id": "evidence:JD_40785938606:cab3fcab23aa"
+      }
+    },
+    {
+      "edge_id": "edge:ea002b9b98d2c71b",
+      "source_id": "experience_years:3",
+      "target_id": "evidence:JD_40535263107:1c0435b28694",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40535263107",
+        "evidence_id": "evidence:JD_40535263107:1c0435b28694"
+      }
+    }
+  ]
+}

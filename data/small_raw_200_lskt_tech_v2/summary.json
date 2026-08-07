@@ -1,0 +1,25 @@
+{
+  "schema_version": "small-raw-lskt-tech/v2",
+  "generated_at": "2026-07-03T08:09:49Z",
+  "input_files": {
+    "jd": "data/small-raw/jd_raw.jsonl",
+    "resume": "data/small-raw/resume_raw.jsonl"
+  },
+  "output_dir": "data/structured/small_raw_200_lskt_tech_v2",
+  "jd_count": 100,
+  "resume_count": 100,
+  "sentence_annotation_count": 3931,
+  "entity_count": 5625,
+  "knowledge_count": 155,
+  "skill_count": 1995,
+  "technology_count": 3000,
+  "transversal_count": 473,
+  "language_count": 2,
+  "graph_node_count": 3736,
+  "graph_edge_count": 11268,
+  "warning_count": 0,
+  "quality_status_counts": {
+    "ok": 200,
+    "warning": 0
+  }
+}

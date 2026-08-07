@@ -1,0 +1,76 @@
+{
+  "artifact_type": "candidate_profile",
+  "created_at": "2026-06-30T08:45:02Z",
+  "extraction": {
+    "evidence": [],
+    "fields": {},
+    "implementation": "mock",
+    "model": null,
+    "raw_model_output": "{\n  \"schema_version\": \"profile-extraction/v2\",\n  \"document_type\": \"resume\",\n  \"candidate\": {\"name\": null, \"current_title\": \"感知算法测试验证工程师\", \"years_of_experience\": 3, \"location\": null},\n  \"career_intent\": {\"target_position\": \"感知算法测试验证工程师（数据采集、python）\", \"target_industry\": \"软件/IT服务\", \"target_location\": \"深圳 龙华\"},\n  \"education\": [{\"school\": null, \"degree\": \"大专\", \"major\": null, \"period\": null, \"evidence_text\": \"\"}],\n  \"work_experience\": [{\"company\": \"匿名科技公司A\", \"role\": \"感知算法测试验证工程师\", \"industry\": \"软件/IT服务\", \"period\": \"3年\", \"description\": \"负责与 软件/IT服务 相关的研发/测试/数据处理工作，主要使用 Python、数据采集、Excel、需求分析。\", \"evidence_text\": \"\"}],\n  \"project_experience\": [{\"name\": \"匿名项目A-感知算法测试验证工程师\", \"role\": \"核心成员\", \"description\": \"围绕目标岗位 感知算法测试验证工程师（数据采集、python） 的核心能力，完成需求拆解、功能实现、测试验证和文档沉淀。\", \"technologies\": [\"Python\", \"数据采集\"], \"outcomes\": [], \"evidence_text\": \"\"}, {\"name\": \"企业内部效率工具改造\", \"role\": \"参与成员\", \"description\": \"参与业务流程梳理、脚本/工具开发、数据处理和问题定位，提升团队交付效率。\", \"technologies\": [\"数据采集\", \"Excel\"], \"outcomes\": [], \"evidence_text\": \"\"}],\n  \"skills\": [{\"name\": \"Python\", \"raw_name\": \"Python\", \"category\": \"programming_language\", \"lskt_label\": \"S\", \"level\": \"proficient\", \"years\": null, \"evidence_text\": \"参与 感知算法测试验证工程师 相关项目，围绕 Python、数据采集 完成需求分析、开发测试。\"}, {\"name\": \"数据采集\", \"raw_name\": \"数据采集\", \"category\": \"data_processing\", \"lskt_label\": \"S\", \"level\": \"proficient\", \"years\": null, \"evidence_text\": \"参与 感知算法测试验证工程师 相关项目，围绕 Python、数据采集 完成需求分析、开发测试。\"}, {\"name\": \"Excel\", \"raw_name\": \"Excel\", \"category\": \"tool\", \"lskt_label\": \"S\", \"level\": \"proficient\", \"years\": null, \"evidence_text\": \"参与 感知算法测试验证工程师 相关项目，围绕 Python、数据采集 完成需求分析、开发测试。\"}, {\"name\": \"需求分析\", \"raw_name\": \"需求分析\", \"category\": \"domain_knowledge\", \"lskt_label\": \"S\", \"level\": \"proficient\", \"years\": null, \"evidence_text\": \"参与 感知算法测试验证工程师 相关项目，围绕 Python、数据采集 完成需求分析、开发测试。\"}],\n  \"capabilities\": [{\"name\": \"需求拆解与功能实现\", \"description\": \"完成需求拆解、功能实现、测试验证和文档沉淀。\", \"level\": \"working\", \"evidence_text\": \"参与 感知算法测试验证工程师 相关项目，围绕 Python、数据采集 完成需求分析、开发测试。\"}, {\"name\": \"业务流程梳理与工具开发\", \"description\": \"参与业务流程梳理、脚本/工具开发、数据处理和问题定位。\", \"level\": \"working\", \"evidence_text\": \"参与 企业内部效率工具改造，提升团队交付效率。\"}],\n  \"certificates\": [],\n  \"languages\": [],\n  \"achievements\": []\n}",
+    "reason": "Ollama structured extraction failed: no evidence-backed list items remained: education[1] ignored: missing evidence_text; work_experience[1] ignored: missing evidence_text; project_experience[1] ignored: missing evidence_text",
+    "schema": null,
+    "state": "not_implemented",
+    "validation_error": "no evidence-backed list items remained: education[1] ignored: missing evidence_text; work_experience[1] ignored: missing evidence_text; project_experience[1] ignored: missing evidence_text",
+    "warnings": [
+      "Ollama structured extraction failed: no evidence-backed list items remained: education[1] ignored: missing evidence_text; work_experience[1] ignored: missing evidence_text; project_experience[1] ignored: missing evidence_text"
+    ]
+  },
+  "normalization": {
+    "implementation": "lightweight_skill_normalizer",
+    "skills": [],
+    "state": "not_implemented",
+    "warnings": [
+      "Ollama structured extraction failed: no evidence-backed list items remained: education[1] ignored: missing evidence_text; work_experience[1] ignored: missing evidence_text; project_experience[1] ignored: missing evidence_text"
+    ]
+  },
+  "profile": {
+    "artifacts": {
+      "profile_json": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/structured/profiles/raw_preview_20260630/candidate/candidate_profile_9aaceeec190c4105bc00773f13ed6835.json",
+      "schema_version": "profile-extraction/v2",
+      "storage": "filesystem"
+    },
+    "attributes": {
+      "candidate": {},
+      "capabilities": [],
+      "career_intent": {},
+      "education": [],
+      "experience": [],
+      "profile_schema": "profile-extraction/v2",
+      "projects": [],
+      "resume_profile": {},
+      "skills": [],
+      "target_position": null
+    },
+    "created_at": "2026-06-30T08:45:02Z",
+    "evidence": [],
+    "id": "candidate_profile_9aaceeec190c4105bc00773f13ed6835",
+    "implementation": "mock",
+    "profile_type": "candidate",
+    "source_document_id": "doc_5c0a806527e7415e9508e8b7bb195778",
+    "state": "not_implemented",
+    "warnings": [
+      "Ollama structured extraction failed: no evidence-backed list items remained: education[1] ignored: missing evidence_text; work_experience[1] ignored: missing evidence_text; project_experience[1] ignored: missing evidence_text"
+    ]
+  },
+  "schema_version": "profile-extraction/v2",
+  "source_document": {
+    "char_count": 787,
+    "content_digest": "d927fe22aa265a7309271345973274329d263b8103f94738de0301232903220a",
+    "created_at": "2026-06-30T08:44:06Z",
+    "document_type": "resume",
+    "id": "doc_5c0a806527e7415e9508e8b7bb195778",
+    "metadata": {
+      "privacy_level": "anonymous_or_synthetic",
+      "raw_file": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/small-raw/resume_raw.jsonl",
+      "raw_index": 4,
+      "raw_type": "resume",
+      "target_job_id": "40874740405"
+    },
+    "source": {
+      "external_id": "R0004",
+      "source_system": "small-raw",
+      "uri": "http://www.zhaopin.com/jobdetail/CCL1480117890J40874740405.htm"
+    },
+    "storage": "memory"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "artifact_type": "candidate_profile",
+  "created_at": "2026-08-05T07:34:25Z",
+  "extraction": {
+    "evidence": [],
+    "fields": {},
+    "implementation": "mock",
+    "model": null,
+    "raw_model_output": "{\n  \"schema_version\": \"profile-extraction/v2\",\n  \"document_type\": \"resume\",\n  \"candidate\": {\"name\": null, \"current_title\": null, \"years_of_experience\": 2, \"location\": null},\n  \"career_intent\": {\"target_position\": \"新媒体运营\", \"target_industry\": null, \"target_location\": null},\n  \"education\": [{\"school\": \"XX职业技术学院\", \"degree\": \"大专\", \"major\": \"新媒体运营\", \"period\": \"2019.09-2022.06\", \"evidence_text\": \"主修课程：新媒体文案创作、短视频脚本与剪辑、网络营销策划、品牌新媒体推广、运营数据分析、传播学概论、用户运营管理。学业亮点：系统掌握新媒体运营专业理论知识，熟练匹配行业主流运营工作体系，理论基础扎实，可快速对接职场实操工作。\"}],\n  \"work_experience\": [{\"company\": \"XX文化传媒有限公司\", \"role\": \"新媒体运营专员\", \"industry\": null, \"period\": \"2022.07-至今\", \"description\": \"- 全平台账号精细化运营；- 全品类原创内容创作输出；- 数据复盘与策略优化；- 线上活动策划与落地转化；- 行业调研与内容迭代；- 精细化用户运营维护。\", \"evidence_text\": \"全权负责公司公众号、小红书、抖音、视频号四大核心平台账号整体运营，结合品牌推广及产品营销需求，制定月度、季度精细化运营方案与内容排期，严格把控更新节奏，实现账号全年零断更、高活跃度。\"}],\n  \"project_experience\": [{\"name\": null, \"role\": null, \"description\": \"- 小红书新号全周期运营；- 内容优化与活动迭代运营；- 自主搭建标准化内容发布、数据复盘、用户维护工作流程。\", \"technologies\": [], \"outcomes\": [\"6个月实现粉丝破5W+，多条笔记成为平台爆款，为品牌持续精准引流，打造账号标杆案例。\", \"全年带动公司新媒体渠道产品咨询量同比提升40%，有效助力品牌拓客与业务转化，为市场推广提供强力支撑。\", \"规范团队运营标准，整体提升部门运营效率30%，保障账号长期稳定高质量更新。\"], \"evidence_text\": null}],\n  \"skills\": [{\"name\": \"内容创作能力\", \"raw_name\": \"内容创作能力\", \"category\": \"other\", \"lskt_label\": \"S\", \"level\": \"proficient\", \"years\": null, \"evidence_text\": \"- 具备扎实文字功底和良好审美，熟练掌握品牌宣传、产品种草、热点借势、情感干货等多风格文案创作。\"}, {\"name\": \"工具实操能力\", \"raw_name\": \"工具实操能力\", \"category\": \"tool\", \"lskt_label\": \"S\", \"level\": \"proficient\", \"years\": null, \"evidence_text\": \"- 精通秀米、135编辑器图文排版，熟练使用剪映完成短视频剪辑、调色、字幕、特效制作。\"}, {\"name\": \"平台运营能力\", \"raw_name\": \"平台运营能力\", \"category\": \"platform\", \"lskt_label\": \"S\", \"level\": \"proficient\", \"years\": null, \"evidence_text\": \"- 深度熟悉公众号、小红书、抖音、视频号全平台算法规则、流量机制与用户调性。\"}, {\"name\": \"数据复盘能力\", \"raw_name\": \"数据复盘能力\", \"category\": \"data_processing\", \"lskt_label\": \"S\", \"level\": \"proficient\", \"years\": null, \"evidence_text\": \"- 熟练依托平台后台及第三方数据分析工具，完成运营数据统计、问题拆解、规律总结、策略优化工作。\"}, {\"name\": \"综合职业能力\", \"raw_name\": \"综合职业能力\", \"category\": \"soft_skill\", \"lskt_label\": \"T\", \"level\": \"proficient\", \"years\": null, \"evidence_text\": \"- 热点敏感度高、思维活跃，执行力、责任心、抗压能力突出。\"}],\n  \"capabilities\": [{\"name\": \"全平台账号精细化运营\", \"description\": \"结合品牌推广及产品营销需求，制定月度、季度精细化运营方案与内容排期，严格把控更新节奏，实现账号全年零断更、高活跃度。\", \"level\": \"proficient\", \"evidence_text\": \"- 全权负责公司公众号、小红书、抖音、视频号四大核心平台账号整体运营，结合品牌推广及产品营销需求，制定月度、季度精细化运营方案与内容排期，严格把控更新节奏，实现账号全年零断更、高活跃度。\"}, {\"name\": \"全品类原创内容创作输出\", \"description\": \"独立完成全平台原创内容全流程制作，涵盖品牌宣传图文、产品种草文案、热点借势推文、短视频脚本撰写、图文排版、视频剪辑优化等工作。\", \"level\": \"proficient\", \"evidence_text\": \"- 独立完成全平台原创内容全流程制作，涵盖品牌宣传图文、产品种草文案、热点借势推文、短视频脚本撰写、图文排版、视频剪辑优化等工作。\"}, {\"name\": \"数据复盘与策略优化\", \"description\": \"建立常态化数据监测与复盘机制，每日追踪各平台阅读、播放、点赞、收藏、涨粉、咨询转化等核心数据，每月输出完整运营复盘报告。精准拆解爆款内容逻辑与低流量内容问题，针对性优化选题方向、文案风格、封面排版、发布时段、互动玩法，优化后全平台账号整体曝光量提升45%，两年内累计新增精准粉丝8W+，运营转化效率持续提升。\", \"level\": \"proficient\", \"evidence_text\": \"- 建立常态化数据监测与复盘机制，每日追踪各平台阅读、播放、点赞、收藏、涨粉、咨询转化等核心数据，每月输出完整运营复盘报告。精准拆解爆款内容逻辑与低流量内容问题，针对性优化选题方向、文案风格、封面排版、发布时段、互动玩法，优化后全平台账号整体曝光量提升45%，两年内累计新增精准粉丝8W+，运营转化效率持续提升。\"}, {\"name\": \"线上活动策划与落地转化\", \"description\": \"独立主导品牌线上营销活动、话题互动、粉丝福利、产品种草活动20+场，全程负责活动方案撰写、内容预热、渠道联动、落地执行、数据收尾全流程工作。通过多元化活动运营激活用户活跃度，有效拉动账号涨粉与产品曝光，带动品牌咨询转化率提升18%，沉淀私域精准用户3000+，圆满完成引流、种草、转化的核心运营目标。\", \"level\": \"proficient\", \"evidence_text\": \"- 独立主导品牌线上营销活动、话题互动、粉丝福利、产品种草活动20+场，全程负责活动方案撰写、内容预热、渠道联动、落地执行、数据收尾全流程工作。通过多元化活动运营激活用户活跃度，有效拉动账号涨粉与产品曝光，带动品牌咨询转化率提升18%，沉淀私域精准用户3000+，圆满完成引流、种草、转化的核心运营目标。\"}, {\"name\": \"行业调研与内容迭代\", \"description\": \"常态化调研行业动态、竞品账号运营策略及平台最新规则，定期拆解头部爆款内容创作逻辑与运营玩法，结合公司品牌定位与业务需求，持续迭代内容风格、选题方向与运营模式。精准捕捉全网热点完成借势营销，累计打造10W+阅读图文3篇、百万播放短视频5条，有效提升品牌行业知名度与市场竞争力，全力配合市场部完成品牌整体推广工作。\", \"level\": \"proficient\", \"evidence_text\": \"- 常态化调研行业动态、竞品账号运营策略及平台最新规则，定期拆解头部爆款内容创作逻辑与运营玩法，结合公司品牌定位与业务需求，持续迭代内容风格、选题方向与运营模式。精准捕捉全网热点完成借势营销，累计打造10W+阅读图文3篇、百万播放短视频5条，有效提升品牌行业知名度与市场竞争力，全力配合市场部完成品牌整体推广工作。\"}, {\"name\": \"精细化用户运营维护\", \"description\": \"负责全平台用户评论、私信、留言的日常及时响应与维护，耐心解答用户产品咨询、售后疑问，主动收集用户需求与优化建议，搭建良性的品牌用户互动氛围。通过精细化用户运营提升用户好感度与忠诚度，有效降低用户投诉率，持续优化品牌口碑，沉淀高粘性核心用户群体。\", \"level\": \"proficient\", \"evidence_text\": \"- 负责全平台用户评论、私信、留言的日常及时响应与维护，耐心解答用户产品咨询、售后",
+    "reason": "Ollama structured extraction failed: model output is missing required keys: achievements, certificates, languages",
+    "schema": null,
+    "state": "not_implemented",
+    "validation_error": "model output is missing required keys: achievements, certificates, languages",
+    "warnings": [
+      "Ollama structured extraction failed: model output is missing required keys: achievements, certificates, languages"
+    ]
+  },
+  "normalization": {
+    "implementation": "lightweight_skill_normalizer",
+    "skills": [],
+    "state": "not_implemented",
+    "warnings": [
+      "Ollama structured extraction failed: model output is missing required keys: achievements, certificates, languages"
+    ]
+  },
+  "profile": {
+    "artifacts": {
+      "profile_json": "data\\structured\\profiles\\candidate\\candidate_profile_a696e5a257bd4f88b8f8e8b79e24fd61.json",
+      "schema_version": "profile-extraction/v2",
+      "storage": "filesystem"
+    },
+    "attributes": {
+      "candidate": {},
+      "capabilities": [],
+      "career_intent": {},
+      "education": [],
+      "experience": [],
+      "profile_schema": "profile-extraction/v2",
+      "projects": [],
+      "resume_profile": {},
+      "skills": [],
+      "target_position": null
+    },
+    "created_at": "2026-08-05T07:34:25Z",
+    "evidence": [],
+    "id": "candidate_profile_a696e5a257bd4f88b8f8e8b79e24fd61",
+    "implementation": "mock",
+    "profile_type": "candidate",
+    "source_document_id": "doc_394fcb2bf9ad40988ebdf18a290295c3",
+    "state": "not_implemented",
+    "warnings": [
+      "Ollama structured extraction failed: model output is missing required keys: achievements, certificates, languages"
+    ]
+  },
+  "schema_version": "profile-extraction/v2",
+  "source_document": {
+    "char_count": 2322,
+    "content_digest": "a121bcf8594abf57422b10f253b308f8b43b38e959db90248ffd9c20cb3d1e5f",
+    "created_at": "2026-08-05T07:33:08Z",
+    "document_type": "resume",
+    "id": "doc_394fcb2bf9ad40988ebdf18a290295c3",
+    "metadata": {},
+    "source": {
+      "source_system": "manual"
+    },
+    "storage": "memory"
+  }
+}

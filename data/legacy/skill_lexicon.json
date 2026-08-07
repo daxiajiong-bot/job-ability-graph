@@ -1,0 +1,218 @@
+{
+  "schema_version": "skill-lexicon/v2",
+  "description": "External skill lexicon for data governance extraction. Optional lskt_label and ESCO fields support Chinese-SkillSpan-style competency spans without hard-coding all terms in code.",
+  "skills": [
+    {
+      "canonical": "Python",
+      "aliases": ["python", "PYTHON", "Python语言", "PYTHON算法"],
+      "category": "programming_language"
+    },
+    {
+      "canonical": "Java",
+      "aliases": ["java", "JAVA", "Java语言"],
+      "category": "programming_language"
+    },
+    {
+      "canonical": "JavaScript",
+      "aliases": ["JS", "js", "javascript", "Javascript"],
+      "category": "programming_language"
+    },
+    {
+      "canonical": "C++",
+      "aliases": ["C/C++", "c++", "C plus plus"],
+      "category": "programming_language"
+    },
+    {
+      "canonical": "C语言",
+      "aliases": ["C语言", "C 语言"],
+      "category": "programming_language"
+    },
+    {
+      "canonical": "SQL",
+      "aliases": ["sql", "SQL语句", "SQL优化"],
+      "category": "database"
+    },
+    {
+      "canonical": "MySQL",
+      "aliases": ["mysql", "MySql"],
+      "category": "database"
+    },
+    {
+      "canonical": "PostgreSQL",
+      "aliases": ["postgresql", "Postgres"],
+      "category": "database"
+    },
+    {
+      "canonical": "Oracle",
+      "aliases": ["oracle"],
+      "category": "database"
+    },
+    {
+      "canonical": "Redis",
+      "aliases": ["redis"],
+      "category": "database"
+    },
+    {
+      "canonical": "Linux",
+      "aliases": ["linux", "Linux系统"],
+      "category": "operating_system"
+    },
+    {
+      "canonical": "Django",
+      "aliases": ["django"],
+      "category": "framework"
+    },
+    {
+      "canonical": "Flask",
+      "aliases": ["flask"],
+      "category": "framework"
+    },
+    {
+      "canonical": "FastAPI",
+      "aliases": ["fastapi", "Fast API"],
+      "category": "framework"
+    },
+    {
+      "canonical": "PyTorch",
+      "aliases": ["Pytorch", "pytorch", "Py Torch"],
+      "category": "machine_learning"
+    },
+    {
+      "canonical": "机器学习",
+      "aliases": ["ML", "machine learning", "机器学习"],
+      "category": "machine_learning"
+    },
+    {
+      "canonical": "深度学习",
+      "aliases": ["deep learning", "深度学习"],
+      "category": "machine_learning"
+    },
+    {
+      "canonical": "大模型",
+      "aliases": ["LLM", "大模型", "大语言模型"],
+      "category": "ai"
+    },
+    {
+      "canonical": "人工智能",
+      "aliases": ["AI", "ai", "artificial intelligence", "人工智能"],
+      "category": "ai"
+    },
+    {
+      "canonical": "自然语言处理",
+      "aliases": ["NLP", "nlp", "natural language processing", "自然语言处理"],
+      "category": "ai"
+    },
+    {
+      "canonical": "RAG",
+      "aliases": ["RAG", "检索增强生成", "Retrieval Augmented Generation"],
+      "category": "ai"
+    },
+    {
+      "canonical": "接口自动化测试",
+      "aliases": ["接口自动化测试", "接口测试", "API测试", "API 调试"],
+      "category": "testing"
+    },
+    {
+      "canonical": "UI自动化测试",
+      "aliases": ["UI自动化测试", "UI 自动化测试"],
+      "category": "testing"
+    },
+    {
+      "canonical": "数据分析",
+      "aliases": ["数据分析", "业务数据分析", "指标分析"],
+      "category": "capability"
+    },
+    {
+      "canonical": "数据清洗",
+      "aliases": ["数据清洗", "数据处理"],
+      "category": "capability"
+    },
+    {
+      "canonical": "Git",
+      "aliases": ["git", "Git", "版本管理"],
+      "category": "tool"
+    },
+    {
+      "canonical": "Docker",
+      "aliases": ["docker", "Docker"],
+      "category": "tool"
+    },
+    {
+      "canonical": "Playwright",
+      "aliases": ["playwright", "Playwright"],
+      "category": "tool"
+    },
+    {
+      "canonical": "统计学",
+      "aliases": ["统计学", "统计学基础"],
+      "category": "knowledge",
+      "lskt_label": "K"
+    },
+    {
+      "canonical": "操作系统",
+      "aliases": ["操作系统", "操作系统基础", "OS"],
+      "category": "operating_system",
+      "lskt_label": "K"
+    },
+    {
+      "canonical": "模型训练",
+      "aliases": ["模型训练", "训练模型"],
+      "category": "capability",
+      "lskt_label": "S"
+    },
+    {
+      "canonical": "模型部署",
+      "aliases": ["模型部署", "部署模型"],
+      "category": "capability",
+      "lskt_label": "S"
+    },
+    {
+      "canonical": "接口对接",
+      "aliases": ["接口对接", "API对接", "API 对接"],
+      "category": "capability",
+      "lskt_label": "S"
+    },
+    {
+      "canonical": "RAG应用开发",
+      "aliases": ["RAG应用开发", "RAG 应用开发", "检索增强生成应用开发"],
+      "category": "capability",
+      "lskt_label": "S"
+    },
+    {
+      "canonical": "沟通能力",
+      "aliases": ["沟通能力", "表达沟通能力"],
+      "category": "soft_skill",
+      "lskt_label": "T"
+    },
+    {
+      "canonical": "团队协作",
+      "aliases": ["团队协作", "团队合作"],
+      "category": "soft_skill",
+      "lskt_label": "T"
+    },
+    {
+      "canonical": "学习能力",
+      "aliases": ["学习能力", "持续学习能力"],
+      "category": "soft_skill",
+      "lskt_label": "T"
+    },
+    {
+      "canonical": "英语",
+      "aliases": ["英语", "英文"],
+      "category": "language",
+      "lskt_label": "L"
+    },
+    {
+      "canonical": "CET-6",
+      "aliases": ["CET-6", "CET 6", "英语六级", "大学英语六级"],
+      "category": "language",
+      "lskt_label": "L"
+    },
+    {
+      "canonical": "日语N2",
+      "aliases": ["日语N2", "日语 N2", "JLPT N2"],
+      "category": "language",
+      "lskt_label": "L"
+    }
+  ]
+}

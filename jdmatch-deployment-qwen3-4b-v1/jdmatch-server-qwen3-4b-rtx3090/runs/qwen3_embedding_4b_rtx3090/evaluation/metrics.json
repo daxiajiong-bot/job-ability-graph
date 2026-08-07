@@ -1,0 +1,73 @@
+{
+  "model": "/data/wangxianjiong/code/jdmatch-server-qwen3-4b-rtx3090/runs/qwen3_embedding_4b_rtx3090/best_adapter",
+  "adapter": true,
+  "limit": null,
+  "results": [
+    {
+      "split": "validation",
+      "queries": 841,
+      "triplet_diagnostics": {
+        "candidate_pool": "source_triplet_only",
+        "pairwise_p_over_h1_accuracy": 0.9732461355529132,
+        "strict_both_positives_over_h1": 0.9488703923900119,
+        "mrr": 0.9988109393579072,
+        "ndcg_at_3": 0.9953571999551847,
+        "recall": {
+          "1": 0.49881093935790727,
+          "2": 0.974435196195006,
+          "5": 1.0,
+          "10": 1.0
+        }
+      },
+      "full_split_retrieval": {
+        "candidate_pool": "all_source_triplets_in_evaluated_split",
+        "candidate_documents": 2523,
+        "known_relevant_per_query": 2,
+        "mrr": 0.9907937880589486,
+        "ndcg_at_10": 0.9624506690096029,
+        "mean_known_positive_rank": 2.2651605231866827,
+        "recall": {
+          "1": 0.49167657550535077,
+          "2": 0.8941736028537456,
+          "5": 0.9661117717003567,
+          "10": 0.9827586206896551
+        },
+        "caveat": "Only each JD's generated P1/P2 are labeled relevant. Other suitable cross-JD resumes may be unlabeled."
+      }
+    },
+    {
+      "split": "test",
+      "queries": 841,
+      "triplet_diagnostics": {
+        "candidate_pool": "source_triplet_only",
+        "pairwise_p_over_h1_accuracy": 0.9732461355529132,
+        "strict_both_positives_over_h1": 0.9464922711058263,
+        "mrr": 1.0,
+        "ndcg_at_3": 0.995704441749903,
+        "recall": {
+          "1": 0.5,
+          "2": 0.9732461355529132,
+          "5": 1.0,
+          "10": 1.0
+        }
+      },
+      "full_split_retrieval": {
+        "candidate_pool": "all_source_triplets_in_evaluated_split",
+        "candidate_documents": 2523,
+        "known_relevant_per_query": 2,
+        "mrr": 0.9861354899999372,
+        "ndcg_at_10": 0.9578054577645951,
+        "mean_known_positive_rank": 3.138525564803805,
+        "recall": {
+          "1": 0.4875148632580262,
+          "2": 0.89179548156956,
+          "5": 0.964922711058264,
+          "10": 0.9791914387633769
+        },
+        "caveat": "Only each JD's generated P1/P2 are labeled relevant. Other suitable cross-JD resumes may be unlabeled."
+      }
+    }
+  ],
+  "elapsed_seconds": 498.444,
+  "warning": "Metrics use synthetic labels and are not a substitute for a cross-JD human-judged evaluation set."
+}

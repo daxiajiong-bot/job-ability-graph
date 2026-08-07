@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jd-resume-match"
+version = "0.1.0"
+description = "JD and resume embedding, hard-negative mining, and dual-encoder training"
+requires-python = ">=3.9"
+dependencies = [
+  "accelerate>=1.10,<2",
+  "datasets>=4.5,<5",
+  "huggingface-hub>=0.36,<1",
+  "numpy>=2.0,<3",
+  "peft>=0.17,<1",
+  "PyYAML>=6,<7",
+  "safetensors>=0.5,<1",
+  "scikit-learn>=1.6,<2",
+  "scipy>=1.13,<2",
+  "sentence-transformers>=5.1,<6",
+  "transformers>=4.57,<5",
+]
+
+[project.optional-dependencies]
+qlora = ["bitsandbytes>=0.46,<1"]
+dev = ["build>=1.2,<2"]
+
+[project.scripts]
+jdmatch = "jd_resume_pipeline.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+

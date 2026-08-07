@@ -1,0 +1,170 @@
+{
+  "artifact_type": "candidate_profile",
+  "created_at": "2026-08-06T19:23:18Z",
+  "extraction": {
+    "evidence": [],
+    "fields": {},
+    "implementation": "mock",
+    "model": null,
+    "raw_model_output": "",
+    "reason": "Ollama structured extraction failed: local LLM request failed: timed out",
+    "schema": null,
+    "state": "not_implemented",
+    "validation_error": "local LLM request failed: timed out",
+    "warnings": [
+      "Ollama structured extraction failed: local LLM request failed: timed out"
+    ]
+  },
+  "normalization": {
+    "implementation": "lightweight_skill_normalizer",
+    "skills": [],
+    "state": "not_implemented",
+    "warnings": [
+      "Ollama structured extraction failed: local LLM request failed: timed out"
+    ]
+  },
+  "profile": {
+    "artifacts": {
+      "profile_json": "data\\structured\\profiles\\candidate\\candidate_profile_0ee0faa0f3864e4685f1fa791f9ab422.json",
+      "schema_version": "profile-extraction/v2",
+      "storage": "filesystem"
+    },
+    "attributes": {
+      "candidate": {
+        "years_of_experience": 3
+      },
+      "capabilities": [],
+      "career_intent": {},
+      "education": [],
+      "experience": [],
+      "profile_schema": "profile-extraction/v2",
+      "projects": [],
+      "resume_profile": {
+        "achievements": [],
+        "candidate": {
+          "years_of_experience": 3
+        },
+        "capabilities": [],
+        "career_intent": {},
+        "certificates": [],
+        "document_type": "resume",
+        "education": [],
+        "languages": [],
+        "project_experience": [],
+        "schema_version": "profile-extraction/v2",
+        "skills": [
+          {
+            "category": "programming_language",
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "level": "unknown",
+            "lskt_label": "S",
+            "name": "Python",
+            "raw_name": "Python",
+            "years": null
+          },
+          {
+            "category": "database",
+            "evidence_ids": [
+              "ev_002"
+            ],
+            "level": "unknown",
+            "lskt_label": "S",
+            "name": "SQL",
+            "raw_name": "SQL",
+            "years": null
+          },
+          {
+            "category": "devops",
+            "evidence_ids": [
+              "ev_003"
+            ],
+            "level": "unknown",
+            "lskt_label": "S",
+            "name": "Docker",
+            "raw_name": "Docker",
+            "years": null
+          }
+        ],
+        "work_experience": []
+      },
+      "skills": [
+        {
+          "category": "programming_language",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "level": "unknown",
+          "lskt_label": "S",
+          "name": "Python",
+          "raw_name": "Python",
+          "years": null
+        },
+        {
+          "category": "database",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "level": "unknown",
+          "lskt_label": "S",
+          "name": "SQL",
+          "raw_name": "SQL",
+          "years": null
+        },
+        {
+          "category": "devops",
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "level": "unknown",
+          "lskt_label": "S",
+          "name": "Docker",
+          "raw_name": "Docker",
+          "years": null
+        }
+      ],
+      "target_position": null
+    },
+    "created_at": "2026-08-06T19:23:18Z",
+    "evidence": [
+      {
+        "field": "skills",
+        "id": "ev_001",
+        "text": "nce`nWork Experience: 3 years Python backend development`nSkills:"
+      },
+      {
+        "field": "skills",
+        "id": "ev_002",
+        "text": "ent`nSkills: Python, FastAPI, SQL, Docker"
+      },
+      {
+        "field": "skills",
+        "id": "ev_003",
+        "text": "Skills: Python, FastAPI, SQL, Docker"
+      }
+    ],
+    "id": "candidate_profile_0ee0faa0f3864e4685f1fa791f9ab422",
+    "implementation": "heuristic_profile_builder",
+    "profile_type": "candidate",
+    "source_document_id": "doc_435519f6365b4fa6ae1ec133aa556362",
+    "state": "available",
+    "warnings": [
+      "Ollama structured extraction failed: local LLM request failed: timed out",
+      "Used heuristic profile extraction because LLM extraction was unavailable."
+    ]
+  },
+  "schema_version": "profile-extraction/v2",
+  "source_document": {
+    "char_count": 148,
+    "content_digest": "25bcb0b50626d6c177d84756bbb00d7468175cbf6a616dabd314121ccaee4ad2",
+    "created_at": "2026-08-06T19:17:55Z",
+    "document_type": "resume",
+    "id": "doc_435519f6365b4fa6ae1ec133aa556362",
+    "metadata": {},
+    "source": {
+      "source_system": "debug"
+    },
+    "storage": "memory"
+  }
+}

@@ -1,0 +1,672 @@
+{
+  "schema_version": "jdmatch_run_v1",
+  "status": "completed",
+  "provenance": {
+    "package": {
+      "name": "jd-resume-match",
+      "version": "0.1.0",
+      "source_tree_sha256": "7e7eee4f6b00a71fab19ae8d01fb79f0c76be25cc24ccdb31add1d064cbe69f9"
+    },
+    "config": {
+      "schema_version": "jdmatch_config_v1",
+      "run_name": "qwen3_embedding_4b_rtx3090",
+      "seed": 20260730,
+      "paths": {
+        "data_dir": "/data/wangxianjiong/code/jdmatch-server-qwen3-4b-rtx3090/data/runtime",
+        "run_dir": "/data/wangxianjiong/code/jdmatch-server-qwen3-4b-rtx3090/runs/qwen3_embedding_4b_rtx3090"
+      },
+      "models": {
+        "embedding": "/data/wangxianjiong/models/jdmatch/Qwen3-Embedding-4B",
+        "mining_embedding": "/data/wangxianjiong/models/jdmatch/bge-m3",
+        "reranker": "/data/wangxianjiong/models/jdmatch/bge-reranker-v2-m3",
+        "query_instruction": "Given a job description, retrieve candidate resumes that satisfy core skills, experience, and education requirements."
+      },
+      "hardware": {
+        "require_cuda": true,
+        "required_cuda_visible_devices": "0",
+        "expected_gpu_name": "NVIDIA GeForce RTX 3090",
+        "expected_visible_device_count": 1,
+        "dtype": "bfloat16",
+        "attention": "flash_attention_2",
+        "attention_fallback": "sdpa",
+        "max_peak_memory_gib": 21.5
+      },
+      "text": {
+        "max_length": 512,
+        "output_dimension": 1024
+      },
+      "sampling": {
+        "dense_top_k": 200,
+        "teacher_prefilter": 24,
+        "hard_pool_size": 12,
+        "hard_per_step": 2,
+        "easy_per_step": 1,
+        "easy_random_candidates": 1000,
+        "easy_quantile": 0.25,
+        "teacher_batch_size": 8,
+        "embedding_batch_size": 16,
+        "query_chunk_size": 32
+      },
+      "training": {
+        "epochs": 3,
+        "global_jd_batch_size": 16,
+        "gradcache_microbatch_texts": 2,
+        "learning_rate": 2e-05,
+        "weight_decay": 0.01,
+        "warmup_ratio": 0.05,
+        "temperature": 0.05,
+        "h1_loss_weight": 0.5,
+        "hard_loss_weight": 1.0,
+        "h1_margin": 0.05,
+        "hard_margin": 0.1,
+        "lora_rank": 16,
+        "lora_alpha": 32,
+        "lora_dropout": 0.05,
+        "lora_targets": [
+          "q_proj",
+          "k_proj",
+          "v_proj",
+          "o_proj"
+        ],
+        "gradient_checkpointing": true,
+        "save_steps": 100,
+        "log_steps": 10,
+        "max_grad_norm": 1.0,
+        "quantization": "none"
+      },
+      "evaluation": {
+        "splits": [
+          "validation",
+          "test"
+        ],
+        "recall_k": [
+          1,
+          2,
+          5,
+          10
+        ],
+        "embedding_batch_size": 8
+      }
+    },
+    "runtime_data": {
+      "schema_version": "jdmatch_runtime_v1",
+      "source_layout": "serialized_v1",
+      "files": {
+        "jds.jsonl": {
+          "rows": 8407,
+          "bytes": 15256218,
+          "sha256": "7510a9e4a4a16629d4615b399d14a1b3c111e5981e54dd6e71f690a2ffe83540"
+        },
+        "resumes.jsonl": {
+          "rows": 25221,
+          "bytes": 34702612,
+          "sha256": "c97bcf960b6349c4e3b779da6f986947ee93df25b12a83699f43f29095795255"
+        },
+        "sampling_contracts.jsonl": {
+          "rows": 8407,
+          "bytes": 4043412,
+          "sha256": "6f4c713d7ecdf8ff58281cf7e0c326f99d3a170ce0dc2dfb3164e3460b7548c6"
+        }
+      }
+    },
+    "models": {
+      "schema_version": "model_ids_without_resolved_snapshots",
+      "models": {
+        "embedding": "/data/wangxianjiong/models/jdmatch/Qwen3-Embedding-4B",
+        "mining_embedding": "/data/wangxianjiong/models/jdmatch/bge-m3",
+        "reranker": "/data/wangxianjiong/models/jdmatch/bge-reranker-v2-m3"
+      },
+      "warning": "Exact revisions are recorded after jdmatch download-models."
+    },
+    "runtime": {
+      "python": "3.11.15",
+      "platform": "Linux-6.17.0-40-generic-x86_64-with-glibc2.39",
+      "torch": "2.12.1+cu126",
+      "torch_cuda_runtime": "12.6",
+      "dependencies": {
+        "transformers": "4.57.6",
+        "sentence-transformers": "5.6.1",
+        "peft": "0.20.0",
+        "accelerate": "1.14.0",
+        "huggingface-hub": "0.36.2",
+        "numpy": "2.4.6",
+        "bitsandbytes": null,
+        "flash-attn": null
+      }
+    }
+  },
+  "stages": {
+    "status": "completed",
+    "preflight": {
+      "status": "passed",
+      "platform": "Linux-6.17.0-40-generic-x86_64-with-glibc2.39",
+      "python": "3.11.15",
+      "torch": "2.12.1+cu126",
+      "torch_cuda_runtime": "12.6",
+      "cuda_available": true,
+      "cuda_visible_devices_environment": "0",
+      "visible_cuda_devices": 1,
+      "gpu_name": "NVIDIA GeForce RTX 3090",
+      "bf16_supported": true,
+      "flash_attention_2_available": false,
+      "versions": {
+        "transformers": "4.57.6",
+        "sentence-transformers": "5.6.1",
+        "peft": "0.20.0",
+        "accelerate": "1.14.0",
+        "bitsandbytes": null
+      },
+      "data": {
+        "jds": 8407,
+        "resumes": 25221,
+        "contracts": 8407
+      },
+      "training_step": {
+        "status": "passed",
+        "device": "cuda:0",
+        "model": "/data/wangxianjiong/models/jdmatch/Qwen3-Embedding-4B",
+        "parameters": {
+          "total": 4033570816,
+          "trainable": 11796480,
+          "trainable_percent": 0.292457
+        },
+        "queries": 16,
+        "documents": 96,
+        "microbatch_texts": 2,
+        "configured_microbatch_texts": 2,
+        "loss": 0.29712343215942383,
+        "metrics": {
+          "loss": 0.29712343215942383,
+          "info_nce": 0.29371511936187744,
+          "h1_margin_loss": 0.006816655397415161,
+          "hard_margin_loss": 0.0,
+          "mean_positive_score": 0.7552890777587891,
+          "masked_in_batch_pairs": 0.0
+        },
+        "peak_memory_gib": 8.3418,
+        "peak_allocated_memory_gib": 8.0861,
+        "peak_reserved_memory_gib": 8.3418,
+        "elapsed_seconds": 34.551
+      }
+    },
+    "baseline": {
+      "models": [
+        {
+          "model": "/data/wangxianjiong/models/jdmatch/bge-m3",
+          "adapter": false,
+          "limit": null,
+          "results": [
+            {
+              "split": "validation",
+              "queries": 841,
+              "triplet_diagnostics": {
+                "candidate_pool": "source_triplet_only",
+                "pairwise_p_over_h1_accuracy": 0.7312722948870393,
+                "strict_both_positives_over_h1": 0.5992865636147443,
+                "mrr": 0.9316290130796671,
+                "ndcg_at_3": 0.9368871006027155,
+                "recall": {
+                  "1": 0.43162901307966706,
+                  "2": 0.7996432818073722,
+                  "5": 1.0,
+                  "10": 1.0
+                }
+              },
+              "full_split_retrieval": {
+                "candidate_pool": "all_source_triplets_in_evaluated_split",
+                "candidate_documents": 2523,
+                "known_relevant_per_query": 2,
+                "mrr": 0.6262466545460477,
+                "ndcg_at_10": 0.5622265127882552,
+                "mean_known_positive_rank": 29.065992865636147,
+                "recall": {
+                  "1": 0.25921521997621877,
+                  "2": 0.415576694411415,
+                  "5": 0.5731272294887039,
+                  "10": 0.6617122473246135
+                },
+                "caveat": "Only each JD's generated P1/P2 are labeled relevant. Other suitable cross-JD resumes may be unlabeled."
+              }
+            },
+            {
+              "split": "test",
+              "queries": 841,
+              "triplet_diagnostics": {
+                "candidate_pool": "source_triplet_only",
+                "pairwise_p_over_h1_accuracy": 0.7835909631391201,
+                "strict_both_positives_over_h1": 0.6730083234244947,
+                "mrr": 0.9470868014268727,
+                "ndcg_at_3": 0.9498014467342448,
+                "recall": {
+                  "1": 0.4470868014268728,
+                  "2": 0.8365041617122473,
+                  "5": 1.0,
+                  "10": 1.0
+                }
+              },
+              "full_split_retrieval": {
+                "candidate_pool": "all_source_triplets_in_evaluated_split",
+                "candidate_documents": 2523,
+                "known_relevant_per_query": 2,
+                "mrr": 0.6660581202137232,
+                "ndcg_at_10": 0.6041619247128959,
+                "mean_known_positive_rank": 28.96016646848989,
+                "recall": {
+                  "1": 0.27764565992865636,
+                  "2": 0.45600475624256837,
+                  "5": 0.6129607609988109,
+                  "10": 0.7080856123662307
+                },
+                "caveat": "Only each JD's generated P1/P2 are labeled relevant. Other suitable cross-JD resumes may be unlabeled."
+              }
+            }
+          ],
+          "elapsed_seconds": 115.672,
+          "warning": "Metrics use synthetic labels and are not a substitute for a cross-JD human-judged evaluation set."
+        },
+        {
+          "model": "/data/wangxianjiong/models/jdmatch/Qwen3-Embedding-4B",
+          "adapter": false,
+          "limit": null,
+          "results": [
+            {
+              "split": "validation",
+              "queries": 841,
+              "triplet_diagnostics": {
+                "candidate_pool": "source_triplet_only",
+                "pairwise_p_over_h1_accuracy": 0.9334126040428062,
+                "strict_both_positives_over_h1": 0.8775267538644471,
+                "mrr": 0.9946492271105827,
+                "ndcg_at_3": 0.9877462447235256,
+                "recall": {
+                  "1": 0.4946492271105826,
+                  "2": 0.9387633769322236,
+                  "5": 1.0,
+                  "10": 1.0
+                }
+              },
+              "full_split_retrieval": {
+                "candidate_pool": "all_source_triplets_in_evaluated_split",
+                "candidate_documents": 2523,
+                "known_relevant_per_query": 2,
+                "mrr": 0.9545634034751546,
+                "ndcg_at_10": 0.8982942047945399,
+                "mean_known_positive_rank": 4.995838287752675,
+                "recall": {
+                  "1": 0.46313912009512487,
+                  "2": 0.7847800237812128,
+                  "5": 0.9030915576694412,
+                  "10": 0.9369797859690844
+                },
+                "caveat": "Only each JD's generated P1/P2 are labeled relevant. Other suitable cross-JD resumes may be unlabeled."
+              }
+            },
+            {
+              "split": "test",
+              "queries": 841,
+              "triplet_diagnostics": {
+                "candidate_pool": "source_triplet_only",
+                "pairwise_p_over_h1_accuracy": 0.9375743162901308,
+                "strict_both_positives_over_h1": 0.8870392390011891,
+                "mrr": 0.9940546967895363,
+                "ndcg_at_3": 0.9882408217761814,
+                "recall": {
+                  "1": 0.4940546967895363,
+                  "2": 0.9435196195005945,
+                  "5": 1.0,
+                  "10": 1.0
+                }
+              },
+              "full_split_retrieval": {
+                "candidate_pool": "all_source_triplets_in_evaluated_split",
+                "candidate_documents": 2523,
+                "known_relevant_per_query": 2,
+                "mrr": 0.9422970431751537,
+                "ndcg_at_10": 0.8948293332494047,
+                "mean_known_positive_rank": 6.378121284185493,
+                "recall": {
+                  "1": 0.45541022592152197,
+                  "2": 0.7782401902497027,
+                  "5": 0.9066587395957194,
+                  "10": 0.9405469678953626
+                },
+                "caveat": "Only each JD's generated P1/P2 are labeled relevant. Other suitable cross-JD resumes may be unlabeled."
+              }
+            }
+          ],
+          "elapsed_seconds": 1195.412,
+          "warning": "Metrics use synthetic labels and are not a substitute for a cross-JD human-judged evaluation set."
+        }
+      ]
+    },
+    "mining": {
+      "schema_version": "negative_sampling_v1",
+      "config": {
+        "schema_version": "jdmatch_config_v1",
+        "run_name": "qwen3_embedding_4b_rtx3090",
+        "seed": 20260730,
+        "paths": {
+          "data_dir": "/data/wangxianjiong/code/jdmatch-server-qwen3-4b-rtx3090/data/runtime",
+          "run_dir": "/data/wangxianjiong/code/jdmatch-server-qwen3-4b-rtx3090/runs/qwen3_embedding_4b_rtx3090"
+        },
+        "models": {
+          "embedding": "/data/wangxianjiong/models/jdmatch/Qwen3-Embedding-4B",
+          "mining_embedding": "/data/wangxianjiong/models/jdmatch/bge-m3",
+          "reranker": "/data/wangxianjiong/models/jdmatch/bge-reranker-v2-m3",
+          "query_instruction": "Given a job description, retrieve candidate resumes that satisfy core skills, experience, and education requirements."
+        },
+        "hardware": {
+          "require_cuda": true,
+          "required_cuda_visible_devices": "0",
+          "expected_gpu_name": "NVIDIA GeForce RTX 3090",
+          "expected_visible_device_count": 1,
+          "dtype": "bfloat16",
+          "attention": "flash_attention_2",
+          "attention_fallback": "sdpa",
+          "max_peak_memory_gib": 21.5
+        },
+        "text": {
+          "max_length": 512,
+          "output_dimension": 1024
+        },
+        "sampling": {
+          "dense_top_k": 200,
+          "teacher_prefilter": 24,
+          "hard_pool_size": 12,
+          "hard_per_step": 2,
+          "easy_per_step": 1,
+          "easy_random_candidates": 1000,
+          "easy_quantile": 0.25,
+          "teacher_batch_size": 8,
+          "embedding_batch_size": 16,
+          "query_chunk_size": 32
+        },
+        "training": {
+          "epochs": 3,
+          "global_jd_batch_size": 16,
+          "gradcache_microbatch_texts": 2,
+          "learning_rate": 2e-05,
+          "weight_decay": 0.01,
+          "warmup_ratio": 0.05,
+          "temperature": 0.05,
+          "h1_loss_weight": 0.5,
+          "hard_loss_weight": 1.0,
+          "h1_margin": 0.05,
+          "hard_margin": 0.1,
+          "lora_rank": 16,
+          "lora_alpha": 32,
+          "lora_dropout": 0.05,
+          "lora_targets": [
+            "q_proj",
+            "k_proj",
+            "v_proj",
+            "o_proj"
+          ],
+          "gradient_checkpointing": true,
+          "save_steps": 100,
+          "log_steps": 10,
+          "max_grad_norm": 1.0,
+          "quantization": "none"
+        },
+        "evaluation": {
+          "splits": [
+            "validation",
+            "test"
+          ],
+          "recall_k": [
+            1,
+            2,
+            5,
+            10
+          ],
+          "embedding_batch_size": 8
+        }
+      },
+      "limit": null,
+      "queries": 6725,
+      "candidate_documents": 13450,
+      "groups_output": "/data/wangxianjiong/code/jdmatch-server-qwen3-4b-rtx3090/runs/qwen3_embedding_4b_rtx3090/negative_mining/train_groups.jsonl",
+      "hard_pool": {
+        "mean": 11.168,
+        "min": 0,
+        "max": 12,
+        "strict_teacher_mean": 10.0045,
+        "groups_with_at_least_2": 6610,
+        "groups_with_at_least_6": 6308
+      },
+      "fallback_counts": {
+        "same_family_teacher_fallback": 25859,
+        "cross_family_teacher_fallback": 2196
+      },
+      "reason_counts": {
+        "experience_below_requirement": 31882,
+        "critical_requirement_missing": 35019,
+        "education_below_requirement": 20895
+      },
+      "elapsed_seconds": 4734.501
+    },
+    "training": {
+      "schema_version": "jdmatch_run_v1",
+      "status": "completed",
+      "provenance": {
+        "package": {
+          "name": "jd-resume-match",
+          "version": "0.1.0",
+          "source_tree_sha256": "7e7eee4f6b00a71fab19ae8d01fb79f0c76be25cc24ccdb31add1d064cbe69f9"
+        },
+        "config": {
+          "schema_version": "jdmatch_config_v1",
+          "run_name": "qwen3_embedding_4b_rtx3090",
+          "seed": 20260730,
+          "paths": {
+            "data_dir": "/data/wangxianjiong/code/jdmatch-server-qwen3-4b-rtx3090/data/runtime",
+            "run_dir": "/data/wangxianjiong/code/jdmatch-server-qwen3-4b-rtx3090/runs/qwen3_embedding_4b_rtx3090"
+          },
+          "models": {
+            "embedding": "/data/wangxianjiong/models/jdmatch/Qwen3-Embedding-4B",
+            "mining_embedding": "/data/wangxianjiong/models/jdmatch/bge-m3",
+            "reranker": "/data/wangxianjiong/models/jdmatch/bge-reranker-v2-m3",
+            "query_instruction": "Given a job description, retrieve candidate resumes that satisfy core skills, experience, and education requirements."
+          },
+          "hardware": {
+            "require_cuda": true,
+            "required_cuda_visible_devices": "0",
+            "expected_gpu_name": "NVIDIA GeForce RTX 3090",
+            "expected_visible_device_count": 1,
+            "dtype": "bfloat16",
+            "attention": "flash_attention_2",
+            "attention_fallback": "sdpa",
+            "max_peak_memory_gib": 21.5
+          },
+          "text": {
+            "max_length": 512,
+            "output_dimension": 1024
+          },
+          "sampling": {
+            "dense_top_k": 200,
+            "teacher_prefilter": 24,
+            "hard_pool_size": 12,
+            "hard_per_step": 2,
+            "easy_per_step": 1,
+            "easy_random_candidates": 1000,
+            "easy_quantile": 0.25,
+            "teacher_batch_size": 8,
+            "embedding_batch_size": 16,
+            "query_chunk_size": 32
+          },
+          "training": {
+            "epochs": 3,
+            "global_jd_batch_size": 16,
+            "gradcache_microbatch_texts": 2,
+            "learning_rate": 2e-05,
+            "weight_decay": 0.01,
+            "warmup_ratio": 0.05,
+            "temperature": 0.05,
+            "h1_loss_weight": 0.5,
+            "hard_loss_weight": 1.0,
+            "h1_margin": 0.05,
+            "hard_margin": 0.1,
+            "lora_rank": 16,
+            "lora_alpha": 32,
+            "lora_dropout": 0.05,
+            "lora_targets": [
+              "q_proj",
+              "k_proj",
+              "v_proj",
+              "o_proj"
+            ],
+            "gradient_checkpointing": true,
+            "save_steps": 100,
+            "log_steps": 10,
+            "max_grad_norm": 1.0,
+            "quantization": "none"
+          },
+          "evaluation": {
+            "splits": [
+              "validation",
+              "test"
+            ],
+            "recall_k": [
+              1,
+              2,
+              5,
+              10
+            ],
+            "embedding_batch_size": 8
+          }
+        },
+        "runtime_data": {
+          "schema_version": "jdmatch_runtime_v1",
+          "source_layout": "serialized_v1",
+          "files": {
+            "jds.jsonl": {
+              "rows": 8407,
+              "bytes": 15256218,
+              "sha256": "7510a9e4a4a16629d4615b399d14a1b3c111e5981e54dd6e71f690a2ffe83540"
+            },
+            "resumes.jsonl": {
+              "rows": 25221,
+              "bytes": 34702612,
+              "sha256": "c97bcf960b6349c4e3b779da6f986947ee93df25b12a83699f43f29095795255"
+            },
+            "sampling_contracts.jsonl": {
+              "rows": 8407,
+              "bytes": 4043412,
+              "sha256": "6f4c713d7ecdf8ff58281cf7e0c326f99d3a170ce0dc2dfb3164e3460b7548c6"
+            }
+          }
+        },
+        "models": {
+          "schema_version": "model_ids_without_resolved_snapshots",
+          "models": {
+            "embedding": "/data/wangxianjiong/models/jdmatch/Qwen3-Embedding-4B",
+            "mining_embedding": "/data/wangxianjiong/models/jdmatch/bge-m3",
+            "reranker": "/data/wangxianjiong/models/jdmatch/bge-reranker-v2-m3"
+          },
+          "warning": "Exact revisions are recorded after jdmatch download-models."
+        },
+        "runtime": {
+          "python": "3.11.15",
+          "platform": "Linux-6.17.0-40-generic-x86_64-with-glibc2.39",
+          "torch": "2.12.1+cu126",
+          "torch_cuda_runtime": "12.6",
+          "dependencies": {
+            "transformers": "4.57.6",
+            "sentence-transformers": "5.6.1",
+            "peft": "0.20.0",
+            "accelerate": "1.14.0",
+            "huggingface-hub": "0.36.2",
+            "numpy": "2.4.6",
+            "bitsandbytes": null,
+            "flash-attn": null
+          }
+        }
+      },
+      "parameters": {
+        "total": 4033570816,
+        "trainable": 11796480,
+        "trainable_percent": 0.292457
+      },
+      "groups": 6725,
+      "steps_per_epoch": 421,
+      "total_steps": 1263,
+      "last_checkpoint": "/data/wangxianjiong/code/jdmatch-server-qwen3-4b-rtx3090/runs/qwen3_embedding_4b_rtx3090/checkpoints/step-00001263",
+      "best_adapter": "/data/wangxianjiong/code/jdmatch-server-qwen3-4b-rtx3090/runs/qwen3_embedding_4b_rtx3090/best_adapter",
+      "gradcache_microbatch_texts": 2,
+      "elapsed_seconds": 45274.765
+    },
+    "evaluation": {
+      "model": "/data/wangxianjiong/code/jdmatch-server-qwen3-4b-rtx3090/runs/qwen3_embedding_4b_rtx3090/best_adapter",
+      "adapter": true,
+      "limit": null,
+      "results": [
+        {
+          "split": "validation",
+          "queries": 841,
+          "triplet_diagnostics": {
+            "candidate_pool": "source_triplet_only",
+            "pairwise_p_over_h1_accuracy": 0.9732461355529132,
+            "strict_both_positives_over_h1": 0.9488703923900119,
+            "mrr": 0.9988109393579072,
+            "ndcg_at_3": 0.9953571999551847,
+            "recall": {
+              "1": 0.49881093935790727,
+              "2": 0.974435196195006,
+              "5": 1.0,
+              "10": 1.0
+            }
+          },
+          "full_split_retrieval": {
+            "candidate_pool": "all_source_triplets_in_evaluated_split",
+            "candidate_documents": 2523,
+            "known_relevant_per_query": 2,
+            "mrr": 0.9907937880589486,
+            "ndcg_at_10": 0.9624506690096029,
+            "mean_known_positive_rank": 2.2651605231866827,
+            "recall": {
+              "1": 0.49167657550535077,
+              "2": 0.8941736028537456,
+              "5": 0.9661117717003567,
+              "10": 0.9827586206896551
+            },
+            "caveat": "Only each JD's generated P1/P2 are labeled relevant. Other suitable cross-JD resumes may be unlabeled."
+          }
+        },
+        {
+          "split": "test",
+          "queries": 841,
+          "triplet_diagnostics": {
+            "candidate_pool": "source_triplet_only",
+            "pairwise_p_over_h1_accuracy": 0.9732461355529132,
+            "strict_both_positives_over_h1": 0.9464922711058263,
+            "mrr": 1.0,
+            "ndcg_at_3": 0.995704441749903,
+            "recall": {
+              "1": 0.5,
+              "2": 0.9732461355529132,
+              "5": 1.0,
+              "10": 1.0
+            }
+          },
+          "full_split_retrieval": {
+            "candidate_pool": "all_source_triplets_in_evaluated_split",
+            "candidate_documents": 2523,
+            "known_relevant_per_query": 2,
+            "mrr": 0.9861354899999372,
+            "ndcg_at_10": 0.9578054577645951,
+            "mean_known_positive_rank": 3.138525564803805,
+            "recall": {
+              "1": 0.4875148632580262,
+              "2": 0.89179548156956,
+              "5": 0.964922711058264,
+              "10": 0.9791914387633769
+            },
+            "caveat": "Only each JD's generated P1/P2 are labeled relevant. Other suitable cross-JD resumes may be unlabeled."
+          }
+        }
+      ],
+      "elapsed_seconds": 498.444,
+      "warning": "Metrics use synthetic labels and are not a substitute for a cross-JD human-judged evaluation set."
+    }
+  }
+}

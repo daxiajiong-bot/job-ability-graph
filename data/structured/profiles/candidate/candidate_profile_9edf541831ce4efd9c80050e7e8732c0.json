@@ -1,0 +1,347 @@
+{
+  "artifact_type": "candidate_profile",
+  "created_at": "2026-08-06T18:55:03Z",
+  "extraction": {
+    "evidence": [],
+    "fields": {},
+    "implementation": "mock",
+    "model": null,
+    "raw_model_output": "",
+    "reason": "Ollama structured extraction failed: local LLM request failed: timed out",
+    "schema": null,
+    "state": "not_implemented",
+    "validation_error": "local LLM request failed: timed out",
+    "warnings": [
+      "Ollama structured extraction failed: local LLM request failed: timed out"
+    ]
+  },
+  "normalization": {
+    "implementation": "lightweight_skill_normalizer",
+    "skills": [],
+    "state": "not_implemented",
+    "warnings": [
+      "Ollama structured extraction failed: local LLM request failed: timed out"
+    ]
+  },
+  "profile": {
+    "artifacts": {
+      "profile_json": "data\\structured\\profiles\\candidate\\candidate_profile_9edf541831ce4efd9c80050e7e8732c0.json",
+      "schema_version": "profile-extraction/v2",
+      "storage": "filesystem"
+    },
+    "attributes": {
+      "candidate": {
+        "current_title": "AI大模型应用工程师",
+        "name": "XXX",
+        "target_position": "AI大模型应用工程师"
+      },
+      "capabilities": [],
+      "career_intent": {
+        "target_position": "AI大模型应用工程师"
+      },
+      "education": [
+        {
+          "degree": "大专",
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "major": null,
+          "period": null,
+          "school": null
+        }
+      ],
+      "experience": [],
+      "profile_schema": "profile-extraction/v2",
+      "projects": [],
+      "resume_profile": {
+        "achievements": [],
+        "candidate": {
+          "current_title": "AI大模型应用工程师",
+          "name": "XXX",
+          "target_position": "AI大模型应用工程师"
+        },
+        "capabilities": [],
+        "career_intent": {
+          "target_position": "AI大模型应用工程师"
+        },
+        "certificates": [],
+        "document_type": "resume",
+        "education": [
+          {
+            "degree": "大专",
+            "evidence_ids": [
+              "ev_008"
+            ],
+            "major": null,
+            "period": null,
+            "school": null
+          }
+        ],
+        "languages": [],
+        "project_experience": [],
+        "schema_version": "profile-extraction/v2",
+        "skills": [
+          {
+            "category": "other",
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "level": "unknown",
+            "lskt_label": "S",
+            "name": "Prompt",
+            "raw_name": "Prompt",
+            "years": null
+          },
+          {
+            "category": "ai_model",
+            "evidence_ids": [
+              "ev_002"
+            ],
+            "level": "unknown",
+            "lskt_label": "S",
+            "name": "AIGC",
+            "raw_name": "AIGC",
+            "years": null
+          },
+          {
+            "category": "ai_model",
+            "evidence_ids": [
+              "ev_003"
+            ],
+            "level": "unknown",
+            "lskt_label": "S",
+            "name": "大模型",
+            "raw_name": "大模型",
+            "years": null
+          },
+          {
+            "category": "ai_model",
+            "evidence_ids": [
+              "ev_004"
+            ],
+            "level": "unknown",
+            "lskt_label": "S",
+            "name": "机器学习",
+            "raw_name": "机器学习",
+            "years": null
+          },
+          {
+            "category": "ai_model",
+            "evidence_ids": [
+              "ev_005"
+            ],
+            "level": "unknown",
+            "lskt_label": "S",
+            "name": "自然语言处理",
+            "raw_name": "自然语言处理",
+            "years": null
+          },
+          {
+            "category": "database",
+            "evidence_ids": [
+              "ev_006"
+            ],
+            "level": "unknown",
+            "lskt_label": "S",
+            "name": "知识库",
+            "raw_name": "知识库",
+            "years": null
+          },
+          {
+            "category": "other",
+            "evidence_ids": [
+              "ev_007"
+            ],
+            "level": "unknown",
+            "lskt_label": "S",
+            "name": "微调",
+            "raw_name": "微调",
+            "years": null
+          }
+        ],
+        "work_experience": []
+      },
+      "skills": [
+        {
+          "category": "other",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "level": "unknown",
+          "lskt_label": "S",
+          "name": "Prompt",
+          "raw_name": "Prompt",
+          "years": null
+        },
+        {
+          "category": "ai_model",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "level": "unknown",
+          "lskt_label": "S",
+          "name": "AIGC",
+          "raw_name": "AIGC",
+          "years": null
+        },
+        {
+          "category": "ai_model",
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "level": "unknown",
+          "lskt_label": "S",
+          "name": "大模型",
+          "raw_name": "大模型",
+          "years": null
+        },
+        {
+          "category": "ai_model",
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "level": "unknown",
+          "lskt_label": "S",
+          "name": "机器学习",
+          "raw_name": "机器学习",
+          "years": null
+        },
+        {
+          "category": "ai_model",
+          "evidence_ids": [
+            "ev_005"
+          ],
+          "level": "unknown",
+          "lskt_label": "S",
+          "name": "自然语言处理",
+          "raw_name": "自然语言处理",
+          "years": null
+        },
+        {
+          "category": "database",
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "level": "unknown",
+          "lskt_label": "S",
+          "name": "知识库",
+          "raw_name": "知识库",
+          "years": null
+        },
+        {
+          "category": "other",
+          "evidence_ids": [
+            "ev_007"
+          ],
+          "level": "unknown",
+          "lskt_label": "S",
+          "name": "微调",
+          "raw_name": "微调",
+          "years": null
+        }
+      ],
+      "target_position": "AI大模型应用工程师"
+    },
+    "created_at": "2026-08-06T18:55:03Z",
+    "evidence": [
+      {
+        "field": "skills",
+        "id": "ev_001",
+        "text": "程师岗位，具备人工智能专业基础，熟悉主流大模型平台操作与基础Prompt优化逻辑，掌握语料整理、文本调试、基础知识库搭建技能，可协助"
+      },
+      {
+        "field": "skills",
+        "id": "ev_002",
+        "text": "队完成大模型输出优化、应用测试、数据整理等基础工作，愿意深耕AIGC与大模型应用领域，持续提升实操能力。 教育背景 XX职业技术"
+      },
+      {
+        "field": "skills",
+        "id": "ev_003",
+        "text": "：23岁｜学历：大专 专业：人工智能技术应用｜求职岗位：AI大模型应用工程师 联系电话：138XXXX1234｜邮箱：xxxx"
+      },
+      {
+        "field": "skills",
+        "id": "ev_004",
+        "text": "、自然语言处理、文本数据处理、人工智能应用开发、数据库基础、机器学习通识 学业亮点：系统学习大模型与AIGC相关专业课程，掌握大"
+      },
+      {
+        "field": "skills",
+        "id": "ev_005",
+        "text": "3.06｜大专 主修课程：大模型应用基础、AIGC技术概论、自然语言处理、文本数据处理、人工智能应用开发、数据库基础、机器学习通识"
+      },
+      {
+        "field": "skills",
+        "id": "ev_006",
+        "text": "操作与基础Prompt优化逻辑，掌握语料整理、文本调试、基础知识库搭建技能，可协助团队完成大模型输出优化、应用测试、数据整理等"
+      },
+      {
+        "field": "skills",
+        "id": "ev_007",
+        "text": "错误语料，完成文本基础切片整理，保障语料数据合规可用，为模型微调、知识库挂载提供基础支撑。 - AI知识库基础搭建与调试：协"
+      },
+      {
+        "field": "education",
+        "id": "ev_008",
+        "text": "大专"
+      }
+    ],
+    "id": "candidate_profile_9edf541831ce4efd9c80050e7e8732c0",
+    "implementation": "heuristic_profile_builder",
+    "profile_type": "candidate",
+    "source_document_id": "doc_721449dc2b4e4adb9a5ab9adbc948faa",
+    "state": "available",
+    "warnings": [
+      "Ollama structured extraction failed: local LLM request failed: timed out",
+      "Used heuristic profile extraction because LLM extraction was unavailable."
+    ]
+  },
+  "schema_version": "profile-extraction/v2",
+  "source_document": {
+    "char_count": 1635,
+    "content_digest": "a352e9a41ea8bc2c26e13c2e3beadd5309427b1eb8a9b9acd08f7e802ac3a4e5",
+    "created_at": "2026-08-06T18:50:01Z",
+    "document_type": "resume",
+    "id": "doc_721449dc2b4e4adb9a5ab9adbc948faa",
+    "metadata": {
+      "candidate_name": "XXX｜年龄：23岁｜学历：大专",
+      "display_name": "XXX｜年龄：23岁｜学历：大专",
+      "education": "大专",
+      "skills": [
+        "求职",
+        "AI",
+        "大模型应用工程师",
+        "岗位",
+        "具备人工智能专业",
+        "基础",
+        "熟悉主流大模型平",
+        "台操作与基础",
+        "Prompt",
+        "优化逻辑",
+        "掌握语料整理",
+        "文本调试",
+        "基础知识库搭建技",
+        "可协助团队完成大",
+        "模型输出优化",
+        "应用测试",
+        "数据整理等基础工",
+        "愿意深耕",
+        "AIGC",
+        "与大模型应用领域",
+        "持续提升实操能力",
+        "专业技能",
+        "中度及格匹配",
+        "相关",
+        "具备人工智能科班",
+        "背景及一年大模型",
+        "应用相关实操经验",
+        "熟练掌握",
+        "优化",
+        "语料处理"
+      ]
+    },
+    "source": {
+      "source_system": "manual"
+    },
+    "storage": "memory"
+  }
+}

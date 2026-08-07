@@ -1,0 +1,226 @@
+{
+  "schema_version": "jd_rag_augmentation_v1",
+  "source_profile_count": 10000,
+  "augmented_profile_count": 10000,
+  "validation_status_counts": {
+    "valid": 10000
+  },
+  "original_skill_mentions": 101799,
+  "augmented_skill_mentions": 104912,
+  "added_skill_mentions": 3113,
+  "docs_with_additions": 2656,
+  "docs_with_additions_ratio": 0.2656,
+  "max_additions_per_doc": 20,
+  "added_skill_source_counts": {
+    "retrieved_skill_index": 3113
+  },
+  "top_added_skills": [
+    {
+      "name": "SQL",
+      "count": 418
+    },
+    {
+      "name": "模型微调",
+      "count": 353
+    },
+    {
+      "name": "视觉算法",
+      "count": 330
+    },
+    {
+      "name": "微调",
+      "count": 235
+    },
+    {
+      "name": "Agent",
+      "count": 225
+    },
+    {
+      "name": "算法开发",
+      "count": 220
+    },
+    {
+      "name": "模型训练",
+      "count": 201
+    },
+    {
+      "name": "机器视觉",
+      "count": 143
+    },
+    {
+      "name": "人工智能",
+      "count": 128
+    },
+    {
+      "name": "大模型",
+      "count": 111
+    },
+    {
+      "name": "模型推理",
+      "count": 110
+    },
+    {
+      "name": "模型部署",
+      "count": 107
+    },
+    {
+      "name": "Go",
+      "count": 86
+    },
+    {
+      "name": "算法设计",
+      "count": 84
+    },
+    {
+      "name": "Java",
+      "count": 74
+    },
+    {
+      "name": "控制算法",
+      "count": 56
+    },
+    {
+      "name": "AI Agent",
+      "count": 43
+    },
+    {
+      "name": "计算机视觉",
+      "count": 22
+    },
+    {
+      "name": "深度学习",
+      "count": 16
+    },
+    {
+      "name": "模型评估",
+      "count": 13
+    },
+    {
+      "name": "机器学习",
+      "count": 13
+    },
+    {
+      "name": "多模态",
+      "count": 10
+    },
+    {
+      "name": "C++",
+      "count": 9
+    },
+    {
+      "name": "数据挖掘",
+      "count": 9
+    },
+    {
+      "name": "AIGC",
+      "count": 8
+    },
+    {
+      "name": "Python",
+      "count": 8
+    },
+    {
+      "name": "图像识别",
+      "count": 7
+    },
+    {
+      "name": "图像处理",
+      "count": 7
+    },
+    {
+      "name": "LlamaIndex",
+      "count": 6
+    },
+    {
+      "name": "C#",
+      "count": 5
+    },
+    {
+      "name": "嵌入式开发",
+      "count": 5
+    },
+    {
+      "name": "Git",
+      "count": 3
+    },
+    {
+      "name": "Elasticsearch",
+      "count": 3
+    },
+    {
+      "name": "RAG",
+      "count": 3
+    },
+    {
+      "name": "ASR",
+      "count": 3
+    },
+    {
+      "name": "自然语言处理",
+      "count": 3
+    },
+    {
+      "name": "ROS",
+      "count": 3
+    },
+    {
+      "name": "系统设计",
+      "count": 3
+    },
+    {
+      "name": "OpenCV",
+      "count": 3
+    },
+    {
+      "name": "自动控制",
+      "count": 2
+    },
+    {
+      "name": "数据分析",
+      "count": 2
+    },
+    {
+      "name": "TTS",
+      "count": 2
+    },
+    {
+      "name": "大语言模型",
+      "count": 2
+    },
+    {
+      "name": "语音识别",
+      "count": 2
+    },
+    {
+      "name": "LangChain",
+      "count": 1
+    },
+    {
+      "name": "OCR",
+      "count": 1
+    },
+    {
+      "name": "Rust",
+      "count": 1
+    },
+    {
+      "name": "Linux",
+      "count": 1
+    },
+    {
+      "name": "Docker",
+      "count": 1
+    },
+    {
+      "name": "TensorRT",
+      "count": 1
+    }
+  ],
+  "error_count": 0,
+  "rag_policy": {
+    "mode": "local_retrieval_with_evidence_gate",
+    "facts_added_only_if_surface_is_found_in_current_raw_text": true,
+    "external_llm_api_used": false,
+    "external_vector_db_used": false
+  }
+}

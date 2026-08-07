@@ -1,0 +1,11 @@
+{
+  "zip_path": "D:\\xwechat_files\\wxid_r9xfhwvpziry22_1cbc\\msg\\file\\2026-07\\jd_raw_10000.zip",
+  "selected_ids_path": "D:\\xwechat_files\\wxid_r9xfhwvpziry22_1cbc\\msg\\file\\2026-07\\jd_1000_job_ids.txt",
+  "selected_id_count": 1000,
+  "total_records_in_zip": 10515,
+  "selected_records": 1000,
+  "missing_selected_ids": 0,
+  "output": "jd-parser\\data\\input\\jd_selected_1000.jsonl",
+  "source_record_copy": "jd-parser\\data\\input\\jd_selected_1000_source_records.jsonl",
+  "policy": "restore the 1000 records previously excluded from jd_remaining_9000 by job_id"
+}

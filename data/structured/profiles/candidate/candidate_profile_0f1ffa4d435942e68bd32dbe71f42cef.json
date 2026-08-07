@@ -1,0 +1,394 @@
+{
+  "artifact_type": "candidate_profile",
+  "created_at": "2026-08-05T07:12:09Z",
+  "extraction": {
+    "evidence": [
+      {
+        "field": "education",
+        "id": "ev_001",
+        "text": "CS degree"
+      },
+      {
+        "field": "skills",
+        "id": "ev_002",
+        "text": "Python"
+      },
+      {
+        "field": "skills",
+        "id": "ev_003",
+        "text": "MySQL"
+      },
+      {
+        "field": "skills",
+        "id": "ev_004",
+        "text": "Linux"
+      }
+    ],
+    "fields": {
+      "achievements": [],
+      "candidate": {
+        "current_title": null,
+        "location": null,
+        "name": "Zhang San",
+        "years_of_experience": null
+      },
+      "capabilities": [],
+      "career_intent": {
+        "target_industry": null,
+        "target_location": null,
+        "target_position": null
+      },
+      "certificates": [],
+      "document_type": "resume",
+      "education": [
+        {
+          "degree": "CS degree",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "major": null,
+          "period": null,
+          "school": null
+        }
+      ],
+      "evidence": [
+        {
+          "field": "education",
+          "id": "ev_001",
+          "text": "CS degree"
+        },
+        {
+          "field": "skills",
+          "id": "ev_002",
+          "text": "Python"
+        },
+        {
+          "field": "skills",
+          "id": "ev_003",
+          "text": "MySQL"
+        },
+        {
+          "field": "skills",
+          "id": "ev_004",
+          "text": "Linux"
+        }
+      ],
+      "experience": [],
+      "languages": [],
+      "project_experience": [],
+      "projects": [],
+      "requirements": [],
+      "responsibilities": [],
+      "schema_version": "profile-extraction/v2",
+      "skills": [
+        {
+          "category": "programming_language",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "level": "proficient",
+          "lskt_label": "S",
+          "name": "Python",
+          "raw_name": "Python",
+          "years": null
+        },
+        {
+          "category": "database",
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "level": "proficient",
+          "lskt_label": "S",
+          "name": "MySQL",
+          "raw_name": "MySQL",
+          "years": null
+        },
+        {
+          "category": "platform",
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "level": "working",
+          "lskt_label": "S",
+          "name": "Linux",
+          "raw_name": "Linux",
+          "years": null
+        }
+      ],
+      "work_experience": []
+    },
+    "implementation": "ollama",
+    "model": "qwen2.5:7b",
+    "raw_model_output": "",
+    "reason": "",
+    "schema": "profile-extraction/v2",
+    "state": "available",
+    "validation_error": "",
+    "warnings": []
+  },
+  "normalization": {
+    "implementation": "lightweight_skill_normalizer",
+    "skills": [
+      {
+        "category": "programming_language",
+        "esco_preferred_label": "Python (computer programming)",
+        "esco_uri": "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d",
+        "esco_version": "v1.2.1",
+        "evidence_ids": [
+          "ev_002"
+        ],
+        "level": "proficient",
+        "linking_confidence": 1.0,
+        "linking_status": "linked",
+        "lskt_label": "S",
+        "name": "Python (computer programming)",
+        "raw_name": "Python",
+        "years": null
+      },
+      {
+        "category": "database",
+        "esco_preferred_label": "MySQL",
+        "esco_uri": "http://data.europa.eu/esco/skill/4da171e5-779c-4983-a76f-91c16751e99f",
+        "esco_version": "v1.2.1",
+        "evidence_ids": [
+          "ev_003"
+        ],
+        "level": "proficient",
+        "linking_confidence": 1.0,
+        "linking_status": "linked",
+        "lskt_label": "S",
+        "name": "MySQL",
+        "raw_name": "MySQL",
+        "years": null
+      },
+      {
+        "category": "platform",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_004"
+        ],
+        "level": "working",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "Linux",
+        "raw_name": "Linux",
+        "years": null
+      }
+    ],
+    "state": "available",
+    "warnings": []
+  },
+  "profile": {
+    "artifacts": {
+      "profile_json": "data\\structured\\profiles\\candidate\\candidate_profile_0f1ffa4d435942e68bd32dbe71f42cef.json",
+      "schema_version": "profile-extraction/v2",
+      "storage": "filesystem"
+    },
+    "attributes": {
+      "candidate": {
+        "current_title": null,
+        "location": null,
+        "name": "Zhang San",
+        "years_of_experience": null
+      },
+      "capabilities": [],
+      "career_intent": {
+        "target_industry": null,
+        "target_location": null,
+        "target_position": null
+      },
+      "education": [
+        {
+          "degree": "CS degree",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "major": null,
+          "period": null,
+          "school": null
+        }
+      ],
+      "experience": [],
+      "profile_schema": "profile-extraction/v2",
+      "projects": [],
+      "resume_profile": {
+        "achievements": [],
+        "candidate": {
+          "current_title": null,
+          "location": null,
+          "name": "Zhang San",
+          "years_of_experience": null
+        },
+        "capabilities": [],
+        "career_intent": {
+          "target_industry": null,
+          "target_location": null,
+          "target_position": null
+        },
+        "certificates": [],
+        "document_type": "resume",
+        "education": [
+          {
+            "degree": "CS degree",
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "major": null,
+            "period": null,
+            "school": null
+          }
+        ],
+        "languages": [],
+        "project_experience": [],
+        "schema_version": "profile-extraction/v2",
+        "skills": [
+          {
+            "category": "programming_language",
+            "esco_preferred_label": "Python (computer programming)",
+            "esco_uri": "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d",
+            "esco_version": "v1.2.1",
+            "evidence_ids": [
+              "ev_002"
+            ],
+            "level": "proficient",
+            "linking_confidence": 1.0,
+            "linking_status": "linked",
+            "lskt_label": "S",
+            "name": "Python (computer programming)",
+            "raw_name": "Python",
+            "years": null
+          },
+          {
+            "category": "database",
+            "esco_preferred_label": "MySQL",
+            "esco_uri": "http://data.europa.eu/esco/skill/4da171e5-779c-4983-a76f-91c16751e99f",
+            "esco_version": "v1.2.1",
+            "evidence_ids": [
+              "ev_003"
+            ],
+            "level": "proficient",
+            "linking_confidence": 1.0,
+            "linking_status": "linked",
+            "lskt_label": "S",
+            "name": "MySQL",
+            "raw_name": "MySQL",
+            "years": null
+          },
+          {
+            "category": "platform",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_004"
+            ],
+            "level": "working",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "Linux",
+            "raw_name": "Linux",
+            "years": null
+          }
+        ],
+        "work_experience": []
+      },
+      "skills": [
+        {
+          "category": "programming_language",
+          "esco_preferred_label": "Python (computer programming)",
+          "esco_uri": "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d",
+          "esco_version": "v1.2.1",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "level": "proficient",
+          "linking_confidence": 1.0,
+          "linking_status": "linked",
+          "lskt_label": "S",
+          "name": "Python (computer programming)",
+          "raw_name": "Python",
+          "years": null
+        },
+        {
+          "category": "database",
+          "esco_preferred_label": "MySQL",
+          "esco_uri": "http://data.europa.eu/esco/skill/4da171e5-779c-4983-a76f-91c16751e99f",
+          "esco_version": "v1.2.1",
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "level": "proficient",
+          "linking_confidence": 1.0,
+          "linking_status": "linked",
+          "lskt_label": "S",
+          "name": "MySQL",
+          "raw_name": "MySQL",
+          "years": null
+        },
+        {
+          "category": "platform",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "level": "working",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "Linux",
+          "raw_name": "Linux",
+          "years": null
+        }
+      ],
+      "target_position": null
+    },
+    "created_at": "2026-08-05T07:12:09Z",
+    "evidence": [
+      {
+        "field": "education",
+        "id": "ev_001",
+        "text": "CS degree"
+      },
+      {
+        "field": "skills",
+        "id": "ev_002",
+        "text": "Python"
+      },
+      {
+        "field": "skills",
+        "id": "ev_003",
+        "text": "MySQL"
+      },
+      {
+        "field": "skills",
+        "id": "ev_004",
+        "text": "Linux"
+      }
+    ],
+    "id": "candidate_profile_0f1ffa4d435942e68bd32dbe71f42cef",
+    "implementation": "llm_profile_builder",
+    "profile_type": "candidate",
+    "source_document_id": "doc_d668eaee29aa47248b5af2e8a066a3a5",
+    "state": "available",
+    "warnings": []
+  },
+  "schema_version": "profile-extraction/v2",
+  "source_document": {
+    "char_count": 65,
+    "content_digest": "b7c33eac2631374a0eb112948805443eb0d07c19db52a15b328929fef29404f6",
+    "created_at": "2026-08-05T07:11:59Z",
+    "document_type": "resume",
+    "id": "doc_d668eaee29aa47248b5af2e8a066a3a5",
+    "metadata": {},
+    "source": {
+      "source_system": "manual"
+    },
+    "storage": "memory"
+  }
+}

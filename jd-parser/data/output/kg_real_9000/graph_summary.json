@@ -1,0 +1,161 @@
+{
+  "schema_version": "jd_kg_v1",
+  "source_profile_count": 9000,
+  "graph_node_count": 84269,
+  "graph_edge_count": 232734,
+  "node_counts": {
+    "Education": 9,
+    "Evidence": 73149,
+    "ExperienceRequirement": 9,
+    "Job": 9000,
+    "Location": 1877,
+    "Skill": 225
+  },
+  "edge_counts": {
+    "SUPPORTED_BY": 116367,
+    "REQUIRES_SKILL": 49820,
+    "MENTIONS_SKILL": 27716,
+    "PREFERS_SKILL": 14040,
+    "LOCATED_IN": 9000,
+    "REQUIRES_EXPERIENCE": 6907,
+    "REQUIRES_EDUCATION": 8884
+  },
+  "skill_level_counts": {
+    "required": 49820,
+    "mentioned": 27716,
+    "preferred": 14040
+  },
+  "coverage": {
+    "jobs_with_skill_edges": 8736,
+    "jobs_with_skill_edges_ratio": 0.9707,
+    "jobs_with_education": 8884,
+    "jobs_with_education_ratio": 0.9871,
+    "jobs_with_experience": 6907,
+    "jobs_with_experience_ratio": 0.7674,
+    "jobs_with_location": 9000,
+    "jobs_with_location_ratio": 1.0
+  },
+  "top_skills": [
+    {
+      "name": "大模型",
+      "count": 8141
+    },
+    {
+      "name": "Python",
+      "count": 5555
+    },
+    {
+      "name": "深度学习",
+      "count": 4679
+    },
+    {
+      "name": "人工智能",
+      "count": 4126
+    },
+    {
+      "name": "Agent",
+      "count": 3914
+    },
+    {
+      "name": "C++",
+      "count": 3548
+    },
+    {
+      "name": "RAG",
+      "count": 3104
+    },
+    {
+      "name": "机器学习",
+      "count": 3018
+    },
+    {
+      "name": "PyTorch",
+      "count": 2236
+    },
+    {
+      "name": "微调",
+      "count": 1961
+    },
+    {
+      "name": "图像处理",
+      "count": 1924
+    },
+    {
+      "name": "TensorFlow",
+      "count": 1884
+    },
+    {
+      "name": "多模态",
+      "count": 1813
+    },
+    {
+      "name": "架构设计",
+      "count": 1729
+    },
+    {
+      "name": "Java",
+      "count": 1594
+    },
+    {
+      "name": "算法开发",
+      "count": 1564
+    },
+    {
+      "name": "模型训练",
+      "count": 1477
+    },
+    {
+      "name": "机器视觉",
+      "count": 1373
+    },
+    {
+      "name": "计算机视觉",
+      "count": 1356
+    },
+    {
+      "name": "Linux",
+      "count": 1340
+    },
+    {
+      "name": "数据分析",
+      "count": 1334
+    },
+    {
+      "name": "LangChain",
+      "count": 1262
+    },
+    {
+      "name": "性能优化",
+      "count": 1188
+    },
+    {
+      "name": "目标检测",
+      "count": 1107
+    },
+    {
+      "name": "强化学习",
+      "count": 1053
+    },
+    {
+      "name": "AI Agent",
+      "count": 1029
+    },
+    {
+      "name": "控制算法",
+      "count": 1025
+    },
+    {
+      "name": "OpenCV",
+      "count": 1009
+    },
+    {
+      "name": "Transformer",
+      "count": 994
+    },
+    {
+      "name": "算法设计",
+      "count": 988
+    }
+  ],
+  "validation_status": "valid"
+}

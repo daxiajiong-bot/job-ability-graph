@@ -1,0 +1,68 @@
+{
+  "schema_version": "jdmatch_local_validation_v1",
+  "unit_tests": {
+    "passed": 115
+  },
+  "real_model_preflight": {
+    "status": "passed",
+    "device": "mps",
+    "model": "Qwen/Qwen3-Embedding-0.6B",
+    "queries": 2,
+    "documents": 12,
+    "loss": 2.3506340980529785,
+    "peak_memory_gib": 3.1913
+  },
+  "negative_mining": {
+    "queries": 2,
+    "hard_pool": {
+      "mean": 2.0,
+      "min": 2,
+      "max": 2,
+      "strict_teacher_mean": 1.0,
+      "groups_with_at_least_2": 2,
+      "groups_with_at_least_6": 0
+    },
+    "fallback_counts": {
+      "same_family_teacher_fallback": 2
+    }
+  },
+  "adapter_evaluation": {
+    "limit": 2,
+    "results": [
+      {
+        "split": "validation",
+        "queries": 2,
+        "triplet_diagnostics": {
+          "candidate_pool": "source_triplet_only",
+          "pairwise_p_over_h1_accuracy": 0.5,
+          "strict_both_positives_over_h1": 0.5,
+          "mrr": 0.75,
+          "ndcg_at_3": 0.8467132018086354,
+          "recall": {
+            "1": 0.25,
+            "2": 0.75,
+            "5": 1.0
+          }
+        },
+        "full_split_retrieval": {
+          "candidate_pool": "all_source_triplets_in_evaluated_split",
+          "candidate_documents": 6,
+          "known_relevant_per_query": 2,
+          "mrr": 0.41666666666666663,
+          "ndcg_at_5": 0.6320340612862955,
+          "mean_known_positive_rank": 3.0,
+          "recall": {
+            "1": 0.0,
+            "2": 0.25,
+            "5": 1.0
+          },
+          "caveat": "Only each JD's generated P1/P2 are labeled relevant. Other suitable cross-JD resumes may be unlabeled."
+        }
+      }
+    ]
+  },
+  "checkpoint_resume": {
+    "checkpoint_created": true,
+    "resume_auto_completed": true
+  }
+}

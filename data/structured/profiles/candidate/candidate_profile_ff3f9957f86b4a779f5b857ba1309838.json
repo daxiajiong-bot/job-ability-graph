@@ -1,0 +1,256 @@
+{
+  "artifact_type": "candidate_profile",
+  "created_at": "2026-08-06T12:06:53Z",
+  "extraction": {
+    "evidence": [
+      {
+        "field": "capabilities",
+        "id": "ev_001",
+        "text": "- 车辆检测维修工作：主要负责私家车常规保养、故障检测、零部件更换、底盘检修、电路排查等汽修实操工作，长期对接车辆维修、设备调试，从未接触招聘、人员对接、人事手续办理等相关工作。"
+      },
+      {
+        "field": "capabilities",
+        "id": "ev_002",
+        "text": "- 维修台账基础登记：仅负责车辆维修项目、配件使用、完工情况的简单登记记录，无员工考勤统计、薪资核对、人事档案整理、社保办理相关经验。"
+      }
+    ],
+    "fields": {
+      "achievements": [],
+      "candidate": {
+        "current_title": null,
+        "location": null,
+        "name": null,
+        "years_of_experience": 1.5
+      },
+      "capabilities": [
+        {
+          "description": "负责私家车常规保养、故障检测、零部件更换、底盘检修、电路排查等汽修实操工作。",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "level": "working",
+          "name": "车辆检测维修"
+        },
+        {
+          "description": "仅负责车辆维修项目、配件使用、完工情况的简单登记记录。",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "level": "beginner",
+          "name": "维修台账登记"
+        }
+      ],
+      "career_intent": {
+        "target_industry": null,
+        "target_location": null,
+        "target_position": "人事专员"
+      },
+      "certificates": [],
+      "document_type": "resume",
+      "education": [],
+      "evidence": [
+        {
+          "field": "capabilities",
+          "id": "ev_001",
+          "text": "- 车辆检测维修工作：主要负责私家车常规保养、故障检测、零部件更换、底盘检修、电路排查等汽修实操工作，长期对接车辆维修、设备调试，从未接触招聘、人员对接、人事手续办理等相关工作。"
+        },
+        {
+          "field": "capabilities",
+          "id": "ev_002",
+          "text": "- 维修台账基础登记：仅负责车辆维修项目、配件使用、完工情况的简单登记记录，无员工考勤统计、薪资核对、人事档案整理、社保办理相关经验。"
+        }
+      ],
+      "experience": [],
+      "languages": [],
+      "project_experience": [],
+      "projects": [],
+      "requirements": [],
+      "responsibilities": [],
+      "schema_version": "profile-extraction/v2",
+      "skills": [],
+      "work_experience": []
+    },
+    "implementation": "ollama",
+    "model": "qwen2.5:7b",
+    "raw_model_output": "",
+    "reason": "",
+    "schema": "profile-extraction/v2",
+    "state": "available",
+    "validation_error": "",
+    "warnings": [
+      "education[1] ignored: missing evidence_text",
+      "work_experience[1] ignored: missing evidence_text",
+      "skills[1] ignored: evidence_text must be copied from the source document",
+      "skills[2] ignored: evidence_text must be copied from the source document",
+      "skills[3] ignored: evidence_text must be copied from the source document",
+      "skills[4] ignored: evidence_text must be copied from the source document",
+      "skills[5] ignored: evidence_text must be copied from the source document",
+      "achievements[1] ignored: missing evidence_text"
+    ]
+  },
+  "normalization": {
+    "implementation": "lightweight_skill_normalizer",
+    "skills": [],
+    "state": "available",
+    "warnings": []
+  },
+  "profile": {
+    "artifacts": {
+      "profile_json": "data\\structured\\profiles\\candidate\\candidate_profile_ff3f9957f86b4a779f5b857ba1309838.json",
+      "schema_version": "profile-extraction/v2",
+      "storage": "filesystem"
+    },
+    "attributes": {
+      "candidate": {
+        "current_title": null,
+        "location": null,
+        "name": null,
+        "years_of_experience": 1.5
+      },
+      "capabilities": [
+        {
+          "description": "负责私家车常规保养、故障检测、零部件更换、底盘检修、电路排查等汽修实操工作。",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "level": "working",
+          "name": "车辆检测维修"
+        },
+        {
+          "description": "仅负责车辆维修项目、配件使用、完工情况的简单登记记录。",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "level": "beginner",
+          "name": "维修台账登记"
+        }
+      ],
+      "career_intent": {
+        "target_industry": null,
+        "target_location": null,
+        "target_position": "人事专员"
+      },
+      "education": [],
+      "experience": [],
+      "profile_schema": "profile-extraction/v2",
+      "projects": [],
+      "resume_profile": {
+        "achievements": [],
+        "candidate": {
+          "current_title": null,
+          "location": null,
+          "name": null,
+          "years_of_experience": 1.5
+        },
+        "capabilities": [
+          {
+            "description": "负责私家车常规保养、故障检测、零部件更换、底盘检修、电路排查等汽修实操工作。",
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "level": "working",
+            "name": "车辆检测维修"
+          },
+          {
+            "description": "仅负责车辆维修项目、配件使用、完工情况的简单登记记录。",
+            "evidence_ids": [
+              "ev_002"
+            ],
+            "level": "beginner",
+            "name": "维修台账登记"
+          }
+        ],
+        "career_intent": {
+          "target_industry": null,
+          "target_location": null,
+          "target_position": "人事专员"
+        },
+        "certificates": [],
+        "document_type": "resume",
+        "education": [],
+        "languages": [],
+        "project_experience": [],
+        "schema_version": "profile-extraction/v2",
+        "skills": [],
+        "work_experience": []
+      },
+      "skills": [],
+      "target_position": "人事专员"
+    },
+    "created_at": "2026-08-06T12:06:53Z",
+    "evidence": [
+      {
+        "field": "capabilities",
+        "id": "ev_001",
+        "text": "- 车辆检测维修工作：主要负责私家车常规保养、故障检测、零部件更换、底盘检修、电路排查等汽修实操工作，长期对接车辆维修、设备调试，从未接触招聘、人员对接、人事手续办理等相关工作。"
+      },
+      {
+        "field": "capabilities",
+        "id": "ev_002",
+        "text": "- 维修台账基础登记：仅负责车辆维修项目、配件使用、完工情况的简单登记记录，无员工考勤统计、薪资核对、人事档案整理、社保办理相关经验。"
+      }
+    ],
+    "id": "candidate_profile_ff3f9957f86b4a779f5b857ba1309838",
+    "implementation": "llm_profile_builder",
+    "profile_type": "candidate",
+    "source_document_id": "doc_20e519b63ef14102846c27775e1e034c",
+    "state": "available",
+    "warnings": [
+      "education[1] ignored: missing evidence_text",
+      "work_experience[1] ignored: missing evidence_text",
+      "skills[1] ignored: evidence_text must be copied from the source document",
+      "skills[2] ignored: evidence_text must be copied from the source document",
+      "skills[3] ignored: evidence_text must be copied from the source document",
+      "skills[4] ignored: evidence_text must be copied from the source document",
+      "skills[5] ignored: evidence_text must be copied from the source document",
+      "achievements[1] ignored: missing evidence_text"
+    ]
+  },
+  "schema_version": "profile-extraction/v2",
+  "source_document": {
+    "char_count": 1251,
+    "content_digest": "2cfdd5e0c31f0cf23fc3e5b545bc2b906f61cf0461a73ca8eb3d5af5d783ebe3",
+    "created_at": "2026-08-06T12:06:11Z",
+    "document_type": "resume",
+    "id": "doc_20e519b63ef14102846c27775e1e034c",
+    "metadata": {
+      "candidate_name": "XXX｜年龄：23岁｜学历：大专",
+      "display_name": "XXX｜年龄：23岁｜学历：大专",
+      "education": "大专",
+      "experience": "，无人力资源、招聘、考勤薪资、员工管理相关工作经历，零基础想要转行人事岗位，愿意从头学习基础文职工作。",
+      "skills": [
+        "学业亮点",
+        "系统掌握汽车维修",
+        "检测专业技能",
+        "无人力资源",
+        "行政管理",
+        "劳动法规相关专业",
+        "学习经历",
+        "专业技能",
+        "与人事专员岗位高",
+        "度错位",
+        "熟练掌握汽车常规",
+        "保养",
+        "故障诊断",
+        "零部件维修更换",
+        "熟悉各类汽修工具",
+        "检测设备使用",
+        "具备扎实的汽修实",
+        "操能力",
+        "人资能力空白",
+        "不熟悉人事工作流",
+        "劳动法规",
+        "社保公积金办理规",
+        "无招聘",
+        "考勤",
+        "薪资",
+        "员工关系",
+        "培训组织相关技能"
+      ]
+    },
+    "source": {
+      "source_system": "manual"
+    },
+    "storage": "memory"
+  }
+}

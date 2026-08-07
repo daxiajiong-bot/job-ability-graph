@@ -1,0 +1,15 @@
+[project]
+name = "jd-parser"
+version = "0.1.0"
+description = "Independent JD structuring pipeline for auditable job profile extraction."
+requires-python = ">=3.10"
+dependencies = [
+  "pydantic>=2.5",
+]
+
+[project.optional-dependencies]
+dev = []
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+

@@ -1,0 +1,541 @@
+{
+  "artifact_type": "job_profile",
+  "created_at": "2026-08-05T07:07:29Z",
+  "extraction": {
+    "evidence": [
+      {
+        "field": "responsibilities",
+        "id": "ev_001",
+        "text": "1.产品测试及验证"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_002",
+        "text": "2.技术文档编制"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_003",
+        "text": "3.与生产制造部门沟通协作"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_004",
+        "text": "优先本科及以上学历"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_005",
+        "text": "1. 3年以上水冷产品开发工程师经验"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_006",
+        "text": "2. 熟练3D&2D制图、结构设计、公差分析"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_007",
+        "text": "3. 负责新 产品的开发//打样/NPI至转量产"
+      }
+    ],
+    "fields": {
+      "application_scenarios": [],
+      "candidate": {
+        "name": null,
+        "target_position": null
+      },
+      "capabilities": [],
+      "company": {
+        "industry": null,
+        "location": null,
+        "name": null
+      },
+      "document_type": "jd",
+      "education": [],
+      "employment": {
+        "employment_type": "full_time",
+        "published_at": null,
+        "salary_max": null,
+        "salary_min": null
+      },
+      "evaluation_signals": [],
+      "evidence": [
+        {
+          "field": "responsibilities",
+          "id": "ev_001",
+          "text": "1.产品测试及验证"
+        },
+        {
+          "field": "responsibilities",
+          "id": "ev_002",
+          "text": "2.技术文档编制"
+        },
+        {
+          "field": "responsibilities",
+          "id": "ev_003",
+          "text": "3.与生产制造部门沟通协作"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_004",
+          "text": "优先本科及以上学历"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_005",
+          "text": "1. 3年以上水冷产品开发工程师经验"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_006",
+          "text": "2. 熟练3D&2D制图、结构设计、公差分析"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_007",
+          "text": "3. 负责新 产品的开发//打样/NPI至转量产"
+        }
+      ],
+      "experience": [],
+      "job": {
+        "department": null,
+        "normalized_title": null,
+        "seniority": null,
+        "title": null
+      },
+      "projects": [],
+      "requirements": [
+        {
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "importance": "preferred",
+          "requirement_type": "education",
+          "text": "优先本科及以上学历"
+        },
+        {
+          "evidence_ids": [
+            "ev_005"
+          ],
+          "importance": "required",
+          "requirement_type": "experience",
+          "text": "3年以上水冷产品开发工程师经验"
+        },
+        {
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "熟练3D&2D制图、结构设计、公差分析"
+        },
+        {
+          "evidence_ids": [
+            "ev_007"
+          ],
+          "importance": "required",
+          "requirement_type": "responsibility",
+          "text": "负责新 产品的开发//打样/NPI至转量产"
+        }
+      ],
+      "responsibilities": [
+        {
+          "action": "",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "object": "",
+          "text": "产品测试及验证"
+        },
+        {
+          "action": "",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "object": "",
+          "text": "技术文档编制"
+        },
+        {
+          "action": "",
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "object": "",
+          "text": "与生产制造部门沟通协作"
+        }
+      ],
+      "schema_version": "profile-extraction/v2",
+      "skills": [
+        {
+          "category": "tool",
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "3D&2D制图",
+          "raw_name": "熟练3D&2D制图、结构设计、公差分析"
+        },
+        {
+          "category": "tool",
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "结构设计",
+          "raw_name": "熟练3D&2D制图、结构设计、公差分析"
+        },
+        {
+          "category": "tool",
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "公差分析",
+          "raw_name": "熟练3D&2D制图、结构设计、公差分析"
+        }
+      ]
+    },
+    "implementation": "ollama",
+    "model": "qwen2.5:7b",
+    "raw_model_output": "",
+    "reason": "",
+    "schema": "profile-extraction/v2",
+    "state": "available",
+    "validation_error": "",
+    "warnings": [
+      "capabilities[1] ignored: missing evidence_text"
+    ]
+  },
+  "normalization": {
+    "implementation": "lightweight_skill_normalizer",
+    "skills": [
+      {
+        "category": "tool",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_006"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "熟练3D&2D制图、结构设计、公差分析",
+        "raw_name": "熟练3D&2D制图、结构设计、公差分析"
+      }
+    ],
+    "state": "available",
+    "warnings": []
+  },
+  "profile": {
+    "artifacts": {
+      "profile_json": "data\\structured\\profiles\\job\\job_profile_92ec3fc86bd7440e8dff3aefb22e9dd8.json",
+      "schema_version": "profile-extraction/v2",
+      "storage": "filesystem"
+    },
+    "attributes": {
+      "capabilities": [],
+      "company": {
+        "industry": null,
+        "location": null,
+        "name": null
+      },
+      "education": [],
+      "employment": {
+        "employment_type": "full_time",
+        "published_at": null,
+        "salary_max": null,
+        "salary_min": null
+      },
+      "experience": [],
+      "jd_profile": {
+        "application_scenarios": [],
+        "capabilities": [],
+        "company": {
+          "industry": null,
+          "location": null,
+          "name": null
+        },
+        "document_type": "jd",
+        "employment": {
+          "employment_type": "full_time",
+          "published_at": null,
+          "salary_max": null,
+          "salary_min": null
+        },
+        "evaluation_signals": [],
+        "job": {
+          "department": null,
+          "normalized_title": null,
+          "seniority": null,
+          "title": null
+        },
+        "requirements": [
+          {
+            "evidence_ids": [
+              "ev_004"
+            ],
+            "importance": "preferred",
+            "requirement_type": "education",
+            "text": "优先本科及以上学历"
+          },
+          {
+            "evidence_ids": [
+              "ev_005"
+            ],
+            "importance": "required",
+            "requirement_type": "experience",
+            "text": "3年以上水冷产品开发工程师经验"
+          },
+          {
+            "evidence_ids": [
+              "ev_006"
+            ],
+            "importance": "required",
+            "requirement_type": "skill",
+            "text": "熟练3D&2D制图、结构设计、公差分析"
+          },
+          {
+            "evidence_ids": [
+              "ev_007"
+            ],
+            "importance": "required",
+            "requirement_type": "responsibility",
+            "text": "负责新 产品的开发//打样/NPI至转量产"
+          }
+        ],
+        "responsibilities": [
+          {
+            "action": "",
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "object": "",
+            "text": "产品测试及验证"
+          },
+          {
+            "action": "",
+            "evidence_ids": [
+              "ev_002"
+            ],
+            "object": "",
+            "text": "技术文档编制"
+          },
+          {
+            "action": "",
+            "evidence_ids": [
+              "ev_003"
+            ],
+            "object": "",
+            "text": "与生产制造部门沟通协作"
+          }
+        ],
+        "schema_version": "profile-extraction/v2",
+        "skills": [
+          {
+            "category": "tool",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_006"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "熟练3D&2D制图、结构设计、公差分析",
+            "raw_name": "熟练3D&2D制图、结构设计、公差分析"
+          }
+        ]
+      },
+      "job": {
+        "department": null,
+        "normalized_title": null,
+        "seniority": null,
+        "title": null
+      },
+      "job_title": null,
+      "profile_schema": "profile-extraction/v2",
+      "projects": [],
+      "requirements": [
+        {
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "importance": "preferred",
+          "requirement_type": "education",
+          "text": "优先本科及以上学历"
+        },
+        {
+          "evidence_ids": [
+            "ev_005"
+          ],
+          "importance": "required",
+          "requirement_type": "experience",
+          "text": "3年以上水冷产品开发工程师经验"
+        },
+        {
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "熟练3D&2D制图、结构设计、公差分析"
+        },
+        {
+          "evidence_ids": [
+            "ev_007"
+          ],
+          "importance": "required",
+          "requirement_type": "responsibility",
+          "text": "负责新 产品的开发//打样/NPI至转量产"
+        }
+      ],
+      "responsibilities": [
+        {
+          "action": "",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "object": "",
+          "text": "产品测试及验证"
+        },
+        {
+          "action": "",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "object": "",
+          "text": "技术文档编制"
+        },
+        {
+          "action": "",
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "object": "",
+          "text": "与生产制造部门沟通协作"
+        }
+      ],
+      "skills": [
+        {
+          "category": "tool",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "熟练3D&2D制图、结构设计、公差分析",
+          "raw_name": "熟练3D&2D制图、结构设计、公差分析"
+        }
+      ]
+    },
+    "created_at": "2026-08-05T07:07:29Z",
+    "evidence": [
+      {
+        "field": "responsibilities",
+        "id": "ev_001",
+        "text": "1.产品测试及验证"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_002",
+        "text": "2.技术文档编制"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_003",
+        "text": "3.与生产制造部门沟通协作"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_004",
+        "text": "优先本科及以上学历"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_005",
+        "text": "1. 3年以上水冷产品开发工程师经验"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_006",
+        "text": "2. 熟练3D&2D制图、结构设计、公差分析"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_007",
+        "text": "3. 负责新 产品的开发//打样/NPI至转量产"
+      }
+    ],
+    "id": "job_profile_92ec3fc86bd7440e8dff3aefb22e9dd8",
+    "implementation": "llm_profile_builder",
+    "profile_type": "job",
+    "source_document_id": "sys_jd_40857441205",
+    "state": "available",
+    "warnings": [
+      "capabilities[1] ignored: missing evidence_text"
+    ]
+  },
+  "schema_version": "profile-extraction/v2",
+  "source_document": {
+    "char_count": 122,
+    "content_digest": "7851ca6570150c6e43c0af9edc6924673d694cd0900a9c58080bf8d1c8a8476f",
+    "created_at": "2026-08-03T16:20:15Z",
+    "document_type": "jd",
+    "id": "sys_jd_40857441205",
+    "metadata": {
+      "page": 3,
+      "publish_date": "2026-04-09 11:22:05",
+      "requirements": [
+        "岗位职责：",
+        "1.产品测试及验证",
+        "2.技术文档编制",
+        "3.与生产制造部门沟通协作",
+        "岗位要求： 优先本科及以上学历",
+        "1. 3年以上水冷产品开发工程师经验",
+        "2. 熟练3D&2D制图、结构设计、公差分析",
+        "3. 负责新 产品的开发//打样/NPI至转量产"
+      ],
+      "responsibilities": [
+        "岗位职责：",
+        "1.产品测试及验证",
+        "2.技术文档编制",
+        "3.与生产制造部门沟通协作",
+        "岗位要求： 优先本科及以上学历",
+        "1. 3年以上水冷产品开发工程师经验",
+        "2. 熟练3D&2D制图、结构设计、公差分析",
+        "3. 负责新 产品的开发//打样/NPI至转量产"
+      ],
+      "scrape_time": "2026-07-14T07:26:48.655Z",
+      "skills_raw": [
+        "AI服务器",
+        "SolidWorks",
+        "AI服务器机柜",
+        "水冷",
+        "液冷",
+        "本科",
+        "3-5年",
+        "CDU"
+      ],
+      "source_name": "zhaopin",
+      "source_type": "job_platform"
+    },
+    "source": {
+      "source_id": "40857441205",
+      "source_system": "zhaopin"
+    },
+    "storage": "memory"
+  }
+}

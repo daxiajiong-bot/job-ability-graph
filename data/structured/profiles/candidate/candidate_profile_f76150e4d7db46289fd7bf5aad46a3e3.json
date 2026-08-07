@@ -1,0 +1,68 @@
+{
+  "artifact_type": "candidate_profile",
+  "created_at": "2026-08-05T09:02:13Z",
+  "extraction": {
+    "evidence": [],
+    "fields": {},
+    "implementation": "mock",
+    "model": null,
+    "raw_model_output": "{\n  \"schema_version\": \"profile-extraction/v2\",\n  \"document_type\": \"resume\",\n  \"candidate\": {\"name\": null, \"current_title\": null, \"years_of_experience\": 1.5, \"location\": null},\n  \"career_intent\": {\"target_position\": \"电商运营\", \"target_industry\": null, \"target_location\": null},\n  \"education\": [{\"school\": \"XX职业技术学院\", \"degree\": \"大专\", \"major\": \"酒店管理\", \"period\": \"2020.09-2023.06\", \"evidence_text\": \"\"}],\n  \"work_experience\": [{\"company\": \"XX商务有限公司\", \"role\": \"前台文员\", \"industry\": null, \"period\": \"2023.07-至今\", \"description\": \"- 前台日常接待工作；- 基础行政事务处理；- 简单数据登记统计；- 协助线下事务对接；- 基础客户答疑对接。\", \"evidence_text\": \"\"}],\n  \"project_experience\": [],\n  \"skills\": [{\"name\": \"Office基础办公软件\", \"raw_name\": \"熟练使用Office基础办公软件\", \"category\": \"tool\", \"lskt_label\": \"S\", \"level\": \"working\", \"years\": null, \"evidence_text\": \"- 熟练使用Office基础办公软件，可完成文件整理、表格录入、文档排版。\"}],\n  \"capabilities\": [{\"name\": \"商务接待与沟通应答能力\", \"description\": \"具备良好的商务礼仪、客户接待、沟通应答能力，擅长线下服务与日常行政统筹。\", \"level\": \"working\", \"evidence_text\": \"- 具备良好的商务礼仪、客户接待、沟通应答能力，擅长线下服务与日常行政统筹。\"}],\n  \"certificates\": [],\n  \"languages\": [],\n  \"achievements\": [{\"name\": null, \"description\": \"1. 规范公司前台来访登记、物资领用台账，梳理行政基础流程，提升前台办公效率；2. 妥善完成日常客户接待、来电转接工作，维护公司对外形象，保障办公秩序稳定；3. 完成公司各类文件资料分类归档、整理备份，保障行政资料完整可查。\", \"evidence_text\": \"\"}]\n}",
+    "reason": "Ollama structured extraction failed: no evidence-backed list items remained: education[1] ignored: missing evidence_text; work_experience[1] ignored: missing evidence_text; skills[1] ignored: evidence_text must be copied from the source document",
+    "schema": null,
+    "state": "not_implemented",
+    "validation_error": "no evidence-backed list items remained: education[1] ignored: missing evidence_text; work_experience[1] ignored: missing evidence_text; skills[1] ignored: evidence_text must be copied from the source document",
+    "warnings": [
+      "Ollama structured extraction failed: no evidence-backed list items remained: education[1] ignored: missing evidence_text; work_experience[1] ignored: missing evidence_text; skills[1] ignored: evidence_text must be copied from the source document"
+    ]
+  },
+  "normalization": {
+    "implementation": "lightweight_skill_normalizer",
+    "skills": [],
+    "state": "not_implemented",
+    "warnings": [
+      "Ollama structured extraction failed: no evidence-backed list items remained: education[1] ignored: missing evidence_text; work_experience[1] ignored: missing evidence_text; skills[1] ignored: evidence_text must be copied from the source document"
+    ]
+  },
+  "profile": {
+    "artifacts": {
+      "profile_json": "data\\structured\\profiles\\candidate\\candidate_profile_f76150e4d7db46289fd7bf5aad46a3e3.json",
+      "schema_version": "profile-extraction/v2",
+      "storage": "filesystem"
+    },
+    "attributes": {
+      "candidate": {},
+      "capabilities": [],
+      "career_intent": {},
+      "education": [],
+      "experience": [],
+      "profile_schema": "profile-extraction/v2",
+      "projects": [],
+      "resume_profile": {},
+      "skills": [],
+      "target_position": null
+    },
+    "created_at": "2026-08-05T09:02:13Z",
+    "evidence": [],
+    "id": "candidate_profile_f76150e4d7db46289fd7bf5aad46a3e3",
+    "implementation": "mock",
+    "profile_type": "candidate",
+    "source_document_id": "doc_bb858da8eaf646e385e833a1982436ee",
+    "state": "not_implemented",
+    "warnings": [
+      "Ollama structured extraction failed: no evidence-backed list items remained: education[1] ignored: missing evidence_text; work_experience[1] ignored: missing evidence_text; skills[1] ignored: evidence_text must be copied from the source document"
+    ]
+  },
+  "schema_version": "profile-extraction/v2",
+  "source_document": {
+    "char_count": 1306,
+    "content_digest": "f4ad8e70b5ac3a9fbac88d3b4c6e95c1f4377f883bc309b93fee91c84413bfc8",
+    "created_at": "2026-08-05T09:01:46Z",
+    "document_type": "resume",
+    "id": "doc_bb858da8eaf646e385e833a1982436ee",
+    "metadata": {},
+    "source": {
+      "source_system": "manual"
+    },
+    "storage": "memory"
+  }
+}

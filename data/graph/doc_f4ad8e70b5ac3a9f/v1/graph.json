@@ -1,0 +1,107 @@
+{
+  "doc_id": "doc_f4ad8e70b5ac3a9f",
+  "edges": [
+    {
+      "created_at": "2026-08-05T12:21:31Z",
+      "doc_id": "doc_f4ad8e70b5ac3a9f",
+      "edge_id": "edge_doc_f4ad8e70b5ac3a9f_v1_contains_0001",
+      "evidence": [
+        {
+          "chunk_id": "doc_f4ad8e70b5ac3a9f_v1_chunk_0001",
+          "content_hash": "f4ad8e70b5ac3a9fbac88d3b4c6e95c1f4377f883bc309b93fee91c84413bfc8",
+          "created_at": "2026-08-05T12:21:31Z",
+          "doc_id": "doc_f4ad8e70b5ac3a9f",
+          "end_char": 200,
+          "evidence_id": "ev_doc_f4ad8e70b5ac3a9f_v1_chunk_0001",
+          "quote": "姓名：XXX｜年龄：23岁｜学历：大专\n专业：酒店管理｜求职岗位：电商运营\n联系电话：138XXXX1234｜邮箱：xxxx@163.com\n求职意向\n求职电商运营岗位，仅有前台行政、客户接待基础工作经验，无任何电商店铺运营、产品优化、付费投放、数据分析相关实操经验，希望零基础入门学习电商相关工作。\n教育背景\nXX职业技术学院｜酒店管理专业｜2020.09-2023.06｜大专\n主修课程：酒店管理",
+          "raw_path": "data\\raw\\doc_f4ad8e70b5ac3a9f\\v1\\doc_bb858da8eaf646e385e833a1982436ee.txt",
+          "source_field": "chunk_text",
+          "start_char": 0,
+          "version": 1
+        }
+      ],
+      "evidence_ids": [
+        "ev_doc_f4ad8e70b5ac3a9f_v1_chunk_0001"
+      ],
+      "properties": {
+        "sequence": 1
+      },
+      "relation_type": "CONTAINS_CHUNK",
+      "source_id": "document:doc_f4ad8e70b5ac3a9f:v1",
+      "target_id": "chunk:doc_f4ad8e70b5ac3a9f_v1_chunk_0001",
+      "version": 1
+    },
+    {
+      "created_at": "2026-08-05T12:21:31Z",
+      "doc_id": "doc_f4ad8e70b5ac3a9f",
+      "edge_id": "edge_doc_f4ad8e70b5ac3a9f_v1_contains_0002",
+      "evidence": [
+        {
+          "chunk_id": "doc_f4ad8e70b5ac3a9f_v1_chunk_0002",
+          "content_hash": "f4ad8e70b5ac3a9fbac88d3b4c6e95c1f4377f883bc309b93fee91c84413bfc8",
+          "created_at": "2026-08-05T12:21:31Z",
+          "doc_id": "doc_f4ad8e70b5ac3a9f",
+          "end_char": 917,
+          "evidence_id": "ev_doc_f4ad8e70b5ac3a9f_v1_chunk_0002",
+          "quote": "。\n- 无电商相关实操经验：从未接触淘宝、拼多多、抖音电商等平台后台，不了解平台规则、搜索算法、付费推广工具，无竞品分析、爆款打造、店铺权重优化相关工作经历。\n专业技能（与电商运营岗位高度错位）\n- 办公技能：熟练使用Office基础办公软件，可完成文件整理、表格录入、文档排版，不会使用生意参谋、千川、直通车等电商运营工具。\n- 服务技能：具备良好的商务礼仪、客户接待、沟通应答能力，擅长线下服务与",
+          "raw_path": "data\\raw\\doc_f4ad8e70b5ac3a9f\\v1\\doc_bb858da8eaf646e385e833a1982436ee.txt",
+          "source_field": "chunk_text",
+          "start_char": 717,
+          "version": 1
+        }
+      ],
+      "evidence_ids": [
+        "ev_doc_f4ad8e70b5ac3a9f_v1_chunk_0002"
+      ],
+      "properties": {
+        "sequence": 2
+      },
+      "relation_type": "CONTAINS_CHUNK",
+      "source_id": "document:doc_f4ad8e70b5ac3a9f:v1",
+      "target_id": "chunk:doc_f4ad8e70b5ac3a9f_v1_chunk_0002",
+      "version": 1
+    }
+  ],
+  "nodes": [
+    {
+      "created_at": "2026-08-05T12:21:31Z",
+      "doc_id": "doc_f4ad8e70b5ac3a9f",
+      "label": "Document",
+      "node_id": "document:doc_f4ad8e70b5ac3a9f:v1",
+      "properties": {
+        "content_hash": "f4ad8e70b5ac3a9fbac88d3b4c6e95c1f4377f883bc309b93fee91c84413bfc8",
+        "document_type": "resume",
+        "parser": "plain_text_parser",
+        "raw_path": "data\\raw\\doc_f4ad8e70b5ac3a9f\\v1\\doc_bb858da8eaf646e385e833a1982436ee.txt"
+      },
+      "version": 1
+    },
+    {
+      "created_at": "2026-08-05T12:21:31Z",
+      "doc_id": "doc_f4ad8e70b5ac3a9f",
+      "label": "Chunk",
+      "node_id": "chunk:doc_f4ad8e70b5ac3a9f_v1_chunk_0001",
+      "properties": {
+        "chunk_id": "doc_f4ad8e70b5ac3a9f_v1_chunk_0001",
+        "end_char": 796,
+        "sequence": 1,
+        "start_char": 0
+      },
+      "version": 1
+    },
+    {
+      "created_at": "2026-08-05T12:21:31Z",
+      "doc_id": "doc_f4ad8e70b5ac3a9f",
+      "label": "Chunk",
+      "node_id": "chunk:doc_f4ad8e70b5ac3a9f_v1_chunk_0002",
+      "properties": {
+        "chunk_id": "doc_f4ad8e70b5ac3a9f_v1_chunk_0002",
+        "end_char": 1306,
+        "sequence": 2,
+        "start_char": 717
+      },
+      "version": 1
+    }
+  ],
+  "version": 1
+}

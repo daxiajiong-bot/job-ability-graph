@@ -1,0 +1,38 @@
+services:
+  neo4j:
+    image: neo4j:${NEO4J_VERSION:-2026.05.0}
+    container_name: ${NEO4J_CONTAINER_NAME:-job-ability-neo4j}
+    restart: unless-stopped
+    stop_grace_period: 60s
+    ports:
+      - "${NEO4J_HTTP_PORT:-7474}:7474"
+      - "${NEO4J_BOLT_PORT:-7687}:7687"
+    environment:
+      NEO4J_AUTH: neo4j/${NEO4J_PASSWORD:-jobgraph_neo4j_2026}
+      NEO4J_PASSWORD: ${NEO4J_PASSWORD:-jobgraph_neo4j_2026}
+      NEO4J_server_memory_heap_initial__size: ${NEO4J_HEAP_INITIAL:-768M}
+      NEO4J_server_memory_heap_max__size: ${NEO4J_HEAP_MAX:-1536M}
+      NEO4J_server_memory_pagecache_size: ${NEO4J_PAGECACHE:-1G}
+      NEO4J_server_directories_import: /import
+      NEO4J_db_tx__log_rotation_retention__policy: "${NEO4J_TX_LOG_RETENTION:-2 files}"
+    volumes:
+      - neo4j-data:/data
+      - neo4j-logs:/logs
+      - neo4j-import:/import
+      - neo4j-plugins:/plugins
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          "cypher-shell -u neo4j -p \"$${NEO4J_PASSWORD}\" 'RETURN 1 AS ok;' >/dev/null 2>&1"
+        ]
+      interval: 10s
+      timeout: 10s
+      retries: 12
+      start_period: 40s
+
+volumes:
+  neo4j-data:
+  neo4j-logs:
+  neo4j-import:
+  neo4j-plugins:

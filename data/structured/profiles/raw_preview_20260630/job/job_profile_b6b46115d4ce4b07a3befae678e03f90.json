@@ -1,0 +1,855 @@
+{
+  "artifact_type": "job_profile",
+  "created_at": "2026-06-30T08:34:47Z",
+  "extraction": {
+    "evidence": [
+      {
+        "field": "responsibilities",
+        "id": "ev_001",
+        "text": "1、负责集团级通用业务数字化系统的开发、运维与迭代优化，保障系统稳定高效运行"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_002",
+        "text": "2、基于业务需求完成功能开发、脚本编写与系统二次开发，通过代码能力优化系统功能"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_003",
+        "text": "3、为业务端提供专业的数字化应用技术支持，快速响应并解决系统使用中的各类问题"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_004",
+        "text": "1、已顺利毕业，毕业证、学位证齐全且未丢失"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_005",
+        "text": "2、第一学历为公办本科（学历信息需配合核查）"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_006",
+        "text": "3、熟练掌握以下至少一种编程语言：JAVA、python（其他类别酌情。）"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_007",
+        "text": "4、具备基础的编程思维、逻辑分析能力，了解常用数据结构与算法"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_008",
+        "text": "1、有相关编程语言的项目开发经验（含课程设计、实习项目、个人开源项目、竞赛经历（如蓝桥杯）等）"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_009",
+        "text": "2、熟悉对应语言的常用框架、开发工具或数据库操作"
+      },
+      {
+        "field": "skills",
+        "id": "ev_010",
+        "text": "3、熟练掌握以下至少一种编程语言：JAVA"
+      },
+      {
+        "field": "capabilities",
+        "id": "ev_011",
+        "text": "具备良好的沟通协作能力、责任心强，有较强的自主学习意愿"
+      }
+    ],
+    "fields": {
+      "application_scenarios": [
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "name": "集团级通用业务数字化系统的开发与运维"
+        },
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "name": "功能开发与脚本编写"
+        },
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "name": "技术支持与问题解决"
+        }
+      ],
+      "candidate": {
+        "name": null,
+        "target_position": null
+      },
+      "capabilities": [
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_011"
+          ],
+          "importance": "preferred",
+          "name": "沟通协作能力"
+        },
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_011"
+          ],
+          "importance": "preferred",
+          "name": "责任心强"
+        }
+      ],
+      "company": {
+        "industry": "软件/IT服务",
+        "location": "深圳 龙华",
+        "name": "外企德科数字技术有限公司"
+      },
+      "document_type": "jd",
+      "education": [],
+      "employment": {
+        "employment_type": "full_time",
+        "published_at": "2026-06-18 00:32:29",
+        "salary_max": null,
+        "salary_min": 13000
+      },
+      "evaluation_signals": [],
+      "evidence": [
+        {
+          "field": "responsibilities",
+          "id": "ev_001",
+          "text": "1、负责集团级通用业务数字化系统的开发、运维与迭代优化，保障系统稳定高效运行"
+        },
+        {
+          "field": "responsibilities",
+          "id": "ev_002",
+          "text": "2、基于业务需求完成功能开发、脚本编写与系统二次开发，通过代码能力优化系统功能"
+        },
+        {
+          "field": "responsibilities",
+          "id": "ev_003",
+          "text": "3、为业务端提供专业的数字化应用技术支持，快速响应并解决系统使用中的各类问题"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_004",
+          "text": "1、已顺利毕业，毕业证、学位证齐全且未丢失"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_005",
+          "text": "2、第一学历为公办本科（学历信息需配合核查）"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_006",
+          "text": "3、熟练掌握以下至少一种编程语言：JAVA、python（其他类别酌情。）"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_007",
+          "text": "4、具备基础的编程思维、逻辑分析能力，了解常用数据结构与算法"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_008",
+          "text": "1、有相关编程语言的项目开发经验（含课程设计、实习项目、个人开源项目、竞赛经历（如蓝桥杯）等）"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_009",
+          "text": "2、熟悉对应语言的常用框架、开发工具或数据库操作"
+        },
+        {
+          "field": "skills",
+          "id": "ev_010",
+          "text": "3、熟练掌握以下至少一种编程语言：JAVA"
+        },
+        {
+          "field": "capabilities",
+          "id": "ev_011",
+          "text": "具备良好的沟通协作能力、责任心强，有较强的自主学习意愿"
+        }
+      ],
+      "experience": [],
+      "job": {
+        "department": null,
+        "normalized_title": "Python Developer",
+        "seniority": null,
+        "title": "python开发"
+      },
+      "projects": [],
+      "requirements": [
+        {
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "importance": "required",
+          "requirement_type": "education",
+          "text": "已顺利毕业，毕业证、学位证齐全且未丢失"
+        },
+        {
+          "evidence_ids": [
+            "ev_005"
+          ],
+          "importance": "required",
+          "requirement_type": "education",
+          "text": "第一学历为公办本科（学历信息需配合核查）"
+        },
+        {
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "熟练掌握JAVA或python编程语言之一"
+        },
+        {
+          "evidence_ids": [
+            "ev_007"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "具备基础的编程思维、逻辑分析能力，了解常用数据结构与算法"
+        },
+        {
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "importance": "preferred",
+          "requirement_type": "experience",
+          "text": "有相关编程语言的项目开发经验"
+        },
+        {
+          "evidence_ids": [
+            "ev_009"
+          ],
+          "importance": "preferred",
+          "requirement_type": "skill",
+          "text": "熟悉对应语言的常用框架、开发工具或数据库操作"
+        }
+      ],
+      "responsibilities": [
+        {
+          "action": "负责",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "object": "集团级通用业务数字化系统",
+          "text": "负责集团级通用业务数字化系统的开发、运维与迭代优化"
+        },
+        {
+          "action": "完成",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "object": "功能开发、脚本编写与系统二次开发",
+          "text": "完成功能开发、脚本编写与系统二次开发"
+        },
+        {
+          "action": "提供",
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "object": "专业的数字化应用技术支持",
+          "text": "为业务端提供专业的数字化应用技术支持"
+        }
+      ],
+      "schema_version": "profile-extraction/v2",
+      "skills": [
+        {
+          "category": "programming_language",
+          "evidence_ids": [
+            "ev_010"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "Java",
+          "raw_name": "Java"
+        },
+        {
+          "category": "programming_language",
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "Python",
+          "raw_name": "python"
+        },
+        {
+          "category": "competition",
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "importance": "preferred",
+          "lskt_label": "K",
+          "name": "蓝桥杯",
+          "raw_name": "蓝桥杯"
+        },
+        {
+          "category": "soft_skill",
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "代码习惯好",
+          "raw_name": "代码习惯好"
+        }
+      ]
+    },
+    "implementation": "ollama",
+    "model": "qwen2.5:7b",
+    "raw_model_output": "",
+    "reason": "",
+    "schema": "profile-extraction/v2",
+    "state": "available",
+    "validation_error": "",
+    "warnings": []
+  },
+  "normalization": {
+    "implementation": "lightweight_skill_normalizer",
+    "skills": [
+      {
+        "category": "programming_language",
+        "esco_preferred_label": "Java (computer programming)",
+        "esco_uri": "http://data.europa.eu/esco/skill/19a8293b-8e95-4de3-983f-77484079c389",
+        "esco_version": "v1.2.1",
+        "evidence_ids": [
+          "ev_010"
+        ],
+        "importance": "required",
+        "linking_confidence": 1.0,
+        "linking_status": "linked",
+        "lskt_label": "S",
+        "name": "Java (computer programming)",
+        "raw_name": "Java"
+      },
+      {
+        "category": "programming_language",
+        "esco_preferred_label": "Python (computer programming)",
+        "esco_uri": "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d",
+        "esco_version": "v1.2.1",
+        "evidence_ids": [
+          "ev_006"
+        ],
+        "importance": "required",
+        "linking_confidence": 1.0,
+        "linking_status": "linked",
+        "lskt_label": "S",
+        "name": "Python (computer programming)",
+        "raw_name": "python"
+      },
+      {
+        "category": "competition",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_008"
+        ],
+        "importance": "preferred",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "K",
+        "name": "蓝桥杯",
+        "raw_name": "蓝桥杯"
+      },
+      {
+        "category": "soft_skill",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_006"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "代码习惯好",
+        "raw_name": "代码习惯好"
+      }
+    ],
+    "state": "available",
+    "warnings": []
+  },
+  "profile": {
+    "artifacts": {
+      "profile_json": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/structured/profiles/raw_preview_20260630/job/job_profile_b6b46115d4ce4b07a3befae678e03f90.json",
+      "schema_version": "profile-extraction/v2",
+      "storage": "filesystem"
+    },
+    "attributes": {
+      "capabilities": [
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_011"
+          ],
+          "importance": "preferred",
+          "name": "沟通协作能力"
+        },
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_011"
+          ],
+          "importance": "preferred",
+          "name": "责任心强"
+        }
+      ],
+      "company": {
+        "industry": "软件/IT服务",
+        "location": "深圳 龙华",
+        "name": "外企德科数字技术有限公司"
+      },
+      "education": [],
+      "employment": {
+        "employment_type": "full_time",
+        "published_at": "2026-06-18 00:32:29",
+        "salary_max": null,
+        "salary_min": 13000
+      },
+      "experience": [],
+      "jd_profile": {
+        "application_scenarios": [
+          {
+            "description": null,
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "name": "集团级通用业务数字化系统的开发与运维"
+          },
+          {
+            "description": null,
+            "evidence_ids": [
+              "ev_002"
+            ],
+            "name": "功能开发与脚本编写"
+          },
+          {
+            "description": null,
+            "evidence_ids": [
+              "ev_003"
+            ],
+            "name": "技术支持与问题解决"
+          }
+        ],
+        "capabilities": [
+          {
+            "description": null,
+            "evidence_ids": [
+              "ev_011"
+            ],
+            "importance": "preferred",
+            "name": "沟通协作能力"
+          },
+          {
+            "description": null,
+            "evidence_ids": [
+              "ev_011"
+            ],
+            "importance": "preferred",
+            "name": "责任心强"
+          }
+        ],
+        "company": {
+          "industry": "软件/IT服务",
+          "location": "深圳 龙华",
+          "name": "外企德科数字技术有限公司"
+        },
+        "document_type": "jd",
+        "employment": {
+          "employment_type": "full_time",
+          "published_at": "2026-06-18 00:32:29",
+          "salary_max": null,
+          "salary_min": 13000
+        },
+        "evaluation_signals": [],
+        "job": {
+          "department": null,
+          "normalized_title": "Python Developer",
+          "seniority": null,
+          "title": "python开发"
+        },
+        "requirements": [
+          {
+            "evidence_ids": [
+              "ev_004"
+            ],
+            "importance": "required",
+            "requirement_type": "education",
+            "text": "已顺利毕业，毕业证、学位证齐全且未丢失"
+          },
+          {
+            "evidence_ids": [
+              "ev_005"
+            ],
+            "importance": "required",
+            "requirement_type": "education",
+            "text": "第一学历为公办本科（学历信息需配合核查）"
+          },
+          {
+            "evidence_ids": [
+              "ev_006"
+            ],
+            "importance": "required",
+            "requirement_type": "skill",
+            "text": "熟练掌握JAVA或python编程语言之一"
+          },
+          {
+            "evidence_ids": [
+              "ev_007"
+            ],
+            "importance": "required",
+            "requirement_type": "skill",
+            "text": "具备基础的编程思维、逻辑分析能力，了解常用数据结构与算法"
+          },
+          {
+            "evidence_ids": [
+              "ev_008"
+            ],
+            "importance": "preferred",
+            "requirement_type": "experience",
+            "text": "有相关编程语言的项目开发经验"
+          },
+          {
+            "evidence_ids": [
+              "ev_009"
+            ],
+            "importance": "preferred",
+            "requirement_type": "skill",
+            "text": "熟悉对应语言的常用框架、开发工具或数据库操作"
+          }
+        ],
+        "responsibilities": [
+          {
+            "action": "负责",
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "object": "集团级通用业务数字化系统",
+            "text": "负责集团级通用业务数字化系统的开发、运维与迭代优化"
+          },
+          {
+            "action": "完成",
+            "evidence_ids": [
+              "ev_002"
+            ],
+            "object": "功能开发、脚本编写与系统二次开发",
+            "text": "完成功能开发、脚本编写与系统二次开发"
+          },
+          {
+            "action": "提供",
+            "evidence_ids": [
+              "ev_003"
+            ],
+            "object": "专业的数字化应用技术支持",
+            "text": "为业务端提供专业的数字化应用技术支持"
+          }
+        ],
+        "schema_version": "profile-extraction/v2",
+        "skills": [
+          {
+            "category": "programming_language",
+            "esco_preferred_label": "Java (computer programming)",
+            "esco_uri": "http://data.europa.eu/esco/skill/19a8293b-8e95-4de3-983f-77484079c389",
+            "esco_version": "v1.2.1",
+            "evidence_ids": [
+              "ev_010"
+            ],
+            "importance": "required",
+            "linking_confidence": 1.0,
+            "linking_status": "linked",
+            "lskt_label": "S",
+            "name": "Java (computer programming)",
+            "raw_name": "Java"
+          },
+          {
+            "category": "programming_language",
+            "esco_preferred_label": "Python (computer programming)",
+            "esco_uri": "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d",
+            "esco_version": "v1.2.1",
+            "evidence_ids": [
+              "ev_006"
+            ],
+            "importance": "required",
+            "linking_confidence": 1.0,
+            "linking_status": "linked",
+            "lskt_label": "S",
+            "name": "Python (computer programming)",
+            "raw_name": "python"
+          },
+          {
+            "category": "competition",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_008"
+            ],
+            "importance": "preferred",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "K",
+            "name": "蓝桥杯",
+            "raw_name": "蓝桥杯"
+          },
+          {
+            "category": "soft_skill",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_006"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "代码习惯好",
+            "raw_name": "代码习惯好"
+          }
+        ]
+      },
+      "job": {
+        "department": null,
+        "normalized_title": "Python Developer",
+        "seniority": null,
+        "title": "python开发"
+      },
+      "job_title": "python开发",
+      "profile_schema": "profile-extraction/v2",
+      "projects": [],
+      "requirements": [
+        {
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "importance": "required",
+          "requirement_type": "education",
+          "text": "已顺利毕业，毕业证、学位证齐全且未丢失"
+        },
+        {
+          "evidence_ids": [
+            "ev_005"
+          ],
+          "importance": "required",
+          "requirement_type": "education",
+          "text": "第一学历为公办本科（学历信息需配合核查）"
+        },
+        {
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "熟练掌握JAVA或python编程语言之一"
+        },
+        {
+          "evidence_ids": [
+            "ev_007"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "具备基础的编程思维、逻辑分析能力，了解常用数据结构与算法"
+        },
+        {
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "importance": "preferred",
+          "requirement_type": "experience",
+          "text": "有相关编程语言的项目开发经验"
+        },
+        {
+          "evidence_ids": [
+            "ev_009"
+          ],
+          "importance": "preferred",
+          "requirement_type": "skill",
+          "text": "熟悉对应语言的常用框架、开发工具或数据库操作"
+        }
+      ],
+      "responsibilities": [
+        {
+          "action": "负责",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "object": "集团级通用业务数字化系统",
+          "text": "负责集团级通用业务数字化系统的开发、运维与迭代优化"
+        },
+        {
+          "action": "完成",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "object": "功能开发、脚本编写与系统二次开发",
+          "text": "完成功能开发、脚本编写与系统二次开发"
+        },
+        {
+          "action": "提供",
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "object": "专业的数字化应用技术支持",
+          "text": "为业务端提供专业的数字化应用技术支持"
+        }
+      ],
+      "skills": [
+        {
+          "category": "programming_language",
+          "esco_preferred_label": "Java (computer programming)",
+          "esco_uri": "http://data.europa.eu/esco/skill/19a8293b-8e95-4de3-983f-77484079c389",
+          "esco_version": "v1.2.1",
+          "evidence_ids": [
+            "ev_010"
+          ],
+          "importance": "required",
+          "linking_confidence": 1.0,
+          "linking_status": "linked",
+          "lskt_label": "S",
+          "name": "Java (computer programming)",
+          "raw_name": "Java"
+        },
+        {
+          "category": "programming_language",
+          "esco_preferred_label": "Python (computer programming)",
+          "esco_uri": "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d",
+          "esco_version": "v1.2.1",
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "importance": "required",
+          "linking_confidence": 1.0,
+          "linking_status": "linked",
+          "lskt_label": "S",
+          "name": "Python (computer programming)",
+          "raw_name": "python"
+        },
+        {
+          "category": "competition",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "importance": "preferred",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "K",
+          "name": "蓝桥杯",
+          "raw_name": "蓝桥杯"
+        },
+        {
+          "category": "soft_skill",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "代码习惯好",
+          "raw_name": "代码习惯好"
+        }
+      ]
+    },
+    "created_at": "2026-06-30T08:34:47Z",
+    "evidence": [
+      {
+        "field": "responsibilities",
+        "id": "ev_001",
+        "text": "1、负责集团级通用业务数字化系统的开发、运维与迭代优化，保障系统稳定高效运行"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_002",
+        "text": "2、基于业务需求完成功能开发、脚本编写与系统二次开发，通过代码能力优化系统功能"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_003",
+        "text": "3、为业务端提供专业的数字化应用技术支持，快速响应并解决系统使用中的各类问题"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_004",
+        "text": "1、已顺利毕业，毕业证、学位证齐全且未丢失"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_005",
+        "text": "2、第一学历为公办本科（学历信息需配合核查）"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_006",
+        "text": "3、熟练掌握以下至少一种编程语言：JAVA、python（其他类别酌情。）"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_007",
+        "text": "4、具备基础的编程思维、逻辑分析能力，了解常用数据结构与算法"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_008",
+        "text": "1、有相关编程语言的项目开发经验（含课程设计、实习项目、个人开源项目、竞赛经历（如蓝桥杯）等）"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_009",
+        "text": "2、熟悉对应语言的常用框架、开发工具或数据库操作"
+      },
+      {
+        "field": "skills",
+        "id": "ev_010",
+        "text": "3、熟练掌握以下至少一种编程语言：JAVA"
+      },
+      {
+        "field": "capabilities",
+        "id": "ev_011",
+        "text": "具备良好的沟通协作能力、责任心强，有较强的自主学习意愿"
+      }
+    ],
+    "id": "job_profile_b6b46115d4ce4b07a3befae678e03f90",
+    "implementation": "llm_profile_builder",
+    "profile_type": "job",
+    "source_document_id": "doc_e45d854e62bf4a71bf57964852e425f6",
+    "state": "available",
+    "warnings": []
+  },
+  "schema_version": "profile-extraction/v2",
+  "source_document": {
+    "char_count": 1001,
+    "content_digest": "1350230a874f4d9c3a26c28829e85ab12f4e89327f28a6e388be020e7043a999",
+    "created_at": "2026-06-30T08:33:26Z",
+    "document_type": "jd",
+    "id": "doc_e45d854e62bf4a71bf57964852e425f6",
+    "metadata": {
+      "raw_file": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/small-raw/jd_raw.jsonl",
+      "raw_index": 7,
+      "raw_type": "jd"
+    },
+    "source": {
+      "external_id": "40853602005",
+      "published_at": "2026-06-18 00:32:29",
+      "source_system": "zhaopin",
+      "uri": "http://www.zhaopin.com/jobdetail/CCL1480117890J40853602005.htm"
+    },
+    "storage": "memory"
+  }
+}

@@ -1,0 +1,472 @@
+{
+  "artifact_type": "job_profile",
+  "created_at": "2026-08-06T19:39:17Z",
+  "extraction": {
+    "evidence": [
+      {
+        "field": "requirements",
+        "id": "ev_001",
+        "text": "Backend engineer requires Python FastAPI SQL Docker"
+      },
+      {
+        "field": "skills",
+        "id": "ev_002",
+        "text": "Python"
+      },
+      {
+        "field": "skills",
+        "id": "ev_003",
+        "text": "FastAPI"
+      },
+      {
+        "field": "skills",
+        "id": "ev_004",
+        "text": "SQL"
+      },
+      {
+        "field": "skills",
+        "id": "ev_005",
+        "text": "Docker"
+      }
+    ],
+    "fields": {
+      "application_scenarios": [],
+      "candidate": {
+        "name": null,
+        "target_position": null
+      },
+      "capabilities": [],
+      "company": {
+        "industry": null,
+        "location": null,
+        "name": null
+      },
+      "document_type": "jd",
+      "education": [],
+      "employment": {
+        "employment_type": "full_time|internship|contract|part_time|unknown",
+        "published_at": null,
+        "salary_max": null,
+        "salary_min": null
+      },
+      "evaluation_signals": [],
+      "evidence": [
+        {
+          "field": "requirements",
+          "id": "ev_001",
+          "text": "Backend engineer requires Python FastAPI SQL Docker"
+        },
+        {
+          "field": "skills",
+          "id": "ev_002",
+          "text": "Python"
+        },
+        {
+          "field": "skills",
+          "id": "ev_003",
+          "text": "FastAPI"
+        },
+        {
+          "field": "skills",
+          "id": "ev_004",
+          "text": "SQL"
+        },
+        {
+          "field": "skills",
+          "id": "ev_005",
+          "text": "Docker"
+        }
+      ],
+      "experience": [],
+      "job": {
+        "department": null,
+        "normalized_title": "Backend Engineer",
+        "seniority": null,
+        "title": null
+      },
+      "projects": [],
+      "requirements": [
+        {
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "Python FastAPI SQL Docker"
+        }
+      ],
+      "responsibilities": [],
+      "schema_version": "profile-extraction/v2",
+      "skills": [
+        {
+          "category": "programming_language",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "Python",
+          "raw_name": "Python"
+        },
+        {
+          "category": "framework",
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "FastAPI",
+          "raw_name": "FastAPI"
+        },
+        {
+          "category": "database",
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "SQL",
+          "raw_name": "SQL"
+        },
+        {
+          "category": "tool",
+          "evidence_ids": [
+            "ev_005"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "Docker",
+          "raw_name": "Docker"
+        }
+      ]
+    },
+    "implementation": "ollama",
+    "model": "qwen2.5:7b",
+    "raw_model_output": "",
+    "reason": "",
+    "schema": "profile-extraction/v2",
+    "state": "available",
+    "validation_error": "",
+    "warnings": [
+      "capabilities[1] ignored: missing evidence_text"
+    ]
+  },
+  "normalization": {
+    "implementation": "lightweight_skill_normalizer",
+    "skills": [
+      {
+        "category": "programming_language",
+        "esco_preferred_label": "Python (computer programming)",
+        "esco_uri": "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d",
+        "esco_version": "v1.2.1",
+        "evidence_ids": [
+          "ev_002"
+        ],
+        "importance": "required",
+        "linking_confidence": 1.0,
+        "linking_status": "linked",
+        "lskt_label": "S",
+        "name": "Python (computer programming)",
+        "raw_name": "Python"
+      },
+      {
+        "category": "framework",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_003"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "FastAPI",
+        "raw_name": "FastAPI"
+      },
+      {
+        "category": "database",
+        "esco_preferred_label": "SQL",
+        "esco_uri": "http://data.europa.eu/esco/skill/598de5b0-5b58-4ea7-8058-a4bc4d18c742",
+        "esco_version": "v1.2.1",
+        "evidence_ids": [
+          "ev_004"
+        ],
+        "importance": "required",
+        "linking_confidence": 1.0,
+        "linking_status": "linked",
+        "lskt_label": "S",
+        "name": "SQL",
+        "raw_name": "SQL"
+      },
+      {
+        "category": "tool",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_005"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "Docker",
+        "raw_name": "Docker"
+      }
+    ],
+    "state": "available",
+    "warnings": []
+  },
+  "profile": {
+    "artifacts": {
+      "profile_json": "data\\structured\\profiles\\job\\job_profile_e9327f3ca71f47869f47278a57705583.json",
+      "schema_version": "profile-extraction/v2",
+      "storage": "filesystem"
+    },
+    "attributes": {
+      "capabilities": [],
+      "company": {
+        "industry": null,
+        "location": null,
+        "name": null
+      },
+      "education": [],
+      "employment": {
+        "employment_type": "full_time|internship|contract|part_time|unknown",
+        "published_at": null,
+        "salary_max": null,
+        "salary_min": null
+      },
+      "experience": [],
+      "jd_profile": {
+        "application_scenarios": [],
+        "capabilities": [],
+        "company": {
+          "industry": null,
+          "location": null,
+          "name": null
+        },
+        "document_type": "jd",
+        "employment": {
+          "employment_type": "full_time|internship|contract|part_time|unknown",
+          "published_at": null,
+          "salary_max": null,
+          "salary_min": null
+        },
+        "evaluation_signals": [],
+        "job": {
+          "department": null,
+          "normalized_title": "Backend Engineer",
+          "seniority": null,
+          "title": null
+        },
+        "requirements": [
+          {
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "importance": "required",
+            "requirement_type": "skill",
+            "text": "Python FastAPI SQL Docker"
+          }
+        ],
+        "responsibilities": [],
+        "schema_version": "profile-extraction/v2",
+        "skills": [
+          {
+            "category": "programming_language",
+            "esco_preferred_label": "Python (computer programming)",
+            "esco_uri": "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d",
+            "esco_version": "v1.2.1",
+            "evidence_ids": [
+              "ev_002"
+            ],
+            "importance": "required",
+            "linking_confidence": 1.0,
+            "linking_status": "linked",
+            "lskt_label": "S",
+            "name": "Python (computer programming)",
+            "raw_name": "Python"
+          },
+          {
+            "category": "framework",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_003"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "FastAPI",
+            "raw_name": "FastAPI"
+          },
+          {
+            "category": "database",
+            "esco_preferred_label": "SQL",
+            "esco_uri": "http://data.europa.eu/esco/skill/598de5b0-5b58-4ea7-8058-a4bc4d18c742",
+            "esco_version": "v1.2.1",
+            "evidence_ids": [
+              "ev_004"
+            ],
+            "importance": "required",
+            "linking_confidence": 1.0,
+            "linking_status": "linked",
+            "lskt_label": "S",
+            "name": "SQL",
+            "raw_name": "SQL"
+          },
+          {
+            "category": "tool",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_005"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "Docker",
+            "raw_name": "Docker"
+          }
+        ]
+      },
+      "job": {
+        "department": null,
+        "normalized_title": "Backend Engineer",
+        "seniority": null,
+        "title": "Backend Engineer"
+      },
+      "job_title": "Backend Engineer",
+      "profile_schema": "profile-extraction/v2",
+      "projects": [],
+      "requirements": [
+        {
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "Python FastAPI SQL Docker"
+        }
+      ],
+      "responsibilities": [],
+      "skills": [
+        {
+          "category": "programming_language",
+          "esco_preferred_label": "Python (computer programming)",
+          "esco_uri": "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d",
+          "esco_version": "v1.2.1",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "importance": "required",
+          "linking_confidence": 1.0,
+          "linking_status": "linked",
+          "lskt_label": "S",
+          "name": "Python (computer programming)",
+          "raw_name": "Python"
+        },
+        {
+          "category": "framework",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "FastAPI",
+          "raw_name": "FastAPI"
+        },
+        {
+          "category": "database",
+          "esco_preferred_label": "SQL",
+          "esco_uri": "http://data.europa.eu/esco/skill/598de5b0-5b58-4ea7-8058-a4bc4d18c742",
+          "esco_version": "v1.2.1",
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "importance": "required",
+          "linking_confidence": 1.0,
+          "linking_status": "linked",
+          "lskt_label": "S",
+          "name": "SQL",
+          "raw_name": "SQL"
+        },
+        {
+          "category": "tool",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_005"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "Docker",
+          "raw_name": "Docker"
+        }
+      ]
+    },
+    "created_at": "2026-08-06T19:39:17Z",
+    "evidence": [
+      {
+        "field": "requirements",
+        "id": "ev_001",
+        "text": "Backend engineer requires Python FastAPI SQL Docker"
+      },
+      {
+        "field": "skills",
+        "id": "ev_002",
+        "text": "Python"
+      },
+      {
+        "field": "skills",
+        "id": "ev_003",
+        "text": "FastAPI"
+      },
+      {
+        "field": "skills",
+        "id": "ev_004",
+        "text": "SQL"
+      },
+      {
+        "field": "skills",
+        "id": "ev_005",
+        "text": "Docker"
+      }
+    ],
+    "id": "job_profile_e9327f3ca71f47869f47278a57705583",
+    "implementation": "llm_profile_builder",
+    "profile_type": "job",
+    "source_document_id": "doc_26aba57b85b544a5864851b648d84b4f",
+    "state": "available",
+    "warnings": [
+      "capabilities[1] ignored: missing evidence_text"
+    ]
+  },
+  "schema_version": "profile-extraction/v2",
+  "source_document": {
+    "char_count": 51,
+    "content_digest": "1d86989ec1b6571c81bc84fb70278bc704fdf18ba6a5a09f9cca06f7b366e9ff",
+    "created_at": "2026-08-06T19:38:59Z",
+    "document_type": "jd",
+    "id": "doc_26aba57b85b544a5864851b648d84b4f",
+    "metadata": {},
+    "source": {
+      "source_system": "manual"
+    },
+    "storage": "memory"
+  }
+}

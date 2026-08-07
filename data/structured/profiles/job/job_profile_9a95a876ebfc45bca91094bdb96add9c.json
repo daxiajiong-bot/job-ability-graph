@@ -1,0 +1,88 @@
+{
+  "artifact_type": "job_profile",
+  "created_at": "2026-08-06T13:03:29Z",
+  "extraction": {
+    "evidence": [],
+    "fields": {},
+    "implementation": "mock",
+    "model": null,
+    "raw_model_output": "{\n  \"schema_version\": \"profile-extraction/v2\",\n  \"document_type\": \"jd\",\n  \"job\": {\"title\": \"人工智能算法工程师（入门/应届生可投）\", \"normalized_title\": \"AI算法工程师\", \"department\": \"人工智能研发部\", \"seniority\": null},\n  \"company\": {\"name\": null, \"industry\": null, \"location\": \"一线城市\"},\n  \"employment\": {\"employment_type\": \"full_time\", \"salary_min\": 8000, \"salary_max\": 15000, \"published_at\": null},\n  \"responsibilities\": [\n    {\"text\": \"- 协助研发团队开展人工智能模型研发与迭代工作，参与NLP自然语言处理、计算机视觉或机器学习基础模型的训练、调优与测试，支撑AI产品功能落地。\", \"action\": \"协助\", \"object\": \"研发团队\", \"evidence_text\": \"- 协助研发团队开展人工智能模型研发与迭代工作，参与NLP自然语言处理、计算机视觉或机器学习基础模型的训练、调优与测试，支撑AI产品功能落地。\"},\n    {\"text\": \"- 负责AI训练数据集的预处理、清洗、标准化构建与质量核验，优化数据标注规则，统计数据集指标，解决模型训练过程中的基础数据问题，提升模型泛化能力。\", \"action\": \"负责\", \"object\": \"AI训练数据集\", \"evidence_text\": \"- 负责AI训练数据集的预处理、清洗、标准化构建与质量核验，优化数据标注规则，统计数据集指标，解决模型训练过程中的基础数据问题，提升模型泛化能力。\"},\n    {\"text\": \"- 使用Python、机器学习框架完成基础算法实验、模型验证、效果对比测试，记录实验数据，输出算法测试报告，协助完成模型迭代优化。\", \"action\": \"使用\", \"object\": \"Python、机器学习框架\", \"evidence_text\": \"- 使用Python、机器学习框架完成基础算法实验、模型验证、效果对比测试，记录实验数据，输出算法测试报告，协助完成模型迭代优化。\"},\n    {\"text\": \"- 跟进AI行业前沿算法、开源模型与技术趋势，复现基础算法模型，协助团队进行技术落地与方案优化，适配业务场景AI智能化需求。\", \"action\": \"跟进\", \"object\": \"AI行业前沿算法、开源模型与技术趋势\", \"evidence_text\": \"- 跟进AI行业前沿算法、开源模型与技术趋势，复现基础算法模型，协助团队进行技术落地与方案优化，适配业务场景AI智能化需求。\"},\n    {\"text\": \"- 协助完成AI算法模块文档编写、技术复盘、版本管理，配合产品、测试团队完成模型上线前验证、问题排查，保障AI功能稳定交付。\", \"action\": \"协助\", \"object\": \"AI算法模块文档编写、技术复盘、版本管理\", \"evidence_text\": \"- 协助完成AI算法模块文档编写、技术复盘、版本管理，配合产品、测试团队完成模型上线前验证、问题排查，保障AI功能稳定交付。\"}\n  ],\n  \"requirements\": [\n    {\"text\": \"- 大专及以上学历，人工智能、计算机科学与技术、大数据、软件工程、数学统计等相关专业，应届生或1年内AI算法、模型训练相关经验优先。\", \"requirement_type\": \"education\", \"importance\": \"preferred\", \"evidence_text\": \"- 大专及以上学历，人工智能、计算机科学与技术、大数据、软件工程、数学统计等相关专业，应届生或1年内AI算法、模型训练相关经验优先。\"},\n    {\"text\": \"- 掌握Python基础编程，了解机器学习、深度学习基础理论，熟悉常用算法模型（CNN、RNN、分类、回归、聚类等）基础原理。\", \"requirement_type\": \"skill\", \"importance\": \"required\", \"evidence_text\": \"- 掌握Python基础编程，了解机器学习、深度学习基础理论，熟悉常用算法模型（CNN、RNN、分类、回归、聚类等）基础原理。\"},\n    {\"text\": \"- 了解至少一种主流AI框架，如PyTorch、TensorFlow，具备基础模型训练、参数调试、数据预处理实操经验优先。\", \"requirement_type\": \"skill\", \"importance\": \"preferred\", \"evidence_text\": \"- 了解至少一种主流AI框架，如PyTorch、TensorFlow，具备基础模型训练、参数调试、数据预处理实操经验优先。\"},\n    {\"text\": \"- 熟悉AI数据集处理流程，掌握数据清洗、数据增强、样本筛选、指标评估等基础技能，具备良好的数据与算法逻辑思维。\", \"requirement_type\": \"skill\", \"importance\": \"required\", \"evidence_text\": \"- 熟悉AI数据集处理流程，掌握数据清洗、数据增强、样本筛选、指标评估等基础技能，具备良好的数据与算法逻辑思维。\"},\n    {\"text\": \"- 学习能力强，对人工智能算法研发有浓厚兴趣，能接受技术迭代，具备良好的文档撰写、问题排查与团队协作能力。\", \"requirement_type\": \"soft_skill\", \"importance\": \"preferred\", \"evidence_text\": \"- 学习能力强，对人工智能算法研发有浓厚兴趣，能接受技术迭代，具备良好的文档撰写、问题排查与团队协作能力。\"}\n  ],\n  \"skills\": [\n    {\"name\": \"Python基础编程\", \"raw_name\": \"掌握Python基础编程\", \"category\": \"programming_language\", \"lskt_label\": \"S\", \"importance\": \"required\", \"evidence_text\": \"- 掌握Python基础编程，了解机器学习、深度学习基础理论，熟悉常用算法模型（CNN、RNN、分类、回归、聚类等）基础原理。\"},\n    {\"name\": \"机器学习基础理论\", \"raw_name\": \"了解机器学习、深度学习基础理论\", \"category\": \"algorithm\", \"lskt_label\": \"S\", \"importance\": \"required\", \"evidence_text\": \"- 掌握Python基础编程，了解机器学习、深度学习基础理论，熟悉常用算法模型（CNN、RNN、分类、回归、聚类等）基础原理。\"},\n    {\"name\": \"数据清洗\", \"raw_name\": \"掌握数据清洗、数据增强、样本筛选、指标评估等基础技能\", \"category\": \"data_processing\", \"lskt_label\": \"S\", \"importance\": \"required\", \"evidence_text\": \"- 熟悉AI数据集处理流程，掌握数据清洗、数据增强、样本筛选、指标评估等基础技能，具备良好的数据与算法逻辑思维。\"},\n    {\"name\": \"模型训练\", \"raw_name\": \"了解至少一种主流AI框架，如PyTorch、TensorFlow，具备基础模型训练、参数调试、数据预处理实操经验优先。\", \"category\": \"algorithm\", \"lskt_label\": \"S\", \"importance\": \"preferred\", \"evidence_text\": \"- 了解至少一种主流AI框架，如PyTorch、TensorFlow，具备基础模型训练、参数调试、数据预处理实操经验优先。\"},\n    {\"name\": \"文档撰写\", \"raw_name\": \"学习能力强，对人工智能算法研发有浓厚兴趣，能接受技术迭代，具备良好的文档撰写、问题排查与团队协作能力。\", \"category\": \"soft_skill\", \"lskt_label\": \"L\", \"importance\": \"preferred\", \"evidence_text\": \"- 学习能力强，对人工智能算法研发有浓厚兴趣，能接受技术迭代，具备良好的文档撰写、问题排查与团队协作能力。\"}\n  ],\n  \"capabilities\": [\n    {\"name\": \"技术培训\", \"description\": null, \"importance\": \"unknown\", \"evidence_text\": \"技术培训\"},\n    {\"name\": \"项目奖金\", \"description\": null, \"importance\": \"unknown\", \"evidence_text\": \"项目奖金\"}\n  ],\n  \"application_scenarios\": [\n    {\"name\": \"人工智能模型研发与迭代工作\", \"des",
+    "reason": "Ollama structured extraction failed: evaluation_signals must be a list",
+    "schema": null,
+    "state": "not_implemented",
+    "validation_error": "evaluation_signals must be a list",
+    "warnings": [
+      "Ollama structured extraction failed: evaluation_signals must be a list"
+    ]
+  },
+  "normalization": {
+    "implementation": "lightweight_skill_normalizer",
+    "skills": [],
+    "state": "not_implemented",
+    "warnings": [
+      "Ollama structured extraction failed: evaluation_signals must be a list"
+    ]
+  },
+  "profile": {
+    "artifacts": {
+      "profile_json": "data\\structured\\profiles\\job\\job_profile_9a95a876ebfc45bca91094bdb96add9c.json",
+      "schema_version": "profile-extraction/v2",
+      "storage": "filesystem"
+    },
+    "attributes": {
+      "capabilities": [],
+      "company": {},
+      "education": [],
+      "employment": {},
+      "experience": [],
+      "jd_profile": {},
+      "job": {},
+      "job_title": null,
+      "profile_schema": "profile-extraction/v2",
+      "projects": [],
+      "requirements": [],
+      "responsibilities": [],
+      "skills": []
+    },
+    "created_at": "2026-08-06T13:03:29Z",
+    "evidence": [],
+    "id": "job_profile_9a95a876ebfc45bca91094bdb96add9c",
+    "implementation": "mock",
+    "profile_type": "job",
+    "source_document_id": "doc_5ffed9cb3dd74c92a7907802afa9491a",
+    "state": "not_implemented",
+    "warnings": [
+      "Ollama structured extraction failed: evaluation_signals must be a list"
+    ]
+  },
+  "schema_version": "profile-extraction/v2",
+  "source_document": {
+    "char_count": 817,
+    "content_digest": "4ce84b5baa5ccb196fddd8fd9da5a163c4a8380b39dc88a4410b03e89851dcb4",
+    "created_at": "2026-08-06T13:00:47Z",
+    "document_type": "jd",
+    "id": "doc_5ffed9cb3dd74c92a7907802afa9491a",
+    "metadata": {
+      "job_title": "AI算法工程师（入门/应届生可投）",
+      "location": "一线城市",
+      "salary_range": "8k-15k｜双休、五险一金、项目奖金、技术培训",
+      "skills": [
+        "任职要求",
+        "熟悉",
+        "AI",
+        "数据集处理流程",
+        "掌握数据清洗",
+        "数据增强",
+        "样本筛选",
+        "指标评估等基础技",
+        "具备良好的数据与",
+        "算法逻辑思维"
+      ],
+      "title": "AI算法工程师（入门/应届生可投）"
+    },
+    "source": {
+      "source_system": "manual"
+    },
+    "storage": "memory"
+  }
+}

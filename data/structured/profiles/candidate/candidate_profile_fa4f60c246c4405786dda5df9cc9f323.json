@@ -1,0 +1,349 @@
+{
+  "artifact_type": "candidate_profile",
+  "created_at": "2026-08-06T19:40:15Z",
+  "extraction": {
+    "evidence": [
+      {
+        "field": "skills",
+        "id": "ev_001",
+        "text": "Python"
+      },
+      {
+        "field": "skills",
+        "id": "ev_002",
+        "text": "SQL"
+      },
+      {
+        "field": "skills",
+        "id": "ev_003",
+        "text": "React"
+      }
+    ],
+    "fields": {
+      "achievements": [],
+      "candidate": {
+        "current_title": null,
+        "location": null,
+        "name": null,
+        "years_of_experience": null
+      },
+      "capabilities": [],
+      "career_intent": {
+        "target_industry": null,
+        "target_location": null,
+        "target_position": null
+      },
+      "certificates": [],
+      "document_type": "resume",
+      "education": [],
+      "evidence": [
+        {
+          "field": "skills",
+          "id": "ev_001",
+          "text": "Python"
+        },
+        {
+          "field": "skills",
+          "id": "ev_002",
+          "text": "SQL"
+        },
+        {
+          "field": "skills",
+          "id": "ev_003",
+          "text": "React"
+        }
+      ],
+      "experience": [],
+      "languages": [],
+      "project_experience": [],
+      "projects": [],
+      "requirements": [],
+      "responsibilities": [],
+      "schema_version": "profile-extraction/v2",
+      "skills": [
+        {
+          "category": "programming_language",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "level": "working",
+          "lskt_label": "S",
+          "name": "Python",
+          "raw_name": "Python",
+          "years": null
+        },
+        {
+          "category": "database",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "level": "working",
+          "lskt_label": "S",
+          "name": "SQL",
+          "raw_name": "SQL",
+          "years": null
+        },
+        {
+          "category": "framework",
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "level": "working",
+          "lskt_label": "S",
+          "name": "React",
+          "raw_name": "React",
+          "years": null
+        }
+      ],
+      "work_experience": []
+    },
+    "implementation": "ollama",
+    "model": "qwen2.5:7b",
+    "raw_model_output": "",
+    "reason": "",
+    "schema": "profile-extraction/v2",
+    "state": "available",
+    "validation_error": "",
+    "warnings": []
+  },
+  "normalization": {
+    "implementation": "lightweight_skill_normalizer",
+    "skills": [
+      {
+        "category": "programming_language",
+        "esco_preferred_label": "Python (computer programming)",
+        "esco_uri": "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d",
+        "esco_version": "v1.2.1",
+        "evidence_ids": [
+          "ev_001"
+        ],
+        "level": "working",
+        "linking_confidence": 1.0,
+        "linking_status": "linked",
+        "lskt_label": "S",
+        "name": "Python (computer programming)",
+        "raw_name": "Python",
+        "years": null
+      },
+      {
+        "category": "database",
+        "esco_preferred_label": "SQL",
+        "esco_uri": "http://data.europa.eu/esco/skill/598de5b0-5b58-4ea7-8058-a4bc4d18c742",
+        "esco_version": "v1.2.1",
+        "evidence_ids": [
+          "ev_002"
+        ],
+        "level": "working",
+        "linking_confidence": 1.0,
+        "linking_status": "linked",
+        "lskt_label": "S",
+        "name": "SQL",
+        "raw_name": "SQL",
+        "years": null
+      },
+      {
+        "category": "framework",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_003"
+        ],
+        "level": "working",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "React",
+        "raw_name": "React",
+        "years": null
+      }
+    ],
+    "state": "available",
+    "warnings": []
+  },
+  "profile": {
+    "artifacts": {
+      "profile_json": "data\\structured\\profiles\\candidate\\candidate_profile_fa4f60c246c4405786dda5df9cc9f323.json",
+      "schema_version": "profile-extraction/v2",
+      "storage": "filesystem"
+    },
+    "attributes": {
+      "candidate": {
+        "current_title": null,
+        "location": null,
+        "name": null,
+        "years_of_experience": null
+      },
+      "capabilities": [],
+      "career_intent": {
+        "target_industry": null,
+        "target_location": null,
+        "target_position": null
+      },
+      "education": [],
+      "experience": [],
+      "profile_schema": "profile-extraction/v2",
+      "projects": [],
+      "resume_profile": {
+        "achievements": [],
+        "candidate": {
+          "current_title": null,
+          "location": null,
+          "name": null,
+          "years_of_experience": null
+        },
+        "capabilities": [],
+        "career_intent": {
+          "target_industry": null,
+          "target_location": null,
+          "target_position": null
+        },
+        "certificates": [],
+        "document_type": "resume",
+        "education": [],
+        "languages": [],
+        "project_experience": [],
+        "schema_version": "profile-extraction/v2",
+        "skills": [
+          {
+            "category": "programming_language",
+            "esco_preferred_label": "Python (computer programming)",
+            "esco_uri": "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d",
+            "esco_version": "v1.2.1",
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "level": "working",
+            "linking_confidence": 1.0,
+            "linking_status": "linked",
+            "lskt_label": "S",
+            "name": "Python (computer programming)",
+            "raw_name": "Python",
+            "years": null
+          },
+          {
+            "category": "database",
+            "esco_preferred_label": "SQL",
+            "esco_uri": "http://data.europa.eu/esco/skill/598de5b0-5b58-4ea7-8058-a4bc4d18c742",
+            "esco_version": "v1.2.1",
+            "evidence_ids": [
+              "ev_002"
+            ],
+            "level": "working",
+            "linking_confidence": 1.0,
+            "linking_status": "linked",
+            "lskt_label": "S",
+            "name": "SQL",
+            "raw_name": "SQL",
+            "years": null
+          },
+          {
+            "category": "framework",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_003"
+            ],
+            "level": "working",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "React",
+            "raw_name": "React",
+            "years": null
+          }
+        ],
+        "work_experience": []
+      },
+      "skills": [
+        {
+          "category": "programming_language",
+          "esco_preferred_label": "Python (computer programming)",
+          "esco_uri": "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d",
+          "esco_version": "v1.2.1",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "level": "working",
+          "linking_confidence": 1.0,
+          "linking_status": "linked",
+          "lskt_label": "S",
+          "name": "Python (computer programming)",
+          "raw_name": "Python",
+          "years": null
+        },
+        {
+          "category": "database",
+          "esco_preferred_label": "SQL",
+          "esco_uri": "http://data.europa.eu/esco/skill/598de5b0-5b58-4ea7-8058-a4bc4d18c742",
+          "esco_version": "v1.2.1",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "level": "working",
+          "linking_confidence": 1.0,
+          "linking_status": "linked",
+          "lskt_label": "S",
+          "name": "SQL",
+          "raw_name": "SQL",
+          "years": null
+        },
+        {
+          "category": "framework",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "level": "working",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "React",
+          "raw_name": "React",
+          "years": null
+        }
+      ],
+      "target_position": null
+    },
+    "created_at": "2026-08-06T19:40:15Z",
+    "evidence": [
+      {
+        "field": "skills",
+        "id": "ev_001",
+        "text": "Python"
+      },
+      {
+        "field": "skills",
+        "id": "ev_002",
+        "text": "SQL"
+      },
+      {
+        "field": "skills",
+        "id": "ev_003",
+        "text": "React"
+      }
+    ],
+    "id": "candidate_profile_fa4f60c246c4405786dda5df9cc9f323",
+    "implementation": "llm_profile_builder",
+    "profile_type": "candidate",
+    "source_document_id": "doc_b96dbd3b5687473aa75f4eb7331e17ee",
+    "state": "available",
+    "warnings": []
+  },
+  "schema_version": "profile-extraction/v2",
+  "source_document": {
+    "char_count": 42,
+    "content_digest": "b3fa07ae42b4f800b31bd49ead871521ae30369821730312140577193e361f4b",
+    "created_at": "2026-08-06T19:40:08Z",
+    "document_type": "resume",
+    "id": "doc_b96dbd3b5687473aa75f4eb7331e17ee",
+    "metadata": {},
+    "source": {
+      "source_system": "manual"
+    },
+    "storage": "memory"
+  }
+}

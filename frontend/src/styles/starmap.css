@@ -1,0 +1,511 @@
+/* ══════════════════════════════════════════════
+   岗位星图 · StarMap 样式
+   风格：Dark Glassmorphism + 星空主题
+   ══════════════════════════════════════════════ */
+
+.starmap-container {
+  display: flex;
+  height: calc(100vh - 64px - 32px);
+  gap: 0;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+}
+
+/* ── 左侧 3D 画布 ── */
+.starmap-canvas-wrap {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  min-width: 0;
+}
+
+.starmap-canvas {
+  width: 100%;
+  height: 100%;
+  cursor: grab;
+}
+
+.starmap-canvas:active {
+  cursor: grabbing;
+}
+
+/* ── 图例 ── */
+.starmap-legend {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  z-index: 10;
+  background: rgba(7, 16, 24, 0.88);
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(77, 214, 255, 0.12);
+  backdrop-filter: blur(12px);
+}
+
+.starmap-legend-title {
+  font-size: 11px;
+  color: #8b949e;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.starmap-legend-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.starmap-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+}
+
+.starmap-legend-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* ── 统计标签 ── */
+.starmap-stats {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  z-index: 10;
+  display: flex;
+  gap: 6px;
+}
+
+/* ── Tooltip ── */
+.starmap-tooltip {
+  position: fixed;
+  z-index: 100;
+  pointer-events: none;
+  background: rgba(7, 16, 24, 0.92);
+  border: 1px solid rgba(77, 214, 255, 0.2);
+  border-radius: 8px;
+  padding: 8px 12px;
+  backdrop-filter: blur(12px);
+  max-width: 280px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5), 0 0 1px rgba(77, 214, 255, 0.3);
+}
+
+.starmap-tooltip-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #e6edf3;
+  margin-bottom: 2px;
+}
+
+.starmap-tooltip-extra {
+  font-size: 11px;
+  color: #8b949e;
+}
+
+/* ── 重置按钮 ── */
+.starmap-reset-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 10;
+  background: rgba(7, 16, 24, 0.88) !important;
+  border: 1px solid rgba(77, 214, 255, 0.12) !important;
+  color: #8b949e !important;
+  backdrop-filter: blur(12px);
+}
+
+.starmap-reset-btn:hover {
+  border-color: #4dd6ff !important;
+  color: #4dd6ff !important;
+}
+
+/* ── 右侧面板 ── */
+.starmap-panel {
+  width: 420px;
+  flex-shrink: 0;
+  background: rgba(13, 17, 23, 0.95);
+  border-left: 1px solid var(--border-subtle);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.starmap-panel-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 16px 12px;
+  border-bottom: 1px solid rgba(77, 214, 255, 0.06);
+}
+
+.starmap-insights {
+  padding: 16px;
+  border-bottom: 1px solid rgba(77, 214, 255, 0.08);
+}
+
+.starmap-insights-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.starmap-insights-heading div { min-width: 0; }
+.starmap-insights-heading span { display: block; color: #8b949e; font-size: 10px; }
+.starmap-insights-heading strong { display: block; margin-top: 3px; color: #e6edf3; font-size: 15px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+.starmap-insight-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.starmap-insight-summary div {
+  padding: 8px;
+  text-align: center;
+  background: rgba(77, 214, 255, 0.04);
+  border: 1px solid rgba(77, 214, 255, 0.08);
+  border-radius: 6px;
+}
+
+.starmap-insight-summary strong,
+.starmap-insight-summary span {
+  display: block;
+}
+
+.starmap-insight-summary strong { color: #e6edf3; font-size: 17px; }
+.starmap-insight-summary span { color: #8b949e; font-size: 10px; margin-top: 2px; }
+
+.starmap-analysis-grid {
+  display: grid;
+  grid-template-columns: minmax(170px, 1.2fr) minmax(130px, 0.8fr);
+  gap: 12px;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid rgba(77, 214, 255, 0.08);
+  border-radius: 7px;
+  background: rgba(22, 27, 34, 0.45);
+}
+
+.starmap-pie-panel { min-width: 0; }
+.starmap-metric-title { color: #8b949e; font-size: 10px; font-weight: 600; margin: 10px 0 6px; }
+
+.starmap-pie {
+  width: 88px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 0 0 22px rgba(77, 214, 255, 0.12);
+}
+
+.starmap-pie::after {
+  content: "技能";
+  position: absolute;
+  inset: 25%;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #0d1117;
+  color: #8b949e;
+  font-size: 11px;
+}
+
+.starmap-pie-legend { display: grid; gap: 5px; }
+.starmap-pie-legend div { display: grid; grid-template-columns: 8px 1fr auto; gap: 7px; align-items: center; padding: 4px 0; font-size: 10px; }
+.starmap-pie-legend i { width: 7px; height: 7px; border-radius: 50%; }
+.starmap-pie-legend span { color: #8b949e; }
+.starmap-pie-legend b { color: #e6edf3; font-weight: 600; }
+
+.starmap-related-title {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  margin: 14px 0 7px;
+  color: #8b949e;
+  font-size: 11px;
+}
+.starmap-related-title span { color: #484f58; }
+
+.starmap-skill-ranking { display: grid; gap: 5px; }
+.starmap-skill-ranking button {
+  display: grid;
+  grid-template-columns: minmax(100px, 1fr) minmax(80px, 1.2fr) 24px;
+  align-items: center;
+  gap: 8px;
+  padding: 3px 0;
+  border: 0;
+  background: transparent;
+  color: #e6edf3;
+}
+.starmap-skill-ranking button > span { display: flex; align-items: center; gap: 6px; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 10px; }
+.starmap-skill-ranking button > span b { display: grid; place-items: center; width: 16px; height: 16px; border-radius: 3px; background: rgba(77, 214, 255, 0.08); color: #4dd6ff; font-size: 9px; }
+.starmap-skill-ranking button > i { height: 5px; overflow: hidden; border-radius: 3px; background: rgba(255,255,255,0.05); }
+.starmap-skill-ranking button > i em { display: block; height: 100%; border-radius: inherit; background: #52c41a; }
+.starmap-skill-ranking button > strong { color: #8b949e; font-size: 10px; text-align: right; }
+
+.starmap-related-jobs { display: grid; gap: 4px; }
+.starmap-related-jobs button {
+  display: grid;
+  grid-template-columns: 5px minmax(0, 1fr) auto;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  width: 100%;
+  min-height: 42px;
+  padding: 6px 9px;
+  border: 1px solid rgba(77, 214, 255, 0.08);
+  border-radius: 5px;
+  background: rgba(22, 27, 34, 0.55);
+  color: #e6edf3;
+  cursor: pointer;
+}
+.starmap-related-jobs button:hover { border-color: rgba(77, 214, 255, 0.3); }
+.starmap-related-jobs button > i { width: 4px; height: 24px; border-radius: 2px; }
+.starmap-related-jobs button span { min-width: 0; text-align: left; }
+.starmap-related-jobs button span strong,
+.starmap-related-jobs button span small { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.starmap-related-jobs button span strong { color: #e6edf3; font-size: 11px; }
+.starmap-related-jobs button span small { margin-top: 2px; color: #484f58; font-size: 9px; }
+.starmap-related-jobs button em { color: #52c41a; font-size: 10px; font-style: normal; flex-shrink: 0; }
+.starmap-muted { color: #484f58; font-size: 11px; }
+
+/* ── 输入区 ── */
+.starmap-input-section {
+  padding: 12px 16px 0;
+}
+
+.starmap-section-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: #8b949e;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.starmap-textarea {
+  margin-bottom: 8px;
+  background: rgba(22, 27, 34, 0.8) !important;
+  border: 1px solid rgba(77, 214, 255, 0.08) !important;
+  color: #e6edf3 !important;
+  border-radius: 8px !important;
+  font-size: 13px;
+}
+
+.starmap-textarea:focus,
+.starmap-textarea:hover {
+  border-color: rgba(77, 214, 255, 0.25) !important;
+  box-shadow: 0 0 0 2px rgba(77, 214, 255, 0.06) !important;
+}
+
+.starmap-textarea::placeholder {
+  color: #484f58 !important;
+}
+
+/* ── JD 列表 ── */
+.starmap-jd-list {
+  flex: none;
+  max-height: 320px;
+  overflow-y: auto;
+  padding: 0 16px;
+}
+
+.starmap-jd-card {
+  padding: 10px 12px;
+  margin-bottom: 6px;
+  border-radius: 8px;
+  border: 1px solid rgba(48, 54, 61, 0.4);
+  background: rgba(22, 27, 34, 0.5);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.starmap-jd-card:hover {
+  border-color: rgba(77, 214, 255, 0.2);
+  background: rgba(22, 27, 34, 0.8);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+}
+
+.starmap-jd-card.active {
+  border-color: #4dd6ff;
+  background: rgba(77, 214, 255, 0.06);
+  box-shadow: 0 0 16px rgba(77, 214, 255, 0.1);
+}
+
+.starmap-jd-card-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #e6edf3;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 4px;
+  line-height: 1.4;
+}
+
+.starmap-jd-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  box-shadow: 0 0 6px currentColor;
+}
+
+.starmap-jd-card-meta {
+  font-size: 11px;
+  color: #8b949e;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+.starmap-jd-card-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.starmap-skill-tag {
+  font-size: 10px !important;
+  padding: 0 5px !important;
+  line-height: 18px !important;
+  border-radius: 3px !important;
+  background: rgba(77, 214, 255, 0.06) !important;
+  border-color: rgba(77, 214, 255, 0.12) !important;
+  color: #8b949e !important;
+}
+
+/* ── 详情面板 ── */
+.starmap-detail {
+  padding: 0 16px 16px;
+}
+
+.starmap-detail-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #e6edf3;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.starmap-detail-row {
+  font-size: 12px;
+  color: #8b949e;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.starmap-detail-text {
+  font-size: 12px;
+  color: #8b949e;
+  margin-top: 8px !important;
+  line-height: 1.6;
+}
+
+.starmap-detail-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 8px;
+}
+
+/* ── 添加新 JD 飞入动画 ── */
+@keyframes starmap-flyin {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.6);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.88;
+  }
+}
+
+@keyframes starmap-pulse {
+  0%, 100% {
+    box-shadow: 0 0 4px rgba(77, 214, 255, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(77, 214, 255, 0.6);
+  }
+}
+
+.starmap-jd-card.active .starmap-jd-dot {
+  animation: starmap-pulse 2s ease-in-out infinite;
+}
+
+/* ── 技能热度条 ── */
+.starmap-heat-bar {
+  position: absolute;
+  bottom: 70px;
+  left: 16px;
+  z-index: 10;
+  background: rgba(7, 16, 24, 0.88);
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(77, 214, 255, 0.12);
+  backdrop-filter: blur(12px);
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.starmap-heat-bar-label {
+  font-size: 10px;
+  color: #8b949e;
+  margin-right: 4px;
+}
+
+.starmap-heat-bar-item {
+  width: 20px;
+  height: 8px;
+  border-radius: 2px;
+}
+
+/* ── 响应式 ── */
+@media (max-width: 1024px) {
+  .starmap-container {
+    flex-direction: column;
+    height: auto;
+    min-height: calc(100vh - 64px - 32px);
+  }
+
+  .starmap-canvas-wrap {
+    height: 50vh;
+    min-height: 400px;
+  }
+
+  .starmap-panel {
+    width: 100%;
+    max-height: 50vh;
+    border-left: none;
+    border-top: 1px solid var(--border-subtle);
+  }
+}
+
+@media (max-width: 768px) {
+  .starmap-panel {
+    width: 100%;
+  }
+
+  .starmap-canvas-wrap {
+    height: 40vh;
+    min-height: 300px;
+  }
+}

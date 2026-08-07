@@ -1,0 +1,791 @@
+{
+  "artifact_type": "job_profile",
+  "created_at": "2026-06-30T08:39:27Z",
+  "extraction": {
+    "evidence": [
+      {
+        "field": "requirements",
+        "id": "ev_001",
+        "text": "1、本科及以上学历;"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_002",
+        "text": "2、掌握C++/Java/Go/Web/python其中一种编程语言，有良好的编程习惯、热爱编程;"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_003",
+        "text": "3、对基本数据结构和算法有一定了解"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_004",
+        "text": "4、具备良好的解决问题能力、善于沟通、乐于合作;"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_005",
+        "text": "5、扎实的计算机基础，具备优秀的学习能力和逻辑思维能力，善于分析问题和解决问题有关键独立模块设计、开发和维护经验"
+      },
+      {
+        "field": "application_scenarios",
+        "id": "ev_006",
+        "text": "PS:北京，上海，南京，杭州，深圳，东莞，成都，西安，武汉，长沙均有需求开放"
+      }
+    ],
+    "fields": {
+      "application_scenarios": [
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "name": "北京"
+        },
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "name": "上海"
+        },
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "name": "南京"
+        },
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "name": "杭州"
+        },
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "name": "深圳"
+        },
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "name": "东莞"
+        },
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "name": "成都"
+        },
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "name": "西安"
+        },
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "name:": "武汉"
+        },
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "name": "长沙"
+        }
+      ],
+      "candidate": {
+        "name": null,
+        "target_position": null
+      },
+      "capabilities": [],
+      "company": {
+        "industry": "软件/IT服务",
+        "location": "深圳 龙岗",
+        "name": "外企德科数字技术有限公司"
+      },
+      "document_type": "jd",
+      "education": [],
+      "employment": {
+        "employment_type": "full_time",
+        "published_at": "2026-06-18 00:33:17",
+        "salary_max": 30000,
+        "salary_min": 20000
+      },
+      "evaluation_signals": [],
+      "evidence": [
+        {
+          "field": "requirements",
+          "id": "ev_001",
+          "text": "1、本科及以上学历;"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_002",
+          "text": "2、掌握C++/Java/Go/Web/python其中一种编程语言，有良好的编程习惯、热爱编程;"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_003",
+          "text": "3、对基本数据结构和算法有一定了解"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_004",
+          "text": "4、具备良好的解决问题能力、善于沟通、乐于合作;"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_005",
+          "text": "5、扎实的计算机基础，具备优秀的学习能力和逻辑思维能力，善于分析问题和解决问题有关键独立模块设计、开发和维护经验"
+        },
+        {
+          "field": "application_scenarios",
+          "id": "ev_006",
+          "text": "PS:北京，上海，南京，杭州，深圳，东莞，成都，西安，武汉，长沙均有需求开放"
+        }
+      ],
+      "experience": [],
+      "job": {
+        "department": null,
+        "normalized_title": null,
+        "seniority": null,
+        "title": "C/C++/JAVA/Python/大数据/AI/开发"
+      },
+      "projects": [],
+      "requirements": [
+        {
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "importance": "required",
+          "requirement_type": "education",
+          "text": "本科及以上学历"
+        },
+        {
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "掌握C++/Java/Go/Web/python其中一种编程语言，有良好的编程习惯、热爱编程"
+        },
+        {
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "importance": "preferred",
+          "requirement_type": "skill",
+          "text": "对基本数据结构和算法有一定了解"
+        },
+        {
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "importance": "required",
+          "requirement_type": "soft_skill",
+          "text": "具备良好的解决问题能力、善于沟通、乐于合作"
+        },
+        {
+          "evidence_ids": [
+            "ev_005"
+          ],
+          "importance": "preferred",
+          "requirement_type": "experience",
+          "text": "扎实的计算机基础，具备优秀的学习能力和逻辑思维能力，善于分析问题和解决问题有关键独立模块设计、开发和维护经验"
+        }
+      ],
+      "responsibilities": [],
+      "schema_version": "profile-extraction/v2",
+      "skills": [
+        {
+          "category": "programming_language",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "C++",
+          "raw_name": "C++"
+        },
+        {
+          "category": "programming_language",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "Java",
+          "raw_name": "Java"
+        },
+        {
+          "category": "programming_language",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "Python",
+          "raw_name": "python"
+        },
+        {
+          "category": "programming_language",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "importance": "preferred",
+          "lskt_label": "S",
+          "name": "Go",
+          "raw_name": "Go"
+        },
+        {
+          "category": "programming_language",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "importance": "preferred",
+          "lskt_label": "S",
+          "name": "Web",
+          "raw_name": "Web"
+        }
+      ]
+    },
+    "implementation": "ollama",
+    "model": "qwen2.5:7b",
+    "raw_model_output": "",
+    "reason": "",
+    "schema": "profile-extraction/v2",
+    "state": "available",
+    "validation_error": "",
+    "warnings": [
+      "skills[6] ignored: missing evidence_text",
+      "skills[7] ignored: missing evidence_text",
+      "capabilities[1] ignored: missing evidence_text"
+    ]
+  },
+  "normalization": {
+    "implementation": "lightweight_skill_normalizer",
+    "skills": [
+      {
+        "category": "programming_language",
+        "esco_preferred_label": "C++",
+        "esco_uri": "http://data.europa.eu/esco/skill/b633eb55-8f1f-4ae6-ab4c-2022ffe2cb7f",
+        "esco_version": "v1.2.1",
+        "evidence_ids": [
+          "ev_002"
+        ],
+        "importance": "required",
+        "linking_confidence": 1.0,
+        "linking_status": "linked",
+        "lskt_label": "S",
+        "name": "C++",
+        "raw_name": "C++"
+      },
+      {
+        "category": "programming_language",
+        "esco_preferred_label": "Java (computer programming)",
+        "esco_uri": "http://data.europa.eu/esco/skill/19a8293b-8e95-4de3-983f-77484079c389",
+        "esco_version": "v1.2.1",
+        "evidence_ids": [
+          "ev_002"
+        ],
+        "importance": "required",
+        "linking_confidence": 1.0,
+        "linking_status": "linked",
+        "lskt_label": "S",
+        "name": "Java (computer programming)",
+        "raw_name": "Java"
+      },
+      {
+        "category": "programming_language",
+        "esco_preferred_label": "Python (computer programming)",
+        "esco_uri": "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d",
+        "esco_version": "v1.2.1",
+        "evidence_ids": [
+          "ev_002"
+        ],
+        "importance": "required",
+        "linking_confidence": 1.0,
+        "linking_status": "linked",
+        "lskt_label": "S",
+        "name": "Python (computer programming)",
+        "raw_name": "python"
+      },
+      {
+        "category": "programming_language",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_002"
+        ],
+        "importance": "preferred",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "Go",
+        "raw_name": "Go"
+      },
+      {
+        "category": "programming_language",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_002"
+        ],
+        "importance": "preferred",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "Web",
+        "raw_name": "Web"
+      }
+    ],
+    "state": "available",
+    "warnings": []
+  },
+  "profile": {
+    "artifacts": {
+      "profile_json": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/structured/profiles/raw_preview_20260630/job/job_profile_7b39c60700784604ac591e9a54ffde29.json",
+      "schema_version": "profile-extraction/v2",
+      "storage": "filesystem"
+    },
+    "attributes": {
+      "capabilities": [],
+      "company": {
+        "industry": "软件/IT服务",
+        "location": "深圳 龙岗",
+        "name": "外企德科数字技术有限公司"
+      },
+      "education": [],
+      "employment": {
+        "employment_type": "full_time",
+        "published_at": "2026-06-18 00:33:17",
+        "salary_max": 30000,
+        "salary_min": 20000
+      },
+      "experience": [],
+      "jd_profile": {
+        "application_scenarios": [
+          {
+            "description": null,
+            "evidence_ids": [
+              "ev_006"
+            ],
+            "name": "北京"
+          },
+          {
+            "description": null,
+            "evidence_ids": [
+              "ev_006"
+            ],
+            "name": "上海"
+          },
+          {
+            "description": null,
+            "evidence_ids": [
+              "ev_006"
+            ],
+            "name": "南京"
+          },
+          {
+            "description": null,
+            "evidence_ids": [
+              "ev_006"
+            ],
+            "name": "杭州"
+          },
+          {
+            "description": null,
+            "evidence_ids": [
+              "ev_006"
+            ],
+            "name": "深圳"
+          },
+          {
+            "description": null,
+            "evidence_ids": [
+              "ev_006"
+            ],
+            "name": "东莞"
+          },
+          {
+            "description": null,
+            "evidence_ids": [
+              "ev_006"
+            ],
+            "name": "成都"
+          },
+          {
+            "description": null,
+            "evidence_ids": [
+              "ev_006"
+            ],
+            "name": "西安"
+          },
+          {
+            "description": null,
+            "evidence_ids": [
+              "ev_006"
+            ],
+            "name:": "武汉"
+          },
+          {
+            "description": null,
+            "evidence_ids": [
+              "ev_006"
+            ],
+            "name": "长沙"
+          }
+        ],
+        "capabilities": [],
+        "company": {
+          "industry": "软件/IT服务",
+          "location": "深圳 龙岗",
+          "name": "外企德科数字技术有限公司"
+        },
+        "document_type": "jd",
+        "employment": {
+          "employment_type": "full_time",
+          "published_at": "2026-06-18 00:33:17",
+          "salary_max": 30000,
+          "salary_min": 20000
+        },
+        "evaluation_signals": [],
+        "job": {
+          "department": null,
+          "normalized_title": null,
+          "seniority": null,
+          "title": "C/C++/JAVA/Python/大数据/AI/开发"
+        },
+        "requirements": [
+          {
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "importance": "required",
+            "requirement_type": "education",
+            "text": "本科及以上学历"
+          },
+          {
+            "evidence_ids": [
+              "ev_002"
+            ],
+            "importance": "required",
+            "requirement_type": "skill",
+            "text": "掌握C++/Java/Go/Web/python其中一种编程语言，有良好的编程习惯、热爱编程"
+          },
+          {
+            "evidence_ids": [
+              "ev_003"
+            ],
+            "importance": "preferred",
+            "requirement_type": "skill",
+            "text": "对基本数据结构和算法有一定了解"
+          },
+          {
+            "evidence_ids": [
+              "ev_004"
+            ],
+            "importance": "required",
+            "requirement_type": "soft_skill",
+            "text": "具备良好的解决问题能力、善于沟通、乐于合作"
+          },
+          {
+            "evidence_ids": [
+              "ev_005"
+            ],
+            "importance": "preferred",
+            "requirement_type": "experience",
+            "text": "扎实的计算机基础，具备优秀的学习能力和逻辑思维能力，善于分析问题和解决问题有关键独立模块设计、开发和维护经验"
+          }
+        ],
+        "responsibilities": [],
+        "schema_version": "profile-extraction/v2",
+        "skills": [
+          {
+            "category": "programming_language",
+            "esco_preferred_label": "C++",
+            "esco_uri": "http://data.europa.eu/esco/skill/b633eb55-8f1f-4ae6-ab4c-2022ffe2cb7f",
+            "esco_version": "v1.2.1",
+            "evidence_ids": [
+              "ev_002"
+            ],
+            "importance": "required",
+            "linking_confidence": 1.0,
+            "linking_status": "linked",
+            "lskt_label": "S",
+            "name": "C++",
+            "raw_name": "C++"
+          },
+          {
+            "category": "programming_language",
+            "esco_preferred_label": "Java (computer programming)",
+            "esco_uri": "http://data.europa.eu/esco/skill/19a8293b-8e95-4de3-983f-77484079c389",
+            "esco_version": "v1.2.1",
+            "evidence_ids": [
+              "ev_002"
+            ],
+            "importance": "required",
+            "linking_confidence": 1.0,
+            "linking_status": "linked",
+            "lskt_label": "S",
+            "name": "Java (computer programming)",
+            "raw_name": "Java"
+          },
+          {
+            "category": "programming_language",
+            "esco_preferred_label": "Python (computer programming)",
+            "esco_uri": "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d",
+            "esco_version": "v1.2.1",
+            "evidence_ids": [
+              "ev_002"
+            ],
+            "importance": "required",
+            "linking_confidence": 1.0,
+            "linking_status": "linked",
+            "lskt_label": "S",
+            "name": "Python (computer programming)",
+            "raw_name": "python"
+          },
+          {
+            "category": "programming_language",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_002"
+            ],
+            "importance": "preferred",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "Go",
+            "raw_name": "Go"
+          },
+          {
+            "category": "programming_language",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_002"
+            ],
+            "importance": "preferred",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "Web",
+            "raw_name": "Web"
+          }
+        ]
+      },
+      "job": {
+        "department": null,
+        "normalized_title": null,
+        "seniority": null,
+        "title": "C/C++/JAVA/Python/大数据/AI/开发"
+      },
+      "job_title": "C/C++/JAVA/Python/大数据/AI/开发",
+      "profile_schema": "profile-extraction/v2",
+      "projects": [],
+      "requirements": [
+        {
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "importance": "required",
+          "requirement_type": "education",
+          "text": "本科及以上学历"
+        },
+        {
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "掌握C++/Java/Go/Web/python其中一种编程语言，有良好的编程习惯、热爱编程"
+        },
+        {
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "importance": "preferred",
+          "requirement_type": "skill",
+          "text": "对基本数据结构和算法有一定了解"
+        },
+        {
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "importance": "required",
+          "requirement_type": "soft_skill",
+          "text": "具备良好的解决问题能力、善于沟通、乐于合作"
+        },
+        {
+          "evidence_ids": [
+            "ev_005"
+          ],
+          "importance": "preferred",
+          "requirement_type": "experience",
+          "text": "扎实的计算机基础，具备优秀的学习能力和逻辑思维能力，善于分析问题和解决问题有关键独立模块设计、开发和维护经验"
+        }
+      ],
+      "responsibilities": [],
+      "skills": [
+        {
+          "category": "programming_language",
+          "esco_preferred_label": "C++",
+          "esco_uri": "http://data.europa.eu/esco/skill/b633eb55-8f1f-4ae6-ab4c-2022ffe2cb7f",
+          "esco_version": "v1.2.1",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "importance": "required",
+          "linking_confidence": 1.0,
+          "linking_status": "linked",
+          "lskt_label": "S",
+          "name": "C++",
+          "raw_name": "C++"
+        },
+        {
+          "category": "programming_language",
+          "esco_preferred_label": "Java (computer programming)",
+          "esco_uri": "http://data.europa.eu/esco/skill/19a8293b-8e95-4de3-983f-77484079c389",
+          "esco_version": "v1.2.1",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "importance": "required",
+          "linking_confidence": 1.0,
+          "linking_status": "linked",
+          "lskt_label": "S",
+          "name": "Java (computer programming)",
+          "raw_name": "Java"
+        },
+        {
+          "category": "programming_language",
+          "esco_preferred_label": "Python (computer programming)",
+          "esco_uri": "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d",
+          "esco_version": "v1.2.1",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "importance": "required",
+          "linking_confidence": 1.0,
+          "linking_status": "linked",
+          "lskt_label": "S",
+          "name": "Python (computer programming)",
+          "raw_name": "python"
+        },
+        {
+          "category": "programming_language",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "importance": "preferred",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "Go",
+          "raw_name": "Go"
+        },
+        {
+          "category": "programming_language",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "importance": "preferred",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "Web",
+          "raw_name": "Web"
+        }
+      ]
+    },
+    "created_at": "2026-06-30T08:39:27Z",
+    "evidence": [
+      {
+        "field": "requirements",
+        "id": "ev_001",
+        "text": "1、本科及以上学历;"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_002",
+        "text": "2、掌握C++/Java/Go/Web/python其中一种编程语言，有良好的编程习惯、热爱编程;"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_003",
+        "text": "3、对基本数据结构和算法有一定了解"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_004",
+        "text": "4、具备良好的解决问题能力、善于沟通、乐于合作;"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_005",
+        "text": "5、扎实的计算机基础，具备优秀的学习能力和逻辑思维能力，善于分析问题和解决问题有关键独立模块设计、开发和维护经验"
+      },
+      {
+        "field": "application_scenarios",
+        "id": "ev_006",
+        "text": "PS:北京，上海，南京，杭州，深圳，东莞，成都，西安，武汉，长沙均有需求开放"
+      }
+    ],
+    "id": "job_profile_7b39c60700784604ac591e9a54ffde29",
+    "implementation": "llm_profile_builder",
+    "profile_type": "job",
+    "source_document_id": "doc_7b32f819c1ef451eb588a7b53aae9b45",
+    "state": "available",
+    "warnings": [
+      "skills[6] ignored: missing evidence_text",
+      "skills[7] ignored: missing evidence_text",
+      "capabilities[1] ignored: missing evidence_text"
+    ]
+  },
+  "schema_version": "profile-extraction/v2",
+  "source_document": {
+    "char_count": 559,
+    "content_digest": "30c6b53fae885e056906e5251053ef366311333a0aa78038c685f8e53d2a535a",
+    "created_at": "2026-06-30T08:37:53Z",
+    "document_type": "jd",
+    "id": "doc_7b32f819c1ef451eb588a7b53aae9b45",
+    "metadata": {
+      "raw_file": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/small-raw/jd_raw.jsonl",
+      "raw_index": 10,
+      "raw_type": "jd"
+    },
+    "source": {
+      "external_id": "40866497505",
+      "published_at": "2026-06-18 00:33:17",
+      "source_system": "zhaopin",
+      "uri": "http://www.zhaopin.com/jobdetail/CCL1480117890J40866497505.htm"
+    },
+    "storage": "memory"
+  }
+}

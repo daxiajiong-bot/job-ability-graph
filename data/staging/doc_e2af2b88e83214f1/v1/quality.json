@@ -1,0 +1,29 @@
+{
+  "checks": [
+    {
+      "name": "raw_text_present",
+      "passed": true,
+      "value": 926
+    },
+    {
+      "name": "cleaned_text_present",
+      "passed": true,
+      "value": 926
+    },
+    {
+      "name": "doc_id_required",
+      "passed": true,
+      "value": "doc_e2af2b88e83214f1"
+    },
+    {
+      "name": "version_positive",
+      "passed": true,
+      "value": 1
+    }
+  ],
+  "created_at": "2026-08-05T12:01:26Z",
+  "doc_id": "doc_e2af2b88e83214f1",
+  "status": "passed",
+  "version": 1,
+  "warnings": []
+}

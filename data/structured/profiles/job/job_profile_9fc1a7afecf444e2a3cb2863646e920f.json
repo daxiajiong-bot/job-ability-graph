@@ -1,0 +1,1623 @@
+{
+  "artifact_type": "job_profile",
+  "created_at": "2026-08-06T19:47:36Z",
+  "extraction": {
+    "evidence": [
+      {
+        "field": "responsibilities",
+        "id": "ev_001",
+        "text": "- 负责通用大模型（GPT、文心一言、通义千问等）的落地应用开发，聚焦Prompt工程优化、上下文调试、指令迭代"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_002",
+        "text": "- 参与AI知识库搭建与优化，完成行业语料整理、知识切片、向量数据库适配、知识库挂载调试"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_003",
+        "text": "- 协助进行大模型微调数据准备、样本筛选、数据清洗工作，整理微调数据集"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_004",
+        "text": " 配合算法团队完成小参数微调、模型效果测"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_005",
+        "text": "- 负责AI应用功能测试、效果验收、问题复盘，记录模型幻觉、输出偏差、逻辑漏洞等问题"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_006",
+        "text": "- 跟进大模型行业新技术、新应用方案，调研各类开源大模型、AI工具链的落地场景"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_007",
+        "text": "- 配合产品、开发团队完成AI功能上线、用户反馈收集与功能迭代"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_008",
+        "text": "- 大专及以上学历，人工智能、计算机、大数据、软件工程、汉语言、新媒体等相关专业"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_009",
+        "text": " 有大模型、Prompt优化、AI知识库"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_010",
+        "text": "- 了解大模型基础原理，熟悉Prompt工程基础逻辑"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_011",
+        "text": " 掌握零样本、少样本、思维链等基础提示词"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_012",
+        "text": " 具备文本调教、模型输出优化能力"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_013",
+        "text": "- 具备基础数据处理、文本标注、语料整理能力"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_014",
+        "text": " 了解知识库搭建、文本切片、向量检索等基"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_015",
+        "text": "- 具备良好的逻辑思维、文字功底和问题排查能力"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_016",
+        "text": "- 学习能力强，对AIGC、大模型应用有浓厚兴趣"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_017",
+        "text": " 熟悉主流大模型平台工具，具备独立完成A"
+      },
+      {
+        "field": "skills",
+        "id": "ev_018",
+        "text": "- 负责通用大模型（GPT、文心一言、通义千问等）的落地应用开发，聚焦Prompt工程优化"
+      },
+      {
+        "field": "skills",
+        "id": "ev_019",
+        "text": "- 参与AI知识库搭建与优化，完成行业语料整理、知识切片"
+      }
+    ],
+    "fields": {
+      "application_scenarios": [
+        {
+          "description": "负责通用大模型（GPT、文心一言、通义千问等）的落地应用开发，聚焦Prompt工程优化、上下文调试、指令迭代",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "name": "大模型应用开发"
+        },
+        {
+          "description": "参与AI知识库搭建与优化，完成行业语料整理、知识切片、向量数据库适配、知识库挂载调试",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "name": "AI知识库搭建与优化"
+        },
+        {
+          "description": "协助进行大模型微调数据准备、样本筛选、数据清洗工作，整理微调数据集",
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "name": "大模型微调数据准备"
+        },
+        {
+          "description": "配合算法团队完成小参数微调、模型效果测试与迭代优化",
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "name": "模型效果测试与迭代优化"
+        }
+      ],
+      "candidate": {
+        "name": null,
+        "target_position": null
+      },
+      "capabilities": [
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_015"
+          ],
+          "importance": "required",
+          "name": "逻辑思维能力"
+        },
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_015"
+          ],
+          "importance": "required",
+          "name": "文字功底"
+        }
+      ],
+      "company": {
+        "industry": null,
+        "location": "一线城市",
+        "name": null
+      },
+      "document_type": "jd",
+      "education": [],
+      "employment": {
+        "employment_type": "full_time",
+        "published_at": null,
+        "salary_max": 16000,
+        "salary_min": 9000
+      },
+      "evaluation_signals": [],
+      "evidence": [
+        {
+          "field": "responsibilities",
+          "id": "ev_001",
+          "text": "- 负责通用大模型（GPT、文心一言、通义千问等）的落地应用开发，聚焦Prompt工程优化、上下文调试、指令迭代"
+        },
+        {
+          "field": "responsibilities",
+          "id": "ev_002",
+          "text": "- 参与AI知识库搭建与优化，完成行业语料整理、知识切片、向量数据库适配、知识库挂载调试"
+        },
+        {
+          "field": "responsibilities",
+          "id": "ev_003",
+          "text": "- 协助进行大模型微调数据准备、样本筛选、数据清洗工作，整理微调数据集"
+        },
+        {
+          "field": "responsibilities",
+          "id": "ev_004",
+          "text": " 配合算法团队完成小参数微调、模型效果测"
+        },
+        {
+          "field": "responsibilities",
+          "id": "ev_005",
+          "text": "- 负责AI应用功能测试、效果验收、问题复盘，记录模型幻觉、输出偏差、逻辑漏洞等问题"
+        },
+        {
+          "field": "responsibilities",
+          "id": "ev_006",
+          "text": "- 跟进大模型行业新技术、新应用方案，调研各类开源大模型、AI工具链的落地场景"
+        },
+        {
+          "field": "responsibilities",
+          "id": "ev_007",
+          "text": "- 配合产品、开发团队完成AI功能上线、用户反馈收集与功能迭代"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_008",
+          "text": "- 大专及以上学历，人工智能、计算机、大数据、软件工程、汉语言、新媒体等相关专业"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_009",
+          "text": " 有大模型、Prompt优化、AI知识库"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_010",
+          "text": "- 了解大模型基础原理，熟悉Prompt工程基础逻辑"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_011",
+          "text": " 掌握零样本、少样本、思维链等基础提示词"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_012",
+          "text": " 具备文本调教、模型输出优化能力"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_013",
+          "text": "- 具备基础数据处理、文本标注、语料整理能力"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_014",
+          "text": " 了解知识库搭建、文本切片、向量检索等基"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_015",
+          "text": "- 具备良好的逻辑思维、文字功底和问题排查能力"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_016",
+          "text": "- 学习能力强，对AIGC、大模型应用有浓厚兴趣"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_017",
+          "text": " 熟悉主流大模型平台工具，具备独立完成A"
+        },
+        {
+          "field": "skills",
+          "id": "ev_018",
+          "text": "- 负责通用大模型（GPT、文心一言、通义千问等）的落地应用开发，聚焦Prompt工程优化"
+        },
+        {
+          "field": "skills",
+          "id": "ev_019",
+          "text": "- 参与AI知识库搭建与优化，完成行业语料整理、知识切片"
+        }
+      ],
+      "experience": [],
+      "job": {
+        "department": "人工智能产品研发部",
+        "normalized_title": null,
+        "seniority": null,
+        "title": "AI大模型应用工程师"
+      },
+      "projects": [],
+      "requirements": [
+        {
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "importance": "preferred",
+          "requirement_type": "education",
+          "text": "大专及以上学历，人工智能、计算机、大数据、软件工程、汉语言、新媒体等相关专业"
+        },
+        {
+          "evidence_ids": [
+            "ev_009"
+          ],
+          "importance": "preferred",
+          "requirement_type": "experience",
+          "text": "有大模型、Prompt优化、AI知识库搭建经验优先"
+        },
+        {
+          "evidence_ids": [
+            "ev_010"
+          ],
+          "importance": "required",
+          "requirement_type": "knowledge",
+          "text": "了解大模型基础原理，熟悉Prompt工程基础逻辑"
+        },
+        {
+          "evidence_ids": [
+            "ev_011"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "掌握零样本、少样本、思维链等基础提示词优化方法"
+        },
+        {
+          "evidence_ids": [
+            "ev_012"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "具备文本调教、模型输出优化能力"
+        },
+        {
+          "evidence_ids": [
+            "ev_013"
+          ],
+          "importance": "preferred",
+          "requirement_type": "skill",
+          "text": "具备基础数据处理、文本标注、语料整理能力"
+        },
+        {
+          "evidence_ids": [
+            "ev_014"
+          ],
+          "importance": "preferred",
+          "requirement_type": "knowledge",
+          "text": "了解知识库搭建、文本切片、向量检索等基础AI应用流程"
+        },
+        {
+          "evidence_ids": [
+            "ev_015"
+          ],
+          "importance": "required",
+          "requirement_type": "soft_skill",
+          "text": "具备良好的逻辑思维、文字功底和问题排查能力"
+        },
+        {
+          "evidence_ids": [
+            "ev_016"
+          ],
+          "importance": "preferred",
+          "requirement_type": "soft_skill",
+          "text": "学习能力强，对AIGC、大模型应用有浓厚兴趣"
+        },
+        {
+          "evidence_ids": [
+            "ev_017"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "熟悉主流大模型平台工具，具备独立完成AI应用调试、优化、测试的基础能力"
+        }
+      ],
+      "responsibilities": [
+        {
+          "action": "负责",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "object": "通用大模型的落地应用开发",
+          "text": "负责通用大模型（GPT、文心一言、通义千问等）的落地应用开发，聚焦Prompt工程优化、上下文调试、指令迭代"
+        },
+        {
+          "action": "参与",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "object": "AI知识库的搭建与优化",
+          "text": "参与AI知识库搭建与优化，完成行业语料整理、知识切片、向量数据库适配、知识库挂载调试"
+        },
+        {
+          "action": "协助",
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "object": "大模型微调数据的准备与整理",
+          "text": "协助进行大模型微调数据准备、样本筛选、数据清洗工作，整理微调数据集"
+        },
+        {
+          "action": "配合",
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "object": "算法团队的小参数微调和模型效果的测试与优化",
+          "text": "配合算法团队完成小参数微调、模型效果测试与迭代优化"
+        },
+        {
+          "action": "负责",
+          "evidence_ids": [
+            "ev_005"
+          ],
+          "object": "AI应用的功能测试和问题复盘",
+          "text": "负责AI应用功能测试、效果验收、问题复盘，记录模型幻觉、输出偏差、逻辑漏洞等问题"
+        },
+        {
+          "action": "跟进",
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "object": "大模型行业的技术与应用方案",
+          "text": "跟进大模型行业新技术、新应用方案，调研各类开源大模型、AI工具链的落地场景"
+        },
+        {
+          "action": "配合",
+          "evidence_ids": [
+            "ev_007"
+          ],
+          "object": "AI功能的上线和迭代",
+          "text": "配合产品、开发团队完成AI功能上线、用户反馈收集与功能迭代"
+        }
+      ],
+      "schema_version": "profile-extraction/v2",
+      "skills": [
+        {
+          "category": "algorithm",
+          "evidence_ids": [
+            "ev_018"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "Prompt工程优化",
+          "raw_name": "Prompt engineering optimization"
+        },
+        {
+          "category": "algorithm",
+          "evidence_ids": [
+            "ev_018"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "上下文调试",
+          "raw_name": "Context debugging"
+        },
+        {
+          "category": "algorithm",
+          "evidence_ids": [
+            "ev_018"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "指令迭代",
+          "raw_name": "Instruction iteration"
+        },
+        {
+          "category": "data_processing",
+          "evidence_ids": [
+            "ev_019"
+          ],
+          "importance": "preferred",
+          "lskt_label": "S",
+          "name": "行业语料整理",
+          "raw_name": "Industry corpus organization"
+        },
+        {
+          "category": "data_processing",
+          "evidence_ids": [
+            "ev_019"
+          ],
+          "importance": "preferred",
+          "lskt_label": "S",
+          "name": "知识切片",
+          "raw_name": "Knowledge slicing"
+        },
+        {
+          "category": "database",
+          "evidence_ids": [
+            "ev_019"
+          ],
+          "importance": "preferred",
+          "lskt_label": "S",
+          "name": "向量数据库适配",
+          "raw_name": "Vector database adaptation"
+        },
+        {
+          "category": "data_processing",
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "数据清洗",
+          "raw_name": "Data cleaning"
+        },
+        {
+          "category": "algorithm",
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "小参数微调",
+          "raw_name": "Fine-tuning with small parameters"
+        },
+        {
+          "category": "testing",
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "模型效果测试",
+          "raw_name": "Model effect testing"
+        },
+        {
+          "category": "soft_skill",
+          "evidence_ids": [
+            "ev_005"
+          ],
+          "importance": "required",
+          "lskt_label": "T",
+          "name": "问题复盘",
+          "raw_name": "Problem review"
+        },
+        {
+          "category": "other",
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "importance": "preferred",
+          "lskt_label": "T",
+          "name": "技术文档编写",
+          "raw_name": "Technical documentation writing"
+        },
+        {
+          "category": "other",
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "importance": "preferred",
+          "lskt_label": "T",
+          "name": "技术培训",
+          "raw_name": "Technical training"
+        }
+      ]
+    },
+    "implementation": "ollama",
+    "model": "qwen2.5:7b",
+    "raw_model_output": "",
+    "reason": "",
+    "schema": "profile-extraction/v2",
+    "state": "available",
+    "validation_error": "",
+    "warnings": []
+  },
+  "normalization": {
+    "implementation": "lightweight_skill_normalizer",
+    "skills": [
+      {
+        "category": "algorithm",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_018"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "Prompt engineering optimization",
+        "raw_name": "Prompt engineering optimization"
+      },
+      {
+        "category": "algorithm",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_018"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "Context debugging",
+        "raw_name": "Context debugging"
+      },
+      {
+        "category": "algorithm",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_018"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "Instruction iteration",
+        "raw_name": "Instruction iteration"
+      },
+      {
+        "category": "data_processing",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_019"
+        ],
+        "importance": "preferred",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "Industry corpus organization",
+        "raw_name": "Industry corpus organization"
+      },
+      {
+        "category": "data_processing",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_019"
+        ],
+        "importance": "preferred",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "Knowledge slicing",
+        "raw_name": "Knowledge slicing"
+      },
+      {
+        "category": "database",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_019"
+        ],
+        "importance": "preferred",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "Vector database adaptation",
+        "raw_name": "Vector database adaptation"
+      },
+      {
+        "category": "data_processing",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_003"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "Data cleaning",
+        "raw_name": "Data cleaning"
+      },
+      {
+        "category": "algorithm",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_004"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "Fine-tuning with small parameters",
+        "raw_name": "Fine-tuning with small parameters"
+      },
+      {
+        "category": "testing",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_004"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "Model effect testing",
+        "raw_name": "Model effect testing"
+      },
+      {
+        "category": "soft_skill",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_005"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "T",
+        "name": "Problem review",
+        "raw_name": "Problem review"
+      },
+      {
+        "category": "other",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_006"
+        ],
+        "importance": "preferred",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "T",
+        "name": "Technical documentation writing",
+        "raw_name": "Technical documentation writing"
+      },
+      {
+        "category": "other",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_006"
+        ],
+        "importance": "preferred",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "T",
+        "name": "Technical training",
+        "raw_name": "Technical training"
+      }
+    ],
+    "state": "available",
+    "warnings": []
+  },
+  "profile": {
+    "artifacts": {
+      "profile_json": "data\\structured\\profiles\\job\\job_profile_9fc1a7afecf444e2a3cb2863646e920f.json",
+      "schema_version": "profile-extraction/v2",
+      "storage": "filesystem"
+    },
+    "attributes": {
+      "capabilities": [
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_015"
+          ],
+          "importance": "required",
+          "name": "逻辑思维能力"
+        },
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_015"
+          ],
+          "importance": "required",
+          "name": "文字功底"
+        }
+      ],
+      "company": {
+        "industry": null,
+        "location": "一线城市",
+        "name": null
+      },
+      "education": [],
+      "employment": {
+        "employment_type": "full_time",
+        "published_at": null,
+        "salary_max": 16000,
+        "salary_min": 9000
+      },
+      "experience": [],
+      "jd_profile": {
+        "application_scenarios": [
+          {
+            "description": "负责通用大模型（GPT、文心一言、通义千问等）的落地应用开发，聚焦Prompt工程优化、上下文调试、指令迭代",
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "name": "大模型应用开发"
+          },
+          {
+            "description": "参与AI知识库搭建与优化，完成行业语料整理、知识切片、向量数据库适配、知识库挂载调试",
+            "evidence_ids": [
+              "ev_002"
+            ],
+            "name": "AI知识库搭建与优化"
+          },
+          {
+            "description": "协助进行大模型微调数据准备、样本筛选、数据清洗工作，整理微调数据集",
+            "evidence_ids": [
+              "ev_003"
+            ],
+            "name": "大模型微调数据准备"
+          },
+          {
+            "description": "配合算法团队完成小参数微调、模型效果测试与迭代优化",
+            "evidence_ids": [
+              "ev_004"
+            ],
+            "name": "模型效果测试与迭代优化"
+          }
+        ],
+        "capabilities": [
+          {
+            "description": null,
+            "evidence_ids": [
+              "ev_015"
+            ],
+            "importance": "required",
+            "name": "逻辑思维能力"
+          },
+          {
+            "description": null,
+            "evidence_ids": [
+              "ev_015"
+            ],
+            "importance": "required",
+            "name": "文字功底"
+          }
+        ],
+        "company": {
+          "industry": null,
+          "location": "一线城市",
+          "name": null
+        },
+        "document_type": "jd",
+        "employment": {
+          "employment_type": "full_time",
+          "published_at": null,
+          "salary_max": 16000,
+          "salary_min": 9000
+        },
+        "evaluation_signals": [],
+        "job": {
+          "department": "人工智能产品研发部",
+          "normalized_title": null,
+          "seniority": null,
+          "title": "AI大模型应用工程师"
+        },
+        "requirements": [
+          {
+            "evidence_ids": [
+              "ev_008"
+            ],
+            "importance": "preferred",
+            "requirement_type": "education",
+            "text": "大专及以上学历，人工智能、计算机、大数据、软件工程、汉语言、新媒体等相关专业"
+          },
+          {
+            "evidence_ids": [
+              "ev_009"
+            ],
+            "importance": "preferred",
+            "requirement_type": "experience",
+            "text": "有大模型、Prompt优化、AI知识库搭建经验优先"
+          },
+          {
+            "evidence_ids": [
+              "ev_010"
+            ],
+            "importance": "required",
+            "requirement_type": "knowledge",
+            "text": "了解大模型基础原理，熟悉Prompt工程基础逻辑"
+          },
+          {
+            "evidence_ids": [
+              "ev_011"
+            ],
+            "importance": "required",
+            "requirement_type": "skill",
+            "text": "掌握零样本、少样本、思维链等基础提示词优化方法"
+          },
+          {
+            "evidence_ids": [
+              "ev_012"
+            ],
+            "importance": "required",
+            "requirement_type": "skill",
+            "text": "具备文本调教、模型输出优化能力"
+          },
+          {
+            "evidence_ids": [
+              "ev_013"
+            ],
+            "importance": "preferred",
+            "requirement_type": "skill",
+            "text": "具备基础数据处理、文本标注、语料整理能力"
+          },
+          {
+            "evidence_ids": [
+              "ev_014"
+            ],
+            "importance": "preferred",
+            "requirement_type": "knowledge",
+            "text": "了解知识库搭建、文本切片、向量检索等基础AI应用流程"
+          },
+          {
+            "evidence_ids": [
+              "ev_015"
+            ],
+            "importance": "required",
+            "requirement_type": "soft_skill",
+            "text": "具备良好的逻辑思维、文字功底和问题排查能力"
+          },
+          {
+            "evidence_ids": [
+              "ev_016"
+            ],
+            "importance": "preferred",
+            "requirement_type": "soft_skill",
+            "text": "学习能力强，对AIGC、大模型应用有浓厚兴趣"
+          },
+          {
+            "evidence_ids": [
+              "ev_017"
+            ],
+            "importance": "required",
+            "requirement_type": "skill",
+            "text": "熟悉主流大模型平台工具，具备独立完成AI应用调试、优化、测试的基础能力"
+          }
+        ],
+        "responsibilities": [
+          {
+            "action": "负责",
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "object": "通用大模型的落地应用开发",
+            "text": "负责通用大模型（GPT、文心一言、通义千问等）的落地应用开发，聚焦Prompt工程优化、上下文调试、指令迭代"
+          },
+          {
+            "action": "参与",
+            "evidence_ids": [
+              "ev_002"
+            ],
+            "object": "AI知识库的搭建与优化",
+            "text": "参与AI知识库搭建与优化，完成行业语料整理、知识切片、向量数据库适配、知识库挂载调试"
+          },
+          {
+            "action": "协助",
+            "evidence_ids": [
+              "ev_003"
+            ],
+            "object": "大模型微调数据的准备与整理",
+            "text": "协助进行大模型微调数据准备、样本筛选、数据清洗工作，整理微调数据集"
+          },
+          {
+            "action": "配合",
+            "evidence_ids": [
+              "ev_004"
+            ],
+            "object": "算法团队的小参数微调和模型效果的测试与优化",
+            "text": "配合算法团队完成小参数微调、模型效果测试与迭代优化"
+          },
+          {
+            "action": "负责",
+            "evidence_ids": [
+              "ev_005"
+            ],
+            "object": "AI应用的功能测试和问题复盘",
+            "text": "负责AI应用功能测试、效果验收、问题复盘，记录模型幻觉、输出偏差、逻辑漏洞等问题"
+          },
+          {
+            "action": "跟进",
+            "evidence_ids": [
+              "ev_006"
+            ],
+            "object": "大模型行业的技术与应用方案",
+            "text": "跟进大模型行业新技术、新应用方案，调研各类开源大模型、AI工具链的落地场景"
+          },
+          {
+            "action": "配合",
+            "evidence_ids": [
+              "ev_007"
+            ],
+            "object": "AI功能的上线和迭代",
+            "text": "配合产品、开发团队完成AI功能上线、用户反馈收集与功能迭代"
+          }
+        ],
+        "schema_version": "profile-extraction/v2",
+        "skills": [
+          {
+            "category": "algorithm",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_018"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "Prompt engineering optimization",
+            "raw_name": "Prompt engineering optimization"
+          },
+          {
+            "category": "algorithm",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_018"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "Context debugging",
+            "raw_name": "Context debugging"
+          },
+          {
+            "category": "algorithm",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_018"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "Instruction iteration",
+            "raw_name": "Instruction iteration"
+          },
+          {
+            "category": "data_processing",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_019"
+            ],
+            "importance": "preferred",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "Industry corpus organization",
+            "raw_name": "Industry corpus organization"
+          },
+          {
+            "category": "data_processing",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_019"
+            ],
+            "importance": "preferred",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "Knowledge slicing",
+            "raw_name": "Knowledge slicing"
+          },
+          {
+            "category": "database",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_019"
+            ],
+            "importance": "preferred",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "Vector database adaptation",
+            "raw_name": "Vector database adaptation"
+          },
+          {
+            "category": "data_processing",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_003"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "Data cleaning",
+            "raw_name": "Data cleaning"
+          },
+          {
+            "category": "algorithm",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_004"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "Fine-tuning with small parameters",
+            "raw_name": "Fine-tuning with small parameters"
+          },
+          {
+            "category": "testing",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_004"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "Model effect testing",
+            "raw_name": "Model effect testing"
+          },
+          {
+            "category": "soft_skill",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_005"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "T",
+            "name": "Problem review",
+            "raw_name": "Problem review"
+          },
+          {
+            "category": "other",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_006"
+            ],
+            "importance": "preferred",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "T",
+            "name": "Technical documentation writing",
+            "raw_name": "Technical documentation writing"
+          },
+          {
+            "category": "other",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_006"
+            ],
+            "importance": "preferred",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "T",
+            "name": "Technical training",
+            "raw_name": "Technical training"
+          }
+        ]
+      },
+      "job": {
+        "department": "人工智能产品研发部",
+        "normalized_title": null,
+        "seniority": null,
+        "title": "AI大模型应用工程师"
+      },
+      "job_title": "AI大模型应用工程师",
+      "profile_schema": "profile-extraction/v2",
+      "projects": [],
+      "requirements": [
+        {
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "importance": "preferred",
+          "requirement_type": "education",
+          "text": "大专及以上学历，人工智能、计算机、大数据、软件工程、汉语言、新媒体等相关专业"
+        },
+        {
+          "evidence_ids": [
+            "ev_009"
+          ],
+          "importance": "preferred",
+          "requirement_type": "experience",
+          "text": "有大模型、Prompt优化、AI知识库搭建经验优先"
+        },
+        {
+          "evidence_ids": [
+            "ev_010"
+          ],
+          "importance": "required",
+          "requirement_type": "knowledge",
+          "text": "了解大模型基础原理，熟悉Prompt工程基础逻辑"
+        },
+        {
+          "evidence_ids": [
+            "ev_011"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "掌握零样本、少样本、思维链等基础提示词优化方法"
+        },
+        {
+          "evidence_ids": [
+            "ev_012"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "具备文本调教、模型输出优化能力"
+        },
+        {
+          "evidence_ids": [
+            "ev_013"
+          ],
+          "importance": "preferred",
+          "requirement_type": "skill",
+          "text": "具备基础数据处理、文本标注、语料整理能力"
+        },
+        {
+          "evidence_ids": [
+            "ev_014"
+          ],
+          "importance": "preferred",
+          "requirement_type": "knowledge",
+          "text": "了解知识库搭建、文本切片、向量检索等基础AI应用流程"
+        },
+        {
+          "evidence_ids": [
+            "ev_015"
+          ],
+          "importance": "required",
+          "requirement_type": "soft_skill",
+          "text": "具备良好的逻辑思维、文字功底和问题排查能力"
+        },
+        {
+          "evidence_ids": [
+            "ev_016"
+          ],
+          "importance": "preferred",
+          "requirement_type": "soft_skill",
+          "text": "学习能力强，对AIGC、大模型应用有浓厚兴趣"
+        },
+        {
+          "evidence_ids": [
+            "ev_017"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "熟悉主流大模型平台工具，具备独立完成AI应用调试、优化、测试的基础能力"
+        }
+      ],
+      "responsibilities": [
+        {
+          "action": "负责",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "object": "通用大模型的落地应用开发",
+          "text": "负责通用大模型（GPT、文心一言、通义千问等）的落地应用开发，聚焦Prompt工程优化、上下文调试、指令迭代"
+        },
+        {
+          "action": "参与",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "object": "AI知识库的搭建与优化",
+          "text": "参与AI知识库搭建与优化，完成行业语料整理、知识切片、向量数据库适配、知识库挂载调试"
+        },
+        {
+          "action": "协助",
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "object": "大模型微调数据的准备与整理",
+          "text": "协助进行大模型微调数据准备、样本筛选、数据清洗工作，整理微调数据集"
+        },
+        {
+          "action": "配合",
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "object": "算法团队的小参数微调和模型效果的测试与优化",
+          "text": "配合算法团队完成小参数微调、模型效果测试与迭代优化"
+        },
+        {
+          "action": "负责",
+          "evidence_ids": [
+            "ev_005"
+          ],
+          "object": "AI应用的功能测试和问题复盘",
+          "text": "负责AI应用功能测试、效果验收、问题复盘，记录模型幻觉、输出偏差、逻辑漏洞等问题"
+        },
+        {
+          "action": "跟进",
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "object": "大模型行业的技术与应用方案",
+          "text": "跟进大模型行业新技术、新应用方案，调研各类开源大模型、AI工具链的落地场景"
+        },
+        {
+          "action": "配合",
+          "evidence_ids": [
+            "ev_007"
+          ],
+          "object": "AI功能的上线和迭代",
+          "text": "配合产品、开发团队完成AI功能上线、用户反馈收集与功能迭代"
+        }
+      ],
+      "skills": [
+        {
+          "category": "algorithm",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_018"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "Prompt engineering optimization",
+          "raw_name": "Prompt engineering optimization"
+        },
+        {
+          "category": "algorithm",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_018"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "Context debugging",
+          "raw_name": "Context debugging"
+        },
+        {
+          "category": "algorithm",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_018"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "Instruction iteration",
+          "raw_name": "Instruction iteration"
+        },
+        {
+          "category": "data_processing",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_019"
+          ],
+          "importance": "preferred",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "Industry corpus organization",
+          "raw_name": "Industry corpus organization"
+        },
+        {
+          "category": "data_processing",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_019"
+          ],
+          "importance": "preferred",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "Knowledge slicing",
+          "raw_name": "Knowledge slicing"
+        },
+        {
+          "category": "database",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_019"
+          ],
+          "importance": "preferred",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "Vector database adaptation",
+          "raw_name": "Vector database adaptation"
+        },
+        {
+          "category": "data_processing",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "Data cleaning",
+          "raw_name": "Data cleaning"
+        },
+        {
+          "category": "algorithm",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "Fine-tuning with small parameters",
+          "raw_name": "Fine-tuning with small parameters"
+        },
+        {
+          "category": "testing",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "Model effect testing",
+          "raw_name": "Model effect testing"
+        },
+        {
+          "category": "soft_skill",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_005"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "T",
+          "name": "Problem review",
+          "raw_name": "Problem review"
+        },
+        {
+          "category": "other",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "importance": "preferred",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "T",
+          "name": "Technical documentation writing",
+          "raw_name": "Technical documentation writing"
+        },
+        {
+          "category": "other",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "importance": "preferred",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "T",
+          "name": "Technical training",
+          "raw_name": "Technical training"
+        }
+      ]
+    },
+    "created_at": "2026-08-06T19:47:36Z",
+    "evidence": [
+      {
+        "field": "responsibilities",
+        "id": "ev_001",
+        "text": "- 负责通用大模型（GPT、文心一言、通义千问等）的落地应用开发，聚焦Prompt工程优化、上下文调试、指令迭代"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_002",
+        "text": "- 参与AI知识库搭建与优化，完成行业语料整理、知识切片、向量数据库适配、知识库挂载调试"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_003",
+        "text": "- 协助进行大模型微调数据准备、样本筛选、数据清洗工作，整理微调数据集"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_004",
+        "text": " 配合算法团队完成小参数微调、模型效果测"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_005",
+        "text": "- 负责AI应用功能测试、效果验收、问题复盘，记录模型幻觉、输出偏差、逻辑漏洞等问题"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_006",
+        "text": "- 跟进大模型行业新技术、新应用方案，调研各类开源大模型、AI工具链的落地场景"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_007",
+        "text": "- 配合产品、开发团队完成AI功能上线、用户反馈收集与功能迭代"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_008",
+        "text": "- 大专及以上学历，人工智能、计算机、大数据、软件工程、汉语言、新媒体等相关专业"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_009",
+        "text": " 有大模型、Prompt优化、AI知识库"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_010",
+        "text": "- 了解大模型基础原理，熟悉Prompt工程基础逻辑"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_011",
+        "text": " 掌握零样本、少样本、思维链等基础提示词"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_012",
+        "text": " 具备文本调教、模型输出优化能力"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_013",
+        "text": "- 具备基础数据处理、文本标注、语料整理能力"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_014",
+        "text": " 了解知识库搭建、文本切片、向量检索等基"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_015",
+        "text": "- 具备良好的逻辑思维、文字功底和问题排查能力"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_016",
+        "text": "- 学习能力强，对AIGC、大模型应用有浓厚兴趣"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_017",
+        "text": " 熟悉主流大模型平台工具，具备独立完成A"
+      },
+      {
+        "field": "skills",
+        "id": "ev_018",
+        "text": "- 负责通用大模型（GPT、文心一言、通义千问等）的落地应用开发，聚焦Prompt工程优化"
+      },
+      {
+        "field": "skills",
+        "id": "ev_019",
+        "text": "- 参与AI知识库搭建与优化，完成行业语料整理、知识切片"
+      }
+    ],
+    "id": "job_profile_9fc1a7afecf444e2a3cb2863646e920f",
+    "implementation": "llm_profile_builder",
+    "profile_type": "job",
+    "source_document_id": "doc_6f19cbeedd704755b529d636be2f1fc0",
+    "state": "available",
+    "warnings": []
+  },
+  "schema_version": "profile-extraction/v2",
+  "source_document": {
+    "char_count": 924,
+    "content_digest": "90d8afc67cbc35cb1e1fbbc4b418655bcba16124009d619f05f134b24730dc23",
+    "created_at": "2026-08-06T19:45:46Z",
+    "document_type": "jd",
+    "id": "doc_6f19cbeedd704755b529d636be2f1fc0",
+    "metadata": {
+      "company_name": "智能问答、文本生成、内容解析等AI应用场景。",
+      "job_title": "AI大模型应用工程师",
+      "location": "一线城市",
+      "salary_range": "9k-16k｜双休、五险一金、项目奖金、技术晋升",
+      "skills": [
+        "任职要求"
+      ],
+      "title": "AI大模型应用工程师"
+    },
+    "source": {
+      "source_system": "manual"
+    },
+    "storage": "memory"
+  }
+}

@@ -1,0 +1,1236 @@
+{
+  "artifact_type": "job_profile",
+  "created_at": "2026-08-05T07:00:16Z",
+  "extraction": {
+    "evidence": [
+      {
+        "field": "responsibilities",
+        "id": "ev_001",
+        "text": "负责控制器控制算法开发与优化，确保控制系统高稳定性和鲁棒性"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_002",
+        "text": "负责控制器整体算法设计，与软件和调试部门紧密合作，保证软件质量和产品稳定运行"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_003",
+        "text": "负责控制器算法原理性分析和文档编写和维护，配合软件成员规划算法实现与验证"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_004",
+        "text": "负责控制器算法仿真模型搭建和验证"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_005",
+        "text": "电子、通信、自动化控制或相关专业，本科以上学历，英语达四级以上。"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_006",
+        "text": "工作经验:具备3-5年以上算法设计、工程落地等相关经验。"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_007",
+        "text": "熟悉基本硬件驱动电路、嵌入式开发及常规测试设备使用，熟悉控制器软件算法设计流程，精通自动控制原理、数字信号处理等专业知识"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_008",
+        "text": "熟悉matlab/simulink工具的使用，能建立电机或者悬浮等控制算法模型并应用到实际某款嵌入式设备"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_009",
+        "text": "熟悉电机foc 、sensorless 等主流电机控制算法，对电机震动抑制、噪声有一定研究"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_010",
+        "text": "具有较强的解决问题能力、团队合作精神、语言表达能力"
+      },
+      {
+        "field": "skills",
+        "id": "ev_011",
+        "text": "熟悉控制器软件算法设计流程，精通自动控制原理、数字信号处理等专业知识"
+      }
+    ],
+    "fields": {
+      "application_scenarios": [
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "name": "控制器控制算法开发与优化"
+        },
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "name": "控制器整体算法设计"
+        },
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "name": "控制器算法原理性分析和文档编写维护"
+        },
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "name": "仿真模型搭建与验证"
+        }
+      ],
+      "candidate": {
+        "name": null,
+        "target_position": null
+      },
+      "capabilities": [
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_010"
+          ],
+          "importance": "preferred",
+          "name": "解决问题能力"
+        },
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_010"
+          ],
+          "importance": "preferred",
+          "name": "团队合作精神"
+        },
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_010"
+          ],
+          "importance": "preferred",
+          "name": "语言表达能力"
+        }
+      ],
+      "company": {
+        "industry": null,
+        "location": null,
+        "name": null
+      },
+      "document_type": "jd",
+      "education": [],
+      "employment": {
+        "employment_type": "full_time",
+        "published_at": null,
+        "salary_max": null,
+        "salary_min": null
+      },
+      "evaluation_signals": [],
+      "evidence": [
+        {
+          "field": "responsibilities",
+          "id": "ev_001",
+          "text": "负责控制器控制算法开发与优化，确保控制系统高稳定性和鲁棒性"
+        },
+        {
+          "field": "responsibilities",
+          "id": "ev_002",
+          "text": "负责控制器整体算法设计，与软件和调试部门紧密合作，保证软件质量和产品稳定运行"
+        },
+        {
+          "field": "responsibilities",
+          "id": "ev_003",
+          "text": "负责控制器算法原理性分析和文档编写和维护，配合软件成员规划算法实现与验证"
+        },
+        {
+          "field": "responsibilities",
+          "id": "ev_004",
+          "text": "负责控制器算法仿真模型搭建和验证"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_005",
+          "text": "电子、通信、自动化控制或相关专业，本科以上学历，英语达四级以上。"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_006",
+          "text": "工作经验:具备3-5年以上算法设计、工程落地等相关经验。"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_007",
+          "text": "熟悉基本硬件驱动电路、嵌入式开发及常规测试设备使用，熟悉控制器软件算法设计流程，精通自动控制原理、数字信号处理等专业知识"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_008",
+          "text": "熟悉matlab/simulink工具的使用，能建立电机或者悬浮等控制算法模型并应用到实际某款嵌入式设备"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_009",
+          "text": "熟悉电机foc 、sensorless 等主流电机控制算法，对电机震动抑制、噪声有一定研究"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_010",
+          "text": "具有较强的解决问题能力、团队合作精神、语言表达能力"
+        },
+        {
+          "field": "skills",
+          "id": "ev_011",
+          "text": "熟悉控制器软件算法设计流程，精通自动控制原理、数字信号处理等专业知识"
+        }
+      ],
+      "experience": [],
+      "job": {
+        "department": null,
+        "normalized_title": null,
+        "seniority": null,
+        "title": null
+      },
+      "projects": [],
+      "requirements": [
+        {
+          "evidence_ids": [
+            "ev_005"
+          ],
+          "importance": "required",
+          "requirement_type": "education",
+          "text": "电子、通信、自动化控制或相关专业，本科以上学历，英语达四级以上。"
+        },
+        {
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "importance": "required",
+          "requirement_type": "experience",
+          "text": "具备3-5年以上算法设计、工程落地等相关经验。"
+        },
+        {
+          "evidence_ids": [
+            "ev_007"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "熟悉基本硬件驱动电路、嵌入式开发及常规测试设备使用，熟悉控制器软件算法设计流程，精通自动控制原理、数字信号处理等专业知识"
+        },
+        {
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "熟悉matlab/simulink工具的使用，能建立电机或者悬浮等控制算法模型并应用到实际某款嵌入式设备"
+        },
+        {
+          "evidence_ids": [
+            "ev_009"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "熟悉电机foc 、sensorless 等主流电机控制算法，对电机震动抑制、噪声有一定研究"
+        },
+        {
+          "evidence_ids": [
+            "ev_010"
+          ],
+          "importance": "preferred",
+          "requirement_type": "soft_skill",
+          "text": "具有较强的解决问题能力、团队合作精神、语言表达能力"
+        }
+      ],
+      "responsibilities": [
+        {
+          "action": "负责",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "object": "控制器控制算法开发与优化",
+          "text": "负责控制器控制算法开发与优化"
+        },
+        {
+          "action": "负责",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "object": "控制器整体算法设计",
+          "text": "负责控制器整体算法设计"
+        },
+        {
+          "action": "负责",
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "object": "控制器算法原理性分析和文档编写和维护",
+          "text": "负责控制器算法原理性分析和文档编写和维护"
+        },
+        {
+          "action": "负责",
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "object": "控制器算法仿真模型搭建和验证",
+          "text": "负责控制器算法仿真模型搭建和验证"
+        }
+      ],
+      "schema_version": "profile-extraction/v2",
+      "skills": [
+        {
+          "category": "algorithm",
+          "evidence_ids": [
+            "ev_011"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "自动控制原理",
+          "raw_name": "精通自动控制原理"
+        },
+        {
+          "category": "algorithm",
+          "evidence_ids": [
+            "ev_011"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "数字信号处理",
+          "raw_name": "精通自动控制原理、数字信号处理等专业知识"
+        },
+        {
+          "category": "tool",
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "matlab/simulink工具使用",
+          "raw_name": "熟悉matlab/simulink工具的使用"
+        },
+        {
+          "category": "algorithm",
+          "evidence_ids": [
+            "ev_007"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "控制器软件算法设计流程",
+          "raw_name": "熟悉基本硬件驱动电路、嵌入式开发及常规测试设备使用，熟悉控制器软件算法设计流程"
+        },
+        {
+          "category": "algorithm",
+          "evidence_ids": [
+            "ev_009"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "电机foc控制算法",
+          "raw_name": "熟悉电机foc 、sensorless 等主流电机控制算法"
+        },
+        {
+          "category": "algorithm",
+          "evidence_ids": [
+            "ev_009"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "传感器无感控制算法",
+          "raw_name": "熟悉电机foc 、sensorless 等主流电机控制算法"
+        },
+        {
+          "category": "algorithm",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "控制器开发与优化",
+          "raw_name": "负责控制器控制算法开发与优化"
+        },
+        {
+          "category": "algorithm",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "控制器整体算法设计",
+          "raw_name": "负责控制器整体算法设计"
+        },
+        {
+          "category": "algorithm",
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "控制器算法原理性分析",
+          "raw_name": "负责控制器算法原理性分析和文档编写和维护"
+        },
+        {
+          "category": "algorithm",
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "仿真模型搭建与验证",
+          "raw_name": "负责控制器算法仿真模型搭建和验证"
+        }
+      ]
+    },
+    "implementation": "ollama",
+    "model": "qwen2.5:7b",
+    "raw_model_output": "",
+    "reason": "",
+    "schema": "profile-extraction/v2",
+    "state": "available",
+    "validation_error": "",
+    "warnings": []
+  },
+  "normalization": {
+    "implementation": "lightweight_skill_normalizer",
+    "skills": [
+      {
+        "category": "algorithm",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_011"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "精通自动控制原理",
+        "raw_name": "精通自动控制原理"
+      },
+      {
+        "category": "algorithm",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_011"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "精通自动控制原理、数字信号处理等专业知识",
+        "raw_name": "精通自动控制原理、数字信号处理等专业知识"
+      },
+      {
+        "category": "tool",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_008"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "熟悉matlab/simulink工具的使用",
+        "raw_name": "熟悉matlab/simulink工具的使用"
+      },
+      {
+        "category": "algorithm",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_007"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "熟悉基本硬件驱动电路、嵌入式开发及常规测试设备使用，熟悉控制器软件算法设计流程",
+        "raw_name": "熟悉基本硬件驱动电路、嵌入式开发及常规测试设备使用，熟悉控制器软件算法设计流程"
+      },
+      {
+        "category": "algorithm",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_009"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "熟悉电机foc 、sensorless 等主流电机控制算法",
+        "raw_name": "熟悉电机foc 、sensorless 等主流电机控制算法"
+      },
+      {
+        "category": "algorithm",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_001"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "负责控制器控制算法开发与优化",
+        "raw_name": "负责控制器控制算法开发与优化"
+      },
+      {
+        "category": "algorithm",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_002"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "负责控制器整体算法设计",
+        "raw_name": "负责控制器整体算法设计"
+      },
+      {
+        "category": "algorithm",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_003"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "负责控制器算法原理性分析和文档编写和维护",
+        "raw_name": "负责控制器算法原理性分析和文档编写和维护"
+      },
+      {
+        "category": "algorithm",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_004"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "负责控制器算法仿真模型搭建和验证",
+        "raw_name": "负责控制器算法仿真模型搭建和验证"
+      }
+    ],
+    "state": "available",
+    "warnings": []
+  },
+  "profile": {
+    "artifacts": {
+      "profile_json": "data\\structured\\profiles\\job\\job_profile_606a556175174662ab86ddc36cf84476.json",
+      "schema_version": "profile-extraction/v2",
+      "storage": "filesystem"
+    },
+    "attributes": {
+      "capabilities": [
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_010"
+          ],
+          "importance": "preferred",
+          "name": "解决问题能力"
+        },
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_010"
+          ],
+          "importance": "preferred",
+          "name": "团队合作精神"
+        },
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_010"
+          ],
+          "importance": "preferred",
+          "name": "语言表达能力"
+        }
+      ],
+      "company": {
+        "industry": null,
+        "location": null,
+        "name": null
+      },
+      "education": [],
+      "employment": {
+        "employment_type": "full_time",
+        "published_at": null,
+        "salary_max": null,
+        "salary_min": null
+      },
+      "experience": [],
+      "jd_profile": {
+        "application_scenarios": [
+          {
+            "description": null,
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "name": "控制器控制算法开发与优化"
+          },
+          {
+            "description": null,
+            "evidence_ids": [
+              "ev_002"
+            ],
+            "name": "控制器整体算法设计"
+          },
+          {
+            "description": null,
+            "evidence_ids": [
+              "ev_003"
+            ],
+            "name": "控制器算法原理性分析和文档编写维护"
+          },
+          {
+            "description": null,
+            "evidence_ids": [
+              "ev_004"
+            ],
+            "name": "仿真模型搭建与验证"
+          }
+        ],
+        "capabilities": [
+          {
+            "description": null,
+            "evidence_ids": [
+              "ev_010"
+            ],
+            "importance": "preferred",
+            "name": "解决问题能力"
+          },
+          {
+            "description": null,
+            "evidence_ids": [
+              "ev_010"
+            ],
+            "importance": "preferred",
+            "name": "团队合作精神"
+          },
+          {
+            "description": null,
+            "evidence_ids": [
+              "ev_010"
+            ],
+            "importance": "preferred",
+            "name": "语言表达能力"
+          }
+        ],
+        "company": {
+          "industry": null,
+          "location": null,
+          "name": null
+        },
+        "document_type": "jd",
+        "employment": {
+          "employment_type": "full_time",
+          "published_at": null,
+          "salary_max": null,
+          "salary_min": null
+        },
+        "evaluation_signals": [],
+        "job": {
+          "department": null,
+          "normalized_title": null,
+          "seniority": null,
+          "title": null
+        },
+        "requirements": [
+          {
+            "evidence_ids": [
+              "ev_005"
+            ],
+            "importance": "required",
+            "requirement_type": "education",
+            "text": "电子、通信、自动化控制或相关专业，本科以上学历，英语达四级以上。"
+          },
+          {
+            "evidence_ids": [
+              "ev_006"
+            ],
+            "importance": "required",
+            "requirement_type": "experience",
+            "text": "具备3-5年以上算法设计、工程落地等相关经验。"
+          },
+          {
+            "evidence_ids": [
+              "ev_007"
+            ],
+            "importance": "required",
+            "requirement_type": "skill",
+            "text": "熟悉基本硬件驱动电路、嵌入式开发及常规测试设备使用，熟悉控制器软件算法设计流程，精通自动控制原理、数字信号处理等专业知识"
+          },
+          {
+            "evidence_ids": [
+              "ev_008"
+            ],
+            "importance": "required",
+            "requirement_type": "skill",
+            "text": "熟悉matlab/simulink工具的使用，能建立电机或者悬浮等控制算法模型并应用到实际某款嵌入式设备"
+          },
+          {
+            "evidence_ids": [
+              "ev_009"
+            ],
+            "importance": "required",
+            "requirement_type": "skill",
+            "text": "熟悉电机foc 、sensorless 等主流电机控制算法，对电机震动抑制、噪声有一定研究"
+          },
+          {
+            "evidence_ids": [
+              "ev_010"
+            ],
+            "importance": "preferred",
+            "requirement_type": "soft_skill",
+            "text": "具有较强的解决问题能力、团队合作精神、语言表达能力"
+          }
+        ],
+        "responsibilities": [
+          {
+            "action": "负责",
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "object": "控制器控制算法开发与优化",
+            "text": "负责控制器控制算法开发与优化"
+          },
+          {
+            "action": "负责",
+            "evidence_ids": [
+              "ev_002"
+            ],
+            "object": "控制器整体算法设计",
+            "text": "负责控制器整体算法设计"
+          },
+          {
+            "action": "负责",
+            "evidence_ids": [
+              "ev_003"
+            ],
+            "object": "控制器算法原理性分析和文档编写和维护",
+            "text": "负责控制器算法原理性分析和文档编写和维护"
+          },
+          {
+            "action": "负责",
+            "evidence_ids": [
+              "ev_004"
+            ],
+            "object": "控制器算法仿真模型搭建和验证",
+            "text": "负责控制器算法仿真模型搭建和验证"
+          }
+        ],
+        "schema_version": "profile-extraction/v2",
+        "skills": [
+          {
+            "category": "algorithm",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_011"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "精通自动控制原理",
+            "raw_name": "精通自动控制原理"
+          },
+          {
+            "category": "algorithm",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_011"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "精通自动控制原理、数字信号处理等专业知识",
+            "raw_name": "精通自动控制原理、数字信号处理等专业知识"
+          },
+          {
+            "category": "tool",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_008"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "熟悉matlab/simulink工具的使用",
+            "raw_name": "熟悉matlab/simulink工具的使用"
+          },
+          {
+            "category": "algorithm",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_007"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "熟悉基本硬件驱动电路、嵌入式开发及常规测试设备使用，熟悉控制器软件算法设计流程",
+            "raw_name": "熟悉基本硬件驱动电路、嵌入式开发及常规测试设备使用，熟悉控制器软件算法设计流程"
+          },
+          {
+            "category": "algorithm",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_009"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "熟悉电机foc 、sensorless 等主流电机控制算法",
+            "raw_name": "熟悉电机foc 、sensorless 等主流电机控制算法"
+          },
+          {
+            "category": "algorithm",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "负责控制器控制算法开发与优化",
+            "raw_name": "负责控制器控制算法开发与优化"
+          },
+          {
+            "category": "algorithm",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_002"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "负责控制器整体算法设计",
+            "raw_name": "负责控制器整体算法设计"
+          },
+          {
+            "category": "algorithm",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_003"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "负责控制器算法原理性分析和文档编写和维护",
+            "raw_name": "负责控制器算法原理性分析和文档编写和维护"
+          },
+          {
+            "category": "algorithm",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_004"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "负责控制器算法仿真模型搭建和验证",
+            "raw_name": "负责控制器算法仿真模型搭建和验证"
+          }
+        ]
+      },
+      "job": {
+        "department": null,
+        "normalized_title": null,
+        "seniority": null,
+        "title": null
+      },
+      "job_title": null,
+      "profile_schema": "profile-extraction/v2",
+      "projects": [],
+      "requirements": [
+        {
+          "evidence_ids": [
+            "ev_005"
+          ],
+          "importance": "required",
+          "requirement_type": "education",
+          "text": "电子、通信、自动化控制或相关专业，本科以上学历，英语达四级以上。"
+        },
+        {
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "importance": "required",
+          "requirement_type": "experience",
+          "text": "具备3-5年以上算法设计、工程落地等相关经验。"
+        },
+        {
+          "evidence_ids": [
+            "ev_007"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "熟悉基本硬件驱动电路、嵌入式开发及常规测试设备使用，熟悉控制器软件算法设计流程，精通自动控制原理、数字信号处理等专业知识"
+        },
+        {
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "熟悉matlab/simulink工具的使用，能建立电机或者悬浮等控制算法模型并应用到实际某款嵌入式设备"
+        },
+        {
+          "evidence_ids": [
+            "ev_009"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "熟悉电机foc 、sensorless 等主流电机控制算法，对电机震动抑制、噪声有一定研究"
+        },
+        {
+          "evidence_ids": [
+            "ev_010"
+          ],
+          "importance": "preferred",
+          "requirement_type": "soft_skill",
+          "text": "具有较强的解决问题能力、团队合作精神、语言表达能力"
+        }
+      ],
+      "responsibilities": [
+        {
+          "action": "负责",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "object": "控制器控制算法开发与优化",
+          "text": "负责控制器控制算法开发与优化"
+        },
+        {
+          "action": "负责",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "object": "控制器整体算法设计",
+          "text": "负责控制器整体算法设计"
+        },
+        {
+          "action": "负责",
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "object": "控制器算法原理性分析和文档编写和维护",
+          "text": "负责控制器算法原理性分析和文档编写和维护"
+        },
+        {
+          "action": "负责",
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "object": "控制器算法仿真模型搭建和验证",
+          "text": "负责控制器算法仿真模型搭建和验证"
+        }
+      ],
+      "skills": [
+        {
+          "category": "algorithm",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_011"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "精通自动控制原理",
+          "raw_name": "精通自动控制原理"
+        },
+        {
+          "category": "algorithm",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_011"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "精通自动控制原理、数字信号处理等专业知识",
+          "raw_name": "精通自动控制原理、数字信号处理等专业知识"
+        },
+        {
+          "category": "tool",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "熟悉matlab/simulink工具的使用",
+          "raw_name": "熟悉matlab/simulink工具的使用"
+        },
+        {
+          "category": "algorithm",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_007"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "熟悉基本硬件驱动电路、嵌入式开发及常规测试设备使用，熟悉控制器软件算法设计流程",
+          "raw_name": "熟悉基本硬件驱动电路、嵌入式开发及常规测试设备使用，熟悉控制器软件算法设计流程"
+        },
+        {
+          "category": "algorithm",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_009"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "熟悉电机foc 、sensorless 等主流电机控制算法",
+          "raw_name": "熟悉电机foc 、sensorless 等主流电机控制算法"
+        },
+        {
+          "category": "algorithm",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "负责控制器控制算法开发与优化",
+          "raw_name": "负责控制器控制算法开发与优化"
+        },
+        {
+          "category": "algorithm",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "负责控制器整体算法设计",
+          "raw_name": "负责控制器整体算法设计"
+        },
+        {
+          "category": "algorithm",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "负责控制器算法原理性分析和文档编写和维护",
+          "raw_name": "负责控制器算法原理性分析和文档编写和维护"
+        },
+        {
+          "category": "algorithm",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "负责控制器算法仿真模型搭建和验证",
+          "raw_name": "负责控制器算法仿真模型搭建和验证"
+        }
+      ]
+    },
+    "created_at": "2026-08-05T07:00:16Z",
+    "evidence": [
+      {
+        "field": "responsibilities",
+        "id": "ev_001",
+        "text": "负责控制器控制算法开发与优化，确保控制系统高稳定性和鲁棒性"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_002",
+        "text": "负责控制器整体算法设计，与软件和调试部门紧密合作，保证软件质量和产品稳定运行"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_003",
+        "text": "负责控制器算法原理性分析和文档编写和维护，配合软件成员规划算法实现与验证"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_004",
+        "text": "负责控制器算法仿真模型搭建和验证"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_005",
+        "text": "电子、通信、自动化控制或相关专业，本科以上学历，英语达四级以上。"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_006",
+        "text": "工作经验:具备3-5年以上算法设计、工程落地等相关经验。"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_007",
+        "text": "熟悉基本硬件驱动电路、嵌入式开发及常规测试设备使用，熟悉控制器软件算法设计流程，精通自动控制原理、数字信号处理等专业知识"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_008",
+        "text": "熟悉matlab/simulink工具的使用，能建立电机或者悬浮等控制算法模型并应用到实际某款嵌入式设备"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_009",
+        "text": "熟悉电机foc 、sensorless 等主流电机控制算法，对电机震动抑制、噪声有一定研究"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_010",
+        "text": "具有较强的解决问题能力、团队合作精神、语言表达能力"
+      },
+      {
+        "field": "skills",
+        "id": "ev_011",
+        "text": "熟悉控制器软件算法设计流程，精通自动控制原理、数字信号处理等专业知识"
+      }
+    ],
+    "id": "job_profile_606a556175174662ab86ddc36cf84476",
+    "implementation": "llm_profile_builder",
+    "profile_type": "job",
+    "source_document_id": "sys_jd_40854813111",
+    "state": "available",
+    "warnings": []
+  },
+  "schema_version": "profile-extraction/v2",
+  "source_document": {
+    "char_count": 412,
+    "content_digest": "4a878f2ee600060293cbd401cfc11f6d21955f9ba3b42669da9b2398327d1970",
+    "created_at": "2026-08-03T16:20:15Z",
+    "document_type": "jd",
+    "id": "sys_jd_40854813111",
+    "metadata": {
+      "page": 5,
+      "publish_date": "2026-06-08 09:51:05",
+      "requirements": [
+        "岗位职责：",
+        "1. 负责控制器控制算法开发与优化，确保控制系统高稳定性和鲁棒性",
+        "2. 负责控制器整体算法设计，与软件和调试部门紧密合作，保证软件质量和产品稳定运行",
+        "3. 负责控制器算法原理性分析和文档编写和维护，配合软件成员规划算法实现与验证",
+        "4. 负责控制器算法仿真模型搭建和验证",
+        "岗位要求：",
+        "1. 电子、通信、自动化控制或相关专业，本科以上学历，英语达四级以上。",
+        "2. 工作经验:具备3-5年以上算法设计、工程落地等相关经验。",
+        "3. 熟悉基本硬件驱动电路、嵌入式开发及常规测试设备使用，熟悉控制器软件算法设计流程，精通自动控制原理、数字信号处理等专业知识",
+        "4. 熟悉matlab/simulink工具的使用，能建立电机或者悬浮等控制算法模型并应用到实际某款嵌入式设备",
+        "5. 熟悉电机foc 、sensorless 等主流电机控制算法，对电机震动抑制、噪声有一定研究",
+        "6. 具有较强的解决问题能力、团队合作精神、语言表达能力"
+      ],
+      "responsibilities": [
+        "岗位职责：",
+        "1. 负责控制器控制算法开发与优化，确保控制系统高稳定性和鲁棒性",
+        "2. 负责控制器整体算法设计，与软件和调试部门紧密合作，保证软件质量和产品稳定运行",
+        "3. 负责控制器算法原理性分析和文档编写和维护，配合软件成员规划算法实现与验证",
+        "4. 负责控制器算法仿真模型搭建和验证",
+        "岗位要求：",
+        "1. 电子、通信、自动化控制或相关专业，本科以上学历，英语达四级以上。",
+        "2. 工作经验:具备3-5年以上算法设计、工程落地等相关经验。",
+        "3. 熟悉基本硬件驱动电路、嵌入式开发及常规测试设备使用，熟悉控制器软件算法设计流程，精通自动控制原理、数字信号处理等专业知识",
+        "4. 熟悉matlab/simulink工具的使用，能建立电机或者悬浮等控制算法模型并应用到实际某款嵌入式设备",
+        "5. 熟悉电机foc 、sensorless 等主流电机控制算法，对电机震动抑制、噪声有一定研究",
+        "6. 具有较强的解决问题能力、团队合作精神、语言表达能力"
+      ],
+      "scrape_time": "2026-07-14T06:42:36.228Z",
+      "skills_raw": [
+        "C语言",
+        "控制算法",
+        "本科",
+        "3-5年"
+      ],
+      "source_name": "zhaopin",
+      "source_type": "job_platform"
+    },
+    "source": {
+      "source_id": "40854813111",
+      "source_system": "zhaopin"
+    },
+    "storage": "memory"
+  }
+}

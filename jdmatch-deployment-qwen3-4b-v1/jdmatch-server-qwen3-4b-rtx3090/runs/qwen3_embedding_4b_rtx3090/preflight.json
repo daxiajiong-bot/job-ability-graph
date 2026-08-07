@@ -1,0 +1,52 @@
+{
+  "status": "passed",
+  "platform": "Linux-6.17.0-40-generic-x86_64-with-glibc2.39",
+  "python": "3.11.15",
+  "torch": "2.12.1+cu126",
+  "torch_cuda_runtime": "12.6",
+  "cuda_available": true,
+  "cuda_visible_devices_environment": "0",
+  "visible_cuda_devices": 1,
+  "gpu_name": "NVIDIA GeForce RTX 3090",
+  "bf16_supported": true,
+  "flash_attention_2_available": false,
+  "versions": {
+    "transformers": "4.57.6",
+    "sentence-transformers": "5.6.1",
+    "peft": "0.20.0",
+    "accelerate": "1.14.0",
+    "bitsandbytes": null
+  },
+  "data": {
+    "jds": 8407,
+    "resumes": 25221,
+    "contracts": 8407
+  },
+  "training_step": {
+    "status": "passed",
+    "device": "cuda:0",
+    "model": "/data/wangxianjiong/models/jdmatch/Qwen3-Embedding-4B",
+    "parameters": {
+      "total": 4033570816,
+      "trainable": 11796480,
+      "trainable_percent": 0.292457
+    },
+    "queries": 16,
+    "documents": 96,
+    "microbatch_texts": 2,
+    "configured_microbatch_texts": 2,
+    "loss": 0.29712343215942383,
+    "metrics": {
+      "loss": 0.29712343215942383,
+      "info_nce": 0.29371511936187744,
+      "h1_margin_loss": 0.006816655397415161,
+      "hard_margin_loss": 0.0,
+      "mean_positive_score": 0.7552890777587891,
+      "masked_in_batch_pairs": 0.0
+    },
+    "peak_memory_gib": 8.3418,
+    "peak_allocated_memory_gib": 8.0861,
+    "peak_reserved_memory_gib": 8.3418,
+    "elapsed_seconds": 34.551
+  }
+}

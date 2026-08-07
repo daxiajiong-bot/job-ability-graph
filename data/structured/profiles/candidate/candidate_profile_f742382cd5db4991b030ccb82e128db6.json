@@ -1,0 +1,64 @@
+{
+  "artifact_type": "candidate_profile",
+  "created_at": "2026-08-05T06:26:55Z",
+  "extraction": {
+    "evidence": [],
+    "fields": {},
+    "implementation": "mock",
+    "model": null,
+    "raw_model_output": "",
+    "reason": "Structured extraction is reserved for a future local LLM.",
+    "schema": null,
+    "state": "not_implemented",
+    "validation_error": "",
+    "warnings": []
+  },
+  "normalization": {
+    "implementation": "mock",
+    "skills": [],
+    "state": "not_implemented",
+    "warnings": []
+  },
+  "profile": {
+    "artifacts": {
+      "profile_json": "data\\structured\\profiles\\candidate\\candidate_profile_f742382cd5db4991b030ccb82e128db6.json",
+      "schema_version": "profile-extraction/v2",
+      "storage": "filesystem"
+    },
+    "attributes": {
+      "candidate": {},
+      "capabilities": [],
+      "career_intent": {},
+      "education": [],
+      "experience": [],
+      "profile_schema": "profile-extraction/v2",
+      "projects": [],
+      "resume_profile": {},
+      "skills": [],
+      "target_position": null
+    },
+    "created_at": "2026-08-05T06:26:55Z",
+    "evidence": [],
+    "id": "candidate_profile_f742382cd5db4991b030ccb82e128db6",
+    "implementation": "mock",
+    "profile_type": "candidate",
+    "source_document_id": "doc_50bd43f9e7d94aafbc0e060552d299dd",
+    "state": "not_implemented",
+    "warnings": [
+      "No extraction, normalization, or inference has been performed."
+    ]
+  },
+  "schema_version": "profile-extraction/v2",
+  "source_document": {
+    "char_count": 43,
+    "content_digest": "d41e27d60b962f6339bf27d3a19e011cbdd30bf54abbfadceabe8c74520a11c5",
+    "created_at": "2026-08-05T06:24:42Z",
+    "document_type": "resume",
+    "id": "doc_50bd43f9e7d94aafbc0e060552d299dd",
+    "metadata": {},
+    "source": {
+      "source_system": "manual"
+    },
+    "storage": "memory"
+  }
+}

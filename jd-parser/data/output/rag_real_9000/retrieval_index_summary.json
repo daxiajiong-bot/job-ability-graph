@@ -1,0 +1,5551 @@
+{
+  "term_count": 94,
+  "top_terms": [
+    {
+      "name": "大模型",
+      "count": 8141,
+      "levels": {
+        "mentioned": 3903,
+        "required": 2887,
+        "preferred": 1351
+      },
+      "examples": [
+        {
+          "document_id": "JD_40756581406",
+          "title": ".NET AI软件开发工程师（朝九晚六+双休）",
+          "level": "mentioned",
+          "evidence": "跟踪大模型技术动态，推动AI技术在业务场景落地。"
+        },
+        {
+          "document_id": "JD_40756581406",
+          "title": ".NET AI软件开发工程师（朝九晚六+双休）",
+          "level": "required",
+          "evidence": "了解AI工作原理，熟悉GPT、文心一言、通义千问等常见大模型；熟悉操作系统、计算机网络等底层原理。"
+        },
+        {
+          "document_id": "JD_40875487605",
+          "title": ".NET全栈开发工程师（偏AI）",
+          "level": "mentioned",
+          "evidence": "AI应用工程化：负责 Dify 平台的独立搭建与工作流编排，将大模型能力集成至现有业务系统中，实现智能问答、数据处理自动化等场景落地。"
+        },
+        {
+          "document_id": "JD_40853946411",
+          "title": "0991A4-agent开发工程师",
+          "level": "required",
+          "evidence": "本科及以上，3年后端/AI开发经验，1年以上Agent/大模型应用经验"
+        },
+        {
+          "document_id": "JD_41017012204",
+          "title": "1191L8-资深架构师（AI应用）",
+          "level": "required",
+          "evidence": "具有5年以上高并发AI系统研发经验，其中大模型相关经验不少于2年，包括但不限于大模型应用/agentic ai应用/ai coding/对话机器人/知识图谱/智能客服/搜索/推荐/AI中台/训推平台/图像平台/知识工程/RAG系统等相关AI系统研发经验。"
+        },
+        {
+          "document_id": "JD_40835740214",
+          "title": "2026-多模态VLA模型开发工程师",
+          "level": "preferred",
+          "evidence": "计算机、人工智能、机器人、自动化或相关专业，本科及以上学历。有VLA（如RT-2， OpenVLA）、多模态大模型或具身智能相关项目经验者优先。"
+        },
+        {
+          "document_id": "JD_40835725114",
+          "title": "2026-机器人首席专家",
+          "level": "preferred",
+          "evidence": "对具身智能、大模型在机器人中的应用具备深刻的认知，有实际应用或验证经验者优先。"
+        },
+        {
+          "document_id": "JD_40898713215",
+          "title": "2026届-硕士-AI开发人员-宁波",
+          "level": "mentioned",
+          "evidence": "负责机器学习、深度学习、大模型相关项目，探索和挖掘AI在新药开发场景及项目中的解决方案"
+        }
+      ]
+    },
+    {
+      "name": "Python",
+      "count": 6099,
+      "levels": {
+        "required": 4816,
+        "preferred": 743,
+        "mentioned": 540
+      },
+      "examples": [
+        {
+          "document_id": "JD_40853946411",
+          "title": "0991A4-agent开发工程师",
+          "level": "required",
+          "evidence": "精通Python，且至少精通Go/Java/Rust/C++/TypeScript中的一门"
+        },
+        {
+          "document_id": "JD_40853946411",
+          "title": "0991A4-agent开发工程师",
+          "level": "required",
+          "evidence": "能根据场景选型：Python用于模型集成，Go/Java用于高并发运行时，TS用于前端交互"
+        },
+        {
+          "document_id": "JD_41016019704",
+          "title": "1191KY-模型算法岗",
+          "level": "preferred",
+          "evidence": "具备数据处理能力，熟练使用Python、SQL进行海量多源数据清洗、关联、挖掘、分析，熟悉Pandas、Numpy、Scikit-learn等主流算法工具库，具备医疗、保险多维度异构数据处理经验优先"
+        },
+        {
+          "document_id": "JD_40859601910",
+          "title": "17k具身大模型数据工程师（线上面试）",
+          "level": "preferred",
+          "evidence": "具备扎实的Python编程能力，熟悉常用的数据处理库（如Pandas,"
+        },
+        {
+          "document_id": "JD_40835740214",
+          "title": "2026-多模态VLA模型开发工程师",
+          "level": "required",
+          "evidence": "熟练掌握Python，精通PyTorch/TensorFlow等至少一种主流深度学习框架。具备扎实的编程和软件工程能力。掌握目标检测、语义分割、三维重建等计算机视觉算法，并能将其用于机器人感知任务。"
+        },
+        {
+          "document_id": "JD_40834869914",
+          "title": "2026-终端AI系统架专家",
+          "level": "required",
+          "evidence": "熟练使用C/C++及相关调试工具，熟悉Python/Pytorch/mindspore/tflite/OpenCV/YOLO等常见AI技术"
+        },
+        {
+          "document_id": "JD_40834751814",
+          "title": "2026-终端通信算法高级工程师",
+          "level": "mentioned",
+          "evidence": "利用MATLAB、Python或C++等工具构建高精度链路级和系统级仿真平台，对算法性能进行仿真、验证与迭代优化，为算法选型和芯片设计提供理论依据。"
+        },
+        {
+          "document_id": "JD_40834751814",
+          "title": "2026-终端通信算法高级工程师",
+          "level": "required",
+          "evidence": "精通MATLAB或Python进行算法建模和仿真。"
+        }
+      ]
+    },
+    {
+      "name": "深度学习",
+      "count": 4679,
+      "levels": {
+        "required": 2893,
+        "preferred": 677,
+        "mentioned": 1109
+      },
+      "examples": [
+        {
+          "document_id": "JD_41016019704",
+          "title": "1191KY-模型算法岗",
+          "level": "required",
+          "evidence": "具备扎实的数理统计、机器学习、深度学习、数据建模理论基础"
+        },
+        {
+          "document_id": "JD_40859601910",
+          "title": "17k具身大模型数据工程师（线上面试）",
+          "level": "preferred",
+          "evidence": "了解机器学习/深度学习的基本概念和流程（如训练/验证/测试集"
+        },
+        {
+          "document_id": "JD_40835740214",
+          "title": "2026-多模态VLA模型开发工程师",
+          "level": "required",
+          "evidence": "熟练掌握Python，精通PyTorch/TensorFlow等至少一种主流深度学习框架。具备扎实的编程和软件工程能力。掌握目标检测、语义分割、三维重建等计算机视觉算法，并能将其用于机器人感知任务。"
+        },
+        {
+          "document_id": "JD_40834751814",
+          "title": "2026-终端通信算法高级工程师",
+          "level": "required",
+          "evidence": "AI与通信融合：具备将机器学习（如深度学习、强化学习）应用于通信问题（如接收机设计、资源分配）的实际项目经验。"
+        },
+        {
+          "document_id": "JD_40834751914",
+          "title": "2026-终端通信算法高级工程师",
+          "level": "required",
+          "evidence": "AI与通信融合：具备将机器学习（如深度学习、强化学习）应用于通信问题（如接收机设计、资源分配）的实际项目经验。"
+        },
+        {
+          "document_id": "JD_40835739514",
+          "title": "2026-视觉感知模型工程师",
+          "level": "required",
+          "evidence": "算法基础：扎实的机器学习、深度学习理论基础，熟悉计算机视觉核心领域（检测、跟踪、分割、Re-ID等）的经典与前沿算法。"
+        },
+        {
+          "document_id": "JD_40835739514",
+          "title": "2026-视觉感知模型工程师",
+          "level": "required",
+          "evidence": "模型开发：精通PyTorch或TensorFlow等至少一种主流深度学习框架，具备丰富的模型训练、调参、优化及实验设计经验。"
+        },
+        {
+          "document_id": "JD_40917723615",
+          "title": "2026届 -博士-AI研究员-宁波",
+          "level": "required",
+          "evidence": "熟悉深度学习框架(如TensorFlow、PyTorch)和自然语言处理技术。"
+        }
+      ]
+    },
+    {
+      "name": "人工智能",
+      "count": 4126,
+      "levels": {
+        "required": 2333,
+        "preferred": 850,
+        "mentioned": 943
+      },
+      "examples": [
+        {
+          "document_id": "JD_41016019704",
+          "title": "1191KY-模型算法岗",
+          "level": "required",
+          "evidence": "硕士及以上学历，统计学、应用数学、计算机科学、数据科学、人工智能、精算学、生物统计等相关专业"
+        },
+        {
+          "document_id": "JD_40859601910",
+          "title": "17k具身大模型数据工程师（线上面试）",
+          "level": "preferred",
+          "evidence": "至少2年人工智能相关领域的工作经验，熟悉模型训练/数据清洗/"
+        },
+        {
+          "document_id": "JD_40835740214",
+          "title": "2026-多模态VLA模型开发工程师",
+          "level": "preferred",
+          "evidence": "计算机、人工智能、机器人、自动化或相关专业，本科及以上学历。有VLA（如RT-2， OpenVLA）、多模态大模型或具身智能相关项目经验者优先。"
+        },
+        {
+          "document_id": "JD_40835740214",
+          "title": "2026-多模态VLA模型开发工程师",
+          "level": "preferred",
+          "evidence": "对机器人技术和人工智能前沿保持高度热情，具备优秀的自主学习、分析问题和解决复杂技术难题的能力。"
+        },
+        {
+          "document_id": "JD_40835740214",
+          "title": "2026-多模态VLA模型开发工程师",
+          "level": "preferred",
+          "evidence": "在机器人会议（如RSS， CoRL， ICRA， IROS）或人工智能顶级会议（如NeurIPS， ICML， CVPR）上有相关论文发表者优先。"
+        },
+        {
+          "document_id": "JD_40834869914",
+          "title": "2026-终端AI系统架专家",
+          "level": "mentioned",
+          "evidence": "负责洞察AI 业界进展、行业动态，结合用户需求规划设计有竞争力的人工智能系统方案。。"
+        },
+        {
+          "document_id": "JD_40834869914",
+          "title": "2026-终端AI系统架专家",
+          "level": "required",
+          "evidence": "有较强的系统实现能力，熟悉人工智能开发框架、平台及相关语言工具"
+        },
+        {
+          "document_id": "JD_40834751814",
+          "title": "2026-终端通信算法高级工程师",
+          "level": "mentioned",
+          "evidence": "研究和探索人工智能/机器学习（AI/ML）技术在通信领域的应用，如基于神经网络的信道预测、智能信号处理、网络智能决策等，提升系统整体性能。"
+        }
+      ]
+    },
+    {
+      "name": "Agent",
+      "count": 4033,
+      "levels": {
+        "mentioned": 2057,
+        "required": 1384,
+        "preferred": 592
+      },
+      "examples": [
+        {
+          "document_id": "JD_40875487605",
+          "title": ".NET全栈开发工程师（偏AI）",
+          "level": "mentioned",
+          "evidence": "技术成长空间：接触 Dify、RAG、Agent 等最新 AI 工程化技术，打造智能化业务系统。"
+        },
+        {
+          "document_id": "JD_40875487605",
+          "title": ".NET全栈开发工程师（偏AI）",
+          "level": "required",
+          "evidence": "平台的使用经验，能够独立搭建 Agent 工作流。"
+        },
+        {
+          "document_id": "JD_40853946411",
+          "title": "0991A4-agent开发工程师",
+          "level": "mentioned",
+          "evidence": "Agent开发：基于LangChain/LangGraph/AutoGen等框架，开发保险核保、理赔、客服等场景的智能Agent，设计多Agent协作架构。"
+        },
+        {
+          "document_id": "JD_40853946411",
+          "title": "0991A4-agent开发工程师",
+          "level": "required",
+          "evidence": "Harness Engineering：构建Agent沙箱环境、工具调用治理、全链路可观测性、安全护栏（PII脱敏、人在回路），满足保险合规与审计要求。"
+        },
+        {
+          "document_id": "JD_40853946411",
+          "title": "0991A4-agent开发工程师",
+          "level": "mentioned",
+          "evidence": "业务集成：对接保险核心系统（核保/理赔/CRM），构建RAG知识库，建立Agent评估与迭代体系。"
+        },
+        {
+          "document_id": "JD_40853946411",
+          "title": "0991A4-agent开发工程师",
+          "level": "required",
+          "evidence": "本科及以上，3年后端/AI开发经验，1年以上Agent/大模型应用经验"
+        },
+        {
+          "document_id": "JD_40853946411",
+          "title": "0991A4-agent开发工程师",
+          "level": "required",
+          "evidence": "Agent与Harness"
+        },
+        {
+          "document_id": "JD_40853946411",
+          "title": "0991A4-agent开发工程师",
+          "level": "required",
+          "evidence": "熟悉LangChain/LangGraph等Agent框架"
+        }
+      ]
+    },
+    {
+      "name": "C++",
+      "count": 3679,
+      "levels": {
+        "required": 2907,
+        "preferred": 494,
+        "mentioned": 278
+      },
+      "examples": [
+        {
+          "document_id": "JD_40853946411",
+          "title": "0991A4-agent开发工程师",
+          "level": "required",
+          "evidence": "精通Python，且至少精通Go/Java/Rust/C++/TypeScript中的一门"
+        },
+        {
+          "document_id": "JD_40834868814",
+          "title": "2026-终端AI开发工程师",
+          "level": "preferred",
+          "evidence": "熟悉终端AI 应用开发和部署，熟练使用C/C++及相关调试工具优先"
+        },
+        {
+          "document_id": "JD_40834869914",
+          "title": "2026-终端AI系统架专家",
+          "level": "required",
+          "evidence": "熟练使用C/C++及相关调试工具，熟悉Python/Pytorch/mindspore/tflite/OpenCV/YOLO等常见AI技术"
+        },
+        {
+          "document_id": "JD_40834751814",
+          "title": "2026-终端通信算法高级工程师",
+          "level": "mentioned",
+          "evidence": "利用MATLAB、Python或C++等工具构建高精度链路级和系统级仿真平台，对算法性能进行仿真、验证与迭代优化，为算法选型和芯片设计提供理论依据。"
+        },
+        {
+          "document_id": "JD_40834751814",
+          "title": "2026-终端通信算法高级工程师",
+          "level": "mentioned",
+          "evidence": "将经过验证的先进算法转化为可在DSP、GPU或专用硬件上高效运行的嵌入式C/C++代码。"
+        },
+        {
+          "document_id": "JD_40834751814",
+          "title": "2026-终端通信算法高级工程师",
+          "level": "preferred",
+          "evidence": "熟练掌握C/C++，有嵌入式平台开发或优化经验者优先。"
+        },
+        {
+          "document_id": "JD_40834751914",
+          "title": "2026-终端通信算法高级工程师",
+          "level": "mentioned",
+          "evidence": "利用MATLAB、Python或C++等工具构建高精度链路级和系统级仿真平台，对算法性能进行仿真、验证与迭代优化，为算法选型和芯片设计提供理论依据。"
+        },
+        {
+          "document_id": "JD_40834751914",
+          "title": "2026-终端通信算法高级工程师",
+          "level": "mentioned",
+          "evidence": "将经过验证的先进算法转化为可在DSP、GPU或专用硬件上高效运行的嵌入式C/C++代码。"
+        }
+      ]
+    },
+    {
+      "name": "RAG",
+      "count": 3155,
+      "levels": {
+        "mentioned": 1350,
+        "preferred": 523,
+        "required": 1282
+      },
+      "examples": [
+        {
+          "document_id": "JD_40875487605",
+          "title": ".NET全栈开发工程师（偏AI）",
+          "level": "mentioned",
+          "evidence": "技术成长空间：接触 Dify、RAG、Agent 等最新 AI 工程化技术，打造智能化业务系统。"
+        },
+        {
+          "document_id": "JD_40875487605",
+          "title": ".NET全栈开发工程师（偏AI）",
+          "level": "preferred",
+          "evidence": "加分：了解 RAG（检索增强生成）、Vector"
+        },
+        {
+          "document_id": "JD_40853946411",
+          "title": "0991A4-agent开发工程师",
+          "level": "mentioned",
+          "evidence": "业务集成：对接保险核心系统（核保/理赔/CRM），构建RAG知识库，建立Agent评估与迭代体系。"
+        },
+        {
+          "document_id": "JD_40853946411",
+          "title": "0991A4-agent开发工程师",
+          "level": "required",
+          "evidence": "熟悉RAG、向量数据库、提示工程"
+        },
+        {
+          "document_id": "JD_41017012204",
+          "title": "1191L8-资深架构师（AI应用）",
+          "level": "required",
+          "evidence": "具有5年以上高并发AI系统研发经验，其中大模型相关经验不少于2年，包括但不限于大模型应用/agentic ai应用/ai coding/对话机器人/知识图谱/智能客服/搜索/推荐/AI中台/训推平台/图像平台/知识工程/RAG系统等相关AI系统研发经验。"
+        },
+        {
+          "document_id": "JD_40804552214",
+          "title": "26届AI培训生（算法方向）(J14794)",
+          "level": "mentioned",
+          "evidence": "设计和实现RAG（检索增强生成）流程，探索如何将大模型与医学知识库高效结合"
+        },
+        {
+          "document_id": "JD_41014806904",
+          "title": "26届校招 AI知识库开发工程师",
+          "level": "mentioned",
+          "evidence": "RAG 方案设计与调优；问答效果调试；模型相关工作；输出实验结论"
+        },
+        {
+          "document_id": "JD_41014806904",
+          "title": "26届校招 AI知识库开发工程师",
+          "level": "required",
+          "evidence": "具备一定的python、LLM、RAG、Agent流程开发、模型量化、模型微调能力，对工业的LLM落地有兴趣"
+        }
+      ]
+    },
+    {
+      "name": "机器学习",
+      "count": 3018,
+      "levels": {
+        "required": 1764,
+        "preferred": 470,
+        "mentioned": 784
+      },
+      "examples": [
+        {
+          "document_id": "JD_41016019704",
+          "title": "1191KY-模型算法岗",
+          "level": "required",
+          "evidence": "具备扎实的数理统计、机器学习、深度学习、数据建模理论基础"
+        },
+        {
+          "document_id": "JD_40859601910",
+          "title": "17k具身大模型数据工程师（线上面试）",
+          "level": "preferred",
+          "evidence": "了解机器学习/深度学习的基本概念和流程（如训练/验证/测试集"
+        },
+        {
+          "document_id": "JD_40834868814",
+          "title": "2026-终端AI开发工程师",
+          "level": "required",
+          "evidence": "本科及以上学历，计算机/软件/统计学/数学/机器学习相关专业"
+        },
+        {
+          "document_id": "JD_40834869914",
+          "title": "2026-终端AI系统架专家",
+          "level": "required",
+          "evidence": "本科及以上学历，计算机/软件/统计学/数学/机器学习相关专业，5年以上AI相关工作经验"
+        },
+        {
+          "document_id": "JD_40834751814",
+          "title": "2026-终端通信算法高级工程师",
+          "level": "mentioned",
+          "evidence": "研究和探索人工智能/机器学习（AI/ML）技术在通信领域的应用，如基于神经网络的信道预测、智能信号处理、网络智能决策等，提升系统整体性能。"
+        },
+        {
+          "document_id": "JD_40834751814",
+          "title": "2026-终端通信算法高级工程师",
+          "level": "required",
+          "evidence": "AI与通信融合：具备将机器学习（如深度学习、强化学习）应用于通信问题（如接收机设计、资源分配）的实际项目经验。"
+        },
+        {
+          "document_id": "JD_40834751914",
+          "title": "2026-终端通信算法高级工程师",
+          "level": "mentioned",
+          "evidence": "研究和探索人工智能/机器学习（AI/ML）技术在通信领域的应用，如基于神经网络的信道预测、智能信号处理、网络智能决策等，提升系统整体性能。"
+        },
+        {
+          "document_id": "JD_40834751914",
+          "title": "2026-终端通信算法高级工程师",
+          "level": "required",
+          "evidence": "AI与通信融合：具备将机器学习（如深度学习、强化学习）应用于通信问题（如接收机设计、资源分配）的实际项目经验。"
+        }
+      ]
+    },
+    {
+      "name": "PyTorch",
+      "count": 2705,
+      "levels": {
+        "required": 2205,
+        "preferred": 379,
+        "mentioned": 121
+      },
+      "examples": [
+        {
+          "document_id": "JD_40835740214",
+          "title": "2026-多模态VLA模型开发工程师",
+          "level": "required",
+          "evidence": "熟练掌握Python，精通PyTorch/TensorFlow等至少一种主流深度学习框架。具备扎实的编程和软件工程能力。掌握目标检测、语义分割、三维重建等计算机视觉算法，并能将其用于机器人感知任务。"
+        },
+        {
+          "document_id": "JD_40834869914",
+          "title": "2026-终端AI系统架专家",
+          "level": "required",
+          "evidence": "熟练使用C/C++及相关调试工具，熟悉Python/Pytorch/mindspore/tflite/OpenCV/YOLO等常见AI技术"
+        },
+        {
+          "document_id": "JD_40835739514",
+          "title": "2026-视觉感知模型工程师",
+          "level": "required",
+          "evidence": "模型开发：精通PyTorch或TensorFlow等至少一种主流深度学习框架，具备丰富的模型训练、调参、优化及实验设计经验。"
+        },
+        {
+          "document_id": "JD_40917723615",
+          "title": "2026届 -博士-AI研究员-宁波",
+          "level": "required",
+          "evidence": "熟悉深度学习框架(如TensorFlow、PyTorch)和自然语言处理技术。"
+        },
+        {
+          "document_id": "JD_40951209315",
+          "title": "2026届-博士-体外生物信息学数据工程师-北京总部",
+          "level": "required",
+          "evidence": "熟练使⽤ PyTorch 及 PyTorch Geometric (PyG)，具备⼤语⾔模型 （LLM/Transformer）及图神经⽹络（GNN）的实际开发经验。"
+        },
+        {
+          "document_id": "JD_40951209315",
+          "title": "2026届-博士-体外生物信息学数据工程师-北京总部",
+          "level": "required",
+          "evidence": "熟练使⽤ PyTorch 等深度学习框架，具备主流⼤语⾔模型（LLM）或前沿图神经⽹ 络的实际开发经验。 • 精通主流化学信息学⼯具，熟悉分⼦动⼒学或⾼阶计算化学计算⽅法。"
+        },
+        {
+          "document_id": "JD_40898713215",
+          "title": "2026届-硕士-AI开发人员-宁波",
+          "level": "required",
+          "evidence": "具备Python和其他编程语言基础知识，熟练使用（如TensorFlow、PyTorch、Pandas）"
+        },
+        {
+          "document_id": "JD_40785865414",
+          "title": "2026届-高级算法工程师（大模型） (MJ003971)",
+          "level": "required",
+          "evidence": "熟悉PyTorch，DeepSpeed等深度学习工具，熟悉Python编程语言和Linux开发环境"
+        }
+      ]
+    },
+    {
+      "name": "TensorFlow",
+      "count": 2193,
+      "levels": {
+        "required": 1805,
+        "preferred": 310,
+        "mentioned": 78
+      },
+      "examples": [
+        {
+          "document_id": "JD_40835740214",
+          "title": "2026-多模态VLA模型开发工程师",
+          "level": "required",
+          "evidence": "熟练掌握Python，精通PyTorch/TensorFlow等至少一种主流深度学习框架。具备扎实的编程和软件工程能力。掌握目标检测、语义分割、三维重建等计算机视觉算法，并能将其用于机器人感知任务。"
+        },
+        {
+          "document_id": "JD_40835739514",
+          "title": "2026-视觉感知模型工程师",
+          "level": "required",
+          "evidence": "模型开发：精通PyTorch或TensorFlow等至少一种主流深度学习框架，具备丰富的模型训练、调参、优化及实验设计经验。"
+        },
+        {
+          "document_id": "JD_40917723615",
+          "title": "2026届 -博士-AI研究员-宁波",
+          "level": "required",
+          "evidence": "熟悉深度学习框架(如TensorFlow、PyTorch)和自然语言处理技术。"
+        },
+        {
+          "document_id": "JD_40898713215",
+          "title": "2026届-硕士-AI开发人员-宁波",
+          "level": "required",
+          "evidence": "具备Python和其他编程语言基础知识，熟练使用（如TensorFlow、PyTorch、Pandas）"
+        },
+        {
+          "document_id": "JD_40707336806",
+          "title": "2026年神经网络建模算法的毕业硕士生实习岗位",
+          "level": "required",
+          "evidence": "框架应用：熟练使用PyTorch/TensorFlow，掌握数据处理工具（Pandas、NumPy）及向量数据库（Chroma）。"
+        },
+        {
+          "document_id": "JD_40866235010",
+          "title": "2026应届生补录：算法/数学/机械设计/电气方向应届生",
+          "level": "required",
+          "evidence": "精通 Python 与 C++ 编程，熟练使用 Numpy、Pandas、Sklearn、TensorFlow/PyTorch 等主流库与框架。"
+        },
+        {
+          "document_id": "JD_40883575912",
+          "title": "26届校招-AI算法工程师(J10022)",
+          "level": "preferred",
+          "evidence": "有使用TensorFlow、PyTorch等深度学习框架的实战经验。熟悉分布式训练框架，如Megatron-LM和DeepSpeed，并具备多机多卡大模型训练经验者优先考虑。"
+        },
+        {
+          "document_id": "JD_40842404714",
+          "title": "2D/3D工业视觉算法开发岗",
+          "level": "required",
+          "evidence": "编程能力：具备扎实的编程能力（C/C++、Python），熟悉常见的深度学习框架（如TensorFlow、PyTorch）。"
+        }
+      ]
+    },
+    {
+      "name": "微调",
+      "count": 1961,
+      "levels": {
+        "required": 799,
+        "mentioned": 806,
+        "preferred": 356
+      },
+      "examples": [
+        {
+          "document_id": "JD_40834869914",
+          "title": "2026-终端AI系统架专家",
+          "level": "required",
+          "evidence": "熟悉NLP、CV、RL相关算法技术，掌握大语言模型的算法原理、微调、Prompt、向量数据库等技术"
+        },
+        {
+          "document_id": "JD_40951209315",
+          "title": "2026届-博士-体外生物信息学数据工程师-北京总部",
+          "level": "mentioned",
+          "evidence": "结合内部⾼精度微流控芯⽚产⽣的湿实验数据，使⽤前沿的参数⾼效微调技术 （PEFT）对预训练底座进⾏局部微调校准。"
+        },
+        {
+          "document_id": "JD_40898713215",
+          "title": "2026届-硕士-AI开发人员-宁波",
+          "level": "mentioned",
+          "evidence": "参与模型架构设计、训练、微调等工作"
+        },
+        {
+          "document_id": "JD_40898713215",
+          "title": "2026届-硕士-AI开发人员-宁波",
+          "level": "preferred",
+          "evidence": "深度了解机器学习、深度学习，大模型等主流算法和框架，有模型设计、训练、微调实际经验者优先"
+        },
+        {
+          "document_id": "JD_40707336806",
+          "title": "2026年神经网络建模算法的毕业硕士生实习岗位",
+          "level": "mentioned",
+          "evidence": "深入理解大模型（如GPT、BERT）的设计思想与训练机制（如预训练、微调、RLHF）。"
+        },
+        {
+          "document_id": "JD_40707336806",
+          "title": "2026年神经网络建模算法的毕业硕士生实习岗位",
+          "level": "required",
+          "evidence": "训练调优：掌握分布式训练（DeepSpeed、Megatron）、高效微调技术（LoRA、Adapter）及超参数优化。"
+        },
+        {
+          "document_id": "JD_41014806304",
+          "title": "26届校招 AI算法工程师",
+          "level": "required",
+          "evidence": "熟悉python、机器学习、深度学习、Transformer、LLM微调等技术"
+        },
+        {
+          "document_id": "JD_40883575912",
+          "title": "26届校招-AI算法工程师(J10022)",
+          "level": "mentioned",
+          "evidence": "针对具身智能的各个重大技术方向进行大模型的预训练和微调，尤其关注多模态(文本、图像、视频等) 大模型的结构设计和训练方法上的探索。"
+        }
+      ]
+    },
+    {
+      "name": "图像处理",
+      "count": 1924,
+      "levels": {
+        "mentioned": 489,
+        "required": 1191,
+        "preferred": 244
+      },
+      "examples": [
+        {
+          "document_id": "JD_40911483608",
+          "title": "13视觉工程师",
+          "level": "mentioned",
+          "evidence": "编写图像处理相关算法，实现对目标的各种检测与测量"
+        },
+        {
+          "document_id": "JD_40911483608",
+          "title": "13视觉工程师",
+          "level": "required",
+          "evidence": "掌握康耐视Visonpro、海康Vision Master等常用图像处理库"
+        },
+        {
+          "document_id": "JD_40939703215",
+          "title": "2026届-博士-视觉工程师-北京总部",
+          "level": "required",
+          "evidence": "通信、电子、自动化、计算机、光学、图像处理等相关专业博士学历，或者硕士具有3年以上相关工作经验"
+        },
+        {
+          "document_id": "JD_40746734616",
+          "title": "2026校园招聘-算法工程师(004755)",
+          "level": "preferred",
+          "evidence": "具有算法模型研究、软件开发、计算机视觉（检测、跟踪、识别）和图像处理应用经验优先"
+        },
+        {
+          "document_id": "JD_40827667308",
+          "title": "2D/3D视觉开发工程师",
+          "level": "required",
+          "evidence": "熟练使用OpenCV进行图像处理。"
+        },
+        {
+          "document_id": "JD_40636253902",
+          "title": "2D视觉主管",
+          "level": "required",
+          "evidence": "会使用C#联合图像处理软件visionpro和VisionMater进行视觉软件平台开发。"
+        },
+        {
+          "document_id": "JD_40801516516",
+          "title": "2D软件视觉算法工程师",
+          "level": "mentioned",
+          "evidence": "结合公司自动化设备业务需求，进行2D图像处理算法的开发，例如2D灰度图像识别、定位、匹配等算法。"
+        },
+        {
+          "document_id": "JD_40801516516",
+          "title": "2D软件视觉算法工程师",
+          "level": "required",
+          "evidence": "完成自动化设备软件开发，以及2D图像处理算法相关的验证及设计，并根据项目具体要求，承担开发任务，开发软件以及相对应的算法模块。"
+        }
+      ]
+    },
+    {
+      "name": "多模态",
+      "count": 1813,
+      "levels": {
+        "mentioned": 1082,
+        "preferred": 314,
+        "required": 417
+      },
+      "examples": [
+        {
+          "document_id": "JD_40835740214",
+          "title": "2026-多模态VLA模型开发工程师",
+          "level": "mentioned",
+          "evidence": "1 负责研发面向机器人操作的具身智能算法，重点设计与开发视觉-语言-动作（VLA）模型架构，构建从多模态感知到动作输出的端到端推理管线。"
+        },
+        {
+          "document_id": "JD_40835740214",
+          "title": "2026-多模态VLA模型开发工程师",
+          "level": "mentioned",
+          "evidence": "1 构建与管理用于VLA模型训练的多模态数据集（视觉、语言、力觉、运动轨迹等），其中包含从真实机械臂平台采集的交互数据；设计并实施数据清洗、增强及高效预训练流程。"
+        },
+        {
+          "document_id": "JD_40835740214",
+          "title": "2026-多模态VLA模型开发工程师",
+          "level": "mentioned",
+          "evidence": "1 紧密跟踪机器人操作、多模态模型、模仿与强化学习等领域的前沿进展，特别是与机器人本体控制、灵巧操作相关的技术，评估并将其创新性方法应用于实际业务场景。"
+        },
+        {
+          "document_id": "JD_40835740214",
+          "title": "2026-多模态VLA模型开发工程师",
+          "level": "preferred",
+          "evidence": "计算机、人工智能、机器人、自动化或相关专业，本科及以上学历。有VLA（如RT-2， OpenVLA）、多模态大模型或具身智能相关项目经验者优先。"
+        },
+        {
+          "document_id": "JD_40835740214",
+          "title": "2026-多模态VLA模型开发工程师",
+          "level": "required",
+          "evidence": "深刻理解并具备以下至少两个领域的研发经验：视觉-语言多模态模型（VLM/VLA）、模仿学习与强化学习、机器人动作生成与规划。熟悉行为克隆、扩散策略、离线/在线强化学习（如PPO， SAC）等算法，并有实际应用经验。"
+        },
+        {
+          "document_id": "JD_40835725114",
+          "title": "2026-机器人首席专家",
+          "level": "mentioned",
+          "evidence": "对行业前沿技术进行跟踪和分析，并提出相应的解决方案，明确感知、决策、控制模块的演进路径（如多模态模型集成、传感器选型、运动控制优化等）。"
+        },
+        {
+          "document_id": "JD_40835739514",
+          "title": "2026-视觉感知模型工程师",
+          "level": "mentioned",
+          "evidence": "2 深入探索基于多模态视觉-语言模型（VLM）的场景理解与事态感知技术（如复杂行为识别、异常事件检测等），提升机器人对动态环境的认知能力。"
+        },
+        {
+          "document_id": "JD_40835739514",
+          "title": "2026-视觉感知模型工程师",
+          "level": "mentioned",
+          "evidence": "1 紧密跟踪计算机视觉（如YOLO系列、DETR系列模型）与多模态感知领域的前沿技术演进，评估其在机器人业务中的应用潜力。"
+        }
+      ]
+    },
+    {
+      "name": "Java",
+      "count": 1780,
+      "levels": {
+        "required": 1313,
+        "preferred": 271,
+        "mentioned": 196
+      },
+      "examples": [
+        {
+          "document_id": "JD_40853946411",
+          "title": "0991A4-agent开发工程师",
+          "level": "required",
+          "evidence": "精通Python，且至少精通Go/Java/Rust/C++/TypeScript中的一门"
+        },
+        {
+          "document_id": "JD_40853946411",
+          "title": "0991A4-agent开发工程师",
+          "level": "required",
+          "evidence": "能根据场景选型：Python用于模型集成，Go/Java用于高并发运行时，TS用于前端交互"
+        },
+        {
+          "document_id": "JD_40834868814",
+          "title": "2026-终端AI开发工程师",
+          "level": "required",
+          "evidence": "掌握掌握Java/Kotlin至少一种编程语言，负责过至少1款大型应用的软件设计和开发经验"
+        },
+        {
+          "document_id": "JD_40917723615",
+          "title": "2026届 -博士-AI研究员-宁波",
+          "level": "required",
+          "evidence": "熟练掌握 Python、R 或 Java 等编程语言。"
+        },
+        {
+          "document_id": "JD_40939707415",
+          "title": "2026届-博士-AI/算法工程师-北京总部",
+          "level": "required",
+          "evidence": "熟悉编程语言，如Python、C++、C#、R、MATLAB、Java 和 SQL等"
+        },
+        {
+          "document_id": "JD_40883575912",
+          "title": "26届校招-AI算法工程师(J10022)",
+          "level": "required",
+          "evidence": "具备良好的编程能力，熟练使用至少一种编程语言，如Python、Java或C++。"
+        },
+        {
+          "document_id": "JD_40928814715",
+          "title": "A3算法工程师（6）",
+          "level": "preferred",
+          "evidence": "熟练掌握Python或java至少一种编程语言，具备扎实的编程功底和代码规范意识；熟悉常用数据结构，算法原理，有实际算法研发或项目开发经验者优先"
+        },
+        {
+          "document_id": "JD_40830080005",
+          "title": "ACM竞赛 普本即可 /java/算法/python/C++软件通用岗位",
+          "level": "required",
+          "evidence": "热爱编程，基础扎实，熟练掌握但不限于C/C++，JAVA，python，GO等编程语言中的一种或几种。"
+        }
+      ]
+    },
+    {
+      "name": "架构设计",
+      "count": 1729,
+      "levels": {
+        "mentioned": 1083,
+        "required": 490,
+        "preferred": 156
+      },
+      "examples": [
+        {
+          "document_id": "JD_40756581406",
+          "title": ".NET AI软件开发工程师（朝九晚六+双休）",
+          "level": "mentioned",
+          "evidence": "基于.NET框架，负责桌面端与服务器端AI应用的开发、架构设计及性能优化。"
+        },
+        {
+          "document_id": "JD_40875487605",
+          "title": ".NET全栈开发工程师（偏AI）",
+          "level": "mentioned",
+          "evidence": "全流程主导权：从需求分析到架构设计，再到 AI 工作流搭建，拥有高度的技术自主权。"
+        },
+        {
+          "document_id": "JD_41017012204",
+          "title": "1191L8-资深架构师（AI应用）",
+          "level": "mentioned",
+          "evidence": "agentic ai工程架构：主导agentic ai的工程架构设计、选型及实施工作。持续追踪行业领先的agentic ai架构，设计支持复杂决策、工具调用与协同工作的底层系统框架，为智能体应用提供稳定可靠的运行环境。"
+        },
+        {
+          "document_id": "JD_40862150714",
+          "title": "2026-AI工程专家",
+          "level": "mentioned",
+          "evidence": "AI原生架构设计"
+        },
+        {
+          "document_id": "JD_40862150714",
+          "title": "2026-AI工程专家",
+          "level": "mentioned",
+          "evidence": "• 负责AI编码工具链的架构设计与优化，制定相关的规范文件"
+        },
+        {
+          "document_id": "JD_40939703215",
+          "title": "2026届-博士-视觉工程师-北京总部",
+          "level": "mentioned",
+          "evidence": "负责公司自动化系统研发中视觉系统的架构设计，选择合适的硬件设备和软件工具，以满足项目需求"
+        },
+        {
+          "document_id": "JD_40898713215",
+          "title": "2026届-硕士-AI开发人员-宁波",
+          "level": "mentioned",
+          "evidence": "参与模型架构设计、训练、微调等工作"
+        },
+        {
+          "document_id": "JD_40707336806",
+          "title": "2026年神经网络建模算法的毕业硕士生实习岗位",
+          "level": "mentioned",
+          "evidence": "架构设计：根据任务需求设计神经网络结构（如医疗影像分析用CNN，时序数据用LSTM）。"
+        }
+      ]
+    },
+    {
+      "name": "算法开发",
+      "count": 1564,
+      "levels": {
+        "required": 582,
+        "mentioned": 741,
+        "preferred": 241
+      },
+      "examples": [
+        {
+          "document_id": "JD_40835740214",
+          "title": "2026-多模态VLA模型开发工程师",
+          "level": "required",
+          "evidence": "熟悉机器人操作系统ROS/ROS2，有在仿真环境（如Isaac Sim, Gazebo）和真实机器人平台进行算法开发、部署与调试的实际经验。"
+        },
+        {
+          "document_id": "JD_40834751814",
+          "title": "2026-终端通信算法高级工程师",
+          "level": "required",
+          "evidence": "经验：3年以上通信算法开发经验，有主导或核心参与完整通信系统算法设计的成功经验。"
+        },
+        {
+          "document_id": "JD_40834751814",
+          "title": "2026-终端通信算法高级工程师",
+          "level": "required",
+          "evidence": "平台经验：拥有海思、高通、联发科等主流手机平台基带芯片的算法开发或调试经验。"
+        },
+        {
+          "document_id": "JD_40834751914",
+          "title": "2026-终端通信算法高级工程师",
+          "level": "required",
+          "evidence": "经验：3年以上通信算法开发经验，有主导或核心参与完整通信系统算法设计的成功经验。"
+        },
+        {
+          "document_id": "JD_40834751914",
+          "title": "2026-终端通信算法高级工程师",
+          "level": "required",
+          "evidence": "平台经验：拥有海思、高通、联发科等主流手机平台基带芯片的算法开发或调试经验。"
+        },
+        {
+          "document_id": "JD_40883575912",
+          "title": "26届校招-AI算法工程师(J10022)",
+          "level": "mentioned",
+          "evidence": "负责基于Camera/RGBD/Lidar等机器人传感器的深度学习感知算法开发和优化。包括目标检测、分割、多目标跟踪、深度估计、特征点提取与匹配等。"
+        },
+        {
+          "document_id": "JD_40883575912",
+          "title": "26届校招-AI算法工程师(J10022)",
+          "level": "mentioned",
+          "evidence": "负责各场景下，基于视觉的深度学习感知调研，方案制定，算法开发，模型优化和嵌入式设备部署。"
+        },
+        {
+          "document_id": "JD_40842404714",
+          "title": "2D/3D工业视觉算法开发岗",
+          "level": "mentioned",
+          "evidence": "算法开发：负责基于3D视觉技术的检测、识别算法开发，以及场景可编辑文件生成。"
+        }
+      ]
+    },
+    {
+      "name": "模型训练",
+      "count": 1477,
+      "levels": {
+        "required": 511,
+        "preferred": 150,
+        "mentioned": 816
+      },
+      "examples": [
+        {
+          "document_id": "JD_41017012204",
+          "title": "1191L8-资深架构师（AI应用）",
+          "level": "required",
+          "evidence": "有较强的编程能力，熟练掌握后端开发相关技术与中间件、熟悉掌握至少一个AI编程工具。具有 AI 系统设计能力。熟悉向量数据库、搜索数据库ES的原理及使用。了解常见 AI 算法原理、模型训练及推理流程。"
+        },
+        {
+          "document_id": "JD_40859601910",
+          "title": "17k具身大模型数据工程师（线上面试）",
+          "level": "preferred",
+          "evidence": "至少2年人工智能相关领域的工作经验，熟悉模型训练/数据清洗/"
+        },
+        {
+          "document_id": "JD_40835740214",
+          "title": "2026-多模态VLA模型开发工程师",
+          "level": "mentioned",
+          "evidence": "1 构建与管理用于VLA模型训练的多模态数据集（视觉、语言、力觉、运动轨迹等），其中包含从真实机械臂平台采集的交互数据；设计并实施数据清洗、增强及高效预训练流程。"
+        },
+        {
+          "document_id": "JD_40835740214",
+          "title": "2026-多模态VLA模型开发工程师",
+          "level": "mentioned",
+          "evidence": "2 管理与优化大规模分布式训练（多机多卡）任务，提升模型训练效率与资源利用率。"
+        },
+        {
+          "document_id": "JD_40835739514",
+          "title": "2026-视觉感知模型工程师",
+          "level": "required",
+          "evidence": "模型开发：精通PyTorch或TensorFlow等至少一种主流深度学习框架，具备丰富的模型训练、调参、优化及实验设计经验。"
+        },
+        {
+          "document_id": "JD_40707336806",
+          "title": "2026年神经网络建模算法的毕业硕士生实习岗位",
+          "level": "mentioned",
+          "evidence": "微积分：梯度下降、优化算法（如Adam、SGD）是模型训练的核心工具。"
+        },
+        {
+          "document_id": "JD_40866235010",
+          "title": "2026应届生补录：算法/数学/机械设计/电气方向应届生",
+          "level": "mentioned",
+          "evidence": "负责模型的全链路开发：从数据标准化处理、特征工程、算法选型到模型训练、部署及后续迭代。"
+        },
+        {
+          "document_id": "JD_40883624813",
+          "title": "2027届实习岗-广州总部-AI软件开发岗 (MJ016311)",
+          "level": "mentioned",
+          "evidence": "参与业务数据的收集、清洗、标注等预处理工作，辅助模型训练与评估。"
+        }
+      ]
+    },
+    {
+      "name": "Linux",
+      "count": 1475,
+      "levels": {
+        "required": 1167,
+        "mentioned": 103,
+        "preferred": 205
+      },
+      "examples": [
+        {
+          "document_id": "JD_40785865414",
+          "title": "2026届-高级算法工程师（大模型） (MJ003971)",
+          "level": "required",
+          "evidence": "熟悉PyTorch，DeepSpeed等深度学习工具，熟悉Python编程语言和Linux开发环境"
+        },
+        {
+          "document_id": "JD_40866235010",
+          "title": "2026应届生补录：算法/数学/机械设计/电气方向应届生",
+          "level": "required",
+          "evidence": "熟练操作 Linux 环境，具备深度学习模型部署与服务化经验。"
+        },
+        {
+          "document_id": "JD_40827667308",
+          "title": "2D/3D视觉开发工程师",
+          "level": "required",
+          "evidence": "熟练使用C/C++编程，熟练使用linux和ros操作系统进行开发"
+        },
+        {
+          "document_id": "JD_40866135313",
+          "title": "3d激光SLAM算法工程师 (接受应届)",
+          "level": "required",
+          "evidence": "具备扎实的数据结构和算法设计基础，熟练掌握C/C++开发与调试，熟悉Linux开发环境。"
+        },
+        {
+          "document_id": "JD_40880930013",
+          "title": "3D点云算法工程师",
+          "level": "required",
+          "evidence": "熟练使用C++、Python等编程开发语言，代码能力扎实，具备Windows与Linux等多平台、跨平台的实践能力（熟悉其编译工具链），能独立分析和解决编程或运行过程中出现的各类问题"
+        },
+        {
+          "document_id": "JD_40935129204",
+          "title": "3D视觉机器人焊接系统工研发程师",
+          "level": "required",
+          "evidence": "具有跨平台开发经验，熟悉Windows和Linux操作系统。"
+        },
+        {
+          "document_id": "JD_40541961210",
+          "title": "3d视觉算法工程师",
+          "level": "required",
+          "evidence": "熟悉掌握Linux开发，熟悉掌握ROS操作系统"
+        },
+        {
+          "document_id": "JD_40773530201",
+          "title": "3d视觉算法工程师",
+          "level": "required",
+          "evidence": "具备扎实的软件工程基础，熟悉Linux开发环境、Git版本控制和CI/CD流程。"
+        }
+      ]
+    },
+    {
+      "name": "机器视觉",
+      "count": 1373,
+      "levels": {
+        "mentioned": 572,
+        "preferred": 188,
+        "required": 613
+      },
+      "examples": [
+        {
+          "document_id": "JD_40911483608",
+          "title": "13视觉工程师",
+          "level": "mentioned",
+          "evidence": "制定机器视觉系统方案及选型(视觉系统硬件选型，包括相机、镜头、光源、处理器等)"
+        },
+        {
+          "document_id": "JD_40911483608",
+          "title": "13视觉工程师",
+          "level": "mentioned",
+          "evidence": "负责自动化设备机器视觉系统部分的售后技术支持；对现场的异常进行分析并进行处理；对客户端进行解答并培训。"
+        },
+        {
+          "document_id": "JD_40911483608",
+          "title": "13视觉工程师",
+          "level": "preferred",
+          "evidence": "在机器视觉、瑕疵检测、引导抓取等领域有实际开发经验的优先"
+        },
+        {
+          "document_id": "JD_40827667308",
+          "title": "2D/3D视觉开发工程师",
+          "level": "mentioned",
+          "evidence": "负责机器视觉方面技术或产品的开发。"
+        },
+        {
+          "document_id": "JD_40827667308",
+          "title": "2D/3D视觉开发工程师",
+          "level": "preferred",
+          "evidence": "5 有机器视觉系统项目开发、机器视觉软件开发经验者优先"
+        },
+        {
+          "document_id": "JD_40636253902",
+          "title": "2D视觉主管",
+          "level": "required",
+          "evidence": "熟练机器视觉系统2D、3D和线扫相机,镜头和光源,能独立进行样品打光评估及硬件选型。"
+        },
+        {
+          "document_id": "JD_40636253902",
+          "title": "2D视觉主管",
+          "level": "preferred",
+          "evidence": "掌握机器视觉、运动控制和常用工控硬件进行上位机软件开发优先。"
+        },
+        {
+          "document_id": "JD_40801516516",
+          "title": "2D软件视觉算法工程师",
+          "level": "required",
+          "evidence": "本科及以上学历，计算机软件、机器视觉、机械设计及自动化、电子信息、通信工程、物联网、数学、物理、图形学等相关专业，具备熟练的英语阅读能力，良好的交流与写作能力，有1年及以上 自动化设备软件和2D&3D处理算法开发的工作经验。"
+        }
+      ]
+    },
+    {
+      "name": "LangChain",
+      "count": 1364,
+      "levels": {
+        "mentioned": 246,
+        "required": 821,
+        "preferred": 297
+      },
+      "examples": [
+        {
+          "document_id": "JD_40853946411",
+          "title": "0991A4-agent开发工程师",
+          "level": "mentioned",
+          "evidence": "Agent开发：基于LangChain/LangGraph/AutoGen等框架，开发保险核保、理赔、客服等场景的智能Agent，设计多Agent协作架构。"
+        },
+        {
+          "document_id": "JD_40853946411",
+          "title": "0991A4-agent开发工程师",
+          "level": "required",
+          "evidence": "熟悉LangChain/LangGraph等Agent框架"
+        },
+        {
+          "document_id": "JD_40928814715",
+          "title": "A3算法工程师（6）",
+          "level": "preferred",
+          "evidence": "熟悉主流开源工具和框架(如LangChain,Hugging Face Transformers等)，能灵活运用工具解决实际技术问题；了解大模型微调，量化，部署相关技术者优先"
+        },
+        {
+          "document_id": "JD_40873073410",
+          "title": "Agent 应用工程师（智慧电力方向）",
+          "level": "preferred",
+          "evidence": "有 Java + AI 混合栈实战经验：Spring AI / LangChain4j / LangGraph4j。"
+        },
+        {
+          "document_id": "JD_40802340416",
+          "title": "Agent/AI应用开发工程师",
+          "level": "preferred",
+          "evidence": "熟练掌握Python（优先）或Java，深入使用过LangChain、LlamaIndex、LangGraph、AutoGen、CrewAI等主流Agent开发框架"
+        },
+        {
+          "document_id": "JD_40873341614",
+          "title": "Agent全栈开发工程师",
+          "level": "mentioned",
+          "evidence": "维护和优化内部 Agent 集成框架，支持便捷对接 RL 训练框架及外部 Agent Scaffold（如 LangChain、OpenAI Agents SDK 等），降低研发接入成本"
+        },
+        {
+          "document_id": "JD_40741978506",
+          "title": "Agent工程化专家(047217)",
+          "level": "required",
+          "evidence": "、框架与工具链： 深度掌握 LangChain、LlamaIndex等主流Agent框架的源码与原理，有实际的二次开发或深度定制经验。"
+        },
+        {
+          "document_id": "JD_40918752512",
+          "title": "Agent工程师",
+          "level": "preferred",
+          "evidence": "使用过OpenAI API、Claude API、DeepSeek API、LangChain、LlamaIndex、n8n、Dify、Coze、FastAPI、Playwright、Selenium等工具。"
+        }
+      ]
+    },
+    {
+      "name": "计算机视觉",
+      "count": 1356,
+      "levels": {
+        "mentioned": 431,
+        "required": 723,
+        "preferred": 202
+      },
+      "examples": [
+        {
+          "document_id": "JD_40835740214",
+          "title": "2026-多模态VLA模型开发工程师",
+          "level": "mentioned",
+          "evidence": "3 运用目标检测、语义分割、三维重建等计算机视觉技术，持续优化VLA模型的感知与理解模块。"
+        },
+        {
+          "document_id": "JD_40835740214",
+          "title": "2026-多模态VLA模型开发工程师",
+          "level": "required",
+          "evidence": "熟练掌握Python，精通PyTorch/TensorFlow等至少一种主流深度学习框架。具备扎实的编程和软件工程能力。掌握目标检测、语义分割、三维重建等计算机视觉算法，并能将其用于机器人感知任务。"
+        },
+        {
+          "document_id": "JD_40834868814",
+          "title": "2026-终端AI开发工程师",
+          "level": "preferred",
+          "evidence": "具备计算机视觉、语音识别、tflite、OpenCV、YOLO 等技术调试经验优先。"
+        },
+        {
+          "document_id": "JD_40835739514",
+          "title": "2026-视觉感知模型工程师",
+          "level": "mentioned",
+          "evidence": "1 紧密跟踪计算机视觉（如YOLO系列、DETR系列模型）与多模态感知领域的前沿技术演进，评估其在机器人业务中的应用潜力。"
+        },
+        {
+          "document_id": "JD_40835739514",
+          "title": "2026-视觉感知模型工程师",
+          "level": "preferred",
+          "evidence": "本科及以上学历，计算机科学、电子工程、自动化、机器人、应用数学等相关专业。3年以上计算机视觉或机器人感知算法研发经验，有带领技术模块或独立负责完整项目经验者优先。"
+        },
+        {
+          "document_id": "JD_40835739514",
+          "title": "2026-视觉感知模型工程师",
+          "level": "required",
+          "evidence": "算法基础：扎实的机器学习、深度学习理论基础，熟悉计算机视觉核心领域（检测、跟踪、分割、Re-ID等）的经典与前沿算法。"
+        },
+        {
+          "document_id": "JD_40746734616",
+          "title": "2026校园招聘-算法工程师(004755)",
+          "level": "preferred",
+          "evidence": "具有算法模型研究、软件开发、计算机视觉（检测、跟踪、识别）和图像处理应用经验优先"
+        },
+        {
+          "document_id": "JD_40883575912",
+          "title": "26届校招-AI算法工程师(J10022)",
+          "level": "required",
+          "evidence": "对以下方向中的至少其中一个有研究或项目经验：具身智能、大模型、计算机视觉、自然语言处理、深度学习。"
+        }
+      ]
+    },
+    {
+      "name": "数据分析",
+      "count": 1334,
+      "levels": {
+        "required": 536,
+        "mentioned": 599,
+        "preferred": 199
+      },
+      "examples": [
+        {
+          "document_id": "JD_41016019704",
+          "title": "1191KY-模型算法岗",
+          "level": "required",
+          "evidence": "具备算法建模能力，熟练掌握回归分析、特征工程、聚类分类、时序预测、NLP文本挖掘、量化对比分析等算法，可独立搭建业务适配的数据分析、预测、评估模型，具备模型优化、调参、效果验证能力"
+        },
+        {
+          "document_id": "JD_41016019704",
+          "title": "1191KY-模型算法岗",
+          "level": "required",
+          "evidence": "工具与可视化能力，熟练使用数据分析可视化工具，可输出结构化、可视化的算法分析报告、竞品对比模型、趋势研判成果。"
+        },
+        {
+          "document_id": "JD_40939707415",
+          "title": "2026届-博士-AI/算法工程师-北京总部",
+          "level": "required",
+          "evidence": "熟悉数据分析、数据挖掘和流行的人工智能算法，包括开源人工智能原理和应用"
+        },
+        {
+          "document_id": "JD_40898713215",
+          "title": "2026届-硕士-AI开发人员-宁波",
+          "level": "mentioned",
+          "evidence": "负责具体项目（AI+医药）数据分析、算法/模型方案设计和流程逻辑的调研和研发"
+        },
+        {
+          "document_id": "JD_40898713215",
+          "title": "2026届-硕士-AI开发人员-宁波",
+          "level": "mentioned",
+          "evidence": "参与具体解决方案的数据分析、算法编写等工作"
+        },
+        {
+          "document_id": "JD_41014806304",
+          "title": "26届校招 AI算法工程师",
+          "level": "mentioned",
+          "evidence": "实现AI落地解决工厂实际需求，可能场景类型包括缺陷检测、数据分析、Agent开发等"
+        },
+        {
+          "document_id": "JD_40916354512",
+          "title": "AFM算法工程师",
+          "level": "mentioned",
+          "evidence": "负责系统性能验证与数据分析，包括精度，重复性，漂移，噪声等关键指标评估"
+        },
+        {
+          "document_id": "JD_40916354512",
+          "title": "AFM算法工程师",
+          "level": "preferred",
+          "evidence": "具备系统调试，信号分析或图像数据处理经验；熟悉 Python / MATLAB 等数据分析工具者优先；具备良好的跨团队沟通与问题分析能力。加分项"
+        }
+      ]
+    },
+    {
+      "name": "OpenCV",
+      "count": 1225,
+      "levels": {
+        "preferred": 167,
+        "required": 963,
+        "mentioned": 95
+      },
+      "examples": [
+        {
+          "document_id": "JD_40834868814",
+          "title": "2026-终端AI开发工程师",
+          "level": "preferred",
+          "evidence": "具备计算机视觉、语音识别、tflite、OpenCV、YOLO 等技术调试经验优先。"
+        },
+        {
+          "document_id": "JD_40834869914",
+          "title": "2026-终端AI系统架专家",
+          "level": "required",
+          "evidence": "熟练使用C/C++及相关调试工具，熟悉Python/Pytorch/mindspore/tflite/OpenCV/YOLO等常见AI技术"
+        },
+        {
+          "document_id": "JD_40939703215",
+          "title": "2026届-博士-视觉工程师-北京总部",
+          "level": "required",
+          "evidence": "具备C#+WPF或者WinForm等编程开发能力，熟悉VisionPro、Halcon、OpenCV等库的一种或多种"
+        },
+        {
+          "document_id": "JD_40827667308",
+          "title": "2D/3D视觉开发工程师",
+          "level": "required",
+          "evidence": "1 熟练使用OpenCV等视觉软件进行系统开发。"
+        },
+        {
+          "document_id": "JD_40827667308",
+          "title": "2D/3D视觉开发工程师",
+          "level": "required",
+          "evidence": "熟练使用OpenCV进行图像处理。"
+        },
+        {
+          "document_id": "JD_40801516516",
+          "title": "2D软件视觉算法工程师",
+          "level": "mentioned",
+          "evidence": "C++，Qt/VS，Python/Matlab，Halcon/Opencv/PCL/CGAL。"
+        },
+        {
+          "document_id": "JD_40801516516",
+          "title": "2D软件视觉算法工程师",
+          "level": "required",
+          "evidence": "熟悉常用2D处理算法库（Python，Halcon/Opencv/PCL/CGAL），并能将其转换为源码轻量级代码。"
+        },
+        {
+          "document_id": "JD_40886292113",
+          "title": "3D 视觉工程师（双目视觉方向）",
+          "level": "required",
+          "evidence": "熟练掌握C、C++、Python等常用编程语言，熟练使用 OpenCV、PCL、Open3D、Halcon 等库。"
+        }
+      ]
+    },
+    {
+      "name": "性能优化",
+      "count": 1188,
+      "levels": {
+        "mentioned": 788,
+        "required": 319,
+        "preferred": 81
+      },
+      "examples": [
+        {
+          "document_id": "JD_40756581406",
+          "title": ".NET AI软件开发工程师（朝九晚六+双休）",
+          "level": "mentioned",
+          "evidence": "基于.NET框架，负责桌面端与服务器端AI应用的开发、架构设计及性能优化。"
+        },
+        {
+          "document_id": "JD_40875487605",
+          "title": ".NET全栈开发工程师（偏AI）",
+          "level": "mentioned",
+          "evidence": "系统性能优化：利用 Redis、MQ、ES 等中间件解决高并发、分布式场景下的性能瓶颈，负责链路追踪、监控告警及系统稳定性保障。"
+        },
+        {
+          "document_id": "JD_41017012204",
+          "title": "1191L8-资深架构师（AI应用）",
+          "level": "mentioned",
+          "evidence": "研发质量及性能优化：构建和完善agentic ai实践流程与工具链，实现执行式智能体的开发、部署、监控与治理的全生命周期自动化管理，提升 agentic ai 研发与运维的质量、效率及研发合规工作。结合业务场景对性能(TTFT/TPOT/吞吐）的需求，不断系统性能，包括但不限于推理性能、执行链路优化、工具优化等。"
+        },
+        {
+          "document_id": "JD_40835740214",
+          "title": "2026-多模态VLA模型开发工程师",
+          "level": "mentioned",
+          "evidence": "3 协同硬件与控制工程师，完成从算法输出到机械臂关节轨迹/力矩指令的转化、实机部署、联调及性能优化，解决实际运行中的时序、精度与稳定性问题。"
+        },
+        {
+          "document_id": "JD_40835739514",
+          "title": "2026-视觉感知模型工程师",
+          "level": "mentioned",
+          "evidence": "1与机器人软件、硬件、控制系统及AI团队紧密协作，完成感知算法在真实机器人平台上的集成、调试、性能优化与长期维护。"
+        },
+        {
+          "document_id": "JD_40883575912",
+          "title": "26届校招-AI算法工程师(J10022)",
+          "level": "mentioned",
+          "evidence": "模型在线实时服务的搭建和性能优化，实现具身智能模型的高帧率和低延时的需求。"
+        },
+        {
+          "document_id": "JD_40873228603",
+          "title": "3DGS算法工程师（工程向）",
+          "level": "required",
+          "evidence": "有算法产品化、系统性能优化或大规模数据处理经验"
+        },
+        {
+          "document_id": "JD_40842931310",
+          "title": "3D图像渲染开发工程师",
+          "level": "required",
+          "evidence": "熟悉3D渲染管线、着色器编程（GLSL/HLSL），有图形性能优化经验"
+        }
+      ]
+    },
+    {
+      "name": "AI Agent",
+      "count": 1131,
+      "levels": {
+        "mentioned": 608,
+        "preferred": 175,
+        "required": 348
+      },
+      "examples": [
+        {
+          "document_id": "JD_40865562105",
+          "title": "3D生成平台架构师（面向智能制造/CNC方向）",
+          "level": "mentioned",
+          "evidence": "AI Agent 与参数化建模集成： 探索并落地基于大语言模型（如 Qwen, Claude 等）的 CAD 代码生成（如 OpenSCAD）方案，建立“自然语言/图片 -＞ 参数化 3D 模型 -＞ 制造检查”的完整通路。"
+        },
+        {
+          "document_id": "JD_40815434011",
+          "title": "Agent 算法工程师（通用）",
+          "level": "preferred",
+          "evidence": "加分项：在 ICLR/ICML/NeurIPS/ACL/EMNLP 等顶会发表 LLM 或 Agent 相关论文；有开源项目贡献或独立 AI Agent 开发经验；熟悉强化学习（RL）优先"
+        },
+        {
+          "document_id": "JD_40802340416",
+          "title": "Agent/AI应用开发工程师",
+          "level": "mentioned",
+          "evidence": "持续跟踪大语言模型（LLM）、AI Agent、RAG、知识图谱、多模态理解等前沿技术动态，将最新研究成果快速转化为可落地的产品能力"
+        },
+        {
+          "document_id": "JD_40802340416",
+          "title": "Agent/AI应用开发工程师",
+          "level": "preferred",
+          "evidence": "有开源AI Agent/知识图谱/RAG相关项目或GitHub活跃贡献"
+        },
+        {
+          "document_id": "JD_40873341614",
+          "title": "Agent全栈开发工程师",
+          "level": "mentioned",
+          "evidence": "维护和优化内部 Agent 集成框架，支持便捷对接 RL 训练框架及外部 Agent Scaffold（如 LangChain、OpenAI Agents SDK 等），降低研发接入成本"
+        },
+        {
+          "document_id": "JD_40918752512",
+          "title": "Agent工程师",
+          "level": "mentioned",
+          "evidence": "负责公司AI Agent、Codex自动化工作流的搭建与优化，用AI提升网站询盘、内容生产、数据分析和业务运营效率。"
+        },
+        {
+          "document_id": "JD_40868977309",
+          "title": "Agent工程师",
+          "level": "required",
+          "evidence": "熟悉AI Agent系统架构，有Agent Runtime、工具调用或任务规划模块的开发经验。"
+        },
+        {
+          "document_id": "JD_40820091907",
+          "title": "Agent平台开发架构师",
+          "level": "mentioned",
+          "evidence": "建立技术规范、研发流程和质量标准，持续关注 AI Agent 领域前沿技术，推动架构迭代升级。"
+        }
+      ]
+    },
+    {
+      "name": "目标检测",
+      "count": 1107,
+      "levels": {
+        "mentioned": 485,
+        "required": 492,
+        "preferred": 130
+      },
+      "examples": [
+        {
+          "document_id": "JD_40835740214",
+          "title": "2026-多模态VLA模型开发工程师",
+          "level": "mentioned",
+          "evidence": "3 运用目标检测、语义分割、三维重建等计算机视觉技术，持续优化VLA模型的感知与理解模块。"
+        },
+        {
+          "document_id": "JD_40835740214",
+          "title": "2026-多模态VLA模型开发工程师",
+          "level": "required",
+          "evidence": "熟练掌握Python，精通PyTorch/TensorFlow等至少一种主流深度学习框架。具备扎实的编程和软件工程能力。掌握目标检测、语义分割、三维重建等计算机视觉算法，并能将其用于机器人感知任务。"
+        },
+        {
+          "document_id": "JD_40835739514",
+          "title": "2026-视觉感知模型工程师",
+          "level": "mentioned",
+          "evidence": "1 负责机器人视觉感知核心算法的研究、开发与迭代，涵盖基于图像/点云的目标检测、识别、跟踪、分割等任务。"
+        },
+        {
+          "document_id": "JD_40835739514",
+          "title": "2026-视觉感知模型工程师",
+          "level": "preferred",
+          "evidence": "技术广度：熟悉目标检测、多目标跟踪（MOT）领域的主流架构（如YOLO系列、DETR系列、ByteTrack等），并对其演进有深入理解。对视觉-语言模型（VLM）、多模态感知、传感器融合有研究或项目经验者优先。"
+        },
+        {
+          "document_id": "JD_40883575912",
+          "title": "26届校招-AI算法工程师(J10022)",
+          "level": "mentioned",
+          "evidence": "负责基于Camera/RGBD/Lidar等机器人传感器的深度学习感知算法开发和优化。包括目标检测、分割、多目标跟踪、深度估计、特征点提取与匹配等。"
+        },
+        {
+          "document_id": "JD_40848427601",
+          "title": "3D机器视觉算法研发工程师（不招应届生）",
+          "level": "required",
+          "evidence": "熟悉yolos，Tensorflow等开源深度学习框架以及目标检测算法，并且在项目中运用"
+        },
+        {
+          "document_id": "JD_40880930013",
+          "title": "3D点云算法工程师",
+          "level": "preferred",
+          "evidence": "熟悉或精通各类3D目标检测算法、点云数据处理算法（PointPillars、VoteNet、PointRCNN、CenterPoint等）、BEV感知算法及其标注工具，并有对应的实际项目经验，有上述算法的嵌入式部署、轻量化与量化经验优先"
+        },
+        {
+          "document_id": "JD_40880930013",
+          "title": "3D点云算法工程师",
+          "level": "required",
+          "evidence": "熟悉2D目标检测算法，如RCNN系列、YOLO系列、SSD系列等算法"
+        }
+      ]
+    },
+    {
+      "name": "强化学习",
+      "count": 1053,
+      "levels": {
+        "mentioned": 467,
+        "required": 416,
+        "preferred": 170
+      },
+      "examples": [
+        {
+          "document_id": "JD_40835740214",
+          "title": "2026-多模态VLA模型开发工程师",
+          "level": "mentioned",
+          "evidence": "2 优化模仿学习、动作生成及强化学习算法，提升模型在复杂任务中的泛化能力、样本效率与长时序规划能力。"
+        },
+        {
+          "document_id": "JD_40835740214",
+          "title": "2026-多模态VLA模型开发工程师",
+          "level": "mentioned",
+          "evidence": "1 紧密跟踪机器人操作、多模态模型、模仿与强化学习等领域的前沿进展，特别是与机器人本体控制、灵巧操作相关的技术，评估并将其创新性方法应用于实际业务场景。"
+        },
+        {
+          "document_id": "JD_40835740214",
+          "title": "2026-多模态VLA模型开发工程师",
+          "level": "required",
+          "evidence": "深刻理解并具备以下至少两个领域的研发经验：视觉-语言多模态模型（VLM/VLA）、模仿学习与强化学习、机器人动作生成与规划。熟悉行为克隆、扩散策略、离线/在线强化学习（如PPO， SAC）等算法，并有实际应用经验。"
+        },
+        {
+          "document_id": "JD_40834751814",
+          "title": "2026-终端通信算法高级工程师",
+          "level": "required",
+          "evidence": "AI与通信融合：具备将机器学习（如深度学习、强化学习）应用于通信问题（如接收机设计、资源分配）的实际项目经验。"
+        },
+        {
+          "document_id": "JD_40834751914",
+          "title": "2026-终端通信算法高级工程师",
+          "level": "required",
+          "evidence": "AI与通信融合：具备将机器学习（如深度学习、强化学习）应用于通信问题（如接收机设计、资源分配）的实际项目经验。"
+        },
+        {
+          "document_id": "JD_40707336806",
+          "title": "2026年神经网络建模算法的毕业硕士生实习岗位",
+          "level": "required",
+          "evidence": "掌握监督/无监督/强化学习原理，熟悉CNN、RNN、Transformer等主流模型架构。"
+        },
+        {
+          "document_id": "JD_40883575912",
+          "title": "26届校招-AI算法工程师(J10022)",
+          "level": "mentioned",
+          "evidence": "研发适用于多自由度机器人、双足、四足仿生机器人决策规划的深度强化学习算法。"
+        },
+        {
+          "document_id": "JD_40883575912",
+          "title": "26届校招-AI算法工程师(J10022)",
+          "level": "mentioned",
+          "evidence": "负责深度强化学习算法的模型开发、调试与实际机器人验证。"
+        }
+      ]
+    },
+    {
+      "name": "Transformer",
+      "count": 1043,
+      "levels": {
+        "required": 779,
+        "mentioned": 169,
+        "preferred": 95
+      },
+      "examples": [
+        {
+          "document_id": "JD_40951209315",
+          "title": "2026届-博士-体外生物信息学数据工程师-北京总部",
+          "level": "required",
+          "evidence": "熟练使⽤ PyTorch 及 PyTorch Geometric (PyG)，具备⼤语⾔模型 （LLM/Transformer）及图神经⽹络（GNN）的实际开发经验。"
+        },
+        {
+          "document_id": "JD_40707336806",
+          "title": "2026年神经网络建模算法的毕业硕士生实习岗位",
+          "level": "mentioned",
+          "evidence": "线性代数：矩阵运算、特征分解等是理解神经网络架构（如Transformer）的基石。"
+        },
+        {
+          "document_id": "JD_40707336806",
+          "title": "2026年神经网络建模算法的毕业硕士生实习岗位",
+          "level": "required",
+          "evidence": "掌握监督/无监督/强化学习原理，熟悉CNN、RNN、Transformer等主流模型架构。"
+        },
+        {
+          "document_id": "JD_40866235010",
+          "title": "2026应届生补录：算法/数学/机械设计/电气方向应届生",
+          "level": "required",
+          "evidence": "扎实的数学与数据结构基础，精通经典机器学习算法（线性回归、决策树、聚类、RNN/LSTM、Transformer）及工业场景下的模型调优技巧。"
+        },
+        {
+          "document_id": "JD_41014806304",
+          "title": "26届校招 AI算法工程师",
+          "level": "required",
+          "evidence": "熟悉python、机器学习、深度学习、Transformer、LLM微调等技术"
+        },
+        {
+          "document_id": "JD_40880930013",
+          "title": "3D点云算法工程师",
+          "level": "required",
+          "evidence": "熟悉深度学习主流网络，如CNN、RNN、Transformer等方法，熟练使用各种深度学习框架，如Pytorch或TensorFlow，其余框架也可（一种或多种）"
+        },
+        {
+          "document_id": "JD_40928814715",
+          "title": "A3算法工程师（6）",
+          "level": "preferred",
+          "evidence": "熟悉主流开源工具和框架(如LangChain,Hugging Face Transformers等)，能灵活运用工具解决实际技术问题；了解大模型微调，量化，部署相关技术者优先"
+        },
+        {
+          "document_id": "JD_40892719412",
+          "title": "Agent开发",
+          "level": "required",
+          "evidence": "精通LLM与Agent开发，熟悉Transformer、BERT、GPT、LLaMA等模型架构，具备微调、部署与优化经验"
+        }
+      ]
+    },
+    {
+      "name": "控制算法",
+      "count": 1025,
+      "levels": {
+        "mentioned": 602,
+        "required": 303,
+        "preferred": 120
+      },
+      "examples": [
+        {
+          "document_id": "JD_40854813111",
+          "title": "(苏州）电机控制算法工程师",
+          "level": "mentioned",
+          "evidence": "负责控制器控制算法开发与优化，确保控制系统高稳定性和鲁棒性"
+        },
+        {
+          "document_id": "JD_40854813111",
+          "title": "(苏州）电机控制算法工程师",
+          "level": "required",
+          "evidence": "熟悉matlab/simulink工具的使用，能建立电机或者悬浮等控制算法模型并应用到实际某款嵌入式设备"
+        },
+        {
+          "document_id": "JD_40854813111",
+          "title": "(苏州）电机控制算法工程师",
+          "level": "required",
+          "evidence": "熟悉电机foc 、sensorless 等主流电机控制算法，对电机震动抑制、噪声有一定研究"
+        },
+        {
+          "document_id": "JD_40582747815",
+          "title": "ADAS控制算法工程师",
+          "level": "mentioned",
+          "evidence": "负责ACC、AEB、LKA、TJA系统控制策略和控制算法开发及实车实现"
+        },
+        {
+          "document_id": "JD_40582747815",
+          "title": "ADAS控制算法工程师",
+          "level": "required",
+          "evidence": "熟练掌握常用控制算法如PID、LQR等，有一定无人车、机器人决策及轨迹规划的经验"
+        },
+        {
+          "document_id": "JD_40854555911",
+          "title": "AI for Fusion 高级工程师（托卡马克自动控制运行方向）",
+          "level": "mentioned",
+          "evidence": "构建基于强化学习（RL）与模型预测控制（MPC） 的等离子体轨迹跟踪与形状控制算法"
+        },
+        {
+          "document_id": "JD_40854555911",
+          "title": "AI for Fusion 高级工程师（托卡马克自动控制运行方向）",
+          "level": "mentioned",
+          "evidence": "在实验装置上进行控制算法在线测试，收集反馈数据迭代优化"
+        },
+        {
+          "document_id": "JD_40838541205",
+          "title": "AI 大模型算法工程师",
+          "level": "mentioned",
+          "evidence": "AI/NLP/图像/推荐/运筹/运动控制算法工程师"
+        }
+      ]
+    },
+    {
+      "name": "算法设计",
+      "count": 988,
+      "levels": {
+        "mentioned": 619,
+        "required": 311,
+        "preferred": 58
+      },
+      "examples": [
+        {
+          "document_id": "JD_40854813111",
+          "title": "(苏州）电机控制算法工程师",
+          "level": "mentioned",
+          "evidence": "负责控制器整体算法设计，与软件和调试部门紧密合作，保证软件质量和产品稳定运行"
+        },
+        {
+          "document_id": "JD_40854813111",
+          "title": "(苏州）电机控制算法工程师",
+          "level": "required",
+          "evidence": "工作经验:具备3-5年以上算法设计、工程落地等相关经验。"
+        },
+        {
+          "document_id": "JD_40854813111",
+          "title": "(苏州）电机控制算法工程师",
+          "level": "required",
+          "evidence": "熟悉基本硬件驱动电路、嵌入式开发及常规测试设备使用，熟悉控制器软件算法设计流程，精通自动控制原理、数字信号处理等专业知识"
+        },
+        {
+          "document_id": "JD_40834751814",
+          "title": "2026-终端通信算法高级工程师",
+          "level": "required",
+          "evidence": "经验：3年以上通信算法开发经验，有主导或核心参与完整通信系统算法设计的成功经验。"
+        },
+        {
+          "document_id": "JD_40834751814",
+          "title": "2026-终端通信算法高级工程师",
+          "level": "required",
+          "evidence": "特殊场景经验：拥有高移动性、低功耗、高可靠低时延通信等特殊场景的算法设计经验。"
+        },
+        {
+          "document_id": "JD_40834751814",
+          "title": "2026-终端通信算法高级工程师",
+          "level": "required",
+          "evidence": "良好的团队协作和沟通能力，能够清晰地阐述算法设计和性能结果。"
+        },
+        {
+          "document_id": "JD_40834751914",
+          "title": "2026-终端通信算法高级工程师",
+          "level": "required",
+          "evidence": "经验：3年以上通信算法开发经验，有主导或核心参与完整通信系统算法设计的成功经验。"
+        },
+        {
+          "document_id": "JD_40834751914",
+          "title": "2026-终端通信算法高级工程师",
+          "level": "required",
+          "evidence": "特殊场景经验：拥有高移动性、低功耗、高可靠低时延通信等特殊场景的算法设计经验。"
+        }
+      ]
+    },
+    {
+      "name": "大语言模型",
+      "count": 966,
+      "levels": {
+        "mentioned": 462,
+        "required": 378,
+        "preferred": 126
+      },
+      "examples": [
+        {
+          "document_id": "JD_40875487605",
+          "title": ".NET全栈开发工程师（偏AI）",
+          "level": "mentioned",
+          "evidence": "前沿技术融合：深度结合 .NET Core 高性能后端与 Vue 前端，探索 LLM（大语言模型）在企业级应用中的落地。"
+        },
+        {
+          "document_id": "JD_40834869914",
+          "title": "2026-终端AI系统架专家",
+          "level": "required",
+          "evidence": "熟悉NLP、CV、RL相关算法技术，掌握大语言模型的算法原理、微调、Prompt、向量数据库等技术"
+        },
+        {
+          "document_id": "JD_40785865414",
+          "title": "2026届-高级算法工程师（大模型） (MJ003971)",
+          "level": "mentioned",
+          "evidence": "负责行业大语言模型算法研发，并实现模型在金融科技、城市智能场景的应用落地"
+        },
+        {
+          "document_id": "JD_40865562105",
+          "title": "3D生成平台架构师（面向智能制造/CNC方向）",
+          "level": "mentioned",
+          "evidence": "AI Agent 与参数化建模集成： 探索并落地基于大语言模型（如 Qwen, Claude 等）的 CAD 代码生成（如 OpenSCAD）方案，建立“自然语言/图片 -＞ 参数化 3D 模型 -＞ 制造检查”的完整通路。"
+        },
+        {
+          "document_id": "JD_40802340416",
+          "title": "Agent/AI应用开发工程师",
+          "level": "mentioned",
+          "evidence": "持续跟踪大语言模型（LLM）、AI Agent、RAG、知识图谱、多模态理解等前沿技术动态，将最新研究成果快速转化为可落地的产品能力"
+        },
+        {
+          "document_id": "JD_40873341614",
+          "title": "Agent全栈开发工程师",
+          "level": "mentioned",
+          "evidence": "对大语言模型（LLM）有系统性认知，理解 Context Window、Token 机制等核心概念"
+        },
+        {
+          "document_id": "JD_40821213716",
+          "title": "agent平台开发工程师",
+          "level": "preferred",
+          "evidence": "了解大语言模型（LLM）效果概念，如智能体（Agent）开发、工具/函数调用等优先"
+        },
+        {
+          "document_id": "JD_40848346911",
+          "title": "Agent应用开发工程师",
+          "level": "mentioned",
+          "evidence": "基于大语言模型（LLM）开发 Agent 应用，设计并实现多步骤任务工作流（Workflow）。"
+        }
+      ]
+    },
+    {
+      "name": "Docker",
+      "count": 906,
+      "levels": {
+        "mentioned": 97,
+        "required": 612,
+        "preferred": 197
+      },
+      "examples": [
+        {
+          "document_id": "JD_40875487605",
+          "title": ".NET全栈开发工程师（偏AI）",
+          "level": "mentioned",
+          "evidence": "流程建设，利用 Docker/K8s 进行容器化部署，提升交付效率。"
+        },
+        {
+          "document_id": "JD_40875487605",
+          "title": ".NET全栈开发工程师（偏AI）",
+          "level": "required",
+          "evidence": "工程素养：具备强烈的代码安全意识，擅长问题排查与性能调优；熟悉 Docker 虚拟化及 Jenkins/GitLab CI 等 DevOps 工具链。"
+        },
+        {
+          "document_id": "JD_40865562105",
+          "title": "3D生成平台架构师（面向智能制造/CNC方向）",
+          "level": "required",
+          "evidence": "基础设施底子硬： 熟练掌握 Kubernetes、Docker，深入理解微服务架构、消息队列（如 RabbitMQ/Kafka）以及基于 KEDA 等组件的弹性伸缩策略。"
+        },
+        {
+          "document_id": "JD_40917929108",
+          "title": "Agent全栈应用开发工程师",
+          "level": "required",
+          "evidence": "• 具备Docker容器化部署经验"
+        },
+        {
+          "document_id": "JD_40873341614",
+          "title": "Agent全栈开发工程师",
+          "level": "required",
+          "evidence": "熟悉 Docker、Kubernetes 等容器技术，有容器化服务部署与运维经验"
+        },
+        {
+          "document_id": "JD_40859154601",
+          "title": "Agent工程师",
+          "level": "required",
+          "evidence": "掌握Nginx、Docker、K8S的使用"
+        },
+        {
+          "document_id": "JD_40932690915",
+          "title": "Agent应用开发工程师",
+          "level": "mentioned",
+          "evidence": "【1】主导 AI Agent 应用的容器化（Docker/K8s）部署、微服务架构设计，完成高并发场景下的性能优化，确保系统稳定低延迟运行。"
+        },
+        {
+          "document_id": "JD_40892719412",
+          "title": "Agent开发",
+          "level": "required",
+          "evidence": "具备算法工程化能力，熟悉Docker、Kubernetes、MLOps、HPC等部署与运维工具"
+        }
+      ]
+    },
+    {
+      "name": "matlab",
+      "count": 890,
+      "levels": {
+        "required": 668,
+        "mentioned": 129,
+        "preferred": 93
+      },
+      "examples": [
+        {
+          "document_id": "JD_40854813111",
+          "title": "(苏州）电机控制算法工程师",
+          "level": "required",
+          "evidence": "熟悉matlab/simulink工具的使用，能建立电机或者悬浮等控制算法模型并应用到实际某款嵌入式设备"
+        },
+        {
+          "document_id": "JD_40834751814",
+          "title": "2026-终端通信算法高级工程师",
+          "level": "mentioned",
+          "evidence": "利用MATLAB、Python或C++等工具构建高精度链路级和系统级仿真平台，对算法性能进行仿真、验证与迭代优化，为算法选型和芯片设计提供理论依据。"
+        },
+        {
+          "document_id": "JD_40834751814",
+          "title": "2026-终端通信算法高级工程师",
+          "level": "required",
+          "evidence": "精通MATLAB或Python进行算法建模和仿真。"
+        },
+        {
+          "document_id": "JD_40834751914",
+          "title": "2026-终端通信算法高级工程师",
+          "level": "mentioned",
+          "evidence": "利用MATLAB、Python或C++等工具构建高精度链路级和系统级仿真平台，对算法性能进行仿真、验证与迭代优化，为算法选型和芯片设计提供理论依据。"
+        },
+        {
+          "document_id": "JD_40834751914",
+          "title": "2026-终端通信算法高级工程师",
+          "level": "required",
+          "evidence": "精通MATLAB或Python进行算法建模和仿真。"
+        },
+        {
+          "document_id": "JD_40939707415",
+          "title": "2026届-博士-AI/算法工程师-北京总部",
+          "level": "required",
+          "evidence": "熟悉编程语言，如Python、C++、C#、R、MATLAB、Java 和 SQL等"
+        },
+        {
+          "document_id": "JD_40801516516",
+          "title": "2D软件视觉算法工程师",
+          "level": "mentioned",
+          "evidence": "C++，Qt/VS，Python/Matlab，Halcon/Opencv/PCL/CGAL。"
+        },
+        {
+          "document_id": "JD_40876710403",
+          "title": "6G星载再生载荷关键技术与和系统研究通信算法系统工程师",
+          "level": "mentioned",
+          "evidence": "• 使用Matlab/C语言等工具进行通信算法仿真、系统仿真及性能评估。"
+        }
+      ]
+    },
+    {
+      "name": "ROS",
+      "count": 852,
+      "levels": {
+        "mentioned": 168,
+        "required": 496,
+        "preferred": 188
+      },
+      "examples": [
+        {
+          "document_id": "JD_40835740214",
+          "title": "2026-多模态VLA模型开发工程师",
+          "level": "mentioned",
+          "evidence": "2 负责算法在机器人系统的集成、部署与调试，核心包括与机械臂等执行器的深度对接：在ROS/ROS2框架下实现算法模块与机械臂控制器（如MoveIt、厂商SDK）的可靠通信与指令交互。"
+        },
+        {
+          "document_id": "JD_40835740214",
+          "title": "2026-多模态VLA模型开发工程师",
+          "level": "required",
+          "evidence": "熟悉机器人操作系统ROS/ROS2，有在仿真环境（如Isaac Sim, Gazebo）和真实机器人平台进行算法开发、部署与调试的实际经验。"
+        },
+        {
+          "document_id": "JD_40835740214",
+          "title": "2026-多模态VLA模型开发工程师",
+          "level": "preferred",
+          "evidence": "在机器人会议（如RSS， CoRL， ICRA， IROS）或人工智能顶级会议（如NeurIPS， ICML， CVPR）上有相关论文发表者优先。"
+        },
+        {
+          "document_id": "JD_40835739514",
+          "title": "2026-视觉感知模型工程师",
+          "level": "preferred",
+          "evidence": "在会议（CVPR、ICCV、ECCV、IROS、ICRA等）或期刊上发表过相关论文。"
+        },
+        {
+          "document_id": "JD_40827667308",
+          "title": "2D/3D视觉开发工程师",
+          "level": "required",
+          "evidence": "熟练使用C/C++编程，熟练使用linux和ros操作系统进行开发"
+        },
+        {
+          "document_id": "JD_40859412005",
+          "title": "3D SLAM & 导航算法工程师（偏工程落地/导航融合方向）",
+          "level": "required",
+          "evidence": "熟练使用C/C++，熟悉ROS开发环境，可独立完成算法工程化封装、接口开发与调试。"
+        },
+        {
+          "document_id": "JD_40870626505",
+          "title": "3D SLAM导航算法工程师",
+          "level": "required",
+          "evidence": "熟练使用C/C++，熟悉ROS开发环境，可独立完成算法工程化封装、接口开发与调试。"
+        },
+        {
+          "document_id": "JD_40886292113",
+          "title": "3D 视觉工程师（双目视觉方向）",
+          "level": "preferred",
+          "evidence": "• 有双目相机量产/自研经验，熟悉ROS/ROS2"
+        }
+      ]
+    },
+    {
+      "name": "Go",
+      "count": 789,
+      "levels": {
+        "required": 561,
+        "preferred": 120,
+        "mentioned": 108
+      },
+      "examples": [
+        {
+          "document_id": "JD_40853946411",
+          "title": "0991A4-agent开发工程师",
+          "level": "required",
+          "evidence": "精通Python，且至少精通Go/Java/Rust/C++/TypeScript中的一门"
+        },
+        {
+          "document_id": "JD_40853946411",
+          "title": "0991A4-agent开发工程师",
+          "level": "required",
+          "evidence": "能根据场景选型：Python用于模型集成，Go/Java用于高并发运行时，TS用于前端交互"
+        },
+        {
+          "document_id": "JD_40554183704",
+          "title": "3DGS SLAM算法工程师",
+          "level": "required",
+          "evidence": "熟悉常见的激光SLAM开源项目如LeGO-LOAM、LIO-SAM、fast-lio2等，有源码阅读和复现经验"
+        },
+        {
+          "document_id": "JD_40866135313",
+          "title": "3d激光SLAM算法工程师 (接受应届)",
+          "level": "required",
+          "evidence": "熟练掌握Cartographer、LOAM、Lego-LOAM、LIO-SAM、LVI-SAM等激光SLAM相关算法。"
+        },
+        {
+          "document_id": "JD_40865562105",
+          "title": "3D生成平台架构师（面向智能制造/CNC方向）",
+          "level": "required",
+          "evidence": "编程语言： 精通 Python 与 Go/C++，能根据不同模块（AI 调度用 Python，高并发与底层性能优化用 Go/C++）灵活选择技术栈。"
+        },
+        {
+          "document_id": "JD_40830080005",
+          "title": "ACM竞赛 普本即可 /java/算法/python/C++软件通用岗位",
+          "level": "required",
+          "evidence": "热爱编程，基础扎实，熟练掌握但不限于C/C++，JAVA，python，GO等编程语言中的一种或几种。"
+        },
+        {
+          "document_id": "JD_40868977309",
+          "title": "Agent工程师",
+          "level": "required",
+          "evidence": "掌握至少一种主流后端开发语言（如Python/Java/Go），熟悉微服务架构与分布式系统设计。"
+        },
+        {
+          "document_id": "JD_40821213716",
+          "title": "agent平台开发工程师",
+          "level": "required",
+          "evidence": "熟练使用Python/Golang/Java进行后端开发，掌握常见工程实践（代码规范、单元/集成测试、性能分析与优化）"
+        }
+      ]
+    },
+    {
+      "name": "GPT",
+      "count": 785,
+      "levels": {
+        "required": 489,
+        "mentioned": 167,
+        "preferred": 129
+      },
+      "examples": [
+        {
+          "document_id": "JD_40756581406",
+          "title": ".NET AI软件开发工程师（朝九晚六+双休）",
+          "level": "required",
+          "evidence": "了解AI工作原理，熟悉GPT、文心一言、通义千问等常见大模型；熟悉操作系统、计算机网络等底层原理。"
+        },
+        {
+          "document_id": "JD_40785865414",
+          "title": "2026届-高级算法工程师（大模型） (MJ003971)",
+          "level": "mentioned",
+          "evidence": "对NLP主流大模型如GPT3/chatGPT/T5/LLaMA/GLM/千问/百川等的原理和差异有深入的理解"
+        },
+        {
+          "document_id": "JD_40707336806",
+          "title": "2026年神经网络建模算法的毕业硕士生实习岗位",
+          "level": "mentioned",
+          "evidence": "深入理解大模型（如GPT、BERT）的设计思想与训练机制（如预训练、微调、RLHF）。"
+        },
+        {
+          "document_id": "JD_40802340416",
+          "title": "Agent/AI应用开发工程师",
+          "level": "required",
+          "evidence": "3年以上AI应用开发经验，至少主导或核心参与过1个以上AI智能体/Agent落地项目（如AutoGPT类自主Agent、行业垂直Agent、虚拟助手、企业级知识助手等）"
+        },
+        {
+          "document_id": "JD_40917929108",
+          "title": "Agent全栈应用开发工程师",
+          "level": "mentioned",
+          "evidence": "l 使用过ChatGPT / Claude / Copilot / DeepSeek等AI工具"
+        },
+        {
+          "document_id": "JD_40918752512",
+          "title": "Agent工程师",
+          "level": "mentioned",
+          "evidence": "使用Codex、ChatGPT、Claude、DeepSeek、Cursor等AI工具，辅助完成脚本开发、数据清洗、批量内容生成、网页结构优化、运营报表生成等工作。"
+        },
+        {
+          "document_id": "JD_40918752512",
+          "title": "Agent工程师",
+          "level": "preferred",
+          "evidence": "熟练使用或深入了解Codex、ChatGPT、Claude、DeepSeek、Cursor等AI编程或大模型工具，有实际项目经验优先。"
+        },
+        {
+          "document_id": "JD_40932690915",
+          "title": "Agent应用开发工程师",
+          "level": "mentioned",
+          "evidence": "【1】跟进 AI Agent 前沿技术（如 MetaGPT、BabyAGI 等新范式），结合业务场景完成技术验证（PoC），将前沿技术转化为实际产品功能。"
+        }
+      ]
+    },
+    {
+      "name": "SQL",
+      "count": 785,
+      "levels": {
+        "preferred": 104,
+        "required": 562,
+        "mentioned": 119
+      },
+      "examples": [
+        {
+          "document_id": "JD_41016019704",
+          "title": "1191KY-模型算法岗",
+          "level": "preferred",
+          "evidence": "具备数据处理能力，熟练使用Python、SQL进行海量多源数据清洗、关联、挖掘、分析，熟悉Pandas、Numpy、Scikit-learn等主流算法工具库，具备医疗、保险多维度异构数据处理经验优先"
+        },
+        {
+          "document_id": "JD_40939707415",
+          "title": "2026届-博士-AI/算法工程师-北京总部",
+          "level": "required",
+          "evidence": "熟悉编程语言，如Python、C++、C#、R、MATLAB、Java 和 SQL等"
+        },
+        {
+          "document_id": "JD_40939707415",
+          "title": "2026届-博士-AI/算法工程师-北京总部",
+          "level": "required",
+          "evidence": "了解深度学习，熟悉数据库(RDBMS)，如MySQL,PostgreSQL,MS SQL, NoSQL等。"
+        },
+        {
+          "document_id": "JD_40898713215",
+          "title": "2026届-硕士-AI开发人员-宁波",
+          "level": "required",
+          "evidence": "了解和熟练使用主流数据库和SQL，对大数据架构有一定程度的理解"
+        },
+        {
+          "document_id": "JD_40873073410",
+          "title": "Agent 应用工程师（智慧电力方向）",
+          "level": "required",
+          "evidence": "数据库基础扎实：能看懂 EXPLAIN、能设计合理索引、能处理慢 SQL——因为 Text2SQL 是我们的核心场景之一。"
+        },
+        {
+          "document_id": "JD_40873073410",
+          "title": "Agent 应用工程师（智慧电力方向）",
+          "level": "preferred",
+          "evidence": "有 GraphRAG / Text2SQL / 多模态（表格/图像/时序） 任一方向的深度实践。"
+        },
+        {
+          "document_id": "JD_40856356609",
+          "title": "Agent全栈工程师",
+          "level": "mentioned",
+          "evidence": "设计与实现 Tools 框架/工具协议：Search、Sandbox（代码/SQL/脚本执行，含隔离）、HTTP/API 调用、数据库/业务系统连接器等；完善超时、重试、幂等、降级与回退策略。"
+        },
+        {
+          "document_id": "JD_40860468109",
+          "title": "Agent应用开发工程师（成都）",
+          "level": "mentioned",
+          "evidence": "负责 AI Agent 应⽤端到端交付，覆盖 RAG 知识库、NL2SQL、多轮对话、⾃动化⼯作流、⼈机协同等典型场景•"
+        }
+      ]
+    },
+    {
+      "name": "Git",
+      "count": 754,
+      "levels": {
+        "required": 522,
+        "preferred": 142,
+        "mentioned": 90
+      },
+      "examples": [
+        {
+          "document_id": "JD_40875487605",
+          "title": ".NET全栈开发工程师（偏AI）",
+          "level": "required",
+          "evidence": "工程素养：具备强烈的代码安全意识，擅长问题排查与性能调优；熟悉 Docker 虚拟化及 Jenkins/GitLab CI 等 DevOps 工具链。"
+        },
+        {
+          "document_id": "JD_40859601910",
+          "title": "17k具身大模型数据工程师（线上面试）",
+          "level": "preferred",
+          "evidence": "或版本管理工具（如Git,DVC）。"
+        },
+        {
+          "document_id": "JD_40801516516",
+          "title": "2D软件视觉算法工程师",
+          "level": "required",
+          "evidence": "熟悉shell脚本、批处理文件、svn/git管理工具。"
+        },
+        {
+          "document_id": "JD_40946718308",
+          "title": "3d算法工程师",
+          "level": "required",
+          "evidence": "熟悉常用3D视觉算法，熟练使用Visual Studio、CLion等IDE，Git、tortoise SVN等代码管理工具。"
+        },
+        {
+          "document_id": "JD_40773530201",
+          "title": "3d视觉算法工程师",
+          "level": "required",
+          "evidence": "具备扎实的软件工程基础，熟悉Linux开发环境、Git版本控制和CI/CD流程。"
+        },
+        {
+          "document_id": "JD_40802340416",
+          "title": "Agent/AI应用开发工程师",
+          "level": "preferred",
+          "evidence": "有开源AI Agent/知识图谱/RAG相关项目或GitHub活跃贡献"
+        },
+        {
+          "document_id": "JD_40873341614",
+          "title": "Agent全栈开发工程师",
+          "level": "required",
+          "evidence": "具备良好的代码规范意识，熟悉 Git 工作流、CI/CD、代码审查等工程实践。"
+        },
+        {
+          "document_id": "JD_40918752512",
+          "title": "Agent工程师",
+          "level": "preferred",
+          "evidence": "有GitHub、个人项目、自动化脚本、Agent Demo或可展示案例。"
+        }
+      ]
+    },
+    {
+      "name": "模型部署",
+      "count": 678,
+      "levels": {
+        "mentioned": 271,
+        "required": 264,
+        "preferred": 143
+      },
+      "examples": [
+        {
+          "document_id": "JD_40785865414",
+          "title": "2026届-高级算法工程师（大模型） (MJ003971)",
+          "level": "mentioned",
+          "evidence": "负责研究和改进LLM算法的数据标注、模型调优、模型部署，以提高其性能和效率"
+        },
+        {
+          "document_id": "JD_40866235010",
+          "title": "2026应届生补录：算法/数学/机械设计/电气方向应届生",
+          "level": "required",
+          "evidence": "熟练操作 Linux 环境，具备深度学习模型部署与服务化经验。"
+        },
+        {
+          "document_id": "JD_40865562105",
+          "title": "3D生成平台架构师（面向智能制造/CNC方向）",
+          "level": "required",
+          "evidence": "背景经验： 具有 5 年以上后端/基础架构研发经验，至少 2 年以上 AI 模型部署、MLOps 或 AIGC 平台级产品的核心开发与管理经验。有从 0 到 1 组建和带领小规模精英团队的实战经历。"
+        },
+        {
+          "document_id": "JD_40766486709",
+          "title": "AD E2E开发及部署工程师（外包）(J11853)",
+          "level": "required",
+          "evidence": "熟悉模型部署中的常见问题，如内存占用、推理延迟、兼容性问题，并具备解决能力。​"
+        },
+        {
+          "document_id": "JD_40895229513",
+          "title": "AI Agent 全栈开发 / AI 算法工程师",
+          "level": "mentioned",
+          "evidence": "【Agent 开发方向】Agent 全栈开发：基于 Python 完成 Agent 应用的前端、后端、API 与模型部署全栈开发。"
+        },
+        {
+          "document_id": "JD_40895229513",
+          "title": "AI Agent 全栈开发 / AI 算法工程师",
+          "level": "required",
+          "evidence": "• 专业技能（Agent 开发方向）：精通 Python，熟悉 Agent 开发框架（如 LangChain、Dify 等）；具备前端/后端/API/模型部署的全栈开发能力。"
+        },
+        {
+          "document_id": "JD_40856615714",
+          "title": "AI Agent 平台架构师",
+          "level": "mentioned",
+          "evidence": "模型部署与优化：推动大模型在私有环境的部署实施、量化压缩、推理加速与安全隔离"
+        },
+        {
+          "document_id": "JD_40935315715",
+          "title": "AI Agent 开发工程师",
+          "level": "preferred",
+          "evidence": "AI技术：熟悉大语言模型（LLM）相关知识，了解Transformer、预训练模型等技术，有开源模型部署经验，熟练使用vLLM/SGLang/llama.cpp等推理框架者优先。"
+        }
+      ]
+    },
+    {
+      "name": "C#",
+      "count": 649,
+      "levels": {
+        "required": 493,
+        "preferred": 79,
+        "mentioned": 77
+      },
+      "examples": [
+        {
+          "document_id": "JD_40756581406",
+          "title": ".NET AI软件开发工程师（朝九晚六+双休）",
+          "level": "required",
+          "evidence": "精通C#，熟练掌握.NET框架，有桌面及服务端开发经验。"
+        },
+        {
+          "document_id": "JD_40875487605",
+          "title": ".NET全栈开发工程师（偏AI）",
+          "level": "required",
+          "evidence": "核心技能：5年以上 .NET 开发经验，精通 C#、.NET Core、ASP.NET"
+        },
+        {
+          "document_id": "JD_40911483608",
+          "title": "13视觉工程师",
+          "level": "required",
+          "evidence": "熟悉 C#程序开发，了解常用算子的原理"
+        },
+        {
+          "document_id": "JD_40939707415",
+          "title": "2026届-博士-AI/算法工程师-北京总部",
+          "level": "required",
+          "evidence": "熟悉编程语言，如Python、C++、C#、R、MATLAB、Java 和 SQL等"
+        },
+        {
+          "document_id": "JD_40939703215",
+          "title": "2026届-博士-视觉工程师-北京总部",
+          "level": "required",
+          "evidence": "具备C#+WPF或者WinForm等编程开发能力，熟悉VisionPro、Halcon、OpenCV等库的一种或多种"
+        },
+        {
+          "document_id": "JD_40842404714",
+          "title": "2D/3D工业视觉算法开发岗",
+          "level": "required",
+          "evidence": "硬件导入：熟练使用C++或C# SDK开发实现相机各项功能。"
+        },
+        {
+          "document_id": "JD_40636253902",
+          "title": "2D视觉主管",
+          "level": "required",
+          "evidence": "会使用C#联合图像处理软件visionpro和VisionMater进行视觉软件平台开发。"
+        },
+        {
+          "document_id": "JD_40768558806",
+          "title": "3d机器视觉工程师",
+          "level": "required",
+          "evidence": "熟练掌握c#编程语言，有扎实的编程功底和良好的代码习惯。"
+        }
+      ]
+    },
+    {
+      "name": "知识图谱",
+      "count": 623,
+      "levels": {
+        "required": 205,
+        "mentioned": 272,
+        "preferred": 146
+      },
+      "examples": [
+        {
+          "document_id": "JD_41017012204",
+          "title": "1191L8-资深架构师（AI应用）",
+          "level": "required",
+          "evidence": "具有5年以上高并发AI系统研发经验，其中大模型相关经验不少于2年，包括但不限于大模型应用/agentic ai应用/ai coding/对话机器人/知识图谱/智能客服/搜索/推荐/AI中台/训推平台/图像平台/知识工程/RAG系统等相关AI系统研发经验。"
+        },
+        {
+          "document_id": "JD_40707336806",
+          "title": "2026年神经网络建模算法的毕业硕士生实习岗位",
+          "level": "mentioned",
+          "evidence": "垂直领域优化：如医疗领域需结合知识图谱，金融领域需风控模型解释性。"
+        },
+        {
+          "document_id": "JD_40802340416",
+          "title": "Agent/AI应用开发工程师",
+          "level": "mentioned",
+          "evidence": "设计并实现高可用、高质量的分层知识库系统（包括向量数据库、传统数据库、知识图谱等），为智能体提供结构化、语义化的知识支持与可靠决策依据"
+        },
+        {
+          "document_id": "JD_40802340416",
+          "title": "Agent/AI应用开发工程师",
+          "level": "mentioned",
+          "evidence": "深度参与知识图谱的构建、维护与应用，包括实体抽取、关系抽取、本体设计、图谱补全、图谱查询优化、图神经网络（GNN）在Agent推理中的融合等，推动知识图谱成为智能体长时记忆与复杂推理的核心支撑"
+        },
+        {
+          "document_id": "JD_40802340416",
+          "title": "Agent/AI应用开发工程师",
+          "level": "mentioned",
+          "evidence": "持续跟踪大语言模型（LLM）、AI Agent、RAG、知识图谱、多模态理解等前沿技术动态，将最新研究成果快速转化为可落地的产品能力"
+        },
+        {
+          "document_id": "JD_40802340416",
+          "title": "Agent/AI应用开发工程师",
+          "level": "preferred",
+          "evidence": "必须掌握知识图谱相关技术，熟悉Neo4j、TigerGraph、RDF、OWL等图数据库或知识图谱存储方案，有实体/关系抽取、知识融合、图谱问答、GNN在Agent中的应用经验者优先"
+        },
+        {
+          "document_id": "JD_40802340416",
+          "title": "Agent/AI应用开发工程师",
+          "level": "preferred",
+          "evidence": "有开源AI Agent/知识图谱/RAG相关项目或GitHub活跃贡献"
+        },
+        {
+          "document_id": "JD_40802340416",
+          "title": "Agent/AI应用开发工程师",
+          "level": "preferred",
+          "evidence": "熟悉向量数据库（Milvus、Weaviate、Pinecone等）与知识图谱的混合存储与检索方案"
+        }
+      ]
+    },
+    {
+      "name": "视觉算法",
+      "count": 623,
+      "levels": {
+        "mentioned": 320,
+        "required": 233,
+        "preferred": 70
+      },
+      "examples": [
+        {
+          "document_id": "JD_40835739514",
+          "title": "2026-视觉感知模型工程师",
+          "level": "mentioned",
+          "evidence": "1 主导视觉算法从模型到产品级的工程化落地，负责模型的轻量化、推理加速及在嵌入式、机器人平台等边缘计算设备上的适配与优化。"
+        },
+        {
+          "document_id": "JD_41014806304",
+          "title": "26届校招 AI算法工程师",
+          "level": "required",
+          "evidence": "能优化AI算法，修剪模型，具备对DL视觉算法的建模能力"
+        },
+        {
+          "document_id": "JD_40848427601",
+          "title": "3D机器视觉算法研发工程师（不招应届生）",
+          "level": "required",
+          "evidence": "熟悉视觉机器人手眼标定等常见视觉算法，比如模板匹配，卡尺工具等"
+        },
+        {
+          "document_id": "JD_40880930013",
+          "title": "3D点云算法工程师",
+          "level": "mentioned",
+          "evidence": "负责3D视觉算法的产品化落地和性能优化，打造端到端的技术核心和行业解决方案"
+        },
+        {
+          "document_id": "JD_40946718308",
+          "title": "3d算法工程师",
+          "level": "mentioned",
+          "evidence": "三维视觉算法相关研究与实现及应用，对点云与图像处理相关的项目需求进行实现，并负责项目的评估、对接及维护等。"
+        },
+        {
+          "document_id": "JD_40946718308",
+          "title": "3d算法工程师",
+          "level": "required",
+          "evidence": "熟悉常用3D视觉算法，熟练使用Visual Studio、CLion等IDE，Git、tortoise SVN等代码管理工具。"
+        },
+        {
+          "document_id": "JD_40863136805",
+          "title": "3d算法工程师",
+          "level": "required",
+          "evidence": "有图像处理算法开发经验，熟悉 OpenCV、PCL、Open3D等视觉库，精通常用2D/3D视觉算法"
+        },
+        {
+          "document_id": "JD_40821717807",
+          "title": "3d算法工程师",
+          "level": "required",
+          "evidence": "熟悉OpenCV、PCL、VTK等常用视觉算法库"
+        }
+      ]
+    },
+    {
+      "name": "自然语言处理",
+      "count": 574,
+      "levels": {
+        "required": 280,
+        "mentioned": 190,
+        "preferred": 104
+      },
+      "examples": [
+        {
+          "document_id": "JD_40917723615",
+          "title": "2026届 -博士-AI研究员-宁波",
+          "level": "required",
+          "evidence": "熟悉深度学习框架(如TensorFlow、PyTorch)和自然语言处理技术。"
+        },
+        {
+          "document_id": "JD_40883575912",
+          "title": "26届校招-AI算法工程师(J10022)",
+          "level": "required",
+          "evidence": "对以下方向中的至少其中一个有研究或项目经验：具身智能、大模型、计算机视觉、自然语言处理、深度学习。"
+        },
+        {
+          "document_id": "JD_40928813415",
+          "title": "A1算法工程师（6）",
+          "level": "mentioned",
+          "evidence": "利用机器学习，自然语言处理等在内的深度学习技术，针对项目需求设计算法框架"
+        },
+        {
+          "document_id": "JD_40880901105",
+          "title": "Agent应用研发工程师",
+          "level": "preferred",
+          "evidence": "学历背景：本科及以上学历，硕士优先；人工智能、计算机科学与技术、软件工程、自然语言处理等相关专业。"
+        },
+        {
+          "document_id": "JD_40834750611",
+          "title": "Agent开发工程师",
+          "level": "required",
+          "evidence": "具备自然语言处理（NLP）经验，熟悉BERT、GPT等模型的应用与调优。"
+        },
+        {
+          "document_id": "JD_41006282704",
+          "title": "Agent研发工程师",
+          "level": "mentioned",
+          "evidence": "涵盖自然语言处理（NLP）领域，重点解决语义校验、图像识别、多模态文本特征提取、跨文本知识图谱构建等关键问题"
+        },
+        {
+          "document_id": "JD_40760922606",
+          "title": "AI Agent工程师",
+          "level": "preferred",
+          "evidence": "精通至少一种编程语言（Python优先），掌握机器学习、自然语言处理等核心技术栈。"
+        },
+        {
+          "document_id": "JD_40757258106",
+          "title": "AI Agent应用工程师",
+          "level": "required",
+          "evidence": "本科及以上学历，计算机科学、自然语言处理、人工智能等相关专业"
+        }
+      ]
+    },
+    {
+      "name": "系统设计",
+      "count": 572,
+      "levels": {
+        "mentioned": 231,
+        "required": 285,
+        "preferred": 56
+      },
+      "examples": [
+        {
+          "document_id": "JD_40875487605",
+          "title": ".NET全栈开发工程师（偏AI）",
+          "level": "mentioned",
+          "evidence": "全栈开发与架构：基于 .NET Core (ABP框架) + Vue 技术栈，负责核心业务模块的需求分析、系统设计、编码实现及测试上线，确保代码的高可维护性与扩展性。"
+        },
+        {
+          "document_id": "JD_41017012204",
+          "title": "1191L8-资深架构师（AI应用）",
+          "level": "required",
+          "evidence": "有较强的编程能力，熟练掌握后端开发相关技术与中间件、熟悉掌握至少一个AI编程工具。具有 AI 系统设计能力。熟悉向量数据库、搜索数据库ES的原理及使用。了解常见 AI 算法原理、模型训练及推理流程。"
+        },
+        {
+          "document_id": "JD_40834869914",
+          "title": "2026-终端AI系统架专家",
+          "level": "mentioned",
+          "evidence": "负责终端AI 系统设计/开发/调优、关键技术突破和创新，构筑有竞争力的AI系统"
+        },
+        {
+          "document_id": "JD_40939707415",
+          "title": "2026届-博士-AI/算法工程师-北京总部",
+          "level": "mentioned",
+          "evidence": "与自动化系统设计团队合作，推动人工智能在系统开发中的应用。"
+        },
+        {
+          "document_id": "JD_40876710403",
+          "title": "6G星载再生载荷关键技术与和系统研究通信算法系统工程师",
+          "level": "mentioned",
+          "evidence": "系统设计与指标论证"
+        },
+        {
+          "document_id": "JD_40802340416",
+          "title": "Agent/AI应用开发工程师",
+          "level": "required",
+          "evidence": "具备较强的系统设计能力、工程实现能力和问题解决能力，能在需求模糊、资源有限的环境中推动杂任务落地"
+        },
+        {
+          "document_id": "JD_40868977309",
+          "title": "Agent工程师",
+          "level": "required",
+          "evidence": "掌握至少一种主流后端开发语言（如Python/Java/Go），熟悉微服务架构与分布式系统设计。"
+        },
+        {
+          "document_id": "JD_41000442204",
+          "title": "Agent应用开发工程师",
+          "level": "required",
+          "evidence": "精通Python/C++编程语言及pytorch等深度学习框架，具备系统设计与服务化能力"
+        }
+      ]
+    },
+    {
+      "name": "MySQL",
+      "count": 570,
+      "levels": {
+        "required": 479,
+        "mentioned": 34,
+        "preferred": 57
+      },
+      "examples": [
+        {
+          "document_id": "JD_40939707415",
+          "title": "2026届-博士-AI/算法工程师-北京总部",
+          "level": "required",
+          "evidence": "了解深度学习，熟悉数据库(RDBMS)，如MySQL,PostgreSQL,MS SQL, NoSQL等。"
+        },
+        {
+          "document_id": "JD_40917929108",
+          "title": "Agent全栈应用开发工程师",
+          "level": "required",
+          "evidence": "l 熟悉PostgreSQL / MySQL等关系型数据库"
+        },
+        {
+          "document_id": "JD_40859154601",
+          "title": "Agent工程师",
+          "level": "required",
+          "evidence": "精通PostgreSQL/MySQL/ElasticSearch等数据库及数据库性能调优"
+        },
+        {
+          "document_id": "JD_40859394205",
+          "title": "agent开发工程师",
+          "level": "required",
+          "evidence": "熟悉分布式系统原理，掌握缓存(Redis)、消息队列(Kafka/Pulsar) 、数据库(MySQL/PostgreSQL)等中间件，有高并发、高可用系统设计与调优经验"
+        },
+        {
+          "document_id": "JD_40871051214",
+          "title": "Agent开发工程师",
+          "level": "mentioned",
+          "evidence": "设计数据库架构，负责 MySQL、PostgreSQL、向量库（Milvus/FAISS/Chroma）等使用、优化与运维，保障数据读写稳定。"
+        },
+        {
+          "document_id": "JD_40871051214",
+          "title": "Agent开发工程师",
+          "level": "required",
+          "evidence": "数据库：精通MySQL，了解向量数据库使用与调优，具备数据表设计、索引优化经验。"
+        },
+        {
+          "document_id": "JD_40857379005",
+          "title": "agent开发工程师(XZ-GR)",
+          "level": "required",
+          "evidence": "熟悉分布式系统原理，掌握缓存(Redis)、消息队列(Kafka/Pulsar) 、数据库(MySQL/PostgreSQL)等中间件，有高并发、高可用系统设计与调优经验"
+        },
+        {
+          "document_id": "JD_40911293402",
+          "title": "Agent算法工程师（中级）",
+          "level": "required",
+          "evidence": "熟练掌握至少一种编程语言（如Python、C++、Java），具备扎实的编码能力，精通MySQL等主流SQL语言。"
+        }
+      ]
+    },
+    {
+      "name": "TensorRT",
+      "count": 527,
+      "levels": {
+        "required": 274,
+        "preferred": 141,
+        "mentioned": 112
+      },
+      "examples": [
+        {
+          "document_id": "JD_40835739514",
+          "title": "2026-视觉感知模型工程师",
+          "level": "required",
+          "evidence": "工程能力：具备较强的算法工程化与落地能力，熟悉模型轻量化（如剪枝、量化、蒸馏）、推理加速（如TensorRT、OpenVINO、ONNX）技术，有C++/Python高性能代码开发与优化经验。"
+        },
+        {
+          "document_id": "JD_40707336806",
+          "title": "2026年神经网络建模算法的毕业硕士生实习岗位",
+          "level": "required",
+          "evidence": "推理加速：熟悉模型压缩（量化、剪枝）、知识蒸馏及部署工具（TensorRT）。"
+        },
+        {
+          "document_id": "JD_40886292113",
+          "title": "3D 视觉工程师（双目视觉方向）",
+          "level": "required",
+          "evidence": "了解CUDA/TensorRT加速，具备算法嵌入式部署能力"
+        },
+        {
+          "document_id": "JD_40865562105",
+          "title": "3D生成平台架构师（面向智能制造/CNC方向）",
+          "level": "preferred",
+          "evidence": "模型工程化能力： 对底层显卡算力、显存管理有深刻理解。熟悉 PyTorch 等深度学习框架，有 TensorRT 或 vLLM 等推理加速框架调优经验优先。了解 ComfyUI 底层运行机制者优先。"
+        },
+        {
+          "document_id": "JD_40773530201",
+          "title": "3d视觉算法工程师",
+          "level": "preferred",
+          "evidence": "有实际项目中将3D视觉算法部署到嵌入式平台（如NVIDIA Jetson, TX2, 树莓派等）的经验，熟悉模型量化、剪枝、蒸馏等优化技术（TensorRT, ONNX等）优先考虑。"
+        },
+        {
+          "document_id": "JD_40766486709",
+          "title": "AD E2E开发及部署工程师（外包）(J11853)",
+          "level": "mentioned",
+          "evidence": "● 将Pytorch模型通过ONNX，TensorRT，通过C++ 进行Orin-X的高性能部署。​"
+        },
+        {
+          "document_id": "JD_40766486709",
+          "title": "AD E2E开发及部署工程师（外包）(J11853)",
+          "level": "mentioned",
+          "evidence": "●模型转换与部署（TensorRT 相关）：​"
+        },
+        {
+          "document_id": "JD_40766486709",
+          "title": "AD E2E开发及部署工程师（外包）(J11853)",
+          "level": "required",
+          "evidence": "熟悉掌握深度学习模型的部署流程，特别是从 PyTorch、ONNX 到 TensorRT 的转换过程。​"
+        }
+      ]
+    },
+    {
+      "name": "特征工程",
+      "count": 506,
+      "levels": {
+        "required": 173,
+        "mentioned": 298,
+        "preferred": 35
+      },
+      "examples": [
+        {
+          "document_id": "JD_41016019704",
+          "title": "1191KY-模型算法岗",
+          "level": "required",
+          "evidence": "具备算法建模能力，熟练掌握回归分析、特征工程、聚类分类、时序预测、NLP文本挖掘、量化对比分析等算法，可独立搭建业务适配的数据分析、预测、评估模型，具备模型优化、调参、效果验证能力"
+        },
+        {
+          "document_id": "JD_40866235010",
+          "title": "2026应届生补录：算法/数学/机械设计/电气方向应届生",
+          "level": "mentioned",
+          "evidence": "负责模型的全链路开发：从数据标准化处理、特征工程、算法选型到模型训练、部署及后续迭代。"
+        },
+        {
+          "document_id": "JD_40883624813",
+          "title": "2027届实习岗-广州总部-AI软件开发岗 (MJ016311)",
+          "level": "required",
+          "evidence": "熟悉数据预处理、特征工程的等训练模型的基本方法。"
+        },
+        {
+          "document_id": "JD_41006282704",
+          "title": "Agent研发工程师",
+          "level": "mentioned",
+          "evidence": "数据处理与分析:参与数据清洗、标注及特征工程，构建高质量训练数据集，结合 Pandas、NumPy 等工具进行数据可视化与统计分析"
+        },
+        {
+          "document_id": "JD_40985463602",
+          "title": "Agent算法工程师（济南靠谱公司-急招）",
+          "level": "mentioned",
+          "evidence": "负责模型训练过程中的数据处理、特征工程及"
+        },
+        {
+          "document_id": "JD_40985463602",
+          "title": "Agent算法工程师（济南靠谱公司-急招）",
+          "level": "required",
+          "evidence": "负责模型训练全流程的数据处理、特征工程搭建与优化，保障训练数据质量与效率"
+        },
+        {
+          "document_id": "JD_40985538502",
+          "title": "Agent算法负责人",
+          "level": "mentioned",
+          "evidence": "负责模型训练全流程的数据处理、特征工程搭建与优化，保障训练数据质量与效率"
+        },
+        {
+          "document_id": "JD_40819627002",
+          "title": "AI Agent工程师（Python）",
+          "level": "required",
+          "evidence": "熟悉常见的数据处理流程，能够独立完成数据清洗、特征工程等工作。"
+        }
+      ]
+    },
+    {
+      "name": "LoRA",
+      "count": 483,
+      "levels": {
+        "required": 233,
+        "preferred": 102,
+        "mentioned": 148
+      },
+      "examples": [
+        {
+          "document_id": "JD_40707336806",
+          "title": "2026年神经网络建模算法的毕业硕士生实习岗位",
+          "level": "required",
+          "evidence": "训练调优：掌握分布式训练（DeepSpeed、Megatron）、高效微调技术（LoRA、Adapter）及超参数优化。"
+        },
+        {
+          "document_id": "JD_40873073410",
+          "title": "Agent 应用工程师（智慧电力方向）",
+          "level": "preferred",
+          "evidence": "有 LoRA / QLoRA 微调实践并能讲清数据规模、超参决策、评测方法。"
+        },
+        {
+          "document_id": "JD_40802340416",
+          "title": "Agent/AI应用开发工程师",
+          "level": "required",
+          "evidence": "了解并实践过以下一项或多项LLM增强技术：RAG（含高级RAG）、Fine-tuning（SFT/LoRA/QLoRA）、RLHF/DPO、Agentic Workflow、长期记忆机制、多Agent协作等"
+        },
+        {
+          "document_id": "JD_40880901105",
+          "title": "Agent应用研发工程师",
+          "level": "mentioned",
+          "evidence": "垂域大模型应用落地：基于开源大模型基座（Qwen、DeepSeek、Llama 等），完成锂电领域的指令微调（LoRA/QLoRA）、Prompt 工程优化、推理服务部署，打造适配锂电研发场景的垂域大模型能力。"
+        },
+        {
+          "document_id": "JD_40880901105",
+          "title": "Agent应用研发工程师",
+          "level": "required",
+          "evidence": "● 精通大模型应用开发，熟练掌握 LoRA/QLoRA 微调、Prompt 工程、RAG 检索增强的全流程，有 LangChain、LlamaIndex 等框架的实战经验"
+        },
+        {
+          "document_id": "JD_40859394205",
+          "title": "agent开发工程师",
+          "level": "preferred",
+          "evidence": "具备将大模型能力集成到生产系统的能力，有RAG、模型微调(SFT/LoRA)、向量检索等项目经验者优先"
+        },
+        {
+          "document_id": "JD_40857379005",
+          "title": "agent开发工程师(XZ-GR)",
+          "level": "preferred",
+          "evidence": "具备将大模型能力集成到生产系统的能力，有RAG、模型微调(SFT/LoRA)、向量检索等项目经验者优先"
+        },
+        {
+          "document_id": "JD_40976026002",
+          "title": "Agent算法工程师",
+          "level": "mentioned",
+          "evidence": "针对功能营养学领域，对选定的医学大模型进行QLoRA微调、持续优化，提升模型在专业问答、报告生成等方面的准确性和可靠性。"
+        }
+      ]
+    },
+    {
+      "name": "LlamaIndex",
+      "count": 479,
+      "levels": {
+        "preferred": 98,
+        "required": 319,
+        "mentioned": 62
+      },
+      "examples": [
+        {
+          "document_id": "JD_40802340416",
+          "title": "Agent/AI应用开发工程师",
+          "level": "preferred",
+          "evidence": "熟练掌握Python（优先）或Java，深入使用过LangChain、LlamaIndex、LangGraph、AutoGen、CrewAI等主流Agent开发框架"
+        },
+        {
+          "document_id": "JD_40741978506",
+          "title": "Agent工程化专家(047217)",
+          "level": "required",
+          "evidence": "、框架与工具链： 深度掌握 LangChain、LlamaIndex等主流Agent框架的源码与原理，有实际的二次开发或深度定制经验。"
+        },
+        {
+          "document_id": "JD_40918752512",
+          "title": "Agent工程师",
+          "level": "preferred",
+          "evidence": "使用过OpenAI API、Claude API、DeepSeek API、LangChain、LlamaIndex、n8n、Dify、Coze、FastAPI、Playwright、Selenium等工具。"
+        },
+        {
+          "document_id": "JD_40860468109",
+          "title": "Agent应用开发工程师（成都）",
+          "level": "preferred",
+          "evidence": "• 熟悉 LangChain、LlamaIndex、AutoGen、LangGraph 等主流 Agent 开发框架"
+        },
+        {
+          "document_id": "JD_40880901105",
+          "title": "Agent应用研发工程师",
+          "level": "required",
+          "evidence": "● 精通大模型应用开发，熟练掌握 LoRA/QLoRA 微调、Prompt 工程、RAG 检索增强的全流程，有 LangChain、LlamaIndex 等框架的实战经验"
+        },
+        {
+          "document_id": "JD_40994471002",
+          "title": "Agent开发工程师",
+          "level": "required",
+          "evidence": "● 熟练使用LangChain / LangGraph / LlamaIndex / Dify等至少一种LLM应用开发框架"
+        },
+        {
+          "document_id": "JD_40845231301",
+          "title": "Agent开发工程师",
+          "level": "required",
+          "evidence": "有智能体开发实践经验，深入理解ReAct、CoT、ToT等推理框架，或熟练使用LangChain、LlamaIndex、AutoGen、CrewAI等至少一种Agent开发框架。"
+        },
+        {
+          "document_id": "JD_41012144504",
+          "title": "Agent开发工程师",
+          "level": "mentioned",
+          "evidence": "使用过LangChain、LlamaIndex、AutoGen或类似Agent开发框架完成过完整应用"
+        }
+      ]
+    },
+    {
+      "name": "图像识别",
+      "count": 465,
+      "levels": {
+        "preferred": 67,
+        "mentioned": 260,
+        "required": 138
+      },
+      "examples": [
+        {
+          "document_id": "JD_40707336806",
+          "title": "2026年神经网络建模算法的毕业硕士生实习岗位",
+          "level": "preferred",
+          "evidence": "*有图像识别的项目经历优先考虑"
+        },
+        {
+          "document_id": "JD_40801516516",
+          "title": "2D软件视觉算法工程师",
+          "level": "mentioned",
+          "evidence": "结合公司自动化设备业务需求，进行2D图像处理算法的开发，例如2D灰度图像识别、定位、匹配等算法。"
+        },
+        {
+          "document_id": "JD_41006282704",
+          "title": "Agent研发工程师",
+          "level": "mentioned",
+          "evidence": "涵盖自然语言处理（NLP）领域，重点解决语义校验、图像识别、多模态文本特征提取、跨文本知识图谱构建等关键问题"
+        },
+        {
+          "document_id": "JD_40955389915",
+          "title": "AI Agent开发工程师",
+          "level": "preferred",
+          "evidence": "了解计算机视觉 / 多模态 Agent：可对接图像识别、文档 OCR、视频分析等 CV 能力作为 Agent 可调用的多模态工具；了解音视频流式 Agent 者优先。"
+        },
+        {
+          "document_id": "JD_40838541205",
+          "title": "AI 大模型算法工程师",
+          "level": "mentioned",
+          "evidence": "C++、python、人脸识别 图像分类 图像检测 图像分割 图像识别 文字识别 文字检测 机器学习 动作识别 图像降噪 图像超分、计算机视觉 深度学习 深度计算 图像增强 图像处理、AI、图像编辑、视频编辑"
+        },
+        {
+          "document_id": "JD_40954501715",
+          "title": "AI 技术工程师（艺术家数据库）",
+          "level": "mentioned",
+          "evidence": "接入图像识别模型，实现上传画作→匹配对应艺术家、溯源作品出处、识别同款临摹作品；搭建全文语义检索，支持模糊关键词、风格描述、年代范围智能查询数据库内容。"
+        },
+        {
+          "document_id": "JD_40997880602",
+          "title": "AI 算法工程师 （目标检测方向）",
+          "level": "required",
+          "evidence": "精通深度学习基础理论，对卷积神经网络（CNN） 和目标检测领域有深入理解，具备丰富的YOLO系列模型（v7/v8/v9/v11等）的项目实战经验与工程实现，有目标检测、图像识别等相关项目经验，能独立完成模型的设计、训练、调优与部署。"
+        },
+        {
+          "document_id": "JD_40844853205",
+          "title": "AI 视觉工程师（培养基配方研发）",
+          "level": "required",
+          "evidence": "掌握图像识别、目标检测、图像分割等 AI 视觉基础算法与常用模型。"
+        }
+      ]
+    },
+    {
+      "name": "模型微调",
+      "count": 460,
+      "levels": {
+        "required": 158,
+        "mentioned": 194,
+        "preferred": 108
+      },
+      "examples": [
+        {
+          "document_id": "JD_41014806904",
+          "title": "26届校招 AI知识库开发工程师",
+          "level": "required",
+          "evidence": "具备一定的python、LLM、RAG、Agent流程开发、模型量化、模型微调能力，对工业的LLM落地有兴趣"
+        },
+        {
+          "document_id": "JD_40994471002",
+          "title": "Agent开发工程师",
+          "level": "mentioned",
+          "evidence": "提示工程与模型调优：针对投研场景编写高质量System Prompt和Task Prompt；管理Prompt版本与A/B测试；与算法团队协作进行模型微调（Fine-tuning）和RLHF反馈优化。"
+        },
+        {
+          "document_id": "JD_40859394205",
+          "title": "agent开发工程师",
+          "level": "mentioned",
+          "evidence": "负责数据处理、Prompt 工程、RAG、Agent架构设计、模型微调及工具调用(Tool Call)等大模型应用相关工作"
+        },
+        {
+          "document_id": "JD_40859394205",
+          "title": "agent开发工程师",
+          "level": "preferred",
+          "evidence": "具备将大模型能力集成到生产系统的能力，有RAG、模型微调(SFT/LoRA)、向量检索等项目经验者优先"
+        },
+        {
+          "document_id": "JD_40857379005",
+          "title": "agent开发工程师(XZ-GR)",
+          "level": "mentioned",
+          "evidence": "负责数据处理、Prompt 工程、RAG、Agent架构设计、模型微调及工具调用(Tool Call)等大模型应用相关工作"
+        },
+        {
+          "document_id": "JD_40857379005",
+          "title": "agent开发工程师(XZ-GR)",
+          "level": "preferred",
+          "evidence": "具备将大模型能力集成到生产系统的能力，有RAG、模型微调(SFT/LoRA)、向量检索等项目经验者优先"
+        },
+        {
+          "document_id": "JD_40976026002",
+          "title": "Agent算法工程师",
+          "level": "mentioned",
+          "evidence": "从零创建高质量训练数据集：利用公司提供的功能营养学书籍，通过自动化工具、提示工程（Prompt Engineering）和大模型本身，生成用于模型微调和评估的指令微调、偏好对齐数据集。"
+        },
+        {
+          "document_id": "JD_40837466907",
+          "title": "Agent算法工程师",
+          "level": "mentioned",
+          "evidence": "负责算法组智能体的算法研发，包括query改写、RAG、模型微调等工作内容"
+        }
+      ]
+    },
+    {
+      "name": "数据挖掘",
+      "count": 427,
+      "levels": {
+        "mentioned": 155,
+        "required": 204,
+        "preferred": 68
+      },
+      "examples": [
+        {
+          "document_id": "JD_40939707415",
+          "title": "2026届-博士-AI/算法工程师-北京总部",
+          "level": "mentioned",
+          "evidence": "与 IT、研发等跨职能部门和团队合作，进行数据收集、数据挖掘和工艺流程闭环建设"
+        },
+        {
+          "document_id": "JD_40939707415",
+          "title": "2026届-博士-AI/算法工程师-北京总部",
+          "level": "required",
+          "evidence": "熟悉数据分析、数据挖掘和流行的人工智能算法，包括开源人工智能原理和应用"
+        },
+        {
+          "document_id": "JD_40892719412",
+          "title": "Agent开发",
+          "level": "required",
+          "evidence": "我们正在寻找一位具有海归背景、工业界经验、博士学历的AI算法科学家，专注于大语言模型（LLM）与智能体（Agent）开发，在新药靶点发现、药物反应预测、肿瘤免疫、多组学数据挖掘等领域推动技术创新与应用落地。您将参与核心AI平台的构建，推动从数据到药物的高效转化。"
+        },
+        {
+          "document_id": "JD_40757258106",
+          "title": "AI Agent应用工程师",
+          "level": "mentioned",
+          "evidence": "参与大模型相关的数据工程，包括预训练数据、微调数据、行业数据挖掘等，支撑电力协议相关知识库构建"
+        },
+        {
+          "document_id": "JD_40838541205",
+          "title": "AI 大模型算法工程师",
+          "level": "mentioned",
+          "evidence": "准确把握数据挖掘领域发展趋势，识别和关注当下的关键需求及关键技术，与公司核心部门及顶级高校进行技术合作、交流，优势互补，使能商业成功"
+        },
+        {
+          "document_id": "JD_40838541205",
+          "title": "AI 大模型算法工程师",
+          "level": "required",
+          "evidence": "熟悉数据分析、特征工程等相关数据挖掘流程，同时熟悉回归，聚类，分类，推荐等机器学习算法实现，对常见的算法理解透彻"
+        },
+        {
+          "document_id": "JD_40821164001",
+          "title": "AI 工程师（实习岗）(J10220)",
+          "level": "mentioned",
+          "evidence": "数据价值创造：亲手参与数据挖掘、清洗与自动标注，构建数字金字塔，让数据真正驱动智能。"
+        },
+        {
+          "document_id": "JD_40821164001",
+          "title": "AI 工程师（实习岗）(J10220)",
+          "level": "required",
+          "evidence": "有 数据挖掘、清洗或标注相关经验。"
+        }
+      ]
+    },
+    {
+      "name": "Milvus",
+      "count": 426,
+      "levels": {
+        "required": 291,
+        "preferred": 68,
+        "mentioned": 67
+      },
+      "examples": [
+        {
+          "document_id": "JD_40804552214",
+          "title": "26届AI培训生（算法方向）(J14794)",
+          "level": "required",
+          "evidence": "熟悉数据处理与数据库操作，了解 ElasticSearch、Milvus、Neo4j 等知识库/索引/向量检索技术"
+        },
+        {
+          "document_id": "JD_40802340416",
+          "title": "Agent/AI应用开发工程师",
+          "level": "preferred",
+          "evidence": "熟悉向量数据库（Milvus、Weaviate、Pinecone等）与知识图谱的混合存储与检索方案"
+        },
+        {
+          "document_id": "JD_40741978506",
+          "title": "Agent工程化专家(047217)",
+          "level": "required",
+          "evidence": "、RAG与向量技术： 精通RAG（检索增强生成）全链路优化，包括文档切分、Embedding模型选择、混合检索策略及重排序算法。熟悉 Milvus、Elasticsearch 等向量数据库的生产级应用。"
+        },
+        {
+          "document_id": "JD_40932690915",
+          "title": "Agent应用开发工程师",
+          "level": "mentioned",
+          "evidence": "【1】负责检索增强生成（RAG）系统的全链路搭建与优化，涵盖文档解析、Embedding 模型选型、向量数据库（Milvus/Faiss 等）管理、召回策略及重排序调优。"
+        },
+        {
+          "document_id": "JD_40994471002",
+          "title": "Agent开发工程师",
+          "level": "mentioned",
+          "evidence": "● 理解RAG技术栈：Embedding模型选型、向量数据库（Milvus / Pinecone / Weaviate）、检索策略与重排序"
+        },
+        {
+          "document_id": "JD_40871051214",
+          "title": "Agent开发工程师",
+          "level": "mentioned",
+          "evidence": "设计数据库架构，负责 MySQL、PostgreSQL、向量库（Milvus/FAISS/Chroma）等使用、优化与运维，保障数据读写稳定。"
+        },
+        {
+          "document_id": "JD_40843248610",
+          "title": "Agent开发工程师",
+          "level": "required",
+          "evidence": "精通LangChain或LangGraph智能体开发框架，掌握RAG技术及Milvus/FAISS向量数据库的应用。"
+        },
+        {
+          "document_id": "JD_40867892610",
+          "title": "Agent开发工程师（驻场佛山）",
+          "level": "required",
+          "evidence": "√ 熟悉向量数据库（如 Milvus, Chroma, Elasticsearch）及 Embedding 模型的使用。"
+        }
+      ]
+    },
+    {
+      "name": "Redis",
+      "count": 393,
+      "levels": {
+        "mentioned": 42,
+        "required": 292,
+        "preferred": 59
+      },
+      "examples": [
+        {
+          "document_id": "JD_40875487605",
+          "title": ".NET全栈开发工程师（偏AI）",
+          "level": "mentioned",
+          "evidence": "系统性能优化：利用 Redis、MQ、ES 等中间件解决高并发、分布式场景下的性能瓶颈，负责链路追踪、监控告警及系统稳定性保障。"
+        },
+        {
+          "document_id": "JD_40875487605",
+          "title": ".NET全栈开发工程师（偏AI）",
+          "level": "required",
+          "evidence": "熟练配置和使用 Nginx、Redis、RabbitMQ/Kafka、Elasticsearch、Prometheus/Grafana 等主流中间件。"
+        },
+        {
+          "document_id": "JD_40859154601",
+          "title": "Agent工程师",
+          "level": "required",
+          "evidence": "熟悉分布式系统系统架构，掌握分布式缓存（如Redis），消息队列（如RabbitMQ、Kafka等）"
+        },
+        {
+          "document_id": "JD_40859394205",
+          "title": "agent开发工程师",
+          "level": "required",
+          "evidence": "熟悉分布式系统原理，掌握缓存(Redis)、消息队列(Kafka/Pulsar) 、数据库(MySQL/PostgreSQL)等中间件，有高并发、高可用系统设计与调优经验"
+        },
+        {
+          "document_id": "JD_40857379005",
+          "title": "agent开发工程师(XZ-GR)",
+          "level": "required",
+          "evidence": "熟悉分布式系统原理，掌握缓存(Redis)、消息队列(Kafka/Pulsar) 、数据库(MySQL/PostgreSQL)等中间件，有高并发、高可用系统设计与调优经验"
+        },
+        {
+          "document_id": "JD_40994179602",
+          "title": "AI Agent 全栈开发工程师",
+          "level": "required",
+          "evidence": "熟悉MySQL、Redis、Elasticsearch等常用中间件，具备SQL调优及高并发场景设计能力"
+        },
+        {
+          "document_id": "JD_40862392705",
+          "title": "AI Agent 后端开发工程师",
+          "level": "preferred",
+          "evidence": "负责多Agent协同调度系统的设计与实现，基于任务优先级、资源占用情况设计调度算法，开发Skill技能库的注册、管理、调用机制，实现短期记忆（Redis缓存）与长期记忆（MySQL/PostgreSQL持久化）的分层存储与高效查询，保障系统高可用（99.9%+）、高并发（支持1000+并发请求）。"
+        },
+        {
+          "document_id": "JD_40862392705",
+          "title": "AI Agent 后端开发工程师",
+          "level": "mentioned",
+          "evidence": "负责系统性能优化，排查代码瓶颈、数据库慢查询、接口响应延迟等问题，优化Redis缓存策略、数据库索引设计，编写单元测试、集成测试用例，配合测试与运维团队完成系统部署、灰度发布、故障排查，提升代码质量与系统稳定性。"
+        }
+      ]
+    },
+    {
+      "name": "ONNX",
+      "count": 377,
+      "levels": {
+        "required": 220,
+        "preferred": 95,
+        "mentioned": 62
+      },
+      "examples": [
+        {
+          "document_id": "JD_40835739514",
+          "title": "2026-视觉感知模型工程师",
+          "level": "required",
+          "evidence": "工程能力：具备较强的算法工程化与落地能力，熟悉模型轻量化（如剪枝、量化、蒸馏）、推理加速（如TensorRT、OpenVINO、ONNX）技术，有C++/Python高性能代码开发与优化经验。"
+        },
+        {
+          "document_id": "JD_40773530201",
+          "title": "3d视觉算法工程师",
+          "level": "preferred",
+          "evidence": "有实际项目中将3D视觉算法部署到嵌入式平台（如NVIDIA Jetson, TX2, 树莓派等）的经验，熟悉模型量化、剪枝、蒸馏等优化技术（TensorRT, ONNX等）优先考虑。"
+        },
+        {
+          "document_id": "JD_40766486709",
+          "title": "AD E2E开发及部署工程师（外包）(J11853)",
+          "level": "mentioned",
+          "evidence": "● 将Pytorch模型通过ONNX，TensorRT，通过C++ 进行Orin-X的高性能部署。​"
+        },
+        {
+          "document_id": "JD_40766486709",
+          "title": "AD E2E开发及部署工程师（外包）(J11853)",
+          "level": "required",
+          "evidence": "熟悉掌握深度学习模型的部署流程，特别是从 PyTorch、ONNX 到 TensorRT 的转换过程。​"
+        },
+        {
+          "document_id": "JD_40962326802",
+          "title": "AI Infra 工程师-算法性能部署方向 (MJ003672)",
+          "level": "mentioned",
+          "evidence": "极致性能优化：可实现算法模型在云、边、端侧的轻量化部署与推理加速。通过模型蒸馏、剪枝、量化感知训练（QAT）、算子融合、底层编译优化（如TensorRT/ONNX Runtime/OpenVINO）及推理代码优化，在保障高精度的前提下，极致压缩模型体积与延迟，实现毫秒级实时响应。"
+        },
+        {
+          "document_id": "JD_40962326802",
+          "title": "AI Infra 工程师-算法性能部署方向 (MJ003672)",
+          "level": "required",
+          "evidence": "硬核技术栈：熟悉TensorRT、ONNX Runtime、OpenVINO等主流推理框架，熟悉模型蒸馏、剪枝、量化、算子融合原理且有场景落地经验。"
+        },
+        {
+          "document_id": "JD_40858268209",
+          "title": "AI Infra高级工程师",
+          "level": "mentioned",
+          "evidence": "推理引擎优化与部署：负责 LLM 推理全链路性能调优，包括 KV Cache 管理、Continuous Batching、INT4/INT8 量化、算子融合等核心技术落地；基于 vLLM/TensorRT/ONNX Runtime 搭建高吞吐、低延迟的推理服务，支撑万级 QPS 在线请求。"
+        },
+        {
+          "document_id": "JD_40953852715",
+          "title": "AI 模型部署 / 推理服务工程师",
+          "level": "required",
+          "evidence": "本科；3 年 + 后端 / AI 推理部署；Linux/Python/Docker/Git；掌握 FastAPI/gRPC/WebSocket 等；熟悉 PyTorch/ONNX/TensorRT/CUDA 其一；懂模型训练到上线全流程；多模块协同排障，具备文档沉淀能力。"
+        }
+      ]
+    },
+    {
+      "name": "AIGC",
+      "count": 349,
+      "levels": {
+        "required": 101,
+        "mentioned": 156,
+        "preferred": 92
+      },
+      "examples": [
+        {
+          "document_id": "JD_40865562105",
+          "title": "3D生成平台架构师（面向智能制造/CNC方向）",
+          "level": "required",
+          "evidence": "背景经验： 具有 5 年以上后端/基础架构研发经验，至少 2 年以上 AI 模型部署、MLOps 或 AIGC 平台级产品的核心开发与管理经验。有从 0 到 1 组建和带领小规模精英团队的实战经历。"
+        },
+        {
+          "document_id": "JD_40844494410",
+          "title": "Agent智能体开发",
+          "level": "mentioned",
+          "evidence": "持续关注AIGC领域技术演进，推动创新技术在项目实践中的应用转化"
+        },
+        {
+          "document_id": "JD_40844494410",
+          "title": "Agent智能体开发",
+          "level": "mentioned",
+          "evidence": "执行AIGC工具评估及行业方案研究，形成可行性分析报告"
+        },
+        {
+          "document_id": "JD_40844494410",
+          "title": "Agent智能体开发",
+          "level": "required",
+          "evidence": "（2）AIGC项目落地或内容训练经历"
+        },
+        {
+          "document_id": "JD_40844494410",
+          "title": "Agent智能体开发",
+          "level": "required",
+          "evidence": "（4）保持技术敏感度，能快速掌握AIGC领域前沿动态"
+        },
+        {
+          "document_id": "JD_40911288902",
+          "title": "Agent算法工程师（专家）",
+          "level": "mentioned",
+          "evidence": "AIGC重度发烧友（Vibe coding深度使用，并能保持高交付质量）"
+        },
+        {
+          "document_id": "JD_40778576306",
+          "title": "AI Agent全栈开发",
+          "level": "mentioned",
+          "evidence": "开展AIGC能力搭建、内容批量生产与分发，落地T2V、T2I、R2V等相关业务。"
+        },
+        {
+          "document_id": "JD_40778576306",
+          "title": "AI Agent全栈开发",
+          "level": "preferred",
+          "evidence": "3年以上全栈开发经验，有AI智能体落地经验，具备企业级AIGC、RAG、流程自动化项目经历优先。"
+        }
+      ]
+    },
+    {
+      "name": "CUDA",
+      "count": 343,
+      "levels": {
+        "required": 167,
+        "preferred": 128,
+        "mentioned": 48
+      },
+      "examples": [
+        {
+          "document_id": "JD_40707336806",
+          "title": "2026年神经网络建模算法的毕业硕士生实习岗位",
+          "level": "required",
+          "evidence": "编程语言：精通Python（必会），熟悉C++（高性能场景）及CUDA（GPU加速）。"
+        },
+        {
+          "document_id": "JD_40886292113",
+          "title": "3D 视觉工程师（双目视觉方向）",
+          "level": "required",
+          "evidence": "了解CUDA/TensorRT加速，具备算法嵌入式部署能力"
+        },
+        {
+          "document_id": "JD_40543833712",
+          "title": "3D点云算法工程师",
+          "level": "required",
+          "evidence": "4，基于CUDA的高速点云处理"
+        },
+        {
+          "document_id": "JD_40946718308",
+          "title": "3d算法工程师",
+          "level": "required",
+          "evidence": "计算机、自动化、数学等相关专业，有一定英文文献阅读能力，熟练掌握C++、PCL、OpenCV(含编译)、Halcon、CUDA加速等技能。"
+        },
+        {
+          "document_id": "JD_40842932210",
+          "title": "3D算法工程师",
+          "level": "preferred",
+          "evidence": "具备 GPU 并行计算（CUDA/OpenCL）或多线程优化经验者优先"
+        },
+        {
+          "document_id": "JD_40863583609",
+          "title": "3D表面重建算法工程师",
+          "level": "preferred",
+          "evidence": "精通C++、Python、CUDA 等编程，有嵌入式算法优化经验优先"
+        },
+        {
+          "document_id": "JD_40873934005",
+          "title": "AI agent底层技术内容专家【六险一金】算法",
+          "level": "preferred",
+          "evidence": "（1）熟悉CUDA编程或PyTorch框架使用"
+        },
+        {
+          "document_id": "JD_40949411615",
+          "title": "AI Infra 工程师（训练加速方向）",
+          "level": "mentioned",
+          "evidence": "针对物理世界模型的核心计算逻辑，进行 CUDA/Triton 级别的算子自研、融合与极限性能压榨"
+        }
+      ]
+    },
+    {
+      "name": "OCR",
+      "count": 319,
+      "levels": {
+        "required": 143,
+        "preferred": 58,
+        "mentioned": 118
+      },
+      "examples": [
+        {
+          "document_id": "JD_41006282704",
+          "title": "Agent研发工程师",
+          "level": "required",
+          "evidence": "熟练应用MINERU、PPOCR、VLM等模型解决多模态图像特征提取、转换、分割等问题;具有搭建多模态RAG的实战项目经历，具有多智能体搭建经验，具有知识图谱RAG相关知识。"
+        },
+        {
+          "document_id": "JD_40845387710",
+          "title": "AI Agent 工程师",
+          "level": "preferred",
+          "evidence": "对主流大小模型（如 DeepSeek、Qwen、GPT、Claude、Gemini 等）有深入了解；熟悉各类 Embedding、Rerank、ASR、OCR 模型的应用场景及调用方法，有实际的 RAG（检索增强生成）项目落地经验者优先。"
+        },
+        {
+          "document_id": "JD_40863715710",
+          "title": "AI Agent 开发工程师",
+          "level": "required",
+          "evidence": "多模态实战经验 —— 亲手处理过视觉语言模型、文档 AI（OCR、版面分析、表格）、或音频 —— 从输入到可落地输出的完整链路。"
+        },
+        {
+          "document_id": "JD_40955389915",
+          "title": "AI Agent开发工程师",
+          "level": "required",
+          "evidence": "必须精通OCR，有商业运行项目实操经验。"
+        },
+        {
+          "document_id": "JD_40955389915",
+          "title": "AI Agent开发工程师",
+          "level": "preferred",
+          "evidence": "了解计算机视觉 / 多模态 Agent：可对接图像识别、文档 OCR、视频分析等 CV 能力作为 Agent 可调用的多模态工具；了解音视频流式 Agent 者优先。"
+        },
+        {
+          "document_id": "JD_40955389915",
+          "title": "AI Agent开发工程师",
+          "level": "preferred",
+          "evidence": "Python，OCR，LangChain，LangGraph，CrewAI，AutoGen，MCP，A2A，OpenAI SDK，Anthropic SDK，RAG，向量数据库，GraphRAG，知识图谱，Text-to-SQL，FastAPI，Docker，Kubernetes，LangFuse，LangSmith，Braintrust，流式推理，多智能体编排，function calling，结构化输出，LLM 评估，prompt 工程，多模态 Agent，HITL，SSE，WebSocket，TypeScript，Node.js"
+        },
+        {
+          "document_id": "JD_40871539014",
+          "title": "AI Agent开发工程师",
+          "level": "preferred",
+          "evidence": "· 有多模态 OCR（发票、回单）与文档智能处理经验。"
+        },
+        {
+          "document_id": "JD_40782445806",
+          "title": "AI 工作流落地工程师 / FDE 方向",
+          "level": "mentioned",
+          "evidence": "处理 Word、Excel、PDF、OCR、录音转文字、聊天记录、业务表格等资料，完成结构化整理、检索和自动化流转。"
+        }
+      ]
+    },
+    {
+      "name": "K8s",
+      "count": 289,
+      "levels": {
+        "mentioned": 49,
+        "required": 169,
+        "preferred": 71
+      },
+      "examples": [
+        {
+          "document_id": "JD_40875487605",
+          "title": ".NET全栈开发工程师（偏AI）",
+          "level": "mentioned",
+          "evidence": "流程建设，利用 Docker/K8s 进行容器化部署，提升交付效率。"
+        },
+        {
+          "document_id": "JD_40859154601",
+          "title": "Agent工程师",
+          "level": "required",
+          "evidence": "掌握Nginx、Docker、K8S的使用"
+        },
+        {
+          "document_id": "JD_40932690915",
+          "title": "Agent应用开发工程师",
+          "level": "mentioned",
+          "evidence": "【1】主导 AI Agent 应用的容器化（Docker/K8s）部署、微服务架构设计，完成高并发场景下的性能优化，确保系统稳定低延迟运行。"
+        },
+        {
+          "document_id": "JD_40911675512",
+          "title": "Agent架构师（J10222）",
+          "level": "required",
+          "evidence": "熟练使用主流数据库技术，掌握数据库优化技巧，深度了解 Docker、Kubernetes(K8S)等容器化技术，具备缓存机制设计、消息队列应用及搜索系统集成的经验，能够通过这些技术提升业务性能"
+        },
+        {
+          "document_id": "JD_40867633210",
+          "title": "AGV RCS系统调度算法工程师",
+          "level": "required",
+          "evidence": "熟悉容器化技术（如Docker、K8s）或云服务（AWS/Azure/阿里云）。"
+        },
+        {
+          "document_id": "JD_40862392705",
+          "title": "AI Agent 后端开发工程师",
+          "level": "preferred",
+          "evidence": "3•熟练掌握Docker、K8s容器化部署与运维，能独立搭建集群环境、配置自动扩缩容与故障自愈策略；精通MySQL/PostgreSQL数据库设计、索引优化、事务处理，熟练使用Redis进行缓存设计、分布式锁实现，了解MongoDB等非关系型数据库者加分。"
+        },
+        {
+          "document_id": "JD_40854326911",
+          "title": "AI Agent 架构工程师",
+          "level": "required",
+          "evidence": "精通云原生、Docker/K8s、分布式微服务架构，熟练 Go/C++/Python 任一开发语言"
+        },
+        {
+          "document_id": "JD_40854480111",
+          "title": "AI Agent 架构工程师",
+          "level": "required",
+          "evidence": "精通云原生、Docker/K8s、分布式微服务架构，熟练 Go/C++/Python 任一开发语言"
+        }
+      ]
+    },
+    {
+      "name": "Spring Boot",
+      "count": 283,
+      "levels": {
+        "required": 206,
+        "preferred": 42,
+        "mentioned": 35
+      },
+      "examples": [
+        {
+          "document_id": "JD_40949654108",
+          "title": "Agent应用开发（实习生）",
+          "level": "required",
+          "evidence": "后端开发： 精通Java或Python至少一门语言，熟悉Spring Boot、FastAPI等主流Web框架，具备高并发、分布式系统开发经验"
+        },
+        {
+          "document_id": "JD_40871051214",
+          "title": "Agent开发工程师",
+          "level": "required",
+          "evidence": "后端：熟练使用 Python/Go，Java、C++等语言，掌握 FastAPI/SpringBoot 等主流 Web 框架，熟悉 RESTful API 设计、中间件使用。"
+        },
+        {
+          "document_id": "JD_40994554702",
+          "title": "Agent研发工程师",
+          "level": "required",
+          "evidence": "服务开发能力：具备后端服务化开发能力，能够基于 FastAPI、NestJS、Spring Boot 等框架完成 Agent 服务接口、业务系统对接和系统集成开发工作。"
+        },
+        {
+          "document_id": "JD_40879017805",
+          "title": "AI Agent java发开工程师+六险一金双休",
+          "level": "preferred",
+          "evidence": "精通至少一种后端开发语言（Java优先），具备扎实的编码能力，熟悉Spring Boot等主流后端框架"
+        },
+        {
+          "document_id": "JD_40994179602",
+          "title": "AI Agent 全栈开发工程师",
+          "level": "mentioned",
+          "evidence": "基于Java技术栈完成高可用后端服务开发（Spring Boot / Spring Cloud Alibaba微服务体系），基于Vue完成前端页面与交互组件开发"
+        },
+        {
+          "document_id": "JD_40994179602",
+          "title": "AI Agent 全栈开发工程师",
+          "level": "required",
+          "evidence": "精通Java（JDK 11+），深入理解Spring Boot / Spring Cloud微服务架构，熟悉Nacos、Gateway、Feign等核心组件"
+        },
+        {
+          "document_id": "JD_40946688402",
+          "title": "AI Agent应用工程师",
+          "level": "required",
+          "evidence": "具备扎实的编程基础，精通 Python、Java，熟悉主流的 Web 服务框架（如 FastAPI, Flask, Tornado，Springboot 等）。"
+        },
+        {
+          "document_id": "JD_40760863910",
+          "title": "AI Agent应用开发",
+          "level": "required",
+          "evidence": "精通Springboot、Mybatis等常用框架开发，深入了解其原理，具备丰富的系统优化经验；精通MySQL、MongoDB等数据库开发与设计，以及SQL优化"
+        }
+      ]
+    },
+    {
+      "name": "模型推理",
+      "count": 281,
+      "levels": {
+        "mentioned": 170,
+        "preferred": 41,
+        "required": 70
+      },
+      "examples": [
+        {
+          "document_id": "JD_40976026002",
+          "title": "Agent算法工程师",
+          "level": "mentioned",
+          "evidence": "优化模型推理流程，通过模型量化、推理加速、缓存策略、服务化部署优化等手段，显著提升智能体服务的响应速度与吞吐量。"
+        },
+        {
+          "document_id": "JD_40854326911",
+          "title": "AI Agent 架构工程师",
+          "level": "mentioned",
+          "evidence": "整体设计聚变场景 AI Agent 分布式平台架构，包含调度中心、模型推理集群、插件服务、数据中台整体方案"
+        },
+        {
+          "document_id": "JD_40854480111",
+          "title": "AI Agent 架构工程师",
+          "level": "mentioned",
+          "evidence": "整体设计聚变场景 AI Agent 分布式平台架构，包含调度中心、模型推理集群、插件服务、数据中台整体方案"
+        },
+        {
+          "document_id": "JD_40869457005",
+          "title": "AI DevOps 工程师",
+          "level": "preferred",
+          "evidence": "• 熟悉主流大模型推理框架、GPU 运行环境或模型推理性能调优。"
+        },
+        {
+          "document_id": "JD_40861426109",
+          "title": "AI Infra工程师",
+          "level": "mentioned",
+          "evidence": "深耕AIGC及大模型推理场景，开展底层技术栈性能剖析与代码级优化，提升模型推理响应速度"
+        },
+        {
+          "document_id": "JD_40861426209",
+          "title": "AI Infra工程师",
+          "level": "mentioned",
+          "evidence": "深耕AIGC及大模型推理场景，开展底层技术栈性能剖析与代码级优化，提升模型推理响应速度"
+        },
+        {
+          "document_id": "JD_40857091211",
+          "title": "AI ISP 工程师（中高级）",
+          "level": "preferred",
+          "evidence": "拥有端侧芯片（NPU）AI ISP算法量产落地经验，熟悉端侧模型推理部署流程。"
+        },
+        {
+          "document_id": "JD_40857064811",
+          "title": "AI ISP算法",
+          "level": "preferred",
+          "evidence": "拥有端侧芯片（NPU）AI ISP算法量产落地经验，熟悉端侧模型推理部署流程。"
+        }
+      ]
+    },
+    {
+      "name": "PostgreSQL",
+      "count": 280,
+      "levels": {
+        "required": 210,
+        "mentioned": 25,
+        "preferred": 45
+      },
+      "examples": [
+        {
+          "document_id": "JD_40939707415",
+          "title": "2026届-博士-AI/算法工程师-北京总部",
+          "level": "required",
+          "evidence": "了解深度学习，熟悉数据库(RDBMS)，如MySQL,PostgreSQL,MS SQL, NoSQL等。"
+        },
+        {
+          "document_id": "JD_40917929108",
+          "title": "Agent全栈应用开发工程师",
+          "level": "required",
+          "evidence": "l 熟悉PostgreSQL / MySQL等关系型数据库"
+        },
+        {
+          "document_id": "JD_40859154601",
+          "title": "Agent工程师",
+          "level": "required",
+          "evidence": "精通PostgreSQL/MySQL/ElasticSearch等数据库及数据库性能调优"
+        },
+        {
+          "document_id": "JD_40859394205",
+          "title": "agent开发工程师",
+          "level": "required",
+          "evidence": "熟悉分布式系统原理，掌握缓存(Redis)、消息队列(Kafka/Pulsar) 、数据库(MySQL/PostgreSQL)等中间件，有高并发、高可用系统设计与调优经验"
+        },
+        {
+          "document_id": "JD_40871051214",
+          "title": "Agent开发工程师",
+          "level": "mentioned",
+          "evidence": "设计数据库架构，负责 MySQL、PostgreSQL、向量库（Milvus/FAISS/Chroma）等使用、优化与运维，保障数据读写稳定。"
+        },
+        {
+          "document_id": "JD_40857379005",
+          "title": "agent开发工程师(XZ-GR)",
+          "level": "required",
+          "evidence": "熟悉分布式系统原理，掌握缓存(Redis)、消息队列(Kafka/Pulsar) 、数据库(MySQL/PostgreSQL)等中间件，有高并发、高可用系统设计与调优经验"
+        },
+        {
+          "document_id": "JD_40862392705",
+          "title": "AI Agent 后端开发工程师",
+          "level": "preferred",
+          "evidence": "负责多Agent协同调度系统的设计与实现，基于任务优先级、资源占用情况设计调度算法，开发Skill技能库的注册、管理、调用机制，实现短期记忆（Redis缓存）与长期记忆（MySQL/PostgreSQL持久化）的分层存储与高效查询，保障系统高可用（99.9%+）、高并发（支持1000+并发请求）。"
+        },
+        {
+          "document_id": "JD_40862392705",
+          "title": "AI Agent 后端开发工程师",
+          "level": "preferred",
+          "evidence": "3•熟练掌握Docker、K8s容器化部署与运维，能独立搭建集群环境、配置自动扩缩容与故障自愈策略；精通MySQL/PostgreSQL数据库设计、索引优化、事务处理，熟练使用Redis进行缓存设计、分布式锁实现，了解MongoDB等非关系型数据库者加分。"
+        }
+      ]
+    },
+    {
+      "name": "simulink",
+      "count": 275,
+      "levels": {
+        "required": 186,
+        "mentioned": 56,
+        "preferred": 33
+      },
+      "examples": [
+        {
+          "document_id": "JD_40854813111",
+          "title": "(苏州）电机控制算法工程师",
+          "level": "required",
+          "evidence": "熟悉matlab/simulink工具的使用，能建立电机或者悬浮等控制算法模型并应用到实际某款嵌入式设备"
+        },
+        {
+          "document_id": "JD_40913263312",
+          "title": "ADAS算法工程师",
+          "level": "required",
+          "evidence": "精通基于Matlab/Simulink的汽车电子软件嵌入式开发流程及方法，拥有良好的算法开发能力"
+        },
+        {
+          "document_id": "JD_40879717405",
+          "title": "AGV智能物流与智能化车间系统技术总(国企直签，猎头代招）",
+          "level": "mentioned",
+          "evidence": "数字化仿真能力：Matlab/Simulink建模分析，TwinBuilder或Unity虚实联动调试、新设备虚拟调试验证。 |"
+        },
+        {
+          "document_id": "JD_40911933012",
+          "title": "AI应用工程师",
+          "level": "required",
+          "evidence": "a) 基于Simulink或其他Modelica类工具搭建机械/电气/流体等多物理域系统建模并且进行过源码改写、优化的经验;基于实际产品自己编写代码搭建对应数学、物理原理性模型并且搭建对应优化设计流程的经验"
+        },
+        {
+          "document_id": "JD_40833823707",
+          "title": "AI应用研发工程师",
+          "level": "required",
+          "evidence": "熟练使用MATLAB/Simulink、PLECS、PSIM、LTspice等仿真工具"
+        },
+        {
+          "document_id": "JD_40870579505",
+          "title": "AI软件工程师",
+          "level": "mentioned",
+          "evidence": "基于 Matlab/Simulink 完成控制算法建模与仿真验证；负责算法 C/C++ 代码实现、调试与测试，输出标准化技术文档与专利。"
+        },
+        {
+          "document_id": "JD_40870579505",
+          "title": "AI软件工程师",
+          "level": "required",
+          "evidence": "熟练使用Python（PyTorch/TensorFlow） 进行模型开发与训练，掌握 Matlab/Simulink 仿真；具备 C/C++ 嵌入式开发与模型部署经验。"
+        },
+        {
+          "document_id": "JD_40807101505",
+          "title": "BMS算法工程师",
+          "level": "required",
+          "evidence": "开发电池管理系统SOX等应用层算法，安全管理算法（熟练使用matlab/simulink）的构建、应用、测评、报告"
+        }
+      ]
+    },
+    {
+      "name": "Kubernetes",
+      "count": 245,
+      "levels": {
+        "mentioned": 22,
+        "required": 162,
+        "preferred": 61
+      },
+      "examples": [
+        {
+          "document_id": "JD_40865562105",
+          "title": "3D生成平台架构师（面向智能制造/CNC方向）",
+          "level": "mentioned",
+          "evidence": "平台整体架构与技术选型： 负责 3D 生成模型托管平台的整体架构设计。解决基于 Kubernetes 的高并发容器调度、分布式存储及 GPU 算力的动态分配问题。"
+        },
+        {
+          "document_id": "JD_40865562105",
+          "title": "3D生成平台架构师（面向智能制造/CNC方向）",
+          "level": "required",
+          "evidence": "基础设施底子硬： 熟练掌握 Kubernetes、Docker，深入理解微服务架构、消息队列（如 RabbitMQ/Kafka）以及基于 KEDA 等组件的弹性伸缩策略。"
+        },
+        {
+          "document_id": "JD_40873341614",
+          "title": "Agent全栈开发工程师",
+          "level": "required",
+          "evidence": "熟悉 Docker、Kubernetes 等容器技术，有容器化服务部署与运维经验"
+        },
+        {
+          "document_id": "JD_40892719412",
+          "title": "Agent开发",
+          "level": "required",
+          "evidence": "具备算法工程化能力，熟悉Docker、Kubernetes、MLOps、HPC等部署与运维工具"
+        },
+        {
+          "document_id": "JD_40911675512",
+          "title": "Agent架构师（J10222）",
+          "level": "required",
+          "evidence": "熟练使用主流数据库技术，掌握数据库优化技巧，深度了解 Docker、Kubernetes(K8S)等容器化技术，具备缓存机制设计、消息队列应用及搜索系统集成的经验，能够通过这些技术提升业务性能"
+        },
+        {
+          "document_id": "JD_40960688902",
+          "title": "Agnet开发工程师",
+          "level": "required",
+          "evidence": "具备高并发、高可用系统设计经验，熟练使用 Docker、Kubernetes 等容器化与编排技术。"
+        },
+        {
+          "document_id": "JD_40994179602",
+          "title": "AI Agent 全栈开发工程师",
+          "level": "required",
+          "evidence": "熟悉Docker容器化部署，了解Kubernetes基础，具备基本的Linux运维能力"
+        },
+        {
+          "document_id": "JD_40901599502",
+          "title": "AI Agent 应用开发工程师",
+          "level": "required",
+          "evidence": "技术栈: 熟悉向量数据库(如Milvus、Pinecone)的使用,了解微服务架构及Docker/Kubernetes等容器化技术。"
+        }
+      ]
+    },
+    {
+      "name": "Spark",
+      "count": 229,
+      "levels": {
+        "preferred": 65,
+        "required": 146,
+        "mentioned": 18
+      },
+      "examples": [
+        {
+          "document_id": "JD_40867633210",
+          "title": "AGV RCS系统调度算法工程师",
+          "level": "preferred",
+          "evidence": "掌握大数据技术栈：Hadoop、Spark、Flink、Kafka等分布式框架，以及Hive、HBase等数据存储工具优先。"
+        },
+        {
+          "document_id": "JD_40869457005",
+          "title": "AI DevOps 工程师",
+          "level": "preferred",
+          "evidence": "• 熟悉 Kafka / RabbitMQ / RocketMQ、Redis、PostgreSQL / MySQL、Elastic Search、MinIO / OSS、Doris / ClickHouse、Spark / Flink。"
+        },
+        {
+          "document_id": "JD_40994009902",
+          "title": "AI FDE 广告前沿部署工程师",
+          "level": "required",
+          "evidence": "熟悉大数据链路，了解 Flink/Spark 实时、离线数据处理，了解特征工程、样本构建流程。"
+        },
+        {
+          "document_id": "JD_40583880414",
+          "title": "AI/ML工程师",
+          "level": "preferred",
+          "evidence": " 了解的大数据存储与处理技术，如：HIVE,spark，有数据清洗经验优先。"
+        },
+        {
+          "document_id": "JD_40942555015",
+          "title": "AI信息安全研发工程师",
+          "level": "preferred",
+          "evidence": "熟练 Docker、Linux 常用命令，了解 HTML/CSS/JS 及 Web 基础原理；精通 PostgreSQL，熟悉 Elasticsearch、Redis 等；掌握 Flink/Spark 实时数据处理优先"
+        },
+        {
+          "document_id": "JD_40627174407",
+          "title": "AI和大数据研发工程师（临港）(J11959)",
+          "level": "required",
+          "evidence": "数据处理与管理: 熟练掌握数据清洗、标准化、增强等预处理技术，以提高模型训练的效果。熟悉大数据处理框架(如Hadoop、Spark)和分布式存储系统，有效管理和处理大规模数据集。"
+        },
+        {
+          "document_id": "JD_40627174407",
+          "title": "AI和大数据研发工程师（临港）(J11959)",
+          "level": "preferred",
+          "evidence": "熟悉Hadoop、Spark等常用的大数据工具、熟悉Docker/Kubernetes、有应用系统研发经验优先考虑。"
+        },
+        {
+          "document_id": "JD_40943300615",
+          "title": "AI大数据开发工程师",
+          "level": "required",
+          "evidence": "熟练使用Hadoop、Spark、Flink、Kafka等大数据生态"
+        }
+      ]
+    },
+    {
+      "name": "FAISS",
+      "count": 191,
+      "levels": {
+        "required": 130,
+        "mentioned": 17,
+        "preferred": 44
+      },
+      "examples": [
+        {
+          "document_id": "JD_40848346911",
+          "title": "Agent应用开发工程师",
+          "level": "required",
+          "evidence": "熟悉至少一种向量数据库或检索方案，如 Chroma、FAISS 等。具备较强的问题分析与自主学习能力，对 Agent 方向保持持续关注。"
+        },
+        {
+          "document_id": "JD_40932690915",
+          "title": "Agent应用开发工程师",
+          "level": "mentioned",
+          "evidence": "【1】负责检索增强生成（RAG）系统的全链路搭建与优化，涵盖文档解析、Embedding 模型选型、向量数据库（Milvus/Faiss 等）管理、召回策略及重排序调优。"
+        },
+        {
+          "document_id": "JD_40871051214",
+          "title": "Agent开发工程师",
+          "level": "mentioned",
+          "evidence": "设计数据库架构，负责 MySQL、PostgreSQL、向量库（Milvus/FAISS/Chroma）等使用、优化与运维，保障数据读写稳定。"
+        },
+        {
+          "document_id": "JD_40843248610",
+          "title": "Agent开发工程师",
+          "level": "required",
+          "evidence": "精通LangChain或LangGraph智能体开发框架，掌握RAG技术及Milvus/FAISS向量数据库的应用。"
+        },
+        {
+          "document_id": "JD_40892824613",
+          "title": "AI Agent 应用开发工程师",
+          "level": "required",
+          "evidence": "精通 Python，熟练 LangChain/LangGraph、Function Calling、RAG、向量数据库（Milvus/FAISS）、提示词工程。"
+        },
+        {
+          "document_id": "JD_40828187916",
+          "title": "AI Agent 开发工程师（全额五险一金+双休）",
+          "level": "required",
+          "evidence": "了解向量数据库（Milvus/Chroma/Faiss等）的使用，能独立完成RAG流程的设计与实现。"
+        },
+        {
+          "document_id": "JD_40857435010",
+          "title": "AI Agent 架构工程师",
+          "level": "required",
+          "evidence": "熟练使用 Python、向量数据库（Milvus/FAISS），具备 RAG 知识库、企业级 AI 项目落地经验"
+        },
+        {
+          "document_id": "JD_40778576306",
+          "title": "AI Agent全栈开发",
+          "level": "required",
+          "evidence": "熟练使用Milvus、FAISS等向量数据库，可独立搭建并优化RAG检索系统。"
+        }
+      ]
+    },
+    {
+      "name": "BERT",
+      "count": 175,
+      "levels": {
+        "mentioned": 20,
+        "required": 134,
+        "preferred": 21
+      },
+      "examples": [
+        {
+          "document_id": "JD_40707336806",
+          "title": "2026年神经网络建模算法的毕业硕士生实习岗位",
+          "level": "mentioned",
+          "evidence": "深入理解大模型（如GPT、BERT）的设计思想与训练机制（如预训练、微调、RLHF）。"
+        },
+        {
+          "document_id": "JD_40892719412",
+          "title": "Agent开发",
+          "level": "required",
+          "evidence": "精通LLM与Agent开发，熟悉Transformer、BERT、GPT、LLaMA等模型架构，具备微调、部署与优化经验"
+        },
+        {
+          "document_id": "JD_40834750611",
+          "title": "Agent开发工程师",
+          "level": "required",
+          "evidence": "具备自然语言处理（NLP）经验，熟悉BERT、GPT等模型的应用与调优。"
+        },
+        {
+          "document_id": "JD_41006282704",
+          "title": "Agent研发工程师",
+          "level": "required",
+          "evidence": "扎实的理论基础（监督学习、无监督学习、强化学习、深度学习等概念),熟悉传统模型(如SVM,集成树、CNN、LSTM、BERT、Embedding、Reranker等）"
+        },
+        {
+          "document_id": "JD_40669285616",
+          "title": "AI 架构师（大模型方向）",
+          "level": "required",
+          "evidence": "了解大模型的原理、架构、训练和推理技术，例如 Transformer、BERT、GPT 等。"
+        },
+        {
+          "document_id": "JD_40845687709",
+          "title": "AIGC工程师",
+          "level": "required",
+          "evidence": "熟悉Bert、transformer、GPT、T5等模型结构"
+        },
+        {
+          "document_id": "JD_40863031914",
+          "title": "AI产品及方案架构师",
+          "level": "required",
+          "evidence": "熟悉深度学习大模型相关主要工具和主流经典AI模型，如BERT、GPT、ViT、CLIP或StableDiffusion等"
+        },
+        {
+          "document_id": "JD_40858084314",
+          "title": "AI产品及方案架构师",
+          "level": "required",
+          "evidence": "熟悉深度学习大模型相关主要工具和主流经典AI模型，如BERT、GPT、ViT、CLIP或StableDiffusion等"
+        }
+      ]
+    },
+    {
+      "name": "模型评估",
+      "count": 174,
+      "levels": {
+        "required": 58,
+        "mentioned": 106,
+        "preferred": 10
+      },
+      "examples": [
+        {
+          "document_id": "JD_40955389915",
+          "title": "AI Agent开发工程师",
+          "level": "required",
+          "evidence": "精通 RAG 系统全链路设计：向量数据库选型与调优（Milvus / Pinecone / Weaviate / Qdrant）、分块策略与元数据设计、嵌入模型评估与切换、混合搜索与重排序策略、HyDE / Multi-Query 等高级检索范式；了解 GraphRAG 与知识图谱增强检索。"
+        },
+        {
+          "document_id": "JD_40865380009",
+          "title": "AI builder-模型方向",
+          "level": "mentioned",
+          "evidence": "建立完善的模型评估体系，持续跟踪线上模型效果，通过AB实验和数据驱动方式推动模型持续迭代优化。"
+        },
+        {
+          "document_id": "JD_40867050802",
+          "title": "AI 工程师（大模型私有化与场景化应用方向）",
+          "level": "mentioned",
+          "evidence": "搭建模型评估体系，通过 Prompt Engineering 与用户反馈迭代优化生成质量，输出运维报告并提出架构升级方案。"
+        },
+        {
+          "document_id": "JD_40865816609",
+          "title": "AI 算法工程师（AI Algorithm）",
+          "level": "mentioned",
+          "evidence": "设计模型评估体系并持续优化效果"
+        },
+        {
+          "document_id": "JD_40756917506",
+          "title": "AIOps 工程师（LLM平台 / AI系统运维）",
+          "level": "required",
+          "evidence": "有 AI模型评估或自动化测试体系建设经验"
+        },
+        {
+          "document_id": "JD_40856509305",
+          "title": "ai专家（架构、培训、算法方向）",
+          "level": "mentioned",
+          "evidence": "负责设计、开发和优化具有强大语言理解和生成能力的大规模语言模型。跟踪人工智能前沿技术，对AI大模型的未来发展和应用进行设计、规划、研发。进行模型架构的设计，确定模型的整体结构，包括层数、参数数量和连接方式等，考虑模型的可扩展性、计算效率和内存占用。进行数据预处理和模型训练，包括收集和准备文本数据，进行数据清洗、标记和表示转换，以及使用计算资源进行模型训练。进行模型评估和优化，使用评估指标和测试数据评估模型性能，进行模型微调、网络剪枝或其他优化技术的应用"
+        },
+        {
+          "document_id": "JD_40856509305",
+          "title": "ai专家（架构、培训、算法方向）",
+          "level": "mentioned",
+          "evidence": "进行模型评估与调优，确保准确性和鲁棒性。"
+        },
+        {
+          "document_id": "JD_40912262812",
+          "title": "AI产品检测工程师",
+          "level": "required",
+          "evidence": "软件测试经验，熟悉AI产品测试流程，掌握模型评估指标（如准确率、召回率、F1值）。"
+        }
+      ]
+    },
+    {
+      "name": "Kafka",
+      "count": 167,
+      "levels": {
+        "required": 130,
+        "preferred": 29,
+        "mentioned": 8
+      },
+      "examples": [
+        {
+          "document_id": "JD_40875487605",
+          "title": ".NET全栈开发工程师（偏AI）",
+          "level": "required",
+          "evidence": "熟练配置和使用 Nginx、Redis、RabbitMQ/Kafka、Elasticsearch、Prometheus/Grafana 等主流中间件。"
+        },
+        {
+          "document_id": "JD_40865562105",
+          "title": "3D生成平台架构师（面向智能制造/CNC方向）",
+          "level": "required",
+          "evidence": "基础设施底子硬： 熟练掌握 Kubernetes、Docker，深入理解微服务架构、消息队列（如 RabbitMQ/Kafka）以及基于 KEDA 等组件的弹性伸缩策略。"
+        },
+        {
+          "document_id": "JD_40859154601",
+          "title": "Agent工程师",
+          "level": "required",
+          "evidence": "熟悉分布式系统系统架构，掌握分布式缓存（如Redis），消息队列（如RabbitMQ、Kafka等）"
+        },
+        {
+          "document_id": "JD_40859394205",
+          "title": "agent开发工程师",
+          "level": "required",
+          "evidence": "熟悉分布式系统原理，掌握缓存(Redis)、消息队列(Kafka/Pulsar) 、数据库(MySQL/PostgreSQL)等中间件，有高并发、高可用系统设计与调优经验"
+        },
+        {
+          "document_id": "JD_40857379005",
+          "title": "agent开发工程师(XZ-GR)",
+          "level": "required",
+          "evidence": "熟悉分布式系统原理，掌握缓存(Redis)、消息队列(Kafka/Pulsar) 、数据库(MySQL/PostgreSQL)等中间件，有高并发、高可用系统设计与调优经验"
+        },
+        {
+          "document_id": "JD_40960688902",
+          "title": "Agnet开发工程师",
+          "level": "required",
+          "evidence": "熟悉微服务架构、消息队列（Kafka/RabbitMQ）、云服务部署"
+        },
+        {
+          "document_id": "JD_40867633210",
+          "title": "AGV RCS系统调度算法工程师",
+          "level": "preferred",
+          "evidence": "掌握大数据技术栈：Hadoop、Spark、Flink、Kafka等分布式框架，以及Hive、HBase等数据存储工具优先。"
+        },
+        {
+          "document_id": "JD_40869467505",
+          "title": "AI Agent开发工程师",
+          "level": "required",
+          "evidence": "异步与消息队列能力：熟悉消息队列和异步任务机制，有 Kafka、RabbitMQ、RocketMQ 等组件实践经验。"
+        }
+      ]
+    },
+    {
+      "name": "数字信号处理",
+      "count": 160,
+      "levels": {
+        "required": 132,
+        "preferred": 13,
+        "mentioned": 15
+      },
+      "examples": [
+        {
+          "document_id": "JD_40854813111",
+          "title": "(苏州）电机控制算法工程师",
+          "level": "required",
+          "evidence": "熟悉基本硬件驱动电路、嵌入式开发及常规测试设备使用，熟悉控制器软件算法设计流程，精通自动控制原理、数字信号处理等专业知识"
+        },
+        {
+          "document_id": "JD_40834751814",
+          "title": "2026-终端通信算法高级工程师",
+          "level": "required",
+          "evidence": "理论基础：具备扎实的通信理论基础，深入理解数字信号处理、信息论、检测与估计理论、随机过程等。"
+        },
+        {
+          "document_id": "JD_40834751914",
+          "title": "2026-终端通信算法高级工程师",
+          "level": "required",
+          "evidence": "理论基础：具备扎实的通信理论基础，深入理解数字信号处理、信息论、检测与估计理论、随机过程等。"
+        },
+        {
+          "document_id": "JD_40876710403",
+          "title": "6G星载再生载荷关键技术与和系统研究通信算法系统工程师",
+          "level": "required",
+          "evidence": "• 熟悉FPGA开发或数字信号处理技术"
+        },
+        {
+          "document_id": "JD_40870760013",
+          "title": "AI后处理算法工程师",
+          "level": "required",
+          "evidence": "掌握数字信号处理、图像处理、深度学习等核心技术，独立完成算法方案设计、实现与验证"
+        },
+        {
+          "document_id": "JD_40991432602",
+          "title": "AI应用模型开发工程师",
+          "level": "required",
+          "evidence": "掌握主流深度学习算法，根据集团业务场景设计模型，包括但不限于CV/数字信号处理/异常检测等深度学习模型"
+        },
+        {
+          "document_id": "JD_40992482902",
+          "title": "AI应用模型开发工程师(J11191)",
+          "level": "required",
+          "evidence": "掌握主流深度学习算法，根据集团业务场景设计模型，包括但不限于CV/数字信号处理/异常检测等深度学习模型"
+        },
+        {
+          "document_id": "JD_31318793184",
+          "title": "ai算法工程师",
+          "level": "required",
+          "evidence": "熟悉数字信号处理算法的各种原理，具有良好的数据建模和分析能力，熟练使用建模和分析工具"
+        }
+      ]
+    },
+    {
+      "name": "通义千问",
+      "count": 160,
+      "levels": {
+        "required": 92,
+        "preferred": 14,
+        "mentioned": 54
+      },
+      "examples": [
+        {
+          "document_id": "JD_40756581406",
+          "title": ".NET AI软件开发工程师（朝九晚六+双休）",
+          "level": "required",
+          "evidence": "了解AI工作原理，熟悉GPT、文心一言、通义千问等常见大模型；熟悉操作系统、计算机网络等底层原理。"
+        },
+        {
+          "document_id": "JD_40785865414",
+          "title": "2026届-高级算法工程师（大模型） (MJ003971)",
+          "level": "preferred",
+          "evidence": "熟练掌握通义千问等算法训练范式，有从0到1构建NLP大模型（百亿参数以上）经验优先"
+        },
+        {
+          "document_id": "JD_40994471002",
+          "title": "Agent开发工程师",
+          "level": "required",
+          "evidence": "● 熟悉主流大模型API调用方式（OpenAI / Claude / 通义千问 / DeepSeek等），深入理解Function Calling / Tool Use机制"
+        },
+        {
+          "document_id": "JD_40960688902",
+          "title": "Agnet开发工程师",
+          "level": "required",
+          "evidence": "熟悉主流大模型（GPT 系列、文心一言、通义千问等）的调用与适配，掌握向量数据库（Milvus/Chroma 等）与知识库检索技术"
+        },
+        {
+          "document_id": "JD_40932092008",
+          "title": "AI Agent 智能工程师",
+          "level": "preferred",
+          "evidence": "熟悉大语言模型（LLM）的应用与微调，有GPT、Claude、通义千问、文心一言等模型的集成与二次开发经验者优先。"
+        },
+        {
+          "document_id": "JD_40801217601",
+          "title": "AI Agent应用开发工程师",
+          "level": "mentioned",
+          "evidence": "基于LLM（如GPT-4o、通义千问等）开发能够自主决策和任务执行的AI Agent"
+        },
+        {
+          "document_id": "JD_40824374211",
+          "title": "AI Agent应用开发工程师",
+          "level": "required",
+          "evidence": "大模型应用经验：熟练掌握至少三种主流大模型（GPT、Claude、通义千问、文心一言等）的API调用、二次开发与微调，具备Prompt工程优化经验，能解决模型幻觉、上下文窗口限制等问题。"
+        },
+        {
+          "document_id": "JD_40866829709",
+          "title": "AI Agent开发与实施工程师",
+          "level": "mentioned",
+          "evidence": "基于主流大模型（GPT、文心一言、通义千问、Claude等）及AI Agent框架，完成智能体的Prompt工程优化、记忆机制、工具插件（RAG知识库、API调用、文档解析、流程自动化）集成开发。"
+        }
+      ]
+    },
+    {
+      "name": "shell",
+      "count": 157,
+      "levels": {
+        "required": 132,
+        "preferred": 17,
+        "mentioned": 8
+      },
+      "examples": [
+        {
+          "document_id": "JD_40801516516",
+          "title": "2D软件视觉算法工程师",
+          "level": "required",
+          "evidence": "熟悉shell脚本、批处理文件、svn/git管理工具。"
+        },
+        {
+          "document_id": "JD_40859154601",
+          "title": "Agent工程师",
+          "level": "required",
+          "evidence": "熟悉Linux跨平台开发和Shell脚本"
+        },
+        {
+          "document_id": "JD_40821213716",
+          "title": "agent平台开发工程师",
+          "level": "preferred",
+          "evidence": "熟悉一门以上语言(Golang/Python/Java/Shell等)，且熟悉Golang/Python者优先"
+        },
+        {
+          "document_id": "JD_40862392705",
+          "title": "AI Agent 后端开发工程师",
+          "level": "mentioned",
+          "evidence": "负责ToB AI智能体核心框架开发与迭代，基于OpenClaw（TypeScript/Node.js）、Copaw（TypeScript）开源项目进行二次开发，深度对接阿里Agentic OS（ANOLISA）底层能力，包括Copilot Shell（cosh）交互接口、AgentSecCore安全组件、AgentSight可观测模块的调用与封装，实现框架与OS层的无缝联动。"
+        },
+        {
+          "document_id": "JD_40862392705",
+          "title": "AI Agent 后端开发工程师",
+          "level": "required",
+          "evidence": "2•深入理解阿里Agentic OS（ANOLISA）核心组件，熟悉Copilot Shell（cosh）交互机制、AgentSecCore安全防护原理、AgentSight可观测模块的使用与配置，能熟练调用OS层接口进行开发。"
+        },
+        {
+          "document_id": "JD_40931342308",
+          "title": "AI Agent 高级开发工程师（AI算法）",
+          "level": "required",
+          "evidence": "熟练掌握Python/Shell等编程语言，掌握Linux操作系统下Git、Docker等常用开发工具"
+        },
+        {
+          "document_id": "JD_40873934005",
+          "title": "AI agent底层技术内容专家【六险一金】算法",
+          "level": "required",
+          "evidence": "（3）Linux环境操作3年以上经验，熟悉shell命令与基本的系统管理。"
+        },
+        {
+          "document_id": "JD_40869457005",
+          "title": "AI DevOps 工程师",
+          "level": "required",
+          "evidence": "Linux 系统运维：熟练掌握系统安装、服务管理、Shell 脚本编写及日志分析，能够独立完成环境问题的定位与排查，不依赖图形界面操作。"
+        }
+      ]
+    },
+    {
+      "name": "语音识别",
+      "count": 153,
+      "levels": {
+        "preferred": 29,
+        "mentioned": 75,
+        "required": 49
+      },
+      "examples": [
+        {
+          "document_id": "JD_40834868814",
+          "title": "2026-终端AI开发工程师",
+          "level": "preferred",
+          "evidence": "具备计算机视觉、语音识别、tflite、OpenCV、YOLO 等技术调试经验优先。"
+        },
+        {
+          "document_id": "JD_40994179602",
+          "title": "AI Agent 全栈开发工程师",
+          "level": "preferred",
+          "evidence": "3年以上Java全栈开发经验，有开源项目贡献或AI技术博客输出、了解常见向量数据库（Milvus / Qdrant / Weaviate等）、多模态大模型（文生图、图生文、语音识别等）应用经验者优先"
+        },
+        {
+          "document_id": "JD_40916989312",
+          "title": "AI Agent 智能体开发",
+          "level": "preferred",
+          "evidence": "了解多模态技术（如语音识别、图像理解）与智能体的结合应用者优先。"
+        },
+        {
+          "document_id": "JD_40916989412",
+          "title": "AI Agent 智能体开发",
+          "level": "preferred",
+          "evidence": "了解多模态技术（如语音识别、图像理解）与智能体的结合应用者优先。"
+        },
+        {
+          "document_id": "JD_40824374211",
+          "title": "AI Agent应用开发工程师",
+          "level": "preferred",
+          "evidence": "工具集成与交互开发：有外部API、业务系统集成经验，熟悉RESTful API、WebSocket等通信协议；具备多模态交互开发经验（语音识别、图像处理对接）者加分。"
+        },
+        {
+          "document_id": "JD_40953852715",
+          "title": "AI 模型部署 / 推理服务工程师",
+          "level": "mentioned",
+          "evidence": "语音识别 / 合成、音频流、模型调用全链路开发联调"
+        },
+        {
+          "document_id": "JD_41017044504",
+          "title": "AI 视觉与大模型开发工程师（教育机器人方向）",
+          "level": "mentioned",
+          "evidence": "结合 AI 技术、自然语言处理能力，开发语音识别、语义理解、语音播报相关功能模块。"
+        },
+        {
+          "document_id": "JD_40756613006",
+          "title": "AIGC应用工程师（展陈方向）",
+          "level": "preferred",
+          "evidence": "从业经验： 具备2-4年软件产品或AI产品经验，有To-B项目（如展馆、政企数字孪生等）经验者优先。深入理解生成式AI原理，对多模态内容生成（图文、视频、语音）的边界技术有语音识别。"
+        }
+      ]
+    },
+    {
+      "name": "自动控制",
+      "count": 144,
+      "levels": {
+        "required": 112,
+        "mentioned": 13,
+        "preferred": 19
+      },
+      "examples": [
+        {
+          "document_id": "JD_40854813111",
+          "title": "(苏州）电机控制算法工程师",
+          "level": "required",
+          "evidence": "熟悉基本硬件驱动电路、嵌入式开发及常规测试设备使用，熟悉控制器软件算法设计流程，精通自动控制原理、数字信号处理等专业知识"
+        },
+        {
+          "document_id": "JD_40866235010",
+          "title": "2026应届生补录：算法/数学/机械设计/电气方向应届生",
+          "level": "required",
+          "evidence": "电气工程师负责环保设备及工程项目的电气设计工作，包括设备自动控制设计、PLC程序编制、上位机程序编制，设备调试，工程项目远程集中控制设计、工程项目临时供配电设计等工作，需要完成电气图纸设计、零部件选型、工程造价估算、材料清单编制等。"
+        },
+        {
+          "document_id": "JD_40874496114",
+          "title": "3D算法工程师(J11102)",
+          "level": "required",
+          "evidence": "计算机、模式识别、应用数学、自动控制等相关专业背景，硕士及以上学历，要求是3年左右经验，重点院校的硕士应届生或实习生可投递。"
+        },
+        {
+          "document_id": "JD_40881739113",
+          "title": "AI应用工程师",
+          "level": "mentioned",
+          "evidence": "负责电气自动化设备的自动控制程序的设计与开发"
+        },
+        {
+          "document_id": "JD_40881739113",
+          "title": "AI应用工程师",
+          "level": "mentioned",
+          "evidence": "对现有的自动控制程序进行升级改造，对系统数据分析界面进行设计，对系统关联的PLC程序，wincc进行界面设计和优化"
+        },
+        {
+          "document_id": "JD_40924080308",
+          "title": "AI算法工程师",
+          "level": "required",
+          "evidence": "计算机/数学/物理/电子工程/自动控制专业本科及以上学历，3年以上工作经验"
+        },
+        {
+          "document_id": "JD_40836715805",
+          "title": "ai算法研发工程师",
+          "level": "required",
+          "evidence": "硕士及以上学历，自动控制、数学、运筹学、人工智能、大数据、计算机等相关专业"
+        },
+        {
+          "document_id": "JD_41003542004",
+          "title": "AI首席科学家（智慧水利）",
+          "level": "mentioned",
+          "evidence": "数字孪生：结合AI与数字孪生技术，实现物理水网与数字世界的实时映射、模拟推演与自动控制。"
+        }
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "count": 141,
+      "levels": {
+        "required": 103,
+        "preferred": 27,
+        "mentioned": 11
+      },
+      "examples": [
+        {
+          "document_id": "JD_40873341614",
+          "title": "Agent全栈开发工程师",
+          "level": "required",
+          "evidence": "具备前端开发经验，熟练掌握 JavaScript/TypeScript，能独立完成前端功能开发"
+        },
+        {
+          "document_id": "JD_40918752512",
+          "title": "Agent工程师",
+          "level": "required",
+          "evidence": "熟悉至少一种编程语言，Python、JavaScript、TypeScript任一即可，能独立编写简单脚本处理CSV、Excel、网页数据、API数据。"
+        },
+        {
+          "document_id": "JD_40856463407",
+          "title": "Agent开发（驻场 现场面试 欢迎咨询）",
+          "level": "required",
+          "evidence": "核心能力：熟练掌握至少一门编程语言（如JavaScript/TypeScript、Python、Java、Go）。"
+        },
+        {
+          "document_id": "JD_40882555213",
+          "title": "AI Agent 工程师",
+          "level": "required",
+          "evidence": "具备扎实的编程基础，熟悉Python、JavaScript等至少一种编程语言"
+        },
+        {
+          "document_id": "JD_40849586013",
+          "title": "AI Agent 技术负责人 / 全栈架构师",
+          "level": "required",
+          "evidence": "技能：精通Python/JavaScript，熟悉主流前后端框架及数据库；有机器学习/深度学习项目经验；具备服务器运维部署能力。"
+        },
+        {
+          "document_id": "JD_40770778406",
+          "title": "AI Agent前端开发",
+          "level": "required",
+          "evidence": "精通HTML5、CSS3、JavaScript，熟练掌握Vue3、React等主流前端框架，熟悉TypeScript，能独立完成前端项目开发与优化。"
+        },
+        {
+          "document_id": "JD_40846217307",
+          "title": "AI Agent开发工程师",
+          "level": "required",
+          "evidence": "核心能力：熟练掌握至少一门编程语言（如JavaScript/TypeScript、Python、Java、Go）。"
+        },
+        {
+          "document_id": "JD_40907075703",
+          "title": "AI 全栈工程师",
+          "level": "required",
+          "evidence": "• 熟练使用 Python、TypeScript、JavaScript、Java、C#、Go 等至少一门主流编程语言开发软件"
+        }
+      ]
+    },
+    {
+      "name": "TypeScript",
+      "count": 141,
+      "levels": {
+        "required": 90,
+        "mentioned": 17,
+        "preferred": 34
+      },
+      "examples": [
+        {
+          "document_id": "JD_40853946411",
+          "title": "0991A4-agent开发工程师",
+          "level": "required",
+          "evidence": "精通Python，且至少精通Go/Java/Rust/C++/TypeScript中的一门"
+        },
+        {
+          "document_id": "JD_40856356609",
+          "title": "Agent全栈工程师",
+          "level": "required",
+          "evidence": "精通 Python / TypeScript 之一，具备良好的工程素养：模块化、测试、可维护性、代码评审习惯。"
+        },
+        {
+          "document_id": "JD_40873341614",
+          "title": "Agent全栈开发工程师",
+          "level": "required",
+          "evidence": "具备前端开发经验，熟练掌握 JavaScript/TypeScript，能独立完成前端功能开发"
+        },
+        {
+          "document_id": "JD_40918752512",
+          "title": "Agent工程师",
+          "level": "required",
+          "evidence": "熟悉至少一种编程语言，Python、JavaScript、TypeScript任一即可，能独立编写简单脚本处理CSV、Excel、网页数据、API数据。"
+        },
+        {
+          "document_id": "JD_40871051214",
+          "title": "Agent开发工程师",
+          "level": "required",
+          "evidence": "前端：熟练使用 Vue/React、TypeScript，理解前端工程化、组件化思想，能独立完成页面开发与联调。"
+        },
+        {
+          "document_id": "JD_40856463407",
+          "title": "Agent开发（驻场 现场面试 欢迎咨询）",
+          "level": "required",
+          "evidence": "核心能力：熟练掌握至少一门编程语言（如JavaScript/TypeScript、Python、Java、Go）。"
+        },
+        {
+          "document_id": "JD_40994554702",
+          "title": "Agent研发工程师",
+          "level": "required",
+          "evidence": "编程开发能力：具备使用 Python、TypeScript、Java、Rust、Go 等语言进行 Agent 开发的能力，能够完成 Agent 核心逻辑、工具封装、数据处理等开发工作。"
+        },
+        {
+          "document_id": "JD_40862392705",
+          "title": "AI Agent 后端开发工程师",
+          "level": "mentioned",
+          "evidence": "负责ToB AI智能体核心框架开发与迭代，基于OpenClaw（TypeScript/Node.js）、Copaw（TypeScript）开源项目进行二次开发，深度对接阿里Agentic OS（ANOLISA）底层能力，包括Copilot Shell（cosh）交互接口、AgentSecCore安全组件、AgentSight可观测模块的调用与封装，实现框架与OS层的无缝联动。"
+        }
+      ]
+    },
+    {
+      "name": "Hadoop",
+      "count": 140,
+      "levels": {
+        "preferred": 36,
+        "required": 94,
+        "mentioned": 10
+      },
+      "examples": [
+        {
+          "document_id": "JD_40867633210",
+          "title": "AGV RCS系统调度算法工程师",
+          "level": "preferred",
+          "evidence": "掌握大数据技术栈：Hadoop、Spark、Flink、Kafka等分布式框架，以及Hive、HBase等数据存储工具优先。"
+        },
+        {
+          "document_id": "JD_40627174407",
+          "title": "AI和大数据研发工程师（临港）(J11959)",
+          "level": "required",
+          "evidence": "数据处理与管理: 熟练掌握数据清洗、标准化、增强等预处理技术，以提高模型训练的效果。熟悉大数据处理框架(如Hadoop、Spark)和分布式存储系统，有效管理和处理大规模数据集。"
+        },
+        {
+          "document_id": "JD_40627174407",
+          "title": "AI和大数据研发工程师（临港）(J11959)",
+          "level": "preferred",
+          "evidence": "熟悉Hadoop、Spark等常用的大数据工具、熟悉Docker/Kubernetes、有应用系统研发经验优先考虑。"
+        },
+        {
+          "document_id": "JD_40943300615",
+          "title": "AI大数据开发工程师",
+          "level": "required",
+          "evidence": "熟练使用Hadoop、Spark、Flink、Kafka等大数据生态"
+        },
+        {
+          "document_id": "JD_40715275511",
+          "title": "AI大数据开发工程师",
+          "level": "required",
+          "evidence": "掌握大数据生态工具（Hadoop/Spark/Hive/Kafka）"
+        },
+        {
+          "document_id": "JD_40822010916",
+          "title": "AI大数据开发工程师（六险一金）",
+          "level": "required",
+          "evidence": "熟悉Hadoop、Spark、Flink、Hive等常用大数据处理/分析技术，了解底层引擎逻辑，有实际运维经验"
+        },
+        {
+          "document_id": "JD_40519045416",
+          "title": "AI工程师",
+          "level": "required",
+          "evidence": "熟悉sas,python,r,spark,hadoop,hive等，精通一种以上"
+        },
+        {
+          "document_id": "JD_41017934004",
+          "title": "AI工程师",
+          "level": "required",
+          "evidence": "精通大数据处理（Spark/Flink/Hadoop），能完成大规模特征工程及预训练数据清洗。"
+        }
+      ]
+    },
+    {
+      "name": "ASR",
+      "count": 133,
+      "levels": {
+        "mentioned": 72,
+        "preferred": 33,
+        "required": 28
+      },
+      "examples": [
+        {
+          "document_id": "JD_40976026002",
+          "title": "Agent算法工程师",
+          "level": "mentioned",
+          "evidence": "与前、后端工程师协作，优化从ASR文本输入到最终报告生成的端到端管道性能。"
+        },
+        {
+          "document_id": "JD_40976026002",
+          "title": "Agent算法工程师",
+          "level": "preferred",
+          "evidence": "熟悉ASR/NLP相关技术，了解其与下游任务（如报告生成）的衔接优化。"
+        },
+        {
+          "document_id": "JD_40845387710",
+          "title": "AI Agent 工程师",
+          "level": "preferred",
+          "evidence": "对主流大小模型（如 DeepSeek、Qwen、GPT、Claude、Gemini 等）有深入了解；熟悉各类 Embedding、Rerank、ASR、OCR 模型的应用场景及调用方法，有实际的 RAG（检索增强生成）项目落地经验者优先。"
+        },
+        {
+          "document_id": "JD_40950078508",
+          "title": "AI 全栈工程师（Agent 方向）+双休",
+          "level": "mentioned",
+          "evidence": "构建 Voice Agent 实时语音交互链路（ASR / TTS / 打断 / 低延迟对话），打磨接近真人的语音体验"
+        },
+        {
+          "document_id": "JD_40855176407",
+          "title": "AI 机器人项目技术负责人 / 架构师",
+          "level": "required",
+          "evidence": "了解 AI Agent、语音助手、智能客服、大模型工具调用、ASR/TTS、对话系统等相关技术。"
+        },
+        {
+          "document_id": "JD_40953852715",
+          "title": "AI 模型部署 / 推理服务工程师",
+          "level": "mentioned",
+          "evidence": "ASR/TTS 模型推理服务开发、工程化落地（研发→测试→量产）"
+        },
+        {
+          "document_id": "JD_40953852715",
+          "title": "AI 模型部署 / 推理服务工程师",
+          "level": "preferred",
+          "evidence": "ASR/TTS 实时音频推理；CUDA/TensorRT 性能调优；RK/Jetson 嵌入式 NPU 部署；医疗 AI / 智能硬件；高并发队列、压测容量评估。"
+        },
+        {
+          "document_id": "JD_40861011601",
+          "title": "AIoT语音系统工程师",
+          "level": "mentioned",
+          "evidence": "负责语音系统的ASR开发工作，确保语音识别的高效、准确"
+        }
+      ]
+    },
+    {
+      "name": "推荐系统",
+      "count": 122,
+      "levels": {
+        "mentioned": 41,
+        "required": 45,
+        "preferred": 36
+      },
+      "examples": [
+        {
+          "document_id": "JD_40838541205",
+          "title": "AI 大模型算法工程师",
+          "level": "mentioned",
+          "evidence": "洞察推荐系统和信息检索技术在工业级产品的有效解决方案；洞察学术界推荐系统和信息检索的最新研究成果，满足业务需求"
+        },
+        {
+          "document_id": "JD_40844356014",
+          "title": "AI 软件工程师",
+          "level": "mentioned",
+          "evidence": "协助完成AI算法及系统的设计与实现，可选方向包括：机器学习、计算机视觉、推荐系统、大模型应用等"
+        },
+        {
+          "document_id": "JD_40856509305",
+          "title": "ai专家（架构、培训、算法方向）",
+          "level": "mentioned",
+          "evidence": "开发、训练、优化并部署机器学习/深度学习模型，包括但不限于图像识别、自然语言处理、推荐系统等。"
+        },
+        {
+          "document_id": "JD_40857039301",
+          "title": "AI产品检测工程师（双休）",
+          "level": "required",
+          "evidence": "理解AI产品的技术原理（机器学习、深度学习），熟悉至少一个AI技术方向（NLP/CV/推荐系统）的业务应用场景。"
+        },
+        {
+          "document_id": "JD_41008443904",
+          "title": "AI全栈开发工程师",
+          "level": "required",
+          "evidence": "掌握机器学习/深度学习框架（PyTorch/TensorFlow），熟悉自然语言处理、时序预测、推荐系统等至少一个领域"
+        },
+        {
+          "document_id": "JD_40822010916",
+          "title": "AI大数据开发工程师（六险一金）",
+          "level": "preferred",
+          "evidence": "推荐系统、机器学习相关的开发工作经验优先，有大模型相关技术经验(AI Coding/Agent/Skills)优先"
+        },
+        {
+          "document_id": "JD_40837388505",
+          "title": "AI大模型算法工程师",
+          "level": "mentioned",
+          "evidence": "洞察推荐系统和信息检索技术在工业级产品的有效解决方案；洞察学术界推荐系统和信息检索的最新研究成果，满足业务需求"
+        },
+        {
+          "document_id": "JD_40860794105",
+          "title": "AI大模型算法工程师",
+          "level": "mentioned",
+          "evidence": "洞察推荐系统和信息检索技术在工业级产品的有效解决方案；洞察学术界推荐系统和信息检索的最新研究成果，满足业务需求"
+        }
+      ]
+    },
+    {
+      "name": "MongoDB",
+      "count": 118,
+      "levels": {
+        "preferred": 12,
+        "required": 103,
+        "mentioned": 3
+      },
+      "examples": [
+        {
+          "document_id": "JD_40862392705",
+          "title": "AI Agent 后端开发工程师",
+          "level": "preferred",
+          "evidence": "3•熟练掌握Docker、K8s容器化部署与运维，能独立搭建集群环境、配置自动扩缩容与故障自愈策略；精通MySQL/PostgreSQL数据库设计、索引优化、事务处理，熟练使用Redis进行缓存设计、分布式锁实现，了解MongoDB等非关系型数据库者加分。"
+        },
+        {
+          "document_id": "JD_40806255613",
+          "title": "AI Agent 开发工程师",
+          "level": "required",
+          "evidence": "精通Sprinaboot、Mybatis等常用框架开发，深入了解其原理，具备丰富的系统优化经验;精通MySQL、MongoDB等数据库开发与设计，以及SQL优化。"
+        },
+        {
+          "document_id": "JD_40932092008",
+          "title": "AI Agent 智能工程师",
+          "level": "required",
+          "evidence": "工具与框架：熟悉LangChain、LlamaIndex等AI Agent开发框架，掌握TensorFlow/PyTorch等深度学习框架，了解Redis、MongoDB等数据库的使用。"
+        },
+        {
+          "document_id": "JD_40819627002",
+          "title": "AI Agent工程师（Python）",
+          "level": "required",
+          "evidence": "了解常用的数据库（如MySQL、MongoDB等），并具备一定的SQL编写能力。"
+        },
+        {
+          "document_id": "JD_40760863910",
+          "title": "AI Agent应用开发",
+          "level": "required",
+          "evidence": "精通Springboot、Mybatis等常用框架开发，深入了解其原理，具备丰富的系统优化经验；精通MySQL、MongoDB等数据库开发与设计，以及SQL优化"
+        },
+        {
+          "document_id": "JD_40917274215",
+          "title": "AI 应用开发工程师（国企非在编）",
+          "level": "required",
+          "evidence": "熟练掌握常用数据库（Tidb、MySQL、Oracle、SQLServer），精通SQL语句，具有数据库SQL调优能力；熟悉doris、tidb、mongodb、ES等MPP分布式和非关系数据库技术并在项目中有实际使用经验。"
+        },
+        {
+          "document_id": "JD_41022109204",
+          "title": "ai全栈工程师",
+          "level": "required",
+          "evidence": "熟悉MySQL、PostgreSQL等关系型数据库并对Redis、MongoDB等非关系型数据库及向量数据库有基础的了解"
+        },
+        {
+          "document_id": "JD_40864717810",
+          "title": "AI全栈工程师",
+          "level": "required",
+          "evidence": "熟悉数据库设计（MySQL/PostgreSQL/MongoDB等）"
+        }
+      ]
+    },
+    {
+      "name": "嵌入式开发",
+      "count": 116,
+      "levels": {
+        "required": 72,
+        "preferred": 33,
+        "mentioned": 11
+      },
+      "examples": [
+        {
+          "document_id": "JD_40854813111",
+          "title": "(苏州）电机控制算法工程师",
+          "level": "required",
+          "evidence": "熟悉基本硬件驱动电路、嵌入式开发及常规测试设备使用，熟悉控制器软件算法设计流程，精通自动控制原理、数字信号处理等专业知识"
+        },
+        {
+          "document_id": "JD_40913263312",
+          "title": "ADAS算法工程师",
+          "level": "required",
+          "evidence": "精通基于Matlab/Simulink的汽车电子软件嵌入式开发流程及方法，拥有良好的算法开发能力"
+        },
+        {
+          "document_id": "JD_40458898510",
+          "title": "AGV工程师/SLAM算法工程师",
+          "level": "preferred",
+          "evidence": "娴熟的C++编程技巧，熟悉Git，Linux嵌入式开发者、良好文档记录习惯者优先"
+        },
+        {
+          "document_id": "JD_40879717405",
+          "title": "AGV智能物流与智能化车间系统技术总(国企直签，猎头代招）",
+          "level": "mentioned",
+          "evidence": "嵌入式开发：C/C++裸机编程，RTOS实时操作系统移植，GPIO/SPI/CAN接口驱动开发，非标设备控制器二次开发。"
+        },
+        {
+          "document_id": "JD_40856376201",
+          "title": "AI Agent开发工程师",
+          "level": "required",
+          "evidence": "本科及以上学历，计算机、电子、自动化、物联网等相关专业，3 年及以上 Agent/AIoT/ 嵌入式开发经验。"
+        },
+        {
+          "document_id": "JD_40880568005",
+          "title": "AI 边缘计算嵌入式开发工程师",
+          "level": "required",
+          "evidence": "编程基础扎实：精通 C/C++ 嵌入式开发，熟练使用 Python 脚本完成模型处理、数据测试、自动化调试，熟悉 Linux 系统编程、多线程、内存管理、Socket 网络编程。"
+        },
+        {
+          "document_id": "JD_40895724003",
+          "title": "AIoT开发工程师",
+          "level": "preferred",
+          "evidence": "● 有宠物类AIoT项目或嵌入式开发经验者优先。"
+        },
+        {
+          "document_id": "JD_40886743213",
+          "title": "AI嵌入式机器人实习生（ROS/视觉/Linux）",
+          "level": "preferred",
+          "evidence": "有嵌入式开发经验或参加过机器人相关竞赛者优先，对SLAM有基本认知"
+        }
+      ]
+    },
+    {
+      "name": "Flink",
+      "count": 113,
+      "levels": {
+        "preferred": 31,
+        "required": 68,
+        "mentioned": 14
+      },
+      "examples": [
+        {
+          "document_id": "JD_40867633210",
+          "title": "AGV RCS系统调度算法工程师",
+          "level": "preferred",
+          "evidence": "掌握大数据技术栈：Hadoop、Spark、Flink、Kafka等分布式框架，以及Hive、HBase等数据存储工具优先。"
+        },
+        {
+          "document_id": "JD_40869457005",
+          "title": "AI DevOps 工程师",
+          "level": "preferred",
+          "evidence": "• 熟悉 Kafka / RabbitMQ / RocketMQ、Redis、PostgreSQL / MySQL、Elastic Search、MinIO / OSS、Doris / ClickHouse、Spark / Flink。"
+        },
+        {
+          "document_id": "JD_40994009902",
+          "title": "AI FDE 广告前沿部署工程师",
+          "level": "required",
+          "evidence": "熟悉大数据链路，了解 Flink/Spark 实时、离线数据处理，了解特征工程、样本构建流程。"
+        },
+        {
+          "document_id": "JD_40942555015",
+          "title": "AI信息安全研发工程师",
+          "level": "preferred",
+          "evidence": "熟练 Docker、Linux 常用命令，了解 HTML/CSS/JS 及 Web 基础原理；精通 PostgreSQL，熟悉 Elasticsearch、Redis 等；掌握 Flink/Spark 实时数据处理优先"
+        },
+        {
+          "document_id": "JD_40943300615",
+          "title": "AI大数据开发工程师",
+          "level": "required",
+          "evidence": "熟练使用Hadoop、Spark、Flink、Kafka等大数据生态"
+        },
+        {
+          "document_id": "JD_40822010916",
+          "title": "AI大数据开发工程师（六险一金）",
+          "level": "required",
+          "evidence": "熟悉一种或多种编程语言，如Java/Python/Scala，具备基于Spark Core 、Flink DataStream开发编码能力，而不仅仅是SQL类代码。"
+        },
+        {
+          "document_id": "JD_40822010916",
+          "title": "AI大数据开发工程师（六险一金）",
+          "level": "required",
+          "evidence": "熟悉Hadoop、Spark、Flink、Hive等常用大数据处理/分析技术，了解底层引擎逻辑，有实际运维经验"
+        },
+        {
+          "document_id": "JD_40973672002",
+          "title": "AI大模型与大数据开发工程师",
+          "level": "preferred",
+          "evidence": "具有扎实的软件工程基础，精通Python、Java等主流开发语言，熟悉大语言模型基本原理，有langchain等框架实战经验，了解RAG、function calling等技术路径；熟悉大数据处理技术（如spark、flink、elastic search、向量数据库等）优先"
+        }
+      ]
+    },
+    {
+      "name": "文心一言",
+      "count": 113,
+      "levels": {
+        "required": 76,
+        "preferred": 13,
+        "mentioned": 24
+      },
+      "examples": [
+        {
+          "document_id": "JD_40756581406",
+          "title": ".NET AI软件开发工程师（朝九晚六+双休）",
+          "level": "required",
+          "evidence": "了解AI工作原理，熟悉GPT、文心一言、通义千问等常见大模型；熟悉操作系统、计算机网络等底层原理。"
+        },
+        {
+          "document_id": "JD_40960688902",
+          "title": "Agnet开发工程师",
+          "level": "required",
+          "evidence": "熟悉主流大模型（GPT 系列、文心一言、通义千问等）的调用与适配，掌握向量数据库（Milvus/Chroma 等）与知识库检索技术"
+        },
+        {
+          "document_id": "JD_40916989312",
+          "title": "AI Agent 智能体开发",
+          "level": "preferred",
+          "evidence": "熟悉大语言模型（如GPT、LLaMA、文心一言等）的原理与应用，有智能体开发经验者优先。"
+        },
+        {
+          "document_id": "JD_40916989412",
+          "title": "AI Agent 智能体开发",
+          "level": "preferred",
+          "evidence": "熟悉大语言模型（如GPT、LLaMA、文心一言等）的原理与应用，有智能体开发经验者优先。"
+        },
+        {
+          "document_id": "JD_40932092008",
+          "title": "AI Agent 智能工程师",
+          "level": "preferred",
+          "evidence": "熟悉大语言模型（LLM）的应用与微调，有GPT、Claude、通义千问、文心一言等模型的集成与二次开发经验者优先。"
+        },
+        {
+          "document_id": "JD_40824374211",
+          "title": "AI Agent应用开发工程师",
+          "level": "required",
+          "evidence": "大模型应用经验：熟练掌握至少三种主流大模型（GPT、Claude、通义千问、文心一言等）的API调用、二次开发与微调，具备Prompt工程优化经验，能解决模型幻觉、上下文窗口限制等问题。"
+        },
+        {
+          "document_id": "JD_40866829709",
+          "title": "AI Agent开发与实施工程师",
+          "level": "mentioned",
+          "evidence": "基于主流大模型（GPT、文心一言、通义千问、Claude等）及AI Agent框架，完成智能体的Prompt工程优化、记忆机制、工具插件（RAG知识库、API调用、文档解析、流程自动化）集成开发。"
+        },
+        {
+          "document_id": "JD_40866829809",
+          "title": "AI Agent开发与实施工程师",
+          "level": "mentioned",
+          "evidence": "基于主流大模型（GPT、文心一言、通义千问、Claude等）及AI Agent框架，完成智能体的Prompt工程优化、记忆机制、工具插件（RAG知识库、API调用、文档解析、流程自动化）集成开发。"
+        }
+      ]
+    },
+    {
+      "name": "Elasticsearch",
+      "count": 102,
+      "levels": {
+        "required": 71,
+        "preferred": 26,
+        "mentioned": 5
+      },
+      "examples": [
+        {
+          "document_id": "JD_40875487605",
+          "title": ".NET全栈开发工程师（偏AI）",
+          "level": "required",
+          "evidence": "熟练配置和使用 Nginx、Redis、RabbitMQ/Kafka、Elasticsearch、Prometheus/Grafana 等主流中间件。"
+        },
+        {
+          "document_id": "JD_40804552214",
+          "title": "26届AI培训生（算法方向）(J14794)",
+          "level": "required",
+          "evidence": "熟悉数据处理与数据库操作，了解 ElasticSearch、Milvus、Neo4j 等知识库/索引/向量检索技术"
+        },
+        {
+          "document_id": "JD_40741978506",
+          "title": "Agent工程化专家(047217)",
+          "level": "required",
+          "evidence": "、RAG与向量技术： 精通RAG（检索增强生成）全链路优化，包括文档切分、Embedding模型选择、混合检索策略及重排序算法。熟悉 Milvus、Elasticsearch 等向量数据库的生产级应用。"
+        },
+        {
+          "document_id": "JD_40859154601",
+          "title": "Agent工程师",
+          "level": "required",
+          "evidence": "精通PostgreSQL/MySQL/ElasticSearch等数据库及数据库性能调优"
+        },
+        {
+          "document_id": "JD_40867892610",
+          "title": "Agent开发工程师（驻场佛山）",
+          "level": "required",
+          "evidence": "√ 熟悉向量数据库（如 Milvus, Chroma, Elasticsearch）及 Embedding 模型的使用。"
+        },
+        {
+          "document_id": "JD_40867892510",
+          "title": "Agent开发工程师（驻场佛山）",
+          "level": "required",
+          "evidence": "√ 熟悉向量数据库（如 Milvus, Chroma, Elasticsearch）及 Embedding 模型的使用。"
+        },
+        {
+          "document_id": "JD_40867892310",
+          "title": "Agent开发工程师（驻场佛山）",
+          "level": "required",
+          "evidence": "√ 熟悉向量数据库（如 Milvus, Chroma, Elasticsearch）及 Embedding 模型的使用。"
+        },
+        {
+          "document_id": "JD_40994179602",
+          "title": "AI Agent 全栈开发工程师",
+          "level": "required",
+          "evidence": "熟悉MySQL、Redis、Elasticsearch等常用中间件，具备SQL调优及高并发场景设计能力"
+        }
+      ]
+    },
+    {
+      "name": "结构设计",
+      "count": 100,
+      "levels": {
+        "required": 48,
+        "mentioned": 39,
+        "preferred": 13
+      },
+      "examples": [
+        {
+          "document_id": "JD_40857441205",
+          "title": "(CDU/AI服务器机柜）机构设计资深工程师",
+          "level": "required",
+          "evidence": "熟练3D&2D制图、结构设计、公差分析"
+        },
+        {
+          "document_id": "JD_40866235010",
+          "title": "2026应届生补录：算法/数学/机械设计/电气方向应届生",
+          "level": "mentioned",
+          "evidence": "设备设计工程师负责新开发的环保设备的结构设计（总工艺图进行设备布局），二维三维图纸绘制，零部件清单编制，设备生产技术指导等工作"
+        },
+        {
+          "document_id": "JD_40866235010",
+          "title": "2026应届生补录：算法/数学/机械设计/电气方向应届生",
+          "level": "preferred",
+          "evidence": "关键词：设备结构设计经验，做过撬装设备 / 环保设备 / 水处理设备者优先，能独立完成整机布局、零件设计、加工装配图纸。"
+        },
+        {
+          "document_id": "JD_40883575912",
+          "title": "26届校招-AI算法工程师(J10022)",
+          "level": "mentioned",
+          "evidence": "针对具身智能的各个重大技术方向进行大模型的预训练和微调，尤其关注多模态(文本、图像、视频等) 大模型的结构设计和训练方法上的探索。"
+        },
+        {
+          "document_id": "JD_40873228603",
+          "title": "3DGS算法工程师（工程向）",
+          "level": "required",
+          "evidence": "熟练掌握 Python，具备良好的代码结构设计与工程习惯"
+        },
+        {
+          "document_id": "JD_40960688902",
+          "title": "Agnet开发工程师",
+          "level": "required",
+          "evidence": "有LangGraph使用经验者，能够基于状态机/图结构设计复杂AI流程，实现多步骤任务编排与异常处理。"
+        },
+        {
+          "document_id": "JD_40858021211",
+          "title": "AI Agent 开发工程师",
+          "level": "required",
+          "evidence": "具备良好的代码结构设计能力、工程规范意识和系统设计能力。"
+        },
+        {
+          "document_id": "JD_40879029605",
+          "title": "Ai agent全栈开发工程师",
+          "level": "mentioned",
+          "evidence": "后端架构开发：基于 Java 微服务生态，负责 AI 业务中台、表结构设计、数据服务接口的设计与开发，保障系统高并发、高可用、可扩展性，完成接口封装、性能优化、问题排查与版本迭代。"
+        }
+      ]
+    },
+    {
+      "name": "信息抽取",
+      "count": 92,
+      "levels": {
+        "required": 28,
+        "mentioned": 50,
+        "preferred": 14
+      },
+      "examples": [
+        {
+          "document_id": "JD_40804552214",
+          "title": "26届AI培训生（算法方向）(J14794)",
+          "level": "required",
+          "evidence": "熟练掌握 Python，熟悉基本的 NLP 任务（问答、信息抽取、文本分类等）"
+        },
+        {
+          "document_id": "JD_40877726805",
+          "title": "AI Agent开发工程师",
+          "level": "mentioned",
+          "evidence": "AI逻辑大脑开发： 利用大语言模型（LLM）对复杂公告进行信息抽取、意图识别与逻辑推理，提炼影响股价的核心要素。"
+        },
+        {
+          "document_id": "JD_40859489210",
+          "title": "AI 大模型应用开发工程师",
+          "level": "preferred",
+          "evidence": "有 Agent 项目、RAG、向量检索、结构化信息抽取、自动化工作流的真实落地经验。"
+        },
+        {
+          "document_id": "JD_40862912803",
+          "title": "AI 应用开发工程师 (LLM/Agent 方向)",
+          "level": "mentioned",
+          "evidence": "Ø 利用 LLM（GPT/DeepSeek/Llama 等）结合传统 NLP 技术（正则、关键词提取），负责对非结构化文档（如合同等）进行高精度的信息抽取、分类和结构化转换。"
+        },
+        {
+          "document_id": "JD_40846079610",
+          "title": "AI 应用落地工程师（集团数字化提效）",
+          "level": "mentioned",
+          "evidence": "针对文档处理、信息抽取、内容生成、合规审核、数据整合、流程自动化等典型场景，设计并推动 AI 解决方案落地。"
+        },
+        {
+          "document_id": "JD_40845687709",
+          "title": "AIGC工程师",
+          "level": "mentioned",
+          "evidence": "负责法律文本NLP相关分析，包括但不限于文本分析、信息抽取、向量化、分词、知识问答、文本纠错等"
+        },
+        {
+          "document_id": "JD_40844096012",
+          "title": "AI大模型工程师",
+          "level": "required",
+          "evidence": "3）在法律文本处理、信息抽取、知识图谱构建方面有实践经验。"
+        },
+        {
+          "document_id": "JD_40817462116",
+          "title": "AI大模型工程师（银行）",
+          "level": "mentioned",
+          "evidence": "核心研发推进： 主导并深度参与企业级大模型应用（如知识库问答、智能审单、信息抽取工具等）的核心代码编写与模块开发。"
+        }
+      ]
+    },
+    {
+      "name": "Oracle",
+      "count": 90,
+      "levels": {
+        "mentioned": 6,
+        "required": 73,
+        "preferred": 11
+      },
+      "examples": [
+        {
+          "document_id": "JD_40914710912",
+          "title": "AI Agent开发工程师（重构）",
+          "level": "mentioned",
+          "evidence": "本岗位为公司IT研发体系智能化升级核心岗位。公司现有20年存量老旧复杂业务系统，技术栈覆盖Web、C/S、APP、H5全终端，后端Java、C#双语言，Oracle、SQL Server双数据库。本岗位全权负责需求、开发、测试、上线、变更、运维全研发流程AI化重构，通过AI思维、AI工具与智能化工程体系，解决老系统业务耦合重、迭代慢、变更风险高、维护成本高的痛点，搭建适配企业复杂业务的智能研发体系，带领团队完成从传统人工开发向AI高效研发模式转型。"
+        },
+        {
+          "document_id": "JD_40914710912",
+          "title": "AI Agent开发工程师（重构）",
+          "level": "required",
+          "evidence": "精通AI赋能软件开发落地逻辑，熟练使用代码大模型完成需求拆解、智能编码、代码审计、自动化校验，具备企业AI研发体系搭建能力。熟悉Java、C#双语言开发，了解Web、C/S、APP、H5多端开发特性，适配多技术栈改造场景。精通Oracle、SQL Server数据库，具备老旧数据结构优化、SQL调优、数据兼容改造能力，可结合AI完成数据库智能运维。熟悉传统研发全流程，深刻认知传统研发痛点，擅长针对性设计AI改造方案并落地。熟练掌握主流AI研发工具、开源大模型，具备私有化部署、模型微调、工具集成与业务定制适配能力。"
+        },
+        {
+          "document_id": "JD_40914710912",
+          "title": "AI Agent开发工程师（重构）",
+          "level": "preferred",
+          "evidence": "具备Oracle、SQL Server老旧数据库结构重构、性能优化、数据兼容改造经验。"
+        },
+        {
+          "document_id": "JD_40917274215",
+          "title": "AI 应用开发工程师（国企非在编）",
+          "level": "required",
+          "evidence": "熟练掌握常用数据库（Tidb、MySQL、Oracle、SQLServer），精通SQL语句，具有数据库SQL调优能力；熟悉doris、tidb、mongodb、ES等MPP分布式和非关系数据库技术并在项目中有实际使用经验。"
+        },
+        {
+          "document_id": "JD_40799996611",
+          "title": "Ai 开发工程师（JAVA 方向）",
+          "level": "required",
+          "evidence": "掌握SpringMVC、SpringBoot、Hibernate/Mybatis、Redis、Mysql/Oracle等主流开发框架和技术"
+        },
+        {
+          "document_id": "JD_40814006216",
+          "title": "AI与数据治理工程师",
+          "level": "required",
+          "evidence": "精通SQL语言，熟悉 Oracle、MySQL、PostgreSQL 等主流数据库"
+        },
+        {
+          "document_id": "JD_40852103010",
+          "title": "AI信息技术总监",
+          "level": "required",
+          "evidence": "技能：精通主流ERP/CRM系统、数据库（SQL/Oracle）、虚拟化技术，掌握AI基础应用工具，具备良好的数据分析与问题解决能力。"
+        },
+        {
+          "document_id": "JD_40850381913",
+          "title": "AI全栈开发工程师",
+          "level": "required",
+          "evidence": "数据库技能：有MySQL,PostgreSQL的实际开发经验，了解Oracle数据库。"
+        }
+      ]
+    },
+    {
+      "name": "TTS",
+      "count": 88,
+      "levels": {
+        "mentioned": 44,
+        "required": 16,
+        "preferred": 28
+      },
+      "examples": [
+        {
+          "document_id": "JD_40950078508",
+          "title": "AI 全栈工程师（Agent 方向）+双休",
+          "level": "mentioned",
+          "evidence": "构建 Voice Agent 实时语音交互链路（ASR / TTS / 打断 / 低延迟对话），打磨接近真人的语音体验"
+        },
+        {
+          "document_id": "JD_40855176407",
+          "title": "AI 机器人项目技术负责人 / 架构师",
+          "level": "required",
+          "evidence": "了解 AI Agent、语音助手、智能客服、大模型工具调用、ASR/TTS、对话系统等相关技术。"
+        },
+        {
+          "document_id": "JD_40953852715",
+          "title": "AI 模型部署 / 推理服务工程师",
+          "level": "mentioned",
+          "evidence": "ASR/TTS 模型推理服务开发、工程化落地（研发→测试→量产）"
+        },
+        {
+          "document_id": "JD_40953852715",
+          "title": "AI 模型部署 / 推理服务工程师",
+          "level": "preferred",
+          "evidence": "ASR/TTS 实时音频推理；CUDA/TensorRT 性能调优；RK/Jetson 嵌入式 NPU 部署；医疗 AI / 智能硬件；高并发队列、压测容量评估。"
+        },
+        {
+          "document_id": "JD_40756613006",
+          "title": "AIGC应用工程师（展陈方向）",
+          "level": "mentioned",
+          "evidence": "多模态融合创新：深度结合文本、图像、视频、语音（TTS/NLP）等AIGC技术，探索其与“数字展厅”场景的融合模式，驱动高质量内容生产"
+        },
+        {
+          "document_id": "JD_40952911515",
+          "title": "AIGC开发工程师",
+          "level": "mentioned",
+          "evidence": "多模态模型集成：对接并调优主流大模型（文本、图像、视频、音频、TTS等），解决生成内容中的角色一致性、风格连贯性、分镜构图等关键问题。"
+        },
+        {
+          "document_id": "JD_40890483013",
+          "title": "AI云平台全栈开发工程师",
+          "level": "mentioned",
+          "evidence": "对接 LLM、ASR、TTS、数字人视频生成等 AI 服务，封装稳定 API。 维护 Vue 3 前端的关键业务流程，包括创作向导、上传录制、任务进度、结果展示。"
+        },
+        {
+          "document_id": "JD_40894831013",
+          "title": "AI云平台全栈开发工程师",
+          "level": "mentioned",
+          "evidence": "对接 LLM、ASR、TTS、数字人视频生成等 AI 服务，封装稳定 API。 维护 Vue 3 前端的关键业务流程，包括创作向导、上传录制、任务进度、结果展示。"
+        }
+      ]
+    },
+    {
+      "name": ".NET",
+      "count": 87,
+      "levels": {
+        "mentioned": 16,
+        "required": 57,
+        "preferred": 14
+      },
+      "examples": [
+        {
+          "document_id": "JD_40756581406",
+          "title": ".NET AI软件开发工程师（朝九晚六+双休）",
+          "level": "mentioned",
+          "evidence": "基于.NET框架，负责桌面端与服务器端AI应用的开发、架构设计及性能优化。"
+        },
+        {
+          "document_id": "JD_40756581406",
+          "title": ".NET AI软件开发工程师（朝九晚六+双休）",
+          "level": "required",
+          "evidence": "精通C#，熟练掌握.NET框架，有桌面及服务端开发经验。"
+        },
+        {
+          "document_id": "JD_40875487605",
+          "title": ".NET全栈开发工程师（偏AI）",
+          "level": "mentioned",
+          "evidence": "前沿技术融合：深度结合 .NET Core 高性能后端与 Vue 前端，探索 LLM（大语言模型）在企业级应用中的落地。"
+        },
+        {
+          "document_id": "JD_40875487605",
+          "title": ".NET全栈开发工程师（偏AI）",
+          "level": "mentioned",
+          "evidence": "全栈开发与架构：基于 .NET Core (ABP框架) + Vue 技术栈，负责核心业务模块的需求分析、系统设计、编码实现及测试上线，确保代码的高可维护性与扩展性。"
+        },
+        {
+          "document_id": "JD_40875487605",
+          "title": ".NET全栈开发工程师（偏AI）",
+          "level": "required",
+          "evidence": "核心技能：5年以上 .NET 开发经验，精通 C#、.NET Core、ASP.NET"
+        },
+        {
+          "document_id": "JD_40859154601",
+          "title": "Agent工程师",
+          "level": "required",
+          "evidence": "精通.NET Core3.1/.Net8/.Net10、C#、MVC、WebApi、EF Core、SignalR"
+        },
+        {
+          "document_id": "JD_41007338204",
+          "title": "AI DevOps 工程师",
+          "level": "preferred",
+          "evidence": "具备基本代码编写能力，具有.Net/Python软件开发经验者优先。"
+        },
+        {
+          "document_id": "JD_40943162215",
+          "title": "AI 算法工程师",
+          "level": "required",
+          "evidence": "熟悉 HE、IHC、mIF 病理图像分析，可解决染色差异、细胞重叠等实际问题4.精通模型量化、ONNX 导出部署，适配.NET 系统调用，单张 GPU 推理≤2 秒"
+        }
+      ]
+    },
+    {
+      "name": "SQL Server",
+      "count": 60,
+      "levels": {
+        "mentioned": 2,
+        "required": 50,
+        "preferred": 8
+      },
+      "examples": [
+        {
+          "document_id": "JD_40914710912",
+          "title": "AI Agent开发工程师（重构）",
+          "level": "mentioned",
+          "evidence": "本岗位为公司IT研发体系智能化升级核心岗位。公司现有20年存量老旧复杂业务系统，技术栈覆盖Web、C/S、APP、H5全终端，后端Java、C#双语言，Oracle、SQL Server双数据库。本岗位全权负责需求、开发、测试、上线、变更、运维全研发流程AI化重构，通过AI思维、AI工具与智能化工程体系，解决老系统业务耦合重、迭代慢、变更风险高、维护成本高的痛点，搭建适配企业复杂业务的智能研发体系，带领团队完成从传统人工开发向AI高效研发模式转型。"
+        },
+        {
+          "document_id": "JD_40914710912",
+          "title": "AI Agent开发工程师（重构）",
+          "level": "required",
+          "evidence": "精通AI赋能软件开发落地逻辑，熟练使用代码大模型完成需求拆解、智能编码、代码审计、自动化校验，具备企业AI研发体系搭建能力。熟悉Java、C#双语言开发，了解Web、C/S、APP、H5多端开发特性，适配多技术栈改造场景。精通Oracle、SQL Server数据库，具备老旧数据结构优化、SQL调优、数据兼容改造能力，可结合AI完成数据库智能运维。熟悉传统研发全流程，深刻认知传统研发痛点，擅长针对性设计AI改造方案并落地。熟练掌握主流AI研发工具、开源大模型，具备私有化部署、模型微调、工具集成与业务定制适配能力。"
+        },
+        {
+          "document_id": "JD_40914710912",
+          "title": "AI Agent开发工程师（重构）",
+          "level": "preferred",
+          "evidence": "具备Oracle、SQL Server老旧数据库结构重构、性能优化、数据兼容改造经验。"
+        },
+        {
+          "document_id": "JD_40978795902",
+          "title": "AI 应用工程师",
+          "level": "required",
+          "evidence": "3：熟悉 MySQL、SQL Server、PostgreSQL 等数据库。"
+        },
+        {
+          "document_id": "JD_40917274215",
+          "title": "AI 应用开发工程师（国企非在编）",
+          "level": "required",
+          "evidence": "熟练掌握常用数据库（Tidb、MySQL、Oracle、SQLServer），精通SQL语句，具有数据库SQL调优能力；熟悉doris、tidb、mongodb、ES等MPP分布式和非关系数据库技术并在项目中有实际使用经验。"
+        },
+        {
+          "document_id": "JD_40826494210",
+          "title": "AI全栈开发工程师（Java+C#双技术栈）",
+          "level": "required",
+          "evidence": "熟练操作SQLServer、MySQL等数据库，掌握消息中间件、Git/SVN版本控制及Linux部署，具备跨平台开发经验"
+        },
+        {
+          "document_id": "JD_40827662216",
+          "title": "AI工程师",
+          "level": "required",
+          "evidence": "熟悉主流数据库（如SQL Server、Oracle、PostgreSQL等）及数据接口开发。"
+        },
+        {
+          "document_id": "JD_40851678409",
+          "title": "AI工程师",
+          "level": "required",
+          "evidence": "熟悉R、Matlab、Python等至少一门数据分析语言和PostgreSQL、Oracle、SQLServer、MySQL等至少一种主流数据库"
+        }
+      ]
+    },
+    {
+      "name": "Rust",
+      "count": 52,
+      "levels": {
+        "required": 35,
+        "preferred": 13,
+        "mentioned": 4
+      },
+      "examples": [
+        {
+          "document_id": "JD_40853946411",
+          "title": "0991A4-agent开发工程师",
+          "level": "required",
+          "evidence": "精通Python，且至少精通Go/Java/Rust/C++/TypeScript中的一门"
+        },
+        {
+          "document_id": "JD_40873341614",
+          "title": "Agent全栈开发工程师",
+          "level": "required",
+          "evidence": "熟悉 Python、Rust，具备扎实的编程功底和工程能力"
+        },
+        {
+          "document_id": "JD_40994554702",
+          "title": "Agent研发工程师",
+          "level": "required",
+          "evidence": "编程开发能力：具备使用 Python、TypeScript、Java、Rust、Go 等语言进行 Agent 开发的能力，能够完成 Agent 核心逻辑、工具封装、数据处理等开发工作。"
+        },
+        {
+          "document_id": "JD_40862392705",
+          "title": "AI Agent 后端开发工程师",
+          "level": "preferred",
+          "evidence": "1•熟练掌握TypeScript/Node.js（优先）或Rust/Go，具备5年以上后端开发经验，有OpenClaw、Copaw开源项目二次开发经验者优先，能独立完成框架核心模块的开发与优化。"
+        },
+        {
+          "document_id": "JD_40862392705",
+          "title": "AI Agent 后端开发工程师",
+          "level": "required",
+          "evidence": "6•熟悉Node.js生态（Express/NestJS框架）、Rust生态（Tokio异步框架）或Go生态（Gin/Echo框架），具备良好的代码规范与编程习惯，能编写高质量的单元测试与技术文档。"
+        },
+        {
+          "document_id": "JD_40955389915",
+          "title": "AI Agent开发工程师",
+          "level": "preferred",
+          "evidence": "Python，OCR，LangChain，LangGraph，CrewAI，AutoGen，MCP，A2A，OpenAI SDK，Anthropic SDK，RAG，向量数据库，GraphRAG，知识图谱，Text-to-SQL，FastAPI，Docker，Kubernetes，LangFuse，LangSmith，Braintrust，流式推理，多智能体编排，function calling，结构化输出，LLM 评估，prompt 工程，多模态 Agent，HITL，SSE，WebSocket，TypeScript，Node.js"
+        },
+        {
+          "document_id": "JD_40869467505",
+          "title": "AI Agent开发工程师",
+          "level": "preferred",
+          "evidence": "软件工程与架构能力：有扎实的软件工程基础和架构设计能力，熟悉至少一种后端语言，优先 Golang；Python / TypeScript / Rust 有真实工程经验也可。"
+        },
+        {
+          "document_id": "JD_40826944016",
+          "title": "AI Agent沙箱研发工程师",
+          "level": "preferred",
+          "evidence": "● 熟练掌握至少一门系统级编程语言，Go / Rust / C / C++ 优先，熟悉 Python"
+        }
+      ]
+    },
+    {
+      "name": "SolidWorks",
+      "count": 35,
+      "levels": {
+        "required": 18,
+        "mentioned": 6,
+        "preferred": 11
+      },
+      "examples": [
+        {
+          "document_id": "JD_41021841404",
+          "title": "AI 开发工程师",
+          "level": "required",
+          "evidence": "熟悉CAD（SolidWorks，Step模型语言，等）。"
+        },
+        {
+          "document_id": "JD_40781715006",
+          "title": "AI+审图agent开发岗位（双休）",
+          "level": "mentioned",
+          "evidence": "基于 LangGraph 设计、开发 SolidWorks 图纸 AI 审图智能体（AI Agent）。"
+        },
+        {
+          "document_id": "JD_40876506913",
+          "title": "AI4S应用专家（天津）(J13617)",
+          "level": "required",
+          "evidence": "l 飞行器设计仿真方向：拥有飞行器结构、气动等场景仿真技能之一，熟练使用Catia或SolidWorks等三维建模工具，熟练掌握CFD软件（如ANSYS Fluent、OpenFOAM等）"
+        },
+        {
+          "document_id": "JD_40910397715",
+          "title": "AI工程师",
+          "level": "preferred",
+          "evidence": "参与CAD软件及参数化项目的深度服务能力，懂SOLIDWORKS开发、系统集成开发、AI 集成开发者优先。"
+        },
+        {
+          "document_id": "JD_40858595311",
+          "title": "AI应用开发工程师-济南",
+          "level": "preferred",
+          "evidence": "了解CAD/CAM软件开发接口者优先，如AutoCAD、SolidWorks、NX、Mastercam等"
+        },
+        {
+          "document_id": "JD_40807185701",
+          "title": "AI服务器结构设计工程师",
+          "level": "mentioned",
+          "evidence": "– 使用CAD软件（如SolidWorks、Pro/E、Creo等）进行3D建模和2D工程图绘制。"
+        },
+        {
+          "document_id": "JD_40807185701",
+          "title": "AI服务器结构设计工程师",
+          "level": "required",
+          "evidence": "精通CAD软件（SolidWorks/Creo/UG等）和工程制图标准（如GD&T）"
+        },
+        {
+          "document_id": "JD_40858334307",
+          "title": "AI模具工程师",
+          "level": "preferred",
+          "evidence": "有金属件模具自动编程开发和NX、Solidworks等建模软件插件开发经验优先"
+        }
+      ]
+    },
+    {
+      "name": "搜索推荐",
+      "count": 31,
+      "levels": {
+        "required": 11,
+        "preferred": 5,
+        "mentioned": 15
+      },
+      "examples": [
+        {
+          "document_id": "JD_40845687709",
+          "title": "AIGC工程师",
+          "level": "required",
+          "evidence": "负责研发搜索推荐算法在法律场景下的应用，搜索算法必备，包括query改写，query意图识别，query分析,rank排序，包括推荐中的召回排序，不限于双塔dssm，多目标多任务esmm，mmoe；熟练掌握faiss/milvus"
+        },
+        {
+          "document_id": "JD_40816915715",
+          "title": "AI大模型训练专家(A142920)",
+          "level": "required",
+          "evidence": "在自然语言处理（NLU/NLG）、对话机器人、智能辅助（Copilot）、搜索推荐等领域有大规模场景落地经验。"
+        },
+        {
+          "document_id": "JD_40854993314",
+          "title": "AI智能系统工程师",
+          "level": "preferred",
+          "evidence": "研究生及以上学历，计算机、人工智能、机器学习、数据科学等相关专业，2年及以上AI工程师相关工作经验，有AI营销、搜索推荐、大模型工程化落地经验者优先。"
+        },
+        {
+          "document_id": "JD_40761121106",
+          "title": "AI算法工程师",
+          "level": "required",
+          "evidence": "有良好的前瞻视野，关注AI Agent、多模态、搜索推荐等技术趋势，及前沿方向探索与落地"
+        },
+        {
+          "document_id": "JD_40761121206",
+          "title": "AI算法工程师",
+          "level": "required",
+          "evidence": "有良好的前瞻视野，关注AI Agent、多模态、搜索推荐等技术趋势，及前沿方向探索与落地"
+        },
+        {
+          "document_id": "JD_40846544105",
+          "title": "具身智能算法工程师",
+          "level": "mentioned",
+          "evidence": "对计算机视觉、自然语言处理、搜索推荐、大模型等主流AI方向的算法技术有一定的了解"
+        },
+        {
+          "document_id": "JD_40734229506",
+          "title": "大模型技术专家",
+          "level": "required",
+          "evidence": "有良好的前瞻视野，关注AI Agent、多模态、搜索推荐等技术趋势，及前沿方向探索与落地"
+        },
+        {
+          "document_id": "JD_40847349307",
+          "title": "工业算法工程师",
+          "level": "preferred",
+          "evidence": "精通基于C++、Python的算法开发，熟练掌握pytorch/tensorflow/mxnet/caffe等至少一项深度学习框架，熟悉NLP、搜索推荐等相关优先。"
+        }
+      ]
+    },
+    {
+      "name": "语音合成",
+      "count": 31,
+      "levels": {
+        "preferred": 7,
+        "mentioned": 18,
+        "required": 6
+      },
+      "examples": [
+        {
+          "document_id": "JD_40890483013",
+          "title": "AI云平台全栈开发工程师",
+          "level": "preferred",
+          "evidence": "做过 AI 应用工程化、AIGC、数字人、视频处理、语音合成、ASR 项目。"
+        },
+        {
+          "document_id": "JD_40894831013",
+          "title": "AI云平台全栈开发工程师",
+          "level": "preferred",
+          "evidence": "做过 AI 应用工程化、AIGC、数字人、视频处理、语音合成、ASR 项目。"
+        },
+        {
+          "document_id": "JD_40873419014",
+          "title": "AI全栈工程师",
+          "level": "mentioned",
+          "evidence": "○NLP / TTS（语音合成、文本生成）"
+        },
+        {
+          "document_id": "JD_40947143508",
+          "title": "AI原生应用开发工程师（数字人交互方向）",
+          "level": "mentioned",
+          "evidence": "负责数字人交互系统的全流程研发，包括语音识别（ASR）、自然语言处理（NLP）、语音合成（TTS）及数字人形象驱动与渲染的集成"
+        },
+        {
+          "document_id": "JD_40814629216",
+          "title": "AI大模型开发工程师",
+          "level": "mentioned",
+          "evidence": "多模态交互集成：负责大模型与语音识别（ASR）、语音合成（TTS）的整合优化，实现数字人与一线员工的自然语音交互。"
+        },
+        {
+          "document_id": "JD_40897256208",
+          "title": "ai应用工程师",
+          "level": "preferred",
+          "evidence": "在语音合成相关领域有相关大模型应用开发经验的候选人，将做为加分项优先考虑。"
+        },
+        {
+          "document_id": "JD_40905393103",
+          "title": "AI应用工程师 / 数字人开发工程师（音视频方向）",
+          "level": "mentioned",
+          "evidence": "参与音视频AI全链路开发，涵盖AI语音合成（TTS）、语音识别（ASR）、智能剪辑、实时画面增强、AIGC内容生成等方向，推动音视频生产与分发的智能化升级"
+        },
+        {
+          "document_id": "JD_40856253613",
+          "title": "AI应用开发工程师",
+          "level": "preferred",
+          "evidence": "有生成式AI（如图像生成、语音合成）项目经验者优先。"
+        }
+      ]
+    }
+  ]
+}

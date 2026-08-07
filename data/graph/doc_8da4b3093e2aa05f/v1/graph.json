@@ -1,0 +1,107 @@
+{
+  "doc_id": "doc_8da4b3093e2aa05f",
+  "edges": [
+    {
+      "created_at": "2026-08-05T12:01:26Z",
+      "doc_id": "doc_8da4b3093e2aa05f",
+      "edge_id": "edge_doc_8da4b3093e2aa05f_v1_contains_0001",
+      "evidence": [
+        {
+          "chunk_id": "doc_8da4b3093e2aa05f_v1_chunk_0001",
+          "content_hash": "8da4b3093e2aa05fb835c1b1a7a46297d44273e5007db1422fd53184b13843dd",
+          "created_at": "2026-08-05T12:01:26Z",
+          "doc_id": "doc_8da4b3093e2aa05f",
+          "end_char": 200,
+          "evidence_id": "ev_doc_8da4b3093e2aa05f_v1_chunk_0001",
+          "quote": "姓名：XXX｜年龄：23岁｜学历：大专\n专业：汽车检测与维修技术｜求职岗位：人事专员\n联系电话：138XXXX1234｜邮箱：xxxx@163.com\n求职意向\n求职人事专员岗位，仅有汽车维修、车辆保养实操工作经验，无人力资源、招聘、考勤薪资、员工管理相关工作经历，零基础想要转行人事岗位，愿意从头学习基础文职工作。\n教育背景\nXX职业技术学院｜汽车检测与维修技术｜2020.09-2023.06｜大",
+          "raw_path": "data\\raw\\doc_8da4b3093e2aa05f\\v1\\doc_cf26503d87c242e5888a0534e1c0d80a.txt",
+          "source_field": "chunk_text",
+          "start_char": 0,
+          "version": 1
+        }
+      ],
+      "evidence_ids": [
+        "ev_doc_8da4b3093e2aa05f_v1_chunk_0001"
+      ],
+      "properties": {
+        "sequence": 1
+      },
+      "relation_type": "CONTAINS_CHUNK",
+      "source_id": "document:doc_8da4b3093e2aa05f:v1",
+      "target_id": "chunk:doc_8da4b3093e2aa05f_v1_chunk_0001",
+      "version": 1
+    },
+    {
+      "created_at": "2026-08-05T12:01:26Z",
+      "doc_id": "doc_8da4b3093e2aa05f",
+      "edge_id": "edge_doc_8da4b3093e2aa05f_v1_contains_0002",
+      "evidence": [
+        {
+          "chunk_id": "doc_8da4b3093e2aa05f_v1_chunk_0002",
+          "content_hash": "8da4b3093e2aa05fb835c1b1a7a46297d44273e5007db1422fd53184b13843dd",
+          "created_at": "2026-08-05T12:01:26Z",
+          "doc_id": "doc_8da4b3093e2aa05f",
+          "end_char": 898,
+          "evidence_id": "ev_doc_8da4b3093e2aa05f_v1_chunk_0002",
+          "quote": "。\n专业技能（与人事专员岗位高度错位）\n- 专业技能：熟练掌握汽车常规保养、故障诊断、零部件维修更换，熟悉各类汽修工具、检测设备使用，具备扎实的汽修实操能力。\n- 办公能力薄弱：仅掌握基础电脑操作，不熟练Excel函数、报表制作，未使用过各类招聘平台，无人力系统操作经验。\n- 人资能力空白：不熟悉人事工作流程、劳动法规、社保公积金办理规则，无招聘、考勤、薪资、员工关系、培训组织相关技能。\n- 综合",
+          "raw_path": "data\\raw\\doc_8da4b3093e2aa05f\\v1\\doc_cf26503d87c242e5888a0534e1c0d80a.txt",
+          "source_field": "chunk_text",
+          "start_char": 698,
+          "version": 1
+        }
+      ],
+      "evidence_ids": [
+        "ev_doc_8da4b3093e2aa05f_v1_chunk_0002"
+      ],
+      "properties": {
+        "sequence": 2
+      },
+      "relation_type": "CONTAINS_CHUNK",
+      "source_id": "document:doc_8da4b3093e2aa05f:v1",
+      "target_id": "chunk:doc_8da4b3093e2aa05f_v1_chunk_0002",
+      "version": 1
+    }
+  ],
+  "nodes": [
+    {
+      "created_at": "2026-08-05T12:01:26Z",
+      "doc_id": "doc_8da4b3093e2aa05f",
+      "label": "Document",
+      "node_id": "document:doc_8da4b3093e2aa05f:v1",
+      "properties": {
+        "content_hash": "8da4b3093e2aa05fb835c1b1a7a46297d44273e5007db1422fd53184b13843dd",
+        "document_type": "resume",
+        "parser": "plain_text_parser",
+        "raw_path": "data\\raw\\doc_8da4b3093e2aa05f\\v1\\doc_cf26503d87c242e5888a0534e1c0d80a.txt"
+      },
+      "version": 1
+    },
+    {
+      "created_at": "2026-08-05T12:01:26Z",
+      "doc_id": "doc_8da4b3093e2aa05f",
+      "label": "Chunk",
+      "node_id": "chunk:doc_8da4b3093e2aa05f_v1_chunk_0001",
+      "properties": {
+        "chunk_id": "doc_8da4b3093e2aa05f_v1_chunk_0001",
+        "end_char": 777,
+        "sequence": 1,
+        "start_char": 0
+      },
+      "version": 1
+    },
+    {
+      "created_at": "2026-08-05T12:01:26Z",
+      "doc_id": "doc_8da4b3093e2aa05f",
+      "label": "Chunk",
+      "node_id": "chunk:doc_8da4b3093e2aa05f_v1_chunk_0002",
+      "properties": {
+        "chunk_id": "doc_8da4b3093e2aa05f_v1_chunk_0002",
+        "end_char": 1244,
+        "sequence": 2,
+        "start_char": 698
+      },
+      "version": 1
+    }
+  ],
+  "version": 1
+}

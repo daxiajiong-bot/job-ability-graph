@@ -1,0 +1,265 @@
+{
+  "source": "zhaopin",
+  "keyword": "AI/ML related",
+  "pages": 9,
+  "fetched": 180,
+  "deduped": 3000,
+  "saved": 3000,
+  "output": "C:\\Users\\suyucum\\Desktop\\挑战杯\\job-ability-graph\\data\\small-raw\\jd_raw.jsonl",
+  "generated_at": "2026-07-06T08:48:50.545Z",
+  "last_append": {
+    "source": "zhaopin_search_page_cache",
+    "topic": "AI/ML related jobs",
+    "keywords": [
+      "人工智能",
+      "机器学习",
+      "深度学习",
+      "大模型",
+      "算法工程师",
+      "AI算法",
+      "自然语言处理",
+      "NLP",
+      "计算机视觉",
+      "图像算法",
+      "推荐算法",
+      "数据挖掘",
+      "AIGC",
+      "多模态",
+      "LLM",
+      "PyTorch",
+      "TensorFlow",
+      "模型训练"
+    ],
+    "cities": [
+      "北京",
+      "上海",
+      "广州",
+      "深圳",
+      "杭州",
+      "成都",
+      "南京",
+      "武汉",
+      "西安",
+      "天津",
+      "苏州",
+      "重庆"
+    ],
+    "recent_since": "2024-07-06",
+    "existing_before": 0,
+    "added": 3000,
+    "total_after": 3000,
+    "scrape_time": "2026-07-06T08:48:50.545Z",
+    "stats": {
+      "cache_files": 332,
+      "parsed_pages": 281,
+      "positions_seen": 4674,
+      "missing_id_skipped": 0,
+      "duplicate_skipped": 1547,
+      "old_skipped": 3,
+      "irrelevant_skipped": 124,
+      "json_failed": 0
+    },
+    "task_samples": [
+      {
+        "keyword": "AIGC",
+        "city": "北京",
+        "page": 1
+      },
+      {
+        "keyword": "AIGC",
+        "city": "上海",
+        "page": 1
+      },
+      {
+        "keyword": "AIGC",
+        "city": "天津",
+        "page": 1
+      },
+      {
+        "keyword": "AIGC",
+        "city": "重庆",
+        "page": 1
+      },
+      {
+        "keyword": "AIGC",
+        "city": "杭州",
+        "page": 1
+      },
+      {
+        "keyword": "AIGC",
+        "city": "苏州",
+        "page": 1
+      },
+      {
+        "keyword": "AIGC",
+        "city": "西安",
+        "page": 1
+      },
+      {
+        "keyword": "AIGC",
+        "city": "南京",
+        "page": 1
+      },
+      {
+        "keyword": "AIGC",
+        "city": "广州",
+        "page": 1
+      },
+      {
+        "keyword": "AIGC",
+        "city": "深圳",
+        "page": 1
+      },
+      {
+        "keyword": "AIGC",
+        "city": "成都",
+        "page": 1
+      },
+      {
+        "keyword": "AIGC",
+        "city": "武汉",
+        "page": 1
+      },
+      {
+        "keyword": "AI算法",
+        "city": "北京",
+        "page": 1
+      },
+      {
+        "keyword": "AI算法",
+        "city": "上海",
+        "page": 1
+      },
+      {
+        "keyword": "AI算法",
+        "city": "天津",
+        "page": 1
+      },
+      {
+        "keyword": "AI算法",
+        "city": "重庆",
+        "page": 1
+      },
+      {
+        "keyword": "AI算法",
+        "city": "杭州",
+        "page": 1
+      },
+      {
+        "keyword": "AI算法",
+        "city": "苏州",
+        "page": 1
+      },
+      {
+        "keyword": "AI算法",
+        "city": "西安",
+        "page": 1
+      },
+      {
+        "keyword": "AI算法",
+        "city": "南京",
+        "page": 1
+      },
+      {
+        "keyword": "AI算法",
+        "city": "广州",
+        "page": 1
+      },
+      {
+        "keyword": "AI算法",
+        "city": "深圳",
+        "page": 1
+      },
+      {
+        "keyword": "AI算法",
+        "city": "成都",
+        "page": 1
+      },
+      {
+        "keyword": "AI算法",
+        "city": "武汉",
+        "page": 1
+      },
+      {
+        "keyword": "LLM",
+        "city": "北京",
+        "page": 1
+      },
+      {
+        "keyword": "LLM",
+        "city": "上海",
+        "page": 1
+      },
+      {
+        "keyword": "LLM",
+        "city": "天津",
+        "page": 1
+      },
+      {
+        "keyword": "LLM",
+        "city": "重庆",
+        "page": 1
+      },
+      {
+        "keyword": "LLM",
+        "city": "杭州",
+        "page": 1
+      },
+      {
+        "keyword": "LLM",
+        "city": "苏州",
+        "page": 1
+      },
+      {
+        "keyword": "LLM",
+        "city": "西安",
+        "page": 1
+      },
+      {
+        "keyword": "LLM",
+        "city": "南京",
+        "page": 1
+      },
+      {
+        "keyword": "LLM",
+        "city": "广州",
+        "page": 1
+      },
+      {
+        "keyword": "LLM",
+        "city": "深圳",
+        "page": 1
+      },
+      {
+        "keyword": "LLM",
+        "city": "成都",
+        "page": 1
+      },
+      {
+        "keyword": "LLM",
+        "city": "武汉",
+        "page": 1
+      },
+      {
+        "keyword": "NLP",
+        "city": "北京",
+        "page": 1
+      },
+      {
+        "keyword": "NLP",
+        "city": "上海",
+        "page": 1
+      },
+      {
+        "keyword": "NLP",
+        "city": "天津",
+        "page": 1
+      },
+      {
+        "keyword": "NLP",
+        "city": "重庆",
+        "page": 1
+      }
+    ]
+  }
+}

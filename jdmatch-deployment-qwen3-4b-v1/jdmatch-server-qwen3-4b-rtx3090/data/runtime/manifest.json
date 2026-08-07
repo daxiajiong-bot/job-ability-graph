@@ -1,0 +1,21 @@
+{
+  "schema_version": "jdmatch_runtime_v1",
+  "source_layout": "serialized_v1",
+  "files": {
+    "jds.jsonl": {
+      "rows": 8407,
+      "bytes": 15256218,
+      "sha256": "7510a9e4a4a16629d4615b399d14a1b3c111e5981e54dd6e71f690a2ffe83540"
+    },
+    "resumes.jsonl": {
+      "rows": 25221,
+      "bytes": 34702612,
+      "sha256": "c97bcf960b6349c4e3b779da6f986947ee93df25b12a83699f43f29095795255"
+    },
+    "sampling_contracts.jsonl": {
+      "rows": 8407,
+      "bytes": 4043412,
+      "sha256": "6f4c713d7ecdf8ff58281cf7e0c326f99d3a170ce0dc2dfb3164e3460b7548c6"
+    }
+  }
+}

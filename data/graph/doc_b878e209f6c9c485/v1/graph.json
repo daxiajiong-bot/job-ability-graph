@@ -1,0 +1,107 @@
+{
+  "doc_id": "doc_b878e209f6c9c485",
+  "edges": [
+    {
+      "created_at": "2026-08-05T12:28:17Z",
+      "doc_id": "doc_b878e209f6c9c485",
+      "edge_id": "edge_doc_b878e209f6c9c485_v1_contains_0001",
+      "evidence": [
+        {
+          "chunk_id": "doc_b878e209f6c9c485_v1_chunk_0001",
+          "content_hash": "b878e209f6c9c485d9ab5ab5e383f0a86173c8d0384146f59972e83ff96118e6",
+          "created_at": "2026-08-05T12:28:17Z",
+          "doc_id": "doc_b878e209f6c9c485",
+          "end_char": 200,
+          "evidence_id": "ev_doc_b878e209f6c9c485_v1_chunk_0001",
+          "quote": "- 负责公司微信公众号、小红书、抖音、视频号等全平台新媒体账号整体运营工作，结合品牌推广及业务需求制定周、月度精细化运营方案，规划内容更新节奏，保障账号常态化稳定更新，持续提升账号活跃度、精准粉丝体量及用户粘性。\n- 独立完成全平台原创内容产出，涵盖品牌文案、产品种草图文、热点推文、短视频脚本等内容创作，熟练完成图文排版、内容优化工作，结合行业热点、用户偏好及产品核心卖点打磨优质内容矩阵，全方位提",
+          "raw_path": "data\\raw\\doc_b878e209f6c9c485\\v1\\doc_de936a0eb4cf47c6b0590658b0adfdcc.txt",
+          "source_field": "chunk_text",
+          "start_char": 0,
+          "version": 1
+        }
+      ],
+      "evidence_ids": [
+        "ev_doc_b878e209f6c9c485_v1_chunk_0001"
+      ],
+      "properties": {
+        "sequence": 1
+      },
+      "relation_type": "CONTAINS_CHUNK",
+      "source_id": "document:doc_b878e209f6c9c485:v1",
+      "target_id": "chunk:doc_b878e209f6c9c485_v1_chunk_0001",
+      "version": 1
+    },
+    {
+      "created_at": "2026-08-05T12:28:17Z",
+      "doc_id": "doc_b878e209f6c9c485",
+      "edge_id": "edge_doc_b878e209f6c9c485_v1_contains_0002",
+      "evidence": [
+        {
+          "chunk_id": "doc_b878e209f6c9c485_v1_chunk_0002",
+          "content_hash": "b878e209f6c9c485d9ab5ab5e383f0a86173c8d0384146f59972e83ff96118e6",
+          "created_at": "2026-08-05T12:28:17Z",
+          "doc_id": "doc_b878e209f6c9c485",
+          "end_char": 862,
+          "evidence_id": "ev_doc_b878e209f6c9c485_v1_chunk_0002",
+          "quote": "要求\n- 大专及以上学历，新媒体、广告学、市场营销、新闻学、汉语言文学等相关专业优先，具备1-2年新媒体全职运营或相关优质实习经验，熟悉品牌新媒体运营全流程。\n- 深度熟悉微信公众号、小红书、抖音、视频号等主流新媒体平台的算法规则、流量机制、用户调性及传播逻辑，热点敏感度高，擅长热点借势、内容创新，可独立完成从选题到落地的全流程内容创作。\n- 具备扎实的文字功底与内容审美，擅长各类风格图文撰写、短",
+          "raw_path": "data\\raw\\doc_b878e209f6c9c485\\v1\\doc_de936a0eb4cf47c6b0590658b0adfdcc.txt",
+          "source_field": "chunk_text",
+          "start_char": 662,
+          "version": 1
+        }
+      ],
+      "evidence_ids": [
+        "ev_doc_b878e209f6c9c485_v1_chunk_0002"
+      ],
+      "properties": {
+        "sequence": 2
+      },
+      "relation_type": "CONTAINS_CHUNK",
+      "source_id": "document:doc_b878e209f6c9c485:v1",
+      "target_id": "chunk:doc_b878e209f6c9c485_v1_chunk_0002",
+      "version": 1
+    }
+  ],
+  "nodes": [
+    {
+      "created_at": "2026-08-05T12:28:17Z",
+      "doc_id": "doc_b878e209f6c9c485",
+      "label": "Document",
+      "node_id": "document:doc_b878e209f6c9c485:v1",
+      "properties": {
+        "content_hash": "b878e209f6c9c485d9ab5ab5e383f0a86173c8d0384146f59972e83ff96118e6",
+        "document_type": "jd",
+        "parser": "plain_text_parser",
+        "raw_path": "data\\raw\\doc_b878e209f6c9c485\\v1\\doc_de936a0eb4cf47c6b0590658b0adfdcc.txt"
+      },
+      "version": 1
+    },
+    {
+      "created_at": "2026-08-05T12:28:17Z",
+      "doc_id": "doc_b878e209f6c9c485",
+      "label": "Chunk",
+      "node_id": "chunk:doc_b878e209f6c9c485_v1_chunk_0001",
+      "properties": {
+        "chunk_id": "doc_b878e209f6c9c485_v1_chunk_0001",
+        "end_char": 741,
+        "sequence": 1,
+        "start_char": 0
+      },
+      "version": 1
+    },
+    {
+      "created_at": "2026-08-05T12:28:17Z",
+      "doc_id": "doc_b878e209f6c9c485",
+      "label": "Chunk",
+      "node_id": "chunk:doc_b878e209f6c9c485_v1_chunk_0002",
+      "properties": {
+        "chunk_id": "doc_b878e209f6c9c485_v1_chunk_0002",
+        "end_char": 1222,
+        "sequence": 2,
+        "start_char": 662
+      },
+      "version": 1
+    }
+  ],
+  "version": 1
+}

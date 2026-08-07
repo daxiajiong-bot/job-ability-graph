@@ -1,0 +1,1037 @@
+{
+  "artifact_type": "job_profile",
+  "created_at": "2026-08-05T07:26:19Z",
+  "extraction": {
+    "evidence": [
+      {
+        "field": "responsibilities",
+        "id": "ev_001",
+        "text": "负责公司微信公众号、小红书、抖音、视频号等全平台新媒体账号的日常运营维护，制定阶段性运营计划，保障账号稳定更新，提升账号活跃度、粉丝量与用户粘性。"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_002",
+        "text": "独立完成文案撰写、图文排版、短视频脚本创作，结合行业热点、产品卖点输出原创内容，打造优质内容矩阵，提升品牌曝光度与影响力。"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_003",
+        "text": "跟踪新媒体平台运营数据，包括阅读量、点赞、转发、涨粉、转化等数据，定期做好数据复盘，分析内容优劣，优化运营策略，提升内容传播效果。"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_004",
+        "text": "策划线上营销活动、话题互动、粉丝福利等运营活动，联动用户、合作渠道完成活动落地，实现引流、涨粉、产品种草及销售转化目标。"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_005",
+        "text": "收集整理行业竞品动态、平台热点趋势，结合公司业务特性迭代内容风格与运营模式，配合市场部完成品牌推广、产品宣传相关工作。"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_006",
+        "text": "负责用户评论、私信日常维护，搭建良好的用户互动氛围，沉淀精准用户群体，提升用户口碑。"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_007",
+        "text": "大专及以上学历，新闻学、汉语言文学、新媒体、广告学、市场营销等相关专业优先，1-2年新媒体运营相关工作/实习经验。"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_008",
+        "text": "熟悉小红书、抖音、公众号、视频号等主流新媒体平台规则、流量机制，擅长热点捕捉和内容创新，具备独立内容创作能力。"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_009",
+        "text": "文案功底扎实，擅长图文撰写、短视频脚本编辑，熟练使用秀米、135编辑器、剪映等运营工具，基础审美良好，排版整洁美观。"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_010",
+        "text": "具备基础数据分析能力，能够通过后台数据复盘优化内容与运营策略，有成功账号涨粉、活动转化案例者优先。"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_011",
+        "text": "思维活跃、责任心强、执行力高，具备良好的沟通能力和团队协作意识，抗压能力强，能够适配互联网快节奏工作模式。"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_012",
+        "text": "有品牌新媒体运营、本地生活、电商内容运营经验者优先。"
+      }
+    ],
+    "fields": {
+      "application_scenarios": [
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "name": "新媒体内容创作"
+        },
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "name": "数据分析优化"
+        }
+      ],
+      "candidate": {
+        "name": null,
+        "target_position": null
+      },
+      "capabilities": [
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "importance": "required",
+          "name": "新媒体运营"
+        }
+      ],
+      "company": {
+        "industry": null,
+        "location": null,
+        "name": null
+      },
+      "document_type": "jd",
+      "education": [],
+      "employment": {
+        "employment_type": "full_time",
+        "published_at": null,
+        "salary_max": null,
+        "salary_min": null
+      },
+      "evaluation_signals": [
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_007"
+          ],
+          "name": "学历"
+        },
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_012"
+          ],
+          "name": "工作经验"
+        }
+      ],
+      "evidence": [
+        {
+          "field": "responsibilities",
+          "id": "ev_001",
+          "text": "负责公司微信公众号、小红书、抖音、视频号等全平台新媒体账号的日常运营维护，制定阶段性运营计划，保障账号稳定更新，提升账号活跃度、粉丝量与用户粘性。"
+        },
+        {
+          "field": "responsibilities",
+          "id": "ev_002",
+          "text": "独立完成文案撰写、图文排版、短视频脚本创作，结合行业热点、产品卖点输出原创内容，打造优质内容矩阵，提升品牌曝光度与影响力。"
+        },
+        {
+          "field": "responsibilities",
+          "id": "ev_003",
+          "text": "跟踪新媒体平台运营数据，包括阅读量、点赞、转发、涨粉、转化等数据，定期做好数据复盘，分析内容优劣，优化运营策略，提升内容传播效果。"
+        },
+        {
+          "field": "responsibilities",
+          "id": "ev_004",
+          "text": "策划线上营销活动、话题互动、粉丝福利等运营活动，联动用户、合作渠道完成活动落地，实现引流、涨粉、产品种草及销售转化目标。"
+        },
+        {
+          "field": "responsibilities",
+          "id": "ev_005",
+          "text": "收集整理行业竞品动态、平台热点趋势，结合公司业务特性迭代内容风格与运营模式，配合市场部完成品牌推广、产品宣传相关工作。"
+        },
+        {
+          "field": "responsibilities",
+          "id": "ev_006",
+          "text": "负责用户评论、私信日常维护，搭建良好的用户互动氛围，沉淀精准用户群体，提升用户口碑。"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_007",
+          "text": "大专及以上学历，新闻学、汉语言文学、新媒体、广告学、市场营销等相关专业优先，1-2年新媒体运营相关工作/实习经验。"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_008",
+          "text": "熟悉小红书、抖音、公众号、视频号等主流新媒体平台规则、流量机制，擅长热点捕捉和内容创新，具备独立内容创作能力。"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_009",
+          "text": "文案功底扎实，擅长图文撰写、短视频脚本编辑，熟练使用秀米、135编辑器、剪映等运营工具，基础审美良好，排版整洁美观。"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_010",
+          "text": "具备基础数据分析能力，能够通过后台数据复盘优化内容与运营策略，有成功账号涨粉、活动转化案例者优先。"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_011",
+          "text": "思维活跃、责任心强、执行力高，具备良好的沟通能力和团队协作意识，抗压能力强，能够适配互联网快节奏工作模式。"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_012",
+          "text": "有品牌新媒体运营、本地生活、电商内容运营经验者优先。"
+        }
+      ],
+      "experience": [],
+      "job": {
+        "department": null,
+        "normalized_title": null,
+        "seniority": null,
+        "title": null
+      },
+      "projects": [],
+      "requirements": [
+        {
+          "evidence_ids": [
+            "ev_007"
+          ],
+          "importance": "required",
+          "requirement_type": "education|experience",
+          "text": "大专及以上学历，新闻学、汉语言文学、新媒体、广告学、市场营销等相关专业优先，1-2年新媒体运营相关工作/实习经验。"
+        },
+        {
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "熟悉小红书、抖音、公众号、视频号等主流新媒体平台规则、流量机制，擅长热点捕捉和内容创新，具备独立内容创作能力。"
+        },
+        {
+          "evidence_ids": [
+            "ev_009"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "文案功底扎实，擅长图文撰写、短视频脚本编辑，熟练使用秀米、135编辑器、剪映等运营工具，基础审美良好，排版整洁美观。"
+        },
+        {
+          "evidence_ids": [
+            "ev_010"
+          ],
+          "importance": "preferred",
+          "requirement_type": "skill",
+          "text": "具备基础数据分析能力，能够通过后台数据复盘优化内容与运营策略，有成功账号涨粉、活动转化案例者优先。"
+        },
+        {
+          "evidence_ids": [
+            "ev_011"
+          ],
+          "importance": "required",
+          "requirement_type": "soft_skill",
+          "text": "思维活跃、责任心强、执行力高，具备良好的沟通能力和团队协作意识，抗压能力强，能够适配互联网快节奏工作模式。"
+        },
+        {
+          "evidence_ids": [
+            "ev_012"
+          ],
+          "importance": "preferred",
+          "requirement_type": "experience",
+          "text": "有品牌新媒体运营、本地生活、电商内容运营经验者优先。"
+        }
+      ],
+      "responsibilities": [
+        {
+          "action": "负责",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "object": "公司微信公众号、小红书、抖音、视频号等全平台新媒体账号",
+          "text": "负责公司微信公众号、小红书、抖音、视频号等全平台新媒体账号的日常运营维护，制定阶段性运营计划，保障账号稳定更新，提升账号活跃度、粉丝量与用户粘性。"
+        },
+        {
+          "action": "独立完成",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "object": "文案撰写、图文排版、短视频脚本创作",
+          "text": "独立完成文案撰写、图文排版、短视频脚本创作，结合行业热点、产品卖点输出原创内容，打造优质内容矩阵，提升品牌曝光度与影响力。"
+        },
+        {
+          "action": "跟踪",
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "object": "新媒体平台运营数据",
+          "text": "跟踪新媒体平台运营数据，包括阅读量、点赞、转发、涨粉、转化等数据，定期做好数据复盘，分析内容优劣，优化运营策略，提升内容传播效果。"
+        },
+        {
+          "action": "策划",
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "object": "线上营销活动、话题互动、粉丝福利等运营活动",
+          "text": "策划线上营销活动、话题互动、粉丝福利等运营活动，联动用户、合作渠道完成活动落地，实现引流、涨粉、产品种草及销售转化目标。"
+        },
+        {
+          "action": "收集整理",
+          "evidence_ids": [
+            "ev_005"
+          ],
+          "object": "行业竞品动态、平台热点趋势",
+          "text": "收集整理行业竞品动态、平台热点趋势，结合公司业务特性迭代内容风格与运营模式，配合市场部完成品牌推广、产品宣传相关工作。"
+        },
+        {
+          "action": "负责",
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "object": "用户评论、私信日常维护",
+          "text": "负责用户评论、私信日常维护，搭建良好的用户互动氛围，沉淀精准用户群体，提升用户口碑。"
+        }
+      ],
+      "schema_version": "profile-extraction/v2",
+      "skills": [
+        {
+          "category": "data_processing",
+          "evidence_ids": [
+            "ev_009"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "文案撰写",
+          "raw_name": "文案撰写"
+        },
+        {
+          "category": "algorithm",
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "热点捕捉",
+          "raw_name": "热点捕捉和内容创新"
+        },
+        {
+          "category": "data_processing",
+          "evidence_ids": [
+            "ev_010"
+          ],
+          "importance": "preferred",
+          "lskt_label": "S",
+          "name": "数据分析",
+          "raw_name": "基础数据分析能力"
+        },
+        {
+          "category": "soft_skill",
+          "evidence_ids": [
+            "ev_011"
+          ],
+          "importance": "required",
+          "lskt_label": "T",
+          "name": "团队协作",
+          "raw_name": "良好的沟通能力和团队协作意识"
+        },
+        {
+          "category": "algorithm",
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "内容创作",
+          "raw_name": "独立内容创作能力"
+        },
+        {
+          "category": "soft_skill",
+          "evidence_ids": [
+            "ev_009"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "审美",
+          "raw_name": "基础审美良好,排版整洁美观"
+        }
+      ]
+    },
+    "implementation": "ollama",
+    "model": "qwen2.5:7b",
+    "raw_model_output": "",
+    "reason": "",
+    "schema": "profile-extraction/v2",
+    "state": "available",
+    "validation_error": "",
+    "warnings": []
+  },
+  "normalization": {
+    "implementation": "lightweight_skill_normalizer",
+    "skills": [
+      {
+        "category": "data_processing",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_009"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "文案撰写",
+        "raw_name": "文案撰写"
+      },
+      {
+        "category": "algorithm",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_008"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "热点捕捉和内容创新",
+        "raw_name": "热点捕捉和内容创新"
+      },
+      {
+        "category": "data_processing",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_010"
+        ],
+        "importance": "preferred",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "基础数据分析能力",
+        "raw_name": "基础数据分析能力"
+      },
+      {
+        "category": "soft_skill",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_011"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "T",
+        "name": "良好的沟通能力和团队协作意识",
+        "raw_name": "良好的沟通能力和团队协作意识"
+      },
+      {
+        "category": "algorithm",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_008"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "独立内容创作能力",
+        "raw_name": "独立内容创作能力"
+      },
+      {
+        "category": "soft_skill",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_009"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "基础审美良好,排版整洁美观",
+        "raw_name": "基础审美良好,排版整洁美观"
+      }
+    ],
+    "state": "available",
+    "warnings": []
+  },
+  "profile": {
+    "artifacts": {
+      "profile_json": "data\\structured\\profiles\\job\\job_profile_0f89b293b9e24fb8aa636815b1595157.json",
+      "schema_version": "profile-extraction/v2",
+      "storage": "filesystem"
+    },
+    "attributes": {
+      "capabilities": [
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "importance": "required",
+          "name": "新媒体运营"
+        }
+      ],
+      "company": {
+        "industry": null,
+        "location": null,
+        "name": null
+      },
+      "education": [],
+      "employment": {
+        "employment_type": "full_time",
+        "published_at": null,
+        "salary_max": null,
+        "salary_min": null
+      },
+      "experience": [],
+      "jd_profile": {
+        "application_scenarios": [
+          {
+            "description": null,
+            "evidence_ids": [
+              "ev_002"
+            ],
+            "name": "新媒体内容创作"
+          },
+          {
+            "description": null,
+            "evidence_ids": [
+              "ev_003"
+            ],
+            "name": "数据分析优化"
+          }
+        ],
+        "capabilities": [
+          {
+            "description": null,
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "importance": "required",
+            "name": "新媒体运营"
+          }
+        ],
+        "company": {
+          "industry": null,
+          "location": null,
+          "name": null
+        },
+        "document_type": "jd",
+        "employment": {
+          "employment_type": "full_time",
+          "published_at": null,
+          "salary_max": null,
+          "salary_min": null
+        },
+        "evaluation_signals": [
+          {
+            "description": null,
+            "evidence_ids": [
+              "ev_007"
+            ],
+            "name": "学历"
+          },
+          {
+            "description": null,
+            "evidence_ids": [
+              "ev_012"
+            ],
+            "name": "工作经验"
+          }
+        ],
+        "job": {
+          "department": null,
+          "normalized_title": null,
+          "seniority": null,
+          "title": null
+        },
+        "requirements": [
+          {
+            "evidence_ids": [
+              "ev_007"
+            ],
+            "importance": "required",
+            "requirement_type": "education|experience",
+            "text": "大专及以上学历，新闻学、汉语言文学、新媒体、广告学、市场营销等相关专业优先，1-2年新媒体运营相关工作/实习经验。"
+          },
+          {
+            "evidence_ids": [
+              "ev_008"
+            ],
+            "importance": "required",
+            "requirement_type": "skill",
+            "text": "熟悉小红书、抖音、公众号、视频号等主流新媒体平台规则、流量机制，擅长热点捕捉和内容创新，具备独立内容创作能力。"
+          },
+          {
+            "evidence_ids": [
+              "ev_009"
+            ],
+            "importance": "required",
+            "requirement_type": "skill",
+            "text": "文案功底扎实，擅长图文撰写、短视频脚本编辑，熟练使用秀米、135编辑器、剪映等运营工具，基础审美良好，排版整洁美观。"
+          },
+          {
+            "evidence_ids": [
+              "ev_010"
+            ],
+            "importance": "preferred",
+            "requirement_type": "skill",
+            "text": "具备基础数据分析能力，能够通过后台数据复盘优化内容与运营策略，有成功账号涨粉、活动转化案例者优先。"
+          },
+          {
+            "evidence_ids": [
+              "ev_011"
+            ],
+            "importance": "required",
+            "requirement_type": "soft_skill",
+            "text": "思维活跃、责任心强、执行力高，具备良好的沟通能力和团队协作意识，抗压能力强，能够适配互联网快节奏工作模式。"
+          },
+          {
+            "evidence_ids": [
+              "ev_012"
+            ],
+            "importance": "preferred",
+            "requirement_type": "experience",
+            "text": "有品牌新媒体运营、本地生活、电商内容运营经验者优先。"
+          }
+        ],
+        "responsibilities": [
+          {
+            "action": "负责",
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "object": "公司微信公众号、小红书、抖音、视频号等全平台新媒体账号",
+            "text": "负责公司微信公众号、小红书、抖音、视频号等全平台新媒体账号的日常运营维护，制定阶段性运营计划，保障账号稳定更新，提升账号活跃度、粉丝量与用户粘性。"
+          },
+          {
+            "action": "独立完成",
+            "evidence_ids": [
+              "ev_002"
+            ],
+            "object": "文案撰写、图文排版、短视频脚本创作",
+            "text": "独立完成文案撰写、图文排版、短视频脚本创作，结合行业热点、产品卖点输出原创内容，打造优质内容矩阵，提升品牌曝光度与影响力。"
+          },
+          {
+            "action": "跟踪",
+            "evidence_ids": [
+              "ev_003"
+            ],
+            "object": "新媒体平台运营数据",
+            "text": "跟踪新媒体平台运营数据，包括阅读量、点赞、转发、涨粉、转化等数据，定期做好数据复盘，分析内容优劣，优化运营策略，提升内容传播效果。"
+          },
+          {
+            "action": "策划",
+            "evidence_ids": [
+              "ev_004"
+            ],
+            "object": "线上营销活动、话题互动、粉丝福利等运营活动",
+            "text": "策划线上营销活动、话题互动、粉丝福利等运营活动，联动用户、合作渠道完成活动落地，实现引流、涨粉、产品种草及销售转化目标。"
+          },
+          {
+            "action": "收集整理",
+            "evidence_ids": [
+              "ev_005"
+            ],
+            "object": "行业竞品动态、平台热点趋势",
+            "text": "收集整理行业竞品动态、平台热点趋势，结合公司业务特性迭代内容风格与运营模式，配合市场部完成品牌推广、产品宣传相关工作。"
+          },
+          {
+            "action": "负责",
+            "evidence_ids": [
+              "ev_006"
+            ],
+            "object": "用户评论、私信日常维护",
+            "text": "负责用户评论、私信日常维护，搭建良好的用户互动氛围，沉淀精准用户群体，提升用户口碑。"
+          }
+        ],
+        "schema_version": "profile-extraction/v2",
+        "skills": [
+          {
+            "category": "data_processing",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_009"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "文案撰写",
+            "raw_name": "文案撰写"
+          },
+          {
+            "category": "algorithm",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_008"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "热点捕捉和内容创新",
+            "raw_name": "热点捕捉和内容创新"
+          },
+          {
+            "category": "data_processing",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_010"
+            ],
+            "importance": "preferred",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "基础数据分析能力",
+            "raw_name": "基础数据分析能力"
+          },
+          {
+            "category": "soft_skill",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_011"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "T",
+            "name": "良好的沟通能力和团队协作意识",
+            "raw_name": "良好的沟通能力和团队协作意识"
+          },
+          {
+            "category": "algorithm",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_008"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "独立内容创作能力",
+            "raw_name": "独立内容创作能力"
+          },
+          {
+            "category": "soft_skill",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_009"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "基础审美良好,排版整洁美观",
+            "raw_name": "基础审美良好,排版整洁美观"
+          }
+        ]
+      },
+      "job": {
+        "department": null,
+        "normalized_title": null,
+        "seniority": null,
+        "title": null
+      },
+      "job_title": null,
+      "profile_schema": "profile-extraction/v2",
+      "projects": [],
+      "requirements": [
+        {
+          "evidence_ids": [
+            "ev_007"
+          ],
+          "importance": "required",
+          "requirement_type": "education|experience",
+          "text": "大专及以上学历，新闻学、汉语言文学、新媒体、广告学、市场营销等相关专业优先，1-2年新媒体运营相关工作/实习经验。"
+        },
+        {
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "熟悉小红书、抖音、公众号、视频号等主流新媒体平台规则、流量机制，擅长热点捕捉和内容创新，具备独立内容创作能力。"
+        },
+        {
+          "evidence_ids": [
+            "ev_009"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "文案功底扎实，擅长图文撰写、短视频脚本编辑，熟练使用秀米、135编辑器、剪映等运营工具，基础审美良好，排版整洁美观。"
+        },
+        {
+          "evidence_ids": [
+            "ev_010"
+          ],
+          "importance": "preferred",
+          "requirement_type": "skill",
+          "text": "具备基础数据分析能力，能够通过后台数据复盘优化内容与运营策略，有成功账号涨粉、活动转化案例者优先。"
+        },
+        {
+          "evidence_ids": [
+            "ev_011"
+          ],
+          "importance": "required",
+          "requirement_type": "soft_skill",
+          "text": "思维活跃、责任心强、执行力高，具备良好的沟通能力和团队协作意识，抗压能力强，能够适配互联网快节奏工作模式。"
+        },
+        {
+          "evidence_ids": [
+            "ev_012"
+          ],
+          "importance": "preferred",
+          "requirement_type": "experience",
+          "text": "有品牌新媒体运营、本地生活、电商内容运营经验者优先。"
+        }
+      ],
+      "responsibilities": [
+        {
+          "action": "负责",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "object": "公司微信公众号、小红书、抖音、视频号等全平台新媒体账号",
+          "text": "负责公司微信公众号、小红书、抖音、视频号等全平台新媒体账号的日常运营维护，制定阶段性运营计划，保障账号稳定更新，提升账号活跃度、粉丝量与用户粘性。"
+        },
+        {
+          "action": "独立完成",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "object": "文案撰写、图文排版、短视频脚本创作",
+          "text": "独立完成文案撰写、图文排版、短视频脚本创作，结合行业热点、产品卖点输出原创内容，打造优质内容矩阵，提升品牌曝光度与影响力。"
+        },
+        {
+          "action": "跟踪",
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "object": "新媒体平台运营数据",
+          "text": "跟踪新媒体平台运营数据，包括阅读量、点赞、转发、涨粉、转化等数据，定期做好数据复盘，分析内容优劣，优化运营策略，提升内容传播效果。"
+        },
+        {
+          "action": "策划",
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "object": "线上营销活动、话题互动、粉丝福利等运营活动",
+          "text": "策划线上营销活动、话题互动、粉丝福利等运营活动，联动用户、合作渠道完成活动落地，实现引流、涨粉、产品种草及销售转化目标。"
+        },
+        {
+          "action": "收集整理",
+          "evidence_ids": [
+            "ev_005"
+          ],
+          "object": "行业竞品动态、平台热点趋势",
+          "text": "收集整理行业竞品动态、平台热点趋势，结合公司业务特性迭代内容风格与运营模式，配合市场部完成品牌推广、产品宣传相关工作。"
+        },
+        {
+          "action": "负责",
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "object": "用户评论、私信日常维护",
+          "text": "负责用户评论、私信日常维护，搭建良好的用户互动氛围，沉淀精准用户群体，提升用户口碑。"
+        }
+      ],
+      "skills": [
+        {
+          "category": "data_processing",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_009"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "文案撰写",
+          "raw_name": "文案撰写"
+        },
+        {
+          "category": "algorithm",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "热点捕捉和内容创新",
+          "raw_name": "热点捕捉和内容创新"
+        },
+        {
+          "category": "data_processing",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_010"
+          ],
+          "importance": "preferred",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "基础数据分析能力",
+          "raw_name": "基础数据分析能力"
+        },
+        {
+          "category": "soft_skill",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_011"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "T",
+          "name": "良好的沟通能力和团队协作意识",
+          "raw_name": "良好的沟通能力和团队协作意识"
+        },
+        {
+          "category": "algorithm",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "独立内容创作能力",
+          "raw_name": "独立内容创作能力"
+        },
+        {
+          "category": "soft_skill",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_009"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "基础审美良好,排版整洁美观",
+          "raw_name": "基础审美良好,排版整洁美观"
+        }
+      ]
+    },
+    "created_at": "2026-08-05T07:26:19Z",
+    "evidence": [
+      {
+        "field": "responsibilities",
+        "id": "ev_001",
+        "text": "负责公司微信公众号、小红书、抖音、视频号等全平台新媒体账号的日常运营维护，制定阶段性运营计划，保障账号稳定更新，提升账号活跃度、粉丝量与用户粘性。"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_002",
+        "text": "独立完成文案撰写、图文排版、短视频脚本创作，结合行业热点、产品卖点输出原创内容，打造优质内容矩阵，提升品牌曝光度与影响力。"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_003",
+        "text": "跟踪新媒体平台运营数据，包括阅读量、点赞、转发、涨粉、转化等数据，定期做好数据复盘，分析内容优劣，优化运营策略，提升内容传播效果。"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_004",
+        "text": "策划线上营销活动、话题互动、粉丝福利等运营活动，联动用户、合作渠道完成活动落地，实现引流、涨粉、产品种草及销售转化目标。"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_005",
+        "text": "收集整理行业竞品动态、平台热点趋势，结合公司业务特性迭代内容风格与运营模式，配合市场部完成品牌推广、产品宣传相关工作。"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_006",
+        "text": "负责用户评论、私信日常维护，搭建良好的用户互动氛围，沉淀精准用户群体，提升用户口碑。"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_007",
+        "text": "大专及以上学历，新闻学、汉语言文学、新媒体、广告学、市场营销等相关专业优先，1-2年新媒体运营相关工作/实习经验。"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_008",
+        "text": "熟悉小红书、抖音、公众号、视频号等主流新媒体平台规则、流量机制，擅长热点捕捉和内容创新，具备独立内容创作能力。"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_009",
+        "text": "文案功底扎实，擅长图文撰写、短视频脚本编辑，熟练使用秀米、135编辑器、剪映等运营工具，基础审美良好，排版整洁美观。"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_010",
+        "text": "具备基础数据分析能力，能够通过后台数据复盘优化内容与运营策略，有成功账号涨粉、活动转化案例者优先。"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_011",
+        "text": "思维活跃、责任心强、执行力高，具备良好的沟通能力和团队协作意识，抗压能力强，能够适配互联网快节奏工作模式。"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_012",
+        "text": "有品牌新媒体运营、本地生活、电商内容运营经验者优先。"
+      }
+    ],
+    "id": "job_profile_0f89b293b9e24fb8aa636815b1595157",
+    "implementation": "llm_profile_builder",
+    "profile_type": "job",
+    "source_document_id": "doc_c33980f8ab27417895ad83c8c02423d8",
+    "state": "available",
+    "warnings": []
+  },
+  "schema_version": "profile-extraction/v2",
+  "source_document": {
+    "char_count": 749,
+    "content_digest": "ef12406dfd3f23d671c5561f5a5f3c31ff4342c0894979a719cfd5d668392a83",
+    "created_at": "2026-08-05T07:24:32Z",
+    "document_type": "jd",
+    "id": "doc_c33980f8ab27417895ad83c8c02423d8",
+    "metadata": {},
+    "source": {
+      "source_system": "manual"
+    },
+    "storage": "memory"
+  }
+}

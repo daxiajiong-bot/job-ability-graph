@@ -1,0 +1,102 @@
+{
+  "artifact_type": "candidate_profile",
+  "created_at": "2026-08-06T11:56:51Z",
+  "extraction": {
+    "evidence": [],
+    "fields": {},
+    "implementation": "mock",
+    "model": null,
+    "raw_model_output": "{\n  \"schema_version\": \"profile-extraction/v2\",\n  \"document_type\": \"resume\",\n  \"candidate\": {\"name\": null, \"current_title\": null, \"years_of_experience\": 1.5, \"location\": null},\n  \"career_intent\": {\"target_position\": \"人事专员\", \"target_industry\": null, \"target_location\": null},\n  \"education\": [{\"school\": \"XX职业技术学院\", \"degree\": \"大专\", \"major\": \"汽车检测与维修技术\", \"period\": \"2020.09-2023.06\", \"evidence_text\": \"\"}],\n  \"work_experience\": [{\"company\": \"XX汽车维修服务公司\", \"role\": \"汽修学徒/维修技师\", \"industry\": \"汽车维修\", \"period\": \"2023.07-至今\", \"description\": \"- 车辆检测维修工作；- 维修台账基础登记；- 客户车辆对接服务；- 设备维护与场地整理。\", \"evidence_text\": \"\"}],\n  \"project_experience\": [],\n  \"skills\": [{\"name\": \"汽车常规保养\", \"raw_name\": \"专业技能\", \"category\": \"domain_knowledge\", \"lskt_label\": \"K\", \"level\": \"working\", \"years\": null, \"evidence_text\": \"- 熟练掌握汽车常规保养、故障诊断、零部件维修更换，熟悉各类汽修工具、检测设备使用，具备扎实的汽修实操能力。\"},\n             {\"name\": \"故障诊断\", \"raw_name\": \"专业技能\", \"category\": \"domain_knowledge\", \"lskt_label\": \"K\", \"level\": \"working\", \"years\": null, \"evidence_text\": \"- 熟练掌握汽车常规保养、故障诊断、零部件维修更换，熟悉各类汽修工具、检测设备使用，具备扎实的汽修实操能力。\"},\n             {\"name\": \"零部件维修更换\", \"raw_name\": \"专业技能\", \"category\": \"domain_knowledge\", \"lskt_label\": \"K\", \"level\": \"working\", \"years\": null, \"evidence_text\": \"- 熟练掌握汽车常规保养、故障诊断、零部件维修更换，熟悉各类汽修工具、检测设备使用，具备扎实的汽修实操能力。\"},\n             {\"name\": \"办公软件操作\", \"raw_name\": \"办公能力薄弱\", \"category\": \"tool\", \"lskt_label\": \"S\", \"level\": \"beginner\", \"years\": null, \"evidence_text\": \"- 仅掌握基础电脑操作，不熟练Excel函数、报表制作，未使用过各类招聘平台，无人力系统操作经验。\"}],\n  \"capabilities\": [{\"name\": \"车辆检测维修\", \"description\": \"\", \"level\": \"working\", \"evidence_text\": \"- 车辆检测维修工作：主要负责私家车常规保养、故障检测、零部件更换、底盘检修、电路排查等汽修实操工作，长期对接车辆维修、设备调试。\"},\n                   {\"name\": \"维修台账登记\", \"description\": \"\", \"level\": \"beginner\", \"evidence_text\": \"- 维修台账基础登记：仅负责车辆维修项目、配件使用、完工情况的简单登记记录。\"}],\n  \"certificates\": [],\n  \"languages\": [],\n  \"achievements\": [{\"name\": \"汽车维修保养\", \"description\": \"\", \"evidence_text\": \"- 熟练完成各类家用车辆常规保养与故障维修，累计完成车辆维修保养500+台次，维修返修率低，获得门店客户认可。\"}]\n}",
+    "reason": "Ollama structured extraction failed: no evidence-backed list items remained: education[1] ignored: missing evidence_text; work_experience[1] ignored: missing evidence_text; skills[1] ignored: evidence_text must be copied from the source document",
+    "schema": null,
+    "state": "not_implemented",
+    "validation_error": "no evidence-backed list items remained: education[1] ignored: missing evidence_text; work_experience[1] ignored: missing evidence_text; skills[1] ignored: evidence_text must be copied from the source document",
+    "warnings": [
+      "Ollama structured extraction failed: no evidence-backed list items remained: education[1] ignored: missing evidence_text; work_experience[1] ignored: missing evidence_text; skills[1] ignored: evidence_text must be copied from the source document"
+    ]
+  },
+  "normalization": {
+    "implementation": "lightweight_skill_normalizer",
+    "skills": [],
+    "state": "not_implemented",
+    "warnings": [
+      "Ollama structured extraction failed: no evidence-backed list items remained: education[1] ignored: missing evidence_text; work_experience[1] ignored: missing evidence_text; skills[1] ignored: evidence_text must be copied from the source document"
+    ]
+  },
+  "profile": {
+    "artifacts": {
+      "profile_json": "data\\structured\\profiles\\candidate\\candidate_profile_00b74350c3c3401f92aed02bed3d87dd.json",
+      "schema_version": "profile-extraction/v2",
+      "storage": "filesystem"
+    },
+    "attributes": {
+      "candidate": {},
+      "capabilities": [],
+      "career_intent": {},
+      "education": [],
+      "experience": [],
+      "profile_schema": "profile-extraction/v2",
+      "projects": [],
+      "resume_profile": {},
+      "skills": [],
+      "target_position": null
+    },
+    "created_at": "2026-08-06T11:56:51Z",
+    "evidence": [],
+    "id": "candidate_profile_00b74350c3c3401f92aed02bed3d87dd",
+    "implementation": "mock",
+    "profile_type": "candidate",
+    "source_document_id": "doc_0e676ed320af48288a9bb7c5353ceee7",
+    "state": "not_implemented",
+    "warnings": [
+      "Ollama structured extraction failed: no evidence-backed list items remained: education[1] ignored: missing evidence_text; work_experience[1] ignored: missing evidence_text; skills[1] ignored: evidence_text must be copied from the source document"
+    ]
+  },
+  "schema_version": "profile-extraction/v2",
+  "source_document": {
+    "char_count": 1243,
+    "content_digest": "d856f6b63c51eed97049dae85f2f0df59a34a6c0dfdc41cdbeb4c158fa9f1d0a",
+    "created_at": "2026-08-06T11:56:14Z",
+    "document_type": "resume",
+    "id": "doc_0e676ed320af48288a9bb7c5353ceee7",
+    "metadata": {
+      "candidate_name": "XXX｜年龄：23岁｜学历：大专",
+      "display_name": "XXX｜年龄：23岁｜学历：大专",
+      "education": "大专",
+      "experience": "，无人力资源、招聘、考勤薪资、员工管理相关工作经历，零基础想要转行人事岗位，愿意从头学习基础文职工作。",
+      "skills": [
+        "学业亮点",
+        "系统掌握汽车维修",
+        "检测专业技能",
+        "无人力资源",
+        "行政管理",
+        "劳动法规相关专业",
+        "学习经历",
+        "专业技能",
+        "与人事专员岗位高",
+        "度错位",
+        "熟练掌握汽车常规",
+        "保养",
+        "故障诊断",
+        "零部件维修更换",
+        "熟悉各类汽修工具",
+        "检测设备使用",
+        "具备扎实的汽修实",
+        "操能力",
+        "人资能力空白",
+        "不熟悉人事工作流",
+        "劳动法规",
+        "社保公积金办理规",
+        "无招聘",
+        "考勤",
+        "薪资",
+        "员工关系",
+        "培训组织相关技能"
+      ]
+    },
+    "source": {
+      "source_system": "manual"
+    },
+    "storage": "memory"
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "schema_version": "jd_rag_augmentation_v1",
+  "source_profile_count": 1000,
+  "augmented_profile_count": 1000,
+  "validation_status_counts": {
+    "valid": 1000
+  },
+  "original_skill_mentions": 10223,
+  "augmented_skill_mentions": 10530,
+  "added_skill_mentions": 307,
+  "docs_with_additions": 264,
+  "docs_with_additions_ratio": 0.264,
+  "max_additions_per_doc": 20,
+  "added_skill_source_counts": {
+    "retrieved_skill_index": 307
+  },
+  "top_added_skills": [
+    {
+      "name": "SQL",
+      "count": 35
+    },
+    {
+      "name": "模型微调",
+      "count": 31
+    },
+    {
+      "name": "视觉算法",
+      "count": 31
+    },
+    {
+      "name": "Agent",
+      "count": 29
+    },
+    {
+      "name": "微调",
+      "count": 27
+    },
+    {
+      "name": "模型训练",
+      "count": 24
+    },
+    {
+      "name": "算法开发",
+      "count": 23
+    },
+    {
+      "name": "人工智能",
+      "count": 15
+    },
+    {
+      "name": "大模型",
+      "count": 14
+    },
+    {
+      "name": "机器视觉",
+      "count": 14
+    },
+    {
+      "name": "Go",
+      "count": 12
+    },
+    {
+      "name": "Java",
+      "count": 10
+    },
+    {
+      "name": "模型部署",
+      "count": 9
+    },
+    {
+      "name": "模型推理",
+      "count": 8
+    },
+    {
+      "name": "C++",
+      "count": 3
+    },
+    {
+      "name": "控制算法",
+      "count": 3
+    },
+    {
+      "name": "AI Agent",
+      "count": 2
+    },
+    {
+      "name": "AIGC",
+      "count": 2
+    },
+    {
+      "name": "图像识别",
+      "count": 2
+    },
+    {
+      "name": "多模态",
+      "count": 2
+    },
+    {
+      "name": "算法设计",
+      "count": 2
+    },
+    {
+      "name": "LangChain",
+      "count": 1
+    },
+    {
+      "name": "OCR",
+      "count": 1
+    },
+    {
+      "name": "Python",
+      "count": 1
+    },
+    {
+      "name": "模型评估",
+      "count": 1
+    },
+    {
+      "name": "计算机视觉",
+      "count": 1
+    },
+    {
+      "name": "深度学习",
+      "count": 1
+    },
+    {
+      "name": "Rust",
+      "count": 1
+    },
+    {
+      "name": "C#",
+      "count": 1
+    },
+    {
+      "name": "LlamaIndex",
+      "count": 1
+    }
+  ],
+  "error_count": 0,
+  "rag_policy": {
+    "mode": "local_retrieval_with_evidence_gate",
+    "facts_added_only_if_surface_is_found_in_current_raw_text": true,
+    "external_llm_api_used": false,
+    "external_vector_db_used": false
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "artifact_type": "job_profile",
+  "created_at": "2026-08-05T07:46:39Z",
+  "extraction": {
+    "evidence": [],
+    "fields": {},
+    "implementation": "mock",
+    "model": null,
+    "raw_model_output": "{\n  \"schema_version\": \"profile-extraction/v2\",\n  \"document_type\": \"jd\",\n  \"job\": {\"title\": null, \"normalized_title\": null, \"department\": null, \"seniority\": null},\n  \"company\": {\"name\": null, \"industry\": null, \"location\": null},\n  \"employment\": {\"employment_type\": \"full_time\", \"salary_min\": null, \"salary_max\": null, \"published_at\": null},\n  \"responsibilities\": [\n    {\n      \"text\": \"负责公司微信公众号、小红书、抖音、视频号等全平台新媒体账号整体运营工作\",\n      \"action\": \"负责\",\n      \"object\": \"公司微信公众号、小红书、抖音、视频号等全平台新媒体账号\",\n      \"evidence_text\": \"负责公司微信公众号、小红书、抖音、视频号等全平台新媒体账号整体运营工作\"\n    },\n    {\n      \"text\": \"结合品牌推广及业务需求制定周、月度精细化运营方案，规划内容更新节奏\",\n      \"action\": \"制定\",\n      \"object\": \"周、月度精细化运营方案，规划内容更新节奏\",\n      \"evidence_text\": \"结合品牌推广及业务需求制定周、月度精细化运营方案，规划内容更新节奏\"\n    },\n    {\n      \"text\": \"保障账号常态化稳定更新，持续提升账号活跃度、精准粉丝体量及用户粘性\",\n      \"action\": \"保障\",\n      \"object\": \"账号常态化稳定更新，持续提升账号活跃度、精准粉丝体量及用户粘性\",\n      \"evidence_text\": \"保障账号常态化稳定更新，持续提升账号活跃度、精准粉丝体量及用户粘性\"\n    },\n    {\n      \"text\": \"独立完成全平台原创内容产出\",\n      \"action\": \"独立完成\",\n      \"object\": \"全平台原创内容产出\",\n      \"evidence_text\": \"独立完成全平台原创内容产出，涵盖品牌文案、产品种草图文、热点推文、短视频脚本等内容创作\"\n    },\n    {\n      \"text\": \"结合行业热点、用户偏好及产品核心卖点打磨优质内容矩阵\",\n      \"action\": \"结合\",\n      \"object\": \"行业热点、用户偏好及产品核心卖点打磨优质内容矩阵\",\n      \"evidence_text\": \"结合行业热点、用户偏好及产品核心卖点打磨优质内容矩阵，全方位提升品牌线上曝光量与市场影响力\"\n    },\n    {\n      \"text\": \"常态化监控各平台运营核心数据\",\n      \"action\": \"常态化监控\",\n      \"object\": \"各平台运营核心数据\",\n      \"evidence_text\": \"常态化监控各平台运营核心数据，包括阅读量、播放量、点赞、收藏、转发、涨粉、私信咨询、转化成交等数据\"\n    },\n    {\n      \"text\": \"定期开展深度数据复盘，精准拆解内容优劣、流量波动原因\",\n      \"action\": \"定期开展\",\n      \"object\": \"深度数据复盘，精准拆解内容优劣、流量波动原因\",\n      \"evidence_text\": \"定期开展深度数据复盘，精准拆解内容优劣、流量波动原因，针对性优化选题、内容风格、发布时段及运营策略\"\n    },\n    {\n      \"text\": \"针对性优化选题、内容风格、发布时段及运营策略\",\n      \"action\": \"针对性优化\",\n      \"object\": \"选题、内容风格、发布时段及运营策略\",\n      \"evidence_text\": \"定期开展深度数据复盘，精准拆解内容优劣、流量波动原因，针对性优化选题、内容风格、发布时段及运营策略\"\n    },\n    {\n      \"text\": \"策划线上主题活动、话题挑战赛、粉丝互动福利、种草推广等运营活动\",\n      \"action\": \"策划\",\n      \"object\": \"线上主题活动、话题挑战赛、粉丝互动福利、种草推广等运营活动\",\n      \"evidence_text\": \"结合品牌节点、营销活动、用户需求策划线上主题活动、话题挑战赛、粉丝互动福利、种草推广等运营活动\"\n    },\n    {\n      \"text\": \"独立完成活动方案撰写、落地执行、渠道联动、氛围维护全流程工作\",\n      \"action\": \"独立完成\",\n      \"object\": \"活动方案撰写、落地执行、渠道联动、氛围维护全流程工作\",\n      \"evidence_text\": \"结合品牌节点、营销活动、用户需求策划线上主题活动、话题挑战赛、粉丝互动福利、种草推广等运营活动，独立完成活动方案撰写、落地执行、渠道联动、氛围维护全流程工作\"\n    },\n    {\n      \"text\": \"持续监测行业动态、竞品账号运营模式、平台最新规则与流量热点趋势\",\n      \"action\": \"持续监测\",\n      \"object\": \"行业动态、竞品账号运营模式、平台最新规则与流量热点趋势\",\n      \"evidence_text\": \"持续监测行业动态、竞品账号运营模式、平台最新规则与流量热点趋势，定期拆解头部爆款内容逻辑\"\n    },\n    {\n      \"text\": \"结合公司业务属性与品牌定位迭代内容体系、运营玩法\",\n      \"action\": \"结合\",\n      \"object\": \"公司业务属性与品牌定位迭代内容体系、运营玩法\",\n      \"evidence_text\": \"持续监测行业动态、竞品账号运营模式、平台最新规则与流量热点趋势，定期拆解头部爆款内容逻辑\"\n    },\n    {\n      \"text\": \"配合市场整体推广节奏，落地品牌宣传、产品推广、口碑塑造等相关工作\",\n      \"action\": \"配合\",\n      \"object\": \"市场整体推广节奏，落地品牌宣传、产品推广、口碑塑造等相关工作\",\n      \"evidence_text\": \"持续监测行业动态、竞品账号运营模式、平台最新规则与流量热点趋势，定期拆解头部爆款内容逻辑\"\n    },\n    {\n      \"text\": \"负责全平台用户评论、私信、留言的日常维护与及时响应\",\n      \"action\": \"负责\",\n      \"object\": \"全平台用户评论、私信、留言的日常维护与及时响应\",\n      \"evidence_text\": \"负责全平台用户评论、私信、留言的日常维护与及时响应，主动搭建良性用户互动体系\"\n    },\n    {\n      \"text\": \"解答用户疑问、收集用户反馈\",\n      \"action\": \"解答\",\n      \"object\": \"用户疑问、收集用户反馈\",\n      \"evidence_text\": \"负责全平台用户评论、私信、留言的日常维护与及时响应，主动搭建良性用户互动体系\"\n    },\n    {\n      \"text\": \"精细化维护私域及公域用户，沉淀精准核心用户群体\",\n      \"action\": \"精细化维护\",\n      \"object\": \"私域及公域用户，沉淀精准核心用户群体\",\n      \"evidence_text\": \"负责全平台用户评论、私信、留言的日常维护与及时响应，主动搭建良性用户互动体系\"\n    },\n    {\n      \"text\": \"优化用户体验，提升品牌口碑与用户复购意愿\",\n      \"action\": \"优化\",\n      \"object\": \"用户体验，提升品牌口碑与用户复购意愿\",\n      \"evidence_text\": \"负责全平台用户评论、私信、留言的日常维护与及时响应，主动搭建良性用户互动体系\"\n    }\n  ],\n  \"requirements\": [\n    {\n      \"text\": \"大专及以上学历，新媒体、广告学、市场营销、新闻学、汉语言文学等相关专业优先\",\n      \"requirement_type\": \"education\",\n      \"importance\": \"preferred\",\n      \"evidence_text\": \"大专及以上学历，新媒体、广告学、市场营销、新闻学、汉语言文学等相关专业优先\"\n    },\n    {\n      \"text\": \"具备1-2年新媒体全职运营或相关优质实习经验\",\n      \"requirement_type\": \"experience\",\n      \"importance\": \"required\",\n      \"evidence_text\": \"具备1-2年新媒体全职运营或相关优质实习经验，熟悉品牌新",
+    "reason": "Ollama structured extraction failed: model output is missing required keys: application_scenarios, capabilities, evaluation_signals",
+    "schema": null,
+    "state": "not_implemented",
+    "validation_error": "model output is missing required keys: application_scenarios, capabilities, evaluation_signals",
+    "warnings": [
+      "Ollama structured extraction failed: model output is missing required keys: application_scenarios, capabilities, evaluation_signals"
+    ]
+  },
+  "normalization": {
+    "implementation": "lightweight_skill_normalizer",
+    "skills": [],
+    "state": "not_implemented",
+    "warnings": [
+      "Ollama structured extraction failed: model output is missing required keys: application_scenarios, capabilities, evaluation_signals"
+    ]
+  },
+  "profile": {
+    "artifacts": {
+      "profile_json": "data\\structured\\profiles\\job\\job_profile_04ff78df3ae54f24bd24085bbf9e17c1.json",
+      "schema_version": "profile-extraction/v2",
+      "storage": "filesystem"
+    },
+    "attributes": {
+      "capabilities": [],
+      "company": {},
+      "education": [],
+      "employment": {},
+      "experience": [],
+      "jd_profile": {},
+      "job": {},
+      "job_title": null,
+      "profile_schema": "profile-extraction/v2",
+      "projects": [],
+      "requirements": [],
+      "responsibilities": [],
+      "skills": []
+    },
+    "created_at": "2026-08-05T07:46:39Z",
+    "evidence": [],
+    "id": "job_profile_04ff78df3ae54f24bd24085bbf9e17c1",
+    "implementation": "mock",
+    "profile_type": "job",
+    "source_document_id": "doc_de936a0eb4cf47c6b0590658b0adfdcc",
+    "state": "not_implemented",
+    "warnings": [
+      "Ollama structured extraction failed: model output is missing required keys: application_scenarios, capabilities, evaluation_signals"
+    ]
+  },
+  "schema_version": "profile-extraction/v2",
+  "source_document": {
+    "char_count": 1222,
+    "content_digest": "b878e209f6c9c485d9ab5ab5e383f0a86173c8d0384146f59972e83ff96118e6",
+    "created_at": "2026-08-05T07:33:08Z",
+    "document_type": "jd",
+    "id": "doc_de936a0eb4cf47c6b0590658b0adfdcc",
+    "metadata": {},
+    "source": {
+      "source_system": "manual"
+    },
+    "storage": "memory"
+  }
+}

@@ -1,0 +1,742 @@
+{
+  "artifact_type": "candidate_profile",
+  "created_at": "2026-08-05T06:39:54Z",
+  "extraction": {
+    "evidence": [
+      {
+        "field": "skills",
+        "id": "ev_001",
+        "text": "负责与 软件/IT服务 相关的研发/测试/数据处理工作，主要使用 Python、PYSIDE、PyQt、SQL、Linux、Excel、需求分析。"
+      },
+      {
+        "field": "skills",
+        "id": "ev_002",
+        "text": "围绕目标岗位 python开发 的核心能力，完成需求拆解、功能实现、测试验证和文档沉淀。"
+      },
+      {
+        "field": "skills",
+        "id": "ev_003",
+        "text": "参与业务流程梳理、脚本/工具开发、数据处理和问题定位，提升团队交付效率。"
+      }
+    ],
+    "fields": {
+      "achievements": [],
+      "candidate": {
+        "current_title": "python开发",
+        "location": null,
+        "name": null,
+        "years_of_experience": 1
+      },
+      "capabilities": [
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "level": "working",
+          "name": "需求拆解"
+        },
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "level": "proficient",
+          "name": "功能实现"
+        },
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "level": "proficient",
+          "name": "测试验证"
+        },
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "level": "working",
+          "name": "问题定位与交付文档整理"
+        },
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "level": "working",
+          "name": "业务流程梳理"
+        },
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "level": "working",
+          "name": "脚本/工具开发"
+        }
+      ],
+      "career_intent": {
+        "target_industry": "软件/IT服务",
+        "target_location": "深圳 龙岗",
+        "target_position": "python开发"
+      },
+      "certificates": [],
+      "document_type": "resume",
+      "education": [],
+      "evidence": [
+        {
+          "field": "skills",
+          "id": "ev_001",
+          "text": "负责与 软件/IT服务 相关的研发/测试/数据处理工作，主要使用 Python、PYSIDE、PyQt、SQL、Linux、Excel、需求分析。"
+        },
+        {
+          "field": "skills",
+          "id": "ev_002",
+          "text": "围绕目标岗位 python开发 的核心能力，完成需求拆解、功能实现、测试验证和文档沉淀。"
+        },
+        {
+          "field": "skills",
+          "id": "ev_003",
+          "text": "参与业务流程梳理、脚本/工具开发、数据处理和问题定位，提升团队交付效率。"
+        }
+      ],
+      "experience": [],
+      "languages": [],
+      "project_experience": [],
+      "projects": [],
+      "requirements": [],
+      "responsibilities": [],
+      "schema_version": "profile-extraction/v2",
+      "skills": [
+        {
+          "category": "programming_language",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "level": "proficient",
+          "lskt_label": "S",
+          "name": "Python",
+          "raw_name": "Python",
+          "years": null
+        },
+        {
+          "category": "framework",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "level": "proficient",
+          "lskt_label": "S",
+          "name": "PYSIDE",
+          "raw_name": "PYSIDE",
+          "years": null
+        },
+        {
+          "category": "framework",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "level": "proficient",
+          "lskt_label": "S",
+          "name": "PyQt",
+          "raw_name": "PyQt",
+          "years": null
+        },
+        {
+          "category": "database",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "level": "proficient",
+          "lskt_label": "S",
+          "name": "SQL",
+          "raw_name": "SQL",
+          "years": null
+        },
+        {
+          "category": "platform",
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "level": "proficient",
+          "lskt_label": "S",
+          "name": "Linux",
+          "raw_name": "Linux",
+          "years": null
+        },
+        {
+          "category": "tool",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "level": "working",
+          "lskt_label": "S",
+          "name": "Excel",
+          "raw_name": "Excel",
+          "years": null
+        },
+        {
+          "category": "domain_knowledge",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "level": "working",
+          "lskt_label": "S",
+          "name": "需求分析",
+          "raw_name": "需求分析",
+          "years": null
+        }
+      ],
+      "work_experience": []
+    },
+    "implementation": "ollama",
+    "model": "qwen2.5:7b",
+    "raw_model_output": "",
+    "reason": "",
+    "schema": "profile-extraction/v2",
+    "state": "available",
+    "validation_error": "",
+    "warnings": [
+      "education[1] ignored: missing evidence_text",
+      "work_experience[1] ignored: missing evidence_text",
+      "project_experience[1] ignored: missing evidence_text",
+      "project_experience[2] ignored: missing evidence_text"
+    ]
+  },
+  "normalization": {
+    "implementation": "lightweight_skill_normalizer",
+    "skills": [
+      {
+        "category": "programming_language",
+        "esco_preferred_label": "Python (computer programming)",
+        "esco_uri": "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d",
+        "esco_version": "v1.2.1",
+        "evidence_ids": [
+          "ev_001"
+        ],
+        "level": "proficient",
+        "linking_confidence": 1.0,
+        "linking_status": "linked",
+        "lskt_label": "S",
+        "name": "Python (computer programming)",
+        "raw_name": "Python",
+        "years": null
+      },
+      {
+        "category": "framework",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_002"
+        ],
+        "level": "proficient",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "PYSIDE",
+        "raw_name": "PYSIDE",
+        "years": null
+      },
+      {
+        "category": "framework",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_002"
+        ],
+        "level": "proficient",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "PyQt",
+        "raw_name": "PyQt",
+        "years": null
+      },
+      {
+        "category": "database",
+        "esco_preferred_label": "SQL",
+        "esco_uri": "http://data.europa.eu/esco/skill/598de5b0-5b58-4ea7-8058-a4bc4d18c742",
+        "esco_version": "v1.2.1",
+        "evidence_ids": [
+          "ev_002"
+        ],
+        "level": "proficient",
+        "linking_confidence": 1.0,
+        "linking_status": "linked",
+        "lskt_label": "S",
+        "name": "SQL",
+        "raw_name": "SQL",
+        "years": null
+      },
+      {
+        "category": "platform",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_003"
+        ],
+        "level": "proficient",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "Linux",
+        "raw_name": "Linux",
+        "years": null
+      },
+      {
+        "category": "tool",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_001"
+        ],
+        "level": "working",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "Excel",
+        "raw_name": "Excel",
+        "years": null
+      },
+      {
+        "category": "domain_knowledge",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_001"
+        ],
+        "level": "working",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "需求分析",
+        "raw_name": "需求分析",
+        "years": null
+      }
+    ],
+    "state": "available",
+    "warnings": []
+  },
+  "profile": {
+    "artifacts": {
+      "profile_json": "data\\structured\\profiles\\candidate\\candidate_profile_a4fc9a8a50f947a3a67891a322229a7f.json",
+      "schema_version": "profile-extraction/v2",
+      "storage": "filesystem"
+    },
+    "attributes": {
+      "candidate": {
+        "current_title": "python开发",
+        "location": null,
+        "name": null,
+        "years_of_experience": 1
+      },
+      "capabilities": [
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "level": "working",
+          "name": "需求拆解"
+        },
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "level": "proficient",
+          "name": "功能实现"
+        },
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "level": "proficient",
+          "name": "测试验证"
+        },
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "level": "working",
+          "name": "问题定位与交付文档整理"
+        },
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "level": "working",
+          "name": "业务流程梳理"
+        },
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "level": "working",
+          "name": "脚本/工具开发"
+        }
+      ],
+      "career_intent": {
+        "target_industry": "软件/IT服务",
+        "target_location": "深圳 龙岗",
+        "target_position": "python开发"
+      },
+      "education": [],
+      "experience": [],
+      "profile_schema": "profile-extraction/v2",
+      "projects": [],
+      "resume_profile": {
+        "achievements": [],
+        "candidate": {
+          "current_title": "python开发",
+          "location": null,
+          "name": null,
+          "years_of_experience": 1
+        },
+        "capabilities": [
+          {
+            "description": null,
+            "evidence_ids": [
+              "ev_002"
+            ],
+            "level": "working",
+            "name": "需求拆解"
+          },
+          {
+            "description": null,
+            "evidence_ids": [
+              "ev_002"
+            ],
+            "level": "proficient",
+            "name": "功能实现"
+          },
+          {
+            "description": null,
+            "evidence_ids": [
+              "ev_002"
+            ],
+            "level": "proficient",
+            "name": "测试验证"
+          },
+          {
+            "description": null,
+            "evidence_ids": [
+              "ev_002"
+            ],
+            "level": "working",
+            "name": "问题定位与交付文档整理"
+          },
+          {
+            "description": null,
+            "evidence_ids": [
+              "ev_003"
+            ],
+            "level": "working",
+            "name": "业务流程梳理"
+          },
+          {
+            "description": null,
+            "evidence_ids": [
+              "ev_003"
+            ],
+            "level": "working",
+            "name": "脚本/工具开发"
+          }
+        ],
+        "career_intent": {
+          "target_industry": "软件/IT服务",
+          "target_location": "深圳 龙岗",
+          "target_position": "python开发"
+        },
+        "certificates": [],
+        "document_type": "resume",
+        "education": [],
+        "languages": [],
+        "project_experience": [],
+        "schema_version": "profile-extraction/v2",
+        "skills": [
+          {
+            "category": "programming_language",
+            "esco_preferred_label": "Python (computer programming)",
+            "esco_uri": "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d",
+            "esco_version": "v1.2.1",
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "level": "proficient",
+            "linking_confidence": 1.0,
+            "linking_status": "linked",
+            "lskt_label": "S",
+            "name": "Python (computer programming)",
+            "raw_name": "Python",
+            "years": null
+          },
+          {
+            "category": "framework",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_002"
+            ],
+            "level": "proficient",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "PYSIDE",
+            "raw_name": "PYSIDE",
+            "years": null
+          },
+          {
+            "category": "framework",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_002"
+            ],
+            "level": "proficient",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "PyQt",
+            "raw_name": "PyQt",
+            "years": null
+          },
+          {
+            "category": "database",
+            "esco_preferred_label": "SQL",
+            "esco_uri": "http://data.europa.eu/esco/skill/598de5b0-5b58-4ea7-8058-a4bc4d18c742",
+            "esco_version": "v1.2.1",
+            "evidence_ids": [
+              "ev_002"
+            ],
+            "level": "proficient",
+            "linking_confidence": 1.0,
+            "linking_status": "linked",
+            "lskt_label": "S",
+            "name": "SQL",
+            "raw_name": "SQL",
+            "years": null
+          },
+          {
+            "category": "platform",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_003"
+            ],
+            "level": "proficient",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "Linux",
+            "raw_name": "Linux",
+            "years": null
+          },
+          {
+            "category": "tool",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "level": "working",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "Excel",
+            "raw_name": "Excel",
+            "years": null
+          },
+          {
+            "category": "domain_knowledge",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "level": "working",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "需求分析",
+            "raw_name": "需求分析",
+            "years": null
+          }
+        ],
+        "work_experience": []
+      },
+      "skills": [
+        {
+          "category": "programming_language",
+          "esco_preferred_label": "Python (computer programming)",
+          "esco_uri": "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d",
+          "esco_version": "v1.2.1",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "level": "proficient",
+          "linking_confidence": 1.0,
+          "linking_status": "linked",
+          "lskt_label": "S",
+          "name": "Python (computer programming)",
+          "raw_name": "Python",
+          "years": null
+        },
+        {
+          "category": "framework",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "level": "proficient",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "PYSIDE",
+          "raw_name": "PYSIDE",
+          "years": null
+        },
+        {
+          "category": "framework",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "level": "proficient",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "PyQt",
+          "raw_name": "PyQt",
+          "years": null
+        },
+        {
+          "category": "database",
+          "esco_preferred_label": "SQL",
+          "esco_uri": "http://data.europa.eu/esco/skill/598de5b0-5b58-4ea7-8058-a4bc4d18c742",
+          "esco_version": "v1.2.1",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "level": "proficient",
+          "linking_confidence": 1.0,
+          "linking_status": "linked",
+          "lskt_label": "S",
+          "name": "SQL",
+          "raw_name": "SQL",
+          "years": null
+        },
+        {
+          "category": "platform",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "level": "proficient",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "Linux",
+          "raw_name": "Linux",
+          "years": null
+        },
+        {
+          "category": "tool",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "level": "working",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "Excel",
+          "raw_name": "Excel",
+          "years": null
+        },
+        {
+          "category": "domain_knowledge",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "level": "working",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "需求分析",
+          "raw_name": "需求分析",
+          "years": null
+        }
+      ],
+      "target_position": "python开发"
+    },
+    "created_at": "2026-08-05T06:39:54Z",
+    "evidence": [
+      {
+        "field": "skills",
+        "id": "ev_001",
+        "text": "负责与 软件/IT服务 相关的研发/测试/数据处理工作，主要使用 Python、PYSIDE、PyQt、SQL、Linux、Excel、需求分析。"
+      },
+      {
+        "field": "skills",
+        "id": "ev_002",
+        "text": "围绕目标岗位 python开发 的核心能力，完成需求拆解、功能实现、测试验证和文档沉淀。"
+      },
+      {
+        "field": "skills",
+        "id": "ev_003",
+        "text": "参与业务流程梳理、脚本/工具开发、数据处理和问题定位，提升团队交付效率。"
+      }
+    ],
+    "id": "candidate_profile_a4fc9a8a50f947a3a67891a322229a7f",
+    "implementation": "llm_profile_builder",
+    "profile_type": "candidate",
+    "source_document_id": "doc_c6695dfacf3e49bc89e60ed74bbd2a11",
+    "state": "available",
+    "warnings": [
+      "education[1] ignored: missing evidence_text",
+      "work_experience[1] ignored: missing evidence_text",
+      "project_experience[1] ignored: missing evidence_text",
+      "project_experience[2] ignored: missing evidence_text"
+    ]
+  },
+  "schema_version": "profile-extraction/v2",
+  "source_document": {
+    "char_count": 1473,
+    "content_digest": "ba5d3b3820bcaf2c1e2942584fd75c7889c3a54a703fac24408401f4c221da9d",
+    "created_at": "2026-08-05T06:38:57Z",
+    "document_type": "resume",
+    "id": "doc_c6695dfacf3e49bc89e60ed74bbd2a11",
+    "metadata": {},
+    "source": {
+      "source_system": "manual"
+    },
+    "storage": "memory"
+  }
+}

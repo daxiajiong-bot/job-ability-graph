@@ -1,0 +1,104 @@
+{
+  "artifact_type": "candidate_profile",
+  "created_at": "2026-08-06T15:33:42Z",
+  "extraction": {
+    "evidence": [],
+    "fields": {},
+    "implementation": "mock",
+    "model": null,
+    "raw_model_output": "",
+    "reason": "Ollama structured extraction failed: local LLM request failed: timed out",
+    "schema": null,
+    "state": "not_implemented",
+    "validation_error": "local LLM request failed: timed out",
+    "warnings": [
+      "Ollama structured extraction failed: local LLM request failed: timed out"
+    ]
+  },
+  "normalization": {
+    "implementation": "lightweight_skill_normalizer",
+    "skills": [],
+    "state": "not_implemented",
+    "warnings": [
+      "Ollama structured extraction failed: local LLM request failed: timed out"
+    ]
+  },
+  "profile": {
+    "artifacts": {
+      "profile_json": "data\\structured\\profiles\\candidate\\candidate_profile_8d66651bdc8d4b0d9efb78d9c163d514.json",
+      "schema_version": "profile-extraction/v2",
+      "storage": "filesystem"
+    },
+    "attributes": {
+      "candidate": {},
+      "capabilities": [],
+      "career_intent": {},
+      "education": [],
+      "experience": [],
+      "profile_schema": "profile-extraction/v2",
+      "projects": [],
+      "resume_profile": {},
+      "skills": [],
+      "target_position": null
+    },
+    "created_at": "2026-08-06T15:33:42Z",
+    "evidence": [],
+    "id": "candidate_profile_8d66651bdc8d4b0d9efb78d9c163d514",
+    "implementation": "mock",
+    "profile_type": "candidate",
+    "source_document_id": "doc_a500be0ee6df4a208594d15beba359b3",
+    "state": "not_implemented",
+    "warnings": [
+      "Ollama structured extraction failed: local LLM request failed: timed out"
+    ]
+  },
+  "schema_version": "profile-extraction/v2",
+  "source_document": {
+    "char_count": 1598,
+    "content_digest": "bdcfc6bcca80163548b8e12fe10025c2414414872d9bc63f37be5ffd0e1dfe3b",
+    "created_at": "2026-08-06T15:28:41Z",
+    "document_type": "resume",
+    "id": "doc_a500be0ee6df4a208594d15beba359b3",
+    "metadata": {
+      "candidate_name": "李四｜年龄：23岁｜学历：研究生",
+      "display_name": "李四｜年龄：23岁｜学历：研究生",
+      "education": "研究生",
+      "skills": [
+        "求职",
+        "AI",
+        "大模型应用工程师",
+        "岗位",
+        "具备人工智能专业",
+        "基础",
+        "熟悉主流大模型平",
+        "台操作与基础",
+        "Prompt",
+        "优化逻辑",
+        "掌握语料整理",
+        "文本调试",
+        "基础知识库搭建技",
+        "可协助团队完成大",
+        "模型输出优化",
+        "应用测试",
+        "数据整理等基础工",
+        "愿意深耕",
+        "AIGC",
+        "与大模型应用领域",
+        "持续提升实操能力",
+        "专业技能",
+        "中度及格匹配",
+        "相关",
+        "具备人工智能科班",
+        "背景及一年大模型",
+        "应用相关实操经验",
+        "熟练掌握",
+        "优化",
+        "语料处理"
+      ]
+    },
+    "source": {
+      "source_system": "manual"
+    },
+    "storage": "memory"
+  }
+}

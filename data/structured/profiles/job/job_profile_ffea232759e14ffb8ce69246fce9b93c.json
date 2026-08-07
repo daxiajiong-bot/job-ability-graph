@@ -1,0 +1,80 @@
+{
+  "artifact_type": "job_profile",
+  "created_at": "2026-08-06T16:01:19Z",
+  "extraction": {
+    "evidence": [],
+    "fields": {},
+    "implementation": "mock",
+    "model": null,
+    "raw_model_output": "",
+    "reason": "Ollama structured extraction failed: local LLM request failed: timed out",
+    "schema": null,
+    "state": "not_implemented",
+    "validation_error": "local LLM request failed: timed out",
+    "warnings": [
+      "Ollama structured extraction failed: local LLM request failed: timed out"
+    ]
+  },
+  "normalization": {
+    "implementation": "lightweight_skill_normalizer",
+    "skills": [],
+    "state": "not_implemented",
+    "warnings": [
+      "Ollama structured extraction failed: local LLM request failed: timed out"
+    ]
+  },
+  "profile": {
+    "artifacts": {
+      "profile_json": "data\\structured\\profiles\\job\\job_profile_ffea232759e14ffb8ce69246fce9b93c.json",
+      "schema_version": "profile-extraction/v2",
+      "storage": "filesystem"
+    },
+    "attributes": {
+      "capabilities": [],
+      "company": {},
+      "education": [],
+      "employment": {},
+      "experience": [],
+      "jd_profile": {},
+      "job": {},
+      "job_title": null,
+      "profile_schema": "profile-extraction/v2",
+      "projects": [],
+      "requirements": [],
+      "responsibilities": [],
+      "skills": []
+    },
+    "created_at": "2026-08-06T16:01:19Z",
+    "evidence": [],
+    "id": "job_profile_ffea232759e14ffb8ce69246fce9b93c",
+    "implementation": "mock",
+    "profile_type": "job",
+    "source_document_id": "doc_a888ebf16362423fabf897725a3a5f79",
+    "state": "not_implemented",
+    "warnings": [
+      "Ollama structured extraction failed: local LLM request failed: timed out"
+    ]
+  },
+  "schema_version": "profile-extraction/v2",
+  "source_document": {
+    "char_count": 851,
+    "content_digest": "40f3eb931155eb1b636444d19d2f2480684c51852229e0d58fd56c9975b505af",
+    "created_at": "2026-08-06T15:56:18Z",
+    "document_type": "jd",
+    "id": "doc_a888ebf16362423fabf897725a3a5f79",
+    "metadata": {
+      "company_name": "智能问答、文本生成、内容解析等AI应用场景。",
+      "job_title": "AI大模型应用工程师",
+      "location": "一线城市",
+      "salary_range": "9k-16k｜双休、五险一金、项目奖金、技术晋升",
+      "skills": [
+        "任职要求"
+      ],
+      "title": "AI大模型应用工程师"
+    },
+    "source": {
+      "source_system": "manual"
+    },
+    "storage": "memory"
+  }
+}

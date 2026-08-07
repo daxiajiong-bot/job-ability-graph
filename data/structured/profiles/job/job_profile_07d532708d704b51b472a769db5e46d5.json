@@ -1,0 +1,259 @@
+{
+  "artifact_type": "job_profile",
+  "created_at": "2026-08-06T18:01:33Z",
+  "extraction": {
+    "evidence": [],
+    "fields": {},
+    "implementation": "mock",
+    "model": null,
+    "raw_model_output": "",
+    "reason": "Ollama structured extraction failed: local LLM request failed: timed out",
+    "schema": null,
+    "state": "not_implemented",
+    "validation_error": "local LLM request failed: timed out",
+    "warnings": [
+      "Ollama structured extraction failed: local LLM request failed: timed out"
+    ]
+  },
+  "normalization": {
+    "implementation": "lightweight_skill_normalizer",
+    "skills": [],
+    "state": "not_implemented",
+    "warnings": [
+      "Ollama structured extraction failed: local LLM request failed: timed out"
+    ]
+  },
+  "profile": {
+    "artifacts": {
+      "profile_json": "data\\structured\\profiles\\job\\job_profile_07d532708d704b51b472a769db5e46d5.json",
+      "schema_version": "profile-extraction/v2",
+      "storage": "filesystem"
+    },
+    "attributes": {
+      "capabilities": [],
+      "company": {
+        "industry": null,
+        "location": null,
+        "name": "测试科技"
+      },
+      "education": [],
+      "employment": {
+        "employment_type": "full_time",
+        "published_at": null,
+        "salary_max": null,
+        "salary_min": null,
+        "salary_range": "9k-16k「双休、五险一金、项目奖金、技术晋升」"
+      },
+      "experience": [],
+      "jd_profile": {
+        "application_scenarios": [],
+        "capabilities": [],
+        "company": {
+          "industry": null,
+          "location": null,
+          "name": "测试科技"
+        },
+        "document_type": "jd",
+        "employment": {
+          "employment_type": "full_time",
+          "published_at": null,
+          "salary_max": null,
+          "salary_min": null,
+          "salary_range": "9k-16k「双休、五险一金、项目奖金、技术晋升」"
+        },
+        "evaluation_signals": [],
+        "job": {
+          "department": null,
+          "normalized_title": "Python开发工程师",
+          "seniority": null,
+          "title": "Python开发工程师"
+        },
+        "requirements": [
+          {
+            "evidence_ids": [
+              "ev_004"
+            ],
+            "importance": "unknown",
+            "requirement_type": "education",
+            "text": "1. 本科及以上"
+          },
+          {
+            "evidence_ids": [
+              "ev_005"
+            ],
+            "importance": "unknown",
+            "requirement_type": "experience",
+            "text": "2. 3年经验"
+          },
+          {
+            "evidence_ids": [
+              "ev_006"
+            ],
+            "importance": "unknown",
+            "requirement_type": "experience",
+            "text": "3. 五险一金、双休、年终奖"
+          }
+        ],
+        "responsibilities": [
+          {
+            "action": "",
+            "evidence_ids": [
+              "ev_002"
+            ],
+            "object": "",
+            "text": "1. 负责后端开发"
+          },
+          {
+            "action": "",
+            "evidence_ids": [
+              "ev_003"
+            ],
+            "object": "",
+            "text": "2. 9k-16k「双休、五险一金」"
+          }
+        ],
+        "schema_version": "profile-extraction/v2",
+        "skills": [
+          {
+            "category": "programming_language",
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "importance": "unknown",
+            "lskt_label": "S",
+            "name": "Python",
+            "raw_name": "Python"
+          }
+        ]
+      },
+      "job": {
+        "department": null,
+        "normalized_title": "Python开发工程师",
+        "seniority": null,
+        "title": "Python开发工程师"
+      },
+      "job_title": "Python开发工程师",
+      "profile_schema": "profile-extraction/v2",
+      "projects": [],
+      "requirements": [
+        {
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "importance": "unknown",
+          "requirement_type": "education",
+          "text": "1. 本科及以上"
+        },
+        {
+          "evidence_ids": [
+            "ev_005"
+          ],
+          "importance": "unknown",
+          "requirement_type": "experience",
+          "text": "2. 3年经验"
+        },
+        {
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "importance": "unknown",
+          "requirement_type": "experience",
+          "text": "3. 五险一金、双休、年终奖"
+        }
+      ],
+      "responsibilities": [
+        {
+          "action": "",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "object": "",
+          "text": "1. 负责后端开发"
+        },
+        {
+          "action": "",
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "object": "",
+          "text": "2. 9k-16k「双休、五险一金」"
+        }
+      ],
+      "skills": [
+        {
+          "category": "programming_language",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "importance": "unknown",
+          "lskt_label": "S",
+          "name": "Python",
+          "raw_name": "Python"
+        }
+      ]
+    },
+    "created_at": "2026-08-06T18:01:33Z",
+    "evidence": [
+      {
+        "field": "skills",
+        "id": "ev_001",
+        "text": "岗位名称：Python开发工程师 公司名称：测试科技 薪资：9k-16k「双休、五"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_002",
+        "text": "1. 负责后端开发"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_003",
+        "text": "2. 9k-16k「双休、五险一金」"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_004",
+        "text": "1. 本科及以上"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_005",
+        "text": "2. 3年经验"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_006",
+        "text": "3. 五险一金、双休、年终奖"
+      }
+    ],
+    "id": "job_profile_07d532708d704b51b472a769db5e46d5",
+    "implementation": "heuristic_profile_builder",
+    "profile_type": "job",
+    "source_document_id": "doc_9bb9492e4008417982308e853e55989b",
+    "state": "available",
+    "warnings": [
+      "Ollama structured extraction failed: local LLM request failed: timed out",
+      "Used heuristic profile extraction because LLM extraction was unavailable."
+    ]
+  },
+  "schema_version": "profile-extraction/v2",
+  "source_document": {
+    "char_count": 130,
+    "content_digest": "0602aaf03e0a0c07f8f0ae5dc93ef7dc157bd3898240f6154fc34e652669d9d1",
+    "created_at": "2026-08-06T17:56:25Z",
+    "document_type": "jd",
+    "id": "doc_9bb9492e4008417982308e853e55989b",
+    "metadata": {
+      "company_name": "名称：测试科技",
+      "job_title": "Python开发工程师",
+      "salary_range": "9k-16k「双休、五险一金、项目奖金、技术晋升」",
+      "skills": [
+        "任职要求"
+      ],
+      "title": "Python开发工程师"
+    },
+    "source": {
+      "source_system": "test"
+    },
+    "storage": "memory"
+  }
+}

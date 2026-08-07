@@ -1,0 +1,161 @@
+{
+  "schema_version": "jd_kg_v1",
+  "source_profile_count": 1000,
+  "graph_node_count": 8596,
+  "graph_edge_count": 24644,
+  "node_counts": {
+    "Education": 6,
+    "Evidence": 7404,
+    "ExperienceRequirement": 7,
+    "Job": 1000,
+    "Location": 7,
+    "Skill": 172
+  },
+  "edge_counts": {
+    "REQUIRES_EXPERIENCE": 795,
+    "PREFERS_SKILL": 1528,
+    "REQUIRES_SKILL": 5687,
+    "SUPPORTED_BY": 12322,
+    "MENTIONS_SKILL": 3315,
+    "REQUIRES_EDUCATION": 990,
+    "LOCATED_IN": 7
+  },
+  "skill_level_counts": {
+    "mentioned": 3315,
+    "required": 5687,
+    "preferred": 1528
+  },
+  "coverage": {
+    "jobs_with_skill_edges": 981,
+    "jobs_with_skill_edges_ratio": 0.981,
+    "jobs_with_education": 990,
+    "jobs_with_education_ratio": 0.99,
+    "jobs_with_experience": 795,
+    "jobs_with_experience_ratio": 0.795,
+    "jobs_with_location": 7,
+    "jobs_with_location_ratio": 0.007
+  },
+  "top_skills": [
+    {
+      "name": "大模型",
+      "count": 830
+    },
+    {
+      "name": "Python",
+      "count": 616
+    },
+    {
+      "name": "深度学习",
+      "count": 582
+    },
+    {
+      "name": "人工智能",
+      "count": 507
+    },
+    {
+      "name": "Agent",
+      "count": 451
+    },
+    {
+      "name": "C++",
+      "count": 406
+    },
+    {
+      "name": "机器学习",
+      "count": 367
+    },
+    {
+      "name": "RAG",
+      "count": 314
+    },
+    {
+      "name": "PyTorch",
+      "count": 259
+    },
+    {
+      "name": "算法开发",
+      "count": 234
+    },
+    {
+      "name": "多模态",
+      "count": 226
+    },
+    {
+      "name": "图像处理",
+      "count": 220
+    },
+    {
+      "name": "TensorFlow",
+      "count": 218
+    },
+    {
+      "name": "微调",
+      "count": 213
+    },
+    {
+      "name": "模型训练",
+      "count": 196
+    },
+    {
+      "name": "架构设计",
+      "count": 191
+    },
+    {
+      "name": "Java",
+      "count": 176
+    },
+    {
+      "name": "计算机视觉",
+      "count": 175
+    },
+    {
+      "name": "机器视觉",
+      "count": 162
+    },
+    {
+      "name": "目标检测",
+      "count": 161
+    },
+    {
+      "name": "Linux",
+      "count": 146
+    },
+    {
+      "name": "AI Agent",
+      "count": 145
+    },
+    {
+      "name": "数据分析",
+      "count": 144
+    },
+    {
+      "name": "性能优化",
+      "count": 141
+    },
+    {
+      "name": "算法设计",
+      "count": 135
+    },
+    {
+      "name": "视觉算法",
+      "count": 126
+    },
+    {
+      "name": "OpenCV",
+      "count": 124
+    },
+    {
+      "name": "Transformer",
+      "count": 120
+    },
+    {
+      "name": "SQL",
+      "count": 116
+    },
+    {
+      "name": "大语言模型",
+      "count": 110
+    }
+  ],
+  "validation_status": "valid"
+}

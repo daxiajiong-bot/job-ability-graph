@@ -1,0 +1,293 @@
+{
+  "artifact_type": "candidate_profile",
+  "created_at": "2026-08-06T18:02:23Z",
+  "extraction": {
+    "evidence": [],
+    "fields": {},
+    "implementation": "mock",
+    "model": null,
+    "raw_model_output": "",
+    "reason": "Ollama structured extraction failed: local LLM request failed: timed out",
+    "schema": null,
+    "state": "not_implemented",
+    "validation_error": "local LLM request failed: timed out",
+    "warnings": [
+      "Ollama structured extraction failed: local LLM request failed: timed out"
+    ]
+  },
+  "normalization": {
+    "implementation": "lightweight_skill_normalizer",
+    "skills": [],
+    "state": "not_implemented",
+    "warnings": [
+      "Ollama structured extraction failed: local LLM request failed: timed out"
+    ]
+  },
+  "profile": {
+    "artifacts": {
+      "profile_json": "data\\structured\\profiles\\candidate\\candidate_profile_5e81ed52156c48cbb9f6a61a0b0121cb.json",
+      "schema_version": "profile-extraction/v2",
+      "storage": "filesystem"
+    },
+    "attributes": {
+      "candidate": {
+        "location": "一线城市"
+      },
+      "capabilities": [],
+      "career_intent": {},
+      "education": [],
+      "experience": [],
+      "profile_schema": "profile-extraction/v2",
+      "projects": [],
+      "resume_profile": {
+        "achievements": [],
+        "candidate": {
+          "location": "一线城市"
+        },
+        "capabilities": [],
+        "career_intent": {},
+        "certificates": [],
+        "document_type": "resume",
+        "education": [],
+        "languages": [],
+        "project_experience": [],
+        "schema_version": "profile-extraction/v2",
+        "skills": [
+          {
+            "category": "other",
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "level": "unknown",
+            "lskt_label": "S",
+            "name": "Prompt",
+            "raw_name": "Prompt",
+            "years": null
+          },
+          {
+            "category": "ai_model",
+            "evidence_ids": [
+              "ev_002"
+            ],
+            "level": "unknown",
+            "lskt_label": "S",
+            "name": "AIGC",
+            "raw_name": "AIGC",
+            "years": null
+          },
+          {
+            "category": "ai_model",
+            "evidence_ids": [
+              "ev_003"
+            ],
+            "level": "unknown",
+            "lskt_label": "S",
+            "name": "大模型",
+            "raw_name": "大模型",
+            "years": null
+          },
+          {
+            "category": "database",
+            "evidence_ids": [
+              "ev_004"
+            ],
+            "level": "unknown",
+            "lskt_label": "S",
+            "name": "向量数据库",
+            "raw_name": "向量数据库",
+            "years": null
+          },
+          {
+            "category": "database",
+            "evidence_ids": [
+              "ev_005"
+            ],
+            "level": "unknown",
+            "lskt_label": "S",
+            "name": "知识库",
+            "raw_name": "知识库",
+            "years": null
+          },
+          {
+            "category": "other",
+            "evidence_ids": [
+              "ev_006"
+            ],
+            "level": "unknown",
+            "lskt_label": "S",
+            "name": "数据清洗",
+            "raw_name": "数据清洗",
+            "years": null
+          },
+          {
+            "category": "other",
+            "evidence_ids": [
+              "ev_007"
+            ],
+            "level": "unknown",
+            "lskt_label": "S",
+            "name": "微调",
+            "raw_name": "微调",
+            "years": null
+          }
+        ],
+        "work_experience": []
+      },
+      "skills": [
+        {
+          "category": "other",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "level": "unknown",
+          "lskt_label": "S",
+          "name": "Prompt",
+          "raw_name": "Prompt",
+          "years": null
+        },
+        {
+          "category": "ai_model",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "level": "unknown",
+          "lskt_label": "S",
+          "name": "AIGC",
+          "raw_name": "AIGC",
+          "years": null
+        },
+        {
+          "category": "ai_model",
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "level": "unknown",
+          "lskt_label": "S",
+          "name": "大模型",
+          "raw_name": "大模型",
+          "years": null
+        },
+        {
+          "category": "database",
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "level": "unknown",
+          "lskt_label": "S",
+          "name": "向量数据库",
+          "raw_name": "向量数据库",
+          "years": null
+        },
+        {
+          "category": "database",
+          "evidence_ids": [
+            "ev_005"
+          ],
+          "level": "unknown",
+          "lskt_label": "S",
+          "name": "知识库",
+          "raw_name": "知识库",
+          "years": null
+        },
+        {
+          "category": "other",
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "level": "unknown",
+          "lskt_label": "S",
+          "name": "数据清洗",
+          "raw_name": "数据清洗",
+          "years": null
+        },
+        {
+          "category": "other",
+          "evidence_ids": [
+            "ev_007"
+          ],
+          "level": "unknown",
+          "lskt_label": "S",
+          "name": "微调",
+          "raw_name": "微调",
+          "years": null
+        }
+      ],
+      "target_position": null
+    },
+    "created_at": "2026-08-06T18:02:23Z",
+    "evidence": [
+      {
+        "field": "skills",
+        "id": "ev_001",
+        "text": "用大模型（GPT、文心一言、通义千问等）的落地应用开发，聚焦Prompt工 程优化、上下文调试、指令迭代，针对不同业务场景设计高质量"
+      },
+      {
+        "field": "skills",
+        "id": "ev_002",
+        "text": "发现大模型输出问题， 针对性迭代优化方案。 －学习能力强，对AIGC、大模型应用有浓厚兴趣，熟悉主流大模型平台工具，具备独 立完"
+      },
+      {
+        "field": "skills",
+        "id": "ev_003",
+        "text": "AI大模型应用工程师招聘JD(强AI核心岗位) 岗位名称：AI大模型应"
+      },
+      {
+        "field": "skills",
+        "id": "ev_004",
+        "text": "。 －参与AI知识库搭建与优化，完成行业语料整理、知识切片、向量数据库适配、知识 库挂载调试，落地企业智能问答、文本生成、内容解析"
+      },
+      {
+        "field": "skills",
+        "id": "ev_005",
+        "text": "提示词，提升大模型输出 精准度、逻辑性与实用性。 －参与AI知识库搭建与优化，完成行业语料整理、知识切片、向量数据库适配、知识"
+      },
+      {
+        "field": "skills",
+        "id": "ev_006",
+        "text": "析等AI应用场景。 －协助进行大模型微调数据准备、样本筛选、数据清洗工作，整理微调数据集，配合 算法团队完成小参数微调、模型效果"
+      },
+      {
+        "field": "skills",
+        "id": "ev_007",
+        "text": "能问答、文本生成、内容解析等AI应用场景。 －协助进行大模型微调数据准备、样本筛选、数据清洗工作，整理微调数据集，配合 算法"
+      }
+    ],
+    "id": "candidate_profile_5e81ed52156c48cbb9f6a61a0b0121cb",
+    "implementation": "heuristic_profile_builder",
+    "profile_type": "candidate",
+    "source_document_id": "doc_941fe5e922f441d394b5e90a3317fa50",
+    "state": "available",
+    "warnings": [
+      "Ollama structured extraction failed: local LLM request failed: timed out",
+      "Used heuristic profile extraction because LLM extraction was unavailable."
+    ]
+  },
+  "schema_version": "profile-extraction/v2",
+  "source_document": {
+    "char_count": 925,
+    "content_digest": "548b4f8f3d900da327ce92cd679f156ae9de5a7aab19f3096f0c3006a1140f73",
+    "created_at": "2026-08-06T17:38:27Z",
+    "document_type": "resume",
+    "id": "doc_941fe5e922f441d394b5e90a3317fa50",
+    "metadata": {
+      "ocr": {
+        "average_confidence": 0.9913,
+        "implementation": "paddleocr",
+        "lang": "ch",
+        "line_count": 33,
+        "page_count": 2,
+        "source_content_type": "application/pdf",
+        "source_file_name": "JD.pdf",
+        "state": "available",
+        "warnings": []
+      },
+      "skills": [
+        "任职要求"
+      ]
+    },
+    "source": {
+      "source_system": "ocr_upload"
+    },
+    "storage": "memory"
+  }
+}

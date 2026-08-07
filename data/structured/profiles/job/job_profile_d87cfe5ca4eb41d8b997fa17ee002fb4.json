@@ -1,0 +1,1089 @@
+{
+  "artifact_type": "job_profile",
+  "created_at": "2026-08-06T12:08:13Z",
+  "extraction": {
+    "evidence": [
+      {
+        "field": "responsibilities",
+        "id": "ev_001",
+        "text": "- 负责公司全岗位招聘工作，梳理招聘需求，发布招聘信息、筛选简历、邀约面试、组织复试、跟进入职，完成各部门招聘指标，保障人员及时补位。"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_002",
+        "text": "- 负责员工入离职、转正、调岗、劳动合同签订、社保公积金增减员、考勤核算、薪资核对等人事基础手续办理，建立完善员工人事档案。"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_003",
+        "text": "- 负责公司员工考勤管理、排班统计、休假审批、异常考勤核对，定期输出考勤报表，规范公司考勤管理制度落地执行。"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_004",
+        "text": "- 统筹公司员工培训工作，新员工入职培训组织、在岗技能培训落地、培训资料整理归档，搭建基础员工培训体系，提升员工岗位适配度。"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_005",
+        "text": "- 负责员工关系维护，日常员工沟通、情绪疏导、团队氛围建设，组织员工团建、节日活动，处理员工疑问及基础劳动纠纷，提升员工归属感与留存率。"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_006",
+        "text": "- 协助完善公司人事规章制度、员工手册，落地绩效考核、奖惩制度，做好人力数据统计分析，定期输出人力报表，为部门管理提供数据支撑。"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_007",
+        "text": "- 大专及以上学历，人力资源管理、行政管理、工商管理等相关专业优先，1年及以上人事专员相关工作经验。"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_008",
+        "text": "- 熟悉招聘全流程、社保公积金办理、劳动合同管理、考勤薪资核算、员工入离职流程等人事基础工作。"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_009",
+        "text": "- 熟练使用招聘平台、Office办公软件，擅长简历筛选、人员沟通、报表制作，具备基础人力数据统计分析能力。"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_010",
+        "text": "- 具备良好的沟通表达、协调统筹、共情能力，待人耐心细致，原则性强，擅长员工关系维护与团队氛围搭建。"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_011",
+        "text": "- 熟悉基础劳动法律法规，了解企业人事管理制度，具备独立处理人事日常事务的能力，执行力、责任心强。"
+      }
+    ],
+    "fields": {
+      "application_scenarios": [
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "name": "招聘管理"
+        },
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "name": "人事基础管理"
+        },
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "name": "考勤管理"
+        },
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "name": "培训管理"
+        },
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_005"
+          ],
+          "name": "员工关系管理"
+        },
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "name": "规章制度管理"
+        }
+      ],
+      "candidate": {
+        "name": null,
+        "target_position": null
+      },
+      "capabilities": [
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_010"
+          ],
+          "importance": "required",
+          "name": "沟通表达能力"
+        },
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_010"
+          ],
+          "importance": "required",
+          "name": "协调统筹能力"
+        },
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_009"
+          ],
+          "importance": "required",
+          "name": "数据统计分析能力"
+        }
+      ],
+      "company": {
+        "industry": null,
+        "location": "一线城市",
+        "name": null
+      },
+      "document_type": "jd",
+      "education": [],
+      "employment": {
+        "employment_type": "full_time",
+        "published_at": null,
+        "salary_max": 10000,
+        "salary_min": 6000
+      },
+      "evaluation_signals": [],
+      "evidence": [
+        {
+          "field": "responsibilities",
+          "id": "ev_001",
+          "text": "- 负责公司全岗位招聘工作，梳理招聘需求，发布招聘信息、筛选简历、邀约面试、组织复试、跟进入职，完成各部门招聘指标，保障人员及时补位。"
+        },
+        {
+          "field": "responsibilities",
+          "id": "ev_002",
+          "text": "- 负责员工入离职、转正、调岗、劳动合同签订、社保公积金增减员、考勤核算、薪资核对等人事基础手续办理，建立完善员工人事档案。"
+        },
+        {
+          "field": "responsibilities",
+          "id": "ev_003",
+          "text": "- 负责公司员工考勤管理、排班统计、休假审批、异常考勤核对，定期输出考勤报表，规范公司考勤管理制度落地执行。"
+        },
+        {
+          "field": "responsibilities",
+          "id": "ev_004",
+          "text": "- 统筹公司员工培训工作，新员工入职培训组织、在岗技能培训落地、培训资料整理归档，搭建基础员工培训体系，提升员工岗位适配度。"
+        },
+        {
+          "field": "responsibilities",
+          "id": "ev_005",
+          "text": "- 负责员工关系维护，日常员工沟通、情绪疏导、团队氛围建设，组织员工团建、节日活动，处理员工疑问及基础劳动纠纷，提升员工归属感与留存率。"
+        },
+        {
+          "field": "responsibilities",
+          "id": "ev_006",
+          "text": "- 协助完善公司人事规章制度、员工手册，落地绩效考核、奖惩制度，做好人力数据统计分析，定期输出人力报表，为部门管理提供数据支撑。"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_007",
+          "text": "- 大专及以上学历，人力资源管理、行政管理、工商管理等相关专业优先，1年及以上人事专员相关工作经验。"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_008",
+          "text": "- 熟悉招聘全流程、社保公积金办理、劳动合同管理、考勤薪资核算、员工入离职流程等人事基础工作。"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_009",
+          "text": "- 熟练使用招聘平台、Office办公软件，擅长简历筛选、人员沟通、报表制作，具备基础人力数据统计分析能力。"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_010",
+          "text": "- 具备良好的沟通表达、协调统筹、共情能力，待人耐心细致，原则性强，擅长员工关系维护与团队氛围搭建。"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_011",
+          "text": "- 熟悉基础劳动法律法规，了解企业人事管理制度，具备独立处理人事日常事务的能力，执行力、责任心强。"
+        }
+      ],
+      "experience": [],
+      "job": {
+        "department": "行政人事部",
+        "normalized_title": null,
+        "seniority": null,
+        "title": "人事专员"
+      },
+      "projects": [],
+      "requirements": [
+        {
+          "evidence_ids": [
+            "ev_007"
+          ],
+          "importance": "required",
+          "requirement_type": "education|experience",
+          "text": "- 大专及以上学历，人力资源管理、行政管理、工商管理等相关专业优先，1年及以上人事专员相关工作经验。"
+        },
+        {
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "importance": "required",
+          "requirement_type": "experience|skill",
+          "text": "- 熟悉招聘全流程、社保公积金办理、劳动合同管理、考勤薪资核算、员工入离职流程等人事基础工作。"
+        },
+        {
+          "evidence_ids": [
+            "ev_009"
+          ],
+          "importance": "required",
+          "requirement_type": "skill|language",
+          "text": "- 熟练使用招聘平台、Office办公软件，擅长简历筛选、人员沟通、报表制作，具备基础人力数据统计分析能力。"
+        },
+        {
+          "evidence_ids": [
+            "ev_010"
+          ],
+          "importance": "required",
+          "requirement_type": "soft_skill",
+          "text": "- 具备良好的沟通表达、协调统筹、共情能力，待人耐心细致，原则性强，擅长员工关系维护与团队氛围搭建。"
+        },
+        {
+          "evidence_ids": [
+            "ev_011"
+          ],
+          "importance": "required",
+          "requirement_type": "knowledge|soft_skill",
+          "text": "- 熟悉基础劳动法律法规，了解企业人事管理制度，具备独立处理人事日常事务的能力，执行力、责任心强。"
+        }
+      ],
+      "responsibilities": [
+        {
+          "action": "负责",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "object": "公司全岗位招聘工作",
+          "text": "- 负责公司全岗位招聘工作，梳理招聘需求，发布招聘信息、筛选简历、邀约面试、组织复试、跟进入职，完成各部门招聘指标，保障人员及时补位。"
+        },
+        {
+          "action": "负责",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "object": "员工入离职等人事基础手续办理",
+          "text": "- 负责员工入离职、转正、调岗、劳动合同签订、社保公积金增减员、考勤核算、薪资核对等人事基础手续办理，建立完善员工人事档案。"
+        },
+        {
+          "action": "负责",
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "object": "公司员工考勤管理等",
+          "text": "- 负责公司员工考勤管理、排班统计、休假审批、异常考勤核对，定期输出考勤报表，规范公司考勤管理制度落地执行。"
+        },
+        {
+          "action": "统筹",
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "object": "公司员工培训工作等",
+          "text": "- 统筹公司员工培训工作，新员工入职培训组织、在岗技能培训落地、培训资料整理归档，搭建基础员工培训体系，提升员工岗位适配度。"
+        },
+        {
+          "action": "负责",
+          "evidence_ids": [
+            "ev_005"
+          ],
+          "object": "员工关系维护等",
+          "text": "- 负责员工关系维护，日常员工沟通、情绪疏导、团队氛围建设，组织员工团建、节日活动，处理员工疑问及基础劳动纠纷，提升员工归属感与留存率。"
+        },
+        {
+          "action": "协助",
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "object": "完善公司人事规章制度等",
+          "text": "- 协助完善公司人事规章制度、员工手册，落地绩效考核、奖惩制度，做好人力数据统计分析，定期输出人力报表，为部门管理提供数据支撑。"
+        }
+      ],
+      "schema_version": "profile-extraction/v2",
+      "skills": [
+        {
+          "category": "other",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "招聘管理",
+          "raw_name": null
+        },
+        {
+          "category": "other",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "人事基础管理",
+          "raw_name": null
+        },
+        {
+          "category": "other",
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "考勤管理",
+          "raw_name": null
+        },
+        {
+          "category": "other",
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "培训管理",
+          "raw_name": null
+        },
+        {
+          "category": "other",
+          "evidence_ids": [
+            "ev_005"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "员工关系管理",
+          "raw_name": null
+        },
+        {
+          "category": "other",
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "规章制度管理",
+          "raw_name": null
+        }
+      ]
+    },
+    "implementation": "ollama",
+    "model": "qwen2.5:7b",
+    "raw_model_output": "",
+    "reason": "",
+    "schema": "profile-extraction/v2",
+    "state": "available",
+    "validation_error": "",
+    "warnings": []
+  },
+  "normalization": {
+    "implementation": "lightweight_skill_normalizer",
+    "skills": [
+      {
+        "category": "other",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_001"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "招聘管理",
+        "raw_name": "招聘管理"
+      },
+      {
+        "category": "other",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_002"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "人事基础管理",
+        "raw_name": "人事基础管理"
+      },
+      {
+        "category": "other",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_003"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "考勤管理",
+        "raw_name": "考勤管理"
+      },
+      {
+        "category": "other",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_004"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "培训管理",
+        "raw_name": "培训管理"
+      },
+      {
+        "category": "other",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_005"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "员工关系管理",
+        "raw_name": "员工关系管理"
+      },
+      {
+        "category": "other",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_006"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "规章制度管理",
+        "raw_name": "规章制度管理"
+      }
+    ],
+    "state": "available",
+    "warnings": []
+  },
+  "profile": {
+    "artifacts": {
+      "profile_json": "data\\structured\\profiles\\job\\job_profile_d87cfe5ca4eb41d8b997fa17ee002fb4.json",
+      "schema_version": "profile-extraction/v2",
+      "storage": "filesystem"
+    },
+    "attributes": {
+      "capabilities": [
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_010"
+          ],
+          "importance": "required",
+          "name": "沟通表达能力"
+        },
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_010"
+          ],
+          "importance": "required",
+          "name": "协调统筹能力"
+        },
+        {
+          "description": null,
+          "evidence_ids": [
+            "ev_009"
+          ],
+          "importance": "required",
+          "name": "数据统计分析能力"
+        }
+      ],
+      "company": {
+        "industry": null,
+        "location": "一线城市",
+        "name": null
+      },
+      "education": [],
+      "employment": {
+        "employment_type": "full_time",
+        "published_at": null,
+        "salary_max": 10000,
+        "salary_min": 6000
+      },
+      "experience": [],
+      "jd_profile": {
+        "application_scenarios": [
+          {
+            "description": null,
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "name": "招聘管理"
+          },
+          {
+            "description": null,
+            "evidence_ids": [
+              "ev_002"
+            ],
+            "name": "人事基础管理"
+          },
+          {
+            "description": null,
+            "evidence_ids": [
+              "ev_003"
+            ],
+            "name": "考勤管理"
+          },
+          {
+            "description": null,
+            "evidence_ids": [
+              "ev_004"
+            ],
+            "name": "培训管理"
+          },
+          {
+            "description": null,
+            "evidence_ids": [
+              "ev_005"
+            ],
+            "name": "员工关系管理"
+          },
+          {
+            "description": null,
+            "evidence_ids": [
+              "ev_006"
+            ],
+            "name": "规章制度管理"
+          }
+        ],
+        "capabilities": [
+          {
+            "description": null,
+            "evidence_ids": [
+              "ev_010"
+            ],
+            "importance": "required",
+            "name": "沟通表达能力"
+          },
+          {
+            "description": null,
+            "evidence_ids": [
+              "ev_010"
+            ],
+            "importance": "required",
+            "name": "协调统筹能力"
+          },
+          {
+            "description": null,
+            "evidence_ids": [
+              "ev_009"
+            ],
+            "importance": "required",
+            "name": "数据统计分析能力"
+          }
+        ],
+        "company": {
+          "industry": null,
+          "location": "一线城市",
+          "name": null
+        },
+        "document_type": "jd",
+        "employment": {
+          "employment_type": "full_time",
+          "published_at": null,
+          "salary_max": 10000,
+          "salary_min": 6000
+        },
+        "evaluation_signals": [],
+        "job": {
+          "department": "行政人事部",
+          "normalized_title": null,
+          "seniority": null,
+          "title": "人事专员"
+        },
+        "requirements": [
+          {
+            "evidence_ids": [
+              "ev_007"
+            ],
+            "importance": "required",
+            "requirement_type": "education|experience",
+            "text": "- 大专及以上学历，人力资源管理、行政管理、工商管理等相关专业优先，1年及以上人事专员相关工作经验。"
+          },
+          {
+            "evidence_ids": [
+              "ev_008"
+            ],
+            "importance": "required",
+            "requirement_type": "experience|skill",
+            "text": "- 熟悉招聘全流程、社保公积金办理、劳动合同管理、考勤薪资核算、员工入离职流程等人事基础工作。"
+          },
+          {
+            "evidence_ids": [
+              "ev_009"
+            ],
+            "importance": "required",
+            "requirement_type": "skill|language",
+            "text": "- 熟练使用招聘平台、Office办公软件，擅长简历筛选、人员沟通、报表制作，具备基础人力数据统计分析能力。"
+          },
+          {
+            "evidence_ids": [
+              "ev_010"
+            ],
+            "importance": "required",
+            "requirement_type": "soft_skill",
+            "text": "- 具备良好的沟通表达、协调统筹、共情能力，待人耐心细致，原则性强，擅长员工关系维护与团队氛围搭建。"
+          },
+          {
+            "evidence_ids": [
+              "ev_011"
+            ],
+            "importance": "required",
+            "requirement_type": "knowledge|soft_skill",
+            "text": "- 熟悉基础劳动法律法规，了解企业人事管理制度，具备独立处理人事日常事务的能力，执行力、责任心强。"
+          }
+        ],
+        "responsibilities": [
+          {
+            "action": "负责",
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "object": "公司全岗位招聘工作",
+            "text": "- 负责公司全岗位招聘工作，梳理招聘需求，发布招聘信息、筛选简历、邀约面试、组织复试、跟进入职，完成各部门招聘指标，保障人员及时补位。"
+          },
+          {
+            "action": "负责",
+            "evidence_ids": [
+              "ev_002"
+            ],
+            "object": "员工入离职等人事基础手续办理",
+            "text": "- 负责员工入离职、转正、调岗、劳动合同签订、社保公积金增减员、考勤核算、薪资核对等人事基础手续办理，建立完善员工人事档案。"
+          },
+          {
+            "action": "负责",
+            "evidence_ids": [
+              "ev_003"
+            ],
+            "object": "公司员工考勤管理等",
+            "text": "- 负责公司员工考勤管理、排班统计、休假审批、异常考勤核对，定期输出考勤报表，规范公司考勤管理制度落地执行。"
+          },
+          {
+            "action": "统筹",
+            "evidence_ids": [
+              "ev_004"
+            ],
+            "object": "公司员工培训工作等",
+            "text": "- 统筹公司员工培训工作，新员工入职培训组织、在岗技能培训落地、培训资料整理归档，搭建基础员工培训体系，提升员工岗位适配度。"
+          },
+          {
+            "action": "负责",
+            "evidence_ids": [
+              "ev_005"
+            ],
+            "object": "员工关系维护等",
+            "text": "- 负责员工关系维护，日常员工沟通、情绪疏导、团队氛围建设，组织员工团建、节日活动，处理员工疑问及基础劳动纠纷，提升员工归属感与留存率。"
+          },
+          {
+            "action": "协助",
+            "evidence_ids": [
+              "ev_006"
+            ],
+            "object": "完善公司人事规章制度等",
+            "text": "- 协助完善公司人事规章制度、员工手册，落地绩效考核、奖惩制度，做好人力数据统计分析，定期输出人力报表，为部门管理提供数据支撑。"
+          }
+        ],
+        "schema_version": "profile-extraction/v2",
+        "skills": [
+          {
+            "category": "other",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "招聘管理",
+            "raw_name": "招聘管理"
+          },
+          {
+            "category": "other",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_002"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "人事基础管理",
+            "raw_name": "人事基础管理"
+          },
+          {
+            "category": "other",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_003"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "考勤管理",
+            "raw_name": "考勤管理"
+          },
+          {
+            "category": "other",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_004"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "培训管理",
+            "raw_name": "培训管理"
+          },
+          {
+            "category": "other",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_005"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "员工关系管理",
+            "raw_name": "员工关系管理"
+          },
+          {
+            "category": "other",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_006"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "规章制度管理",
+            "raw_name": "规章制度管理"
+          }
+        ]
+      },
+      "job": {
+        "department": "行政人事部",
+        "normalized_title": null,
+        "seniority": null,
+        "title": "人事专员"
+      },
+      "job_title": "人事专员",
+      "profile_schema": "profile-extraction/v2",
+      "projects": [],
+      "requirements": [
+        {
+          "evidence_ids": [
+            "ev_007"
+          ],
+          "importance": "required",
+          "requirement_type": "education|experience",
+          "text": "- 大专及以上学历，人力资源管理、行政管理、工商管理等相关专业优先，1年及以上人事专员相关工作经验。"
+        },
+        {
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "importance": "required",
+          "requirement_type": "experience|skill",
+          "text": "- 熟悉招聘全流程、社保公积金办理、劳动合同管理、考勤薪资核算、员工入离职流程等人事基础工作。"
+        },
+        {
+          "evidence_ids": [
+            "ev_009"
+          ],
+          "importance": "required",
+          "requirement_type": "skill|language",
+          "text": "- 熟练使用招聘平台、Office办公软件，擅长简历筛选、人员沟通、报表制作，具备基础人力数据统计分析能力。"
+        },
+        {
+          "evidence_ids": [
+            "ev_010"
+          ],
+          "importance": "required",
+          "requirement_type": "soft_skill",
+          "text": "- 具备良好的沟通表达、协调统筹、共情能力，待人耐心细致，原则性强，擅长员工关系维护与团队氛围搭建。"
+        },
+        {
+          "evidence_ids": [
+            "ev_011"
+          ],
+          "importance": "required",
+          "requirement_type": "knowledge|soft_skill",
+          "text": "- 熟悉基础劳动法律法规，了解企业人事管理制度，具备独立处理人事日常事务的能力，执行力、责任心强。"
+        }
+      ],
+      "responsibilities": [
+        {
+          "action": "负责",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "object": "公司全岗位招聘工作",
+          "text": "- 负责公司全岗位招聘工作，梳理招聘需求，发布招聘信息、筛选简历、邀约面试、组织复试、跟进入职，完成各部门招聘指标，保障人员及时补位。"
+        },
+        {
+          "action": "负责",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "object": "员工入离职等人事基础手续办理",
+          "text": "- 负责员工入离职、转正、调岗、劳动合同签订、社保公积金增减员、考勤核算、薪资核对等人事基础手续办理，建立完善员工人事档案。"
+        },
+        {
+          "action": "负责",
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "object": "公司员工考勤管理等",
+          "text": "- 负责公司员工考勤管理、排班统计、休假审批、异常考勤核对，定期输出考勤报表，规范公司考勤管理制度落地执行。"
+        },
+        {
+          "action": "统筹",
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "object": "公司员工培训工作等",
+          "text": "- 统筹公司员工培训工作，新员工入职培训组织、在岗技能培训落地、培训资料整理归档，搭建基础员工培训体系，提升员工岗位适配度。"
+        },
+        {
+          "action": "负责",
+          "evidence_ids": [
+            "ev_005"
+          ],
+          "object": "员工关系维护等",
+          "text": "- 负责员工关系维护，日常员工沟通、情绪疏导、团队氛围建设，组织员工团建、节日活动，处理员工疑问及基础劳动纠纷，提升员工归属感与留存率。"
+        },
+        {
+          "action": "协助",
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "object": "完善公司人事规章制度等",
+          "text": "- 协助完善公司人事规章制度、员工手册，落地绩效考核、奖惩制度，做好人力数据统计分析，定期输出人力报表，为部门管理提供数据支撑。"
+        }
+      ],
+      "skills": [
+        {
+          "category": "other",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "招聘管理",
+          "raw_name": "招聘管理"
+        },
+        {
+          "category": "other",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "人事基础管理",
+          "raw_name": "人事基础管理"
+        },
+        {
+          "category": "other",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "考勤管理",
+          "raw_name": "考勤管理"
+        },
+        {
+          "category": "other",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "培训管理",
+          "raw_name": "培训管理"
+        },
+        {
+          "category": "other",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_005"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "员工关系管理",
+          "raw_name": "员工关系管理"
+        },
+        {
+          "category": "other",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "规章制度管理",
+          "raw_name": "规章制度管理"
+        }
+      ]
+    },
+    "created_at": "2026-08-06T12:08:13Z",
+    "evidence": [
+      {
+        "field": "responsibilities",
+        "id": "ev_001",
+        "text": "- 负责公司全岗位招聘工作，梳理招聘需求，发布招聘信息、筛选简历、邀约面试、组织复试、跟进入职，完成各部门招聘指标，保障人员及时补位。"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_002",
+        "text": "- 负责员工入离职、转正、调岗、劳动合同签订、社保公积金增减员、考勤核算、薪资核对等人事基础手续办理，建立完善员工人事档案。"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_003",
+        "text": "- 负责公司员工考勤管理、排班统计、休假审批、异常考勤核对，定期输出考勤报表，规范公司考勤管理制度落地执行。"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_004",
+        "text": "- 统筹公司员工培训工作，新员工入职培训组织、在岗技能培训落地、培训资料整理归档，搭建基础员工培训体系，提升员工岗位适配度。"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_005",
+        "text": "- 负责员工关系维护，日常员工沟通、情绪疏导、团队氛围建设，组织员工团建、节日活动，处理员工疑问及基础劳动纠纷，提升员工归属感与留存率。"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_006",
+        "text": "- 协助完善公司人事规章制度、员工手册，落地绩效考核、奖惩制度，做好人力数据统计分析，定期输出人力报表，为部门管理提供数据支撑。"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_007",
+        "text": "- 大专及以上学历，人力资源管理、行政管理、工商管理等相关专业优先，1年及以上人事专员相关工作经验。"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_008",
+        "text": "- 熟悉招聘全流程、社保公积金办理、劳动合同管理、考勤薪资核算、员工入离职流程等人事基础工作。"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_009",
+        "text": "- 熟练使用招聘平台、Office办公软件，擅长简历筛选、人员沟通、报表制作，具备基础人力数据统计分析能力。"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_010",
+        "text": "- 具备良好的沟通表达、协调统筹、共情能力，待人耐心细致，原则性强，擅长员工关系维护与团队氛围搭建。"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_011",
+        "text": "- 熟悉基础劳动法律法规，了解企业人事管理制度，具备独立处理人事日常事务的能力，执行力、责任心强。"
+      }
+    ],
+    "id": "job_profile_d87cfe5ca4eb41d8b997fa17ee002fb4",
+    "implementation": "llm_profile_builder",
+    "profile_type": "job",
+    "source_document_id": "doc_beec50cc32da41e1a3e04857de506813",
+    "state": "available",
+    "warnings": []
+  },
+  "schema_version": "profile-extraction/v2",
+  "source_document": {
+    "char_count": 766,
+    "content_digest": "153daef3b85dd6402c2d73c53dde1a8085d3758ca208a017a2c063d9b743660b",
+    "created_at": "2026-08-06T12:06:11Z",
+    "document_type": "jd",
+    "id": "doc_beec50cc32da41e1a3e04857de506813",
+    "metadata": {
+      "company_name": "全岗位招聘工作，梳理招聘需求，发布招聘信息、筛选简历、邀约面试、组织复试、跟进入职，完成各部门招聘指标，保障人员及时补位。",
+      "job_title": "人事专员",
+      "location": "一线城市",
+      "salary_range": "6k-10k｜双休、五险一金、绩效奖金、福利齐全",
+      "skills": [
+        "统筹公司员工培训",
+        "工作",
+        "新员工入职培训组",
+        "在岗技能培训落地",
+        "培训资料整理归档",
+        "搭建基础员工培训",
+        "体系",
+        "提升员工岗位适配",
+        "任职要求"
+      ],
+      "title": "人事专员"
+    },
+    "source": {
+      "source_system": "manual"
+    },
+    "storage": "memory"
+  }
+}

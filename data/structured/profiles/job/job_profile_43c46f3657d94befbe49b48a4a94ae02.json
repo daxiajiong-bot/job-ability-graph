@@ -1,0 +1,80 @@
+{
+  "artifact_type": "job_profile",
+  "created_at": "2026-08-06T14:50:28Z",
+  "extraction": {
+    "evidence": [],
+    "fields": {},
+    "implementation": "mock",
+    "model": null,
+    "raw_model_output": "{\n  \"schema_version\": \"profile-extraction/v2\",\n  \"document_type\": \"jd\",\n  \"job\": {\"title\": \"AI大模型应用工程师\", \"normalized_title\": null, \"department\": \"人工智能产品研发部\", \"seniority\": null},\n  \"company\": {\"name\": null, \"industry\": null, \"location\": \"一线城市\"},\n  \"employment\": {\"employment_type\": \"full_time\", \"salary_min\": 9000, \"salary_max\": 16000, \"published_at\": null},\n  \"responsibilities\": [\n    {\"text\": \"负责通用大模型的落地应用开发，聚焦Prompt工程优化、上下文调试、指令迭代。\", \"action\": \"负责\", \"object\": \"通用大模型的落地应用开发\", \"evidence_text\": \"- 负责通用大模型（GPT、文心一言、通义千问等）的落地应用开发，聚焦Prompt工程优化、上下文调试、指令迭代，针对不同业务场景设计高质量提示词，提升大模型输出精准度、逻辑性与实用性。\"},\n    {\"text\": \"参与AI知识库搭建与优化。\", \"action\": \"参与\", \"object\": \"AI知识库搭建与优化\", \"evidence_text\": \"- 参与AI知识库搭建与优化，完成行业语料整理、知识切片、向量数据库适配、知识库挂载调试，落地企业智能问答、文本生成、内容解析等AI应用场景。\"},\n    {\"text\": \"协助进行大模型微调数据准备、样本筛选、数据清洗工作。\", \"action\": \"协助\", \"object\": \"大模型微调数据准备、样本筛选、数据清洗工作\", \"evidence_text\": \"- 协助进行大模型微调数据准备、样本筛选、数据清洗工作，整理微调数据集，配合算法团队完成小参数微调、模型效果测试与迭代优化，改善模型场景适配性。\"},\n    {\"text\": \"负责AI应用功能测试、效果验收、问题复盘。\", \"action\": \"负责\", \"object\": \"AI应用功能测试、效果验收、问题复盘\", \"evidence_text\": \"- 负责AI应用功能测试、效果验收、问题复盘，记录模型幻觉、输出偏差、逻辑漏洞等问题，持续优化Prompt策略与知识库内容，迭代AI应用使用体验。\"},\n    {\"text\": \"跟进大模型行业新技术、新应用方案。\", \"action\": \"跟进\", \"object\": \"大模型行业新技术、新应用方案\", \"evidence_text\": \"- 跟进大模型行业新技术、新应用方案，调研各类开源大模型、AI工具链的落地场景，协助团队输出AI应用落地方案、技术文档与使用规范。\"},\n    {\"text\": \"配合产品、开发团队完成AI功能上线、用户反馈收集与功能迭代。\", \"action\": \"配合\", \"object\": \"产品、开发团队完成AI功能上线、用户反馈收集与功能迭代\", \"evidence_text\": \"- 配合产品、开发团队完成AI功能上线、用户反馈收集与功能迭代，保障大模型应用稳定服务于办公、内容、客服、行业赋能等业务场景。\"}\n  ],\n  \"requirements\": [\n    {\"text\": \"大专及以上学历，人工智能、计算机、大数据、软件工程、汉语言、新媒体等相关专业\", \"requirement_type\": \"education\", \"importance\": \"required\", \"evidence_text\": \"- 大专及以上学历，人工智能、计算机、大数据、软件工程、汉语言、新媒体等相关专业，有无经验均可，有大模型、Prompt优化、AI知识库搭建经验优先。\"},\n    {\"text\": \"了解大模型基础原理，熟悉Prompt工程基础逻辑\", \"requirement_type\": \"skill\", \"importance\": \"required\", \"evidence_text\": \"- 了解大模型基础原理，熟悉Prompt工程基础逻辑，掌握零样本、少样本、思维链等基础提示词优化方法，具备文本调教、模型输出优化能力。\"},\n    {\"text\": \"掌握零样本、少样本、思维链等基础提示词优化方法\", \"requirement_type\": \"skill\", \"importance\": \"required\", \"evidence_text\": \"- 了解大模型基础原理，熟悉Prompt工程基础逻辑，掌握零样本、少样本、思维链等基础提示词优化方法，具备文本调教、模型输出优化能力。\"},\n    {\"text\": \"具备文本调教、模型输出优化能力\", \"requirement_type\": \"skill\", \"importance\": \"required\", \"evidence_text\": \"- 了解大模型基础原理，熟悉Prompt工程基础逻辑，掌握零样本、少样本、思维链等基础提示词优化方法，具备文本调教、模型输出优化能力。\"},\n    {\"text\": \"具备基础数据处理、文本标注、语料整理能力\", \"requirement_type\": \"skill\", \"importance\": \"required\", \"evidence_text\": \"- 具备基础数据处理、文本标注、语料整理能力，了解知识库搭建、文本切片、向量检索等基础AI应用流程。\"},\n    {\"text\": \"了解知识库搭建、文本切片、向量检索等基础AI应用流程\", \"requirement_type\": \"skill\", \"importance\": \"required\", \"evidence_text\": \"- 具备基础数据处理、文本标注、语料整理能力，了解知识库搭建、文本切片、向量检索等基础AI应用流程。\"},\n    {\"text\": \"具备良好的逻辑思维、文字功底和问题排查能力\", \"requirement_type\": \"skill\", \"importance\": \"required\", \"evidence_text\": \"- 具备良好的逻辑思维、文字功底和问题排查能力，能够精准发现大模型输出问题，针对性迭代优化方案。\"},\n    {\"text\": \"学习能力强，对AIGC、大模型应用有浓厚兴趣\", \"requirement_type\": \"skill\", \"importance\": \"preferred\", \"evidence_text\": \"- 学习能力强，对AIGC、大模型应用有浓厚兴趣，熟悉主流大模型平台工具，具备独立完成AI应用调试、优化、测试的基础能力。\"},\n    {\"text\": \"熟悉主流大模型平台工具\", \"requirement_type\": \"skill\", \"importance\": \"preferred\", \"evidence_text\": \"- 学习能力强，对AIGC、大模型应用有浓厚兴趣，熟悉主流大模型平台工具，具备独立完成AI应用调试、优化、测试的基础能力。\"},\n    {\"text\": \"具备独立完成AI应用调试、优化、测试的基础能力\", \"requirement_type\": \"skill\", \"importance\": \"preferred\", \"evidence_text\": \"- 学习能力强，对AIGC、大模型应用有浓厚兴趣，熟悉主流大模型平台工具，具备独立完成AI应用调试、优化、测试的基础能力。\"}\n  ],\n  \"skills\": [\n    {\"name\": \"Prompt工程优化\", \"raw_name\": \"Prompt engineering optimization\", \"category\": \"algorithm\", \"lskt_label\": \"S\", \"importance\": \"required\", \"evidence_text\": \"- 负责通用大模型（GPT、文心一言、通义千问等）的落地应用开发，聚焦Prompt工程优化、上下文调试、指令迭代，针对不同业务场景设计高质量提示词，提升大模型输出精准度、逻辑性与实用性。\"},\n    {\"name\": \"上下文调试\", \"raw_name\": \"context debugging\", \"category\": \"algorithm\", \"lskt_label\": \"S\", \"importance\": \"required\", \"evidence_text\": \"- 负责通用大模型（GPT、文心一言、通义千问等）的落地应用开发，聚焦Prompt工程优化、上下文调试、指令迭代，针对不同业务场景设计高质量提示词，提升大模型输出精准度、逻辑性与实用性。\"},\n    {\"name\": \"指令迭代\", \"raw_name\": \"instruction iteration\", \"category\": \"algorithm\", \"lskt_label\": \"S\", \"importance\": \"required\", \"evidence_text\": \"- 负责通用大模型（GPT、文心一言、通义千问等）的落地应用开发，聚焦Prompt工程优化、上下文调试、指令迭代",
+    "reason": "Ollama structured extraction failed: model output is missing required keys: evaluation_signals",
+    "schema": null,
+    "state": "not_implemented",
+    "validation_error": "model output is missing required keys: evaluation_signals",
+    "warnings": [
+      "Ollama structured extraction failed: model output is missing required keys: evaluation_signals"
+    ]
+  },
+  "normalization": {
+    "implementation": "lightweight_skill_normalizer",
+    "skills": [],
+    "state": "not_implemented",
+    "warnings": [
+      "Ollama structured extraction failed: model output is missing required keys: evaluation_signals"
+    ]
+  },
+  "profile": {
+    "artifacts": {
+      "profile_json": "data\\structured\\profiles\\job\\job_profile_43c46f3657d94befbe49b48a4a94ae02.json",
+      "schema_version": "profile-extraction/v2",
+      "storage": "filesystem"
+    },
+    "attributes": {
+      "capabilities": [],
+      "company": {},
+      "education": [],
+      "employment": {},
+      "experience": [],
+      "jd_profile": {},
+      "job": {},
+      "job_title": null,
+      "profile_schema": "profile-extraction/v2",
+      "projects": [],
+      "requirements": [],
+      "responsibilities": [],
+      "skills": []
+    },
+    "created_at": "2026-08-06T14:50:28Z",
+    "evidence": [],
+    "id": "job_profile_43c46f3657d94befbe49b48a4a94ae02",
+    "implementation": "mock",
+    "profile_type": "job",
+    "source_document_id": "doc_3d9b37bb12c04145acc71d19793c7c8d",
+    "state": "not_implemented",
+    "warnings": [
+      "Ollama structured extraction failed: model output is missing required keys: evaluation_signals"
+    ]
+  },
+  "schema_version": "profile-extraction/v2",
+  "source_document": {
+    "char_count": 851,
+    "content_digest": "40f3eb931155eb1b636444d19d2f2480684c51852229e0d58fd56c9975b505af",
+    "created_at": "2026-08-06T14:48:12Z",
+    "document_type": "jd",
+    "id": "doc_3d9b37bb12c04145acc71d19793c7c8d",
+    "metadata": {
+      "company_name": "智能问答、文本生成、内容解析等AI应用场景。",
+      "job_title": "AI大模型应用工程师",
+      "location": "一线城市",
+      "salary_range": "9k-16k｜双休、五险一金、项目奖金、技术晋升",
+      "skills": [
+        "任职要求"
+      ],
+      "title": "AI大模型应用工程师"
+    },
+    "source": {
+      "source_system": "manual"
+    },
+    "storage": "memory"
+  }
+}

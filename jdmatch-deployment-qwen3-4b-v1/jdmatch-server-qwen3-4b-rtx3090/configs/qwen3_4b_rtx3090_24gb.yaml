@@ -1,0 +1,70 @@
+schema_version: jdmatch_config_v1
+run_name: qwen3_embedding_4b_rtx3090
+seed: 20260730
+paths:
+  data_dir: data/runtime
+  run_dir: runs/qwen3_embedding_4b_rtx3090
+models:
+  embedding: /data/wangxianjiong/models/jdmatch/Qwen3-Embedding-4B
+  mining_embedding: /data/wangxianjiong/models/jdmatch/bge-m3
+  reranker: /data/wangxianjiong/models/jdmatch/bge-reranker-v2-m3
+  query_instruction: Given a job description, retrieve candidate resumes that satisfy
+    core skills, experience, and education requirements.
+hardware:
+  require_cuda: true
+  required_cuda_visible_devices: '0'
+  expected_gpu_name: NVIDIA GeForce RTX 3090
+  expected_visible_device_count: 1
+  dtype: bfloat16
+  attention: flash_attention_2
+  attention_fallback: sdpa
+  max_peak_memory_gib: 21.5
+text:
+  max_length: 512
+  output_dimension: 1024
+sampling:
+  dense_top_k: 200
+  teacher_prefilter: 24
+  hard_pool_size: 12
+  hard_per_step: 2
+  easy_per_step: 1
+  easy_random_candidates: 1000
+  easy_quantile: 0.25
+  teacher_batch_size: 8
+  embedding_batch_size: 16
+  query_chunk_size: 32
+training:
+  epochs: 3
+  global_jd_batch_size: 16
+  gradcache_microbatch_texts: 2
+  learning_rate: 2.0e-05
+  weight_decay: 0.01
+  warmup_ratio: 0.05
+  temperature: 0.05
+  h1_loss_weight: 0.5
+  hard_loss_weight: 1.0
+  h1_margin: 0.05
+  hard_margin: 0.1
+  lora_rank: 16
+  lora_alpha: 32
+  lora_dropout: 0.05
+  lora_targets:
+  - q_proj
+  - k_proj
+  - v_proj
+  - o_proj
+  gradient_checkpointing: true
+  save_steps: 100
+  log_steps: 10
+  max_grad_norm: 1.0
+  quantization: none
+evaluation:
+  splits:
+  - validation
+  - test
+  recall_k:
+  - 1
+  - 2
+  - 5
+  - 10
+  embedding_batch_size: 8

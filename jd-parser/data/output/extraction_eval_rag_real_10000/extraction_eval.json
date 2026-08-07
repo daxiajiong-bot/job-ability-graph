@@ -1,0 +1,181 @@
+{
+  "schema_version": "jd_extraction_eval_v1",
+  "source_profile_count": 10000,
+  "profile_validation_status_counts": {
+    "valid": 10000
+  },
+  "metrics": {
+    "title_coverage": 1.0,
+    "skill_coverage": 0.9781,
+    "required_skill_doc_coverage": 0.8849,
+    "preferred_skill_doc_coverage": 0.4832,
+    "mentioned_skill_doc_coverage": 0.8129,
+    "education_coverage": 0.9874,
+    "experience_coverage": 0.7702,
+    "location_coverage": 0.9007,
+    "avg_skills_per_doc": 10.4912,
+    "skill_evidence_support_rate": 1.0,
+    "constraint_evidence_support_rate": 1.0,
+    "lexicon_recall_proxy": 1.0,
+    "docs_with_candidate_terms": 9781,
+    "docs_with_candidate_but_no_skill": 0,
+    "docs_with_candidate_but_no_skill_ratio": 0.0,
+    "docs_with_skill_but_no_candidate": 0,
+    "docs_with_low_skill_density": 578,
+    "docs_with_low_skill_density_ratio": 0.0578,
+    "duplicate_skill_mentions": 0,
+    "unique_skill_count": 227,
+    "candidate_term_total": 118384,
+    "missed_candidate_total": 2
+  },
+  "level_counts": {
+    "mentioned": 32619,
+    "required": 56439,
+    "preferred": 15854
+  },
+  "top_extracted_skills": [
+    {
+      "name": "大模型",
+      "count": 9068
+    },
+    {
+      "name": "Python",
+      "count": 6178
+    },
+    {
+      "name": "深度学习",
+      "count": 5276
+    },
+    {
+      "name": "人工智能",
+      "count": 4746
+    },
+    {
+      "name": "Agent",
+      "count": 4561
+    },
+    {
+      "name": "C++",
+      "count": 3960
+    },
+    {
+      "name": "RAG",
+      "count": 3421
+    },
+    {
+      "name": "机器学习",
+      "count": 3398
+    },
+    {
+      "name": "PyTorch",
+      "count": 2495
+    },
+    {
+      "name": "微调",
+      "count": 2382
+    },
+    {
+      "name": "图像处理",
+      "count": 2151
+    },
+    {
+      "name": "TensorFlow",
+      "count": 2102
+    },
+    {
+      "name": "多模态",
+      "count": 2047
+    },
+    {
+      "name": "算法开发",
+      "count": 1995
+    },
+    {
+      "name": "架构设计",
+      "count": 1921
+    },
+    {
+      "name": "模型训练",
+      "count": 1850
+    },
+    {
+      "name": "Java",
+      "count": 1834
+    },
+    {
+      "name": "机器视觉",
+      "count": 1664
+    },
+    {
+      "name": "计算机视觉",
+      "count": 1552
+    },
+    {
+      "name": "Linux",
+      "count": 1487
+    },
+    {
+      "name": "数据分析",
+      "count": 1480
+    },
+    {
+      "name": "LangChain",
+      "count": 1371
+    },
+    {
+      "name": "性能优化",
+      "count": 1329
+    },
+    {
+      "name": "目标检测",
+      "count": 1269
+    },
+    {
+      "name": "SQL",
+      "count": 1258
+    },
+    {
+      "name": "AI Agent",
+      "count": 1215
+    },
+    {
+      "name": "算法设计",
+      "count": 1205
+    },
+    {
+      "name": "控制算法",
+      "count": 1163
+    },
+    {
+      "name": "强化学习",
+      "count": 1159
+    },
+    {
+      "name": "OpenCV",
+      "count": 1136
+    }
+  ],
+  "top_missed_candidate_terms": [
+    {
+      "name": ".NET",
+      "count": 1
+    },
+    {
+      "name": "Spring Boot",
+      "count": 1
+    }
+  ],
+  "rag_recommendation": {
+    "mode": "optional",
+    "reasons": [
+      "技能表面词数量较少，RAG 更适合用于术语扩展和技能归一化。"
+    ],
+    "risks": [],
+    "recommended_strategy": [
+      "优先保留当前证据优先抽取流程，RAG 只作为候选术语/相似 JD 样例检索器。",
+      "RAG 返回的术语必须再次在 raw_text 中命中，不能直接写入 Profile。",
+      "用于提升召回时，建议检索技能词表、岗位族样例、人工标注样例，而不是检索泛化解释文本。",
+      "用于人岗匹配前，建议把 RAG 放在技能归一化与岗位族对齐阶段，而不是替代 evidence 校验。"
+    ]
+  }
+}

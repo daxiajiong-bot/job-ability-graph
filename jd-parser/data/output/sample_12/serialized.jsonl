@@ -1,0 +1,12 @@
+{"document_id": "JD_SAMPLE_001", "status": "valid", "serialized_text": "[岗位名称]\nNLP算法工程师\n\n[岗位职责]\n负责信息抽取模型研发；\n参与RAG系统建设\n\n[任职要求]\n熟练使用Python和PyTorch；\n具备2年以上自然语言处理相关经验\n\n[必需技能]\nPython；PyTorch；自然语言处理\n\n[相关技能]\n信息抽取；RAG\n\n[优先技能]\n知识图谱\n\n[经验要求]\n2年以上\n\n[工作地点]\n南京"}
+{"document_id": "JD_SAMPLE_002", "status": "valid", "serialized_text": "[岗位名称]\nAI应用开发工程师\n\n[岗位职责]\n负责大模型应用开发；\n参与Agent工作流设计；\n推动模型部署落地\n\n[相关技能]\n大模型；Agent；模型部署"}
+{"document_id": "JD_SAMPLE_003", "status": "valid", "serialized_text": "[岗位名称]\n计算机视觉算法工程师\n\n[任职要求]\n硕士及以上学历；\n熟悉OpenCV和PyTorch；\n具备3年以上计算机视觉项目经验\n\n[必需技能]\nOpenCV；PyTorch；计算机视觉\n\n[学历要求]\n硕士及以上\n\n[经验要求]\n3年以上"}
+{"document_id": "JD_SAMPLE_004", "status": "valid", "serialized_text": "[岗位名称]\nMachine Learning Engineer\n\n[岗位职责]\nBuild ML pipeline with Python and TensorFlow\n\n[任职要求]\nFamiliar with Docker, Kubernetes and Git\n\n[必需技能]\nDocker；Kubernetes；Git\n\n[相关技能]\nPython；TensorFlow\n\n[工作地点]\n上海"}
+{"document_id": "JD_SAMPLE_005", "status": "valid", "serialized_text": "[岗位名称]\n推荐算法工程师\n\n[任职要求]\n熟练掌握Python、Spark、Flink、Kafka，具备推荐系统经验\n\n[必需技能]\nPython；Spark；Flink；Kafka；推荐系统"}
+{"document_id": "JD_SAMPLE_006", "status": "valid", "serialized_text": "[岗位名称]\n知识图谱算法工程师\n\n[岗位职责]\n负责知识图谱构建和信息抽取\n\n[任职要求]\n熟悉Python\n\n[必需技能]\nPython\n\n[相关技能]\n知识图谱；信息抽取\n\n[优先技能]\nRAG；大模型"}
+{"document_id": "JD_SAMPLE_007", "status": "valid", "serialized_text": "[岗位名称]\n数据挖掘工程师\n\n[岗位职责]\n负责用户行为数据分析和模型训练\n\n[任职要求]\n熟练使用SQL和Python\n\n[必需技能]\nSQL；Python\n\n[相关技能]\n数据分析；模型训练\n\n[工作地点]\n杭州"}
+{"document_id": "JD_SAMPLE_008", "status": "valid", "serialized_text": "[岗位名称]\n模型部署工程师\n\n[岗位职责]\n负责模型推理服务优化\n\n[任职要求]\n熟悉Linux、Docker、TensorRT\n\n[必需技能]\nLinux；Docker；TensorRT\n\n[相关技能]\n模型推理\n\n[工作地点]\n深圳"}
+{"document_id": "JD_SAMPLE_009", "status": "valid", "serialized_text": "[岗位名称]\n嵌入式算法工程师\n\n[任职要求]\n本科及以上学历，3-5年控制算法经验，熟悉Matlab/Simulink\n\n[必需技能]\n控制算法；Matlab；Simulink\n\n[学历要求]\n本科及以上\n\n[经验要求]\n3年以上"}
+{"document_id": "JD_SAMPLE_010", "status": "valid", "serialized_text": "[岗位名称]\nAI工程师\n\n[岗位职责]\n负责AI系统设计\n\n[任职要求]\n熟悉Python和Linux\n\n[必需技能]\nPython；Linux\n\n[相关技能]\n系统设计"}
+{"document_id": "JD_SAMPLE_011", "status": "valid", "serialized_text": "[岗位名称]\n语音算法工程师\n\n[岗位职责]\n负责ASR和TTS算法开发\n\n[任职要求]\n硕士以上学历，熟悉深度学习\n\n[必需技能]\n深度学习\n\n[相关技能]\nASR；TTS；算法开发\n\n[学历要求]\n硕士以上"}
+{"document_id": "JD_SAMPLE_012", "status": "valid", "serialized_text": "[岗位名称]\n多模态大模型工程师\n\n[岗位职责]\n负责多模态大模型训练；\n参与Transformer模型优化\n\n[任职要求]\n熟悉CUDA、PyTorch和模型微调\n\n[必需技能]\nCUDA；PyTorch；模型微调\n\n[相关技能]\n多模态；大模型；Transformer\n\n[优先技能]\nLoRA"}

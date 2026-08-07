@@ -1,0 +1,1364 @@
+{
+  "artifact_type": "candidate_profile",
+  "created_at": "2026-08-06T13:02:11Z",
+  "extraction": {
+    "evidence": [
+      {
+        "field": "education",
+        "id": "ev_001",
+        "text": "XX职业技术学院｜人工智能技术应用｜2020.09-2023.06｜大专"
+      },
+      {
+        "field": "work_experience",
+        "id": "ev_002",
+        "text": "- AI数据集预处理与优化：协助算法团队开展AI模型训练数据处理工作，负责图像、文本数据集的清洗、去重、筛选与标准化处理，执行数据增强、样本分类操作，修正异常数据，保障数据集基础质量，适配模型训练基础要求。\n- 基础模型训练与测试：配合算法"
+      },
+      {
+        "field": "skills",
+        "id": "ev_003",
+        "text": "熟悉机器学习、深度学习基础原理"
+      },
+      {
+        "field": "skills",
+        "id": "ev_004",
+        "text": "Pandas、Numpy数据处理工具"
+      },
+      {
+        "field": "skills",
+        "id": "ev_005",
+        "text": "熟悉PyTorch基础框架"
+      },
+      {
+        "field": "skills",
+        "id": "ev_006",
+        "text": "负责图像、文本数据集的清洗、去重、筛选与标准化处理，执行数据增强、样本分类操作"
+      },
+      {
+        "field": "skills",
+        "id": "ev_007",
+        "text": "配合算法工程师使用Python及PyTorch框架完成简单分类、回归模型的训练实操，协助调整基础参数、迭代训练轮次"
+      },
+      {
+        "field": "skills",
+        "id": "ev_008",
+        "text": "负责图像、文本数据集的清洗、去重、筛选与标准化处理"
+      },
+      {
+        "field": "skills",
+        "id": "ev_009",
+        "text": "执行数据增强、样本分类操作"
+      },
+      {
+        "field": "skills",
+        "id": "ev_010",
+        "text": "修正异常数据，保障数据集基础质量"
+      },
+      {
+        "field": "skills",
+        "id": "ev_011",
+        "text": "记录训练损失值、准确率等核心指标，完成基础模型效果验证"
+      },
+      {
+        "field": "skills",
+        "id": "ev_012",
+        "text": "跟进基础AI算法复现实验，对比不同参数、样本集下的模型效果，整理实验数据、记录问题与优化思路"
+      },
+      {
+        "field": "skills",
+        "id": "ev_013",
+        "text": "协助团队梳理算法文档、数据集规范"
+      },
+      {
+        "field": "skills",
+        "id": "ev_014",
+        "text": "协助排查模型训练过程中出现的基础数据报错、拟合异常等简单问题，配合工程师完成模型小幅优化与迭代"
+      },
+      {
+        "field": "capabilities",
+        "id": "ev_015",
+        "text": "具备扎实的算法逻辑思维，对AI技术敏感度高，学习迭代能力强"
+      },
+      {
+        "field": "capabilities",
+        "id": "ev_016",
+        "text": "精通AI数据集全流程处理，掌握数据清洗、数据增强、样本筛选、模型效果评估等基础技能"
+      },
+      {
+        "field": "capabilities",
+        "id": "ev_017",
+        "text": "能够严谨完成模型实验、数据核验、文档梳理等研发辅助工作"
+      },
+      {
+        "field": "achievements",
+        "id": "ev_018",
+        "text": "持续负责团队AI训练数据集预处理工作，优化数据筛选流程，有效降低数据集异常率，为模型基础训练提供稳定数据支撑"
+      },
+      {
+        "field": "achievements",
+        "id": "ev_019",
+        "text": "协助完成十余次基础机器学习模型训练与参数调试实验，整理完整实验台账，助力团队完成基础算法迭代验证"
+      },
+      {
+        "field": "achievements",
+        "id": "ev_020",
+        "text": "梳理标准化数据集处理规范与基础模型训练流程，简化新人上手步骤，小幅提升团队基础AI研发工作效率"
+      }
+    ],
+    "fields": {
+      "achievements": [
+        {
+          "description": "有效降低数据集异常率，为模型基础训练提供稳定数据支撑",
+          "evidence_ids": [
+            "ev_018"
+          ],
+          "name": "持续负责团队AI训练数据集预处理工作，优化数据筛选流程"
+        },
+        {
+          "description": "整理完整实验台账，助力团队完成基础算法迭代验证",
+          "evidence_ids": [
+            "ev_019"
+          ],
+          "name": "协助完成十余次基础机器学习模型训练与参数调试实验"
+        },
+        {
+          "description": "简化新人上手步骤，小幅提升团队基础AI研发工作效率",
+          "evidence_ids": [
+            "ev_020"
+          ],
+          "name": "梳理标准化数据集处理规范与基础模型训练流程"
+        }
+      ],
+      "candidate": {
+        "current_title": null,
+        "location": null,
+        "name": null,
+        "years_of_experience": null
+      },
+      "capabilities": [
+        {
+          "description": "具备扎实的算法逻辑思维，对AI技术敏感度高，学习迭代能力强",
+          "evidence_ids": [
+            "ev_015"
+          ],
+          "level": "proficient",
+          "name": "算法逻辑思维"
+        },
+        {
+          "description": "精通AI数据集全流程处理，掌握数据清洗、数据增强、样本筛选、模型效果评估等基础技能",
+          "evidence_ids": [
+            "ev_016"
+          ],
+          "level": "proficient",
+          "name": "数据处理能力"
+        },
+        {
+          "description": "能够严谨完成模型实验、数据核验、文档梳理等研发辅助工作",
+          "evidence_ids": [
+            "ev_017"
+          ],
+          "level": "proficient",
+          "name": "技术文档整理能力"
+        }
+      ],
+      "career_intent": {
+        "target_industry": null,
+        "target_location": null,
+        "target_position": "AI算法工程师（入门）"
+      },
+      "certificates": [],
+      "document_type": "resume",
+      "education": [
+        {
+          "degree": "大专",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "major": "人工智能技术应用",
+          "period": "2020.09-2023.06",
+          "school": "XX职业技术学院"
+        }
+      ],
+      "evidence": [
+        {
+          "field": "education",
+          "id": "ev_001",
+          "text": "XX职业技术学院｜人工智能技术应用｜2020.09-2023.06｜大专"
+        },
+        {
+          "field": "work_experience",
+          "id": "ev_002",
+          "text": "- AI数据集预处理与优化：协助算法团队开展AI模型训练数据处理工作，负责图像、文本数据集的清洗、去重、筛选与标准化处理，执行数据增强、样本分类操作，修正异常数据，保障数据集基础质量，适配模型训练基础要求。\n- 基础模型训练与测试：配合算法"
+        },
+        {
+          "field": "skills",
+          "id": "ev_003",
+          "text": "熟悉机器学习、深度学习基础原理"
+        },
+        {
+          "field": "skills",
+          "id": "ev_004",
+          "text": "Pandas、Numpy数据处理工具"
+        },
+        {
+          "field": "skills",
+          "id": "ev_005",
+          "text": "熟悉PyTorch基础框架"
+        },
+        {
+          "field": "skills",
+          "id": "ev_006",
+          "text": "负责图像、文本数据集的清洗、去重、筛选与标准化处理，执行数据增强、样本分类操作"
+        },
+        {
+          "field": "skills",
+          "id": "ev_007",
+          "text": "配合算法工程师使用Python及PyTorch框架完成简单分类、回归模型的训练实操，协助调整基础参数、迭代训练轮次"
+        },
+        {
+          "field": "skills",
+          "id": "ev_008",
+          "text": "负责图像、文本数据集的清洗、去重、筛选与标准化处理"
+        },
+        {
+          "field": "skills",
+          "id": "ev_009",
+          "text": "执行数据增强、样本分类操作"
+        },
+        {
+          "field": "skills",
+          "id": "ev_010",
+          "text": "修正异常数据，保障数据集基础质量"
+        },
+        {
+          "field": "skills",
+          "id": "ev_011",
+          "text": "记录训练损失值、准确率等核心指标，完成基础模型效果验证"
+        },
+        {
+          "field": "skills",
+          "id": "ev_012",
+          "text": "跟进基础AI算法复现实验，对比不同参数、样本集下的模型效果，整理实验数据、记录问题与优化思路"
+        },
+        {
+          "field": "skills",
+          "id": "ev_013",
+          "text": "协助团队梳理算法文档、数据集规范"
+        },
+        {
+          "field": "skills",
+          "id": "ev_014",
+          "text": "协助排查模型训练过程中出现的基础数据报错、拟合异常等简单问题，配合工程师完成模型小幅优化与迭代"
+        },
+        {
+          "field": "capabilities",
+          "id": "ev_015",
+          "text": "具备扎实的算法逻辑思维，对AI技术敏感度高，学习迭代能力强"
+        },
+        {
+          "field": "capabilities",
+          "id": "ev_016",
+          "text": "精通AI数据集全流程处理，掌握数据清洗、数据增强、样本筛选、模型效果评估等基础技能"
+        },
+        {
+          "field": "capabilities",
+          "id": "ev_017",
+          "text": "能够严谨完成模型实验、数据核验、文档梳理等研发辅助工作"
+        },
+        {
+          "field": "achievements",
+          "id": "ev_018",
+          "text": "持续负责团队AI训练数据集预处理工作，优化数据筛选流程，有效降低数据集异常率，为模型基础训练提供稳定数据支撑"
+        },
+        {
+          "field": "achievements",
+          "id": "ev_019",
+          "text": "协助完成十余次基础机器学习模型训练与参数调试实验，整理完整实验台账，助力团队完成基础算法迭代验证"
+        },
+        {
+          "field": "achievements",
+          "id": "ev_020",
+          "text": "梳理标准化数据集处理规范与基础模型训练流程，简化新人上手步骤，小幅提升团队基础AI研发工作效率"
+        }
+      ],
+      "experience": [
+        {
+          "company": "XX智能科技有限公司",
+          "description": "- AI数据集预处理与优化：协助算法团队开展AI模型训练数据处理工作，负责图像、文本数据集的清洗、去重、筛选与标准化处理，执行数据增强、样本分类操作，修正异常数据，保障数据集基础质量，适配模型训练基础要求。\n- 基础模型训练与测试：配合算法工程师使用Python及PyTorch框架完成简单分类、回归模型的训练实操，协助调整基础参数、迭代训练轮次，记录训练损失值、准确率等核心指标，完成基础模型效果验证。\n- 算法实验与报告整理：跟进基础AI算法复现实验，对比不同参数、样本集下的模型效果，整理实验数据、记录问题与优化思路，协助撰写基础算法测试报告与技术台账。\n- AI技术跟进与资料整理：日常跟进主流开源AI模型、基础算法迭代动态，收集行业基础技术资料，协助团队梳理算法文档、数据集规范，完成研发团队基础技术支撑工作。\n- 问题排查与协助迭代：协助排查模型训练过程中出现的基础数据报错、拟合异常等简单问题，配合工程师完成模型小幅优化与迭代，保障基础AI实验工作顺利推进。",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "industry": null,
+          "period": "2023.07-至今",
+          "role": "AI算法助理"
+        }
+      ],
+      "languages": [],
+      "project_experience": [],
+      "projects": [],
+      "requirements": [],
+      "responsibilities": [],
+      "schema_version": "profile-extraction/v2",
+      "skills": [
+        {
+          "category": "algorithm",
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "level": "proficient",
+          "lskt_label": "S",
+          "name": "机器学习",
+          "raw_name": "机器学习",
+          "years": null
+        },
+        {
+          "category": "programming_language",
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "level": "proficient",
+          "lskt_label": "S",
+          "name": "Python编程",
+          "raw_name": "Python基础编程",
+          "years": null
+        },
+        {
+          "category": "framework",
+          "evidence_ids": [
+            "ev_005"
+          ],
+          "level": "proficient",
+          "lskt_label": "S",
+          "name": "PyTorch框架",
+          "raw_name": "PyTorch基础框架",
+          "years": null
+        },
+        {
+          "category": "data_processing",
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "level": "proficient",
+          "lskt_label": "S",
+          "name": "数据集预处理",
+          "raw_name": "AI数据集预处理",
+          "years": null
+        },
+        {
+          "category": "algorithm",
+          "evidence_ids": [
+            "ev_007"
+          ],
+          "level": "proficient",
+          "lskt_label": "S",
+          "name": "模型训练",
+          "raw_name": "基础模型训练与测试",
+          "years": null
+        },
+        {
+          "category": "data_processing",
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "level": "proficient",
+          "lskt_label": "S",
+          "name": "数据清洗",
+          "raw_name": "数据清洗",
+          "years": null
+        },
+        {
+          "category": "data_processing",
+          "evidence_ids": [
+            "ev_009"
+          ],
+          "level": "proficient",
+          "lskt_label": "S",
+          "name": "样本分类",
+          "raw_name": "样本分类操作",
+          "years": null
+        },
+        {
+          "category": "data_processing",
+          "evidence_ids": [
+            "ev_010"
+          ],
+          "level": "proficient",
+          "lskt_label": "S",
+          "name": "异常数据修正",
+          "raw_name": "修正异常数据",
+          "years": null
+        },
+        {
+          "category": "algorithm",
+          "evidence_ids": [
+            "ev_011"
+          ],
+          "level": "proficient",
+          "lskt_label": "S",
+          "name": "模型效果评估",
+          "raw_name": "模型效果评估",
+          "years": null
+        },
+        {
+          "category": "algorithm",
+          "evidence_ids": [
+            "ev_012"
+          ],
+          "level": "proficient",
+          "lskt_label": "S",
+          "name": "算法实验与报告整理",
+          "raw_name": "算法实验与报告整理",
+          "years": null
+        },
+        {
+          "category": "other",
+          "evidence_ids": [
+            "ev_013"
+          ],
+          "level": "proficient",
+          "lskt_label": "S",
+          "name": "技术文档梳理",
+          "raw_name": "技术文档梳理",
+          "years": null
+        },
+        {
+          "category": "other",
+          "evidence_ids": [
+            "ev_014"
+          ],
+          "level": "proficient",
+          "lskt_label": "S",
+          "name": "问题排查与迭代",
+          "raw_name": "问题排查与协助迭代",
+          "years": null
+        }
+      ],
+      "work_experience": [
+        {
+          "company": "XX智能科技有限公司",
+          "description": "- AI数据集预处理与优化：协助算法团队开展AI模型训练数据处理工作，负责图像、文本数据集的清洗、去重、筛选与标准化处理，执行数据增强、样本分类操作，修正异常数据，保障数据集基础质量，适配模型训练基础要求。\n- 基础模型训练与测试：配合算法工程师使用Python及PyTorch框架完成简单分类、回归模型的训练实操，协助调整基础参数、迭代训练轮次，记录训练损失值、准确率等核心指标，完成基础模型效果验证。\n- 算法实验与报告整理：跟进基础AI算法复现实验，对比不同参数、样本集下的模型效果，整理实验数据、记录问题与优化思路，协助撰写基础算法测试报告与技术台账。\n- AI技术跟进与资料整理：日常跟进主流开源AI模型、基础算法迭代动态，收集行业基础技术资料，协助团队梳理算法文档、数据集规范，完成研发团队基础技术支撑工作。\n- 问题排查与协助迭代：协助排查模型训练过程中出现的基础数据报错、拟合异常等简单问题，配合工程师完成模型小幅优化与迭代，保障基础AI实验工作顺利推进。",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "industry": null,
+          "period": "2023.07-至今",
+          "role": "AI算法助理"
+        }
+      ]
+    },
+    "implementation": "ollama",
+    "model": "qwen2.5:7b",
+    "raw_model_output": "",
+    "reason": "",
+    "schema": "profile-extraction/v2",
+    "state": "available",
+    "validation_error": "",
+    "warnings": []
+  },
+  "normalization": {
+    "implementation": "lightweight_skill_normalizer",
+    "skills": [
+      {
+        "category": "algorithm",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_003"
+        ],
+        "level": "proficient",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "机器学习",
+        "raw_name": "机器学习",
+        "years": null
+      },
+      {
+        "category": "programming_language",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_004"
+        ],
+        "level": "proficient",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "Python基础编程",
+        "raw_name": "Python基础编程",
+        "years": null
+      },
+      {
+        "category": "framework",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_005"
+        ],
+        "level": "proficient",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "PyTorch基础框架",
+        "raw_name": "PyTorch基础框架",
+        "years": null
+      },
+      {
+        "category": "data_processing",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_006"
+        ],
+        "level": "proficient",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "AI数据集预处理",
+        "raw_name": "AI数据集预处理",
+        "years": null
+      },
+      {
+        "category": "algorithm",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_007"
+        ],
+        "level": "proficient",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "基础模型训练与测试",
+        "raw_name": "基础模型训练与测试",
+        "years": null
+      },
+      {
+        "category": "data_processing",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_008"
+        ],
+        "level": "proficient",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "数据清洗",
+        "raw_name": "数据清洗",
+        "years": null
+      },
+      {
+        "category": "data_processing",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_009"
+        ],
+        "level": "proficient",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "样本分类操作",
+        "raw_name": "样本分类操作",
+        "years": null
+      },
+      {
+        "category": "data_processing",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_010"
+        ],
+        "level": "proficient",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "修正异常数据",
+        "raw_name": "修正异常数据",
+        "years": null
+      },
+      {
+        "category": "algorithm",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_011"
+        ],
+        "level": "proficient",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "模型效果评估",
+        "raw_name": "模型效果评估",
+        "years": null
+      },
+      {
+        "category": "algorithm",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_012"
+        ],
+        "level": "proficient",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "算法实验与报告整理",
+        "raw_name": "算法实验与报告整理",
+        "years": null
+      },
+      {
+        "category": "other",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_013"
+        ],
+        "level": "proficient",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "技术文档梳理",
+        "raw_name": "技术文档梳理",
+        "years": null
+      },
+      {
+        "category": "other",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_014"
+        ],
+        "level": "proficient",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "问题排查与协助迭代",
+        "raw_name": "问题排查与协助迭代",
+        "years": null
+      }
+    ],
+    "state": "available",
+    "warnings": []
+  },
+  "profile": {
+    "artifacts": {
+      "profile_json": "data\\structured\\profiles\\candidate\\candidate_profile_d1b88dab9d6f4198b758bbc331a8a8bc.json",
+      "schema_version": "profile-extraction/v2",
+      "storage": "filesystem"
+    },
+    "attributes": {
+      "candidate": {
+        "current_title": null,
+        "location": null,
+        "name": null,
+        "years_of_experience": null
+      },
+      "capabilities": [
+        {
+          "description": "具备扎实的算法逻辑思维，对AI技术敏感度高，学习迭代能力强",
+          "evidence_ids": [
+            "ev_015"
+          ],
+          "level": "proficient",
+          "name": "算法逻辑思维"
+        },
+        {
+          "description": "精通AI数据集全流程处理，掌握数据清洗、数据增强、样本筛选、模型效果评估等基础技能",
+          "evidence_ids": [
+            "ev_016"
+          ],
+          "level": "proficient",
+          "name": "数据处理能力"
+        },
+        {
+          "description": "能够严谨完成模型实验、数据核验、文档梳理等研发辅助工作",
+          "evidence_ids": [
+            "ev_017"
+          ],
+          "level": "proficient",
+          "name": "技术文档整理能力"
+        }
+      ],
+      "career_intent": {
+        "target_industry": null,
+        "target_location": null,
+        "target_position": "AI算法工程师（入门）"
+      },
+      "education": [
+        {
+          "degree": "大专",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "major": "人工智能技术应用",
+          "period": "2020.09-2023.06",
+          "school": "XX职业技术学院"
+        }
+      ],
+      "experience": [
+        {
+          "company": "XX智能科技有限公司",
+          "description": "- AI数据集预处理与优化：协助算法团队开展AI模型训练数据处理工作，负责图像、文本数据集的清洗、去重、筛选与标准化处理，执行数据增强、样本分类操作，修正异常数据，保障数据集基础质量，适配模型训练基础要求。\n- 基础模型训练与测试：配合算法工程师使用Python及PyTorch框架完成简单分类、回归模型的训练实操，协助调整基础参数、迭代训练轮次，记录训练损失值、准确率等核心指标，完成基础模型效果验证。\n- 算法实验与报告整理：跟进基础AI算法复现实验，对比不同参数、样本集下的模型效果，整理实验数据、记录问题与优化思路，协助撰写基础算法测试报告与技术台账。\n- AI技术跟进与资料整理：日常跟进主流开源AI模型、基础算法迭代动态，收集行业基础技术资料，协助团队梳理算法文档、数据集规范，完成研发团队基础技术支撑工作。\n- 问题排查与协助迭代：协助排查模型训练过程中出现的基础数据报错、拟合异常等简单问题，配合工程师完成模型小幅优化与迭代，保障基础AI实验工作顺利推进。",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "industry": null,
+          "period": "2023.07-至今",
+          "role": "AI算法助理"
+        }
+      ],
+      "profile_schema": "profile-extraction/v2",
+      "projects": [],
+      "resume_profile": {
+        "achievements": [
+          {
+            "description": "有效降低数据集异常率，为模型基础训练提供稳定数据支撑",
+            "evidence_ids": [
+              "ev_018"
+            ],
+            "name": "持续负责团队AI训练数据集预处理工作，优化数据筛选流程"
+          },
+          {
+            "description": "整理完整实验台账，助力团队完成基础算法迭代验证",
+            "evidence_ids": [
+              "ev_019"
+            ],
+            "name": "协助完成十余次基础机器学习模型训练与参数调试实验"
+          },
+          {
+            "description": "简化新人上手步骤，小幅提升团队基础AI研发工作效率",
+            "evidence_ids": [
+              "ev_020"
+            ],
+            "name": "梳理标准化数据集处理规范与基础模型训练流程"
+          }
+        ],
+        "candidate": {
+          "current_title": null,
+          "location": null,
+          "name": null,
+          "years_of_experience": null
+        },
+        "capabilities": [
+          {
+            "description": "具备扎实的算法逻辑思维，对AI技术敏感度高，学习迭代能力强",
+            "evidence_ids": [
+              "ev_015"
+            ],
+            "level": "proficient",
+            "name": "算法逻辑思维"
+          },
+          {
+            "description": "精通AI数据集全流程处理，掌握数据清洗、数据增强、样本筛选、模型效果评估等基础技能",
+            "evidence_ids": [
+              "ev_016"
+            ],
+            "level": "proficient",
+            "name": "数据处理能力"
+          },
+          {
+            "description": "能够严谨完成模型实验、数据核验、文档梳理等研发辅助工作",
+            "evidence_ids": [
+              "ev_017"
+            ],
+            "level": "proficient",
+            "name": "技术文档整理能力"
+          }
+        ],
+        "career_intent": {
+          "target_industry": null,
+          "target_location": null,
+          "target_position": "AI算法工程师（入门）"
+        },
+        "certificates": [],
+        "document_type": "resume",
+        "education": [
+          {
+            "degree": "大专",
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "major": "人工智能技术应用",
+            "period": "2020.09-2023.06",
+            "school": "XX职业技术学院"
+          }
+        ],
+        "languages": [],
+        "project_experience": [],
+        "schema_version": "profile-extraction/v2",
+        "skills": [
+          {
+            "category": "algorithm",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_003"
+            ],
+            "level": "proficient",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "机器学习",
+            "raw_name": "机器学习",
+            "years": null
+          },
+          {
+            "category": "programming_language",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_004"
+            ],
+            "level": "proficient",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "Python基础编程",
+            "raw_name": "Python基础编程",
+            "years": null
+          },
+          {
+            "category": "framework",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_005"
+            ],
+            "level": "proficient",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "PyTorch基础框架",
+            "raw_name": "PyTorch基础框架",
+            "years": null
+          },
+          {
+            "category": "data_processing",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_006"
+            ],
+            "level": "proficient",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "AI数据集预处理",
+            "raw_name": "AI数据集预处理",
+            "years": null
+          },
+          {
+            "category": "algorithm",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_007"
+            ],
+            "level": "proficient",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "基础模型训练与测试",
+            "raw_name": "基础模型训练与测试",
+            "years": null
+          },
+          {
+            "category": "data_processing",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_008"
+            ],
+            "level": "proficient",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "数据清洗",
+            "raw_name": "数据清洗",
+            "years": null
+          },
+          {
+            "category": "data_processing",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_009"
+            ],
+            "level": "proficient",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "样本分类操作",
+            "raw_name": "样本分类操作",
+            "years": null
+          },
+          {
+            "category": "data_processing",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_010"
+            ],
+            "level": "proficient",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "修正异常数据",
+            "raw_name": "修正异常数据",
+            "years": null
+          },
+          {
+            "category": "algorithm",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_011"
+            ],
+            "level": "proficient",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "模型效果评估",
+            "raw_name": "模型效果评估",
+            "years": null
+          },
+          {
+            "category": "algorithm",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_012"
+            ],
+            "level": "proficient",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "算法实验与报告整理",
+            "raw_name": "算法实验与报告整理",
+            "years": null
+          },
+          {
+            "category": "other",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_013"
+            ],
+            "level": "proficient",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "技术文档梳理",
+            "raw_name": "技术文档梳理",
+            "years": null
+          },
+          {
+            "category": "other",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_014"
+            ],
+            "level": "proficient",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "问题排查与协助迭代",
+            "raw_name": "问题排查与协助迭代",
+            "years": null
+          }
+        ],
+        "work_experience": [
+          {
+            "company": "XX智能科技有限公司",
+            "description": "- AI数据集预处理与优化：协助算法团队开展AI模型训练数据处理工作，负责图像、文本数据集的清洗、去重、筛选与标准化处理，执行数据增强、样本分类操作，修正异常数据，保障数据集基础质量，适配模型训练基础要求。\n- 基础模型训练与测试：配合算法工程师使用Python及PyTorch框架完成简单分类、回归模型的训练实操，协助调整基础参数、迭代训练轮次，记录训练损失值、准确率等核心指标，完成基础模型效果验证。\n- 算法实验与报告整理：跟进基础AI算法复现实验，对比不同参数、样本集下的模型效果，整理实验数据、记录问题与优化思路，协助撰写基础算法测试报告与技术台账。\n- AI技术跟进与资料整理：日常跟进主流开源AI模型、基础算法迭代动态，收集行业基础技术资料，协助团队梳理算法文档、数据集规范，完成研发团队基础技术支撑工作。\n- 问题排查与协助迭代：协助排查模型训练过程中出现的基础数据报错、拟合异常等简单问题，配合工程师完成模型小幅优化与迭代，保障基础AI实验工作顺利推进。",
+            "evidence_ids": [
+              "ev_002"
+            ],
+            "industry": null,
+            "period": "2023.07-至今",
+            "role": "AI算法助理"
+          }
+        ]
+      },
+      "skills": [
+        {
+          "category": "algorithm",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "level": "proficient",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "机器学习",
+          "raw_name": "机器学习",
+          "years": null
+        },
+        {
+          "category": "programming_language",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "level": "proficient",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "Python基础编程",
+          "raw_name": "Python基础编程",
+          "years": null
+        },
+        {
+          "category": "framework",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_005"
+          ],
+          "level": "proficient",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "PyTorch基础框架",
+          "raw_name": "PyTorch基础框架",
+          "years": null
+        },
+        {
+          "category": "data_processing",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "level": "proficient",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "AI数据集预处理",
+          "raw_name": "AI数据集预处理",
+          "years": null
+        },
+        {
+          "category": "algorithm",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_007"
+          ],
+          "level": "proficient",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "基础模型训练与测试",
+          "raw_name": "基础模型训练与测试",
+          "years": null
+        },
+        {
+          "category": "data_processing",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "level": "proficient",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "数据清洗",
+          "raw_name": "数据清洗",
+          "years": null
+        },
+        {
+          "category": "data_processing",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_009"
+          ],
+          "level": "proficient",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "样本分类操作",
+          "raw_name": "样本分类操作",
+          "years": null
+        },
+        {
+          "category": "data_processing",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_010"
+          ],
+          "level": "proficient",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "修正异常数据",
+          "raw_name": "修正异常数据",
+          "years": null
+        },
+        {
+          "category": "algorithm",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_011"
+          ],
+          "level": "proficient",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "模型效果评估",
+          "raw_name": "模型效果评估",
+          "years": null
+        },
+        {
+          "category": "algorithm",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_012"
+          ],
+          "level": "proficient",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "算法实验与报告整理",
+          "raw_name": "算法实验与报告整理",
+          "years": null
+        },
+        {
+          "category": "other",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_013"
+          ],
+          "level": "proficient",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "技术文档梳理",
+          "raw_name": "技术文档梳理",
+          "years": null
+        },
+        {
+          "category": "other",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_014"
+          ],
+          "level": "proficient",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "问题排查与协助迭代",
+          "raw_name": "问题排查与协助迭代",
+          "years": null
+        }
+      ],
+      "target_position": "AI算法工程师（入门）"
+    },
+    "created_at": "2026-08-06T13:02:11Z",
+    "evidence": [
+      {
+        "field": "education",
+        "id": "ev_001",
+        "text": "XX职业技术学院｜人工智能技术应用｜2020.09-2023.06｜大专"
+      },
+      {
+        "field": "work_experience",
+        "id": "ev_002",
+        "text": "- AI数据集预处理与优化：协助算法团队开展AI模型训练数据处理工作，负责图像、文本数据集的清洗、去重、筛选与标准化处理，执行数据增强、样本分类操作，修正异常数据，保障数据集基础质量，适配模型训练基础要求。\n- 基础模型训练与测试：配合算法"
+      },
+      {
+        "field": "skills",
+        "id": "ev_003",
+        "text": "熟悉机器学习、深度学习基础原理"
+      },
+      {
+        "field": "skills",
+        "id": "ev_004",
+        "text": "Pandas、Numpy数据处理工具"
+      },
+      {
+        "field": "skills",
+        "id": "ev_005",
+        "text": "熟悉PyTorch基础框架"
+      },
+      {
+        "field": "skills",
+        "id": "ev_006",
+        "text": "负责图像、文本数据集的清洗、去重、筛选与标准化处理，执行数据增强、样本分类操作"
+      },
+      {
+        "field": "skills",
+        "id": "ev_007",
+        "text": "配合算法工程师使用Python及PyTorch框架完成简单分类、回归模型的训练实操，协助调整基础参数、迭代训练轮次"
+      },
+      {
+        "field": "skills",
+        "id": "ev_008",
+        "text": "负责图像、文本数据集的清洗、去重、筛选与标准化处理"
+      },
+      {
+        "field": "skills",
+        "id": "ev_009",
+        "text": "执行数据增强、样本分类操作"
+      },
+      {
+        "field": "skills",
+        "id": "ev_010",
+        "text": "修正异常数据，保障数据集基础质量"
+      },
+      {
+        "field": "skills",
+        "id": "ev_011",
+        "text": "记录训练损失值、准确率等核心指标，完成基础模型效果验证"
+      },
+      {
+        "field": "skills",
+        "id": "ev_012",
+        "text": "跟进基础AI算法复现实验，对比不同参数、样本集下的模型效果，整理实验数据、记录问题与优化思路"
+      },
+      {
+        "field": "skills",
+        "id": "ev_013",
+        "text": "协助团队梳理算法文档、数据集规范"
+      },
+      {
+        "field": "skills",
+        "id": "ev_014",
+        "text": "协助排查模型训练过程中出现的基础数据报错、拟合异常等简单问题，配合工程师完成模型小幅优化与迭代"
+      },
+      {
+        "field": "capabilities",
+        "id": "ev_015",
+        "text": "具备扎实的算法逻辑思维，对AI技术敏感度高，学习迭代能力强"
+      },
+      {
+        "field": "capabilities",
+        "id": "ev_016",
+        "text": "精通AI数据集全流程处理，掌握数据清洗、数据增强、样本筛选、模型效果评估等基础技能"
+      },
+      {
+        "field": "capabilities",
+        "id": "ev_017",
+        "text": "能够严谨完成模型实验、数据核验、文档梳理等研发辅助工作"
+      },
+      {
+        "field": "achievements",
+        "id": "ev_018",
+        "text": "持续负责团队AI训练数据集预处理工作，优化数据筛选流程，有效降低数据集异常率，为模型基础训练提供稳定数据支撑"
+      },
+      {
+        "field": "achievements",
+        "id": "ev_019",
+        "text": "协助完成十余次基础机器学习模型训练与参数调试实验，整理完整实验台账，助力团队完成基础算法迭代验证"
+      },
+      {
+        "field": "achievements",
+        "id": "ev_020",
+        "text": "梳理标准化数据集处理规范与基础模型训练流程，简化新人上手步骤，小幅提升团队基础AI研发工作效率"
+      }
+    ],
+    "id": "candidate_profile_d1b88dab9d6f4198b758bbc331a8a8bc",
+    "implementation": "llm_profile_builder",
+    "profile_type": "candidate",
+    "source_document_id": "doc_dd39e8e46933499abcfff5b3465c4c82",
+    "state": "available",
+    "warnings": []
+  },
+  "schema_version": "profile-extraction/v2",
+  "source_document": {
+    "char_count": 1549,
+    "content_digest": "c8dab65553e349643647c6e7510277bf4e83b2f9bca8e079c6f19eb3a6a936b8",
+    "created_at": "2026-08-06T13:00:47Z",
+    "document_type": "resume",
+    "id": "doc_dd39e8e46933499abcfff5b3465c4c82",
+    "metadata": {
+      "candidate_name": "XXX｜年龄：23岁｜学历：大专",
+      "display_name": "XXX｜年龄：23岁｜学历：大专",
+      "education": "大专",
+      "skills": [
+        "求职入门级",
+        "AI",
+        "算法工程师岗位",
+        "具备人工智能专业",
+        "理论基础",
+        "熟悉机器学习",
+        "深度学习基础原理",
+        "掌握",
+        "Python",
+        "基础编程与",
+        "数据集预处理技能",
+        "可协助团队完成模",
+        "型训练",
+        "数据处理",
+        "算法测试等基础",
+        "研发工作",
+        "愿意深耕",
+        "算法领域持续学习",
+        "进阶",
+        "专业技能",
+        "中度及格匹配",
+        "相关",
+        "研发实操",
+        "精通",
+        "数据集全流程处理",
+        "掌握数据清洗",
+        "数据增强",
+        "样本筛选",
+        "模型效果评估等基",
+        "础技能"
+      ]
+    },
+    "source": {
+      "source_system": "manual"
+    },
+    "storage": "memory"
+  }
+}

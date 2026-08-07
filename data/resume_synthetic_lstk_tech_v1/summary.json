@@ -1,0 +1,36 @@
+{
+  "annotation_count": 31728,
+  "annotation_record_count": 3000,
+  "category_counts": {
+    "K": 10222,
+    "L": 322,
+    "S": 7677,
+    "T": 1409,
+    "Tech": 12098
+  },
+  "entity_candidate_count": 263,
+  "files": {
+    "annotations.jsonl": 3000,
+    "entity_candidates.jsonl": 263,
+    "graph_edges.jsonl": 63456,
+    "graph_nodes.jsonl": 6263,
+    "resume_profiles.jsonl": 3000,
+    "sentence_annotations.jsonl": 3000,
+    "summary.json": 1
+  },
+  "generated_at": "2026-07-06T14:38:52+00:00",
+  "graph_edge_count": 63456,
+  "graph_node_count": 6263,
+  "relation_type_counts": {
+    "HAS_KNOWLEDGE": 10222,
+    "HAS_LANGUAGE": 322,
+    "HAS_SKILL": 7677,
+    "HAS_TECHNOLOGY": 12098,
+    "HAS_TRANSVERSAL": 1409
+  },
+  "resume_count": 3000,
+  "role_counts": {
+    "owned": 31728
+  },
+  "schema_version": "resume-synthetic-lstk-tech/v1"
+}

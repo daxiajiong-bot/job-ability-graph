@@ -1,0 +1,64 @@
+{
+  "doc_id": "doc_2280aef4e78c8cea",
+  "edges": [
+    {
+      "created_at": "2026-08-05T11:51:24Z",
+      "doc_id": "doc_2280aef4e78c8cea",
+      "edge_id": "edge_doc_2280aef4e78c8cea_v1_contains_0001",
+      "evidence": [
+        {
+          "chunk_id": "doc_2280aef4e78c8cea_v1_chunk_0001",
+          "content_hash": "2280aef4e78c8cea71fb470561804d4a071958dbbc6caab7f9bc17dfa3844b21",
+          "created_at": "2026-08-05T11:51:24Z",
+          "doc_id": "doc_2280aef4e78c8cea",
+          "end_char": 200,
+          "evidence_id": "ev_doc_2280aef4e78c8cea_v1_chunk_0001",
+          "quote": "- 负责公司全岗位招聘工作，梳理招聘需求，发布招聘信息、筛选简历、邀约面试、组织复试、跟进入职，完成各部门招聘指标，保障人员及时补位。\n- 负责员工入离职、转正、调岗、劳动合同签订、社保公积金增减员、考勤核算、薪资核对等人事基础手续办理，建立完善员工人事档案。\n- 负责公司员工考勤管理、排班统计、休假审批、异常考勤核对，定期输出考勤报表，规范公司考勤管理制度落地执行。\n- 统筹公司员工培训工作，新",
+          "raw_path": "data\\raw\\doc_2280aef4e78c8cea\\v1\\doc_a60383db823d4e8d8221faaf7029de64.txt",
+          "source_field": "chunk_text",
+          "start_char": 0,
+          "version": 1
+        }
+      ],
+      "evidence_ids": [
+        "ev_doc_2280aef4e78c8cea_v1_chunk_0001"
+      ],
+      "properties": {
+        "sequence": 1
+      },
+      "relation_type": "CONTAINS_CHUNK",
+      "source_id": "document:doc_2280aef4e78c8cea:v1",
+      "target_id": "chunk:doc_2280aef4e78c8cea_v1_chunk_0001",
+      "version": 1
+    }
+  ],
+  "nodes": [
+    {
+      "created_at": "2026-08-05T11:51:24Z",
+      "doc_id": "doc_2280aef4e78c8cea",
+      "label": "Document",
+      "node_id": "document:doc_2280aef4e78c8cea:v1",
+      "properties": {
+        "content_hash": "2280aef4e78c8cea71fb470561804d4a071958dbbc6caab7f9bc17dfa3844b21",
+        "document_type": "jd",
+        "parser": "plain_text_parser",
+        "raw_path": "data\\raw\\doc_2280aef4e78c8cea\\v1\\doc_a60383db823d4e8d8221faaf7029de64.txt"
+      },
+      "version": 1
+    },
+    {
+      "created_at": "2026-08-05T11:51:24Z",
+      "doc_id": "doc_2280aef4e78c8cea",
+      "label": "Chunk",
+      "node_id": "chunk:doc_2280aef4e78c8cea_v1_chunk_0001",
+      "properties": {
+        "chunk_id": "doc_2280aef4e78c8cea_v1_chunk_0001",
+        "end_char": 700,
+        "sequence": 1,
+        "start_char": 0
+      },
+      "version": 1
+    }
+  ],
+  "version": 1
+}

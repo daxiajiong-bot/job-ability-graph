@@ -1,0 +1,401 @@
+{
+  "input_count": 3000,
+  "kept_count": 2545,
+  "kept_ratio": 0.8483,
+  "reason_counts": {
+    "aigc_business_or_operations_role": 23,
+    "creative_or_content_aigc_role": 233,
+    "hard_rejected_non_target_title": 88,
+    "non_technical_business_role": 111,
+    "strong_technical_title": 1782,
+    "target_domain_product_or_solution_role": 95,
+    "target_domain_signal": 668
+  },
+  "rejected_count": 455,
+  "sample_rejected_titles": [
+    {
+      "industry": "文化艺术/娱乐",
+      "job_id": 40872173609,
+      "job_title": "AIGC短剧制作/导演/编导/高级抽卡师",
+      "matched_terms": [
+        "AIGC",
+        "aigc",
+        "导演",
+        "漫剧",
+        "电影",
+        "电视剧",
+        "短剧",
+        "编导"
+      ],
+      "reason": "creative_or_content_aigc_role"
+    },
+    {
+      "industry": "货运物流",
+      "job_id": 40862311001,
+      "job_title": "AIGC编导",
+      "matched_terms": [
+        "AIGC",
+        "aigc",
+        "短视频",
+        "编导"
+      ],
+      "reason": "creative_or_content_aigc_role"
+    },
+    {
+      "industry": "互联网生活服务(O2O)",
+      "job_id": 40830116609,
+      "job_title": "用增广告创意AIGC产品经理",
+      "matched_terms": [
+        "AIGC",
+        "aigc",
+        "广告创意"
+      ],
+      "reason": "creative_or_content_aigc_role"
+    },
+    {
+      "industry": "人力资源",
+      "job_id": 40848671205,
+      "job_title": "AIGC产品运营",
+      "matched_terms": [
+        "AIGC",
+        "aigc",
+        "运营"
+      ],
+      "reason": "aigc_business_or_operations_role"
+    },
+    {
+      "industry": "教育科技/教育软件",
+      "job_id": 40893210413,
+      "job_title": "3d模型师（AIGC）",
+      "matched_terms": [
+        "3D模型",
+        "3d模型",
+        "AIGC",
+        "aigc",
+        "模型师"
+      ],
+      "reason": "creative_or_content_aigc_role"
+    },
+    {
+      "industry": "人力资源",
+      "job_id": 40868179605,
+      "job_title": "AIGC设计师/AIGC训练师（设计师）",
+      "matched_terms": [
+        "AIGC",
+        "AIGC设计",
+        "aigc",
+        "设计师"
+      ],
+      "reason": "creative_or_content_aigc_role"
+    },
+    {
+      "industry": "广告/公关/营销",
+      "job_id": 40948792908,
+      "job_title": "AIGC讲师",
+      "matched_terms": [
+        "讲师"
+      ],
+      "reason": "hard_rejected_non_target_title"
+    },
+    {
+      "industry": "人工智能",
+      "job_id": 40786079706,
+      "job_title": "AIGC管培生",
+      "matched_terms": [
+        "管培生"
+      ],
+      "reason": "hard_rejected_non_target_title"
+    },
+    {
+      "industry": "人力资源",
+      "job_id": 40847962705,
+      "job_title": "直播礼物设计师（AIGC）",
+      "matched_terms": [
+        "AIGC",
+        "aigc",
+        "直播",
+        "设计师"
+      ],
+      "reason": "creative_or_content_aigc_role"
+    },
+    {
+      "industry": "新闻/出版",
+      "job_id": 40638900514,
+      "job_title": "AIGC 绘画设计师+包住+急聘",
+      "matched_terms": [
+        "AIGC",
+        "aigc",
+        "新媒体",
+        "绘画",
+        "美工",
+        "视觉设计",
+        "设计师"
+      ],
+      "reason": "creative_or_content_aigc_role"
+    },
+    {
+      "industry": "食品/饮品/烟酒制造",
+      "job_id": 40852458407,
+      "job_title": "AIGC导演",
+      "matched_terms": [
+        "AIGC",
+        "aigc",
+        "导演"
+      ],
+      "reason": "creative_or_content_aigc_role"
+    },
+    {
+      "industry": "医疗设备/器械/耗材",
+      "job_id": 40906241003,
+      "job_title": "AIGC视频工程师",
+      "matched_terms": [
+        "AIGC",
+        "aigc",
+        "短视频"
+      ],
+      "reason": "creative_or_content_aigc_role"
+    },
+    {
+      "industry": "人力资源",
+      "job_id": 40872704614,
+      "job_title": "运营设计师（AIGC方向）",
+      "matched_terms": [
+        "AIGC",
+        "aigc",
+        "设计师"
+      ],
+      "reason": "creative_or_content_aigc_role"
+    },
+    {
+      "industry": "人力资源",
+      "job_id": 40873772105,
+      "job_title": "AIGC产品（短视频&直播方向）",
+      "matched_terms": [
+        "AIGC",
+        "aigc",
+        "直播",
+        "短视频"
+      ],
+      "reason": "creative_or_content_aigc_role"
+    },
+    {
+      "industry": "医疗设备/器械/耗材",
+      "job_id": 40906245303,
+      "job_title": "医美AIGC视频平台负责人",
+      "matched_terms": [
+        "视频平台负责人"
+      ],
+      "reason": "hard_rejected_non_target_title"
+    },
+    {
+      "industry": "人力资源",
+      "job_id": 40866753310,
+      "job_title": "AIGC设计/模型训练",
+      "matched_terms": [
+        "AIGC",
+        "AIGC设计",
+        "aigc"
+      ],
+      "reason": "creative_or_content_aigc_role"
+    },
+    {
+      "industry": "人力资源",
+      "job_id": 40844109005,
+      "job_title": "AIGC产品（短视频&直播方向）",
+      "matched_terms": [
+        "AIGC",
+        "aigc",
+        "直播",
+        "短视频"
+      ],
+      "reason": "creative_or_content_aigc_role"
+    },
+    {
+      "industry": "产业互联网平台",
+      "job_id": 41016058404,
+      "job_title": "AIGC项目经理",
+      "matched_terms": [
+        "AIGC项目经理"
+      ],
+      "reason": "hard_rejected_non_target_title"
+    },
+    {
+      "industry": "广告/公关/营销",
+      "job_id": 40993956002,
+      "job_title": "AIGC短视频创作讲师",
+      "matched_terms": [
+        "讲师"
+      ],
+      "reason": "hard_rejected_non_target_title"
+    },
+    {
+      "industry": "通信/网络设备",
+      "job_id": 40879836902,
+      "job_title": "AIGC视频制作师 (MJ009376)",
+      "matched_terms": [
+        "AIGC",
+        "aigc",
+        "电影",
+        "短视频",
+        "视频制作"
+      ],
+      "reason": "creative_or_content_aigc_role"
+    },
+    {
+      "industry": "人工智能",
+      "job_id": 40860939814,
+      "job_title": "AIGC画师",
+      "matched_terms": [
+        "AIGC",
+        "aigc",
+        "画师",
+        "视觉设计",
+        "设计师"
+      ],
+      "reason": "creative_or_content_aigc_role"
+    },
+    {
+      "industry": "广播/电视/影视",
+      "job_id": 40913639112,
+      "job_title": "AIGC短剧导演",
+      "matched_terms": [
+        "AIGC",
+        "aigc",
+        "导演",
+        "电影",
+        "电视剧",
+        "短剧",
+        "短视频"
+      ],
+      "reason": "creative_or_content_aigc_role"
+    },
+    {
+      "industry": "人工智能",
+      "job_id": 40998251904,
+      "job_title": "AIGC课程销售/接受无经验",
+      "matched_terms": [
+        "接受无经验"
+      ],
+      "reason": "hard_rejected_non_target_title"
+    },
+    {
+      "industry": "房地产开发经营",
+      "job_id": 40784191006,
+      "job_title": "AI视频创作师 / AIGC视频制作人（地产方向）",
+      "matched_terms": [
+        "AIGC",
+        "AI视频",
+        "aigc",
+        "短视频",
+        "视频创作",
+        "视频制作"
+      ],
+      "reason": "creative_or_content_aigc_role"
+    },
+    {
+      "industry": "人工智能",
+      "job_id": 41017974104,
+      "job_title": "AIGC成人教育销售主管",
+      "matched_terms": [
+        "AIGC",
+        "aigc",
+        "成人教育销售",
+        "销售主管"
+      ],
+      "reason": "creative_or_content_aigc_role"
+    },
+    {
+      "industry": "课外培训与资格考试",
+      "job_id": 40816918201,
+      "job_title": "AIGC课程销售",
+      "matched_terms": [
+        "AIGC",
+        "aigc",
+        "课程销售"
+      ],
+      "reason": "creative_or_content_aigc_role"
+    },
+    {
+      "industry": "人工智能",
+      "job_id": 41017388104,
+      "job_title": "AIGC课程顾问（五险一金）",
+      "matched_terms": [
+        "课程顾问"
+      ],
+      "reason": "hard_rejected_non_target_title"
+    },
+    {
+      "industry": "课外培训与资格考试",
+      "job_id": 40816920001,
+      "job_title": "课程顾问/AIGC培训课程",
+      "matched_terms": [
+        "课程顾问"
+      ],
+      "reason": "hard_rejected_non_target_title"
+    },
+    {
+      "industry": "工程施工",
+      "job_id": 40839834611,
+      "job_title": "AI专员（AIGC方向）",
+      "matched_terms": [
+        "AIGC",
+        "aigc",
+        "专员"
+      ],
+      "reason": "aigc_business_or_operations_role"
+    },
+    {
+      "industry": "人工智能",
+      "job_id": 41009968704,
+      "job_title": "AIGC课程销售（接受无经验/五险一金）",
+      "matched_terms": [
+        "接受无经验"
+      ],
+      "reason": "hard_rejected_non_target_title"
+    }
+  ],
+  "top_kept_industries": {
+    "专用设备制造": 61,
+    "互联网生活服务(O2O)": 28,
+    "产业互联网平台": 119,
+    "人力资源": 137,
+    "人工智能": 183,
+    "仪器仪表": 66,
+    "医疗设备/器械/耗材": 57,
+    "半导体/芯片": 109,
+    "咨询服务": 39,
+    "学术/科研": 48,
+    "工业自动化/机器人": 110,
+    "技术服务": 32,
+    "新能源/燃油整车研发制造": 50,
+    "电力/水利/热力/燃气": 37,
+    "电气机械/电力设备": 59,
+    "船舶/航空/航天/军工": 59,
+    "计算机硬件": 35,
+    "软件/IT服务": 646,
+    "通信/网络设备": 54,
+    "通信工程/技术服务": 27
+  },
+  "top_rejected_industries": {
+    "互联网广告/营销": 10,
+    "互联网生活服务(O2O)": 4,
+    "互联网电商": 6,
+    "产业互联网平台": 35,
+    "人力资源": 49,
+    "人工智能": 49,
+    "咨询服务": 8,
+    "学校/学历教育": 17,
+    "工程施工": 4,
+    "广告/公关/营销": 13,
+    "广播/电视/影视": 43,
+    "教育科技/教育软件": 3,
+    "文化艺术/娱乐": 19,
+    "新闻/出版": 4,
+    "环保": 5,
+    "生物/制药": 4,
+    "计算机硬件": 7,
+    "课外培训与资格考试": 22,
+    "软件/IT服务": 78,
+    "通信/网络设备": 5
+  }
+}

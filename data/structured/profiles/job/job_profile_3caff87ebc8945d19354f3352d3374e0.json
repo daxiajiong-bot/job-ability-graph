@@ -1,0 +1,536 @@
+{
+  "artifact_type": "job_profile",
+  "created_at": "2026-08-06T18:55:03Z",
+  "extraction": {
+    "evidence": [],
+    "fields": {},
+    "implementation": "mock",
+    "model": null,
+    "raw_model_output": "",
+    "reason": "Ollama structured extraction failed: local LLM request failed: timed out",
+    "schema": null,
+    "state": "not_implemented",
+    "validation_error": "local LLM request failed: timed out",
+    "warnings": [
+      "Ollama structured extraction failed: local LLM request failed: timed out"
+    ]
+  },
+  "normalization": {
+    "implementation": "lightweight_skill_normalizer",
+    "skills": [],
+    "state": "not_implemented",
+    "warnings": [
+      "Ollama structured extraction failed: local LLM request failed: timed out"
+    ]
+  },
+  "profile": {
+    "artifacts": {
+      "profile_json": "data\\structured\\profiles\\job\\job_profile_3caff87ebc8945d19354f3352d3374e0.json",
+      "schema_version": "profile-extraction/v2",
+      "storage": "filesystem"
+    },
+    "attributes": {
+      "capabilities": [],
+      "company": {
+        "industry": null,
+        "location": "一线城市",
+        "name": null
+      },
+      "education": [],
+      "employment": {
+        "employment_type": "full_time",
+        "published_at": null,
+        "salary_max": null,
+        "salary_min": null,
+        "salary_range": "9k-16k"
+      },
+      "experience": [],
+      "jd_profile": {
+        "application_scenarios": [],
+        "capabilities": [],
+        "company": {
+          "industry": null,
+          "location": "一线城市",
+          "name": null
+        },
+        "document_type": "jd",
+        "employment": {
+          "employment_type": "full_time",
+          "published_at": null,
+          "salary_max": null,
+          "salary_min": null,
+          "salary_range": "9k-16k"
+        },
+        "evaluation_signals": [],
+        "job": {
+          "department": "人工智能产品研发部",
+          "normalized_title": "AI大模型应用工程师",
+          "seniority": null,
+          "title": "AI大模型应用工程师"
+        },
+        "requirements": [
+          {
+            "evidence_ids": [
+              "ev_014"
+            ],
+            "importance": "preferred",
+            "requirement_type": "education",
+            "text": "大专及以上学历，人工智能、计算机、大数据、软件工程、汉语言、新媒体等相关专业，有无经验均可，有大模型、Prompt优化、AI知识库搭建经验优先。"
+          },
+          {
+            "evidence_ids": [
+              "ev_015"
+            ],
+            "importance": "required",
+            "requirement_type": "skill",
+            "text": "了解大模型基础原理，熟悉Prompt工程基础逻辑，掌握零样本、少样本、思维链等基础提示词优化方法，具备文本调教、模型输出优化能力。"
+          },
+          {
+            "evidence_ids": [
+              "ev_016"
+            ],
+            "importance": "unknown",
+            "requirement_type": "other",
+            "text": "具备基础数据处理、文本标注、语料整理能力，了解知识库搭建、文本切片、向量检索等基础AI应用流程。"
+          },
+          {
+            "evidence_ids": [
+              "ev_017"
+            ],
+            "importance": "unknown",
+            "requirement_type": "skill",
+            "text": "具备良好的逻辑思维、文字功底和问题排查能力，能够精准发现大模型输出问题，针对性迭代优化方案。"
+          },
+          {
+            "evidence_ids": [
+              "ev_018"
+            ],
+            "importance": "required",
+            "requirement_type": "skill",
+            "text": "学习能力强，对AIGC、大模型应用有浓厚兴趣，熟悉主流大模型平台工具，具备独立完成AI应用调试、优化、测试的基础能力。"
+          }
+        ],
+        "responsibilities": [
+          {
+            "action": "",
+            "evidence_ids": [
+              "ev_008"
+            ],
+            "object": "",
+            "text": "负责通用大模型（GPT、文心一言、通义千问等）的落地应用开发，聚焦Prompt工程优化、上下文调试、指令迭代，针对不同业务场景设计高质量提示词，提升大模型输出精准度、逻辑性与实用性。"
+          },
+          {
+            "action": "",
+            "evidence_ids": [
+              "ev_009"
+            ],
+            "object": "",
+            "text": "参与AI知识库搭建与优化，完成行业语料整理、知识切片、向量数据库适配、知识库挂载调试，落地企业智能问答、文本生成、内容解析等AI应用场景。"
+          },
+          {
+            "action": "",
+            "evidence_ids": [
+              "ev_010"
+            ],
+            "object": "",
+            "text": "协助进行大模型微调数据准备、样本筛选、数据清洗工作，整理微调数据集，配合算法团队完成小参数微调、模型效果测试与迭代优化，改善模型场景适配性。"
+          },
+          {
+            "action": "",
+            "evidence_ids": [
+              "ev_011"
+            ],
+            "object": "",
+            "text": "负责AI应用功能测试、效果验收、问题复盘，记录模型幻觉、输出偏差、逻辑漏洞等问题，持续优化Prompt策略与知识库内容，迭代AI应用使用体验。"
+          },
+          {
+            "action": "",
+            "evidence_ids": [
+              "ev_012"
+            ],
+            "object": "",
+            "text": "跟进大模型行业新技术、新应用方案，调研各类开源大模型、AI工具链的落地场景，协助团队输出AI应用落地方案、技术文档与使用规范。"
+          },
+          {
+            "action": "",
+            "evidence_ids": [
+              "ev_013"
+            ],
+            "object": "",
+            "text": "配合产品、开发团队完成AI功能上线、用户反馈收集与功能迭代，保障大模型应用稳定服务于办公、内容、客服、行业赋能等业务场景。"
+          }
+        ],
+        "schema_version": "profile-extraction/v2",
+        "skills": [
+          {
+            "category": "other",
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "importance": "unknown",
+            "lskt_label": "S",
+            "name": "Prompt",
+            "raw_name": "Prompt"
+          },
+          {
+            "category": "ai_model",
+            "evidence_ids": [
+              "ev_002"
+            ],
+            "importance": "unknown",
+            "lskt_label": "S",
+            "name": "AIGC",
+            "raw_name": "AIGC"
+          },
+          {
+            "category": "ai_model",
+            "evidence_ids": [
+              "ev_003"
+            ],
+            "importance": "unknown",
+            "lskt_label": "S",
+            "name": "大模型",
+            "raw_name": "大模型"
+          },
+          {
+            "category": "database",
+            "evidence_ids": [
+              "ev_004"
+            ],
+            "importance": "unknown",
+            "lskt_label": "S",
+            "name": "向量数据库",
+            "raw_name": "向量数据库"
+          },
+          {
+            "category": "database",
+            "evidence_ids": [
+              "ev_005"
+            ],
+            "importance": "unknown",
+            "lskt_label": "S",
+            "name": "知识库",
+            "raw_name": "知识库"
+          },
+          {
+            "category": "other",
+            "evidence_ids": [
+              "ev_006"
+            ],
+            "importance": "unknown",
+            "lskt_label": "S",
+            "name": "数据清洗",
+            "raw_name": "数据清洗"
+          },
+          {
+            "category": "other",
+            "evidence_ids": [
+              "ev_007"
+            ],
+            "importance": "unknown",
+            "lskt_label": "S",
+            "name": "微调",
+            "raw_name": "微调"
+          }
+        ]
+      },
+      "job": {
+        "department": "人工智能产品研发部",
+        "normalized_title": "AI大模型应用工程师",
+        "seniority": null,
+        "title": "AI大模型应用工程师"
+      },
+      "job_title": "AI大模型应用工程师",
+      "profile_schema": "profile-extraction/v2",
+      "projects": [],
+      "requirements": [
+        {
+          "evidence_ids": [
+            "ev_014"
+          ],
+          "importance": "preferred",
+          "requirement_type": "education",
+          "text": "大专及以上学历，人工智能、计算机、大数据、软件工程、汉语言、新媒体等相关专业，有无经验均可，有大模型、Prompt优化、AI知识库搭建经验优先。"
+        },
+        {
+          "evidence_ids": [
+            "ev_015"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "了解大模型基础原理，熟悉Prompt工程基础逻辑，掌握零样本、少样本、思维链等基础提示词优化方法，具备文本调教、模型输出优化能力。"
+        },
+        {
+          "evidence_ids": [
+            "ev_016"
+          ],
+          "importance": "unknown",
+          "requirement_type": "other",
+          "text": "具备基础数据处理、文本标注、语料整理能力，了解知识库搭建、文本切片、向量检索等基础AI应用流程。"
+        },
+        {
+          "evidence_ids": [
+            "ev_017"
+          ],
+          "importance": "unknown",
+          "requirement_type": "skill",
+          "text": "具备良好的逻辑思维、文字功底和问题排查能力，能够精准发现大模型输出问题，针对性迭代优化方案。"
+        },
+        {
+          "evidence_ids": [
+            "ev_018"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "学习能力强，对AIGC、大模型应用有浓厚兴趣，熟悉主流大模型平台工具，具备独立完成AI应用调试、优化、测试的基础能力。"
+        }
+      ],
+      "responsibilities": [
+        {
+          "action": "",
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "object": "",
+          "text": "负责通用大模型（GPT、文心一言、通义千问等）的落地应用开发，聚焦Prompt工程优化、上下文调试、指令迭代，针对不同业务场景设计高质量提示词，提升大模型输出精准度、逻辑性与实用性。"
+        },
+        {
+          "action": "",
+          "evidence_ids": [
+            "ev_009"
+          ],
+          "object": "",
+          "text": "参与AI知识库搭建与优化，完成行业语料整理、知识切片、向量数据库适配、知识库挂载调试，落地企业智能问答、文本生成、内容解析等AI应用场景。"
+        },
+        {
+          "action": "",
+          "evidence_ids": [
+            "ev_010"
+          ],
+          "object": "",
+          "text": "协助进行大模型微调数据准备、样本筛选、数据清洗工作，整理微调数据集，配合算法团队完成小参数微调、模型效果测试与迭代优化，改善模型场景适配性。"
+        },
+        {
+          "action": "",
+          "evidence_ids": [
+            "ev_011"
+          ],
+          "object": "",
+          "text": "负责AI应用功能测试、效果验收、问题复盘，记录模型幻觉、输出偏差、逻辑漏洞等问题，持续优化Prompt策略与知识库内容，迭代AI应用使用体验。"
+        },
+        {
+          "action": "",
+          "evidence_ids": [
+            "ev_012"
+          ],
+          "object": "",
+          "text": "跟进大模型行业新技术、新应用方案，调研各类开源大模型、AI工具链的落地场景，协助团队输出AI应用落地方案、技术文档与使用规范。"
+        },
+        {
+          "action": "",
+          "evidence_ids": [
+            "ev_013"
+          ],
+          "object": "",
+          "text": "配合产品、开发团队完成AI功能上线、用户反馈收集与功能迭代，保障大模型应用稳定服务于办公、内容、客服、行业赋能等业务场景。"
+        }
+      ],
+      "skills": [
+        {
+          "category": "other",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "importance": "unknown",
+          "lskt_label": "S",
+          "name": "Prompt",
+          "raw_name": "Prompt"
+        },
+        {
+          "category": "ai_model",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "importance": "unknown",
+          "lskt_label": "S",
+          "name": "AIGC",
+          "raw_name": "AIGC"
+        },
+        {
+          "category": "ai_model",
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "importance": "unknown",
+          "lskt_label": "S",
+          "name": "大模型",
+          "raw_name": "大模型"
+        },
+        {
+          "category": "database",
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "importance": "unknown",
+          "lskt_label": "S",
+          "name": "向量数据库",
+          "raw_name": "向量数据库"
+        },
+        {
+          "category": "database",
+          "evidence_ids": [
+            "ev_005"
+          ],
+          "importance": "unknown",
+          "lskt_label": "S",
+          "name": "知识库",
+          "raw_name": "知识库"
+        },
+        {
+          "category": "other",
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "importance": "unknown",
+          "lskt_label": "S",
+          "name": "数据清洗",
+          "raw_name": "数据清洗"
+        },
+        {
+          "category": "other",
+          "evidence_ids": [
+            "ev_007"
+          ],
+          "importance": "unknown",
+          "lskt_label": "S",
+          "name": "微调",
+          "raw_name": "微调"
+        }
+      ]
+    },
+    "created_at": "2026-08-06T18:55:03Z",
+    "evidence": [
+      {
+        "field": "skills",
+        "id": "ev_001",
+        "text": "用大模型（GPT、文心一言、通义千问等）的落地应用开发，聚焦Prompt工程优化、上下文调试、指令迭代，针对不同业务场景设计高质量提"
+      },
+      {
+        "field": "skills",
+        "id": "ev_002",
+        "text": "发现大模型输出问题，针对性迭代优化方案。 - 学习能力强，对AIGC、大模型应用有浓厚兴趣，熟悉主流大模型平台工具，具备独立完成"
+      },
+      {
+        "field": "skills",
+        "id": "ev_003",
+        "text": "AI大模型应用工程师招聘JD（强AI核心岗位） 岗位名称：AI大模型应"
+      },
+      {
+        "field": "skills",
+        "id": "ev_004",
+        "text": "- 参与AI知识库搭建与优化，完成行业语料整理、知识切片、向量数据库适配、知识库挂载调试，落地企业智能问答、文本生成、内容解析等"
+      },
+      {
+        "field": "skills",
+        "id": "ev_005",
+        "text": "提示词，提升大模型输出精准度、逻辑性与实用性。 - 参与AI知识库搭建与优化，完成行业语料整理、知识切片、向量数据库适配、知识"
+      },
+      {
+        "field": "skills",
+        "id": "ev_006",
+        "text": "等AI应用场景。 - 协助进行大模型微调数据准备、样本筛选、数据清洗工作，整理微调数据集，配合算法团队完成小参数微调、模型效果测"
+      },
+      {
+        "field": "skills",
+        "id": "ev_007",
+        "text": "问答、文本生成、内容解析等AI应用场景。 - 协助进行大模型微调数据准备、样本筛选、数据清洗工作，整理微调数据集，配合算法团"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_008",
+        "text": "负责通用大模型（GPT、文心一言、通义千问等）的落地应用开发，聚焦Prompt工程优化、上下文调试、指令迭代，针对不同业务场景设计高质量提示词，提升大模型输出精准度、逻辑性与实用性。"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_009",
+        "text": "参与AI知识库搭建与优化，完成行业语料整理、知识切片、向量数据库适配、知识库挂载调试，落地企业智能问答、文本生成、内容解析等AI应用场景。"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_010",
+        "text": "协助进行大模型微调数据准备、样本筛选、数据清洗工作，整理微调数据集，配合算法团队完成小参数微调、模型效果测试与迭代优化，改善模型场景适配性。"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_011",
+        "text": "负责AI应用功能测试、效果验收、问题复盘，记录模型幻觉、输出偏差、逻辑漏洞等问题，持续优化Prompt策略与知识库内容，迭代AI应用使用体验。"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_012",
+        "text": "跟进大模型行业新技术、新应用方案，调研各类开源大模型、AI工具链的落地场景，协助团队输出AI应用落地方案、技术文档与使用规范。"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_013",
+        "text": "配合产品、开发团队完成AI功能上线、用户反馈收集与功能迭代，保障大模型应用稳定服务于办公、内容、客服、行业赋能等业务场景。"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_014",
+        "text": "大专及以上学历，人工智能、计算机、大数据、软件工程、汉语言、新媒体等相关专业，有无经验均可，有大模型、Prompt优化、AI知识库搭建经验优先。"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_015",
+        "text": "了解大模型基础原理，熟悉Prompt工程基础逻辑，掌握零样本、少样本、思维链等基础提示词优化方法，具备文本调教、模型输出优化能力。"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_016",
+        "text": "具备基础数据处理、文本标注、语料整理能力，了解知识库搭建、文本切片、向量检索等基础AI应用流程。"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_017",
+        "text": "具备良好的逻辑思维、文字功底和问题排查能力，能够精准发现大模型输出问题，针对性迭代优化方案。"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_018",
+        "text": "学习能力强，对AIGC、大模型应用有浓厚兴趣，熟悉主流大模型平台工具，具备独立完成AI应用调试、优化、测试的基础能力。"
+      }
+    ],
+    "id": "job_profile_3caff87ebc8945d19354f3352d3374e0",
+    "implementation": "heuristic_profile_builder",
+    "profile_type": "job",
+    "source_document_id": "doc_aa1bb3fe9a0a487fbb29aabbd684cf0f",
+    "state": "available",
+    "warnings": [
+      "Ollama structured extraction failed: local LLM request failed: timed out",
+      "Used heuristic profile extraction because LLM extraction was unavailable."
+    ]
+  },
+  "schema_version": "profile-extraction/v2",
+  "source_document": {
+    "char_count": 924,
+    "content_digest": "90d8afc67cbc35cb1e1fbbc4b418655bcba16124009d619f05f134b24730dc23",
+    "created_at": "2026-08-06T18:50:01Z",
+    "document_type": "jd",
+    "id": "doc_aa1bb3fe9a0a487fbb29aabbd684cf0f",
+    "metadata": {
+      "company_name": "智能问答、文本生成、内容解析等AI应用场景。",
+      "job_title": "AI大模型应用工程师",
+      "location": "一线城市",
+      "salary_range": "9k-16k｜双休、五险一金、项目奖金、技术晋升",
+      "skills": [
+        "任职要求"
+      ],
+      "title": "AI大模型应用工程师"
+    },
+    "source": {
+      "source_system": "manual"
+    },
+    "storage": "memory"
+  }
+}

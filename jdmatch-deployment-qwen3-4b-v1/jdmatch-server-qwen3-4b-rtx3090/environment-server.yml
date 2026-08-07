@@ -1,0 +1,11 @@
+name: jdmatch
+channels:
+  - defaults
+dependencies:
+  - python=3.11
+  - pip>=24
+  - pip:
+      # Install the CUDA 12.6 PyTorch wheel and the bundled project wheel
+      # with the commands in README_SERVER.md.
+      - packaging>=24
+      - ninja>=1.11

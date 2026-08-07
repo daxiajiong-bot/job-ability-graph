@@ -1,0 +1,423 @@
+{
+  "artifact_type": "candidate_profile",
+  "created_at": "2026-08-06T19:39:08Z",
+  "extraction": {
+    "evidence": [
+      {
+        "field": "skills",
+        "id": "ev_001",
+        "text": "Alice Python"
+      },
+      {
+        "field": "skills",
+        "id": "ev_002",
+        "text": "FastAPI"
+      },
+      {
+        "field": "skills",
+        "id": "ev_003",
+        "text": "SQL"
+      },
+      {
+        "field": "skills",
+        "id": "ev_004",
+        "text": "Docker"
+      }
+    ],
+    "fields": {
+      "achievements": [],
+      "candidate": {
+        "current_title": null,
+        "location": null,
+        "name": "Alice",
+        "years_of_experience": 2
+      },
+      "capabilities": [],
+      "career_intent": {
+        "target_industry": null,
+        "target_location": null,
+        "target_position": null
+      },
+      "certificates": [],
+      "document_type": "resume",
+      "education": [],
+      "evidence": [
+        {
+          "field": "skills",
+          "id": "ev_001",
+          "text": "Alice Python"
+        },
+        {
+          "field": "skills",
+          "id": "ev_002",
+          "text": "FastAPI"
+        },
+        {
+          "field": "skills",
+          "id": "ev_003",
+          "text": "SQL"
+        },
+        {
+          "field": "skills",
+          "id": "ev_004",
+          "text": "Docker"
+        }
+      ],
+      "experience": [],
+      "languages": [],
+      "project_experience": [],
+      "projects": [],
+      "requirements": [],
+      "responsibilities": [],
+      "schema_version": "profile-extraction/v2",
+      "skills": [
+        {
+          "category": "programming_language",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "level": "proficient",
+          "lskt_label": "S",
+          "name": "Python",
+          "raw_name": "Python",
+          "years": null
+        },
+        {
+          "category": "framework",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "level": "working",
+          "lskt_label": "S",
+          "name": "FastAPI",
+          "raw_name": "FastAPI",
+          "years": null
+        },
+        {
+          "category": "database",
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "level": "proficient",
+          "lskt_label": "S",
+          "name": "SQL",
+          "raw_name": "SQL",
+          "years": null
+        },
+        {
+          "category": "tool",
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "level": "working",
+          "lskt_label": "S",
+          "name": "Docker",
+          "raw_name": "Docker",
+          "years": null
+        }
+      ],
+      "work_experience": []
+    },
+    "implementation": "ollama",
+    "model": "qwen2.5:7b",
+    "raw_model_output": "",
+    "reason": "",
+    "schema": "profile-extraction/v2",
+    "state": "available",
+    "validation_error": "",
+    "warnings": []
+  },
+  "normalization": {
+    "implementation": "lightweight_skill_normalizer",
+    "skills": [
+      {
+        "category": "programming_language",
+        "esco_preferred_label": "Python (computer programming)",
+        "esco_uri": "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d",
+        "esco_version": "v1.2.1",
+        "evidence_ids": [
+          "ev_001"
+        ],
+        "level": "proficient",
+        "linking_confidence": 1.0,
+        "linking_status": "linked",
+        "lskt_label": "S",
+        "name": "Python (computer programming)",
+        "raw_name": "Python",
+        "years": null
+      },
+      {
+        "category": "framework",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_002"
+        ],
+        "level": "working",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "FastAPI",
+        "raw_name": "FastAPI",
+        "years": null
+      },
+      {
+        "category": "database",
+        "esco_preferred_label": "SQL",
+        "esco_uri": "http://data.europa.eu/esco/skill/598de5b0-5b58-4ea7-8058-a4bc4d18c742",
+        "esco_version": "v1.2.1",
+        "evidence_ids": [
+          "ev_003"
+        ],
+        "level": "proficient",
+        "linking_confidence": 1.0,
+        "linking_status": "linked",
+        "lskt_label": "S",
+        "name": "SQL",
+        "raw_name": "SQL",
+        "years": null
+      },
+      {
+        "category": "tool",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_004"
+        ],
+        "level": "working",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "Docker",
+        "raw_name": "Docker",
+        "years": null
+      }
+    ],
+    "state": "available",
+    "warnings": []
+  },
+  "profile": {
+    "artifacts": {
+      "profile_json": "data\\structured\\profiles\\candidate\\candidate_profile_e6b4aceff76041f38bd94bf26266b0dd.json",
+      "schema_version": "profile-extraction/v2",
+      "storage": "filesystem"
+    },
+    "attributes": {
+      "candidate": {
+        "current_title": null,
+        "location": null,
+        "name": "Alice",
+        "years_of_experience": 2
+      },
+      "capabilities": [],
+      "career_intent": {
+        "target_industry": null,
+        "target_location": null,
+        "target_position": null
+      },
+      "education": [],
+      "experience": [],
+      "profile_schema": "profile-extraction/v2",
+      "projects": [],
+      "resume_profile": {
+        "achievements": [],
+        "candidate": {
+          "current_title": null,
+          "location": null,
+          "name": "Alice",
+          "years_of_experience": 2
+        },
+        "capabilities": [],
+        "career_intent": {
+          "target_industry": null,
+          "target_location": null,
+          "target_position": null
+        },
+        "certificates": [],
+        "document_type": "resume",
+        "education": [],
+        "languages": [],
+        "project_experience": [],
+        "schema_version": "profile-extraction/v2",
+        "skills": [
+          {
+            "category": "programming_language",
+            "esco_preferred_label": "Python (computer programming)",
+            "esco_uri": "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d",
+            "esco_version": "v1.2.1",
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "level": "proficient",
+            "linking_confidence": 1.0,
+            "linking_status": "linked",
+            "lskt_label": "S",
+            "name": "Python (computer programming)",
+            "raw_name": "Python",
+            "years": null
+          },
+          {
+            "category": "framework",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_002"
+            ],
+            "level": "working",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "FastAPI",
+            "raw_name": "FastAPI",
+            "years": null
+          },
+          {
+            "category": "database",
+            "esco_preferred_label": "SQL",
+            "esco_uri": "http://data.europa.eu/esco/skill/598de5b0-5b58-4ea7-8058-a4bc4d18c742",
+            "esco_version": "v1.2.1",
+            "evidence_ids": [
+              "ev_003"
+            ],
+            "level": "proficient",
+            "linking_confidence": 1.0,
+            "linking_status": "linked",
+            "lskt_label": "S",
+            "name": "SQL",
+            "raw_name": "SQL",
+            "years": null
+          },
+          {
+            "category": "tool",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_004"
+            ],
+            "level": "working",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "Docker",
+            "raw_name": "Docker",
+            "years": null
+          }
+        ],
+        "work_experience": []
+      },
+      "skills": [
+        {
+          "category": "programming_language",
+          "esco_preferred_label": "Python (computer programming)",
+          "esco_uri": "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d",
+          "esco_version": "v1.2.1",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "level": "proficient",
+          "linking_confidence": 1.0,
+          "linking_status": "linked",
+          "lskt_label": "S",
+          "name": "Python (computer programming)",
+          "raw_name": "Python",
+          "years": null
+        },
+        {
+          "category": "framework",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "level": "working",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "FastAPI",
+          "raw_name": "FastAPI",
+          "years": null
+        },
+        {
+          "category": "database",
+          "esco_preferred_label": "SQL",
+          "esco_uri": "http://data.europa.eu/esco/skill/598de5b0-5b58-4ea7-8058-a4bc4d18c742",
+          "esco_version": "v1.2.1",
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "level": "proficient",
+          "linking_confidence": 1.0,
+          "linking_status": "linked",
+          "lskt_label": "S",
+          "name": "SQL",
+          "raw_name": "SQL",
+          "years": null
+        },
+        {
+          "category": "tool",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "level": "working",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "Docker",
+          "raw_name": "Docker",
+          "years": null
+        }
+      ],
+      "target_position": null
+    },
+    "created_at": "2026-08-06T19:39:08Z",
+    "evidence": [
+      {
+        "field": "skills",
+        "id": "ev_001",
+        "text": "Alice Python"
+      },
+      {
+        "field": "skills",
+        "id": "ev_002",
+        "text": "FastAPI"
+      },
+      {
+        "field": "skills",
+        "id": "ev_003",
+        "text": "SQL"
+      },
+      {
+        "field": "skills",
+        "id": "ev_004",
+        "text": "Docker"
+      }
+    ],
+    "id": "candidate_profile_e6b4aceff76041f38bd94bf26266b0dd",
+    "implementation": "llm_profile_builder",
+    "profile_type": "candidate",
+    "source_document_id": "doc_7463bc19c37a4b14b18847aa3f6f03fb",
+    "state": "available",
+    "warnings": []
+  },
+  "schema_version": "profile-extraction/v2",
+  "source_document": {
+    "char_count": 49,
+    "content_digest": "f1168548977f4b83e2d732b0303489aaaa2ad3d1b1c14ac2ec3954eff4d3df50",
+    "created_at": "2026-08-06T19:38:59Z",
+    "document_type": "resume",
+    "id": "doc_7463bc19c37a4b14b18847aa3f6f03fb",
+    "metadata": {},
+    "source": {
+      "source_system": "manual"
+    },
+    "storage": "memory"
+  }
+}

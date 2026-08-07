@@ -1,0 +1,150 @@
+{
+  "models": [
+    {
+      "model": "/data/wangxianjiong/models/jdmatch/bge-m3",
+      "adapter": false,
+      "limit": null,
+      "results": [
+        {
+          "split": "validation",
+          "queries": 841,
+          "triplet_diagnostics": {
+            "candidate_pool": "source_triplet_only",
+            "pairwise_p_over_h1_accuracy": 0.7312722948870393,
+            "strict_both_positives_over_h1": 0.5992865636147443,
+            "mrr": 0.9316290130796671,
+            "ndcg_at_3": 0.9368871006027155,
+            "recall": {
+              "1": 0.43162901307966706,
+              "2": 0.7996432818073722,
+              "5": 1.0,
+              "10": 1.0
+            }
+          },
+          "full_split_retrieval": {
+            "candidate_pool": "all_source_triplets_in_evaluated_split",
+            "candidate_documents": 2523,
+            "known_relevant_per_query": 2,
+            "mrr": 0.6262466545460477,
+            "ndcg_at_10": 0.5622265127882552,
+            "mean_known_positive_rank": 29.065992865636147,
+            "recall": {
+              "1": 0.25921521997621877,
+              "2": 0.415576694411415,
+              "5": 0.5731272294887039,
+              "10": 0.6617122473246135
+            },
+            "caveat": "Only each JD's generated P1/P2 are labeled relevant. Other suitable cross-JD resumes may be unlabeled."
+          }
+        },
+        {
+          "split": "test",
+          "queries": 841,
+          "triplet_diagnostics": {
+            "candidate_pool": "source_triplet_only",
+            "pairwise_p_over_h1_accuracy": 0.7835909631391201,
+            "strict_both_positives_over_h1": 0.6730083234244947,
+            "mrr": 0.9470868014268727,
+            "ndcg_at_3": 0.9498014467342448,
+            "recall": {
+              "1": 0.4470868014268728,
+              "2": 0.8365041617122473,
+              "5": 1.0,
+              "10": 1.0
+            }
+          },
+          "full_split_retrieval": {
+            "candidate_pool": "all_source_triplets_in_evaluated_split",
+            "candidate_documents": 2523,
+            "known_relevant_per_query": 2,
+            "mrr": 0.6660581202137232,
+            "ndcg_at_10": 0.6041619247128959,
+            "mean_known_positive_rank": 28.96016646848989,
+            "recall": {
+              "1": 0.27764565992865636,
+              "2": 0.45600475624256837,
+              "5": 0.6129607609988109,
+              "10": 0.7080856123662307
+            },
+            "caveat": "Only each JD's generated P1/P2 are labeled relevant. Other suitable cross-JD resumes may be unlabeled."
+          }
+        }
+      ],
+      "elapsed_seconds": 115.672,
+      "warning": "Metrics use synthetic labels and are not a substitute for a cross-JD human-judged evaluation set."
+    },
+    {
+      "model": "/data/wangxianjiong/models/jdmatch/Qwen3-Embedding-4B",
+      "adapter": false,
+      "limit": null,
+      "results": [
+        {
+          "split": "validation",
+          "queries": 841,
+          "triplet_diagnostics": {
+            "candidate_pool": "source_triplet_only",
+            "pairwise_p_over_h1_accuracy": 0.9334126040428062,
+            "strict_both_positives_over_h1": 0.8775267538644471,
+            "mrr": 0.9946492271105827,
+            "ndcg_at_3": 0.9877462447235256,
+            "recall": {
+              "1": 0.4946492271105826,
+              "2": 0.9387633769322236,
+              "5": 1.0,
+              "10": 1.0
+            }
+          },
+          "full_split_retrieval": {
+            "candidate_pool": "all_source_triplets_in_evaluated_split",
+            "candidate_documents": 2523,
+            "known_relevant_per_query": 2,
+            "mrr": 0.9545634034751546,
+            "ndcg_at_10": 0.8982942047945399,
+            "mean_known_positive_rank": 4.995838287752675,
+            "recall": {
+              "1": 0.46313912009512487,
+              "2": 0.7847800237812128,
+              "5": 0.9030915576694412,
+              "10": 0.9369797859690844
+            },
+            "caveat": "Only each JD's generated P1/P2 are labeled relevant. Other suitable cross-JD resumes may be unlabeled."
+          }
+        },
+        {
+          "split": "test",
+          "queries": 841,
+          "triplet_diagnostics": {
+            "candidate_pool": "source_triplet_only",
+            "pairwise_p_over_h1_accuracy": 0.9375743162901308,
+            "strict_both_positives_over_h1": 0.8870392390011891,
+            "mrr": 0.9940546967895363,
+            "ndcg_at_3": 0.9882408217761814,
+            "recall": {
+              "1": 0.4940546967895363,
+              "2": 0.9435196195005945,
+              "5": 1.0,
+              "10": 1.0
+            }
+          },
+          "full_split_retrieval": {
+            "candidate_pool": "all_source_triplets_in_evaluated_split",
+            "candidate_documents": 2523,
+            "known_relevant_per_query": 2,
+            "mrr": 0.9422970431751537,
+            "ndcg_at_10": 0.8948293332494047,
+            "mean_known_positive_rank": 6.378121284185493,
+            "recall": {
+              "1": 0.45541022592152197,
+              "2": 0.7782401902497027,
+              "5": 0.9066587395957194,
+              "10": 0.9405469678953626
+            },
+            "caveat": "Only each JD's generated P1/P2 are labeled relevant. Other suitable cross-JD resumes may be unlabeled."
+          }
+        }
+      ],
+      "elapsed_seconds": 1195.412,
+      "warning": "Metrics use synthetic labels and are not a substitute for a cross-JD human-judged evaluation set."
+    }
+  ]
+}

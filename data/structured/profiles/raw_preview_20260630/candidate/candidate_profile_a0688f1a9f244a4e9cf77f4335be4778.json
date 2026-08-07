@@ -1,0 +1,76 @@
+{
+  "artifact_type": "candidate_profile",
+  "created_at": "2026-06-30T08:49:45Z",
+  "extraction": {
+    "evidence": [],
+    "fields": {},
+    "implementation": "mock",
+    "model": null,
+    "raw_model_output": "{\n  \"schema_version\": \"profile-extraction/v2\",\n  \"document_type\": \"resume\",\n  \"candidate\": {\"name\": null, \"current_title\": \"Python开发\", \"years_of_experience\": 1, \"location\": null},\n  \"career_intent\": {\"target_position\": \"Python开发\", \"target_industry\": \"软件/IT服务\", \"target_location\": \"深圳 龙岗\"},\n  \"education\": [{\"school\": \"\", \"degree\": \"本科\", \"major\": \"\", \"period\": \"\", \"evidence_text\": \"\"}],\n  \"work_experience\": [{\"company\": \"匿名科技公司A\", \"role\": \"Python开发\", \"industry\": \"软件/IT服务\", \"period\": \"1年\", \"description\": \"负责与 软件/IT服务 相关的研发/测试/数据处理工作，主要使用 Django、Flask、单元测试、数据分析、接口测试。\", \"evidence_text\": \"\"}],\n  \"project_experience\": [{\"name\": \"匿名项目A-Python开发\", \"role\": \"核心成员\", \"description\": \"围绕目标岗位 Python开发 的核心能力，完成需求拆解、功能实现、测试验证和文档沉淀。\", \"technologies\": [\"Django\", \"Flask\", \"单元测试\", \"数据分析\"], \"outcomes\": [], \"evidence_text\": \"\"}, {\"name\": \"企业内部效率工具改造\", \"role\": \"参与成员\", \"description\": \"参与业务流程梳理、脚本/工具开发、数据处理和问题定位，提升团队交付效率。\", \"technologies\": [\"Flask\", \"单元测试\", \"数据分析\", \"接口测试\"], \"outcomes\": [], \"evidence_text\": \"\"}],\n  \"skills\": [{\"name\": \"Django\", \"raw_name\": \"Django\", \"category\": \"framework\", \"lskt_label\": \"S\", \"level\": \"proficient\", \"years\": null, \"evidence_text\": \"参与 Python开发 相关项目，围绕 Django、Flask 完成需求分析、开发测试、问题定位与交付文档整理。\"}, {\"name\": \"Flask\", \"raw_name\": \"Flask\", \"category\": \"framework\", \"lskt_label\": \"S\", \"level\": \"proficient\", \"years\": null, \"evidence_text\": \"参与 Python开发 相关项目，围绕 Django、Flask 完成需求分析、开发测试、问题定位与交付文档整理。\"}, {\"name\": \"单元测试\", \"raw_name\": \"单元测试\", \"category\": \"testing\", \"lskt_label\": \"S\", \"level\": \"proficient\", \"years\": null, \"evidence_text\": \"参与 Python开发 相关项目，围绕 Django、Flask 完成需求分析、开发测试、问题定位与交付文档整理。\"}, {\"name\": \"数据分析\", \"raw_name\": \"数据分析\", \"category\": \"data_processing\", \"lskt_label\": \"S\", \"level\": \"proficient\", \"years\": null, \"evidence_text\": \"参与 Python开发 相关项目，围绕 Django、Flask 完成需求分析、开发测试、问题定位与交付文档整理。\"}, {\"name\": \"接口测试\", \"raw_name\": \"接口测试\", \"category\": \"testing\", \"lskt_label\": \"S\", \"level\": \"working\", \"years\": null, \"evidence_text\": \"参与 Python开发 相关项目，围绕 Django、Flask 完成需求分析、开发测试、问题定位与交付文档整理。\"}],\n  \"capabilities\": [{\"name\": \"需求分析\", \"description\": \"完成需求拆解、功能实现、测试验证和文档沉淀。\", \"level\": \"working\", \"evidence_text\": \"参与 Python开发 相关项目，围绕 Django、Flask 完成需求分析、开发测试、问题定位与交付文档整理。\"}, {\"name\": \"功能实现\", \"description\": \"完成需求拆解、功能实现、测试验证和文档沉淀。\", \"level\": \"working\", \"evidence_text\": \"参与 Python开发 相关项目，围绕 Django、Flask 完成需求分析、开发测试、问题定位与交付文档整理。\"}, {\"name\": \"测试验证\", \"description\": \"完成需求拆解、功能实现、测试验证和文档沉淀。\", \"level\": \"working\", \"evidence_text\": \"参与 Python开发 相关项目，围绕 Django、Flask 完成需求分析、开发测试、问题定位与交付文档整理。\"}, {\"name\": \"文档沉淀\", \"description\": \"完成需求拆解、功能实现、测试验证和文档沉淀。\", \"level\": \"working\", \"evidence_text\": \"参与 Python开发 相关项目，围绕 Django、Flask 完成需求分析、开发测试、问题定位与交付文档整理。\"}, {\"name\": \"业务流程梳理\", \"description\": \"参与业务流程梳理、脚本/工具开发、数据处理和问题定位，提升团队交付效率。\", \"level\": \"working\", \"evidence_text\": \"参与企业内部效率工具改造项目，参与业务流程梳理、脚本/工具开发、数据处理和问题定位，提升团队交付效率。\"}, {\"name\": \"脚本/工具开发\", \"description\": \"参与业务流程梳理、脚本/工具开发、数据处理和问题定位，提升团队交付效率。\", \"level\": \"working\", \"evidence_text\": \"参与企业内部效率工具改造项目，参与业务流程梳理、脚本/工具开发、数据处理和问题定位，提升团队交付效率。\"}, {\"name\": \"数据处理\", \"description\": \"参与业务流程梳理、脚本/工具开发、数据处理和问题定位，提升团队交付效率。\", \"level\": \"working\", \"evidence_text\": \"参与企业内部效率工具改造项目，参与业务流程梳理、脚本/工具开发、数据处理和问题定位，提升团队交付效率。\"}, {\"name\": \"问题定位\", \"description\": \"参与业务流程梳理、脚本/工具开发、数据处理和问题定位，提升团队交付效率。\", \"level\": \"working\", \"evidence_text\": \"参与企业内部效率工具改造项目，参与业务流程梳理、脚本/工具开发、数据处理和问题定位，提升团队交付效率。\"}, {\"name\": \"提升团队交付效率\", \"description\": \"参与业务流程梳理、脚本/工具开发、数据处理和问题定位，提升团队交付效率。\", \"level\": \"working\", \"evidence_text\": \"参与企业内部效率工具改造项目，参与业务流程梳理、脚本/工具开发、数据处理和问题定位，提升团队交付效率。\"}],\n  \"certificates\": [],\n  \"languages\": []\n}",
+    "reason": "Ollama structured extraction failed: model output is missing required keys: achievements",
+    "schema": null,
+    "state": "not_implemented",
+    "validation_error": "model output is missing required keys: achievements",
+    "warnings": [
+      "Ollama structured extraction failed: model output is missing required keys: achievements"
+    ]
+  },
+  "normalization": {
+    "implementation": "lightweight_skill_normalizer",
+    "skills": [],
+    "state": "not_implemented",
+    "warnings": [
+      "Ollama structured extraction failed: model output is missing required keys: achievements"
+    ]
+  },
+  "profile": {
+    "artifacts": {
+      "profile_json": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/structured/profiles/raw_preview_20260630/candidate/candidate_profile_a0688f1a9f244a4e9cf77f4335be4778.json",
+      "schema_version": "profile-extraction/v2",
+      "storage": "filesystem"
+    },
+    "attributes": {
+      "candidate": {},
+      "capabilities": [],
+      "career_intent": {},
+      "education": [],
+      "experience": [],
+      "profile_schema": "profile-extraction/v2",
+      "projects": [],
+      "resume_profile": {},
+      "skills": [],
+      "target_position": null
+    },
+    "created_at": "2026-06-30T08:49:45Z",
+    "evidence": [],
+    "id": "candidate_profile_a0688f1a9f244a4e9cf77f4335be4778",
+    "implementation": "mock",
+    "profile_type": "candidate",
+    "source_document_id": "doc_4603c4af41ae4d7a93e272d91067cafa",
+    "state": "not_implemented",
+    "warnings": [
+      "Ollama structured extraction failed: model output is missing required keys: achievements"
+    ]
+  },
+  "schema_version": "profile-extraction/v2",
+  "source_document": {
+    "char_count": 758,
+    "content_digest": "8e3185ca96cb52822b3d5f2efdb3c238ef5dc5d436071dea215b643dd54e163d",
+    "created_at": "2026-06-30T08:48:10Z",
+    "document_type": "resume",
+    "id": "doc_4603c4af41ae4d7a93e272d91067cafa",
+    "metadata": {
+      "privacy_level": "anonymous_or_synthetic",
+      "raw_file": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/small-raw/resume_raw.jsonl",
+      "raw_index": 8,
+      "raw_type": "resume",
+      "target_job_id": "40491067716"
+    },
+    "source": {
+      "external_id": "R0008",
+      "source_system": "small-raw",
+      "uri": "http://www.zhaopin.com/jobdetail/CC000544460J40491067716.htm"
+    },
+    "storage": "memory"
+  }
+}

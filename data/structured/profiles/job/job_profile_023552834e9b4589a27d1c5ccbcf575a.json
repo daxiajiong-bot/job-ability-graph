@@ -1,0 +1,156 @@
+{
+  "artifact_type": "job_profile",
+  "created_at": "2026-08-07T01:30:49Z",
+  "extraction": {
+    "evidence": [],
+    "fields": {},
+    "implementation": "mock",
+    "model": null,
+    "raw_model_output": "{\n  \"schema_version\": \"profile-extraction/v2\",\n  \"document_type\": \"jd\",\n  \"job\": {\"title\": \"Python Developer\", \"normalized_title\": null, \"department\": null, \"seniority\": null},\n  \"company\": {\"name\": null, \"industry\": null, \"location\": null},\n  \"employment\": {\"employment_type\": \"full_time\", \"salary_min\": null, \"salary_max\": null, \"published_at\": null},\n  \"responsibilities\": [{\"text\": null, \"action\": null, \"object\": null, \"evidence_text\": null}],\n  \"requirements\": [{\"text\": null, \"requirement_type\": \"experience\", \"importance\": \"preferred\", \"evidence_text\": \"3 years experience\"}],\n  \"skills\": [{\"name\": \"Python\", \"raw_name\": \"Python\", \"category\": \"programming_language\", \"lskt_label\": \"S\", \"importance\": \"required\", \"evidence_text\": null}],\n  \"capabilities\": [{\"name\": null, \"description\": null, \"importance\": \"unknown\", \"evidence_text\": null}],\n  \"application_scenarios\": [{\"name\": null, \"description\": null, \"evidence_text\": null}],\n  \"evaluation_signals\": [{\"name\": null, \"description\": null, \"evidence_text\": null}]\n}",
+    "reason": "Ollama structured extraction failed: 'NoneType' object has no attribute 'strip'",
+    "schema": null,
+    "state": "not_implemented",
+    "validation_error": "'NoneType' object has no attribute 'strip'",
+    "warnings": [
+      "Ollama structured extraction failed: 'NoneType' object has no attribute 'strip'"
+    ]
+  },
+  "normalization": {
+    "implementation": "lightweight_skill_normalizer",
+    "skills": [],
+    "state": "not_implemented",
+    "warnings": [
+      "Ollama structured extraction failed: 'NoneType' object has no attribute 'strip'"
+    ]
+  },
+  "profile": {
+    "artifacts": {
+      "profile_json": "data\\structured\\profiles\\job\\job_profile_023552834e9b4589a27d1c5ccbcf575a.json",
+      "schema_version": "profile-extraction/v2",
+      "storage": "filesystem"
+    },
+    "attributes": {
+      "capabilities": [],
+      "company": {
+        "industry": null,
+        "location": null,
+        "name": null
+      },
+      "education": [],
+      "employment": {
+        "employment_type": "full_time",
+        "published_at": null,
+        "salary_max": null,
+        "salary_min": null,
+        "salary_range": null
+      },
+      "experience": [],
+      "jd_profile": {
+        "application_scenarios": [],
+        "capabilities": [],
+        "company": {
+          "industry": null,
+          "location": null,
+          "name": null
+        },
+        "document_type": "jd",
+        "employment": {
+          "employment_type": "full_time",
+          "published_at": null,
+          "salary_max": null,
+          "salary_min": null,
+          "salary_range": null
+        },
+        "evaluation_signals": [],
+        "job": {
+          "department": null,
+          "normalized_title": "Python Developer",
+          "seniority": null,
+          "title": "Python Developer"
+        },
+        "requirements": [],
+        "responsibilities": [],
+        "schema_version": "profile-extraction/v2",
+        "skills": [
+          {
+            "category": "programming_language",
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "importance": "unknown",
+            "lskt_label": "S",
+            "name": "Python",
+            "raw_name": "Python"
+          }
+        ]
+      },
+      "job": {
+        "department": null,
+        "normalized_title": "Python Developer",
+        "seniority": null,
+        "title": "Python Developer"
+      },
+      "job_title": "Python Developer",
+      "profile_schema": "profile-extraction/v2",
+      "projects": [],
+      "requirements": [],
+      "responsibilities": [],
+      "skills": [
+        {
+          "category": "programming_language",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "importance": "unknown",
+          "lskt_label": "S",
+          "name": "Python",
+          "raw_name": "Python"
+        }
+      ]
+    },
+    "created_at": "2026-08-07T01:30:49Z",
+    "evidence": [
+      {
+        "field": "skills",
+        "id": "ev_001",
+        "text": "Python Developer 3 years experience"
+      }
+    ],
+    "id": "job_profile_023552834e9b4589a27d1c5ccbcf575a",
+    "implementation": "heuristic_profile_builder",
+    "profile_type": "job",
+    "source_document_id": "doc_fdba40b1c8c64413986c26b9ed610c48",
+    "state": "available",
+    "warnings": [
+      "Ollama structured extraction failed: 'NoneType' object has no attribute 'strip'",
+      "Used heuristic profile extraction because LLM extraction was unavailable."
+    ]
+  },
+  "schema_version": "profile-extraction/v2",
+  "source_document": {
+    "char_count": 35,
+    "content_digest": "f962e0f64df3c7cef4b385be7d22ceed36b295344f340bd799a38c25088981f2",
+    "created_at": "2026-08-06T17:40:46Z",
+    "document_type": "jd",
+    "id": "doc_fdba40b1c8c64413986c26b9ed610c48",
+    "metadata": {
+      "job_title": "Python Developer",
+      "ocr": {
+        "average_confidence": 0.9952,
+        "implementation": "paddleocr",
+        "lang": "ch",
+        "line_count": 2,
+        "page_count": 1,
+        "source_content_type": "image/png",
+        "source_file_name": "test_jd.png",
+        "state": "available",
+        "warnings": []
+      },
+      "title": "Python Developer"
+    },
+    "source": {
+      "source_system": "ocr_upload"
+    },
+    "storage": "memory"
+  }
+}

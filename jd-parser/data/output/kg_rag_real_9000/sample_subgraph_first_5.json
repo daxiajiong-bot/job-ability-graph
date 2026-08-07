@@ -1,0 +1,2693 @@
+{
+  "nodes": [
+    {
+      "node_id": "education:0408da9944bc",
+      "label": "Education",
+      "properties": {
+        "value": "本科"
+      }
+    },
+    {
+      "node_id": "education:aa2d24dd4cc1",
+      "label": "Education",
+      "properties": {
+        "value": "大专"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40756581406:28a26cea463e",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40756581406:28a26cea463e",
+        "document_id": "JD_40756581406",
+        "text": "精通C#，熟练掌握.NET框架，有桌面及服务端开发经验。",
+        "source_field": "skills"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40756581406:46ac89904790",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40756581406:46ac89904790",
+        "document_id": "JD_40756581406",
+        "text": "基于.NET框架，负责桌面端与服务器端AI应用的开发、架构设计及性能优化。",
+        "source_field": "skills"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40756581406:76d35eb860a4",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40756581406:76d35eb860a4",
+        "document_id": "JD_40756581406",
+        "text": "经验要求：1-3年",
+        "source_field": "constraints.experience_years"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40756581406:8678d24e9a1a",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40756581406:8678d24e9a1a",
+        "document_id": "JD_40756581406",
+        "text": "学历要求：本科",
+        "source_field": "constraints.education"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40756581406:b955ae27ce8e",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40756581406:b955ae27ce8e",
+        "document_id": "JD_40756581406",
+        "text": "跟踪大模型技术动态，推动AI技术在业务场景落地。",
+        "source_field": "skills"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40756581406:b99df6cb7da2",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40756581406:b99df6cb7da2",
+        "document_id": "JD_40756581406",
+        "text": "工作地点：合肥 蜀山 荷叶地",
+        "source_field": "constraints.location"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40756581406:e9c48a009b10",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40756581406:e9c48a009b10",
+        "document_id": "JD_40756581406",
+        "text": "了解AI工作原理，熟悉GPT、文心一言、通义千问等常见大模型；熟悉操作系统、计算机网络等底层原理。",
+        "source_field": "skills"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40853946411:5df7ccf1c9ce",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40853946411:5df7ccf1c9ce",
+        "document_id": "JD_40853946411",
+        "text": "本科及以上，3年后端/AI开发经验，1年以上Agent/大模型应用经验",
+        "source_field": "skills"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40853946411:6147b31805b5",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40853946411:6147b31805b5",
+        "document_id": "JD_40853946411",
+        "text": "精通Python，且至少精通Go/Java/Rust/C++/TypeScript中的一门",
+        "source_field": "skills"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40853946411:66f11882f538",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40853946411:66f11882f538",
+        "document_id": "JD_40853946411",
+        "text": "业务集成：对接保险核心系统（核保/理赔/CRM），构建RAG知识库，建立Agent评估与迭代体系。",
+        "source_field": "skills"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40853946411:6f96b811883c",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40853946411:6f96b811883c",
+        "document_id": "JD_40853946411",
+        "text": "经验要求：3-5年",
+        "source_field": "constraints.experience_years"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40853946411:8678d24e9a1a",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40853946411:8678d24e9a1a",
+        "document_id": "JD_40853946411",
+        "text": "学历要求：本科",
+        "source_field": "constraints.education"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40853946411:a4ff02f7df46",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40853946411:a4ff02f7df46",
+        "document_id": "JD_40853946411",
+        "text": "Agent开发：基于LangChain/LangGraph/AutoGen等框架，开发保险核保、理赔、客服等场景的智能Agent，设计多Agent协作架构。",
+        "source_field": "skills"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40853946411:b23d626eb27b",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40853946411:b23d626eb27b",
+        "document_id": "JD_40853946411",
+        "text": "熟悉RAG、向量数据库、提示工程",
+        "source_field": "skills"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40853946411:bb0ac34321c1",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40853946411:bb0ac34321c1",
+        "document_id": "JD_40853946411",
+        "text": "Harness Engineering：构建Agent沙箱环境、工具调用治理、全链路可观测性、安全护栏（PII脱敏、人在回路），满足保险合规与审计要求。",
+        "source_field": "skills"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40853946411:dd98f73db424",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40853946411:dd98f73db424",
+        "document_id": "JD_40853946411",
+        "text": "能根据场景选型：Python用于模型集成，Go/Java用于高并发运行时，TS用于前端交互",
+        "source_field": "skills"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40853946411:e265493165bd",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40853946411:e265493165bd",
+        "document_id": "JD_40853946411",
+        "text": "熟悉LangChain/LangGraph等Agent框架",
+        "source_field": "skills"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40853946411:ec71f5c9c6ba",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40853946411:ec71f5c9c6ba",
+        "document_id": "JD_40853946411",
+        "text": "工作地点：上海 浦东 唐镇",
+        "source_field": "constraints.location"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40853946411:f027e3dda2d5",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40853946411:f027e3dda2d5",
+        "document_id": "JD_40853946411",
+        "text": "理解“Agent = Model + Harness”，有沙箱、工具治理、可观测性、护栏实践经验",
+        "source_field": "skills"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40853946411:fd23fca75db0",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40853946411:fd23fca75db0",
+        "document_id": "JD_40853946411",
+        "text": "Agent与Harness",
+        "source_field": "skills"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40854813111:167ef85e3fe0",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40854813111:167ef85e3fe0",
+        "document_id": "JD_40854813111",
+        "text": "工作经验:具备3-5年以上算法设计、工程落地等相关经验。",
+        "source_field": "skills"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40854813111:272c31edfe95",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40854813111:272c31edfe95",
+        "document_id": "JD_40854813111",
+        "text": "负责控制器控制算法开发与优化，确保控制系统高稳定性和鲁棒性",
+        "source_field": "skills"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40854813111:6f96b811883c",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40854813111:6f96b811883c",
+        "document_id": "JD_40854813111",
+        "text": "经验要求：3-5年",
+        "source_field": "constraints.experience_years"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40854813111:8678d24e9a1a",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40854813111:8678d24e9a1a",
+        "document_id": "JD_40854813111",
+        "text": "学历要求：本科",
+        "source_field": "constraints.education"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40854813111:879a8b61a0c5",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40854813111:879a8b61a0c5",
+        "document_id": "JD_40854813111",
+        "text": "熟悉基本硬件驱动电路、嵌入式开发及常规测试设备使用，熟悉控制器软件算法设计流程，精通自动控制原理、数字信号处理等专业知识",
+        "source_field": "skills"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40854813111:8ae63074680d",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40854813111:8ae63074680d",
+        "document_id": "JD_40854813111",
+        "text": "熟悉matlab/simulink工具的使用，能建立电机或者悬浮等控制算法模型并应用到实际某款嵌入式设备",
+        "source_field": "skills"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40854813111:c23ed784c9e8",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40854813111:c23ed784c9e8",
+        "document_id": "JD_40854813111",
+        "text": "工作地点：苏州 工业园区",
+        "source_field": "constraints.location"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40854813111:c3f285439ea4",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40854813111:c3f285439ea4",
+        "document_id": "JD_40854813111",
+        "text": "负责控制器整体算法设计，与软件和调试部门紧密合作，保证软件质量和产品稳定运行",
+        "source_field": "skills"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40854813111:f937cdd20600",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40854813111:f937cdd20600",
+        "document_id": "JD_40854813111",
+        "text": "熟悉电机foc 、sensorless 等主流电机控制算法，对电机震动抑制、噪声有一定研究",
+        "source_field": "skills"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40857441205:2599e4b8d014",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40857441205:2599e4b8d014",
+        "document_id": "JD_40857441205",
+        "text": "熟练3D&2D制图、结构设计、公差分析",
+        "source_field": "skills"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40857441205:5d971a87b486",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40857441205:5d971a87b486",
+        "document_id": "JD_40857441205",
+        "text": "工作地点：东莞 石碣镇",
+        "source_field": "constraints.location"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40857441205:6f96b811883c",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40857441205:6f96b811883c",
+        "document_id": "JD_40857441205",
+        "text": "经验要求：3-5年",
+        "source_field": "constraints.experience_years"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40857441205:8678d24e9a1a",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40857441205:8678d24e9a1a",
+        "document_id": "JD_40857441205",
+        "text": "学历要求：本科",
+        "source_field": "constraints.education"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40875487605:128a8b86d97e",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40875487605:128a8b86d97e",
+        "document_id": "JD_40875487605",
+        "text": "加分：了解 RAG（检索增强生成）、Vector",
+        "source_field": "skills"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40875487605:136a7c10a71c",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40875487605:136a7c10a71c",
+        "document_id": "JD_40875487605",
+        "text": "流程建设，利用 Docker/K8s 进行容器化部署，提升交付效率。",
+        "source_field": "skills"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40875487605:17332bb0659a",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40875487605:17332bb0659a",
+        "document_id": "JD_40875487605",
+        "text": "系统性能优化：利用 Redis、MQ、ES 等中间件解决高并发、分布式场景下的性能瓶颈，负责链路追踪、监控告警及系统稳定性保障。",
+        "source_field": "skills"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40875487605:1b24df48e534",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40875487605:1b24df48e534",
+        "document_id": "JD_40875487605",
+        "text": "全栈开发与架构：基于 .NET Core (ABP框架) + Vue 技术栈，负责核心业务模块的需求分析、系统设计、编码实现及测试上线，确保代码的高可维护性与扩展性。",
+        "source_field": "skills"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40875487605:2af3ad1e9a6b",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40875487605:2af3ad1e9a6b",
+        "document_id": "JD_40875487605",
+        "text": "工作地点：上海 浦东 高行",
+        "source_field": "constraints.location"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40875487605:3fc2beb77ae3",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40875487605:3fc2beb77ae3",
+        "document_id": "JD_40875487605",
+        "text": "核心技能：5年以上 .NET 开发经验，精通 C#、.NET Core、ASP.NET",
+        "source_field": "skills"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40875487605:60e593d4be1b",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40875487605:60e593d4be1b",
+        "document_id": "JD_40875487605",
+        "text": "工程素养：具备强烈的代码安全意识，擅长问题排查与性能调优；熟悉 Docker 虚拟化及 Jenkins/GitLab CI 等 DevOps 工具链。",
+        "source_field": "skills"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40875487605:78034587c86d",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40875487605:78034587c86d",
+        "document_id": "JD_40875487605",
+        "text": "经验要求：5-10年",
+        "source_field": "constraints.experience_years"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40875487605:83f33b03833d",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40875487605:83f33b03833d",
+        "document_id": "JD_40875487605",
+        "text": "AI应用工程化：负责 Dify 平台的独立搭建与工作流编排，将大模型能力集成至现有业务系统中，实现智能问答、数据处理自动化等场景落地。",
+        "source_field": "skills"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40875487605:87c37f88d9f6",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40875487605:87c37f88d9f6",
+        "document_id": "JD_40875487605",
+        "text": "平台的使用经验，能够独立搭建 Agent 工作流。",
+        "source_field": "skills"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40875487605:87d277ee118b",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40875487605:87d277ee118b",
+        "document_id": "JD_40875487605",
+        "text": "熟练配置和使用 Nginx、Redis、RabbitMQ/Kafka、Elasticsearch、Prometheus/Grafana 等主流中间件。",
+        "source_field": "skills"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40875487605:929dbfc7cb99",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40875487605:929dbfc7cb99",
+        "document_id": "JD_40875487605",
+        "text": "学历要求：大专",
+        "source_field": "constraints.education"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40875487605:9abcd18e570b",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40875487605:9abcd18e570b",
+        "document_id": "JD_40875487605",
+        "text": "全流程主导权：从需求分析到架构设计，再到 AI 工作流搭建，拥有高度的技术自主权。",
+        "source_field": "skills"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40875487605:a07d64f73191",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40875487605:a07d64f73191",
+        "document_id": "JD_40875487605",
+        "text": "技术成长空间：接触 Dify、RAG、Agent 等最新 AI 工程化技术，打造智能化业务系统。",
+        "source_field": "skills"
+      }
+    },
+    {
+      "node_id": "evidence:JD_40875487605:d8a42fd1816b",
+      "label": "Evidence",
+      "properties": {
+        "evidence_id": "evidence:JD_40875487605:d8a42fd1816b",
+        "document_id": "JD_40875487605",
+        "text": "前沿技术融合：深度结合 .NET Core 高性能后端与 Vue 前端，探索 LLM（大语言模型）在企业级应用中的落地。",
+        "source_field": "skills"
+      }
+    },
+    {
+      "node_id": "experience_years:1",
+      "label": "ExperienceRequirement",
+      "properties": {
+        "minimum_years": 1
+      }
+    },
+    {
+      "node_id": "experience_years:3",
+      "label": "ExperienceRequirement",
+      "properties": {
+        "minimum_years": 3
+      }
+    },
+    {
+      "node_id": "experience_years:5",
+      "label": "ExperienceRequirement",
+      "properties": {
+        "minimum_years": 5
+      }
+    },
+    {
+      "node_id": "job:JD_40756581406",
+      "label": "Job",
+      "properties": {
+        "document_id": "JD_40756581406",
+        "title": ".NET AI软件开发工程师（朝九晚六+双休）",
+        "education": "本科",
+        "experience_years": 1,
+        "location": "合肥 蜀山 荷叶地"
+      }
+    },
+    {
+      "node_id": "job:JD_40853946411",
+      "label": "Job",
+      "properties": {
+        "document_id": "JD_40853946411",
+        "title": "0991A4-agent开发工程师",
+        "education": "本科",
+        "experience_years": 3,
+        "location": "上海 浦东 唐镇"
+      }
+    },
+    {
+      "node_id": "job:JD_40854813111",
+      "label": "Job",
+      "properties": {
+        "document_id": "JD_40854813111",
+        "title": "(苏州）电机控制算法工程师",
+        "education": "本科",
+        "experience_years": 3,
+        "location": "苏州 工业园区"
+      }
+    },
+    {
+      "node_id": "job:JD_40857441205",
+      "label": "Job",
+      "properties": {
+        "document_id": "JD_40857441205",
+        "title": "(CDU/AI服务器机柜）机构设计资深工程师",
+        "education": "本科",
+        "experience_years": 3,
+        "location": "东莞 石碣镇"
+      }
+    },
+    {
+      "node_id": "job:JD_40875487605",
+      "label": "Job",
+      "properties": {
+        "document_id": "JD_40875487605",
+        "title": ".NET全栈开发工程师（偏AI）",
+        "education": "大专",
+        "experience_years": 5,
+        "location": "上海 浦东 高行"
+      }
+    },
+    {
+      "node_id": "location:0a9884302f29",
+      "label": "Location",
+      "properties": {
+        "value": "合肥 蜀山 荷叶地"
+      }
+    },
+    {
+      "node_id": "location:172caa70236b",
+      "label": "Location",
+      "properties": {
+        "value": "上海 浦东 唐镇"
+      }
+    },
+    {
+      "node_id": "location:5fdd522d1c24",
+      "label": "Location",
+      "properties": {
+        "value": "上海 浦东 高行"
+      }
+    },
+    {
+      "node_id": "location:67b85be8039d",
+      "label": "Location",
+      "properties": {
+        "value": "东莞 石碣镇"
+      }
+    },
+    {
+      "node_id": "location:9cd075924003",
+      "label": "Location",
+      "properties": {
+        "value": "苏州 工业园区"
+      }
+    },
+    {
+      "node_id": "skill:1879da55493b",
+      "label": "Skill",
+      "properties": {
+        "name": "RAG",
+        "surface_form_policy": "exact text surface with whitespace compacted; no skill normalization"
+      }
+    },
+    {
+      "node_id": "skill:1cb9cfedf79d",
+      "label": "Skill",
+      "properties": {
+        "name": "结构设计",
+        "surface_form_policy": "exact text surface with whitespace compacted; no skill normalization"
+      }
+    },
+    {
+      "node_id": "skill:219e4397af2d",
+      "label": "Skill",
+      "properties": {
+        "name": "控制算法",
+        "surface_form_policy": "exact text surface with whitespace compacted; no skill normalization"
+      }
+    },
+    {
+      "node_id": "skill:24071b57a130",
+      "label": "Skill",
+      "properties": {
+        "name": "Redis",
+        "surface_form_policy": "exact text surface with whitespace compacted; no skill normalization"
+      }
+    },
+    {
+      "node_id": "skill:2e0b45f2a456",
+      "label": "Skill",
+      "properties": {
+        "name": "Go",
+        "surface_form_policy": "exact text surface with whitespace compacted; no skill normalization"
+      }
+    },
+    {
+      "node_id": "skill:3401ed05a132",
+      "label": "Skill",
+      "properties": {
+        "name": "大模型",
+        "surface_form_policy": "exact text surface with whitespace compacted; no skill normalization"
+      }
+    },
+    {
+      "node_id": "skill:4236857abb3c",
+      "label": "Skill",
+      "properties": {
+        "name": "系统设计",
+        "surface_form_policy": "exact text surface with whitespace compacted; no skill normalization"
+      }
+    },
+    {
+      "node_id": "skill:5819778898df",
+      "label": "Skill",
+      "properties": {
+        "name": "Git",
+        "surface_form_policy": "exact text surface with whitespace compacted; no skill normalization"
+      }
+    },
+    {
+      "node_id": "skill:5ce2e6f40299",
+      "label": "Skill",
+      "properties": {
+        "name": "Agent",
+        "surface_form_policy": "exact text surface with whitespace compacted; no skill normalization"
+      }
+    },
+    {
+      "node_id": "skill:6e3604888c4b",
+      "label": "Skill",
+      "properties": {
+        "name": "Python",
+        "surface_form_policy": "exact text surface with whitespace compacted; no skill normalization"
+      }
+    },
+    {
+      "node_id": "skill:769bc169aa9f",
+      "label": "Skill",
+      "properties": {
+        "name": "自动控制",
+        "surface_form_policy": "exact text surface with whitespace compacted; no skill normalization"
+      }
+    },
+    {
+      "node_id": "skill:7de5a8427321",
+      "label": "Skill",
+      "properties": {
+        "name": "算法开发",
+        "surface_form_policy": "exact text surface with whitespace compacted; no skill normalization"
+      }
+    },
+    {
+      "node_id": "skill:8088ded1b1aa",
+      "label": "Skill",
+      "properties": {
+        "name": ".NET",
+        "surface_form_policy": "exact text surface with whitespace compacted; no skill normalization"
+      }
+    },
+    {
+      "node_id": "skill:817e54a108b4",
+      "label": "Skill",
+      "properties": {
+        "name": "simulink",
+        "surface_form_policy": "exact text surface with whitespace compacted; no skill normalization"
+      }
+    },
+    {
+      "node_id": "skill:850637b76ae4",
+      "label": "Skill",
+      "properties": {
+        "name": "LangChain",
+        "surface_form_policy": "exact text surface with whitespace compacted; no skill normalization"
+      }
+    },
+    {
+      "node_id": "skill:85bb5d88d7f7",
+      "label": "Skill",
+      "properties": {
+        "name": "Elasticsearch",
+        "surface_form_policy": "exact text surface with whitespace compacted; no skill normalization"
+      }
+    },
+    {
+      "node_id": "skill:9f1141549f7c",
+      "label": "Skill",
+      "properties": {
+        "name": "Docker",
+        "surface_form_policy": "exact text surface with whitespace compacted; no skill normalization"
+      }
+    },
+    {
+      "node_id": "skill:aa8c0cd1ecc7",
+      "label": "Skill",
+      "properties": {
+        "name": "性能优化",
+        "surface_form_policy": "exact text surface with whitespace compacted; no skill normalization"
+      }
+    },
+    {
+      "node_id": "skill:ac34e2863bf4",
+      "label": "Skill",
+      "properties": {
+        "name": "文心一言",
+        "surface_form_policy": "exact text surface with whitespace compacted; no skill normalization"
+      }
+    },
+    {
+      "node_id": "skill:b1663a13d671",
+      "label": "Skill",
+      "properties": {
+        "name": "通义千问",
+        "surface_form_policy": "exact text surface with whitespace compacted; no skill normalization"
+      }
+    },
+    {
+      "node_id": "skill:b5ad1cc29602",
+      "label": "Skill",
+      "properties": {
+        "name": "架构设计",
+        "surface_form_policy": "exact text surface with whitespace compacted; no skill normalization"
+      }
+    },
+    {
+      "node_id": "skill:b6ab39b73b00",
+      "label": "Skill",
+      "properties": {
+        "name": "Kafka",
+        "surface_form_policy": "exact text surface with whitespace compacted; no skill normalization"
+      }
+    },
+    {
+      "node_id": "skill:bacef3aa90fb",
+      "label": "Skill",
+      "properties": {
+        "name": "GPT",
+        "surface_form_policy": "exact text surface with whitespace compacted; no skill normalization"
+      }
+    },
+    {
+      "node_id": "skill:c21aa6f7dfa6",
+      "label": "Skill",
+      "properties": {
+        "name": "数字信号处理",
+        "surface_form_policy": "exact text surface with whitespace compacted; no skill normalization"
+      }
+    },
+    {
+      "node_id": "skill:d4a86cb946d4",
+      "label": "Skill",
+      "properties": {
+        "name": "TypeScript",
+        "surface_form_policy": "exact text surface with whitespace compacted; no skill normalization"
+      }
+    },
+    {
+      "node_id": "skill:d8ff2bed1da0",
+      "label": "Skill",
+      "properties": {
+        "name": "matlab",
+        "surface_form_policy": "exact text surface with whitespace compacted; no skill normalization"
+      }
+    },
+    {
+      "node_id": "skill:dbe26ebee7a3",
+      "label": "Skill",
+      "properties": {
+        "name": "K8s",
+        "surface_form_policy": "exact text surface with whitespace compacted; no skill normalization"
+      }
+    },
+    {
+      "node_id": "skill:e027e57610f8",
+      "label": "Skill",
+      "properties": {
+        "name": "Java",
+        "surface_form_policy": "exact text surface with whitespace compacted; no skill normalization"
+      }
+    },
+    {
+      "node_id": "skill:e2ae20d9ae7f",
+      "label": "Skill",
+      "properties": {
+        "name": "Rust",
+        "surface_form_policy": "exact text surface with whitespace compacted; no skill normalization"
+      }
+    },
+    {
+      "node_id": "skill:e3d99e1b80bb",
+      "label": "Skill",
+      "properties": {
+        "name": "嵌入式开发",
+        "surface_form_policy": "exact text surface with whitespace compacted; no skill normalization"
+      }
+    },
+    {
+      "node_id": "skill:e4bc4b105929",
+      "label": "Skill",
+      "properties": {
+        "name": "C#",
+        "surface_form_policy": "exact text surface with whitespace compacted; no skill normalization"
+      }
+    },
+    {
+      "node_id": "skill:fb03f47034c1",
+      "label": "Skill",
+      "properties": {
+        "name": "算法设计",
+        "surface_form_policy": "exact text surface with whitespace compacted; no skill normalization"
+      }
+    },
+    {
+      "node_id": "skill:fc2b4216164c",
+      "label": "Skill",
+      "properties": {
+        "name": "C++",
+        "surface_form_policy": "exact text surface with whitespace compacted; no skill normalization"
+      }
+    },
+    {
+      "node_id": "skill:fc4b0426b148",
+      "label": "Skill",
+      "properties": {
+        "name": "大语言模型",
+        "surface_form_policy": "exact text surface with whitespace compacted; no skill normalization"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "edge:00ab39b29c9f7860",
+      "source_id": "job:JD_40875487605",
+      "target_id": "skill:fc4b0426b148",
+      "relation_type": "MENTIONS_SKILL",
+      "properties": {
+        "document_id": "JD_40875487605",
+        "level": "mentioned",
+        "evidence_id": "evidence:JD_40875487605:d8a42fd1816b",
+        "evidence": "前沿技术融合：深度结合 .NET Core 高性能后端与 Vue 前端，探索 LLM（大语言模型）在企业级应用中的落地。",
+        "occurrence_index": 2
+      }
+    },
+    {
+      "edge_id": "edge:04e98f359be55190",
+      "source_id": "job:JD_40875487605",
+      "target_id": "skill:5ce2e6f40299",
+      "relation_type": "MENTIONS_SKILL",
+      "properties": {
+        "document_id": "JD_40875487605",
+        "level": "mentioned",
+        "evidence_id": "evidence:JD_40875487605:a07d64f73191",
+        "evidence": "技术成长空间：接触 Dify、RAG、Agent 等最新 AI 工程化技术，打造智能化业务系统。",
+        "occurrence_index": 5
+      }
+    },
+    {
+      "edge_id": "edge:05178ce4fcc48cc4",
+      "source_id": "job:JD_40854813111",
+      "target_id": "skill:fb03f47034c1",
+      "relation_type": "REQUIRES_SKILL",
+      "properties": {
+        "document_id": "JD_40854813111",
+        "level": "required",
+        "evidence_id": "evidence:JD_40854813111:879a8b61a0c5",
+        "evidence": "熟悉基本硬件驱动电路、嵌入式开发及常规测试设备使用，熟悉控制器软件算法设计流程，精通自动控制原理、数字信号处理等专业知识",
+        "occurrence_index": 5
+      }
+    },
+    {
+      "edge_id": "edge:087b8d277ca82d2a",
+      "source_id": "job:JD_40853946411",
+      "target_id": "skill:850637b76ae4",
+      "relation_type": "MENTIONS_SKILL",
+      "properties": {
+        "document_id": "JD_40853946411",
+        "level": "mentioned",
+        "evidence_id": "evidence:JD_40853946411:a4ff02f7df46",
+        "evidence": "Agent开发：基于LangChain/LangGraph/AutoGen等框架，开发保险核保、理赔、客服等场景的智能Agent，设计多Agent协作架构。",
+        "occurrence_index": 2
+      }
+    },
+    {
+      "edge_id": "edge:13cbdfcfcdb44cd3",
+      "source_id": "job:JD_40756581406",
+      "target_id": "skill:bacef3aa90fb",
+      "relation_type": "REQUIRES_SKILL",
+      "properties": {
+        "document_id": "JD_40756581406",
+        "level": "required",
+        "evidence_id": "evidence:JD_40756581406:e9c48a009b10",
+        "evidence": "了解AI工作原理，熟悉GPT、文心一言、通义千问等常见大模型；熟悉操作系统、计算机网络等底层原理。",
+        "occurrence_index": 7
+      }
+    },
+    {
+      "edge_id": "edge:14b5edff51d96523",
+      "source_id": "job:JD_40875487605",
+      "target_id": "experience_years:5",
+      "relation_type": "REQUIRES_EXPERIENCE",
+      "properties": {
+        "document_id": "JD_40875487605",
+        "evidence_id": "evidence:JD_40875487605:78034587c86d",
+        "evidence": "经验要求：5-10年"
+      }
+    },
+    {
+      "edge_id": "edge:17e69c68b02860ad",
+      "source_id": "job:JD_40875487605",
+      "target_id": "skill:1879da55493b",
+      "relation_type": "MENTIONS_SKILL",
+      "properties": {
+        "document_id": "JD_40875487605",
+        "level": "mentioned",
+        "evidence_id": "evidence:JD_40875487605:a07d64f73191",
+        "evidence": "技术成长空间：接触 Dify、RAG、Agent 等最新 AI 工程化技术，打造智能化业务系统。",
+        "occurrence_index": 4
+      }
+    },
+    {
+      "edge_id": "edge:1b71c04083c9a46f",
+      "source_id": "job:JD_40875487605",
+      "target_id": "skill:9f1141549f7c",
+      "relation_type": "REQUIRES_SKILL",
+      "properties": {
+        "document_id": "JD_40875487605",
+        "level": "required",
+        "evidence_id": "evidence:JD_40875487605:60e593d4be1b",
+        "evidence": "工程素养：具备强烈的代码安全意识，擅长问题排查与性能调优；熟悉 Docker 虚拟化及 Jenkins/GitLab CI 等 DevOps 工具链。",
+        "occurrence_index": 20
+      }
+    },
+    {
+      "edge_id": "edge:26d3ce2c4d2b8dc2",
+      "source_id": "job:JD_40854813111",
+      "target_id": "skill:c21aa6f7dfa6",
+      "relation_type": "REQUIRES_SKILL",
+      "properties": {
+        "document_id": "JD_40854813111",
+        "level": "required",
+        "evidence_id": "evidence:JD_40854813111:879a8b61a0c5",
+        "evidence": "熟悉基本硬件驱动电路、嵌入式开发及常规测试设备使用，熟悉控制器软件算法设计流程，精通自动控制原理、数字信号处理等专业知识",
+        "occurrence_index": 7
+      }
+    },
+    {
+      "edge_id": "edge:2a4b62572f5129a3",
+      "source_id": "job:JD_40853946411",
+      "target_id": "skill:fc2b4216164c",
+      "relation_type": "REQUIRES_SKILL",
+      "properties": {
+        "document_id": "JD_40853946411",
+        "level": "required",
+        "evidence_id": "evidence:JD_40853946411:6147b31805b5",
+        "evidence": "精通Python，且至少精通Go/Java/Rust/C++/TypeScript中的一门",
+        "occurrence_index": 12
+      }
+    },
+    {
+      "edge_id": "edge:2ae3ef18d8afe9a4",
+      "source_id": "job:JD_40756581406",
+      "target_id": "skill:8088ded1b1aa",
+      "relation_type": "MENTIONS_SKILL",
+      "properties": {
+        "document_id": "JD_40756581406",
+        "level": "mentioned",
+        "evidence_id": "evidence:JD_40756581406:46ac89904790",
+        "evidence": "基于.NET框架，负责桌面端与服务器端AI应用的开发、架构设计及性能优化。",
+        "occurrence_index": 1
+      }
+    },
+    {
+      "edge_id": "edge:3408c18593f71e58",
+      "source_id": "job:JD_40853946411",
+      "target_id": "skill:e027e57610f8",
+      "relation_type": "REQUIRES_SKILL",
+      "properties": {
+        "document_id": "JD_40853946411",
+        "level": "required",
+        "evidence_id": "evidence:JD_40853946411:dd98f73db424",
+        "evidence": "能根据场景选型：Python用于模型集成，Go/Java用于高并发运行时，TS用于前端交互",
+        "occurrence_index": 16
+      }
+    },
+    {
+      "edge_id": "edge:35ba53a888ee700c",
+      "source_id": "job:JD_40875487605",
+      "target_id": "skill:3401ed05a132",
+      "relation_type": "MENTIONS_SKILL",
+      "properties": {
+        "document_id": "JD_40875487605",
+        "level": "mentioned",
+        "evidence_id": "evidence:JD_40875487605:83f33b03833d",
+        "evidence": "AI应用工程化：负责 Dify 平台的独立搭建与工作流编排，将大模型能力集成至现有业务系统中，实现智能问答、数据处理自动化等场景落地。",
+        "occurrence_index": 8
+      }
+    },
+    {
+      "edge_id": "edge:36b57175688e1acc",
+      "source_id": "job:JD_40875487605",
+      "target_id": "skill:e4bc4b105929",
+      "relation_type": "REQUIRES_SKILL",
+      "properties": {
+        "document_id": "JD_40875487605",
+        "level": "required",
+        "evidence_id": "evidence:JD_40875487605:3fc2beb77ae3",
+        "evidence": "核心技能：5年以上 .NET 开发经验，精通 C#、.NET Core、ASP.NET",
+        "occurrence_index": 14
+      }
+    },
+    {
+      "edge_id": "edge:38e8a7918f6be70c",
+      "source_id": "job:JD_40756581406",
+      "target_id": "education:0408da9944bc",
+      "relation_type": "REQUIRES_EDUCATION",
+      "properties": {
+        "document_id": "JD_40756581406",
+        "evidence_id": "evidence:JD_40756581406:8678d24e9a1a",
+        "evidence": "学历要求：本科"
+      }
+    },
+    {
+      "edge_id": "edge:46b77e9c31d0252f",
+      "source_id": "job:JD_40853946411",
+      "target_id": "skill:e027e57610f8",
+      "relation_type": "REQUIRES_SKILL",
+      "properties": {
+        "document_id": "JD_40853946411",
+        "level": "required",
+        "evidence_id": "evidence:JD_40853946411:6147b31805b5",
+        "evidence": "精通Python，且至少精通Go/Java/Rust/C++/TypeScript中的一门",
+        "occurrence_index": 10
+      }
+    },
+    {
+      "edge_id": "edge:485aeb475eed734d",
+      "source_id": "job:JD_40853946411",
+      "target_id": "skill:1879da55493b",
+      "relation_type": "MENTIONS_SKILL",
+      "properties": {
+        "document_id": "JD_40853946411",
+        "level": "mentioned",
+        "evidence_id": "evidence:JD_40853946411:66f11882f538",
+        "evidence": "业务集成：对接保险核心系统（核保/理赔/CRM），构建RAG知识库，建立Agent评估与迭代体系。",
+        "occurrence_index": 4
+      }
+    },
+    {
+      "edge_id": "edge:4c4c132eb81e59bb",
+      "source_id": "job:JD_40853946411",
+      "target_id": "experience_years:3",
+      "relation_type": "REQUIRES_EXPERIENCE",
+      "properties": {
+        "document_id": "JD_40853946411",
+        "evidence_id": "evidence:JD_40853946411:6f96b811883c",
+        "evidence": "经验要求：3-5年"
+      }
+    },
+    {
+      "edge_id": "edge:4cf7f916505c5481",
+      "source_id": "job:JD_40857441205",
+      "target_id": "location:67b85be8039d",
+      "relation_type": "LOCATED_IN",
+      "properties": {
+        "document_id": "JD_40857441205",
+        "evidence_id": "evidence:JD_40857441205:5d971a87b486",
+        "evidence": "工作地点：东莞 石碣镇"
+      }
+    },
+    {
+      "edge_id": "edge:4e6b506e38b7c53c",
+      "source_id": "job:JD_40854813111",
+      "target_id": "skill:219e4397af2d",
+      "relation_type": "MENTIONS_SKILL",
+      "properties": {
+        "document_id": "JD_40854813111",
+        "level": "mentioned",
+        "evidence_id": "evidence:JD_40854813111:272c31edfe95",
+        "evidence": "负责控制器控制算法开发与优化，确保控制系统高稳定性和鲁棒性",
+        "occurrence_index": 1
+      }
+    },
+    {
+      "edge_id": "edge:4f2e82cf7888761f",
+      "source_id": "job:JD_40854813111",
+      "target_id": "skill:d8ff2bed1da0",
+      "relation_type": "REQUIRES_SKILL",
+      "properties": {
+        "document_id": "JD_40854813111",
+        "level": "required",
+        "evidence_id": "evidence:JD_40854813111:8ae63074680d",
+        "evidence": "熟悉matlab/simulink工具的使用，能建立电机或者悬浮等控制算法模型并应用到实际某款嵌入式设备",
+        "occurrence_index": 8
+      }
+    },
+    {
+      "edge_id": "edge:4f6d42fd191734fb",
+      "source_id": "job:JD_40854813111",
+      "target_id": "skill:e3d99e1b80bb",
+      "relation_type": "REQUIRES_SKILL",
+      "properties": {
+        "document_id": "JD_40854813111",
+        "level": "required",
+        "evidence_id": "evidence:JD_40854813111:879a8b61a0c5",
+        "evidence": "熟悉基本硬件驱动电路、嵌入式开发及常规测试设备使用，熟悉控制器软件算法设计流程，精通自动控制原理、数字信号处理等专业知识",
+        "occurrence_index": 4
+      }
+    },
+    {
+      "edge_id": "edge:524d1d9a197bc514",
+      "source_id": "job:JD_40756581406",
+      "target_id": "skill:b1663a13d671",
+      "relation_type": "REQUIRES_SKILL",
+      "properties": {
+        "document_id": "JD_40756581406",
+        "level": "required",
+        "evidence_id": "evidence:JD_40756581406:e9c48a009b10",
+        "evidence": "了解AI工作原理，熟悉GPT、文心一言、通义千问等常见大模型；熟悉操作系统、计算机网络等底层原理。",
+        "occurrence_index": 9
+      }
+    },
+    {
+      "edge_id": "edge:5a1c55258e2b40b9",
+      "source_id": "job:JD_40756581406",
+      "target_id": "location:0a9884302f29",
+      "relation_type": "LOCATED_IN",
+      "properties": {
+        "document_id": "JD_40756581406",
+        "evidence_id": "evidence:JD_40756581406:b99df6cb7da2",
+        "evidence": "工作地点：合肥 蜀山 荷叶地"
+      }
+    },
+    {
+      "edge_id": "edge:5a698e074d62c7ce",
+      "source_id": "job:JD_40875487605",
+      "target_id": "skill:8088ded1b1aa",
+      "relation_type": "REQUIRES_SKILL",
+      "properties": {
+        "document_id": "JD_40875487605",
+        "level": "required",
+        "evidence_id": "evidence:JD_40875487605:3fc2beb77ae3",
+        "evidence": "核心技能：5年以上 .NET 开发经验，精通 C#、.NET Core、ASP.NET",
+        "occurrence_index": 13
+      }
+    },
+    {
+      "edge_id": "edge:61dcc8f66517e3ee",
+      "source_id": "job:JD_40853946411",
+      "target_id": "skill:5ce2e6f40299",
+      "relation_type": "REQUIRES_SKILL",
+      "properties": {
+        "document_id": "JD_40853946411",
+        "level": "required",
+        "evidence_id": "evidence:JD_40853946411:bb0ac34321c1",
+        "evidence": "Harness Engineering：构建Agent沙箱环境、工具调用治理、全链路可观测性、安全护栏（PII脱敏、人在回路），满足保险合规与审计要求。",
+        "occurrence_index": 3
+      }
+    },
+    {
+      "edge_id": "edge:63f64f8efb360558",
+      "source_id": "job:JD_40853946411",
+      "target_id": "skill:850637b76ae4",
+      "relation_type": "REQUIRES_SKILL",
+      "properties": {
+        "document_id": "JD_40853946411",
+        "level": "required",
+        "evidence_id": "evidence:JD_40853946411:e265493165bd",
+        "evidence": "熟悉LangChain/LangGraph等Agent框架",
+        "occurrence_index": 18
+      }
+    },
+    {
+      "edge_id": "edge:672117e6e910408b",
+      "source_id": "job:JD_40854813111",
+      "target_id": "skill:fb03f47034c1",
+      "relation_type": "REQUIRES_SKILL",
+      "properties": {
+        "document_id": "JD_40854813111",
+        "level": "required",
+        "evidence_id": "evidence:JD_40854813111:167ef85e3fe0",
+        "evidence": "工作经验:具备3-5年以上算法设计、工程落地等相关经验。",
+        "occurrence_index": 3
+      }
+    },
+    {
+      "edge_id": "edge:6e121cc0fb4f57a7",
+      "source_id": "job:JD_40854813111",
+      "target_id": "education:0408da9944bc",
+      "relation_type": "REQUIRES_EDUCATION",
+      "properties": {
+        "document_id": "JD_40854813111",
+        "evidence_id": "evidence:JD_40854813111:8678d24e9a1a",
+        "evidence": "学历要求：本科"
+      }
+    },
+    {
+      "edge_id": "edge:6e2de383c512bedf",
+      "source_id": "job:JD_40853946411",
+      "target_id": "skill:d4a86cb946d4",
+      "relation_type": "REQUIRES_SKILL",
+      "properties": {
+        "document_id": "JD_40853946411",
+        "level": "required",
+        "evidence_id": "evidence:JD_40853946411:6147b31805b5",
+        "evidence": "精通Python，且至少精通Go/Java/Rust/C++/TypeScript中的一门",
+        "occurrence_index": 13
+      }
+    },
+    {
+      "edge_id": "edge:6e9af4c478740915",
+      "source_id": "job:JD_40875487605",
+      "target_id": "skill:b6ab39b73b00",
+      "relation_type": "REQUIRES_SKILL",
+      "properties": {
+        "document_id": "JD_40875487605",
+        "level": "required",
+        "evidence_id": "evidence:JD_40875487605:87d277ee118b",
+        "evidence": "熟练配置和使用 Nginx、Redis、RabbitMQ/Kafka、Elasticsearch、Prometheus/Grafana 等主流中间件。",
+        "occurrence_index": 16
+      }
+    },
+    {
+      "edge_id": "edge:720fe9a6bd692bcb",
+      "source_id": "job:JD_40853946411",
+      "target_id": "skill:3401ed05a132",
+      "relation_type": "REQUIRES_SKILL",
+      "properties": {
+        "document_id": "JD_40853946411",
+        "level": "required",
+        "evidence_id": "evidence:JD_40853946411:5df7ccf1c9ce",
+        "evidence": "本科及以上，3年后端/AI开发经验，1年以上Agent/大模型应用经验",
+        "occurrence_index": 7
+      }
+    },
+    {
+      "edge_id": "edge:721cd8c742075685",
+      "source_id": "job:JD_40875487605",
+      "target_id": "skill:5ce2e6f40299",
+      "relation_type": "REQUIRES_SKILL",
+      "properties": {
+        "document_id": "JD_40875487605",
+        "level": "required",
+        "evidence_id": "evidence:JD_40875487605:87c37f88d9f6",
+        "evidence": "平台的使用经验，能够独立搭建 Agent 工作流。",
+        "occurrence_index": 18
+      }
+    },
+    {
+      "edge_id": "edge:76884cdfaa26d54a",
+      "source_id": "job:JD_40854813111",
+      "target_id": "skill:769bc169aa9f",
+      "relation_type": "REQUIRES_SKILL",
+      "properties": {
+        "document_id": "JD_40854813111",
+        "level": "required",
+        "evidence_id": "evidence:JD_40854813111:879a8b61a0c5",
+        "evidence": "熟悉基本硬件驱动电路、嵌入式开发及常规测试设备使用，熟悉控制器软件算法设计流程，精通自动控制原理、数字信号处理等专业知识",
+        "occurrence_index": 6
+      }
+    },
+    {
+      "edge_id": "edge:76bf59517ce4601e",
+      "source_id": "job:JD_40853946411",
+      "target_id": "skill:5ce2e6f40299",
+      "relation_type": "REQUIRES_SKILL",
+      "properties": {
+        "document_id": "JD_40853946411",
+        "level": "required",
+        "evidence_id": "evidence:JD_40853946411:e265493165bd",
+        "evidence": "熟悉LangChain/LangGraph等Agent框架",
+        "occurrence_index": 19
+      }
+    },
+    {
+      "edge_id": "edge:7c621cd7858a3315",
+      "source_id": "job:JD_40756581406",
+      "target_id": "skill:b5ad1cc29602",
+      "relation_type": "MENTIONS_SKILL",
+      "properties": {
+        "document_id": "JD_40756581406",
+        "level": "mentioned",
+        "evidence_id": "evidence:JD_40756581406:46ac89904790",
+        "evidence": "基于.NET框架，负责桌面端与服务器端AI应用的开发、架构设计及性能优化。",
+        "occurrence_index": 2
+      }
+    },
+    {
+      "edge_id": "edge:81e043e0f5086dc3",
+      "source_id": "job:JD_40875487605",
+      "target_id": "skill:5819778898df",
+      "relation_type": "REQUIRES_SKILL",
+      "properties": {
+        "document_id": "JD_40875487605",
+        "level": "required",
+        "evidence_id": "evidence:JD_40875487605:60e593d4be1b",
+        "evidence": "工程素养：具备强烈的代码安全意识，擅长问题排查与性能调优；熟悉 Docker 虚拟化及 Jenkins/GitLab CI 等 DevOps 工具链。",
+        "occurrence_index": 21
+      }
+    },
+    {
+      "edge_id": "edge:82fe764d22a63ed9",
+      "source_id": "job:JD_40875487605",
+      "target_id": "skill:8088ded1b1aa",
+      "relation_type": "MENTIONS_SKILL",
+      "properties": {
+        "document_id": "JD_40875487605",
+        "level": "mentioned",
+        "evidence_id": "evidence:JD_40875487605:1b24df48e534",
+        "evidence": "全栈开发与架构：基于 .NET Core (ABP框架) + Vue 技术栈，负责核心业务模块的需求分析、系统设计、编码实现及测试上线，确保代码的高可维护性与扩展性。",
+        "occurrence_index": 6
+      }
+    },
+    {
+      "edge_id": "edge:83a619414e55d8f6",
+      "source_id": "job:JD_40756581406",
+      "target_id": "experience_years:1",
+      "relation_type": "REQUIRES_EXPERIENCE",
+      "properties": {
+        "document_id": "JD_40756581406",
+        "evidence_id": "evidence:JD_40756581406:76d35eb860a4",
+        "evidence": "经验要求：1-3年"
+      }
+    },
+    {
+      "edge_id": "edge:85dd4a5d8db773cc",
+      "source_id": "job:JD_40756581406",
+      "target_id": "skill:e4bc4b105929",
+      "relation_type": "REQUIRES_SKILL",
+      "properties": {
+        "document_id": "JD_40756581406",
+        "level": "required",
+        "evidence_id": "evidence:JD_40756581406:28a26cea463e",
+        "evidence": "精通C#，熟练掌握.NET框架，有桌面及服务端开发经验。",
+        "occurrence_index": 5
+      }
+    },
+    {
+      "edge_id": "edge:8844177f1bc89789",
+      "source_id": "job:JD_40853946411",
+      "target_id": "skill:6e3604888c4b",
+      "relation_type": "REQUIRES_SKILL",
+      "properties": {
+        "document_id": "JD_40853946411",
+        "level": "required",
+        "evidence_id": "evidence:JD_40853946411:6147b31805b5",
+        "evidence": "精通Python，且至少精通Go/Java/Rust/C++/TypeScript中的一门",
+        "occurrence_index": 8
+      }
+    },
+    {
+      "edge_id": "edge:8903b1b615a9eee0",
+      "source_id": "job:JD_40875487605",
+      "target_id": "education:aa2d24dd4cc1",
+      "relation_type": "REQUIRES_EDUCATION",
+      "properties": {
+        "document_id": "JD_40875487605",
+        "evidence_id": "evidence:JD_40875487605:929dbfc7cb99",
+        "evidence": "学历要求：大专"
+      }
+    },
+    {
+      "edge_id": "edge:8b774b989b2ff042",
+      "source_id": "job:JD_40854813111",
+      "target_id": "skill:219e4397af2d",
+      "relation_type": "REQUIRES_SKILL",
+      "properties": {
+        "document_id": "JD_40854813111",
+        "level": "required",
+        "evidence_id": "evidence:JD_40854813111:8ae63074680d",
+        "evidence": "熟悉matlab/simulink工具的使用，能建立电机或者悬浮等控制算法模型并应用到实际某款嵌入式设备",
+        "occurrence_index": 10
+      }
+    },
+    {
+      "edge_id": "edge:955f9ec1e0bb3630",
+      "source_id": "job:JD_40875487605",
+      "target_id": "skill:24071b57a130",
+      "relation_type": "REQUIRES_SKILL",
+      "properties": {
+        "document_id": "JD_40875487605",
+        "level": "required",
+        "evidence_id": "evidence:JD_40875487605:87d277ee118b",
+        "evidence": "熟练配置和使用 Nginx、Redis、RabbitMQ/Kafka、Elasticsearch、Prometheus/Grafana 等主流中间件。",
+        "occurrence_index": 15
+      }
+    },
+    {
+      "edge_id": "edge:989b1c0dfd077e5c",
+      "source_id": "job:JD_40875487605",
+      "target_id": "skill:b5ad1cc29602",
+      "relation_type": "MENTIONS_SKILL",
+      "properties": {
+        "document_id": "JD_40875487605",
+        "level": "mentioned",
+        "evidence_id": "evidence:JD_40875487605:9abcd18e570b",
+        "evidence": "全流程主导权：从需求分析到架构设计，再到 AI 工作流搭建，拥有高度的技术自主权。",
+        "occurrence_index": 3
+      }
+    },
+    {
+      "edge_id": "edge:995ef49ff81d2536",
+      "source_id": "job:JD_40854813111",
+      "target_id": "skill:7de5a8427321",
+      "relation_type": "MENTIONS_SKILL",
+      "properties": {
+        "document_id": "JD_40854813111",
+        "level": "mentioned",
+        "evidence_id": "evidence:JD_40854813111:272c31edfe95",
+        "evidence": "负责控制器控制算法开发与优化，确保控制系统高稳定性和鲁棒性",
+        "occurrence_index": 12
+      }
+    },
+    {
+      "edge_id": "edge:9ce2fff8ea9d151b",
+      "source_id": "job:JD_40854813111",
+      "target_id": "location:9cd075924003",
+      "relation_type": "LOCATED_IN",
+      "properties": {
+        "document_id": "JD_40854813111",
+        "evidence_id": "evidence:JD_40854813111:c23ed784c9e8",
+        "evidence": "工作地点：苏州 工业园区"
+      }
+    },
+    {
+      "edge_id": "edge:9ef97a0ec9241077",
+      "source_id": "job:JD_40756581406",
+      "target_id": "skill:3401ed05a132",
+      "relation_type": "REQUIRES_SKILL",
+      "properties": {
+        "document_id": "JD_40756581406",
+        "level": "required",
+        "evidence_id": "evidence:JD_40756581406:e9c48a009b10",
+        "evidence": "了解AI工作原理，熟悉GPT、文心一言、通义千问等常见大模型；熟悉操作系统、计算机网络等底层原理。",
+        "occurrence_index": 10
+      }
+    },
+    {
+      "edge_id": "edge:9f7ce336f5ed5532",
+      "source_id": "job:JD_40875487605",
+      "target_id": "skill:dbe26ebee7a3",
+      "relation_type": "MENTIONS_SKILL",
+      "properties": {
+        "document_id": "JD_40875487605",
+        "level": "mentioned",
+        "evidence_id": "evidence:JD_40875487605:136a7c10a71c",
+        "evidence": "流程建设，利用 Docker/K8s 进行容器化部署，提升交付效率。",
+        "occurrence_index": 12
+      }
+    },
+    {
+      "edge_id": "edge:a6d122840764ef38",
+      "source_id": "job:JD_40875487605",
+      "target_id": "skill:1879da55493b",
+      "relation_type": "PREFERS_SKILL",
+      "properties": {
+        "document_id": "JD_40875487605",
+        "level": "preferred",
+        "evidence_id": "evidence:JD_40875487605:128a8b86d97e",
+        "evidence": "加分：了解 RAG（检索增强生成）、Vector",
+        "occurrence_index": 19
+      }
+    },
+    {
+      "edge_id": "edge:a7e0a9a3c65380ce",
+      "source_id": "job:JD_40756581406",
+      "target_id": "skill:ac34e2863bf4",
+      "relation_type": "REQUIRES_SKILL",
+      "properties": {
+        "document_id": "JD_40756581406",
+        "level": "required",
+        "evidence_id": "evidence:JD_40756581406:e9c48a009b10",
+        "evidence": "了解AI工作原理，熟悉GPT、文心一言、通义千问等常见大模型；熟悉操作系统、计算机网络等底层原理。",
+        "occurrence_index": 8
+      }
+    },
+    {
+      "edge_id": "edge:b23b726ac9f10dc4",
+      "source_id": "job:JD_40853946411",
+      "target_id": "skill:6e3604888c4b",
+      "relation_type": "REQUIRES_SKILL",
+      "properties": {
+        "document_id": "JD_40853946411",
+        "level": "required",
+        "evidence_id": "evidence:JD_40853946411:dd98f73db424",
+        "evidence": "能根据场景选型：Python用于模型集成，Go/Java用于高并发运行时，TS用于前端交互",
+        "occurrence_index": 14
+      }
+    },
+    {
+      "edge_id": "edge:b31c45e0f1ed03e9",
+      "source_id": "job:JD_40853946411",
+      "target_id": "education:0408da9944bc",
+      "relation_type": "REQUIRES_EDUCATION",
+      "properties": {
+        "document_id": "JD_40853946411",
+        "evidence_id": "evidence:JD_40853946411:8678d24e9a1a",
+        "evidence": "学历要求：本科"
+      }
+    },
+    {
+      "edge_id": "edge:b55bce0686c917fa",
+      "source_id": "job:JD_40756581406",
+      "target_id": "skill:aa8c0cd1ecc7",
+      "relation_type": "MENTIONS_SKILL",
+      "properties": {
+        "document_id": "JD_40756581406",
+        "level": "mentioned",
+        "evidence_id": "evidence:JD_40756581406:46ac89904790",
+        "evidence": "基于.NET框架，负责桌面端与服务器端AI应用的开发、架构设计及性能优化。",
+        "occurrence_index": 3
+      }
+    },
+    {
+      "edge_id": "edge:b8494994e77bb65c",
+      "source_id": "job:JD_40853946411",
+      "target_id": "skill:5ce2e6f40299",
+      "relation_type": "MENTIONS_SKILL",
+      "properties": {
+        "document_id": "JD_40853946411",
+        "level": "mentioned",
+        "evidence_id": "evidence:JD_40853946411:66f11882f538",
+        "evidence": "业务集成：对接保险核心系统（核保/理赔/CRM），构建RAG知识库，建立Agent评估与迭代体系。",
+        "occurrence_index": 5
+      }
+    },
+    {
+      "edge_id": "edge:b865cd069f601fe1",
+      "source_id": "job:JD_40853946411",
+      "target_id": "skill:5ce2e6f40299",
+      "relation_type": "MENTIONS_SKILL",
+      "properties": {
+        "document_id": "JD_40853946411",
+        "level": "mentioned",
+        "evidence_id": "evidence:JD_40853946411:a4ff02f7df46",
+        "evidence": "Agent开发：基于LangChain/LangGraph/AutoGen等框架，开发保险核保、理赔、客服等场景的智能Agent，设计多Agent协作架构。",
+        "occurrence_index": 1
+      }
+    },
+    {
+      "edge_id": "edge:b9401823727d5785",
+      "source_id": "job:JD_40875487605",
+      "target_id": "skill:aa8c0cd1ecc7",
+      "relation_type": "MENTIONS_SKILL",
+      "properties": {
+        "document_id": "JD_40875487605",
+        "level": "mentioned",
+        "evidence_id": "evidence:JD_40875487605:17332bb0659a",
+        "evidence": "系统性能优化：利用 Redis、MQ、ES 等中间件解决高并发、分布式场景下的性能瓶颈，负责链路追踪、监控告警及系统稳定性保障。",
+        "occurrence_index": 9
+      }
+    },
+    {
+      "edge_id": "edge:ba62725d362eac0b",
+      "source_id": "job:JD_40756581406",
+      "target_id": "skill:3401ed05a132",
+      "relation_type": "MENTIONS_SKILL",
+      "properties": {
+        "document_id": "JD_40756581406",
+        "level": "mentioned",
+        "evidence_id": "evidence:JD_40756581406:b955ae27ce8e",
+        "evidence": "跟踪大模型技术动态，推动AI技术在业务场景落地。",
+        "occurrence_index": 4
+      }
+    },
+    {
+      "edge_id": "edge:ba8b03e799989719",
+      "source_id": "job:JD_40875487605",
+      "target_id": "skill:4236857abb3c",
+      "relation_type": "MENTIONS_SKILL",
+      "properties": {
+        "document_id": "JD_40875487605",
+        "level": "mentioned",
+        "evidence_id": "evidence:JD_40875487605:1b24df48e534",
+        "evidence": "全栈开发与架构：基于 .NET Core (ABP框架) + Vue 技术栈，负责核心业务模块的需求分析、系统设计、编码实现及测试上线，确保代码的高可维护性与扩展性。",
+        "occurrence_index": 7
+      }
+    },
+    {
+      "edge_id": "edge:bfb55b14be5134e3",
+      "source_id": "job:JD_40853946411",
+      "target_id": "location:172caa70236b",
+      "relation_type": "LOCATED_IN",
+      "properties": {
+        "document_id": "JD_40853946411",
+        "evidence_id": "evidence:JD_40853946411:ec71f5c9c6ba",
+        "evidence": "工作地点：上海 浦东 唐镇"
+      }
+    },
+    {
+      "edge_id": "edge:c494cede68806a55",
+      "source_id": "job:JD_40857441205",
+      "target_id": "experience_years:3",
+      "relation_type": "REQUIRES_EXPERIENCE",
+      "properties": {
+        "document_id": "JD_40857441205",
+        "evidence_id": "evidence:JD_40857441205:6f96b811883c",
+        "evidence": "经验要求：3-5年"
+      }
+    },
+    {
+      "edge_id": "edge:cacb7ea5df7f8b38",
+      "source_id": "job:JD_40854813111",
+      "target_id": "experience_years:3",
+      "relation_type": "REQUIRES_EXPERIENCE",
+      "properties": {
+        "document_id": "JD_40854813111",
+        "evidence_id": "evidence:JD_40854813111:6f96b811883c",
+        "evidence": "经验要求：3-5年"
+      }
+    },
+    {
+      "edge_id": "edge:cec4ef0a1b722674",
+      "source_id": "job:JD_40857441205",
+      "target_id": "skill:1cb9cfedf79d",
+      "relation_type": "REQUIRES_SKILL",
+      "properties": {
+        "document_id": "JD_40857441205",
+        "level": "required",
+        "evidence_id": "evidence:JD_40857441205:2599e4b8d014",
+        "evidence": "熟练3D&2D制图、结构设计、公差分析",
+        "occurrence_index": 1
+      }
+    },
+    {
+      "edge_id": "edge:d0b141d2f0230338",
+      "source_id": "job:JD_40875487605",
+      "target_id": "skill:9f1141549f7c",
+      "relation_type": "MENTIONS_SKILL",
+      "properties": {
+        "document_id": "JD_40875487605",
+        "level": "mentioned",
+        "evidence_id": "evidence:JD_40875487605:136a7c10a71c",
+        "evidence": "流程建设，利用 Docker/K8s 进行容器化部署，提升交付效率。",
+        "occurrence_index": 11
+      }
+    },
+    {
+      "edge_id": "edge:d363716cdf1e0432",
+      "source_id": "job:JD_40853946411",
+      "target_id": "skill:2e0b45f2a456",
+      "relation_type": "REQUIRES_SKILL",
+      "properties": {
+        "document_id": "JD_40853946411",
+        "level": "required",
+        "evidence_id": "evidence:JD_40853946411:6147b31805b5",
+        "evidence": "精通Python，且至少精通Go/Java/Rust/C++/TypeScript中的一门",
+        "occurrence_index": 9
+      }
+    },
+    {
+      "edge_id": "edge:d415c266362218d0",
+      "source_id": "job:JD_40853946411",
+      "target_id": "skill:5ce2e6f40299",
+      "relation_type": "REQUIRES_SKILL",
+      "properties": {
+        "document_id": "JD_40853946411",
+        "level": "required",
+        "evidence_id": "evidence:JD_40853946411:fd23fca75db0",
+        "evidence": "Agent与Harness",
+        "occurrence_index": 17
+      }
+    },
+    {
+      "edge_id": "edge:d5776f77aa79e2f9",
+      "source_id": "job:JD_40853946411",
+      "target_id": "skill:5ce2e6f40299",
+      "relation_type": "REQUIRES_SKILL",
+      "properties": {
+        "document_id": "JD_40853946411",
+        "level": "required",
+        "evidence_id": "evidence:JD_40853946411:f027e3dda2d5",
+        "evidence": "理解“Agent = Model + Harness”，有沙箱、工具治理、可观测性、护栏实践经验",
+        "occurrence_index": 20
+      }
+    },
+    {
+      "edge_id": "edge:d7a566841393a00d",
+      "source_id": "job:JD_40854813111",
+      "target_id": "skill:219e4397af2d",
+      "relation_type": "REQUIRES_SKILL",
+      "properties": {
+        "document_id": "JD_40854813111",
+        "level": "required",
+        "evidence_id": "evidence:JD_40854813111:f937cdd20600",
+        "evidence": "熟悉电机foc 、sensorless 等主流电机控制算法，对电机震动抑制、噪声有一定研究",
+        "occurrence_index": 11
+      }
+    },
+    {
+      "edge_id": "edge:df0e914fa734b92f",
+      "source_id": "job:JD_40756581406",
+      "target_id": "skill:8088ded1b1aa",
+      "relation_type": "REQUIRES_SKILL",
+      "properties": {
+        "document_id": "JD_40756581406",
+        "level": "required",
+        "evidence_id": "evidence:JD_40756581406:28a26cea463e",
+        "evidence": "精通C#，熟练掌握.NET框架，有桌面及服务端开发经验。",
+        "occurrence_index": 6
+      }
+    },
+    {
+      "edge_id": "edge:e31b66e57024ed3f",
+      "source_id": "job:JD_40853946411",
+      "target_id": "skill:2e0b45f2a456",
+      "relation_type": "REQUIRES_SKILL",
+      "properties": {
+        "document_id": "JD_40853946411",
+        "level": "required",
+        "evidence_id": "evidence:JD_40853946411:dd98f73db424",
+        "evidence": "能根据场景选型：Python用于模型集成，Go/Java用于高并发运行时，TS用于前端交互",
+        "occurrence_index": 15
+      }
+    },
+    {
+      "edge_id": "edge:e4a767cf5d9ee55a",
+      "source_id": "job:JD_40853946411",
+      "target_id": "skill:1879da55493b",
+      "relation_type": "REQUIRES_SKILL",
+      "properties": {
+        "document_id": "JD_40853946411",
+        "level": "required",
+        "evidence_id": "evidence:JD_40853946411:b23d626eb27b",
+        "evidence": "熟悉RAG、向量数据库、提示工程",
+        "occurrence_index": 21
+      }
+    },
+    {
+      "edge_id": "edge:e8dc8e68ee986be8",
+      "source_id": "job:JD_40875487605",
+      "target_id": "skill:85bb5d88d7f7",
+      "relation_type": "REQUIRES_SKILL",
+      "properties": {
+        "document_id": "JD_40875487605",
+        "level": "required",
+        "evidence_id": "evidence:JD_40875487605:87d277ee118b",
+        "evidence": "熟练配置和使用 Nginx、Redis、RabbitMQ/Kafka、Elasticsearch、Prometheus/Grafana 等主流中间件。",
+        "occurrence_index": 17
+      }
+    },
+    {
+      "edge_id": "edge:ea6dbaa573a210af",
+      "source_id": "job:JD_40853946411",
+      "target_id": "skill:5ce2e6f40299",
+      "relation_type": "REQUIRES_SKILL",
+      "properties": {
+        "document_id": "JD_40853946411",
+        "level": "required",
+        "evidence_id": "evidence:JD_40853946411:5df7ccf1c9ce",
+        "evidence": "本科及以上，3年后端/AI开发经验，1年以上Agent/大模型应用经验",
+        "occurrence_index": 6
+      }
+    },
+    {
+      "edge_id": "edge:eecc7069a80064ee",
+      "source_id": "job:JD_40875487605",
+      "target_id": "skill:8088ded1b1aa",
+      "relation_type": "MENTIONS_SKILL",
+      "properties": {
+        "document_id": "JD_40875487605",
+        "level": "mentioned",
+        "evidence_id": "evidence:JD_40875487605:d8a42fd1816b",
+        "evidence": "前沿技术融合：深度结合 .NET Core 高性能后端与 Vue 前端，探索 LLM（大语言模型）在企业级应用中的落地。",
+        "occurrence_index": 1
+      }
+    },
+    {
+      "edge_id": "edge:ef36a6a4ce248bc5",
+      "source_id": "job:JD_40875487605",
+      "target_id": "location:5fdd522d1c24",
+      "relation_type": "LOCATED_IN",
+      "properties": {
+        "document_id": "JD_40875487605",
+        "evidence_id": "evidence:JD_40875487605:2af3ad1e9a6b",
+        "evidence": "工作地点：上海 浦东 高行"
+      }
+    },
+    {
+      "edge_id": "edge:f33376055ce282a8",
+      "source_id": "job:JD_40857441205",
+      "target_id": "education:0408da9944bc",
+      "relation_type": "REQUIRES_EDUCATION",
+      "properties": {
+        "document_id": "JD_40857441205",
+        "evidence_id": "evidence:JD_40857441205:8678d24e9a1a",
+        "evidence": "学历要求：本科"
+      }
+    },
+    {
+      "edge_id": "edge:f3b2f1ef5448aae1",
+      "source_id": "job:JD_40853946411",
+      "target_id": "skill:e2ae20d9ae7f",
+      "relation_type": "REQUIRES_SKILL",
+      "properties": {
+        "document_id": "JD_40853946411",
+        "level": "required",
+        "evidence_id": "evidence:JD_40853946411:6147b31805b5",
+        "evidence": "精通Python，且至少精通Go/Java/Rust/C++/TypeScript中的一门",
+        "occurrence_index": 11
+      }
+    },
+    {
+      "edge_id": "edge:fb763cc86f9faf17",
+      "source_id": "job:JD_40854813111",
+      "target_id": "skill:fb03f47034c1",
+      "relation_type": "MENTIONS_SKILL",
+      "properties": {
+        "document_id": "JD_40854813111",
+        "level": "mentioned",
+        "evidence_id": "evidence:JD_40854813111:c3f285439ea4",
+        "evidence": "负责控制器整体算法设计，与软件和调试部门紧密合作，保证软件质量和产品稳定运行",
+        "occurrence_index": 2
+      }
+    },
+    {
+      "edge_id": "edge:fb9b88be7e374120",
+      "source_id": "job:JD_40875487605",
+      "target_id": "skill:24071b57a130",
+      "relation_type": "MENTIONS_SKILL",
+      "properties": {
+        "document_id": "JD_40875487605",
+        "level": "mentioned",
+        "evidence_id": "evidence:JD_40875487605:17332bb0659a",
+        "evidence": "系统性能优化：利用 Redis、MQ、ES 等中间件解决高并发、分布式场景下的性能瓶颈，负责链路追踪、监控告警及系统稳定性保障。",
+        "occurrence_index": 10
+      }
+    },
+    {
+      "edge_id": "edge:fc7bc1d8fc234e29",
+      "source_id": "job:JD_40854813111",
+      "target_id": "skill:817e54a108b4",
+      "relation_type": "REQUIRES_SKILL",
+      "properties": {
+        "document_id": "JD_40854813111",
+        "level": "required",
+        "evidence_id": "evidence:JD_40854813111:8ae63074680d",
+        "evidence": "熟悉matlab/simulink工具的使用，能建立电机或者悬浮等控制算法模型并应用到实际某款嵌入式设备",
+        "occurrence_index": 9
+      }
+    },
+    {
+      "edge_id": "edge:08418bbbbbd88524",
+      "source_id": "skill:817e54a108b4",
+      "target_id": "evidence:JD_40854813111:8ae63074680d",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40854813111",
+        "evidence_id": "evidence:JD_40854813111:8ae63074680d"
+      }
+    },
+    {
+      "edge_id": "edge:092a9646df48014b",
+      "source_id": "skill:5ce2e6f40299",
+      "target_id": "evidence:JD_40853946411:66f11882f538",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40853946411",
+        "evidence_id": "evidence:JD_40853946411:66f11882f538"
+      }
+    },
+    {
+      "edge_id": "edge:0de101cdeaaaf1c7",
+      "source_id": "skill:7de5a8427321",
+      "target_id": "evidence:JD_40854813111:272c31edfe95",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40854813111",
+        "evidence_id": "evidence:JD_40854813111:272c31edfe95"
+      }
+    },
+    {
+      "edge_id": "edge:0ed98748fbb8b12d",
+      "source_id": "skill:5ce2e6f40299",
+      "target_id": "evidence:JD_40853946411:f027e3dda2d5",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40853946411",
+        "evidence_id": "evidence:JD_40853946411:f027e3dda2d5"
+      }
+    },
+    {
+      "edge_id": "edge:17cd493af7bb4230",
+      "source_id": "skill:e2ae20d9ae7f",
+      "target_id": "evidence:JD_40853946411:6147b31805b5",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40853946411",
+        "evidence_id": "evidence:JD_40853946411:6147b31805b5"
+      }
+    },
+    {
+      "edge_id": "edge:1aecac0585220691",
+      "source_id": "skill:24071b57a130",
+      "target_id": "evidence:JD_40875487605:17332bb0659a",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40875487605",
+        "evidence_id": "evidence:JD_40875487605:17332bb0659a"
+      }
+    },
+    {
+      "edge_id": "edge:1b0d44466961fcc7",
+      "source_id": "skill:4236857abb3c",
+      "target_id": "evidence:JD_40875487605:1b24df48e534",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40875487605",
+        "evidence_id": "evidence:JD_40875487605:1b24df48e534"
+      }
+    },
+    {
+      "edge_id": "edge:1b2aa465b08fc9e0",
+      "source_id": "experience_years:3",
+      "target_id": "evidence:JD_40853946411:6f96b811883c",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40853946411",
+        "evidence_id": "evidence:JD_40853946411:6f96b811883c"
+      }
+    },
+    {
+      "edge_id": "edge:1b4fc7238dd264f1",
+      "source_id": "skill:5ce2e6f40299",
+      "target_id": "evidence:JD_40853946411:e265493165bd",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40853946411",
+        "evidence_id": "evidence:JD_40853946411:e265493165bd"
+      }
+    },
+    {
+      "edge_id": "edge:2185ab121414c5a1",
+      "source_id": "skill:1879da55493b",
+      "target_id": "evidence:JD_40853946411:b23d626eb27b",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40853946411",
+        "evidence_id": "evidence:JD_40853946411:b23d626eb27b"
+      }
+    },
+    {
+      "edge_id": "edge:29e15ba21af5ba58",
+      "source_id": "skill:1cb9cfedf79d",
+      "target_id": "evidence:JD_40857441205:2599e4b8d014",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40857441205",
+        "evidence_id": "evidence:JD_40857441205:2599e4b8d014"
+      }
+    },
+    {
+      "edge_id": "edge:2affc187cf394593",
+      "source_id": "skill:e3d99e1b80bb",
+      "target_id": "evidence:JD_40854813111:879a8b61a0c5",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40854813111",
+        "evidence_id": "evidence:JD_40854813111:879a8b61a0c5"
+      }
+    },
+    {
+      "edge_id": "edge:2b185a4ae16e5d04",
+      "source_id": "skill:219e4397af2d",
+      "target_id": "evidence:JD_40854813111:f937cdd20600",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40854813111",
+        "evidence_id": "evidence:JD_40854813111:f937cdd20600"
+      }
+    },
+    {
+      "edge_id": "edge:2b4bad6e32d240cd",
+      "source_id": "skill:b6ab39b73b00",
+      "target_id": "evidence:JD_40875487605:87d277ee118b",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40875487605",
+        "evidence_id": "evidence:JD_40875487605:87d277ee118b"
+      }
+    },
+    {
+      "edge_id": "edge:2bf9461a3b8fc48b",
+      "source_id": "skill:850637b76ae4",
+      "target_id": "evidence:JD_40853946411:e265493165bd",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40853946411",
+        "evidence_id": "evidence:JD_40853946411:e265493165bd"
+      }
+    },
+    {
+      "edge_id": "edge:2e432a515dd85be1",
+      "source_id": "skill:5ce2e6f40299",
+      "target_id": "evidence:JD_40853946411:bb0ac34321c1",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40853946411",
+        "evidence_id": "evidence:JD_40853946411:bb0ac34321c1"
+      }
+    },
+    {
+      "edge_id": "edge:3e9961350babd629",
+      "source_id": "skill:dbe26ebee7a3",
+      "target_id": "evidence:JD_40875487605:136a7c10a71c",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40875487605",
+        "evidence_id": "evidence:JD_40875487605:136a7c10a71c"
+      }
+    },
+    {
+      "edge_id": "edge:415ce7984c3b307f",
+      "source_id": "skill:2e0b45f2a456",
+      "target_id": "evidence:JD_40853946411:6147b31805b5",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40853946411",
+        "evidence_id": "evidence:JD_40853946411:6147b31805b5"
+      }
+    },
+    {
+      "edge_id": "edge:45c186f24fd341e8",
+      "source_id": "location:172caa70236b",
+      "target_id": "evidence:JD_40853946411:ec71f5c9c6ba",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40853946411",
+        "evidence_id": "evidence:JD_40853946411:ec71f5c9c6ba"
+      }
+    },
+    {
+      "edge_id": "edge:5112f586c572ce29",
+      "source_id": "skill:8088ded1b1aa",
+      "target_id": "evidence:JD_40756581406:28a26cea463e",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40756581406",
+        "evidence_id": "evidence:JD_40756581406:28a26cea463e"
+      }
+    },
+    {
+      "edge_id": "edge:58493f290f324f2e",
+      "source_id": "skill:8088ded1b1aa",
+      "target_id": "evidence:JD_40756581406:46ac89904790",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40756581406",
+        "evidence_id": "evidence:JD_40756581406:46ac89904790"
+      }
+    },
+    {
+      "edge_id": "edge:5aacd51b5c9ddebf",
+      "source_id": "experience_years:1",
+      "target_id": "evidence:JD_40756581406:76d35eb860a4",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40756581406",
+        "evidence_id": "evidence:JD_40756581406:76d35eb860a4"
+      }
+    },
+    {
+      "edge_id": "edge:5b3e3471bca0e847",
+      "source_id": "skill:d8ff2bed1da0",
+      "target_id": "evidence:JD_40854813111:8ae63074680d",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40854813111",
+        "evidence_id": "evidence:JD_40854813111:8ae63074680d"
+      }
+    },
+    {
+      "edge_id": "edge:5b891fb72e68bd04",
+      "source_id": "education:0408da9944bc",
+      "target_id": "evidence:JD_40853946411:8678d24e9a1a",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40853946411",
+        "evidence_id": "evidence:JD_40853946411:8678d24e9a1a"
+      }
+    },
+    {
+      "edge_id": "edge:5e33aa9ff9b16ca8",
+      "source_id": "skill:d4a86cb946d4",
+      "target_id": "evidence:JD_40853946411:6147b31805b5",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40853946411",
+        "evidence_id": "evidence:JD_40853946411:6147b31805b5"
+      }
+    },
+    {
+      "edge_id": "edge:5e95b5fc801ec7ff",
+      "source_id": "skill:fb03f47034c1",
+      "target_id": "evidence:JD_40854813111:879a8b61a0c5",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40854813111",
+        "evidence_id": "evidence:JD_40854813111:879a8b61a0c5"
+      }
+    },
+    {
+      "edge_id": "edge:6158d561a26b6e23",
+      "source_id": "skill:5ce2e6f40299",
+      "target_id": "evidence:JD_40853946411:fd23fca75db0",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40853946411",
+        "evidence_id": "evidence:JD_40853946411:fd23fca75db0"
+      }
+    },
+    {
+      "edge_id": "edge:6533b134ce4dec76",
+      "source_id": "location:5fdd522d1c24",
+      "target_id": "evidence:JD_40875487605:2af3ad1e9a6b",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40875487605",
+        "evidence_id": "evidence:JD_40875487605:2af3ad1e9a6b"
+      }
+    },
+    {
+      "edge_id": "edge:6563db63a134aa11",
+      "source_id": "skill:5819778898df",
+      "target_id": "evidence:JD_40875487605:60e593d4be1b",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40875487605",
+        "evidence_id": "evidence:JD_40875487605:60e593d4be1b"
+      }
+    },
+    {
+      "edge_id": "edge:6b6e29ed7ea485f4",
+      "source_id": "skill:bacef3aa90fb",
+      "target_id": "evidence:JD_40756581406:e9c48a009b10",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40756581406",
+        "evidence_id": "evidence:JD_40756581406:e9c48a009b10"
+      }
+    },
+    {
+      "edge_id": "edge:745e852ebc5ae3bd",
+      "source_id": "skill:5ce2e6f40299",
+      "target_id": "evidence:JD_40875487605:a07d64f73191",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40875487605",
+        "evidence_id": "evidence:JD_40875487605:a07d64f73191"
+      }
+    },
+    {
+      "edge_id": "edge:74cb717c5401bfba",
+      "source_id": "education:0408da9944bc",
+      "target_id": "evidence:JD_40857441205:8678d24e9a1a",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40857441205",
+        "evidence_id": "evidence:JD_40857441205:8678d24e9a1a"
+      }
+    },
+    {
+      "edge_id": "edge:76f91e1b75a1b5da",
+      "source_id": "skill:e027e57610f8",
+      "target_id": "evidence:JD_40853946411:dd98f73db424",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40853946411",
+        "evidence_id": "evidence:JD_40853946411:dd98f73db424"
+      }
+    },
+    {
+      "edge_id": "edge:7f87ac711290d577",
+      "source_id": "skill:24071b57a130",
+      "target_id": "evidence:JD_40875487605:87d277ee118b",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40875487605",
+        "evidence_id": "evidence:JD_40875487605:87d277ee118b"
+      }
+    },
+    {
+      "edge_id": "edge:822f4cc857108523",
+      "source_id": "skill:769bc169aa9f",
+      "target_id": "evidence:JD_40854813111:879a8b61a0c5",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40854813111",
+        "evidence_id": "evidence:JD_40854813111:879a8b61a0c5"
+      }
+    },
+    {
+      "edge_id": "edge:82fa99f4feeeedd6",
+      "source_id": "skill:8088ded1b1aa",
+      "target_id": "evidence:JD_40875487605:d8a42fd1816b",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40875487605",
+        "evidence_id": "evidence:JD_40875487605:d8a42fd1816b"
+      }
+    },
+    {
+      "edge_id": "edge:8606eb87f96dffd5",
+      "source_id": "location:9cd075924003",
+      "target_id": "evidence:JD_40854813111:c23ed784c9e8",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40854813111",
+        "evidence_id": "evidence:JD_40854813111:c23ed784c9e8"
+      }
+    },
+    {
+      "edge_id": "edge:87e6bd8b2e934072",
+      "source_id": "skill:9f1141549f7c",
+      "target_id": "evidence:JD_40875487605:136a7c10a71c",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40875487605",
+        "evidence_id": "evidence:JD_40875487605:136a7c10a71c"
+      }
+    },
+    {
+      "edge_id": "edge:88e7add0a73710f7",
+      "source_id": "skill:85bb5d88d7f7",
+      "target_id": "evidence:JD_40875487605:87d277ee118b",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40875487605",
+        "evidence_id": "evidence:JD_40875487605:87d277ee118b"
+      }
+    },
+    {
+      "edge_id": "edge:8b5c3db4ee82af70",
+      "source_id": "location:67b85be8039d",
+      "target_id": "evidence:JD_40857441205:5d971a87b486",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40857441205",
+        "evidence_id": "evidence:JD_40857441205:5d971a87b486"
+      }
+    },
+    {
+      "edge_id": "edge:8dcdeba2eb761665",
+      "source_id": "skill:c21aa6f7dfa6",
+      "target_id": "evidence:JD_40854813111:879a8b61a0c5",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40854813111",
+        "evidence_id": "evidence:JD_40854813111:879a8b61a0c5"
+      }
+    },
+    {
+      "edge_id": "edge:97f80be0188452d4",
+      "source_id": "skill:b5ad1cc29602",
+      "target_id": "evidence:JD_40875487605:9abcd18e570b",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40875487605",
+        "evidence_id": "evidence:JD_40875487605:9abcd18e570b"
+      }
+    },
+    {
+      "edge_id": "edge:9e58ad582fada5f8",
+      "source_id": "skill:fc4b0426b148",
+      "target_id": "evidence:JD_40875487605:d8a42fd1816b",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40875487605",
+        "evidence_id": "evidence:JD_40875487605:d8a42fd1816b"
+      }
+    },
+    {
+      "edge_id": "edge:a0792ed99089ab7e",
+      "source_id": "skill:aa8c0cd1ecc7",
+      "target_id": "evidence:JD_40875487605:17332bb0659a",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40875487605",
+        "evidence_id": "evidence:JD_40875487605:17332bb0659a"
+      }
+    },
+    {
+      "edge_id": "edge:a157c3ac1e313fc7",
+      "source_id": "skill:219e4397af2d",
+      "target_id": "evidence:JD_40854813111:272c31edfe95",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40854813111",
+        "evidence_id": "evidence:JD_40854813111:272c31edfe95"
+      }
+    },
+    {
+      "edge_id": "edge:ac0690ef3c18852f",
+      "source_id": "skill:ac34e2863bf4",
+      "target_id": "evidence:JD_40756581406:e9c48a009b10",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40756581406",
+        "evidence_id": "evidence:JD_40756581406:e9c48a009b10"
+      }
+    },
+    {
+      "edge_id": "edge:aefe6b07e4e944b4",
+      "source_id": "skill:aa8c0cd1ecc7",
+      "target_id": "evidence:JD_40756581406:46ac89904790",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40756581406",
+        "evidence_id": "evidence:JD_40756581406:46ac89904790"
+      }
+    },
+    {
+      "edge_id": "edge:af0f64b80d4699b2",
+      "source_id": "experience_years:5",
+      "target_id": "evidence:JD_40875487605:78034587c86d",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40875487605",
+        "evidence_id": "evidence:JD_40875487605:78034587c86d"
+      }
+    },
+    {
+      "edge_id": "edge:b134383edc199e69",
+      "source_id": "skill:e4bc4b105929",
+      "target_id": "evidence:JD_40756581406:28a26cea463e",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40756581406",
+        "evidence_id": "evidence:JD_40756581406:28a26cea463e"
+      }
+    },
+    {
+      "edge_id": "edge:b1f1937c16fdacbb",
+      "source_id": "skill:5ce2e6f40299",
+      "target_id": "evidence:JD_40853946411:a4ff02f7df46",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40853946411",
+        "evidence_id": "evidence:JD_40853946411:a4ff02f7df46"
+      }
+    },
+    {
+      "edge_id": "edge:b8601d5b952ec671",
+      "source_id": "skill:fc2b4216164c",
+      "target_id": "evidence:JD_40853946411:6147b31805b5",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40853946411",
+        "evidence_id": "evidence:JD_40853946411:6147b31805b5"
+      }
+    },
+    {
+      "edge_id": "edge:bb0e8ec40205fecc",
+      "source_id": "skill:b5ad1cc29602",
+      "target_id": "evidence:JD_40756581406:46ac89904790",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40756581406",
+        "evidence_id": "evidence:JD_40756581406:46ac89904790"
+      }
+    },
+    {
+      "edge_id": "edge:bd6e1d6cb8bc3117",
+      "source_id": "skill:3401ed05a132",
+      "target_id": "evidence:JD_40756581406:e9c48a009b10",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40756581406",
+        "evidence_id": "evidence:JD_40756581406:e9c48a009b10"
+      }
+    },
+    {
+      "edge_id": "edge:bdc442e2077f5b5c",
+      "source_id": "education:0408da9944bc",
+      "target_id": "evidence:JD_40854813111:8678d24e9a1a",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40854813111",
+        "evidence_id": "evidence:JD_40854813111:8678d24e9a1a"
+      }
+    },
+    {
+      "edge_id": "edge:c588977a339a812d",
+      "source_id": "skill:fb03f47034c1",
+      "target_id": "evidence:JD_40854813111:c3f285439ea4",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40854813111",
+        "evidence_id": "evidence:JD_40854813111:c3f285439ea4"
+      }
+    },
+    {
+      "edge_id": "edge:c668afc971f64ebf",
+      "source_id": "education:0408da9944bc",
+      "target_id": "evidence:JD_40756581406:8678d24e9a1a",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40756581406",
+        "evidence_id": "evidence:JD_40756581406:8678d24e9a1a"
+      }
+    },
+    {
+      "edge_id": "edge:c8a070634ffe35d2",
+      "source_id": "skill:6e3604888c4b",
+      "target_id": "evidence:JD_40853946411:6147b31805b5",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40853946411",
+        "evidence_id": "evidence:JD_40853946411:6147b31805b5"
+      }
+    },
+    {
+      "edge_id": "edge:c9bd3312e589ef4d",
+      "source_id": "location:0a9884302f29",
+      "target_id": "evidence:JD_40756581406:b99df6cb7da2",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40756581406",
+        "evidence_id": "evidence:JD_40756581406:b99df6cb7da2"
+      }
+    },
+    {
+      "edge_id": "edge:ca8e640b41373f38",
+      "source_id": "skill:8088ded1b1aa",
+      "target_id": "evidence:JD_40875487605:1b24df48e534",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40875487605",
+        "evidence_id": "evidence:JD_40875487605:1b24df48e534"
+      }
+    },
+    {
+      "edge_id": "edge:cbc61c9181d88431",
+      "source_id": "skill:3401ed05a132",
+      "target_id": "evidence:JD_40853946411:5df7ccf1c9ce",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40853946411",
+        "evidence_id": "evidence:JD_40853946411:5df7ccf1c9ce"
+      }
+    },
+    {
+      "edge_id": "edge:cd0151e8dcaebb37",
+      "source_id": "experience_years:3",
+      "target_id": "evidence:JD_40857441205:6f96b811883c",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40857441205",
+        "evidence_id": "evidence:JD_40857441205:6f96b811883c"
+      }
+    },
+    {
+      "edge_id": "edge:ceb78d4a272dff4d",
+      "source_id": "skill:219e4397af2d",
+      "target_id": "evidence:JD_40854813111:8ae63074680d",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40854813111",
+        "evidence_id": "evidence:JD_40854813111:8ae63074680d"
+      }
+    },
+    {
+      "edge_id": "edge:cf713d8a836811a3",
+      "source_id": "education:aa2d24dd4cc1",
+      "target_id": "evidence:JD_40875487605:929dbfc7cb99",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40875487605",
+        "evidence_id": "evidence:JD_40875487605:929dbfc7cb99"
+      }
+    },
+    {
+      "edge_id": "edge:d125921e84f44fae",
+      "source_id": "skill:fb03f47034c1",
+      "target_id": "evidence:JD_40854813111:167ef85e3fe0",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40854813111",
+        "evidence_id": "evidence:JD_40854813111:167ef85e3fe0"
+      }
+    },
+    {
+      "edge_id": "edge:d1aead1095f17d65",
+      "source_id": "skill:b1663a13d671",
+      "target_id": "evidence:JD_40756581406:e9c48a009b10",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40756581406",
+        "evidence_id": "evidence:JD_40756581406:e9c48a009b10"
+      }
+    },
+    {
+      "edge_id": "edge:d41029680e153df5",
+      "source_id": "skill:3401ed05a132",
+      "target_id": "evidence:JD_40875487605:83f33b03833d",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40875487605",
+        "evidence_id": "evidence:JD_40875487605:83f33b03833d"
+      }
+    },
+    {
+      "edge_id": "edge:d4cdb023570fc016",
+      "source_id": "experience_years:3",
+      "target_id": "evidence:JD_40854813111:6f96b811883c",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40854813111",
+        "evidence_id": "evidence:JD_40854813111:6f96b811883c"
+      }
+    },
+    {
+      "edge_id": "edge:d68e917048b08339",
+      "source_id": "skill:5ce2e6f40299",
+      "target_id": "evidence:JD_40853946411:5df7ccf1c9ce",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40853946411",
+        "evidence_id": "evidence:JD_40853946411:5df7ccf1c9ce"
+      }
+    },
+    {
+      "edge_id": "edge:d6c4b3823cfe296b",
+      "source_id": "skill:e4bc4b105929",
+      "target_id": "evidence:JD_40875487605:3fc2beb77ae3",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40875487605",
+        "evidence_id": "evidence:JD_40875487605:3fc2beb77ae3"
+      }
+    },
+    {
+      "edge_id": "edge:d95dd6e373072bb6",
+      "source_id": "skill:e027e57610f8",
+      "target_id": "evidence:JD_40853946411:6147b31805b5",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40853946411",
+        "evidence_id": "evidence:JD_40853946411:6147b31805b5"
+      }
+    },
+    {
+      "edge_id": "edge:ded6503f3a6c0ead",
+      "source_id": "skill:3401ed05a132",
+      "target_id": "evidence:JD_40756581406:b955ae27ce8e",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40756581406",
+        "evidence_id": "evidence:JD_40756581406:b955ae27ce8e"
+      }
+    },
+    {
+      "edge_id": "edge:e20c596445945570",
+      "source_id": "skill:2e0b45f2a456",
+      "target_id": "evidence:JD_40853946411:dd98f73db424",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40853946411",
+        "evidence_id": "evidence:JD_40853946411:dd98f73db424"
+      }
+    },
+    {
+      "edge_id": "edge:e64bd1f4b42621df",
+      "source_id": "skill:9f1141549f7c",
+      "target_id": "evidence:JD_40875487605:60e593d4be1b",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40875487605",
+        "evidence_id": "evidence:JD_40875487605:60e593d4be1b"
+      }
+    },
+    {
+      "edge_id": "edge:e970f2b132e33e6b",
+      "source_id": "skill:1879da55493b",
+      "target_id": "evidence:JD_40875487605:128a8b86d97e",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40875487605",
+        "evidence_id": "evidence:JD_40875487605:128a8b86d97e"
+      }
+    },
+    {
+      "edge_id": "edge:ecf8dd3b9c21bf3a",
+      "source_id": "skill:6e3604888c4b",
+      "target_id": "evidence:JD_40853946411:dd98f73db424",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40853946411",
+        "evidence_id": "evidence:JD_40853946411:dd98f73db424"
+      }
+    },
+    {
+      "edge_id": "edge:ef86dc890f6591ba",
+      "source_id": "skill:1879da55493b",
+      "target_id": "evidence:JD_40853946411:66f11882f538",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40853946411",
+        "evidence_id": "evidence:JD_40853946411:66f11882f538"
+      }
+    },
+    {
+      "edge_id": "edge:f90528ae88608c8b",
+      "source_id": "skill:8088ded1b1aa",
+      "target_id": "evidence:JD_40875487605:3fc2beb77ae3",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40875487605",
+        "evidence_id": "evidence:JD_40875487605:3fc2beb77ae3"
+      }
+    },
+    {
+      "edge_id": "edge:fb413221918ed481",
+      "source_id": "skill:850637b76ae4",
+      "target_id": "evidence:JD_40853946411:a4ff02f7df46",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40853946411",
+        "evidence_id": "evidence:JD_40853946411:a4ff02f7df46"
+      }
+    },
+    {
+      "edge_id": "edge:fcbab65841ddc1aa",
+      "source_id": "skill:1879da55493b",
+      "target_id": "evidence:JD_40875487605:a07d64f73191",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40875487605",
+        "evidence_id": "evidence:JD_40875487605:a07d64f73191"
+      }
+    },
+    {
+      "edge_id": "edge:fe38dcf1c14483ab",
+      "source_id": "skill:5ce2e6f40299",
+      "target_id": "evidence:JD_40875487605:87c37f88d9f6",
+      "relation_type": "SUPPORTED_BY",
+      "properties": {
+        "document_id": "JD_40875487605",
+        "evidence_id": "evidence:JD_40875487605:87c37f88d9f6"
+      }
+    }
+  ]
+}

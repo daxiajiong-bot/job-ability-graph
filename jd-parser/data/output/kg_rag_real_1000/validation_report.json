@@ -1,0 +1,20 @@
+{
+  "status": "valid",
+  "errors": [],
+  "warnings": [
+    "jobs without skill edges: 19",
+    "isolated nodes: 4"
+  ],
+  "checks": {
+    "duplicate_node_ids": 0,
+    "duplicate_edge_ids": 0,
+    "invalid_node_labels": 0,
+    "invalid_relation_types": 0,
+    "dangling_edges": 0,
+    "skill_edge_count": 10530,
+    "skill_edges_with_existing_evidence_node": 10530,
+    "evidence_text_missing_from_raw_text": 0,
+    "jobs_without_skill_edges": 19,
+    "isolated_node_count": 4
+  }
+}

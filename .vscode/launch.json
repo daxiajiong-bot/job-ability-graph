@@ -1,0 +1,33 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug test_kg.py",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "pytest",
+      "args": [
+        "tests/test_kg.py",
+        "-q"
+      ],
+      "cwd": "${workspaceFolder}/jd-parser",
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}/jd-parser/src"
+      },
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Debug current Python file",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${file}",
+      "cwd": "${workspaceFolder}/jd-parser",
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}/jd-parser/src"
+      },
+      "console": "integratedTerminal",
+      "justMyCode": true
+    }
+  ]
+}

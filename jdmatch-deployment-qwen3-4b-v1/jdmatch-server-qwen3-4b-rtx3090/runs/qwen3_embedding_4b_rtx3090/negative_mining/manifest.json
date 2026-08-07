@@ -1,0 +1,106 @@
+{
+  "schema_version": "negative_sampling_v1",
+  "config": {
+    "schema_version": "jdmatch_config_v1",
+    "run_name": "qwen3_embedding_4b_rtx3090",
+    "seed": 20260730,
+    "paths": {
+      "data_dir": "/data/wangxianjiong/code/jdmatch-server-qwen3-4b-rtx3090/data/runtime",
+      "run_dir": "/data/wangxianjiong/code/jdmatch-server-qwen3-4b-rtx3090/runs/qwen3_embedding_4b_rtx3090"
+    },
+    "models": {
+      "embedding": "/data/wangxianjiong/models/jdmatch/Qwen3-Embedding-4B",
+      "mining_embedding": "/data/wangxianjiong/models/jdmatch/bge-m3",
+      "reranker": "/data/wangxianjiong/models/jdmatch/bge-reranker-v2-m3",
+      "query_instruction": "Given a job description, retrieve candidate resumes that satisfy core skills, experience, and education requirements."
+    },
+    "hardware": {
+      "require_cuda": true,
+      "required_cuda_visible_devices": "0",
+      "expected_gpu_name": "NVIDIA GeForce RTX 3090",
+      "expected_visible_device_count": 1,
+      "dtype": "bfloat16",
+      "attention": "flash_attention_2",
+      "attention_fallback": "sdpa",
+      "max_peak_memory_gib": 21.5
+    },
+    "text": {
+      "max_length": 512,
+      "output_dimension": 1024
+    },
+    "sampling": {
+      "dense_top_k": 200,
+      "teacher_prefilter": 24,
+      "hard_pool_size": 12,
+      "hard_per_step": 2,
+      "easy_per_step": 1,
+      "easy_random_candidates": 1000,
+      "easy_quantile": 0.25,
+      "teacher_batch_size": 8,
+      "embedding_batch_size": 16,
+      "query_chunk_size": 32
+    },
+    "training": {
+      "epochs": 3,
+      "global_jd_batch_size": 16,
+      "gradcache_microbatch_texts": 2,
+      "learning_rate": 2e-05,
+      "weight_decay": 0.01,
+      "warmup_ratio": 0.05,
+      "temperature": 0.05,
+      "h1_loss_weight": 0.5,
+      "hard_loss_weight": 1.0,
+      "h1_margin": 0.05,
+      "hard_margin": 0.1,
+      "lora_rank": 16,
+      "lora_alpha": 32,
+      "lora_dropout": 0.05,
+      "lora_targets": [
+        "q_proj",
+        "k_proj",
+        "v_proj",
+        "o_proj"
+      ],
+      "gradient_checkpointing": true,
+      "save_steps": 100,
+      "log_steps": 10,
+      "max_grad_norm": 1.0,
+      "quantization": "none"
+    },
+    "evaluation": {
+      "splits": [
+        "validation",
+        "test"
+      ],
+      "recall_k": [
+        1,
+        2,
+        5,
+        10
+      ],
+      "embedding_batch_size": 8
+    }
+  },
+  "limit": null,
+  "queries": 6725,
+  "candidate_documents": 13450,
+  "groups_output": "/data/wangxianjiong/code/jdmatch-server-qwen3-4b-rtx3090/runs/qwen3_embedding_4b_rtx3090/negative_mining/train_groups.jsonl",
+  "hard_pool": {
+    "mean": 11.168,
+    "min": 0,
+    "max": 12,
+    "strict_teacher_mean": 10.0045,
+    "groups_with_at_least_2": 6610,
+    "groups_with_at_least_6": 6308
+  },
+  "fallback_counts": {
+    "same_family_teacher_fallback": 25859,
+    "cross_family_teacher_fallback": 2196
+  },
+  "reason_counts": {
+    "experience_below_requirement": 31882,
+    "critical_requirement_missing": 35019,
+    "education_below_requirement": 20895
+  },
+  "elapsed_seconds": 4734.501
+}

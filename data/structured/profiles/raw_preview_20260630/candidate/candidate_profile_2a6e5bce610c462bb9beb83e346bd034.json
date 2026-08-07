@@ -1,0 +1,205 @@
+{
+  "artifact_type": "candidate_profile",
+  "created_at": "2026-06-30T08:40:57Z",
+  "extraction": {
+    "evidence": [
+      {
+        "field": "capabilities",
+        "id": "ev_001",
+        "text": "围绕目标岗位 python自动化测试工程师（双休/福利好） 的核心能力，完成需求拆解、功能实现、测试验证和文档沉淀。"
+      }
+    ],
+    "fields": {
+      "achievements": [],
+      "candidate": {
+        "current_title": "python自动化测试工程师",
+        "location": null,
+        "name": null,
+        "years_of_experience": 4
+      },
+      "capabilities": [
+        {
+          "description": "完成需求拆解、功能实现、测试验证和文档沉淀。",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "level": "proficient",
+          "name": "需求分析与功能实现"
+        }
+      ],
+      "career_intent": {
+        "target_industry": "咨询服务",
+        "target_location": "深圳 南山 科技园",
+        "target_position": "python自动化测试工程师（双休/福利好）"
+      },
+      "certificates": [],
+      "document_type": "resume",
+      "education": [],
+      "evidence": [
+        {
+          "field": "capabilities",
+          "id": "ev_001",
+          "text": "围绕目标岗位 python自动化测试工程师（双休/福利好） 的核心能力，完成需求拆解、功能实现、测试验证和文档沉淀。"
+        }
+      ],
+      "experience": [],
+      "languages": [],
+      "project_experience": [],
+      "projects": [],
+      "requirements": [],
+      "responsibilities": [],
+      "schema_version": "profile-extraction/v2",
+      "skills": [],
+      "work_experience": []
+    },
+    "implementation": "ollama",
+    "model": "qwen2.5:7b",
+    "raw_model_output": "",
+    "reason": "",
+    "schema": "profile-extraction/v2",
+    "state": "available",
+    "validation_error": "",
+    "warnings": [
+      "education[1] ignored: missing evidence_text",
+      "work_experience[1] ignored: missing evidence_text",
+      "project_experience[1] ignored: missing evidence_text",
+      "project_experience[2] ignored: missing evidence_text",
+      "skills[1] ignored: evidence_text must be copied from the source document",
+      "skills[2] ignored: evidence_text must be copied from the source document",
+      "skills[3] ignored: evidence_text must be copied from the source document",
+      "skills[4] ignored: evidence_text must be copied from the source document",
+      "skills[5] ignored: evidence_text must be copied from the source document",
+      "skills[6] ignored: evidence_text must be copied from the source document",
+      "skills[7] ignored: evidence_text must be copied from the source document",
+      "skills[8] ignored: evidence_text must be copied from the source document",
+      "skills[9] ignored: evidence_text must be copied from the source document",
+      "skills[10] ignored: evidence_text must be copied from the source document",
+      "capabilities[2] ignored: evidence_text must be copied from the source document"
+    ]
+  },
+  "normalization": {
+    "implementation": "lightweight_skill_normalizer",
+    "skills": [],
+    "state": "available",
+    "warnings": []
+  },
+  "profile": {
+    "artifacts": {
+      "profile_json": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/structured/profiles/raw_preview_20260630/candidate/candidate_profile_2a6e5bce610c462bb9beb83e346bd034.json",
+      "schema_version": "profile-extraction/v2",
+      "storage": "filesystem"
+    },
+    "attributes": {
+      "candidate": {
+        "current_title": "python自动化测试工程师",
+        "location": null,
+        "name": null,
+        "years_of_experience": 4
+      },
+      "capabilities": [
+        {
+          "description": "完成需求拆解、功能实现、测试验证和文档沉淀。",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "level": "proficient",
+          "name": "需求分析与功能实现"
+        }
+      ],
+      "career_intent": {
+        "target_industry": "咨询服务",
+        "target_location": "深圳 南山 科技园",
+        "target_position": "python自动化测试工程师（双休/福利好）"
+      },
+      "education": [],
+      "experience": [],
+      "profile_schema": "profile-extraction/v2",
+      "projects": [],
+      "resume_profile": {
+        "achievements": [],
+        "candidate": {
+          "current_title": "python自动化测试工程师",
+          "location": null,
+          "name": null,
+          "years_of_experience": 4
+        },
+        "capabilities": [
+          {
+            "description": "完成需求拆解、功能实现、测试验证和文档沉淀。",
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "level": "proficient",
+            "name": "需求分析与功能实现"
+          }
+        ],
+        "career_intent": {
+          "target_industry": "咨询服务",
+          "target_location": "深圳 南山 科技园",
+          "target_position": "python自动化测试工程师（双休/福利好）"
+        },
+        "certificates": [],
+        "document_type": "resume",
+        "education": [],
+        "languages": [],
+        "project_experience": [],
+        "schema_version": "profile-extraction/v2",
+        "skills": [],
+        "work_experience": []
+      },
+      "skills": [],
+      "target_position": "python自动化测试工程师（双休/福利好）"
+    },
+    "created_at": "2026-06-30T08:40:57Z",
+    "evidence": [
+      {
+        "field": "capabilities",
+        "id": "ev_001",
+        "text": "围绕目标岗位 python自动化测试工程师（双休/福利好） 的核心能力，完成需求拆解、功能实现、测试验证和文档沉淀。"
+      }
+    ],
+    "id": "candidate_profile_2a6e5bce610c462bb9beb83e346bd034",
+    "implementation": "llm_profile_builder",
+    "profile_type": "candidate",
+    "source_document_id": "doc_5c4e276d6fdf430d8cb305b87325fe5f",
+    "state": "available",
+    "warnings": [
+      "education[1] ignored: missing evidence_text",
+      "work_experience[1] ignored: missing evidence_text",
+      "project_experience[1] ignored: missing evidence_text",
+      "project_experience[2] ignored: missing evidence_text",
+      "skills[1] ignored: evidence_text must be copied from the source document",
+      "skills[2] ignored: evidence_text must be copied from the source document",
+      "skills[3] ignored: evidence_text must be copied from the source document",
+      "skills[4] ignored: evidence_text must be copied from the source document",
+      "skills[5] ignored: evidence_text must be copied from the source document",
+      "skills[6] ignored: evidence_text must be copied from the source document",
+      "skills[7] ignored: evidence_text must be copied from the source document",
+      "skills[8] ignored: evidence_text must be copied from the source document",
+      "skills[9] ignored: evidence_text must be copied from the source document",
+      "skills[10] ignored: evidence_text must be copied from the source document",
+      "capabilities[2] ignored: evidence_text must be copied from the source document"
+    ]
+  },
+  "schema_version": "profile-extraction/v2",
+  "source_document": {
+    "char_count": 1044,
+    "content_digest": "f329f9291d32021cec988b2896349f82efd5af6f816760d59b19fb2fa885c259",
+    "created_at": "2026-06-30T08:39:27Z",
+    "document_type": "resume",
+    "id": "doc_5c4e276d6fdf430d8cb305b87325fe5f",
+    "metadata": {
+      "privacy_level": "anonymous_or_synthetic",
+      "raw_file": "/Users/wjj/Documents/多源异构数据驱动岗位和能力图谱构建与动态演化分析研究/job-ability-graph-main/data/small-raw/resume_raw.jsonl",
+      "raw_index": 1,
+      "raw_type": "resume",
+      "target_job_id": "40857992907"
+    },
+    "source": {
+      "external_id": "R0001",
+      "source_system": "small-raw",
+      "uri": "http://www.zhaopin.com/jobdetail/CC160407910J40857992907.htm"
+    },
+    "storage": "memory"
+  }
+}
