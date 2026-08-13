@@ -102,6 +102,22 @@ const useStore = create(
           settings: { ...s.settings, ...partial },
         })),
 
+      // ── 用户自定义 JD（用于岗位星图，持久化）──
+      customJDs: [],
+      addCustomJD: (jd) =>
+        set((s) => {
+          // 去重：根据岗位名称判断
+          const exists = s.customJDs.some(
+            (existing) => existing.job_title === jd.job_title
+          );
+          if (exists) return s;
+          return { customJDs: [...s.customJDs, jd] };
+        }),
+      removeCustomJD: (jobId) =>
+        set((s) => ({
+          customJDs: s.customJDs.filter((jd) => jd.job_id !== jobId),
+        })),
+
       // ── 匹配历史记录（持久化）──
       matchHistory: [],
       addMatchHistory: (record) =>
@@ -133,6 +149,7 @@ const useStore = create(
         jobProfileCache: state.jobProfileCache,
         lastMatchInputs: state.lastMatchInputs,
         lastMatchResult: state.lastMatchResult,
+        customJDs: state.customJDs,
       }),
     }
   )

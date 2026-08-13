@@ -1,0 +1,89 @@
+{
+  "schema_version": "public_eval_collection_report_v1",
+  "collector_version": "public_eval_collector_v1",
+  "snapshot_date": "2026-08-08",
+  "snapshot_week": "2026-W32",
+  "collected_at": "2026-08-08T23:28:09+08:00",
+  "keyword": "大模型",
+  "rights": {
+    "license": "source-reference-only",
+    "redistribution_allowed": false,
+    "note": "Full JD text is internal evaluation material; share only the reference index."
+  },
+  "requested_quotas": {
+    "tencent": 32,
+    "meituan": 32,
+    "xiaomi": 32,
+    "baidu": 32,
+    "huawei": 12
+  },
+  "source_counts": {
+    "baidu": 32,
+    "huawei": 12,
+    "meituan": 32,
+    "tencent": 32,
+    "xiaomi": 32
+  },
+  "company_count": 5,
+  "record_count": 140,
+  "records_with_responsibilities": 140,
+  "records_with_requirements": 140,
+  "records_with_published_at": 76,
+  "unique_external_ids": 140,
+  "unique_content_sha256": 124,
+  "source_status_counts": {
+    "completed": 5
+  },
+  "source_results": [
+    {
+      "source_id": "tencent",
+      "status": "completed",
+      "reason": null,
+      "record_count": 32
+    },
+    {
+      "source_id": "meituan",
+      "status": "completed",
+      "reason": null,
+      "record_count": 32
+    },
+    {
+      "source_id": "xiaomi",
+      "status": "completed",
+      "reason": null,
+      "record_count": 32
+    },
+    {
+      "source_id": "baidu",
+      "status": "completed",
+      "reason": null,
+      "record_count": 32
+    },
+    {
+      "source_id": "huawei",
+      "status": "completed",
+      "reason": null,
+      "record_count": 12
+    }
+  ],
+  "http_request_count": 61,
+  "annotation": {
+    "calibration_count": 20,
+    "test_count": 120,
+    "gold_status": "unlabelled",
+    "dedup_pair_count": 400,
+    "rag_query_template_count_per_annotator": 60
+  },
+  "trend_validity": {
+    "valid_for_cross_sectional_extraction_eval": true,
+    "valid_for_temporal_trend_eval": false,
+    "reason": "Only one real collection week exists; published dates do not substitute for snapshots."
+  },
+  "paths": {
+    "private_jobs": "private/jobs.full.jsonl",
+    "source_manifest": "private/sources.yaml",
+    "shareable_reference": "shareable/jobs.reference.jsonl",
+    "snapshot_manifest": "shareable/collection_snapshots.jsonl",
+    "annotation_dir": "annotations"
+  }
+}

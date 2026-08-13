@@ -1,0 +1,54 @@
+schema_version: jobtrend_config_v1
+
+paths:
+  warehouse: data/warehouse
+  runs: runs
+  qdrant: data/qdrant
+
+models:
+  region: cn-beijing
+  base_url: https://dashscope.aliyuncs.com/compatible-mode/v1
+  extraction_model: qwen3.7-flash-2026-07-15
+  fallback_model: qwen3.7-plus-2026-05-26
+  embedding_model: text-embedding-v4
+  embedding_dimension: 1024
+  rerank_model: qwen3-rerank
+  enable_thinking: false
+  temperature: 0.1
+
+analysis:
+  recent_days: 28
+  baseline_days: 84
+  min_cluster_size: 8
+  min_samples: 4
+  min_companies: 3
+  min_week_snapshots: 2
+  max_known_role_similarity: 0.82
+  min_growth_rate: 1.5
+  candidate_score_threshold: 0.65
+  high_confidence_threshold: 0.75
+  skill_min_companies: 5
+  skill_min_share_delta: 0.10
+  skill_min_relative_lift: 1.5
+  significance_q: 0.05
+  score_weights:
+    novelty: 0.30
+    growth: 0.25
+    persistence: 0.20
+    source_diversity: 0.15
+    evidence_coverage: 0.10
+
+retrieval:
+  dense_top_k: 50
+  sparse_top_k: 50
+  fused_top_k: 50
+  rerank_top_k: 8
+  graph_hops: 2
+
+parsing:
+  parser_version: jobtrend_parser_v1
+  chunk_chars: 1200
+  chunk_overlap: 120
+  min_pdf_text_chars_per_page: 40
+  request_timeout_seconds: 60
+  user_agent: jobtrend-research-bot/0.1

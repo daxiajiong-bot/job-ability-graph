@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "jobtrend review queue CSV",
+  "type": "object",
+  "properties": {
+    "object_type": {
+      "type": "string"
+    },
+    "object_id": {
+      "type": "string"
+    },
+    "source_file": {
+      "type": "string"
+    },
+    "source_sha256": {
+      "type": "string"
+    },
+    "current_status": {
+      "type": "string"
+    },
+    "decision": {
+      "type": "string"
+    },
+    "canonical_title": {
+      "type": "string"
+    },
+    "reviewer": {
+      "type": "string"
+    },
+    "reviewed_at": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "edits_json": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "object_type",
+    "object_id",
+    "source_file",
+    "source_sha256",
+    "current_status",
+    "decision",
+    "canonical_title",
+    "reviewer",
+    "reviewed_at",
+    "notes",
+    "edits_json"
+  ],
+  "additionalProperties": false
+}

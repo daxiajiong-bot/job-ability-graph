@@ -1,0 +1,14 @@
+.git
+.venv
+__pycache__
+*.pyc
+.pytest_cache
+.coverage
+htmlcov
+build
+dist
+runs
+data/warehouse
+data/qdrant
+data/real_eval/snapshots/*/private
+data/real_eval/snapshots/*/annotations

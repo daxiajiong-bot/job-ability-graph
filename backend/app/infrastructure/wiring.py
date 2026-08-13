@@ -27,6 +27,7 @@ from backend.app.infrastructure.mocks.adapters import (
 from backend.app.infrastructure.ocr import PaddleOcrAdapter
 from backend.app.infrastructure.files import ProfileArtifactStore
 from backend.app.infrastructure.llm import (
+    GraphRAGLearningAdvisor,
     LLMLearningAdvisor,
     LLMMatcher,
     LLMProfileBuilder,
@@ -35,6 +36,39 @@ from backend.app.infrastructure.llm import (
     LightweightSkillNormalizer,
     OllamaStructuredExtractor,
 )
+
+
+def _load_prebuilt_graph(data_root: str) -> tuple[list[dict], list[dict]]:
+    """Load pre-built knowledge graph nodes and edges from disk."""
+    import json as _json
+    from pathlib import Path
+
+    graph_dir = Path(data_root) / "small_raw_200_lskt_tech_v2"
+    nodes_file = graph_dir / "graph_nodes.jsonl"
+    edges_file = graph_dir / "graph_edges.jsonl"
+
+    nodes: list[dict] = []
+    edges: list[dict] = []
+
+    if nodes_file.exists():
+        for line in nodes_file.read_text(encoding="utf-8").splitlines():
+            line = line.strip()
+            if line:
+                try:
+                    nodes.append(_json.loads(line))
+                except _json.JSONDecodeError:
+                    continue
+
+    if edges_file.exists():
+        for line in edges_file.read_text(encoding="utf-8").splitlines():
+            line = line.strip()
+            if line:
+                try:
+                    edges.append(_json.loads(line))
+                except _json.JSONDecodeError:
+                    continue
+
+    return nodes, edges
 
 
 @dataclass(frozen=True)
@@ -87,7 +121,7 @@ def build_container(
         profile_builder = LLMProfileBuilder()
         matcher = LLMMatcher(llm_settings, chat_client=llm_chat_client)
         report_generator = LLMReportGenerator(llm_settings, chat_client=llm_chat_client)
-        learning_advisor = LLMLearningAdvisor(llm_settings, chat_client=llm_chat_client)
+        # learning_advisor will be upgraded to GraphRAGLearningAdvisor after data_governance is created
         capability_options.update(
             structured_extraction_implementation="ollama",
             structured_extraction_state="available",
@@ -131,6 +165,18 @@ def build_container(
         root=governance_root,
         llm_chat_client=llm_chat_client,
     )
+
+    # Upgrade learning advisor to Graph-RAG version when LLM is available
+    if llm_settings.backend == "ollama":
+        graph_nodes, graph_edges = _load_prebuilt_graph(governance_root)
+        learning_advisor = GraphRAGLearningAdvisor(
+            llm_settings,
+            chat_client=llm_chat_client,
+            graph_nodes=graph_nodes,
+            graph_edges=graph_edges,
+            rag=data_governance.rag,
+        )
+
     profile_artifacts = ProfileArtifactStore(
         profile_artifact_root or getenv("PROFILE_ARTIFACT_ROOT") or Path(governance_root) / "structured" / "profiles"
     )

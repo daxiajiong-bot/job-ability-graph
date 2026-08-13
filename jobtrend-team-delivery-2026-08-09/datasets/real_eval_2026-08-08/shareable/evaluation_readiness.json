@@ -1,0 +1,169 @@
+{
+  "schema_version": "real_eval_readiness_v1",
+  "snapshot_date": "2026-08-08",
+  "generated_at": "2026-08-08T15:49:11+00:00",
+  "status": "structural_pass",
+  "checks": [
+    {
+      "name": "minimum_records",
+      "passed": true,
+      "detail": 140
+    },
+    {
+      "name": "minimum_companies",
+      "passed": true,
+      "detail": {
+        "baidu": 32,
+        "huawei": 12,
+        "meituan": 32,
+        "tencent": 32,
+        "xiaomi": 32
+      }
+    },
+    {
+      "name": "required_fields",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "content_sha256",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "unique_source_external_ids",
+      "passed": true,
+      "detail": 140
+    },
+    {
+      "name": "official_https_urls",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "no_contact_personal_data",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "shareable_index_has_no_full_text",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "snapshot_rows_cover_sources",
+      "passed": true,
+      "detail": 5
+    },
+    {
+      "name": "first_week_not_temporal_trend",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "split_disjoint",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "split_complete",
+      "passed": true,
+      "detail": 140
+    },
+    {
+      "name": "no_exact_version_split_leakage",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "dual_annotation_coverage",
+      "passed": true,
+      "detail": 140
+    },
+    {
+      "name": "dedup_pair_sampling",
+      "passed": true,
+      "detail": 400
+    },
+    {
+      "name": "warehouse_roundtrip_count",
+      "passed": true,
+      "detail": {
+        "document_count": 140,
+        "evidence_count": 144,
+        "dangling_evidence_count": 0
+      }
+    },
+    {
+      "name": "warehouse_evidence_references",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "offline_analysis_valid",
+      "passed": true,
+      "detail": {
+        "quality": "valid",
+        "counts": {
+          "documents": 140,
+          "evidence": 144,
+          "observations": 140,
+          "trend_features": 110,
+          "emerging_roles": 0,
+          "job_skill_updates": 0,
+          "kg_link_deltas": 0,
+          "rag_contexts": 0
+        },
+        "manifest_sha256": "ec8027e49eadb55a034ffbb75ae595a9835b4aebf32f5dc78c93e9c988c5eee8",
+        "quality_report_sha256": "43137e6a91662fe59b3e99090bace73ac2e3282f90a5069ab76a8eab689a1ca7"
+      }
+    }
+  ],
+  "counts": {
+    "jobs": 140,
+    "companies": 5,
+    "sources": 5,
+    "annotation_A": 140,
+    "annotation_B": 140,
+    "dedup_pairs": 400
+  },
+  "warehouse": {
+    "document_count": 140,
+    "evidence_count": 144,
+    "dangling_evidence_count": 0
+  },
+  "analysis": {
+    "quality": "valid",
+    "counts": {
+      "documents": 140,
+      "evidence": 144,
+      "observations": 140,
+      "trend_features": 110,
+      "emerging_roles": 0,
+      "job_skill_updates": 0,
+      "kg_link_deltas": 0,
+      "rag_contexts": 0
+    },
+    "manifest_sha256": "ec8027e49eadb55a034ffbb75ae595a9835b4aebf32f5dc78c93e9c988c5eee8",
+    "quality_report_sha256": "43137e6a91662fe59b3e99090bace73ac2e3282f90a5069ab76a8eab689a1ca7"
+  },
+  "gold_evaluation": {
+    "status": "pending_double_annotation_and_adjudication",
+    "jd_field_precision": null,
+    "jd_field_recall": null,
+    "jd_field_f1": null,
+    "skill_precision": null,
+    "skill_recall": null,
+    "skill_f1": null,
+    "near_duplicate_precision": null,
+    "rag_recall_at_20": null,
+    "emerging_role_precision_at_10": null,
+    "skill_change_f1": null
+  },
+  "temporal_evaluation": {
+    "status": "not_yet_eligible",
+    "real_snapshot_weeks": 1,
+    "minimum_weeks_for_persistence_gate": 2,
+    "minimum_weeks_for_full_112_day_window": 16
+  }
+}

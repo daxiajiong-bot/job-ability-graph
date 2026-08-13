@@ -1,0 +1,87 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "trend_kg_delta_v1",
+      "default": "trend_kg_delta_v1",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "delta_id": {
+      "title": "Delta Id",
+      "type": "string"
+    },
+    "baseline_graph_fingerprint": {
+      "title": "Baseline Graph Fingerprint",
+      "type": "string"
+    },
+    "operation": {
+      "enum": [
+        "link_existing",
+        "propose_node",
+        "propose_edge"
+      ],
+      "title": "Operation",
+      "type": "string"
+    },
+    "source_id": {
+      "title": "Source Id",
+      "type": "string"
+    },
+    "target_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Target Id"
+    },
+    "relation_type": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Relation Type"
+    },
+    "evidence_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Evidence Ids",
+      "type": "array"
+    },
+    "resolution_status": {
+      "enum": [
+        "exact",
+        "curated_alias",
+        "review_candidate",
+        "unresolved"
+      ],
+      "title": "Resolution Status",
+      "type": "string"
+    },
+    "properties": {
+      "type": "object",
+      "additionalProperties": true,
+      "title": "Properties"
+    }
+  },
+  "required": [
+    "delta_id",
+    "baseline_graph_fingerprint",
+    "operation",
+    "source_id",
+    "resolution_status"
+  ],
+  "title": "KGLinkDelta",
+  "type": "object"
+}

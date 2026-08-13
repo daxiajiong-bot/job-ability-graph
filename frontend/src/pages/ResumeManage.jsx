@@ -56,6 +56,7 @@ export default function ResumeManage() {
   const [documents, setDocuments] = useState([]);
   const [profileModal, setProfileModal] = useState(null);
   const [activeTab, setActiveTab] = useState("text");
+  const [selectedRows, setSelectedRows] = useState([]);
 
   const {
     userId, initUserId,
@@ -178,6 +179,7 @@ export default function ResumeManage() {
         doc,
       });
       message.success("OCR 识别成功，请检查并修正结果");
+      // 不在这里加载文档列表，等校正确认后再加载，避免出现重复条目
     } catch (e) {
       message.error(
         "OCR 失败: " + (e.response?.data?.error?.message || e.message)
@@ -259,8 +261,16 @@ export default function ResumeManage() {
         formData.append("document_type", "resume");
         formData.append("file", fileItem.file);
 
-        const res = await createDocumentOCR(formData);
-        const doc = res.data.data.document;
+        const ocrRes = await createDocumentOCR(formData);
+        const ocrData = ocrRes.data.data;
+
+        // OCR 识别成功后，创建文档
+        const docRes = await createDocument({
+          document_type: "resume",
+          text: ocrData.document.text,
+          source: { source_system: "ocr_batch" },
+        });
+        const doc = docRes.data.data.document;
 
         setBatchFiles((prev) =>
           prev.map((f) =>
@@ -398,6 +408,44 @@ export default function ResumeManage() {
     } finally {
       setLoading(false);
     }
+  }
+
+  async function handleBatchDelete() {
+    if (selectedRows.length === 0) {
+      message.warning("请先选择要删除的简历");
+      return;
+    }
+    Modal.confirm({
+      title: "确认批量删除",
+      content: `确定要删除选中的 ${selectedRows.length} 份简历吗？删除后不可恢复。`,
+      okText: "删除",
+      cancelText: "取消",
+      okButtonProps: { danger: true },
+      onOk: async () => {
+        setLoading(true);
+        let successCount = 0;
+        let errorCount = 0;
+        for (const doc of selectedRows) {
+          const docId = doc.document_id || doc.id;
+          try {
+            await deleteDocument(docId);
+            removeCachedCandidateProfile(docId);
+            successCount++;
+          } catch (e) {
+            errorCount++;
+          }
+        }
+        setSelectedRows([]);
+        if (successCount > 0) {
+          message.success(`成功删除 ${successCount} 份简历`);
+        }
+        if (errorCount > 0) {
+          message.error(`${errorCount} 份简历删除失败`);
+        }
+        await loadDocuments(userId, 0);
+        setLoading(false);
+      },
+    });
   }
 
   const columns = [
@@ -788,13 +836,34 @@ export default function ResumeManage() {
           />
         </Card>
 
-        <Card title={`已上传简历 (${documents.length})`}>
+        <Card
+          title={`已上传简历 (${documents.length})`}
+          extra={
+            selectedRows.length > 0 && (
+              <Popconfirm
+                title={`确定删除选中的 ${selectedRows.length} 份简历？`}
+                onConfirm={handleBatchDelete}
+                okText="删除"
+                cancelText="取消"
+                okButtonProps={{ danger: true }}
+              >
+                <Button danger icon={<DeleteOutlined />}>
+                  批量删除 ({selectedRows.length})
+                </Button>
+              </Popconfirm>
+            )
+          }
+        >
           <Table
             dataSource={documents}
             columns={columns}
             rowKey={(r) => r.document_id || r.id}
             size="small"
             pagination={{ pageSize: 10 }}
+            rowSelection={{
+              selectedRowKeys: selectedRows.map((r) => r.document_id || r.id),
+              onChange: (_, rows) => setSelectedRows(rows),
+            }}
           />
         </Card>
       </Spin>
@@ -830,9 +899,6 @@ export default function ResumeManage() {
                   {profileModal.state}
                 </Tag>
               </Descriptions.Item>
-              <Descriptions.Item label="实现方式">
-                {profileModal.implementation || "mock"}
-              </Descriptions.Item>
             </Descriptions>
 
             {profileModal.attributes?.resume_profile && (
@@ -854,17 +920,6 @@ export default function ResumeManage() {
                     2
                   )}
                 </pre>
-              </>
-            )}
-
-            {profileModal.warnings?.length > 0 && (
-              <>
-                <Divider>警告</Divider>
-                {profileModal.warnings.map((w, i) => (
-                  <Tag key={i} color="orange" style={{ margin: 4 }}>
-                    {w}
-                  </Tag>
-                ))}
               </>
             )}
           </div>

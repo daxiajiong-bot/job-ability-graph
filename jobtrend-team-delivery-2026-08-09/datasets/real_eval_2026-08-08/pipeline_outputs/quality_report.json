@@ -1,0 +1,49 @@
+{
+  "schema_version": "jobtrend_quality_report_v1",
+  "evidence_count": 144,
+  "duplicate_evidence_ids": [],
+  "artifact_checks": {
+    "trend_features.jsonl": {
+      "object_count": 110,
+      "reference_count": 347,
+      "unique_reference_count": 77,
+      "objects_without_evidence": 25,
+      "unknown_evidence_ids": [],
+      "valid_reference_rate": 1.0,
+      "status": "valid"
+    },
+    "emerging_roles.jsonl": {
+      "object_count": 0,
+      "reference_count": 0,
+      "unique_reference_count": 0,
+      "objects_without_evidence": 0,
+      "unknown_evidence_ids": [],
+      "valid_reference_rate": 1.0,
+      "status": "valid"
+    },
+    "job_skill_updates.jsonl": {
+      "object_count": 0,
+      "reference_count": 0,
+      "unique_reference_count": 0,
+      "objects_without_evidence": 0,
+      "unknown_evidence_ids": [],
+      "valid_reference_rate": 1.0,
+      "status": "valid"
+    },
+    "kg_link_delta.jsonl": {
+      "object_count": 0,
+      "reference_count": 0,
+      "unique_reference_count": 0,
+      "objects_without_evidence": 0,
+      "unknown_evidence_ids": [],
+      "valid_reference_rate": 1.0,
+      "status": "valid"
+    }
+  },
+  "status": "valid",
+  "kg_reference_gate": {
+    "status": "not_applicable",
+    "checked_ids": 0,
+    "unknown_ids": []
+  }
+}

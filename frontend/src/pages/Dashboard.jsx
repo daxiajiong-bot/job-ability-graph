@@ -126,7 +126,8 @@ export default function Dashboard() {
 
   // 从 capabilities 数组中按 name 查找状态
   function getCap(name) {
-    const caps = capabilities?.capabilities;
+    // capabilities 结构: { data: { capabilities: [...] }, meta: {...} }
+    const caps = capabilities?.data?.capabilities;
     if (!Array.isArray(caps)) return null;
     return caps.find((c) => c.name === name) || null;
   }

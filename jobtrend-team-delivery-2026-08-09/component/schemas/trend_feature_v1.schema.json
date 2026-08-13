@@ -1,0 +1,187 @@
+{
+  "$defs": {
+    "TrendMetrics": {
+      "additionalProperties": false,
+      "properties": {
+        "distinct_job_count": {
+          "default": 0,
+          "title": "Distinct Job Count",
+          "type": "integer"
+        },
+        "previous_distinct_job_count": {
+          "default": 0,
+          "title": "Previous Distinct Job Count",
+          "type": "integer"
+        },
+        "distinct_company_count": {
+          "default": 0,
+          "title": "Distinct Company Count",
+          "type": "integer"
+        },
+        "distinct_source_count": {
+          "default": 0,
+          "title": "Distinct Source Count",
+          "type": "integer"
+        },
+        "distinct_region_count": {
+          "default": 0,
+          "title": "Distinct Region Count",
+          "type": "integer"
+        },
+        "recent_share": {
+          "default": 0.0,
+          "title": "Recent Share",
+          "type": "number"
+        },
+        "baseline_share": {
+          "default": 0.0,
+          "title": "Baseline Share",
+          "type": "number"
+        },
+        "growth_rate": {
+          "default": 0.0,
+          "title": "Growth Rate",
+          "type": "number"
+        },
+        "share_delta": {
+          "default": 0.0,
+          "title": "Share Delta",
+          "type": "number"
+        },
+        "ewma_slope": {
+          "default": 0.0,
+          "title": "Ewma Slope",
+          "type": "number"
+        },
+        "robust_zscore": {
+          "default": 0.0,
+          "title": "Robust Zscore",
+          "type": "number"
+        },
+        "persistence": {
+          "default": 0.0,
+          "title": "Persistence",
+          "type": "number"
+        },
+        "source_diversity": {
+          "default": 0.0,
+          "title": "Source Diversity",
+          "type": "number"
+        },
+        "propagation_count": {
+          "default": 0,
+          "title": "Propagation Count",
+          "type": "integer"
+        }
+      },
+      "title": "TrendMetrics",
+      "type": "object"
+    },
+    "TrendWindow": {
+      "additionalProperties": false,
+      "properties": {
+        "recent_start": {
+          "format": "date-time",
+          "title": "Recent Start",
+          "type": "string"
+        },
+        "recent_end": {
+          "format": "date-time",
+          "title": "Recent End",
+          "type": "string"
+        },
+        "baseline_start": {
+          "format": "date-time",
+          "title": "Baseline Start",
+          "type": "string"
+        },
+        "baseline_end": {
+          "format": "date-time",
+          "title": "Baseline End",
+          "type": "string"
+        }
+      },
+      "required": [
+        "recent_start",
+        "recent_end",
+        "baseline_start",
+        "baseline_end"
+      ],
+      "title": "TrendWindow",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "trend_feature_v1",
+      "default": "trend_feature_v1",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "trend_id": {
+      "title": "Trend Id",
+      "type": "string"
+    },
+    "entity_type": {
+      "enum": [
+        "ability",
+        "job_role"
+      ],
+      "title": "Entity Type",
+      "type": "string"
+    },
+    "entity_name": {
+      "title": "Entity Name",
+      "type": "string"
+    },
+    "kg_node_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Kg Node Id"
+    },
+    "window": {
+      "$ref": "#/$defs/TrendWindow"
+    },
+    "metrics": {
+      "$ref": "#/$defs/TrendMetrics"
+    },
+    "score": {
+      "maximum": 1.0,
+      "minimum": 0.0,
+      "title": "Score",
+      "type": "number"
+    },
+    "confidence": {
+      "maximum": 1.0,
+      "minimum": 0.0,
+      "title": "Confidence",
+      "type": "number"
+    },
+    "evidence_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Evidence Ids",
+      "type": "array"
+    }
+  },
+  "required": [
+    "trend_id",
+    "entity_type",
+    "entity_name",
+    "window",
+    "metrics",
+    "score",
+    "confidence"
+  ],
+  "title": "TrendFeature",
+  "type": "object"
+}

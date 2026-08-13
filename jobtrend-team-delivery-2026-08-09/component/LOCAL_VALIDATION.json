@@ -1,0 +1,43 @@
+{
+  "schema_version": "jobtrend_local_validation_v1",
+  "valid": true,
+  "validated_at": "2026-08-08T16:30:25.058592+00:00",
+  "required_files": [
+    "README.md",
+    "external_documents.jsonl",
+    "evidence.jsonl",
+    "trend_features.jsonl",
+    "emerging_roles.jsonl",
+    "job_skill_updates.jsonl",
+    "review_queue.csv",
+    "kg_link_delta.jsonl",
+    "manifest.json"
+  ],
+  "counts": {
+    "external_documents.jsonl": 122,
+    "evidence.jsonl": 122,
+    "trend_features.jsonl": 21,
+    "emerging_roles.jsonl": 1,
+    "job_skill_updates.jsonl": 1,
+    "review_queue.csv": 17,
+    "kg_link_delta.jsonl": 15
+  },
+  "manifest_sha256": "28af3d13118c38f6dac6f8b84db78a3dddad25dc98e0bf92a2b25b5b9eaaaf1a",
+  "checks": {
+    "pytest_passed": 69,
+    "coverage_gate_percent": 60,
+    "wheel_install": true,
+    "cli_smoke": true,
+    "offline_cache_demo": true,
+    "offline_demo_counts": {
+      "documents": 122,
+      "emerging_roles": 1,
+      "evidence": 122,
+      "job_skill_updates": 1,
+      "kg_link_deltas": 15,
+      "observations": 120,
+      "rag_contexts": 1,
+      "trend_features": 21
+    }
+  }
+}

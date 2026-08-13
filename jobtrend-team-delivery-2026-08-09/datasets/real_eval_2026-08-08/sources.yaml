@@ -1,0 +1,72 @@
+schema_version: source_manifest_v1
+sources:
+- source_id: tencent-careers-2026-08-08
+  source_type: job
+  input: private/jobs/tencent.jsonl
+  input_format: jsonl
+  source_name: careers.tencent.com-official
+  publisher: 腾讯
+  collected_at: '2026-08-08T23:28:09+08:00'
+  license: source-reference-only
+  metadata:
+    snapshot_id: 2026-08-08:tencent-careers
+    snapshot_week: 2026-W32
+    source_domain: careers.tencent.com
+    redistribution_allowed: false
+    team_delivery_internal_only: true
+- source_id: meituan-careers-2026-08-08
+  source_type: job
+  input: private/jobs/meituan.jsonl
+  input_format: jsonl
+  source_name: zhaopin.meituan.com-official
+  publisher: 美团
+  collected_at: '2026-08-08T23:28:09+08:00'
+  license: source-reference-only
+  metadata:
+    snapshot_id: 2026-08-08:meituan-careers
+    snapshot_week: 2026-W32
+    source_domain: zhaopin.meituan.com
+    redistribution_allowed: false
+    team_delivery_internal_only: true
+- source_id: xiaomi-careers-2026-08-08
+  source_type: job
+  input: private/jobs/xiaomi.jsonl
+  input_format: jsonl
+  source_name: hr.xiaomi.com-official
+  publisher: 小米
+  collected_at: '2026-08-08T23:28:09+08:00'
+  license: source-reference-only
+  metadata:
+    snapshot_id: 2026-08-08:xiaomi-careers
+    snapshot_week: 2026-W32
+    source_domain: hr.xiaomi.com
+    redistribution_allowed: false
+    team_delivery_internal_only: true
+- source_id: baidu-careers-2026-08-08
+  source_type: job
+  input: private/jobs/baidu.jsonl
+  input_format: jsonl
+  source_name: talent.baidu.com-official
+  publisher: 百度
+  collected_at: '2026-08-08T23:28:09+08:00'
+  license: source-reference-only
+  metadata:
+    snapshot_id: 2026-08-08:baidu-careers
+    snapshot_week: 2026-W32
+    source_domain: talent.baidu.com
+    redistribution_allowed: false
+    team_delivery_internal_only: true
+- source_id: huawei-careers-2026-08-08
+  source_type: job
+  input: private/jobs/huawei.jsonl
+  input_format: jsonl
+  source_name: career.huawei.com-official
+  publisher: 华为
+  collected_at: '2026-08-08T23:28:09+08:00'
+  license: source-reference-only
+  metadata:
+    snapshot_id: 2026-08-08:huawei-careers
+    snapshot_week: 2026-W32
+    source_domain: career.huawei.com
+    redistribution_allowed: false
+    team_delivery_internal_only: true

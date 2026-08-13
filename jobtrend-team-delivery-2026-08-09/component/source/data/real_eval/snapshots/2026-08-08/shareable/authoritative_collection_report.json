@@ -1,0 +1,29 @@
+{
+  "schema_version": "authoritative_eval_collection_report_v1",
+  "generated_at": "2026-08-08T15:49:11+00:00",
+  "status": "partial_evidence_ready",
+  "document_count": 20,
+  "source_type_counts": {
+    "industry_report": 10,
+    "occupational_standard": 4,
+    "policy": 6
+  },
+  "policy_or_standard_count": 10,
+  "industry_report_count": 10,
+  "evidence_count": 815,
+  "evidence_ready_count": 18,
+  "metadata_only_count": 2,
+  "metadata_only_source_ids": [
+    "occupation-ai-engineer-notice-2019",
+    "policy-new-roles-2024"
+  ],
+  "rights": {
+    "redistribution_allowed": false,
+    "fulltext_in_handoff": false,
+    "reference_export_contains_text": false
+  },
+  "paths": {
+    "reference_index": "authoritative_documents.reference.jsonl"
+  },
+  "limitations": "Metadata-only sources remain valid provenance records but are excluded from automatic RAG scoring until a reviewable text capture is available."
+}

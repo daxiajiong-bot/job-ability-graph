@@ -1,0 +1,139 @@
+{
+  "$defs": {
+    "ArtifactInfo": {
+      "additionalProperties": false,
+      "properties": {
+        "path": {
+          "title": "Path",
+          "type": "string"
+        },
+        "sha256": {
+          "title": "Sha256",
+          "type": "string"
+        },
+        "records": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Records"
+        }
+      },
+      "required": [
+        "path",
+        "sha256"
+      ],
+      "title": "ArtifactInfo",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "jobtrend_run_manifest_v1",
+      "default": "jobtrend_run_manifest_v1",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "run_id": {
+      "title": "Run Id",
+      "type": "string"
+    },
+    "created_at": {
+      "format": "date-time",
+      "title": "Created At",
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "prepared",
+        "running",
+        "completed",
+        "failed"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "config_sha256": {
+      "title": "Config Sha256",
+      "type": "string"
+    },
+    "baseline_graph_fingerprint": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Baseline Graph Fingerprint"
+    },
+    "input_artifacts": {
+      "items": {
+        "$ref": "#/$defs/ArtifactInfo"
+      },
+      "title": "Input Artifacts",
+      "type": "array"
+    },
+    "output_artifacts": {
+      "items": {
+        "$ref": "#/$defs/ArtifactInfo"
+      },
+      "title": "Output Artifacts",
+      "type": "array"
+    },
+    "model_ids": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Model Ids",
+      "type": "object"
+    },
+    "prompt_versions": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Prompt Versions",
+      "type": "object"
+    },
+    "token_usage": {
+      "additionalProperties": {
+        "type": "integer"
+      },
+      "title": "Token Usage",
+      "type": "object"
+    },
+    "estimated_cost_cny": {
+      "default": 0.0,
+      "title": "Estimated Cost Cny",
+      "type": "number"
+    },
+    "counts": {
+      "additionalProperties": {
+        "type": "integer"
+      },
+      "title": "Counts",
+      "type": "object"
+    },
+    "notes": {
+      "additionalProperties": true,
+      "title": "Notes",
+      "type": "object"
+    }
+  },
+  "required": [
+    "run_id",
+    "created_at",
+    "status",
+    "config_sha256"
+  ],
+  "title": "RunManifest",
+  "type": "object"
+}

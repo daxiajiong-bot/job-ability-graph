@@ -1,0 +1,104 @@
+{
+  "schema_version": "jobtrend_run_manifest_v1",
+  "run_id": "run:1ee907009b8db990",
+  "created_at": "2026-08-08T15:32:14.558591Z",
+  "status": "completed",
+  "config_sha256": "43dc41dbd917fb2f3be05ae95110693b401da09fdd0cac6523cf1119e0a731d2",
+  "baseline_graph_fingerprint": null,
+  "input_artifacts": [
+    {
+      "path": "external_documents.parquet",
+      "sha256": "7415724df05b3c0f0b5c771806cb4287e2c8fbe21585c41c604e4142c3ff1914",
+      "records": null
+    },
+    {
+      "path": "evidence.parquet",
+      "sha256": "f4b7649c77007e244eafe27ede281ea12915195b0d29b92e37d8197aeea3d926",
+      "records": null
+    }
+  ],
+  "output_artifacts": [
+    {
+      "path": "external_documents.jsonl",
+      "sha256": "76fa576505c559861bd89d097a388f39f516f91bdda0b6beef3e31386d27b2f4",
+      "records": 140
+    },
+    {
+      "path": "evidence.jsonl",
+      "sha256": "16f896ede6168069610fa82a4a7f56ef9a32295db807a80a27f5413658e797f2",
+      "records": 144
+    },
+    {
+      "path": "trend_features.jsonl",
+      "sha256": "024e139c9d2cdb1ae1d40f5dd8fb0102b1993313bf05f7d1f34a3804a52477a0",
+      "records": 110
+    },
+    {
+      "path": "emerging_roles.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "records": 0
+    },
+    {
+      "path": "job_skill_updates.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "records": 0
+    },
+    {
+      "path": "review_queue.csv",
+      "sha256": "48da790b3de906f59bcff95a431ed32383a2eb546d0e6e331623d23c31c7d3e2",
+      "records": 0
+    },
+    {
+      "path": "kg_link_delta.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "records": 0
+    }
+  ],
+  "model_ids": {
+    "extraction": "qwen3.7-flash-2026-07-15",
+    "fallback": "qwen3.7-plus-2026-05-26",
+    "embedding": "text-embedding-v4",
+    "rerank": "qwen3-rerank"
+  },
+  "prompt_versions": {
+    "extraction": "jobtrend_extract_v1",
+    "role_definition": "jobtrend_role_definition_v1"
+  },
+  "token_usage": {},
+  "estimated_cost_cny": 0.0,
+  "counts": {
+    "documents": 140,
+    "evidence": 144,
+    "observations": 140,
+    "trend_features": 110,
+    "emerging_roles": 0,
+    "job_skill_updates": 0,
+    "kg_link_deltas": 0,
+    "rag_contexts": 0
+  },
+  "notes": {
+    "python": "3.13.13",
+    "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",
+    "dependencies": {
+      "pydantic": "2.13.4",
+      "duckdb": "1.5.5",
+      "pyarrow": "not-installed",
+      "numpy": "2.5.1",
+      "scipy": "1.18.0",
+      "sklearn": "1.9.0",
+      "qdrant_client": "unknown"
+    },
+    "retrieval_provider": "offline-feature-hash",
+    "cloud_calls_executed": false,
+    "analysis": {
+      "as_of": "2026-08-08T16:00:00+00:00",
+      "observation_count": 140,
+      "unique_near_duplicate_count": 127,
+      "trend_feature_count": 110,
+      "emerging_role_count": 0,
+      "job_skill_update_count": 0,
+      "kg_delta_count": 0,
+      "baseline_graph_fingerprint": null
+    }
+  }
+}

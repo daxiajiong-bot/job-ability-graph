@@ -1,0 +1,95 @@
+{
+  "annotation": {
+    "calibration_count": 20,
+    "dedup_pair_count": 400,
+    "gold_status": "unlabelled",
+    "rag_query_template_count_per_annotator": 60,
+    "test_count": 120
+  },
+  "collected_at": "2026-08-08T23:28:09+08:00",
+  "collector_version": "public_eval_collector_v1",
+  "company_count": 5,
+  "http_request_count": 61,
+  "keyword": "大模型",
+  "paths": {
+    "annotation_dir": "annotations",
+    "private_jobs": "private/jobs.full.jsonl",
+    "shareable_reference": "shareable/jobs.reference.jsonl",
+    "snapshot_manifest": "shareable/collection_snapshots.jsonl",
+    "source_manifest": "sources.yaml"
+  },
+  "record_count": 140,
+  "records_with_published_at": 76,
+  "records_with_requirements": 140,
+  "records_with_responsibilities": 140,
+  "requested_quotas": {
+    "baidu": 32,
+    "huawei": 12,
+    "meituan": 32,
+    "tencent": 32,
+    "xiaomi": 32
+  },
+  "rights": {
+    "license": "source-reference-only",
+    "note": "Full JD text is internal evaluation material; share only the reference index.",
+    "redistribution_allowed": false
+  },
+  "schema_version": "public_eval_collection_report_v1",
+  "snapshot_date": "2026-08-08",
+  "snapshot_week": "2026-W32",
+  "source_counts": {
+    "baidu": 32,
+    "huawei": 12,
+    "meituan": 32,
+    "tencent": 32,
+    "xiaomi": 32
+  },
+  "source_results": [
+    {
+      "reason": null,
+      "record_count": 32,
+      "source_id": "tencent",
+      "status": "completed"
+    },
+    {
+      "reason": null,
+      "record_count": 32,
+      "source_id": "meituan",
+      "status": "completed"
+    },
+    {
+      "reason": null,
+      "record_count": 32,
+      "source_id": "xiaomi",
+      "status": "completed"
+    },
+    {
+      "reason": null,
+      "record_count": 32,
+      "source_id": "baidu",
+      "status": "completed"
+    },
+    {
+      "reason": null,
+      "record_count": 12,
+      "source_id": "huawei",
+      "status": "completed"
+    }
+  ],
+  "source_status_counts": {
+    "completed": 5
+  },
+  "team_delivery": {
+    "classification": "INTERNAL-ONLY",
+    "policy_or_report_fulltext_included": false,
+    "raw_http_responses_included": false,
+    "source_manifest_relocated_from": "private/sources.yaml"
+  },
+  "trend_validity": {
+    "reason": "Only one real collection week exists; published dates do not substitute for snapshots.",
+    "valid_for_cross_sectional_extraction_eval": true,
+    "valid_for_temporal_trend_eval": false
+  },
+  "unique_content_sha256": 124,
+  "unique_external_ids": 140
+}

@@ -1,0 +1,16 @@
+schema_version: source_manifest_v1
+sources:
+- source_id: zhaopin-historical-internal
+  source_type: job
+  input: jd_raw.sanitized.jsonl
+  input_format: jsonl
+  source_name: zhaopin
+  publisher: 智联招聘
+  license: source-reference-only/team-internal
+  metadata:
+    historical_import: true
+    single_source: true
+    redistribution_allowed: false
+    input_sha256: 6be5bc1560d0bbfedfb8c7c4be020d3da060fd0c9eea323552c635538412fb82
+    temporal_warning: old publish_date cannot replace same-batch scrape_time collection
+      weeks

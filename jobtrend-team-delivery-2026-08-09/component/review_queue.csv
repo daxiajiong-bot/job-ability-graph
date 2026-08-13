@@ -1,0 +1,18 @@
+﻿object_type,object_id,source_file,source_sha256,current_status,decision,canonical_title,reviewer,reviewed_at,notes,edits_json
+ability_mapping,delta:189b6f23903ad94d05be,kg_link_delta.jsonl,fc9f2b346e9394f58816c6454bb59bc0cbe42c6e44b418d9d6fb5f4423a91689,unresolved,,role:51fda9ea3aba30e88342,,,,{}
+ability_mapping,delta:2a60400e4df76e863b7b,kg_link_delta.jsonl,fc9f2b346e9394f58816c6454bb59bc0cbe42c6e44b418d9d6fb5f4423a91689,unresolved,,role:51fda9ea3aba30e88342,,,,{}
+ability_mapping,delta:3d2b18119ecb57830797,kg_link_delta.jsonl,fc9f2b346e9394f58816c6454bb59bc0cbe42c6e44b418d9d6fb5f4423a91689,unresolved,,role:51fda9ea3aba30e88342,,,,{}
+ability_mapping,delta:3fae2fc8535b9793c610,kg_link_delta.jsonl,fc9f2b346e9394f58816c6454bb59bc0cbe42c6e44b418d9d6fb5f4423a91689,unresolved,,红队测试,,,,{}
+ability_mapping,delta:4640801d5cdec22027be,kg_link_delta.jsonl,fc9f2b346e9394f58816c6454bb59bc0cbe42c6e44b418d9d6fb5f4423a91689,unresolved,,MCP,,,,{}
+ability_mapping,delta:4fb6607a78940cddcd70,kg_link_delta.jsonl,fc9f2b346e9394f58816c6454bb59bc0cbe42c6e44b418d9d6fb5f4423a91689,unresolved,,role:51fda9ea3aba30e88342,,,,{}
+ability_mapping,delta:5994021ea7098dedb280,kg_link_delta.jsonl,fc9f2b346e9394f58816c6454bb59bc0cbe42c6e44b418d9d6fb5f4423a91689,unresolved,,提示注入测试,,,,{}
+ability_mapping,delta:5d76f62cb4af3d719537,kg_link_delta.jsonl,fc9f2b346e9394f58816c6454bb59bc0cbe42c6e44b418d9d6fb5f4423a91689,unresolved,,RAG,,,,{}
+ability_mapping,delta:6ac88444ad411aa02e4a,kg_link_delta.jsonl,fc9f2b346e9394f58816c6454bb59bc0cbe42c6e44b418d9d6fb5f4423a91689,unresolved,,role:51fda9ea3aba30e88342,,,,{}
+ability_mapping,delta:88f43d1965706bbbb8c9,kg_link_delta.jsonl,fc9f2b346e9394f58816c6454bb59bc0cbe42c6e44b418d9d6fb5f4423a91689,unresolved,,Agent,,,,{}
+ability_mapping,delta:a657ca8301339633aaaa,kg_link_delta.jsonl,fc9f2b346e9394f58816c6454bb59bc0cbe42c6e44b418d9d6fb5f4423a91689,unresolved,,Python,,,,{}
+ability_mapping,delta:adf6834101879d4d82c3,kg_link_delta.jsonl,fc9f2b346e9394f58816c6454bb59bc0cbe42c6e44b418d9d6fb5f4423a91689,unresolved,,role:51fda9ea3aba30e88342,,,,{}
+ability_mapping,delta:c4ddedb3f107ae80f7dd,kg_link_delta.jsonl,fc9f2b346e9394f58816c6454bb59bc0cbe42c6e44b418d9d6fb5f4423a91689,unresolved,,role:51fda9ea3aba30e88342,,,,{}
+ability_mapping,delta:df77f794c12ddf1bdbe6,kg_link_delta.jsonl,fc9f2b346e9394f58816c6454bb59bc0cbe42c6e44b418d9d6fb5f4423a91689,unresolved,,LLM评测,,,,{}
+ability_mapping,delta:f2d18028ff9ca39abcbc,kg_link_delta.jsonl,fc9f2b346e9394f58816c6454bb59bc0cbe42c6e44b418d9d6fb5f4423a91689,unresolved,,role:51fda9ea3aba30e88342,,,,{}
+emerging_role,role:51fda9ea3aba30e88342,emerging_roles.jsonl,e0ba4fec399d2614d1551167d6544059d4fb30ff48ad797988446030c6e5b516,candidate,,AI Agent安全评测工程师,,,,{}
+job_skill_update,skill-update:5534279c6893e57847be,job_skill_updates.jsonl,32b105e5986531584870e2befcb45a055cb0b27e7e440f984171edd2d26806f2,candidate,,Java开发工程师,,,,{}

@@ -1,0 +1,12 @@
+{
+  "schema_version": "dedup_pair_sampling_v1",
+  "pair_count": 400,
+  "strata_counts": {
+    "exact_hash": 24,
+    "near_candidate": 80,
+    "hard_or_random_negative": 296
+  },
+  "labels_present": false,
+  "annotator_warning": "Sampling strata are not labels; A and B must decide independently.",
+  "pair_set_sha256": "0778281a4161f5741c5099350b35bd33c9d0216655f83d732226bb865e10c1c7"
+}

@@ -15,6 +15,7 @@ import {
   Descriptions,
   Divider,
   Spin,
+  Progress,
 } from "antd";
 import {
   DeleteOutlined,
@@ -32,12 +33,93 @@ import { formatMatchLevel } from "../utils/adapters";
 
 const { Title, Paragraph, Text } = Typography;
 
+/**
+ * 从文本中提取技能名称
+ */
+function extractSkillNamesFromText(text) {
+  if (!text) return [];
+  const patterns = [
+    /[：:]\s*(.+?)(?:。|$)/,
+    /(?:缺少|缺失|需要|掌握)\s*(.+?)(?:等|。|$)/,
+    /^(.+?)(?:等|。|$)/,
+  ];
+
+  for (const pattern of patterns) {
+    const match = text.match(pattern);
+    if (match) {
+      const skills = match[1]
+        .split(/[,，、和\s]+/)
+        .map((s) => s.trim())
+        .filter((s) => s.length > 1 && s.length < 20 && !/^(技能|技术|能力|岗位|要求)$/.test(s));
+      if (skills.length > 0) return skills;
+    }
+  }
+  return [];
+}
+
+// 从匹配结果中提取技能数量
+function getSkillCounts(matchResult) {
+  if (!matchResult) return { matched: 0, missing: 0 };
+
+  const details = matchResult.details || {};
+  let matched = details.matched_skills?.length ?? 0;
+  let missing = details.missing_skills?.length ?? 0;
+
+  // 兼容旧数据：从 learning_path 和 gaps 中提取
+  if (matched === 0 && missing === 0) {
+    // learning_path 是最可靠的来源
+    const learningPath = matchResult.learning_path || [];
+    missing = learningPath.filter((lp) => lp.skill).length;
+
+    // 从 gaps 中提取
+    const gaps = matchResult.gaps || [];
+    gaps.forEach((g) => {
+      if (g.category === "skill" && g.text) {
+        const skills = extractSkillNamesFromText(g.text);
+        missing += skills.length;
+      }
+    });
+
+    // 从 strengths 中提取
+    const strengths = matchResult.strengths || [];
+    strengths.forEach((s) => {
+      if (s.category === "skill" && s.text) {
+        const skills = extractSkillNamesFromText(s.text);
+        matched += skills.length;
+      }
+    });
+  }
+
+  return { matched, missing };
+}
+
 export default function MatchHistory() {
   const { matchHistory, removeMatchHistory, clearMatchHistory, saveLearningAdvice } = useStore();
   const [detailModal, setDetailModal] = useState(null);
   const [compareModal, setCompareModal] = useState(null);
   const [adviceModal, setAdviceModal] = useState(null);
   const [selectedRows, setSelectedRows] = useState([]);
+
+  function handleBatchDelete() {
+    if (selectedRows.length === 0) {
+      message.warning("请先选择要删除的记录");
+      return;
+    }
+    Modal.confirm({
+      title: "确认批量删除",
+      content: `确定要删除选中的 ${selectedRows.length} 条匹配记录吗？删除后不可恢复。`,
+      okText: "删除",
+      cancelText: "取消",
+      okButtonProps: { danger: true },
+      onOk: () => {
+        selectedRows.forEach((record) => {
+          removeMatchHistory(record.timestamp);
+        });
+        setSelectedRows([]);
+        message.success(`成功删除 ${selectedRows.length} 条记录`);
+      },
+    });
+  }
 
   function handleExport(record) {
     const lines = [
@@ -100,27 +182,39 @@ export default function MatchHistory() {
       sorter: (a, b) => (a.score ?? 0) - (b.score ?? 0),
     },
     {
-      title: "简历摘要",
-      key: "resume",
-      ellipsis: true,
-      render: (_, r) => (
-        <Text type="secondary">{r.resumeText?.slice(0, 60) || "-"}...</Text>
-      ),
+      title: "技能匹配",
+      key: "skills",
+      width: 120,
+      render: (_, r) => {
+        const { matched, missing } = getSkillCounts(r.matchResult);
+        const total = matched + missing;
+        return (
+          <Space size={4}>
+            <Tag color="success">{matched}</Tag>
+            <Text type="secondary">/</Text>
+            <Tag>{total}</Tag>
+          </Space>
+        );
+      },
     },
     {
-      title: "JD 摘要",
-      key: "jd",
-      ellipsis: true,
-      render: (_, r) => (
-        <Text type="secondary">{r.jdText?.slice(0, 60) || "-"}...</Text>
-      ),
-    },
-    {
-      title: "实现方式",
-      dataIndex: ["matchResult", "implementation"],
-      key: "impl",
-      width: 100,
-      render: (v) => <Tag>{v || "mock"}</Tag>,
+      title: "掌握率",
+      key: "mastery",
+      width: 140,
+      render: (_, r) => {
+        const { matched, missing } = getSkillCounts(r.matchResult);
+        const total = matched + missing;
+        const percent = total > 0 ? Math.round((matched / total) * 100) : 0;
+        const color = percent >= 80 ? "#52c41a" : percent >= 50 ? "#faad14" : "#ff4d4f";
+        return (
+          <Progress
+            percent={percent}
+            size="small"
+            strokeColor={color}
+            format={(p) => `${p}%`}
+          />
+        );
+      },
     },
     {
       title: "操作",
@@ -185,6 +279,19 @@ export default function MatchHistory() {
                 对比选中 ({selectedRows.length})
               </Button>
             )}
+            {selectedRows.length > 0 && (
+              <Popconfirm
+                title={`确定删除选中的 ${selectedRows.length} 条记录？`}
+                onConfirm={handleBatchDelete}
+                okText="删除"
+                cancelText="取消"
+                okButtonProps={{ danger: true }}
+              >
+                <Button danger icon={<DeleteOutlined />}>
+                  批量删除 ({selectedRows.length})
+                </Button>
+              </Popconfirm>
+            )}
             {matchHistory.length > 0 && (
               <Popconfirm
                 title="确认清空所有历史记录？"
@@ -210,9 +317,6 @@ export default function MatchHistory() {
           rowSelection={{
             selectedRowKeys: selectedRows.map((r) => r.timestamp),
             onChange: (_, rows) => setSelectedRows(rows),
-            getCheckboxProps: (record) => ({
-              disabled: selectedRows.length >= 2 && !selectedRows.find((r) => r.timestamp === record.timestamp),
-            }),
           }}
           locale={{
             emptyText: <Empty description="暂无匹配历史记录" />,
@@ -238,9 +342,6 @@ export default function MatchHistory() {
               </Descriptions.Item>
               <Descriptions.Item label="时间">
                 {new Date(detailModal.timestamp).toLocaleString("zh-CN")}
-              </Descriptions.Item>
-              <Descriptions.Item label="实现方式" span={2}>
-                {detailModal.matchResult?.implementation || "mock"}
               </Descriptions.Item>
             </Descriptions>
 
@@ -288,20 +389,6 @@ export default function MatchHistory() {
                 </div>
               </>
             )}
-
-            <Divider>原始数据</Divider>
-            <pre
-              style={{
-                background: "var(--accent-soft)",
-                padding: 16,
-                borderRadius: 8,
-                maxHeight: 300,
-                overflow: "auto",
-                fontSize: 12,
-              }}
-            >
-              {JSON.stringify(detailModal.matchResult, null, 2)}
-            </pre>
           </div>
         )}
       </Modal>
@@ -329,9 +416,6 @@ export default function MatchHistory() {
                       >
                         {record.score ?? 0}%
                       </Tag>
-                    </Descriptions.Item>
-                    <Descriptions.Item label="实现方式">
-                      {record.matchResult?.implementation || "mock"}
                     </Descriptions.Item>
                     <Descriptions.Item label="已掌握技能">
                       {record.matchResult?.details?.matched_skills?.length ?? 0}{" "}

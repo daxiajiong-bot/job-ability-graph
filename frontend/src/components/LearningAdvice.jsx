@@ -23,6 +23,8 @@ import {
   StarOutlined,
   FireOutlined,
   ThunderboltOutlined,
+  NodeIndexOutlined,
+  FileTextOutlined,
 } from "@ant-design/icons";
 import { getLearningAdvice } from "../api/client";
 
@@ -86,8 +88,12 @@ export default function LearningAdvice({ matchResult, initialAdvice, onSave }) {
           <RocketOutlined style={{ color: "#faad14" }} />
           <span>AI 学习建议</span>
           {advice?.implementation && (
-            <Tag color={advice.implementation === "mock_learning_advisor" ? "warning" : "green"}>
-              {advice.implementation === "mock_learning_advisor" ? "Mock" : "LLM"}
+            <Tag color={
+              advice.implementation === "mock_learning_advisor" ? "warning" :
+              advice.implementation === "graph_rag_learning_advisor" ? "cyan" : "green"
+            }>
+              {advice.implementation === "mock_learning_advisor" ? "Mock" :
+               advice.implementation === "graph_rag_learning_advisor" ? "Graph-RAG" : "LLM"}
             </Tag>
           )}
         </Space>
@@ -223,6 +229,89 @@ export default function LearningAdvice({ matchResult, initialAdvice, onSave }) {
                     </Card>
                   )}
                 />
+              </div>
+            )}
+
+            {/* 知识图谱分析 */}
+            {advice.graph_context?.length > 0 && (
+              <div style={{ marginBottom: 24 }}>
+                <Title level={5} style={{ color: "var(--text-primary)", marginBottom: 12 }}>
+                  <NodeIndexOutlined style={{ marginRight: 8, color: "#13c2c2" }} />
+                  知识图谱分析依据
+                </Title>
+                {advice.graph_context.map((ctx, idx) => (
+                  <Card
+                    key={idx}
+                    size="small"
+                    style={{
+                      marginBottom: 12,
+                      background: "var(--accent-subtle)",
+                      border: "1px solid var(--border-glass)",
+                    }}
+                  >
+                    <Text strong style={{ color: "var(--text-primary)", fontSize: 14, display: "block", marginBottom: 8 }}>
+                      {ctx.skill}
+                    </Text>
+
+                    {ctx.co_occurring_skills?.length > 0 && (
+                      <div style={{ marginBottom: 8 }}>
+                        <Text type="secondary" style={{ fontSize: 12 }}>
+                          <NodeIndexOutlined style={{ marginRight: 4 }} />
+                          关联技能（岗位共现）：
+                        </Text>
+                        <div style={{ display: "flex", flexWrap: "wrap", gap: 4, marginTop: 4 }}>
+                          {ctx.co_occurring_skills.map((s, i) => (
+                            <Tag key={i} color="cyan" style={{ fontSize: 12 }}>
+                              {s.name} ({s.co_occurrence_count})
+                            </Tag>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+
+                    {ctx.demanding_jobs?.length > 0 && (
+                      <div style={{ marginBottom: 8 }}>
+                        <Text type="secondary" style={{ fontSize: 12 }}>
+                          <RocketOutlined style={{ marginRight: 4 }} />
+                          需求岗位：
+                        </Text>
+                        <div style={{ display: "flex", flexWrap: "wrap", gap: 4, marginTop: 4 }}>
+                          {ctx.demanding_jobs.map((j, i) => (
+                            <Tag key={i} color="blue" style={{ fontSize: 12 }}>
+                              {j.title}
+                            </Tag>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+
+                    {ctx.jd_evidence?.length > 0 && (
+                      <div>
+                        <Text type="secondary" style={{ fontSize: 12 }}>
+                          <FileTextOutlined style={{ marginRight: 4 }} />
+                          JD 真实要求：
+                        </Text>
+                        {ctx.jd_evidence.map((ev, i) => (
+                          <div
+                            key={i}
+                            style={{
+                              marginTop: 4,
+                              padding: "6px 10px",
+                              background: "rgba(19, 194, 194, 0.04)",
+                              borderRadius: 6,
+                              borderLeft: "3px solid #13c2c2",
+                              fontSize: 12,
+                              color: "var(--text-secondary)",
+                              lineHeight: 1.6,
+                            }}
+                          >
+                            "{ev.quote}"
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                  </Card>
+                ))}
               </div>
             )}
 

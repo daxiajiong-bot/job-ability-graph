@@ -1,0 +1,199 @@
+schema_version: source_manifest_v1
+# 只作为外部信号和交叉验证来源；默认不抓取。每次启用前复核访问条款与页面可用性。
+sources:
+  # 政策 / 职业标准：恰好 10 条
+  - source_id: policy-ai-plus-2025
+    source_type: policy
+    input: https://www.nda.gov.cn/sjj/swdt/xwfb/0826/20250826173046592282838_mobile.html
+    input_format: url
+    source_name: national-data-administration
+    publisher: 国务院
+    published_at: 2025-08-26T00:00:00+08:00
+    license: source-reference-only
+    enabled: false
+    metadata: &reference_only_rights
+      rights:
+        redistribution_allowed: false
+        fulltext_in_handoff: false
+        allowed_output: metadata_hash_and_necessary_evidence_excerpt_only
+        terms_review_required: true
+  - source_id: policy-digital-economy-2026
+    source_type: policy
+    input: https://www.nda.gov.cn/sjj/ywpd/szjj/0519/20260519194643007508935_pc.html
+    input_format: url
+    source_name: national-data-administration
+    publisher: 国家数据局
+    published_at: 2026-05-19T00:00:00+08:00
+    license: source-reference-only
+    enabled: false
+    metadata: *reference_only_rights
+  - source_id: occupation-ai-engineer-notice-2019
+    source_type: policy
+    input: https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs_4225/jnrc/202112/t20211227_431368.html
+    input_format: url
+    source_name: mohrss
+    publisher: 人力资源和社会保障部、市场监管总局、国家统计局
+    published_at: 2019-04-01T00:00:00+08:00
+    license: source-reference-only
+    enabled: false
+    metadata: *reference_only_rights
+  - source_id: policy-new-roles-2024
+    source_type: policy
+    input: https://www.mohrss.gov.cn/wap/xw/rsxw/202407/t20240731_523281.html
+    input_format: url
+    source_name: mohrss
+    publisher: 人力资源和社会保障部
+    published_at: 2024-07-31T00:00:00+08:00
+    license: source-reference-only
+    enabled: false
+    metadata: *reference_only_rights
+  - source_id: policy-new-occupation-collection-2025
+    source_type: policy
+    input: https://chinajob.mohrss.gov.cn/c/2025-09-05/448949.shtml
+    input_format: url
+    source_name: china-job
+    publisher: 人力资源和社会保障部
+    published_at: 2025-09-05T00:00:00+08:00
+    license: source-reference-only
+    enabled: false
+    metadata: *reference_only_rights
+  - source_id: occupation-ai-trainer-standard-2021
+    source_type: occupational_standard
+    input: https://www.osta.org.cn/api/sys/downloadFile/decrypt?fileName=4eNsZIOv3WFNDfbnldJHeA%2F2024%2F4%2F29%2F6761815658ea468cbc0caa8974357703.pdf
+    input_format: url
+    source_name: osta
+    publisher: 人力资源和社会保障部、工业和信息化部
+    license: source-reference-only
+    enabled: false
+    metadata: *reference_only_rights
+  - source_id: occupation-big-data-standard-2021
+    source_type: occupational_standard
+    input: https://www.osta.org.cn/api/sys/downloadFile/decrypt?fileName=4eNsZIOv3WFNDfbnldJHeA%2F2024%2F4%2F30%2F5e9d4c903d0946458e8c362bb550ad68.pdf
+    input_format: url
+    source_name: osta
+    publisher: 人力资源和社会保障部、工业和信息化部
+    license: source-reference-only
+    enabled: false
+    metadata: *reference_only_rights
+  - source_id: occupation-smart-manufacturing-standard-2021
+    source_type: occupational_standard
+    input: https://www.osta.org.cn/api/sys/downloadFile/decrypt?fileName=4eNsZIOv3WFNDfbnldJHeA%2F2024%2F4%2F29%2Fdfafbd41f07b4d66b017c87561fb8762.pdf
+    input_format: url
+    source_name: osta
+    publisher: 人力资源和社会保障部、工业和信息化部
+    license: source-reference-only
+    enabled: false
+    metadata: *reference_only_rights
+  - source_id: occupation-ai-engineer-standard-2021
+    source_type: occupational_standard
+    input: https://zsgx.mohrss.gov.cn/uploads/2024-10-24/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%B7%A5%E7%A8%8B%E6%8A%80%E6%9C%AF%E4%BA%BA%E5%91%98%E5%9B%BD%E5%AE%B6%E8%81%8C%E4%B8%9A%E6%8A%80%E6%9C%AF%E6%8A%80%E8%83%BD%E6%A0%87%E5%87%86.pdf
+    input_format: url
+    source_name: mohrss-professional-talent
+    publisher: 人力资源和社会保障部、工业和信息化部
+    published_at: 2021-09-29T00:00:00+08:00
+    license: source-reference-only
+    enabled: false
+    metadata: *reference_only_rights
+  - source_id: policy-generative-ai-standardization-guidelines-2024
+    source_type: policy
+    input: https://www.cac.gov.cn/2024-07/03/c_1721686809220407.htm
+    input_format: url
+    source_name: cac
+    publisher: 国家互联网信息办公室
+    published_at: 2024-07-03T00:00:00+08:00
+    license: source-reference-only
+    enabled: false
+    metadata: *reference_only_rights
+
+  # 正式权威报告：恰好 10 条；不使用 ictp.caict.ac.cn 的期刊摘要页。
+  - source_id: report-digital-china-development-2025
+    source_type: industry_report
+    input: https://www.nda.gov.cn/sjj/zhuanti/sjzgzxd/szzgbg/0429/20260429162826395159001_pc.html
+    input_format: url
+    source_name: national-data-administration
+    publisher: 国家数据局
+    published_at: 2026-04-29T00:00:00+08:00
+    license: source-reference-only
+    enabled: false
+    metadata: *reference_only_rights
+  - source_id: report-ai-security-governance-2025
+    source_type: industry_report
+    input: https://www.caict.ac.cn/kxyj/qwfb/bps/202601/P020260109784447548497.pdf
+    input_format: url
+    source_name: caict
+    publisher: 中国信息通信研究院
+    license: source-reference-only
+    enabled: false
+    metadata: *reference_only_rights
+  - source_id: report-intelligent-terminal-2025
+    source_type: industry_report
+    input: https://www.caict.ac.cn/kxyj/qwfb/bps/202603/P020260316619476244269.pdf
+    input_format: url
+    source_name: caict
+    publisher: 中国信息通信研究院
+    license: source-reference-only
+    enabled: false
+    metadata: *reference_only_rights
+  - source_id: report-cloud-computing-2025
+    source_type: industry_report
+    input: https://www.caict.ac.cn/kxyj/qwfb/bps/202507/P020250722583603558109.pdf
+    input_format: url
+    source_name: caict
+    publisher: 中国信息通信研究院
+    license: source-reference-only
+    enabled: false
+    metadata: *reference_only_rights
+  - source_id: report-government-agents-2025
+    source_type: industry_report
+    input: https://www.caict.ac.cn/kxyj/qwfb/ztbg/202512/P020260119582840118218.pdf
+    input_format: url
+    source_name: caict
+    publisher: 中国信息通信研究院、北京大学
+    license: source-reference-only
+    enabled: false
+    metadata: *reference_only_rights
+  - source_id: report-ai-law-policy-landscape-2025
+    source_type: industry_report
+    input: https://www.caict.ac.cn/kxyj/qwfb/ztbg/202506/P020250618611605590281.pdf
+    input_format: url
+    source_name: caict
+    publisher: 中国信息通信研究院
+    license: source-reference-only
+    enabled: false
+    metadata: *reference_only_rights
+  - source_id: report-intelligent-native-2026
+    source_type: industry_report
+    input: https://www.caict.ac.cn/kxyj/qwfb/ztbg/202604/P020260429600282400440.pdf
+    input_format: url
+    source_name: caict
+    publisher: 中国信息通信研究院
+    license: source-reference-only
+    enabled: false
+    metadata: *reference_only_rights
+  - source_id: report-research-intelligence-development-2025
+    source_type: industry_report
+    input: https://www.caict.ac.cn/kxyj/qwfb/ztbg/202601/P020260114592597416601.pdf
+    input_format: url
+    source_name: caict
+    publisher: 中国信息通信研究院、中国人工智能产业发展联盟
+    license: source-reference-only
+    enabled: false
+    metadata: *reference_only_rights
+  - source_id: report-data-intelligence-services-2025
+    source_type: industry_report
+    input: https://www.caict.ac.cn/kxyj/qwfb/ztbg/202601/P020260127486178019461.pdf
+    input_format: url
+    source_name: caict
+    publisher: 中国信息通信研究院
+    license: source-reference-only
+    enabled: false
+    metadata: *reference_only_rights
+  - source_id: report-ai-wan-2025
+    source_type: industry_report
+    input: https://www.caict.ac.cn/english/research/whitepapers/202509/P020250903606256329668.pdf
+    input_format: url
+    source_name: caict
+    publisher: 中国信息通信研究院
+    license: source-reference-only
+    enabled: false
+    metadata: *reference_only_rights

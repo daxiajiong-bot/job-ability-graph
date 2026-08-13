@@ -189,6 +189,47 @@ class MockPositionEvolution:
 
 class MockMatcher:
     def assess(self, candidate: Profile, job: Profile, options: dict[str, Any]) -> dict[str, Any]:
+        # 尝试从画像中提取技能进行基本匹配
+        cand_attrs = candidate.attributes if hasattr(candidate, "attributes") else {}
+        job_attrs = job.attributes if hasattr(job, "attributes") else {}
+
+        def extract_skill_name(s):
+            if isinstance(s, dict):
+                return s.get("name", "") or s.get("skill", "")
+            return str(s) if s else ""
+
+        def normalize_skill(s):
+            """标准化技能名称用于比较"""
+            import re
+            s = s.casefold().strip()
+            s = re.sub(r"\d+$", "", s)  # 去除版本号
+            s = re.sub(r"\.(js|py|ts|java|go|rs|cpp|c)$", "", s)  # 去除后缀
+            return re.sub(r"[^\w一-鿿]+", "", s)
+
+        cand_skills = [extract_skill_name(s) for s in cand_attrs.get("skills", []) if s]
+        job_skills = [extract_skill_name(s) for s in job_attrs.get("skills", []) if s]
+
+        # 技能匹配（使用标准化后的名称比较）
+        cand_skill_map = {}
+        for s in cand_skills:
+            if s:
+                key = normalize_skill(s)
+                if key:
+                    cand_skill_map[key] = s
+
+        matched = []
+        missing = []
+        for skill in job_skills:
+            if not skill:
+                continue
+            key = normalize_skill(skill)
+            if key and key in cand_skill_map:
+                if cand_skill_map[key] not in matched:
+                    matched.append(cand_skill_map[key])
+            else:
+                if skill not in missing:
+                    missing.append(skill)
+
         return _mock(
             "Graph-enhanced person-job matching is not configured.",
             score=None,
@@ -198,6 +239,10 @@ class MockMatcher:
             learning_path=[],
             document_evidence=[],
             graph_evidence=[],
+            details={
+                "matched_skills": matched,
+                "missing_skills": missing,
+            },
         )
 
 

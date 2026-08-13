@@ -2,12 +2,12 @@
 
 > **GitHub 仓库：** https://github.com/daxiajiong-bot/job-ability-graph
 
-## 快速开始（30 秒启动）
+## 快速开始
 
 ```bash
-# 1. 启动后端（Mock 模式，无需 Ollama）
+# 1. 启动后端
 cd job-ability-graph
-python -m uvicorn backend.app.main:app --reload --host 127.0.0.1 --port 8000
+python -m uvicorn backend.app.main:app --host 127.0.0.1 --port 8000
 
 # 2. 新终端启动前端
 cd job-ability-graph/frontend
@@ -16,49 +16,43 @@ npm run dev
 # 3. 浏览器打开 http://localhost:5173
 ```
 
-**启用 AI 画像生成（需要 Ollama）：**
-
-```bash
-# 安装 Ollama 后下载模型
-ollama pull qwen2.5:7b
-
-# 启动后端时设置环境变量
-$env:LLM_BACKEND="ollama"
-python -m uvicorn backend.app.main:app --reload --host 127.0.0.1 --port 8000
-```
-
 ---
 
 ## 项目结构
 
 ```
 job-ability-graph/
-├── backend/              # 后端服务 (FastAPI)
-├── frontend/             # 前端界面 (React + Vite)
-├── data/                 # 数据文件
-│   ├── small-raw/        # 原始 JD 数据
-│   └── app.db            # SQLite 数据库
-├── jd-parser/            # JD 解析器
-├── jdmatch-deployment/   # 模型部署配置
-├── algorithms/           # 算法实现
-├── scripts/              # 工具脚本
-├── tests/                # 测试用例
-├── docs/                 # 项目文档
-└── requirements.txt      # Python 依赖
+├── backend/                      # 后端服务 (FastAPI)
+│   └── app/
+│       ├── api/v1/               # API 路由
+│       ├── application/use_cases/ # 业务门面
+│       ├── data_governance/      # 数据治理 + RAG
+│       ├── domain/               # 领域实体
+│       └── infrastructure/       # 适配器（LLM、Neo4j、SQLite）
+├── frontend/                     # 前端界面 (React 19 + Vite)
+├── data/                         # 数据文件
+│   ├── app.db                    # SQLite 数据库（~66MB）
+│   ├── small-raw/                # 原始 JD 数据（10515 条）
+│   ├── small_raw_200_lskt_tech_v2/  # 预构建知识图谱
+│   └── rag/                      # RAG 检索数据
+├── jd-parser/                    # JD 结构化解析管线
+├── jdmatch-deployment-qwen3-4b-v1/  # Qwen3-Embedding 微调
+├── JobCloud/                     # 独立 3D 可视化应用
+├── tests/                        # 测试用例
+├── docs/                         # 项目文档
+├── .env                          # 环境变量配置
+└── requirements.txt              # Python 依赖
 ```
-
-> ⚠️ **注意：** 大型模型文件 (`*.safetensors`) 已从 Git 仓库中排除（超过 GitHub 2GB 限制）。如需使用 AI 模型功能，请单独下载。
 
 ---
 
 ## 环境要求
 
-| 组件    | 版本要求                         |
-| ------- | -------------------------------- |
-| Python  | 3.10+                            |
-| Node.js | 18+                              |
-| npm     | 9+                               |
-| Ollama  | 最新版（可选，用于 AI 画像生成） |
+| 组件    | 版本要求 | 说明                              |
+| ------- | -------- | --------------------------------- |
+| Python  | 3.10+    | 后端运行                          |
+| Node.js | 18+      | 前端构建                          |
+| Ollama  | 最新版   | 可选，用于 AI 画像生成 + 学习建议 |
 
 ---
 
@@ -71,34 +65,31 @@ cd job-ability-graph
 pip install -r requirements.txt
 ```
 
-### 2. 配置环境变量（可选）
+### 2. 配置环境变量
 
-复制环境变量模板，按需修改：
+编辑 `.env` 文件，核心配置项：
 
-```bash
-cp .env.example .env
-```
-
-默认即可使用的配置（无需修改）：
-
-| 变量              | 默认值          | 说明                                                         |
-| ----------------- | --------------- | ------------------------------------------------------------ |
-| `DB_BACKEND`    | `sqlite`      | 数据库后端，`sqlite`(持久化) 或 `memory`(内存，重启丢失) |
-| `DB_PATH`       | `data/app.db` | SQLite 数据库文件路径                                        |
-| `LLM_BACKEND`   | `mock`        | 大模型后端，`mock`(默认) 或 `ollama`                     |
-| `GRAPH_BACKEND` | `mock`        | 图数据库后端，`mock`(默认) 或 `neo4j`                    |
+| 变量                     | 默认值         | 说明                                                    |
+| ------------------------ | -------------- | ------------------------------------------------------- |
+| `DB_BACKEND`           | `sqlite`     | 数据库：`sqlite`（持久化）或 `memory`（重启丢失）   |
+| `LLM_BACKEND`          | `ollama`     | 大模型：`mock`（无 AI）或 `ollama`（需安装 Ollama） |
+| `GRAPH_BACKEND`        | `mock`       | 图数据库：`mock` 或 `neo4j`                         |
+| `LLM_MODEL`            | `qwen2.5:7b` | Ollama 模型名                                           |
+| `DATA_GOVERNANCE_ROOT` | `data`       | 数据目录                                                |
 
 ### 3. 启动后端服务
 
-#### 模式 A：Mock 模式（默认，无需 Ollama）
+#### 模式 A：Mock 模式（无需 Ollama）
 
 ```bash
-python -m uvicorn backend.app.main:app --reload --host 127.0.0.1 --port 8000
+# 临时设置环境变量
+$env:LLM_BACKEND="mock"
+python -m uvicorn backend.app.main:app --host 127.0.0.1 --port 8000
 ```
 
-此模式下画像生成功能返回空数据，仅用于开发调试。
+此模式下画像生成和学习建议返回模拟数据，仅用于前端开发调试。
 
-#### 模式 B：Ollama 模式（AI 画像生成）
+#### 模式 B：Ollama 模式（完整功能）
 
 **前置条件：**
 
@@ -109,50 +100,20 @@ python -m uvicorn backend.app.main:app --reload --host 127.0.0.1 --port 8000
 ollama pull qwen2.5:7b
 ```
 
-3. 启动后端（二选一）：
-
-**方式一：命令行设置环境变量**
+3. 确认 `.env` 中 `LLM_BACKEND=ollama`，然后启动：
 
 ```bash
-# Windows PowerShell
-$env:LLM_BACKEND="ollama"
-python -m uvicorn backend.app.main:app --reload --host 127.0.0.1 --port 8000
-
-# Windows CMD
-set LLM_BACKEND=ollama
-python -m uvicorn backend.app.main:app --reload --host 127.0.0.1 --port 8000
-
-# Linux / macOS
-LLM_BACKEND=ollama python -m uvicorn backend.app.main:app --reload --host 0.0.0.0 --port 8000
+python -m uvicorn backend.app.main:app --host 127.0.0.1 --port 8000
 ```
 
-**方式二：修改 `.env` 文件**
-
-将 `.env` 中的：
-
-```
-LLM_BACKEND=mock
-```
-
-改为：
-
-```
-LLM_BACKEND=ollama
-```
-
-然后正常启动：
-
-```bash
-python -m uvicorn backend.app.main:app --reload --host 127.0.0.1 --port 8000
-```
-
-> ⚠️ **注意：** `.env` 文件需要应用主动加载才能生效。如果修改 `.env` 后不生效，请使用方式一。
+> ⚠️ **注意：** 不要使用 `--reload` 参数，否则 `.env` 配置可能不被正确加载。
 
 首次启动时，系统会自动：
 
-1. 创建 SQLite 数据库文件（`data/app.db`）
-2. 建表（users / documents / profiles）
-3. 从 `data/small-raw/jd_raw.jsonl` 导入 **10515 条** 初始 JD 数据
+1. 创建 SQLite 数据库（`data/app.db`）
+2. 建表（users / documents / profiles / matches / reports）
+3. 导入 **10515 条**初始 JD 数据
+4. 加载预构建知识图谱（3736 节点，11268 边）
 
 看到类似日志表示成功：
 
@@ -164,14 +125,14 @@ Seeded 10515 initial JD records from .../data/small-raw/jd_raw.jsonl
 ### 4. 验证后端
 
 ```bash
-# 健康检查（会显示数据库中的文档数量）
+# 健康检查
 curl http://127.0.0.1:8000/health
 
-# 查看 API 文档
-# 浏览器打开 http://127.0.0.1:8000/docs
+# 查看系统能力（确认 LLM 和 Graph-RAG 状态）
+curl http://127.0.0.1:8000/api/v1/capabilities
 
-# 查看系统 JD 列表（需要带 X-User-ID 头）
-curl -H "X-User-ID: test_user" "http://127.0.0.1:8000/api/v1/documents?document_type=jd&limit=5"
+# API 文档
+# 浏览器打开 http://127.0.0.1:8000/docs
 ```
 
 ---
@@ -191,11 +152,9 @@ npm install
 npm run dev
 ```
 
-默认运行在 `http://localhost:5173`，Vite 会自动将 `/api` 请求代理到后端 `http://127.0.0.1:8000`。
+默认运行在 `http://localhost:5173`，Vite 会自动将 `/api` 请求代理到后端。
 
-### 3. 访问前端
-
-浏览器打开 `http://localhost:5173`，主要页面：
+### 3. 主要页面
 
 | 路径          | 功能                                  |
 | ------------- | ------------------------------------- |
@@ -204,49 +163,36 @@ npm run dev
 | `/resume`   | 简历管理（上传简历，生成候选人画像）  |
 | `/match`    | 人岗匹配                              |
 | `/history`  | 匹配历史                              |
-| `/graph`    | 知识图谱                              |
+| `/graph`    | 3D 星图可视化                         |
 | `/settings` | 系统设置                              |
 
 ---
 
-## 三、完整启动流程（一键）
+## 三、核心功能说明
 
-### Windows（Mock 模式）
+### 人岗匹配 + 学习建议
 
-```bash
-# 终端 1：启动后端
-cd job-ability-graph
-python -m uvicorn backend.app.main:app --reload --host 127.0.0.1 --port 8000
+完整流程：
 
-# 终端 2：启动前端
-cd job-ability-graph/frontend
-npm run dev
+```
+上传简历 → 生成候选人画像
+上传 JD（或选用系统已有 JD）→ 生成岗位画像
+创建人岗匹配 → 得到匹配得分和技能差距
+生成学习建议 → 基于知识图谱 RAG 的个性化建议
 ```
 
-### Windows（Ollama 模式，支持 AI 画像生成）
+**学习建议（Graph-RAG）：** 当 `LLM_BACKEND=ollama` 时，系统会：
 
-```bash
-# 终端 1：启动后端
-cd job-ability-graph
-$env:LLM_BACKEND="ollama"
-python -m uvicorn backend.app.main:app --reload --host 127.0.0.1 --port 8000
+1. 从匹配结果中提取 top-3 差距技能
+2. 在知识图谱中检索每个技能的共现技能和需求岗位
+3. 从 RAG 数据中检索相关 JD 原文片段
+4. 拼装上下文送入 LLM 生成个性化学习建议
 
-# 终端 2：启动前端
-cd job-ability-graph/frontend
-npm run dev
-```
+前端展示三个区域：
 
-### macOS / Linux
-
-```bash
-# 终端 1：启动后端
-cd job-ability-graph
-LLM_BACKEND=ollama python3 -m uvicorn backend.app.main:app --reload --host 0.0.0.0 --port 8000
-
-# 终端 2：启动前端
-cd job-ability-graph/frontend
-npm run dev
-```
+- **技能差距分析**：每个差距技能的当前/目标水平、学习步骤
+- **知识图谱分析依据**：关联技能、需求岗位、JD 真实引用
+- **分阶段学习计划**：按阶段规划的学习路径
 
 ---
 
@@ -254,186 +200,125 @@ npm run dev
 
 ### 存储结构
 
-数据库文件位于 `data/app.db`（SQLite 格式），包含 3 张表：
+数据库文件位于 `data/app.db`（SQLite），包含以下表：
 
-```
-┌─────────────┐     ┌──────────────────┐     ┌──────────────┐
-│   users     │     │   documents      │     │  profiles    │
-├─────────────┤     ├──────────────────┤     ├──────────────┤
-│ user_id (PK)│◄────│ user_id (FK)     │◄────│ user_id (FK) │
-│ created_at  │     │ id (PK)          │────►│ document_id  │
-│ last_active │     │ document_type    │     │ profile_type │
-└─────────────┘     │ text             │     │ state        │
-                    │ title            │     │ attributes   │
-                    │ company_name     │     │ evidence     │
-                    │ skills           │     │ ...          │
-                    │ ...              │     └──────────────┘
-                    └──────────────────┘
-```
+| 表            | 说明                  |
+| ------------- | --------------------- |
+| `users`     | 用户信息              |
+| `documents` | 文档（JD / 简历）     |
+| `profiles`  | 画像（候选人 / 岗位） |
+| `matches`   | 人岗匹配结果          |
+| `reports`   | 匹配报告              |
+| `tasks`     | 异步任务              |
 
-### 数据隔离规则
+### 数据隔离
 
 - **系统数据**（`user_id = 'system'`）：10515 条初始 JD，所有用户可见
-- **用户数据**（`user_id = 用户UUID`）：用户自己上传的 JD/简历，仅自己可见
-- **列表查询**自动合并：`WHERE (user_id = 'system' OR user_id = :当前用户)`
-
-### 用户标识
-
-- 首次访问时，前端自动生成 UUID 并存入 localStorage
-- 每个请求自动携带 `X-User-ID` 请求头
-- 后端自动创建用户记录
+- **用户数据**（`user_id = 用户UUID`）：用户上传的 JD/简历，仅自己可见
+- 列表查询自动合并：`WHERE (user_id = 'system' OR user_id = :当前用户)`
 
 ### 数据库管理
 
 ```bash
-# 直接查看数据库内容
 sqlite3 data/app.db
 
-# 常用 SQL
-SELECT COUNT(*) FROM documents WHERE user_id = 'system';  -- 系统 JD 数量
-SELECT COUNT(*) FROM documents WHERE user_id != 'system';  -- 用户上传数量
-SELECT COUNT(*) FROM users;  -- 用户数量
-
-# 查看某用户的所有 JD
-SELECT title, company_name, location, salary_range
-FROM documents
-WHERE document_type = 'jd' AND (user_id = 'system' OR user_id = 'xxx')
-LIMIT 20;
-```
-
-### 切换数据库模式
-
-在 `.env` 中设置：
-
-```bash
-# 使用 SQLite（默认，持久化）
-DB_BACKEND=sqlite
-DB_PATH=data/app.db
-
-# 使用内存（重启丢失，适合测试）
-DB_BACKEND=memory
+# 常用查询
+SELECT COUNT(*) FROM documents WHERE user_id = 'system';
+SELECT COUNT(*) FROM profiles;
+SELECT COUNT(*) FROM matches;
 ```
 
 ---
 
-## 五、测试
+## 五、知识图谱数据
+
+### 预构建图谱
+
+路径：`data/small_raw_200_lskt_tech_v2/`
+
+| 文件                      | 大小  | 说明           |
+| ------------------------- | ----- | -------------- |
+| `graph_nodes.jsonl`     | 1.1MB | 3736 个节点    |
+| `graph_edges.jsonl`     | 2.9MB | 11268 条边     |
+| `jd_profiles.jsonl`     | 2.4MB | 结构化 JD 画像 |
+| `resume_profiles.jsonl` | 3.5MB | 结构化简历画像 |
+
+### 节点类型
+
+| 标签                  | 数量 | 含义                     |
+| --------------------- | ---- | ------------------------ |
+| Job                   | 100  | 岗位                     |
+| Technology            | 76   | 技术（Python、React 等） |
+| Skill                 | 65   | 技能（自动化测试等）     |
+| Knowledge             | 21   | 知识（金融知识等）       |
+| TransversalCompetence | 13   | 通用能力（沟通能力等）   |
+| Evidence              | 3330 | 原文证据                 |
+
+### 边的关系
+
+```
+Job ──REQUIRES_TECHNOLOGY──→ Technology
+Job ──REQUIRES_SKILL──→ Skill
+Job ──REQUIRES_KNOWLEDGE──→ Knowledge
+Candidate ──HAS_TECHNOLOGY──→ Technology
+Candidate ──HAS_SKILL──→ Skill
+Technology/Skill ──SUPPORTED_BY──→ Evidence
+```
+
+---
+
+## 六、测试
 
 ```bash
 cd job-ability-graph
 python -m pytest tests/ -v
 ```
 
-测试默认使用 `DB_BACKEND=memory`（内存模式），不会影响生产数据库。
+测试默认使用 `DB_BACKEND=memory`，不影响生产数据库。
 
 ---
 
-## 六、常见问题
+## 七、常见问题
 
-| 问题                                             | 解决方案                                                           |
-| ------------------------------------------------ | ------------------------------------------------------------------ |
-| 后端启动报`No module named 'backend'`          | 确保在`job-ability-graph` 根目录下运行                           |
-| 前端启动后页面空白                               | 确保后端已启动，检查`http://127.0.0.1:8000/health`               |
-| JD 页面没有数据                                  | 检查`data/small-raw/jd_raw.jsonl` 是否存在，重启后端触发种子加载 |
-| 数据库被锁定                                     | Windows 下确保只有一个后端进程在运行                               |
-| `sqlite3.OperationalError: database is locked` | 关闭所有连接后重启后端                                             |
-| 切换到内存模式后数据消失                         | 这是预期行为，内存模式不持久化                                     |
-| 画像生成返回空数据 /`not_implemented`          | 检查`LLM_BACKEND` 是否设为 `ollama`，Ollama 服务是否运行中     |
-| 画像生成超时                                     | 首次调用模型需加载到内存，等待 30-60 秒属正常                      |
-| `ollama: command not found`                    | Ollama 未安装或未加入 PATH，重新安装后重启终端                     |
-
----
-
-## 七、常见问题（续）
-
-| 问题 | 解决方案 |
-|------|----------|
-| Git 推送失败：`Size must be less than or equal to 2147483648` | 大型模型文件已排除，使用 `git pull` 拉取最新代码 |
-| 需要使用 AI 模型功能 | 单独下载 `Qwen3-Embedding-4B` 模型文件到 `jdmatch-deployment-qwen3-4b-v1/Qwen3-Embedding-4B/` 目录 |
-| Ollama 响应超时 | 检查模型是否已下载：`ollama list`，或尝试更小的模型：`ollama pull qwen2.5:3b` |
+| 问题                            | 解决方案                                             |
+| ------------------------------- | ---------------------------------------------------- |
+| `No module named 'backend'`   | 在`job-ability-graph` 根目录下运行                 |
+| 前端页面空白                    | 确保后端已启动，访问`http://127.0.0.1:8000/health` |
+| JD 页面没有数据                 | 检查`data/small-raw/jd_raw.jsonl` 是否存在         |
+| 数据库被锁定                    | 确保只有一个后端进程运行                             |
+| 画像返回`not_implemented`     | 检查`LLM_BACKEND` 是否设为 `ollama`              |
+| 学习建议显示 Mock               | 需要`LLM_BACKEND=ollama` 且 Ollama 运行中          |
+| 学习建议显示 LLM 而非 Graph-RAG | 重启后端（不要用`--reload`）                       |
+| Ollama 响应超时                 | 首次加载模型需 30-60 秒，属正常                      |
+| `ollama: command not found`   | 重新安装 Ollama 并重启终端                           |
 
 ---
 
-## 八、验证 Ollama 配置
+## 八、技术栈
 
-启动后端后，访问以下接口确认 LLM 已启用：
-
-```bash
-curl http://127.0.0.1:8000/api/v1/capabilities
-```
-
-正确配置应返回：
-
-```json
-{
-  "structured_extraction": { "implementation": "ollama", "state": "available" },
-  "skill_normalization": { "implementation": "lightweight", "state": "available" },
-  "profile_builder": { "implementation": "llm_profile_builder", "state": "available" }
-}
-```
-
-如果仍显示 `mock`，说明环境变量未生效，请使用命令行方式设置：
-
-```powershell
-$env:LLM_BACKEND="ollama"
-```
-
-然后重启后端。
+| 层        | 技术                            |
+| --------- | ------------------------------- |
+| 后端框架  | Python 3.10+, FastAPI, Uvicorn  |
+| 数据库    | SQLite（默认）/ Neo4j（可选）   |
+| 大模型    | Ollama + qwen2.5:7b（本地推理） |
+| 知识图谱  | 预构建 JSONL + 内存检索         |
+| RAG       | 关键词检索（DataGovernanceRag） |
+| 前端框架  | React 19, Vite 8, Ant Design 6  |
+| 3D 可视化 | Three.js, @react-three/fiber    |
+| 图表      | ECharts                         |
+| 状态管理  | Zustand                         |
+| ML 训练   | Qwen3-Embedding-4B LoRA 微调    |
 
 ---
 
-## 九、开发指南
-
-### 分支说明
-
-- `main` - 主分支，稳定版本
-- `dev` - 开发分支
-- `feature/*` - 功能分支
-- `bugfix/*` - 修复分支
-
-### 提交规范
-
-```bash
-# 格式：<type>(<scope>): <subject>
-# 示例：
-git commit -m "feat(backend): 添加用户认证功能"
-git commit -m "fix(frontend): 修复登录页面样式问题"
-git commit -m "docs(readme): 更新项目文档"
-```
-
-### 代码规范
-
-- **后端：** 遵循 PEP 8，使用 `ruff` 格式化
-- **前端：** 遵循 ESLint 规则，使用 Prettier 格式化
-
----
-
-## 十、更新日志
-
-### 2026-08-07
-- ✅ 初始化项目并上传到 GitHub
-- ✅ 排除大型模型文件（超过 GitHub 2GB 限制）
-- ✅ 排除 HTML 临时数据文件
-- ✅ 更新项目文档
-
----
-
-## 十一、相关资源
+## 九、相关资源
 
 - **GitHub 仓库：** https://github.com/daxiajiong-bot/job-ability-graph
 - **FastAPI 文档：** https://fastapi.tiangolo.com/
 - **React 文档：** https://react.dev/
 - **Ollama 官网：** https://ollama.com/
-- **SQLite 文档：** https://www.sqlite.org/docs.html
+- **Ant Design 文档：** https://ant.design/
 
 ---
 
-## 十二、联系方式
-
-如有问题或建议，请通过以下方式联系：
-
-- **GitHub Issues：** https://github.com/daxiajiong-bot/job-ability-graph/issues
-- **邮箱：** [待补充]
-
----
-
-**最后更新：** 2026-08-07
+**最后更新：** 2026-08-10

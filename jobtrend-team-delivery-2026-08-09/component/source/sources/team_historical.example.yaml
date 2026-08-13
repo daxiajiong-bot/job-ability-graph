@@ -1,0 +1,13 @@
+schema_version: source_manifest_v1
+sources:
+  - source_id: team-zhaopin-historical-import
+    source_type: job
+    input: ../../JD+生成简历路线/raw-data/jd_raw.jsonl
+    input_format: jsonl
+    source_name: zhaopin-historical-import
+    publisher: zhaopin
+    license: team-internal-existing-data
+    enabled: true
+    metadata:
+      observation_class: historical_import
+      warning: single-source historical data must not be reported as a multi-source trend

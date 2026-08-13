@@ -1,6 +1,7 @@
 """Local LLM infrastructure adapters."""
 
 from backend.app.infrastructure.llm.adapters import (
+    GraphRAGLearningAdvisor,
     LLMLearningAdvisor,
     LLMMatcher,
     LLMProfileBuilder,
@@ -11,6 +12,7 @@ from backend.app.infrastructure.llm.adapters import (
 from backend.app.infrastructure.llm.settings import LLMSettings
 
 __all__ = [
+    "GraphRAGLearningAdvisor",
     "LLMLearningAdvisor",
     "LLMMatcher",
     "LLMProfileBuilder",

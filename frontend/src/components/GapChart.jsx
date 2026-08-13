@@ -26,6 +26,83 @@ import ReactECharts from "echarts-for-react";
 const { Text, Title } = Typography;
 
 /**
+ * 从文本中提取技能名称
+ */
+function extractSkillNamesFromText(text) {
+  if (!text) return [];
+  // 尝试多种格式：
+  // 1. "缺少岗位技能：Python, Docker"
+  // 2. "缺少 Python 和 Docker 等技能"
+  // 3. "Python、Docker、Kubernetes"
+  const patterns = [
+    /[：:]\s*(.+?)(?:。|$)/,
+    /(?:缺少|缺失|需要|掌握)\s*(.+?)(?:等|。|$)/,
+    /^(.+?)(?:等|。|$)/,
+  ];
+
+  for (const pattern of patterns) {
+    const match = text.match(pattern);
+    if (match) {
+      const skills = match[1]
+        .split(/[,，、和\s]+/)
+        .map((s) => s.trim())
+        .filter((s) => s.length > 1 && s.length < 20 && !/^(技能|技术|能力|岗位|要求)$/.test(s));
+      if (skills.length > 0) return skills;
+    }
+  }
+  return [];
+}
+
+/**
+ * 从匹配结果中提取技能列表（兼容新旧数据格式）
+ */
+function extractSkillsFromMatch(matchResult) {
+  const details = matchResult.details || {};
+
+  // 新格式：直接从 details 获取
+  let matchedSkills = details.matched_skills || [];
+  let missingSkills = details.missing_skills || [];
+
+  if (matchedSkills.length > 0 || missingSkills.length > 0) {
+    return { matchedSkills, missingSkills };
+  }
+
+  // 旧格式兼容：从 learning_path 提取缺失技能（最可靠的来源）
+  const learningPath = matchResult.learning_path || [];
+  if (learningPath.length > 0) {
+    missingSkills = learningPath.map((lp) => lp.skill).filter(Boolean);
+  }
+
+  // 从 gaps 中提取缺失技能（category === "skill"）
+  const gaps = matchResult.gaps || [];
+  gaps.forEach((g) => {
+    if (g.category === "skill" && g.text) {
+      const skills = extractSkillNamesFromText(g.text);
+      skills.forEach((s) => {
+        if (!missingSkills.includes(s)) {
+          missingSkills.push(s);
+        }
+      });
+    }
+  });
+
+  // 从 strengths 中提取已掌握技能
+  const strengths = matchResult.strengths || [];
+  strengths.forEach((s) => {
+    if (s.category === "skill" && s.text) {
+      const skills = extractSkillNamesFromText(s.text);
+      skills.forEach((skill) => {
+        if (!matchedSkills.includes(skill)) {
+          matchedSkills.push(skill);
+        }
+      });
+    }
+  });
+
+  return { matchedSkills, missingSkills };
+}
+
+/**
  * 解析匹配结果，提取技能差距数据
  */
 function parseMatchResult(matchResult) {
@@ -34,9 +111,8 @@ function parseMatchResult(matchResult) {
   const score = matchResult.score ?? 0;
   const details = matchResult.details || matchResult.attributes || {};
 
-  // 提取匹配的技能
-  const matchedSkills = details.matched_skills || [];
-  const missingSkills = details.missing_skills || [];
+  // 提取技能数据
+  const { matchedSkills, missingSkills } = extractSkillsFromMatch(matchResult);
   const partialSkills = details.partial_skills || [];
 
   // 提取维度分数
@@ -456,7 +532,7 @@ export default function GapChart({ matchResult, style }) {
           </div>
         )}
 
-        {/* 无技能数据时显示维度条形图 */}
+        {/* 无技能数据时显示维度条形图和原始数据 */}
         {matchedSkills.length === 0 &&
           missingSkills.length === 0 &&
           partialSkills.length === 0 && (
@@ -498,6 +574,31 @@ export default function GapChart({ matchResult, style }) {
                   />
                 </div>
               ))}
+
+              {/* 显示学习路径中的技能（如果有） */}
+              {matchResult?.learning_path?.length > 0 && (
+                <div style={{ marginTop: 16 }}>
+                  <Divider style={{ margin: "16px 0" }}>
+                    <span style={{ color: "var(--text-secondary)", fontSize: 12 }}>建议提升技能</span>
+                  </Divider>
+                  <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
+                    {matchResult.learning_path.map((lp, index) => (
+                      <Tag
+                        key={index}
+                        color="warning"
+                        style={{ marginBottom: 4, padding: "3px 12px", borderRadius: 6 }}
+                      >
+                        {lp.skill}
+                        {lp.priority && (
+                          <span style={{ marginLeft: 4, fontSize: 10, opacity: 0.7 }}>
+                            ({lp.priority})
+                          </span>
+                        )}
+                      </Tag>
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
           )}
 
@@ -511,6 +612,55 @@ export default function GapChart({ matchResult, style }) {
               image={Empty.PRESENTED_IMAGE_SIMPLE}
             />
           )}
+
+        {/* 调试信息 */}
+        {matchedSkills.length === 0 && missingSkills.length === 0 && (
+          <div style={{ marginTop: 16 }}>
+            <div
+              style={{
+                padding: "10px 14px",
+                background: "var(--accent-subtle)",
+                borderRadius: 8,
+                border: "1px solid var(--border-glass)",
+                marginBottom: 12,
+              }}
+            >
+              <Text style={{ color: "var(--text-secondary)", fontSize: 12 }}>
+                提示：如果技能数据为空，请尝试重新执行匹配。旧的匹配记录可能不包含完整的技能数据。
+              </Text>
+            </div>
+            <details>
+              <summary style={{ cursor: "pointer", color: "var(--text-secondary)", fontSize: 12 }}>
+                查看原始匹配数据
+              </summary>
+              <pre
+                style={{
+                  background: "var(--accent-soft)",
+                  padding: 12,
+                  borderRadius: 8,
+                  fontSize: 11,
+                  maxHeight: 200,
+                  overflow: "auto",
+                  marginTop: 8,
+                }}
+              >
+                {JSON.stringify(
+                  {
+                    matchedSkills,
+                    missingSkills,
+                    partialSkills,
+                    learning_path: matchResult?.learning_path,
+                    gaps: matchResult?.gaps,
+                    strengths: matchResult?.strengths,
+                    details: matchResult?.details,
+                  },
+                  null,
+                  2
+                )}
+              </pre>
+            </details>
+          </div>
+        )}
       </Card>
     </div>
   );

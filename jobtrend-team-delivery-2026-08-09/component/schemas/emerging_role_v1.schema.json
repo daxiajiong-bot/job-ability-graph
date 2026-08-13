@@ -1,0 +1,251 @@
+{
+  "$defs": {
+    "EmergingRoleScores": {
+      "additionalProperties": false,
+      "properties": {
+        "novelty": {
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "Novelty",
+          "type": "number"
+        },
+        "growth": {
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "Growth",
+          "type": "number"
+        },
+        "persistence": {
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "Persistence",
+          "type": "number"
+        },
+        "source_diversity": {
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "Source Diversity",
+          "type": "number"
+        },
+        "evidence_coverage": {
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "Evidence Coverage",
+          "type": "number"
+        },
+        "overall": {
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "Overall",
+          "type": "number"
+        }
+      },
+      "required": [
+        "novelty",
+        "growth",
+        "persistence",
+        "source_diversity",
+        "evidence_coverage",
+        "overall"
+      ],
+      "title": "EmergingRoleScores",
+      "type": "object"
+    },
+    "RoleAbility": {
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "category": {
+          "default": "unknown",
+          "enum": [
+            "K",
+            "S",
+            "Tech",
+            "T",
+            "L",
+            "Skill",
+            "unknown"
+          ],
+          "title": "Category",
+          "type": "string"
+        },
+        "role": {
+          "enum": [
+            "required",
+            "preferred",
+            "mentioned"
+          ],
+          "title": "Role",
+          "type": "string"
+        },
+        "kg_node_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Kg Node Id"
+        },
+        "confidence": {
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "Confidence",
+          "type": "number"
+        },
+        "evidence_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Evidence Ids",
+          "type": "array"
+        }
+      },
+      "required": [
+        "name",
+        "role",
+        "confidence",
+        "evidence_ids"
+      ],
+      "title": "RoleAbility",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "emerging_role_v1",
+      "default": "emerging_role_v1",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "role_id": {
+      "title": "Role Id",
+      "type": "string"
+    },
+    "canonical_title": {
+      "title": "Canonical Title",
+      "type": "string"
+    },
+    "aliases": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Aliases",
+      "type": "array"
+    },
+    "core_responsibilities": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Core Responsibilities",
+      "type": "array"
+    },
+    "required_skills": {
+      "items": {
+        "$ref": "#/$defs/RoleAbility"
+      },
+      "title": "Required Skills",
+      "type": "array"
+    },
+    "preferred_skills": {
+      "items": {
+        "$ref": "#/$defs/RoleAbility"
+      },
+      "title": "Preferred Skills",
+      "type": "array"
+    },
+    "typical_industry_scenarios": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Typical Industry Scenarios",
+      "type": "array"
+    },
+    "industries": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Industries",
+      "type": "array"
+    },
+    "regions": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Regions",
+      "type": "array"
+    },
+    "first_seen": {
+      "format": "date-time",
+      "title": "First Seen",
+      "type": "string"
+    },
+    "last_seen": {
+      "format": "date-time",
+      "title": "Last Seen",
+      "type": "string"
+    },
+    "supporting_job_count": {
+      "title": "Supporting Job Count",
+      "type": "integer"
+    },
+    "supporting_company_count": {
+      "title": "Supporting Company Count",
+      "type": "integer"
+    },
+    "supporting_source_count": {
+      "title": "Supporting Source Count",
+      "type": "integer"
+    },
+    "scores": {
+      "$ref": "#/$defs/EmergingRoleScores"
+    },
+    "evidence_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Evidence Ids",
+      "type": "array"
+    },
+    "status": {
+      "default": "candidate",
+      "enum": [
+        "candidate",
+        "needs_review",
+        "approved",
+        "rejected"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "explanation": {
+      "title": "Explanation",
+      "type": "string"
+    }
+  },
+  "required": [
+    "role_id",
+    "canonical_title",
+    "core_responsibilities",
+    "required_skills",
+    "preferred_skills",
+    "typical_industry_scenarios",
+    "first_seen",
+    "last_seen",
+    "supporting_job_count",
+    "supporting_company_count",
+    "supporting_source_count",
+    "scores",
+    "evidence_ids",
+    "explanation"
+  ],
+  "title": "EmergingRole",
+  "type": "object"
+}

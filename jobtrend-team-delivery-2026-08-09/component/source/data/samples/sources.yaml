@@ -1,0 +1,32 @@
+schema_version: source_manifest_v1
+sources:
+  - source_id: synthetic-enterprise-a
+    source_type: job
+    input: enterprise-careers-a.jsonl
+    input_format: jsonl
+    source_name: enterprise-careers-a
+    publisher: synthetic-fixture
+    license: synthetic-test-data
+  - source_id: synthetic-enterprise-b
+    source_type: job
+    input: enterprise-careers-b.jsonl
+    input_format: jsonl
+    source_name: enterprise-careers-b
+    publisher: synthetic-fixture
+    license: synthetic-test-data
+  - source_id: synthetic-policy-agent-security
+    source_type: policy
+    input: policy_agent_security.txt
+    input_format: txt
+    source_name: synthetic-policy
+    publisher: synthetic-fixture
+    published_at: 2026-06-01T00:00:00Z
+    license: synthetic-test-data
+  - source_id: synthetic-report-agent-engineering
+    source_type: industry_report
+    input: report_agent_engineering.txt
+    input_format: txt
+    source_name: synthetic-report
+    publisher: synthetic-fixture
+    published_at: 2026-07-01T00:00:00Z
+    license: synthetic-test-data

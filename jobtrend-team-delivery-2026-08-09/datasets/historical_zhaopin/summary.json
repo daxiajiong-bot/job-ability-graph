@@ -1,0 +1,40 @@
+{
+  "classification": "INTERNAL-ONLY",
+  "dropped_contact_record_count": 5,
+  "dropped_job_ids": [
+    "41008045204",
+    "40811086107",
+    "40641795406",
+    "40724158914",
+    "40724157914"
+  ],
+  "input_artifact": "jd_raw.jsonl",
+  "input_company_count": 4980,
+  "input_record_count": 10515,
+  "input_sha256": "6be5bc1560d0bbfedfb8c7c4be020d3da060fd0c9eea323552c635538412fb82",
+  "output_artifact": "jd_raw.sanitized.jsonl",
+  "output_company_count": 4978,
+  "output_record_count": 10510,
+  "output_sha256": "f5f55f662ca718ccdcd25e9d9d6f28464e51b9b656b3db3b0ff9e0a6a0ea5385",
+  "publish_date_range": {
+    "maximum": "2026-07-14 20:33:39",
+    "minimum": "2024-07-31 10:50:02"
+  },
+  "rights": {
+    "license": "source-reference-only/team-internal",
+    "redistribution_allowed": false
+  },
+  "schema_version": "jobtrend_historical_jd_summary_v1",
+  "scrape_time_range": {
+    "maximum": "2026-07-14T16:25:17.978Z",
+    "minimum": "2026-07-06T08:48:50.545Z"
+  },
+  "source_counts": {
+    "zhaopin": 10510
+  },
+  "trend_limitations": [
+    "All retained records come from the single zhaopin source.",
+    "Old publish_date values do not create real historical collection snapshots.",
+    "Rows from this import must not support a multi-source or multi-week trend claim."
+  ]
+}

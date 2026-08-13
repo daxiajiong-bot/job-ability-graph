@@ -219,3 +219,15 @@ __marimo__/
 
 # HTML files (temporary data files)
 *.html
+
+# ML model weights (too large for git)
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+
+# SQLite database (large binary, generated at runtime)
+data/app.db
+data/app.db-shm
+data/app.db-wal

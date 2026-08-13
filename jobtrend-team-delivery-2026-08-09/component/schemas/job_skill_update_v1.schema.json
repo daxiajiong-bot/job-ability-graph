@@ -1,0 +1,198 @@
+{
+  "$defs": {
+    "SkillChange": {
+      "additionalProperties": false,
+      "properties": {
+        "skill_name": {
+          "title": "Skill Name",
+          "type": "string"
+        },
+        "kg_node_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Kg Node Id"
+        },
+        "change_type": {
+          "enum": [
+            "added",
+            "rising",
+            "modified",
+            "declining",
+            "removal_candidate"
+          ],
+          "title": "Change Type",
+          "type": "string"
+        },
+        "baseline_share": {
+          "title": "Baseline Share",
+          "type": "number"
+        },
+        "recent_share": {
+          "title": "Recent Share",
+          "type": "number"
+        },
+        "share_delta": {
+          "title": "Share Delta",
+          "type": "number"
+        },
+        "relative_lift": {
+          "title": "Relative Lift",
+          "type": "number"
+        },
+        "p_value": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "P Value"
+        },
+        "q_value": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Q Value"
+        },
+        "supporting_company_count": {
+          "title": "Supporting Company Count",
+          "type": "integer"
+        },
+        "evidence_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Evidence Ids",
+          "type": "array"
+        }
+      },
+      "required": [
+        "skill_name",
+        "change_type",
+        "baseline_share",
+        "recent_share",
+        "share_delta",
+        "relative_lift",
+        "supporting_company_count",
+        "evidence_ids"
+      ],
+      "title": "SkillChange",
+      "type": "object"
+    },
+    "TrendWindow": {
+      "additionalProperties": false,
+      "properties": {
+        "recent_start": {
+          "format": "date-time",
+          "title": "Recent Start",
+          "type": "string"
+        },
+        "recent_end": {
+          "format": "date-time",
+          "title": "Recent End",
+          "type": "string"
+        },
+        "baseline_start": {
+          "format": "date-time",
+          "title": "Baseline Start",
+          "type": "string"
+        },
+        "baseline_end": {
+          "format": "date-time",
+          "title": "Baseline End",
+          "type": "string"
+        }
+      },
+      "required": [
+        "recent_start",
+        "recent_end",
+        "baseline_start",
+        "baseline_end"
+      ],
+      "title": "TrendWindow",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "job_skill_update_v1",
+      "default": "job_skill_update_v1",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "update_id": {
+      "title": "Update Id",
+      "type": "string"
+    },
+    "canonical_role": {
+      "title": "Canonical Role",
+      "type": "string"
+    },
+    "kg_job_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Kg Job Ids",
+      "type": "array"
+    },
+    "window": {
+      "$ref": "#/$defs/TrendWindow"
+    },
+    "changes": {
+      "items": {
+        "$ref": "#/$defs/SkillChange"
+      },
+      "title": "Changes",
+      "type": "array"
+    },
+    "evidence_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Evidence Ids",
+      "type": "array"
+    },
+    "status": {
+      "default": "candidate",
+      "enum": [
+        "candidate",
+        "needs_review",
+        "approved",
+        "rejected"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "explanation": {
+      "title": "Explanation",
+      "type": "string"
+    }
+  },
+  "required": [
+    "update_id",
+    "canonical_role",
+    "window",
+    "changes",
+    "evidence_ids",
+    "explanation"
+  ],
+  "title": "JobSkillUpdate",
+  "type": "object"
+}

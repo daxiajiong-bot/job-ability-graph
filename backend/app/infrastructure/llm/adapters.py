@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 import re
+from collections import defaultdict
 from dataclasses import replace
 from typing import Any
 
@@ -641,11 +642,34 @@ class LLMMatcher:
         cand_attrs = candidate.attributes if hasattr(candidate, "attributes") else {}
         job_attrs = job.attributes if hasattr(job, "attributes") else {}
 
-        cand_skills = [s.get("name", "") for s in cand_attrs.get("skills", [])]
-        job_skills = [s.get("name", "") for s in job_attrs.get("skills", [])]
+        def extract_skill_name(s):
+            if isinstance(s, dict):
+                return s.get("name", "") or s.get("skill", "")
+            return str(s) if s else ""
+
+        cand_skills = [extract_skill_name(s) for s in cand_attrs.get("skills", []) if s]
+        job_skills = [extract_skill_name(s) for s in job_attrs.get("skills", []) if s]
         cand_exp = cand_attrs.get("work_experience", cand_attrs.get("experience", []))
         job_reqs = job_attrs.get("requirements", [])
         job_resp = job_attrs.get("responsibilities", [])
+
+        # 计算匹配和缺失的技能
+        cand_skill_set = {_match_key(s): s for s in cand_skills if s}
+        matched_skills = []
+        missing_skills = []
+        for skill in job_skills:
+            if not skill:
+                continue
+            key = _match_key(skill)
+            found = next(
+                (v for k, v in cand_skill_set.items() if k == key or k in key or key in k),
+                None,
+            )
+            if found:
+                if found not in matched_skills:
+                    matched_skills.append(found)
+            else:
+                missing_skills.append(skill)
 
         user_prompt = f"""候选人画像：
 - 技能：{', '.join(cand_skills) if cand_skills else '无'}
@@ -688,6 +712,40 @@ class LLMMatcher:
                 raise ValueError("match result list fields were invalid")
         except (TypeError, ValueError) as exc:
             return _fallback_match_result(cand_attrs, job_attrs, f"invalid LLM match result: {exc}")
+
+        # 从大模型生成的 gaps 和 learning_path 中提取技能
+        llm_missing_skills = []
+        for gap in gaps:
+            if gap.get("category") == "skill" and gap.get("text"):
+                # 从 "缺少岗位技能：Python, Docker" 中提取技能名
+                text = gap["text"]
+                # 尝试提取冒号后面的技能列表
+                match = re.search(r'[：:]\s*(.+?)(?:。|$)', text)
+                if match:
+                    skills = re.split(r'[,，、\s]+', match.group(1).strip())
+                    llm_missing_skills.extend([s.strip() for s in skills if s.strip() and len(s.strip()) < 20])
+
+        # 从 learning_path 中提取缺失技能
+        for lp in learning_path:
+            if lp.get("skill") and lp["skill"] not in llm_missing_skills:
+                llm_missing_skills.append(lp["skill"])
+
+        # 从 strengths 中提取已掌握技能
+        llm_matched_skills = []
+        for strength in strengths:
+            if strength.get("category") == "skill" and strength.get("text"):
+                text = strength["text"]
+                match = re.search(r'[：:]\s*(.+?)(?:等|。|$)', text)
+                if match:
+                    skills = re.split(r'[,，、\s]+', match.group(1).strip())
+                    llm_matched_skills.extend([s.strip() for s in skills if s.strip() and len(s.strip()) < 20])
+
+        # 优先使用本地匹配结果，如果为空则使用大模型提取的结果
+        final_matched = matched_skills if matched_skills else llm_matched_skills
+        final_missing = missing_skills if missing_skills else llm_missing_skills
+
+        details["matched_skills"] = final_matched
+        details["missing_skills"] = final_missing
 
         return {
             "state": "available",
@@ -782,6 +840,8 @@ def _fallback_match_result(
             "knowledge_score": knowledge_score,
             "experience_score": experience_score,
             "ability_score": ability_score,
+            "matched_skills": matched,
+            "missing_skills": missing,
         },
         "summary": "本地模型暂不可用，已使用技能与经历规则完成匹配。",
         "warnings": [f"LLM matcher fallback: {reason}"],
@@ -801,7 +861,15 @@ def _match_skill_names(values: Any) -> list[str]:
 
 
 def _match_key(value: str) -> str:
-    return re.sub(r"[^\w\u4e00-\u9fff]+", "", value.casefold())
+    """\u6807\u51c6\u5316\u6280\u80fd\u540d\u79f0\u7528\u4e8e\u5339\u914d\u6bd4\u8f83"""
+    # \u8f6c\u5c0f\u5199\uff0c\u53bb\u9664\u7a7a\u767d\u548c\u5e38\u89c1\u6807\u70b9
+    value = value.casefold().strip()
+    # \u53bb\u9664\u7248\u672c\u53f7\u5982 "python3" -> "python"
+    value = re.sub(r"\d+$", "", value)
+    # \u53bb\u9664\u5e38\u89c1\u540e\u7f00\u5982 ".js", ".py" \u7b49
+    value = re.sub(r"\.(js|py|ts|java|go|rs|cpp|c)$", "", value)
+    # \u53bb\u9664\u7279\u6b8a\u5b57\u7b26\uff0c\u4fdd\u7559\u4e2d\u6587\u548c\u5b57\u6bcd\u6570\u5b57
+    return re.sub(r"[^\w\u4e00-\u9fff]+", "", value)
 
 
 class LLMReportGenerator:
@@ -954,5 +1022,181 @@ class LLMLearningAdvisor:
             "learning_plan": list(result.get("learning_plan", [])),
             "recommended_resources": list(result.get("recommended_resources", [])),
             "career_advice": result.get("career_advice", ""),
+            "warnings": [],
+        }
+
+
+# ── Graph-RAG Learning Advisor ─────────────────────────
+
+GRAPH_RAG_ADVICE_SYSTEM_PROMPT = """你是职业发展顾问和技能培训专家。根据人岗匹配结果和知识图谱分析，为候选人提供详细、可执行的学习建议。
+只输出一个合法 JSON object，不要输出 Markdown、解释或额外文字。
+建议要结合知识图谱中的关联技能和真实 JD 要求，给出有先后顺序的学习路径。"""
+
+
+class GraphRAGLearningAdvisor:
+    """LLM-based learning advisor enhanced with knowledge graph co-occurrence and RAG retrieval."""
+
+    def __init__(
+        self,
+        settings: LLMSettings,
+        chat_client: ChatClientProtocol | None = None,
+        graph_nodes: list[dict[str, Any]] | None = None,
+        graph_edges: list[dict[str, Any]] | None = None,
+        rag: Any | None = None,
+    ) -> None:
+        self.settings = settings
+        self.chat_client = chat_client or OpenAICompatibleChatClient(settings)
+        self.graph_nodes = graph_nodes or []
+        self.graph_edges = graph_edges or []
+        self.rag = rag
+        self._node_map: dict[str, dict[str, Any]] = {n["node_id"]: n for n in self.graph_nodes}
+        self._skill_jobs = self._build_skill_to_jobs_index()
+
+    def _build_skill_to_jobs_index(self) -> dict[str, list[dict[str, Any]]]:
+        """Build index: skill_node_id → [{job_id, job_title, role, confidence}]."""
+        index: dict[str, list[dict[str, Any]]] = defaultdict(list)
+        for edge in self.graph_edges:
+            if edge["relation_type"] in ("REQUIRES_TECHNOLOGY", "REQUIRES_SKILL", "REQUIRES_KNOWLEDGE"):
+                job_node = self._node_map.get(edge["source_id"])
+                skill_id = edge["target_id"]
+                if job_node and job_node.get("label") == "Job":
+                    index[skill_id].append({
+                        "job_id": edge["source_id"],
+                        "job_title": job_node["properties"].get("title", ""),
+                        "role": edge["properties"].get("role", "unknown"),
+                        "confidence": edge["properties"].get("confidence", 0),
+                    })
+        return index
+
+    def _match_skill_nodes(self, skill_name: str) -> list[str]:
+        """Fuzzy-match a skill name to graph node IDs."""
+        normalized = skill_name.casefold().strip()
+        matched: list[str] = []
+        for node in self.graph_nodes:
+            if node.get("label") in ("Technology", "Skill", "Knowledge"):
+                name = node["properties"].get("name", "").casefold()
+                label = node["properties"].get("label", "").casefold()
+                if normalized in name or name in normalized or normalized in label or label in normalized:
+                    matched.append(node["node_id"])
+        return matched
+
+    def _find_co_occurring_skills(self, skill_name: str) -> list[dict[str, Any]]:
+        """Find skills that co-occur with the given skill in job postings."""
+        matched_ids = self._match_skill_nodes(skill_name)
+        co_occurring: dict[str, dict[str, Any]] = defaultdict(lambda: {"count": 0, "roles": set()})
+        for sid in matched_ids:
+            for job_info in self._skill_jobs.get(sid, []):
+                job_id = job_info["job_id"]
+                for edge in self.graph_edges:
+                    if edge["source_id"] == job_id and edge["target_id"] != sid:
+                        if edge["relation_type"] in ("REQUIRES_TECHNOLOGY", "REQUIRES_SKILL"):
+                            tgt = self._node_map.get(edge["target_id"])
+                            if tgt:
+                                name = tgt["properties"].get("name", "")
+                                if name:
+                                    co_occurring[name]["count"] += 1
+                                    co_occurring[name]["roles"].add(edge["properties"].get("role", "unknown"))
+        results = sorted(co_occurring.items(), key=lambda x: -x[1]["count"])[:5]
+        return [
+            {"name": name, "co_occurrence_count": info["count"], "roles": list(info["roles"])}
+            for name, info in results
+        ]
+
+    def _find_demanding_jobs(self, skill_name: str) -> list[dict[str, str]]:
+        """Find jobs that require the given skill."""
+        matched_ids = self._match_skill_nodes(skill_name)
+        jobs: dict[str, dict[str, str]] = {}
+        for sid in matched_ids:
+            for job_info in self._skill_jobs.get(sid, []):
+                jid = job_info["job_id"]
+                if jid not in jobs:
+                    jobs[jid] = {
+                        "title": job_info["job_title"],
+                        "role": job_info["role"],
+                    }
+        return list(jobs.values())[:5]
+
+    def _retrieve_rag_context(self, skill_name: str) -> list[dict[str, Any]]:
+        """Retrieve relevant JD text fragments from RAG data."""
+        if not self.rag:
+            return []
+        try:
+            result = self.rag.retrieve(skill_name, top_k=2)
+            return [{"quote": r["quote"], "score": r["score"]} for r in result.get("results", [])]
+        except Exception:
+            return []
+
+    def generate(self, match_data: dict[str, Any]) -> dict[str, Any]:
+        score = match_data.get("score", 0)
+        gaps = match_data.get("gaps", [])
+        strengths = match_data.get("strengths", [])
+        summary = match_data.get("summary", "")
+
+        # Build graph context for top-3 gap skills
+        gap_context: list[dict[str, Any]] = []
+        for gap in gaps[:3]:
+            skill_name = gap.get("text", gap.get("skill", "")) if isinstance(gap, dict) else str(gap)
+            if not skill_name:
+                continue
+            co_occurring = self._find_co_occurring_skills(skill_name)
+            demanding_jobs = self._find_demanding_jobs(skill_name)
+            rag_results = self._retrieve_rag_context(skill_name)
+            gap_context.append({
+                "skill": skill_name,
+                "co_occurring_skills": co_occurring,
+                "demanding_jobs": demanding_jobs,
+                "jd_evidence": rag_results,
+            })
+
+        graph_section = json.dumps(gap_context, ensure_ascii=False, indent=2)
+
+        user_prompt = f"""人岗匹配结果：
+- 匹配得分：{score}/100
+- 匹配结论：{summary}
+- 候选人优势：{json.dumps(strengths, ensure_ascii=False)[:1000]}
+- 技能差距：{json.dumps(gaps, ensure_ascii=False)[:2000]}
+
+知识图谱分析（对每个差距技能，从图谱中检索到的关联技能、需求岗位和 JD 证据）：
+{graph_section}
+
+请根据以上匹配结果和知识图谱分析，生成详细的学习建议。
+要求：
+1. 结合图谱中的关联技能，给出有先后顺序的学习路径
+2. 引用 JD 中的真实要求作为学习目标依据
+3. 建议要具体、可操作
+
+{LEARNING_ADVICE_SCHEMA}"""
+
+        messages = [
+            {"role": "system", "content": GRAPH_RAG_ADVICE_SYSTEM_PROMPT},
+            {"role": "user", "content": user_prompt},
+        ]
+
+        try:
+            content = self.chat_client.chat(messages)
+            result = json.loads(content.strip())
+            if not isinstance(result, dict):
+                raise ValueError("expected a JSON object")
+        except Exception as exc:
+            return {
+                "state": "error",
+                "implementation": "graph_rag_learning_advisor_error",
+                "summary": f"学习建议生成失败: {exc}",
+                "skill_gaps": [],
+                "learning_plan": [],
+                "recommended_resources": [],
+                "career_advice": "",
+                "warnings": [str(exc)],
+            }
+
+        return {
+            "state": "available",
+            "implementation": "graph_rag_learning_advisor",
+            "summary": result.get("summary", ""),
+            "skill_gaps": list(result.get("skill_gaps", [])),
+            "learning_plan": list(result.get("learning_plan", [])),
+            "recommended_resources": list(result.get("recommended_resources", [])),
+            "career_advice": result.get("career_advice", ""),
+            "graph_context": gap_context,
             "warnings": [],
         }

@@ -1,5 +1,5 @@
 import { useRef, useEffect, useState, useMemo, useCallback } from "react";
-import { Typography, Tag, Button, Input, message, Divider } from "antd";
+import { Typography, Tag, Button, Input, message, Divider, Modal } from "antd";
 import {
   StarOutlined,
   PlusOutlined,
@@ -8,6 +8,7 @@ import {
   BookOutlined,
   ThunderboltOutlined,
   AimOutlined,
+  DeleteOutlined,
 } from "@ant-design/icons";
 import * as THREE from "three";
 import ReactECharts from "echarts-for-react";
@@ -17,7 +18,10 @@ import {
   JD_CATEGORIES,
   classifyJD,
   extractSkillsFromText,
+  extractCompanyFromText,
+  extractSalaryFromText,
 } from "../utils/representativeJDs";
+import useStore from "../store/useStore";
 import "../styles/starmap.css";
 
 const { Title, Paragraph } = Typography;
@@ -285,11 +289,59 @@ export default function StarMap() {
   const animFrameRef = useRef(0);
   const graphRef = useRef(null);
 
-  const [jdList, setJdList] = useState(() => REPRESENTATIVE_JDS.map((jd) => ({ ...jd })));
+  const { customJDs, removeCustomJD } = useStore();
+
+  // 合并代表性 JD 和用户自定义 JD，去重
+  const [jdList, setJdList] = useState(() => {
+    const representative = REPRESENTATIVE_JDS.map((jd) => ({ ...jd }));
+    // 从 store 恢复的 customJDs 可能还没有，后续通过 useEffect 同步
+    return representative;
+  });
+
   const [inputText, setInputText] = useState("");
   const [selectedNode, setSelectedNode] = useState(null);
   const [tooltip, setTooltip] = useState(null);
   const [isAdding, setIsAdding] = useState(false);
+
+  // 同步 store 中的 customJDs 到 jdList（处理添加和删除）
+  useEffect(() => {
+    setJdList((prev) => {
+      // 保留代表性 JD 和不在 customJDs 中的用户手动添加的 JD
+      const customJDIds = new Set(customJDs.map((jd) => jd.job_id));
+      const representativeTitles = new Set(REPRESENTATIVE_JDS.map((jd) => jd.job_title));
+
+      // 过滤掉已被删除的自定义 JD（保留代表性 JD 和用户在星图中手动添加的 JD）
+      const filtered = prev.filter((jd) => {
+        // 代表性 JD 始终保留
+        if (representativeTitles.has(jd.job_title)) return true;
+        // 用户在星图中手动添加的 JD（job_id 以 custom_ 开头）保留
+        if (jd.job_id.startsWith("custom_")) return true;
+        // 来自 JDManage 的自定义 JD，只保留在 customJDs 中的
+        return customJDIds.has(jd.job_id);
+      });
+
+      // 添加新的 customJDs
+      const existingIds = new Set(filtered.map((jd) => jd.job_id));
+      const newJDs = customJDs.filter((jd) => !existingIds.has(jd.job_id));
+
+      if (newJDs.length === 0 && filtered.length === prev.length) return prev;
+
+      // 为新添加的 JD 设置定时器移除 isNew 标记
+      newJDs.forEach((jd) => {
+        if (jd.isNew) {
+          setTimeout(() => {
+            setJdList((prevList) =>
+              prevList.map((item) =>
+                item.job_id === jd.job_id ? { ...item, isNew: false } : item
+              )
+            );
+          }, 3000);
+        }
+      });
+
+      return [...filtered, ...newJDs];
+    });
+  }, [customJDs]);
 
   // 构建图数据
   const graph = useMemo(() => buildGraph(jdList), [jdList]);
@@ -797,16 +849,20 @@ export default function StarMap() {
       skills.push("AI", "Python"); // 默认技能
     }
 
+    // 提取公司名称和薪资
+    const company = extractCompanyFromText(text);
+    const salary = extractSalaryFromText(text);
+
     const category = classifyJD(title);
     const jobId = `custom_${Date.now()}`;
 
     const newJD = {
       job_id: jobId,
       job_title: title,
-      company_name: "用户输入",
+      company_name: company || "未知公司",
       location: "-",
-      salary_min: "0",
-      salary_max: "0",
+      salary_min: salary?.min || "0",
+      salary_max: salary?.max || "0",
       experience: "-",
       education: "-",
       skills_norm: skills.slice(0, 6),
@@ -871,6 +927,29 @@ export default function StarMap() {
     controls.target.set(0, 0, 0);
     controls.update();
   }, []);
+
+  // ── 删除用户自定义 JD ──
+  const handleDeleteJD = useCallback((e, jd) => {
+    e.stopPropagation(); // 阻止冒泡，避免触发卡片点击
+    Modal.confirm({
+      title: "确认删除",
+      content: `确定要从星图中删除「${jd.job_title}」吗？`,
+      okText: "删除",
+      cancelText: "取消",
+      okButtonProps: { danger: true },
+      onOk: () => {
+        // 从本地列表中移除
+        setJdList((prev) => prev.filter((item) => item.job_id !== jd.job_id));
+        // 从 store 中移除
+        removeCustomJD(jd.job_id);
+        // 如果当前选中的是被删除的节点，清除选中状态
+        if (selectedNode?.id === `jd:${jd.job_id}`) {
+          setSelectedNode(null);
+        }
+        message.success(`已删除：${jd.job_title}`);
+      },
+    });
+  }, [removeCustomJD, selectedNode]);
 
   return (
     <div className="starmap-container">
@@ -1015,6 +1094,8 @@ export default function StarMap() {
         <div className="starmap-jd-list">
           {jdList.map((jd) => {
             const cat = JD_CATEGORIES[jd.category];
+            // 判断是否为用户自定义 JD（可删除）
+            const isCustomJD = jd.job_id.startsWith("custom_") || customJDs.some((c) => c.job_id === jd.job_id);
             return (
               <div
                 key={jd.job_id}
@@ -1026,13 +1107,20 @@ export default function StarMap() {
                     className="starmap-jd-dot"
                     style={{ background: cat?.color || "#4dd6ff" }}
                   />
-                  {jd.job_title}
+                  <span className="starmap-jd-card-title-text">{jd.job_title}</span>
+                  {isCustomJD && (
+                    <Button
+                      type="text"
+                      size="small"
+                      icon={<DeleteOutlined />}
+                      className="starmap-jd-delete-btn"
+                      onClick={(e) => handleDeleteJD(e, jd)}
+                    />
+                  )}
                 </div>
                 <div className="starmap-jd-card-meta">
-                  {jd.company_name !== "用户输入" && (
-                    <span>{jd.company_name}</span>
-                  )}
-                  {jd.salary_max !== "0" && (
+                  <span>{jd.company_name}</span>
+                  {jd.salary_max !== "0" && jd.salary_max !== 0 && (
                     <span style={{ color: "#52c41a" }}>
                       {Number(jd.salary_min) / 1000}K-{Number(jd.salary_max) / 1000}K
                     </span>

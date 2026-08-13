@@ -1,0 +1,726 @@
+{
+  "artifact_type": "job_profile",
+  "created_at": "2026-08-07T07:49:03Z",
+  "extraction": {
+    "evidence": [
+      {
+        "field": "responsibilities",
+        "id": "ev_001",
+        "text": "- 负责通用大模型（GPT、文心一言、通义千问等）的落地应用开发"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_002",
+        "text": "- 参与AI知识库搭建与优化"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_003",
+        "text": "- 协助进行大模型微调数据准备、样本筛选、数据清洗工作"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_004",
+        "text": "- 负责AI应用功能测试、效果验收、问题复盘"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_005",
+        "text": "- 跟进大模型行业新技术、新应用方案"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_006",
+        "text": "- 大专及以上学历，人工智能、计算机、大数据、软件工程、汉语言、新媒体等相关专业"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_007",
+        "text": "- 了解大模型基础原理，熟悉Prompt工程基础逻辑"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_008",
+        "text": "- 具备基础数据处理、文本标注、语料整理能力"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_009",
+        "text": "- 具备良好的逻辑思维、文字功底和问题排查能力"
+      },
+      {
+        "field": "skills",
+        "id": "ev_010",
+        "text": " 聚焦Prompt工程优化、上下文调试、"
+      }
+    ],
+    "fields": {
+      "application_scenarios": [
+        {
+          "description": "负责通用大模型的落地应用开发，聚焦Prompt工程优化、上下文调试、指令迭代。",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "name": "大模型应用开发"
+        },
+        {
+          "description": "参与AI知识库搭建与优化，完成行业语料整理、知识切片、向量数据库适配。",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "name": "AI知识库搭建与优化"
+        }
+      ],
+      "candidate": {
+        "name": null,
+        "target_position": null
+      },
+      "capabilities": [],
+      "company": {
+        "industry": null,
+        "location": "一线城市",
+        "name": null
+      },
+      "document_type": "jd",
+      "education": [],
+      "employment": {
+        "employment_type": "full_time",
+        "published_at": null,
+        "salary_max": 16000,
+        "salary_min": 9000
+      },
+      "evaluation_signals": [],
+      "evidence": [
+        {
+          "field": "responsibilities",
+          "id": "ev_001",
+          "text": "- 负责通用大模型（GPT、文心一言、通义千问等）的落地应用开发"
+        },
+        {
+          "field": "responsibilities",
+          "id": "ev_002",
+          "text": "- 参与AI知识库搭建与优化"
+        },
+        {
+          "field": "responsibilities",
+          "id": "ev_003",
+          "text": "- 协助进行大模型微调数据准备、样本筛选、数据清洗工作"
+        },
+        {
+          "field": "responsibilities",
+          "id": "ev_004",
+          "text": "- 负责AI应用功能测试、效果验收、问题复盘"
+        },
+        {
+          "field": "responsibilities",
+          "id": "ev_005",
+          "text": "- 跟进大模型行业新技术、新应用方案"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_006",
+          "text": "- 大专及以上学历，人工智能、计算机、大数据、软件工程、汉语言、新媒体等相关专业"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_007",
+          "text": "- 了解大模型基础原理，熟悉Prompt工程基础逻辑"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_008",
+          "text": "- 具备基础数据处理、文本标注、语料整理能力"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_009",
+          "text": "- 具备良好的逻辑思维、文字功底和问题排查能力"
+        },
+        {
+          "field": "skills",
+          "id": "ev_010",
+          "text": " 聚焦Prompt工程优化、上下文调试、"
+        }
+      ],
+      "experience": [],
+      "job": {
+        "department": "人工智能产品研发部",
+        "normalized_title": null,
+        "seniority": null,
+        "title": "AI大模型应用工程师"
+      },
+      "projects": [],
+      "requirements": [
+        {
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "importance": "required",
+          "requirement_type": "education",
+          "text": "大专及以上学历，人工智能、计算机等相关专业。"
+        },
+        {
+          "evidence_ids": [
+            "ev_007"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "了解大模型基础原理，熟悉Prompt工程基础逻辑。"
+        },
+        {
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "importance": "preferred",
+          "requirement_type": "skill",
+          "text": "具备基础数据处理、文本标注能力。"
+        },
+        {
+          "evidence_ids": [
+            "ev_009"
+          ],
+          "importance": "required",
+          "requirement_type": "soft_skill",
+          "text": "具备良好的逻辑思维和问题排查能力。"
+        }
+      ],
+      "responsibilities": [
+        {
+          "action": "负责",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "object": "通用大模型的落地应用开发",
+          "text": "负责通用大模型的落地应用开发，聚焦Prompt工程优化、上下文调试、指令迭代。"
+        },
+        {
+          "action": "参与",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "object": "AI知识库搭建与优化",
+          "text": "参与AI知识库搭建与优化，完成行业语料整理。"
+        },
+        {
+          "action": "协助",
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "object": "大模型微调数据准备、样本筛选、数据清洗工作",
+          "text": "协助进行大模型微调数据准备、样本筛选、数据清洗工作。"
+        },
+        {
+          "action": "负责",
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "object": "AI应用功能测试、效果验收、问题复盘",
+          "text": "负责AI应用功能测试、效果验收、问题复盘。"
+        },
+        {
+          "action": "跟进",
+          "evidence_ids": [
+            "ev_005"
+          ],
+          "object": "大模型行业新技术、新应用方案",
+          "text": "跟进大模型行业新技术、新应用方案，调研各类开源大模型。"
+        }
+      ],
+      "schema_version": "profile-extraction/v2",
+      "skills": [
+        {
+          "category": "algorithm",
+          "evidence_ids": [
+            "ev_010"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "Prompt工程优化",
+          "raw_name": "Prompt工程优化"
+        },
+        {
+          "category": "data_processing",
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "大模型微调数据准备",
+          "raw_name": "大模型微调数据准备"
+        },
+        {
+          "category": "data_processing",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "知识库搭建与优化",
+          "raw_name": "AI知识库搭建与优化"
+        }
+      ]
+    },
+    "implementation": "ollama",
+    "model": "qwen2.5:7b",
+    "raw_model_output": "",
+    "reason": "",
+    "schema": "profile-extraction/v2",
+    "state": "available",
+    "validation_error": "",
+    "warnings": [
+      "capabilities[1] ignored: missing evidence_text"
+    ]
+  },
+  "normalization": {
+    "implementation": "lightweight_skill_normalizer",
+    "skills": [
+      {
+        "category": "algorithm",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_010"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "Prompt工程优化",
+        "raw_name": "Prompt工程优化"
+      },
+      {
+        "category": "data_processing",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_003"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "大模型微调数据准备",
+        "raw_name": "大模型微调数据准备"
+      },
+      {
+        "category": "data_processing",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_002"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "AI知识库搭建与优化",
+        "raw_name": "AI知识库搭建与优化"
+      }
+    ],
+    "state": "available",
+    "warnings": []
+  },
+  "profile": {
+    "artifacts": {
+      "profile_json": "data\\structured\\profiles\\job\\job_profile_567df766abb34eb4939bbdf0475c2a35.json",
+      "schema_version": "profile-extraction/v2",
+      "storage": "filesystem"
+    },
+    "attributes": {
+      "capabilities": [],
+      "company": {
+        "industry": null,
+        "location": "一线城市",
+        "name": null
+      },
+      "education": [],
+      "employment": {
+        "employment_type": "full_time",
+        "published_at": null,
+        "salary_max": 16000,
+        "salary_min": 9000
+      },
+      "experience": [],
+      "jd_profile": {
+        "application_scenarios": [
+          {
+            "description": "负责通用大模型的落地应用开发，聚焦Prompt工程优化、上下文调试、指令迭代。",
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "name": "大模型应用开发"
+          },
+          {
+            "description": "参与AI知识库搭建与优化，完成行业语料整理、知识切片、向量数据库适配。",
+            "evidence_ids": [
+              "ev_002"
+            ],
+            "name": "AI知识库搭建与优化"
+          }
+        ],
+        "capabilities": [],
+        "company": {
+          "industry": null,
+          "location": "一线城市",
+          "name": null
+        },
+        "document_type": "jd",
+        "employment": {
+          "employment_type": "full_time",
+          "published_at": null,
+          "salary_max": 16000,
+          "salary_min": 9000
+        },
+        "evaluation_signals": [],
+        "job": {
+          "department": "人工智能产品研发部",
+          "normalized_title": null,
+          "seniority": null,
+          "title": "AI大模型应用工程师"
+        },
+        "requirements": [
+          {
+            "evidence_ids": [
+              "ev_006"
+            ],
+            "importance": "required",
+            "requirement_type": "education",
+            "text": "大专及以上学历，人工智能、计算机等相关专业。"
+          },
+          {
+            "evidence_ids": [
+              "ev_007"
+            ],
+            "importance": "required",
+            "requirement_type": "skill",
+            "text": "了解大模型基础原理，熟悉Prompt工程基础逻辑。"
+          },
+          {
+            "evidence_ids": [
+              "ev_008"
+            ],
+            "importance": "preferred",
+            "requirement_type": "skill",
+            "text": "具备基础数据处理、文本标注能力。"
+          },
+          {
+            "evidence_ids": [
+              "ev_009"
+            ],
+            "importance": "required",
+            "requirement_type": "soft_skill",
+            "text": "具备良好的逻辑思维和问题排查能力。"
+          }
+        ],
+        "responsibilities": [
+          {
+            "action": "负责",
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "object": "通用大模型的落地应用开发",
+            "text": "负责通用大模型的落地应用开发，聚焦Prompt工程优化、上下文调试、指令迭代。"
+          },
+          {
+            "action": "参与",
+            "evidence_ids": [
+              "ev_002"
+            ],
+            "object": "AI知识库搭建与优化",
+            "text": "参与AI知识库搭建与优化，完成行业语料整理。"
+          },
+          {
+            "action": "协助",
+            "evidence_ids": [
+              "ev_003"
+            ],
+            "object": "大模型微调数据准备、样本筛选、数据清洗工作",
+            "text": "协助进行大模型微调数据准备、样本筛选、数据清洗工作。"
+          },
+          {
+            "action": "负责",
+            "evidence_ids": [
+              "ev_004"
+            ],
+            "object": "AI应用功能测试、效果验收、问题复盘",
+            "text": "负责AI应用功能测试、效果验收、问题复盘。"
+          },
+          {
+            "action": "跟进",
+            "evidence_ids": [
+              "ev_005"
+            ],
+            "object": "大模型行业新技术、新应用方案",
+            "text": "跟进大模型行业新技术、新应用方案，调研各类开源大模型。"
+          }
+        ],
+        "schema_version": "profile-extraction/v2",
+        "skills": [
+          {
+            "category": "algorithm",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_010"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "Prompt工程优化",
+            "raw_name": "Prompt工程优化"
+          },
+          {
+            "category": "data_processing",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_003"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "大模型微调数据准备",
+            "raw_name": "大模型微调数据准备"
+          },
+          {
+            "category": "data_processing",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_002"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "AI知识库搭建与优化",
+            "raw_name": "AI知识库搭建与优化"
+          }
+        ]
+      },
+      "job": {
+        "department": "人工智能产品研发部",
+        "normalized_title": null,
+        "seniority": null,
+        "title": "AI大模型应用工程师"
+      },
+      "job_title": "AI大模型应用工程师",
+      "profile_schema": "profile-extraction/v2",
+      "projects": [],
+      "requirements": [
+        {
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "importance": "required",
+          "requirement_type": "education",
+          "text": "大专及以上学历，人工智能、计算机等相关专业。"
+        },
+        {
+          "evidence_ids": [
+            "ev_007"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "了解大模型基础原理，熟悉Prompt工程基础逻辑。"
+        },
+        {
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "importance": "preferred",
+          "requirement_type": "skill",
+          "text": "具备基础数据处理、文本标注能力。"
+        },
+        {
+          "evidence_ids": [
+            "ev_009"
+          ],
+          "importance": "required",
+          "requirement_type": "soft_skill",
+          "text": "具备良好的逻辑思维和问题排查能力。"
+        }
+      ],
+      "responsibilities": [
+        {
+          "action": "负责",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "object": "通用大模型的落地应用开发",
+          "text": "负责通用大模型的落地应用开发，聚焦Prompt工程优化、上下文调试、指令迭代。"
+        },
+        {
+          "action": "参与",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "object": "AI知识库搭建与优化",
+          "text": "参与AI知识库搭建与优化，完成行业语料整理。"
+        },
+        {
+          "action": "协助",
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "object": "大模型微调数据准备、样本筛选、数据清洗工作",
+          "text": "协助进行大模型微调数据准备、样本筛选、数据清洗工作。"
+        },
+        {
+          "action": "负责",
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "object": "AI应用功能测试、效果验收、问题复盘",
+          "text": "负责AI应用功能测试、效果验收、问题复盘。"
+        },
+        {
+          "action": "跟进",
+          "evidence_ids": [
+            "ev_005"
+          ],
+          "object": "大模型行业新技术、新应用方案",
+          "text": "跟进大模型行业新技术、新应用方案，调研各类开源大模型。"
+        }
+      ],
+      "skills": [
+        {
+          "category": "algorithm",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_010"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "Prompt工程优化",
+          "raw_name": "Prompt工程优化"
+        },
+        {
+          "category": "data_processing",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "大模型微调数据准备",
+          "raw_name": "大模型微调数据准备"
+        },
+        {
+          "category": "data_processing",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "AI知识库搭建与优化",
+          "raw_name": "AI知识库搭建与优化"
+        }
+      ]
+    },
+    "created_at": "2026-08-07T07:49:03Z",
+    "evidence": [
+      {
+        "field": "responsibilities",
+        "id": "ev_001",
+        "text": "- 负责通用大模型（GPT、文心一言、通义千问等）的落地应用开发"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_002",
+        "text": "- 参与AI知识库搭建与优化"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_003",
+        "text": "- 协助进行大模型微调数据准备、样本筛选、数据清洗工作"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_004",
+        "text": "- 负责AI应用功能测试、效果验收、问题复盘"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_005",
+        "text": "- 跟进大模型行业新技术、新应用方案"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_006",
+        "text": "- 大专及以上学历，人工智能、计算机、大数据、软件工程、汉语言、新媒体等相关专业"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_007",
+        "text": "- 了解大模型基础原理，熟悉Prompt工程基础逻辑"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_008",
+        "text": "- 具备基础数据处理、文本标注、语料整理能力"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_009",
+        "text": "- 具备良好的逻辑思维、文字功底和问题排查能力"
+      },
+      {
+        "field": "skills",
+        "id": "ev_010",
+        "text": " 聚焦Prompt工程优化、上下文调试、"
+      }
+    ],
+    "id": "job_profile_567df766abb34eb4939bbdf0475c2a35",
+    "implementation": "llm_profile_builder",
+    "profile_type": "job",
+    "source_document_id": "doc_9855ec6af3ec45b4aec1c67bbb5c1a57",
+    "state": "available",
+    "warnings": [
+      "capabilities[1] ignored: missing evidence_text"
+    ]
+  },
+  "schema_version": "profile-extraction/v2",
+  "source_document": {
+    "char_count": 924,
+    "content_digest": "90d8afc67cbc35cb1e1fbbc4b418655bcba16124009d619f05f134b24730dc23",
+    "created_at": "2026-08-07T07:47:48Z",
+    "document_type": "jd",
+    "id": "doc_9855ec6af3ec45b4aec1c67bbb5c1a57",
+    "metadata": {
+      "company_name": "智能问答、文本生成、内容解析等AI应用场景。",
+      "job_title": "AI大模型应用工程师",
+      "location": "一线城市",
+      "salary_range": "9k-16k｜双休、五险一金、项目奖金、技术晋升",
+      "skills": [
+        "任职要求"
+      ],
+      "title": "AI大模型应用工程师"
+    },
+    "source": {
+      "source_system": "manual"
+    },
+    "storage": "memory"
+  }
+}

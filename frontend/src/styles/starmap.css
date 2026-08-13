@@ -353,6 +353,35 @@
   line-height: 1.4;
 }
 
+.starmap-jd-card-title-text {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.starmap-jd-delete-btn {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  color: #ff4d4f !important;
+  flex-shrink: 0;
+  width: 24px !important;
+  height: 24px !important;
+  padding: 0 !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.starmap-jd-card:hover .starmap-jd-delete-btn {
+  opacity: 1;
+}
+
+.starmap-jd-delete-btn:hover {
+  background: rgba(255, 77, 79, 0.1) !important;
+}
+
 .starmap-jd-dot {
   width: 8px;
   height: 8px;

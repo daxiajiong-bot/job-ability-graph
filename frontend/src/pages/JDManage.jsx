@@ -46,6 +46,7 @@ import {
 } from "../api/client";
 import useStore from "../store/useStore";
 import OCRCorrectionModal from "../components/OCRCorrectionModal";
+import { classifyJD, extractSkillsFromText, extractCompanyFromText, extractSalaryFromText } from "../utils/representativeJDs";
 
 const { Title, Paragraph, Text } = Typography;
 const { TextArea } = Input;
@@ -58,11 +59,13 @@ export default function JDManage() {
   const [pageOffset, setPageOffset] = useState(0);
   const [profileModal, setProfileModal] = useState(null);
   const [activeTab, setActiveTab] = useState("text");
+  const [selectedRows, setSelectedRows] = useState([]);
 
   const {
     userId, initUserId,
     jobProfileCache, setCachedJobProfile, setCachedJobProfiles,
     removeCachedJobProfile,
+    addCustomJD, removeCustomJD,
   } = useStore();
 
   const [profiles, setProfiles] = useState({});
@@ -158,13 +161,41 @@ export default function JDManage() {
         source: { source_system: "manual" },
       });
       const doc = res.data.data.document;
-      console.log("[JDManage] 文档已创建:", doc.id || doc.document_id);
+      const docId = doc.id || doc.document_id;
+      console.log("[JDManage] 文档已创建:", docId);
       message.success("JD 文档创建成功，正在生成画像...");
       form.resetFields();
+
+      // 立即添加到岗位星图（使用 StarMap 的分类和技能提取逻辑）
+      const text = values.text;
+      const lines = text.split("\n").filter((l) => l.trim());
+      const title = lines[0]?.replace(/^(职位名称|岗位名称|岗位|职位)[：:]\s*/, "").trim() || "新岗位";
+      const skills = extractSkillsFromText(text);
+      if (skills.length === 0) {
+        skills.push("AI", "Python");
+      }
+      const company = extractCompanyFromText(text);
+      const salary = extractSalaryFromText(text);
+      const category = classifyJD(title);
+
+      addCustomJD({
+        job_id: docId,
+        job_title: title,
+        company_name: company || "用户上传",
+        location: "-",
+        salary_min: salary?.min || "0",
+        salary_max: salary?.max || "0",
+        experience: "-",
+        education: "-",
+        skills_norm: skills.slice(0, 6),
+        category,
+        jd_text: text.slice(0, 200),
+        isNew: true, // 标记为新添加，触发动画
+      });
+
       // 重新加载文档列表
       await loadDocuments(userId, 0);
       // 自动生成画像
-      const docId = doc.id || doc.document_id;
       if (docId) {
         console.log("[JDManage] 自动触发画像生成, docId:", docId);
         handleBuildProfile({ document_id: docId, id: docId });
@@ -194,7 +225,6 @@ export default function JDManage() {
         doc,
       });
       message.success("OCR 识别成功，请检查并修正结果");
-      await loadDocuments(userId, 0);
     } catch (e) {
       message.error("OCR 失败: " + (e.response?.data?.error?.message || e.message));
     } finally {
@@ -213,10 +243,37 @@ export default function JDManage() {
         source: { source_system: "ocr_corrected" },
       });
       const doc = res.data.data.document;
+      const docId = doc.id || doc.document_id;
       message.success("校正后的 JD 文档已创建，正在生成画像...");
+
+      // 立即添加到岗位星图
+      const lines = correctedText.split("\n").filter((l) => l.trim());
+      const title = lines[0]?.replace(/^(职位名称|岗位名称|岗位|职位)[：:]\s*/, "").trim() || "新岗位";
+      const skills = extractSkillsFromText(correctedText);
+      if (skills.length === 0) {
+        skills.push("AI", "Python");
+      }
+      const company = extractCompanyFromText(correctedText);
+      const salary = extractSalaryFromText(correctedText);
+      const category = classifyJD(title);
+
+      addCustomJD({
+        job_id: docId,
+        job_title: title,
+        company_name: company || "用户上传(OCR)",
+        location: "-",
+        salary_min: salary?.min || "0",
+        salary_max: salary?.max || "0",
+        experience: "-",
+        education: "-",
+        skills_norm: skills.slice(0, 6),
+        category,
+        jd_text: correctedText.slice(0, 200),
+        isNew: true,
+      });
+
       await loadDocuments(userId, 0);
       // 自动生成画像
-      const docId = doc.id || doc.document_id;
       if (docId) {
         handleBuildProfile({ document_id: docId, id: docId });
       }
@@ -274,8 +331,44 @@ export default function JDManage() {
         formData.append("document_type", "jd");
         formData.append("file", fileItem.file);
 
-        const res = await createDocumentOCR(formData);
-        const doc = res.data.data.document;
+        const ocrRes = await createDocumentOCR(formData);
+        const ocrData = ocrRes.data.data;
+
+        // OCR 识别成功后，创建文档
+        const docRes = await createDocument({
+          document_type: "jd",
+          text: ocrData.document.text,
+          source: { source_system: "ocr_batch" },
+        });
+        const doc = docRes.data.data.document;
+        const docId = doc.id || doc.document_id;
+
+        // 立即添加到岗位星图
+        const text = ocrData.document.text;
+        const lines = text.split("\n").filter((l) => l.trim());
+        const title = lines[0]?.replace(/^(职位名称|岗位名称|岗位|职位)[：:]\s*/, "").trim() || fileItem.name.replace(/\.[^.]+$/, "");
+        const skills = extractSkillsFromText(text);
+        if (skills.length === 0) {
+          skills.push("AI", "Python");
+        }
+        const company = extractCompanyFromText(text);
+        const salary = extractSalaryFromText(text);
+        const category = classifyJD(title);
+
+        addCustomJD({
+          job_id: docId,
+          job_title: title,
+          company_name: company || "批量上传",
+          location: "-",
+          salary_min: salary?.min || "0",
+          salary_max: salary?.max || "0",
+          experience: "-",
+          education: "-",
+          skills_norm: skills.slice(0, 6),
+          category,
+          jd_text: text.slice(0, 200),
+          isNew: true,
+        });
 
         // 更新文件状态为成功
         setBatchFiles((prev) =>
@@ -286,8 +379,6 @@ export default function JDManage() {
           )
         );
 
-        // 添加到文档列表
-        setDocuments((prev) => [{ ...doc, _raw: "(批量OCR)" }, ...prev]);
         successCount++;
       } catch (e) {
         // 更新文件状态为失败
@@ -417,12 +508,54 @@ export default function JDManage() {
       message.success("删除成功");
       // 清除该文档的画像缓存
       removeCachedJobProfile(docId);
+      // 从岗位星图中移除
+      removeCustomJD(docId);
       await loadDocuments(userId, 0);
     } catch (e) {
       message.error("删除失败: " + (e.response?.data?.error?.message || e.message));
     } finally {
       setLoading(false);
     }
+  }
+
+  async function handleBatchDelete() {
+    if (selectedRows.length === 0) {
+      message.warning("请先选择要删除的 JD");
+      return;
+    }
+    Modal.confirm({
+      title: "确认批量删除",
+      content: `确定要删除选中的 ${selectedRows.length} 个 JD 吗？删除后不可恢复。`,
+      okText: "删除",
+      cancelText: "取消",
+      okButtonProps: { danger: true },
+      onOk: async () => {
+        setLoading(true);
+        let successCount = 0;
+        let errorCount = 0;
+        for (const doc of selectedRows) {
+          const docId = doc.document_id || doc.id;
+          try {
+            await deleteDocument(docId);
+            removeCachedJobProfile(docId);
+            // 从岗位星图中移除
+            removeCustomJD(docId);
+            successCount++;
+          } catch (e) {
+            errorCount++;
+          }
+        }
+        setSelectedRows([]);
+        if (successCount > 0) {
+          message.success(`成功删除 ${successCount} 个 JD`);
+        }
+        if (errorCount > 0) {
+          message.error(`${errorCount} 个 JD 删除失败`);
+        }
+        await loadDocuments(userId, 0);
+        setLoading(false);
+      },
+    });
   }
 
   const isSystem = (r) => r.user_id === "system";
@@ -824,7 +957,24 @@ export default function JDManage() {
           />
         </Card>
 
-        <Card title={`JD 列表 (${totalDocs || documents.length})`}>
+        <Card
+          title={`JD 列表 (${totalDocs || documents.length})`}
+          extra={
+            selectedRows.length > 0 && (
+              <Popconfirm
+                title={`确定删除选中的 ${selectedRows.length} 个 JD？`}
+                onConfirm={handleBatchDelete}
+                okText="删除"
+                cancelText="取消"
+                okButtonProps={{ danger: true }}
+              >
+                <Button danger icon={<DeleteOutlined />}>
+                  批量删除 ({selectedRows.length})
+                </Button>
+              </Popconfirm>
+            )
+          }
+        >
           <Table
             dataSource={documents}
             columns={columns}
@@ -835,6 +985,13 @@ export default function JDManage() {
               total: totalDocs,
               onChange: (page) => loadDocuments(userId, (page - 1) * 50),
               showTotal: (total) => `共 ${total} 条`,
+            }}
+            rowSelection={{
+              selectedRowKeys: selectedRows.map((r) => r.document_id || r.id),
+              onChange: (_, rows) => setSelectedRows(rows),
+              getCheckboxProps: (record) => ({
+                disabled: isSystem(record),
+              }),
             }}
           />
         </Card>
@@ -870,9 +1027,6 @@ export default function JDManage() {
                   {profileModal.state}
                 </Tag>
               </Descriptions.Item>
-              <Descriptions.Item label="实现方式">
-                {profileModal.implementation || "mock"}
-              </Descriptions.Item>
             </Descriptions>
 
             {profileModal.attributes?.jd_profile && (
@@ -890,17 +1044,6 @@ export default function JDManage() {
                 >
                   {JSON.stringify(profileModal.attributes.jd_profile, null, 2)}
                 </pre>
-              </>
-            )}
-
-            {profileModal.warnings?.length > 0 && (
-              <>
-                <Divider>警告</Divider>
-                {profileModal.warnings.map((w, i) => (
-                  <Tag key={i} color="orange" style={{ margin: 4 }}>
-                    {w}
-                  </Tag>
-                ))}
               </>
             )}
           </div>

@@ -219,3 +219,59 @@ export function extractSkillsFromText(text) {
   }
   return [...new Set(found)];
 }
+
+/**
+ * 从 JD 文本中提取公司名称
+ */
+export function extractCompanyFromText(text) {
+  if (!text) return null;
+  const patterns = [
+    /公司[名称简介][：:]\s*(.+?)(?:\n|$)/,
+    /企业[名称简介][：:]\s*(.+?)(?:\n|$)/,
+    /(?:公司|企业)(?:是|为)\s*(.+?)(?:[，,。])/,
+    /(?:来自|隶属于)\s*(.+?)(?:[，,。])/,
+    /招聘(?:公司|单位)[：:]\s*(.+?)(?:\n|$)/,
+  ];
+  for (const pattern of patterns) {
+    const match = text.match(pattern);
+    if (match && match[1]) {
+      return match[1].trim().slice(0, 20);
+    }
+  }
+  return null;
+}
+
+/**
+ * 从 JD 文本中提取薪资范围
+ * @returns {{ min: string, max: string } | null}
+ */
+export function extractSalaryFromText(text) {
+  if (!text) return null;
+  const patterns = [
+    // 匹配 "薪资：15-25K" 或 "月薪：15K-25K"
+    /薪[资酬][：:]\s*(\d+)[kK]?\s*[-~至到]\s*(\d+)[kK]?/,
+    // 匹配 "15-25K" 或 "15K-25K"
+    /(\d+)[kK]\s*[-~至到]\s*(\d+)[kK]/,
+    // 匹配 "月薪15000-25000"
+    /月薪[：:]?\s*(\d{4,6})\s*[-~至到]\s*(\d{4,6})/,
+    // 匹配 "年薪"
+    /年薪[：:]?\s*(\d{1,3})[万w]\s*[-~至到]\s*(\d{1,3})[万w]/i,
+  ];
+  for (const pattern of patterns) {
+    const match = text.match(pattern);
+    if (match && match[1] && match[2]) {
+      let min = parseInt(match[1]);
+      let max = parseInt(match[2]);
+      // 如果是年薪，转换为月薪
+      if (pattern.source.includes("年薪")) {
+        min = Math.round((min * 10000) / 12);
+        max = Math.round((max * 10000) / 12);
+      }
+      // 如果数字小于 1000，假设是 K 为单位
+      if (min < 1000) min *= 1000;
+      if (max < 1000) max *= 1000;
+      return { min: String(min), max: String(max) };
+    }
+  }
+  return null;
+}

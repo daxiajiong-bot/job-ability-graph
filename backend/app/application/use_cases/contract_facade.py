@@ -102,16 +102,14 @@ class ContractFacade:
             options=options,
         )
         ocr_metadata = self._ocr_metadata(ocr_result, file_name, content_type)
-        document_metadata = {**metadata, "ocr": ocr_metadata}
-        document = SourceDocument.create(document_type, ocr_result["text"], source, document_metadata)
-        if user_id and hasattr(self.repository, "_db"):
-            if hasattr(self.repository, "ensure_user"):
-                self.repository.ensure_user(user_id)
-            self.repository.add_document(document, user_id=user_id)
-        else:
-            self.repository.add_document(document)
+        # 只返回 OCR 识别结果，不创建文档
+        # 文档将在用户校正确认后由 create_document 接口创建
         return {
-            "document": {**document.public(), "text": ocr_result["text"]},
+            "document": {
+                "text": ocr_result["text"],
+                "confidence": ocr_result.get("average_confidence"),
+                "filename": file_name,
+            },
             "ocr": ocr_metadata,
         }
 

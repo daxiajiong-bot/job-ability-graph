@@ -47,7 +47,7 @@ export default function Layout() {
   const currentPageTitle = MENU_ITEMS.find((item) => item.key === location.pathname)?.label || "数据概览";
 
   return (
-    <AntLayout style={{ minHeight: "100vh" }}>
+    <AntLayout style={{ height: "100vh", overflow: "hidden" }}>
       <Sider
         collapsible
         collapsed={collapsed}
@@ -58,7 +58,9 @@ export default function Layout() {
         style={{
           background: token.colorBgContainer,
           borderRight: `1px solid ${token.colorBorder}`,
-          position: "relative",
+          height: "100vh",
+          position: "sticky",
+          top: 0,
           overflow: "hidden",
         }}
       >
@@ -125,32 +127,9 @@ export default function Layout() {
           }}
         />
 
-        {/* 底部版本信息 */}
-        {!collapsed && (
-          <div
-            style={{
-              position: "absolute",
-              bottom: 56,
-              left: 0,
-              right: 0,
-              textAlign: "center",
-              padding: "0 16px",
-            }}
-          >
-            <Typography.Text
-              style={{
-                fontSize: 11,
-                color: settings.theme === "dark" ? "rgba(77, 214, 255, 0.25)" : "rgba(0, 0, 0, 0.25)",
-                letterSpacing: "0.05em",
-              }}
-            >
-              v3.0 · AI Powered
-            </Typography.Text>
-          </div>
-        )}
       </Sider>
 
-      <AntLayout>
+      <AntLayout style={{ height: "100vh", overflow: "auto" }}>
         <Header
           style={{
             background: settings.theme === "dark"
