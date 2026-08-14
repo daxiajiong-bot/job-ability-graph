@@ -32,6 +32,7 @@ import {
   LoadingOutlined,
   InboxOutlined,
   DeleteOutlined,
+  StarOutlined,
 } from "@ant-design/icons";
 import {
   createDocument,
@@ -43,7 +44,9 @@ import {
   deleteDocument,
   initUser,
   listUserDocuments,
+  autoMatch,
 } from "../api/client";
+import RecommendList from "../components/RecommendList";
 import useStore from "../store/useStore";
 import OCRCorrectionModal from "../components/OCRCorrectionModal";
 import { classifyJD, extractSkillsFromText, extractCompanyFromText, extractSalaryFromText } from "../utils/representativeJDs";
@@ -58,7 +61,30 @@ export default function JDManage() {
   const [totalDocs, setTotalDocs] = useState(0);
   const [pageOffset, setPageOffset] = useState(0);
   const [profileModal, setProfileModal] = useState(null);
+  const [recommendModal, setRecommendModal] = useState(null);
+  const [recommendations, setRecommendations] = useState([]);
+  const [recommendLoading, setRecommendLoading] = useState(false);
   const [activeTab, setActiveTab] = useState("text");
+
+  async function handleAutoMatch(doc) {
+    const docId = doc.document_id || doc.id;
+    const title = doc.title || "JD";
+    setRecommendModal({ docId, title });
+    setRecommendations([]);
+    setRecommendLoading(true);
+    try {
+      const res = await autoMatch(docId, 5);
+      const data = res.data.data;
+      setRecommendations(data.recommendations || []);
+      if (!data.recommendations?.length) {
+        message.info("暂无匹配的简历推荐");
+      }
+    } catch (e) {
+      message.error("智能推荐失败: " + (e.response?.data?.error?.message || e.message));
+    } finally {
+      setRecommendLoading(false);
+    }
+  }
   const [selectedRows, setSelectedRows] = useState([]);
 
   const {
@@ -699,7 +725,7 @@ export default function JDManage() {
     {
       title: "操作",
       key: "action",
-      width: 220,
+      width: 300,
       render: (_, record) => (
         <Space>
           <Button
@@ -721,6 +747,15 @@ export default function JDManage() {
             onClick={() => handleViewProfile(record)}
           >
             查看
+          </Button>
+          <Button
+            size="small"
+            type="primary"
+            ghost
+            icon={<StarOutlined />}
+            onClick={() => handleAutoMatch(record)}
+          >
+            智能推荐
           </Button>
           {record.user_id !== "system" && (
             <Popconfirm
@@ -1048,6 +1083,26 @@ export default function JDManage() {
             )}
           </div>
         )}
+      </Modal>
+
+      {/* 智能推荐简历弹窗 */}
+      <Modal
+        title={
+          <span>
+            <StarOutlined style={{ color: "#faad14", marginRight: 8 }} />
+            智能推荐简历 — {recommendModal?.title}
+          </span>
+        }
+        open={!!recommendModal}
+        onCancel={() => setRecommendModal(null)}
+        footer={null}
+        width={780}
+      >
+        <RecommendList
+          recommendations={recommendations}
+          loading={recommendLoading}
+          type="resume"
+        />
       </Modal>
     </div>
   );

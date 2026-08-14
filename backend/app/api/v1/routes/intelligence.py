@@ -2,12 +2,15 @@
 
 from __future__ import annotations
 
-from fastapi import APIRouter, Depends, Request, status
+from typing import Optional
+
+from fastapi import APIRouter, Depends, Header, Request, status
 
 from backend.app.api.v1.dependencies import get_facade
 from backend.app.api.v1.errors import success
 from backend.app.api.v1.schemas.common import SuccessEnvelope
 from backend.app.api.v1.schemas.resources import (
+    AutoMatchRequest,
     DocumentRetrievalRequest,
     GraphRetrievalRequest,
     KnowledgeGraphCreateRequest,
@@ -126,3 +129,20 @@ def generate_learning_advice(
 ) -> dict:
     advice = facade.generate_learning_advice(payload.match_id)
     return success(request, {"advice": advice})
+
+
+@router.post("/auto-match", response_model=SuccessEnvelope, status_code=status.HTTP_200_OK)
+def auto_match(
+    payload: AutoMatchRequest,
+    request: Request,
+    facade: ContractFacade = Depends(get_facade),
+    x_user_id: Optional[str] = Header(default=None),
+) -> dict:
+    result = facade.auto_match(
+        payload.document_id,
+        payload.top_n,
+        user_id=x_user_id,
+        filters=payload.filters,
+        max_per_company=payload.max_per_company,
+    )
+    return success(request, result)

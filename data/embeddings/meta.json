@@ -1,0 +1,8 @@
+{
+  "count": 100,
+  "dim": 1024,
+  "created_at": "2026-08-14T17:09:00Z",
+  "source": "system_jd_documents",
+  "model": "Qwen3-Embedding-4B + LoRA (jdmatch-deployment-qwen3-4b-v1)",
+  "total_seconds": 42.3
+}

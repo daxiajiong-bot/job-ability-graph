@@ -96,3 +96,22 @@ class ReportCreateRequest(BaseModel):
 
 class LearningAdviceRequest(BaseModel):
     match_id: str = Field(min_length=1, max_length=128)
+
+
+class AutoMatchRequest(BaseModel):
+    document_id: str = Field(min_length=1, max_length=128)
+    top_n: int = Field(default=5, ge=1, le=20)
+    filters: dict[str, Any] = Field(
+        default_factory=dict,
+        description=(
+            "Optional filter hints applied to the candidate pool before scoring. "
+            "Supported keys: location, industry, company_name, keyword, experience, "
+            "education, salary_min (k per month), salary_max (k per month), years_min."
+        ),
+    )
+    max_per_company: int = Field(
+        default=2,
+        ge=0,
+        le=10,
+        description="Max number of recommendations from the same company (0 = unlimited).",
+    )

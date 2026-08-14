@@ -11,6 +11,10 @@ from threading import local
 _SCHEMA_SQL = """
 CREATE TABLE IF NOT EXISTS users (
     user_id         TEXT PRIMARY KEY,
+    username        TEXT UNIQUE,
+    password_hash   TEXT,
+    role            TEXT NOT NULL DEFAULT 'job_seeker',
+    display_name    TEXT,
     created_at      TEXT NOT NULL,
     last_active_at  TEXT NOT NULL
 );
@@ -118,6 +122,19 @@ CREATE TABLE IF NOT EXISTS reports (
     implementation          TEXT NOT NULL,
     created_at              TEXT NOT NULL
 );
+
+CREATE TABLE IF NOT EXISTS recommendations (
+    id                  TEXT PRIMARY KEY,
+    user_id             TEXT NOT NULL,
+    input_document_id   TEXT NOT NULL,
+    direction           TEXT NOT NULL,
+    top_n               INTEGER NOT NULL,
+    filters             TEXT,
+    max_per_company     INTEGER NOT NULL DEFAULT 2,
+    result              TEXT NOT NULL,
+    created_at          TEXT NOT NULL,
+    UNIQUE(user_id, input_document_id, top_n, filters, max_per_company)
+);
 """
 
 
@@ -141,6 +158,7 @@ class DatabaseManager:
         conn = self.connection
         conn.executescript(_SCHEMA_SQL)
         self._ensure_match_columns(conn)
+        self._ensure_user_auth_columns(conn)
         conn.execute("PRAGMA journal_mode=WAL")
         conn.execute("PRAGMA foreign_keys=ON")
         # Auto-close on garbage collection (handles test cleanup)
@@ -160,6 +178,26 @@ class DatabaseManager:
         for name in ("details", "summary", "warnings"):
             if name not in columns:
                 conn.execute(f"ALTER TABLE matches ADD COLUMN {name} TEXT")
+        conn.commit()
+
+    @staticmethod
+    def _ensure_user_auth_columns(conn: sqlite3.Connection) -> None:
+        """Migrate users table for auth columns (username, password_hash, role, display_name)."""
+        columns = {row[1] for row in conn.execute("PRAGMA table_info(users)").fetchall()}
+        migrations = {
+            "username": "TEXT",
+            "password_hash": "TEXT",
+            "role": "TEXT NOT NULL DEFAULT 'job_seeker'",
+            "display_name": "TEXT",
+        }
+        for col_name, col_type in migrations.items():
+            if col_name not in columns:
+                conn.execute(f"ALTER TABLE users ADD COLUMN {col_name} {col_type}")
+        # Create unique index on username if not exists
+        try:
+            conn.execute("CREATE UNIQUE INDEX IF NOT EXISTS idx_users_username ON users(username)")
+        except sqlite3.OperationalError:
+            pass  # Index may already exist or column has NULLs
         conn.commit()
 
     @property

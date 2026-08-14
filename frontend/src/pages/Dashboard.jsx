@@ -13,6 +13,7 @@ import {
   RocketOutlined,
   DatabaseOutlined,
   StarOutlined,
+  BulbOutlined,
 } from "@ant-design/icons";
 import { getHealth, getCapabilities, listUserDocuments, initUser, getCandidateProfilesByDocuments, getJobProfilesByDocuments } from "../api/client";
 import useStore from "../store/useStore";
@@ -223,11 +224,18 @@ export default function Dashboard() {
       color: "#52c41a",
     },
     {
+      icon: <BulbOutlined />,
+      title: "智能推荐",
+      desc: "基于大模型的智能岗位/候选人推荐",
+      link: "/recommend",
+      color: "#faad14",
+    },
+    {
       icon: <StarOutlined />,
       title: "查看星图",
       desc: "浏览岗位分布星图",
       link: "/starmap",
-      color: "#faad14",
+      color: "#7b61ff",
     },
   ];
 

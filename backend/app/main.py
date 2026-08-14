@@ -58,7 +58,7 @@ def seed_initial_data() -> None:
             recovered = repository.recover_stale_tasks(max_age_seconds=0)
             if recovered:
                 logger.warning("Marked %d stale profile tasks as failed after restart", recovered)
-        from backend.app.infrastructure.sqlite.seed import load_initial_jds
+        from backend.app.infrastructure.sqlite.seed import ensure_prebuilt_graph, load_initial_jds
 
         jsonl_path = Path(__file__).resolve().parent.parent.parent / "data" / "small-raw" / "jd_raw_100.jsonl"
         if jsonl_path.exists():
@@ -69,6 +69,12 @@ def seed_initial_data() -> None:
                 logger.info("Initial JD data already loaded, skipping seed")
         else:
             logger.warning("Seed file not found: %s", jsonl_path)
+        registered = ensure_prebuilt_graph(
+            repository,
+            Path(__file__).resolve().parent.parent.parent / "data",
+        )
+        if registered:
+            logger.info("Registered pre-built knowledge graph snapshot kg_prebuilt_v2")
     _seed_done = True
 
 
@@ -116,4 +122,4 @@ def health(request: Request) -> JSONResponse:
 if __name__ == "__main__":
     import uvicorn
 
-    uvicorn.run("backend.app.main:app", host="127.0.0.1", port=8000, reload=True)
+    uvicorn.run("backend.app.main:app", host="127.0.0.1", port=8002, reload=True)

@@ -7,21 +7,33 @@ const api = axios.create({
   headers: { "Content-Type": "application/json" },
 });
 
-// ── 获取用户ID（从 localStorage） ──
-function getUserId() {
+// ── 获取认证信息（从 localStorage） ──
+function getStoredState() {
   try {
-    const stored = JSON.parse(localStorage.getItem("job-galaxy-store"));
-    return stored?.state?.userId || null;
+    return JSON.parse(localStorage.getItem("job-galaxy-store"))?.state || {};
   } catch {
-    return null;
+    return {};
   }
+}
+
+function getToken() {
+  return getStoredState().token || null;
+}
+
+function getUserId() {
+  return getStoredState().userId || null;
 }
 
 // ── 全局请求拦截器 ──
 api.interceptors.request.use(
   (config) => {
     NProgress.start();
-    // 自动附加用户ID
+    // 优先使用 JWT token
+    const token = getToken();
+    if (token) {
+      config.headers["Authorization"] = `Bearer ${token}`;
+    }
+    // 兼容：也附加 X-User-ID
     const userId = getUserId();
     if (userId) {
       config.headers["X-User-ID"] = userId;
@@ -47,6 +59,20 @@ api.interceptors.response.use(
   },
   (error) => {
     NProgress.done();
+
+    // 401 未授权 → 清除登录状态，跳转到登录页
+    if (error.response?.status === 401) {
+      try {
+        const stored = JSON.parse(localStorage.getItem("job-galaxy-store"));
+        if (stored?.state?.isAuthenticated) {
+          stored.state.token = null;
+          stored.state.user = null;
+          stored.state.isAuthenticated = false;
+          localStorage.setItem("job-galaxy-store", JSON.stringify(stored));
+          window.location.href = "/login";
+        }
+      } catch {}
+    }
 
     // 超时处理
     const isTimeout = error.code === "ECONNABORTED" || error.message?.includes("timeout");
@@ -167,6 +193,15 @@ export const getLearningAdvice = (matchId) =>
     api.post("/learning-advice", { match_id: matchId })
   );
 
+// ── Auto Match (智能推荐) ─────────────────────────────
+export const autoMatch = (documentId, topN = 5, filters = {}, maxPerCompany = 2) =>
+  api.post("/auto-match", {
+    document_id: documentId,
+    top_n: topN,
+    filters,
+    max_per_company: maxPerCompany,
+  }, { timeout: 180000 });
+
 // ── Intelligence Contracts ─────────────────────────────
 export const retrieveDocumentEvidence = (query, documentIds, filters = {}) =>
   requestWithRetry(() =>
@@ -175,6 +210,26 @@ export const retrieveDocumentEvidence = (query, documentIds, filters = {}) =>
       document_ids: documentIds,
       filters,
     })
+  );
+
+// ── Knowledge Graph (Neo4j-backed) ─────────────────────
+export const createKnowledgeGraph = (payload) =>
+  requestWithRetry(() => api.post("/knowledge-graphs", payload));
+
+export const getKnowledgeGraph = (id) =>
+  requestWithRetry(() => api.get(`/knowledge-graphs/${id}`));
+
+export const graphRetrieval = (graphId, query, seedEntityIds = [], relationTypes = []) =>
+  requestWithRetry(() =>
+    api.post(
+      `/graph-retrievals`,
+      {
+        query,
+        seed_entity_ids: seedEntityIds,
+        relation_types: relationTypes,
+      },
+      { params: { graph_id: graphId }, timeout: 60000 }
+    )
   );
 
 export const discoverPositions = (documentIds, options = {}) =>
@@ -240,6 +295,13 @@ export const answerRAG = (query, docIds = [], topK = 5) =>
 
 // ── Users ─────────────────────────────────────────────
 export const initUser = () => api.post("/users/init");
+
+// ── Auth ──────────────────────────────────────────────
+export const authAPI = {
+  register: (data) => api.post("/auth/register", data),
+  login: (data) => api.post("/auth/login", data),
+  getMe: () => api.get("/auth/me"),
+};
 
 export const listUserDocuments = (userId, documentType = null, offset = 0, limit = 50) => {
   const params = { offset, limit };

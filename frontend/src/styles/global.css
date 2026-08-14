@@ -865,3 +865,96 @@ a:hover {
     font-size: 14px !important;
   }
 }
+
+/* ── 登录页面 ── */
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-base);
+  background-image:
+    radial-gradient(ellipse at 20% 50%, rgba(77, 214, 255, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 50%, rgba(123, 97, 255, 0.08) 0%, transparent 50%);
+  padding: 24px;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 420px;
+  background: var(--bg-glass);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-lg);
+  padding: 40px 32px;
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  box-shadow: var(--shadow-card);
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.login-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.login-logo .logo-icon {
+  font-size: 32px;
+  filter: drop-shadow(0 0 8px rgba(77, 214, 255, 0.4));
+}
+
+.login-logo h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  background: var(--gradient-accent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.login-subtitle {
+  margin: 0;
+  font-size: 13px;
+  color: var(--text-secondary);
+  letter-spacing: 0.04em;
+}
+
+.login-tabs .ant-tabs-nav {
+  margin-bottom: 24px;
+}
+
+.login-tabs .ant-tabs-tab {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.login-tabs .ant-form-item {
+  margin-bottom: 20px;
+}
+
+.login-tabs .ant-radio-group {
+  display: flex;
+  width: 100%;
+}
+
+.login-tabs .ant-radio-button-wrapper {
+  flex: 1;
+  text-align: center;
+}
+
+[data-theme="light"] .login-page {
+  background: #f5f5f5;
+}
+
+[data-theme="light"] .login-card {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+}

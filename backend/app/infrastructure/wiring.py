@@ -2,10 +2,13 @@
 
 from __future__ import annotations
 
+import logging
 from dataclasses import dataclass
 from os import getenv
 from pathlib import Path
 from typing import Any
+
+logger = logging.getLogger(__name__)
 
 from backend.app.application.use_cases.contract_facade import ContractFacade
 from backend.app.data_governance import DataGovernanceService
@@ -159,7 +162,10 @@ def build_container(
         raise ValueError("GRAPH_BACKEND must be either 'mock' or 'neo4j'")
 
     governance_root = data_governance_root or getenv("DATA_GOVERNANCE_ROOT", "data")
-    if db_backend == "sqlite":
+    if db_backend == "sqlite" and graph_backend != "neo4j":
+        # With SQLite persistence and no Neo4j, fall back to the pre-built
+        # graph files on disk. When GRAPH_BACKEND=neo4j the Neo4j builder
+        # selected above must be kept so graphs are actually persisted there.
         graph_builder = SQLiteKnowledgeGraphBuilder(repository, data_root=governance_root)
     data_governance = DataGovernanceService(
         root=governance_root,
@@ -181,6 +187,25 @@ def build_container(
         profile_artifact_root or getenv("PROFILE_ARTIFACT_ROOT") or Path(governance_root) / "structured" / "profiles"
     )
     capabilities = capability_catalog(**capability_options)
+
+    # ── Embedding recall (Qwen3-Embedding-4B, optional) ──
+    embedding_service = None
+    vector_index = None
+    try:
+        from backend.app.infrastructure.embeddings.service import (
+            VectorIndex,
+            default_index_dir,
+            embedding_config_from_env,
+            get_embedding_service,
+        )
+
+        embed_config = embedding_config_from_env()
+        if embed_config is not None:
+            embedding_service = get_embedding_service(embed_config)
+            vector_index = VectorIndex.load(default_index_dir(governance_root))
+    except Exception as exc:  # pragma: no cover - embedding is optional
+        logger.warning("Embedding recall disabled: %s", exc)
+
     facade = ContractFacade(
         repository=repository,
         extractor=extractor,
@@ -197,5 +222,7 @@ def build_container(
         data_governance=data_governance,
         capabilities=capabilities,
         profile_artifact_store=profile_artifacts,
+        embedding_service=embedding_service,
+        vector_index=vector_index,
     )
     return ApplicationContainer(repository=repository, data_governance=data_governance, facade=facade)

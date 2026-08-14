@@ -32,6 +32,7 @@ import {
   InboxOutlined,
   DeleteOutlined,
   FileTextOutlined,
+  StarOutlined,
 } from "@ant-design/icons";
 import {
   createDocument,
@@ -43,7 +44,9 @@ import {
   deleteDocument,
   initUser,
   listUserDocuments,
+  autoMatch,
 } from "../api/client";
+import RecommendList from "../components/RecommendList";
 import useStore from "../store/useStore";
 import OCRCorrectionModal from "../components/OCRCorrectionModal";
 
@@ -132,6 +135,31 @@ export default function ResumeManage() {
   // ── OCR 校正状态 ──
   const [ocrCorrection, setOcrCorrection] = useState(null);
   const [generatingTasks, setGeneratingTasks] = useState({}); // { docId: taskId }
+
+  // ── 智能推荐状态 ──
+  const [recommendModal, setRecommendModal] = useState(null); // { docId, title }
+  const [recommendations, setRecommendations] = useState([]);
+  const [recommendLoading, setRecommendLoading] = useState(false);
+
+  async function handleAutoMatch(doc) {
+    const docId = doc.document_id || doc.id;
+    const title = doc.title || "简历";
+    setRecommendModal({ docId, title });
+    setRecommendations([]);
+    setRecommendLoading(true);
+    try {
+      const res = await autoMatch(docId, 5);
+      const data = res.data.data;
+      setRecommendations(data.recommendations || []);
+      if (!data.recommendations?.length) {
+        message.info("暂无匹配的 JD 推荐");
+      }
+    } catch (e) {
+      message.error("智能推荐失败: " + (e.response?.data?.error?.message || e.message));
+    } finally {
+      setRecommendLoading(false);
+    }
+  }
 
   // ── 批量上传状态 ──
   const [batchFiles, setBatchFiles] = useState([]);
@@ -575,6 +603,15 @@ export default function ResumeManage() {
           >
             查看
           </Button>
+          <Button
+            size="small"
+            type="primary"
+            ghost
+            icon={<StarOutlined />}
+            onClick={() => handleAutoMatch(record)}
+          >
+            智能推荐
+          </Button>
           <Popconfirm
             title="确定删除该简历？"
             description="删除后不可恢复，关联的画像也会一并删除。"
@@ -924,6 +961,26 @@ export default function ResumeManage() {
             )}
           </div>
         )}
+      </Modal>
+
+      {/* 智能推荐 JD 弹窗 */}
+      <Modal
+        title={
+          <span>
+            <StarOutlined style={{ color: "#faad14", marginRight: 8 }} />
+            智能推荐 JD — {recommendModal?.title}
+          </span>
+        }
+        open={!!recommendModal}
+        onCancel={() => setRecommendModal(null)}
+        footer={null}
+        width={780}
+      >
+        <RecommendList
+          recommendations={recommendations}
+          loading={recommendLoading}
+          type="jd"
+        />
       </Modal>
     </div>
   );

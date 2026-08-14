@@ -9,11 +9,37 @@ function generateUserId() {
 const useStore = create(
   persist(
     (set, get) => ({
+      // ── Auth ──
+      token: null,
+      user: null, // { user_id, username, role, display_name }
+      isAuthenticated: false,
+
+      login: (token, user) =>
+        set({
+          token,
+          user,
+          isAuthenticated: true,
+          userId: user.user_id,
+        }),
+
+      logout: () =>
+        set({
+          token: null,
+          user: null,
+          isAuthenticated: false,
+        }),
+
       // ── User identity ──
       userId: null,
       initUserId: () => {
         const existing = get().userId;
         if (existing) return existing;
+        // If authenticated, use the authenticated user_id
+        const { user } = get();
+        if (user?.user_id) {
+          set({ userId: user.user_id });
+          return user.user_id;
+        }
         const id = generateUserId();
         set({ userId: id });
         return id;
@@ -83,6 +109,26 @@ const useStore = create(
         set({ lastMatchInputs: inputs, lastMatchResult: result }),
       clearLastMatch: () => set({ lastMatchInputs: null, lastMatchResult: null }),
 
+      // ── 智能推荐缓存（按文档持久化，返回页面/切换文档时免重新生成）──
+      // 版本号：推荐逻辑升级（如候选池规则变化）后 +1，使旧前端缓存自动失效
+      recommendCache: {}, // documentId -> { documentId, direction, topN, filters, maxPerCompany, recommendations, meta, inputDocument, savedAt, version }
+      lastRecommendDocId: null,
+      saveRecommendation: (documentId, payload) =>
+        set((s) => {
+          const next = {
+            ...s.recommendCache,
+            [documentId]: { ...payload, version: 2 },
+          };
+          const keys = Object.keys(next);
+          // 最多保留 20 个文档的推荐结果（FIFO）
+          while (keys.length > 20) {
+            delete next[keys.shift()];
+          }
+          return { recommendCache: next, lastRecommendDocId: documentId };
+        }),
+      setLastRecommendDocId: (documentId) =>
+        set({ lastRecommendDocId: documentId }),
+
       // ── UI State ──
       loading: false,
       setLoading: (v) => set({ loading: v }),
@@ -149,7 +195,12 @@ const useStore = create(
         jobProfileCache: state.jobProfileCache,
         lastMatchInputs: state.lastMatchInputs,
         lastMatchResult: state.lastMatchResult,
+        recommendCache: state.recommendCache,
+        lastRecommendDocId: state.lastRecommendDocId,
         customJDs: state.customJDs,
+        token: state.token,
+        user: state.user,
+        isAuthenticated: state.isAuthenticated,
       }),
     }
   )

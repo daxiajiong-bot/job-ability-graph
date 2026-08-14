@@ -105,6 +105,70 @@ class SQLiteResourceRepository:
         self._db.commit()
         return user_id
 
+    def create_user(self, user_id: str, username: str, password_hash: str,
+                    role: str = "job_seeker", display_name: str | None = None) -> dict:
+        """Create a new user with auth credentials. Returns user dict."""
+        now = _utc_now()
+        try:
+            self._db.execute(
+                """INSERT INTO users (user_id, username, password_hash, role, display_name, created_at, last_active_at)
+                   VALUES (?, ?, ?, ?, ?, ?, ?)""",
+                (user_id, username, password_hash, role, display_name, now, now),
+            )
+            self._db.commit()
+        except Exception as e:
+            if "UNIQUE" in str(e) and "username" in str(e):
+                raise ResourceConflictError(f"用户名 '{username}' 已被注册")
+            raise
+        return {
+            "user_id": user_id,
+            "username": username,
+            "role": role,
+            "display_name": display_name,
+        }
+
+    def get_user_by_username(self, username: str) -> dict | None:
+        """Get user by username. Returns dict or None."""
+        row = self._db.execute(
+            "SELECT user_id, username, password_hash, role, display_name FROM users WHERE username = ?",
+            (username,),
+        ).fetchone()
+        if row is None:
+            return None
+        return {
+            "user_id": row[0],
+            "username": row[1],
+            "password_hash": row[2],
+            "role": row[3],
+            "display_name": row[4],
+        }
+
+    def get_user_by_id(self, user_id: str) -> dict | None:
+        """Get user by user_id. Returns dict or None."""
+        row = self._db.execute(
+            "SELECT user_id, username, role, display_name, created_at FROM users WHERE user_id = ?",
+            (user_id,),
+        ).fetchone()
+        if row is None:
+            return None
+        return {
+            "user_id": row[0],
+            "username": row[1],
+            "role": row[2],
+            "display_name": row[3],
+            "created_at": row[4],
+        }
+
+    def get_user_document_count(self, user_id: str) -> dict:
+        """Count documents visible to a user (system + own)."""
+        rows = self._db.execute(
+            """SELECT document_type, COUNT(*) FROM documents
+               WHERE user_id = 'system' OR user_id = ?
+               GROUP BY document_type""",
+            (user_id,),
+        ).fetchall()
+        return {row[0]: row[1] for row in rows}
+
     # ── Document operations ──────────────────────────────
 
     def add_document(self, document: SourceDocument, user_id: str = "system") -> SourceDocument:
@@ -226,6 +290,195 @@ class SQLiteResourceRepository:
             "user_resumes": resume_row[0] if resume_row else 0,
             "system_jds": system_jd_row[0] if system_jd_row else 0,
         }
+
+    def search_documents_by_skills(
+        self,
+        skills: list[str],
+        document_type: str,
+        user_id: str,
+        exclude_doc_id: str | None = None,
+        limit: int = 20,
+    ) -> list[dict]:
+        """Search documents by skill keywords, ranked by number of matching skills.
+
+        Uses the ``skills`` JSON column stored on each document row.
+        Returns a list of dicts with ``document`` and ``match_count`` keys.
+        """
+        if not skills:
+            return []
+
+        # Build SQL: count how many input skills appear in the document's skills field
+        # skills column is a JSON array string like '["Python", "React", ...]'
+        score_params: list[Any] = []
+        for skill in skills[:30]:  # cap to avoid huge queries
+            pattern = f"%{skill}%"
+            score_params.extend([pattern, pattern, pattern])
+
+        score_expr = " + ".join(
+            f"CASE WHEN (skills LIKE ? OR title LIKE ? OR text LIKE ?) THEN 1 ELSE 0 END"
+            for _ in skills[:30]
+        )
+
+        where_parts = [
+            "(user_id = 'system' OR user_id = ?)",
+            "document_type = ?",
+        ]
+        where_params: list[Any] = [user_id, document_type]
+
+        if exclude_doc_id:
+            where_parts.append("id != ?")
+            where_params.append(exclude_doc_id)
+
+        where_clause = " AND ".join(where_parts)
+
+        sql = f"""
+            SELECT * FROM (
+                SELECT *, ({score_expr}) as match_score
+                FROM documents
+                WHERE {where_clause}
+            )
+            WHERE match_score > 0
+            ORDER BY match_score DESC
+            LIMIT ?
+        """
+        # Bind in text order: score-expression params first, then WHERE params.
+        query_params = [*score_params, *where_params, limit]
+
+        rows = self._db.execute(sql, tuple(query_params)).fetchall()
+        results = []
+        for row in rows:
+            row_dict = dict(row)
+            match_score = row_dict.pop("match_score", 0)
+            doc = DocumentRow(**{k: row_dict[k] for k in row_dict if k != "match_score"}).to_public()
+            results.append({"document": doc, "match_count": match_score})
+        return results
+
+    def search_documents_for_recommendation(
+        self,
+        skills: list[str],
+        document_type: str,
+        user_id: str,
+        exclude_doc_id: str | None = None,
+        limit: int = 40,
+        filters: dict[str, Any] | None = None,
+        include_hr_documents: bool = False,
+    ) -> list[dict]:
+        """Recommendation-oriented candidate search.
+
+        Same skill-overlap scoring as :meth:`search_documents_by_skills`, but:
+        - searches the union of system documents and the current user's documents,
+        - optionally includes documents uploaded by HR users (recruiter postings),
+        - supports lightweight ``filters`` (LIKE clauses on metadata columns).
+
+        Filters may contain: ``location``, ``industry``, ``company_name``,
+        ``keyword`` (title/text), ``experience`` and ``education``. Numeric
+        filters (``salary_min``/``salary_max``/``years_min``) are applied by
+        the caller after retrieval because salary ranges are free text.
+        """
+        if not skills:
+            return []
+
+        score_expr_parts = []
+        for skill in skills[:30]:
+            score_expr_parts.append("(skills LIKE ? OR title LIKE ? OR text LIKE ?)")
+
+        visibility = "((user_id = 'system' OR user_id = ?)"
+        if include_hr_documents:
+            visibility += " OR user_id IN (SELECT user_id FROM users WHERE role = 'hr'))"
+        else:
+            visibility += ")"
+        where_parts = [
+            visibility,
+            "document_type = ?",
+        ]
+        where_params: list[Any] = [user_id, document_type]
+
+        # Optional text filters → ANDed LIKE clauses
+        text_filters = {
+            "location": "location",
+            "industry": "industry",
+            "company_name": "company_name",
+            "experience": "experience",
+            "education": "education",
+        }
+        filters = filters or {}
+        for key, column in text_filters.items():
+            value = filters.get(key)
+            if not value:
+                continue
+            where_parts.append(f"{column} LIKE ?")
+            where_params.append(f"%{str(value).strip()}%")
+
+        keyword = filters.get("keyword")
+        if keyword:
+            where_parts.append("(title LIKE ? OR text LIKE ?)")
+            pattern = f"%{str(keyword).strip()}%"
+            where_params.extend([pattern, pattern])
+
+        if exclude_doc_id:
+            where_parts.append("id != ?")
+            where_params.append(exclude_doc_id)
+
+        where_clause = " AND ".join(where_parts)
+        score_expr = " + ".join(score_expr_parts)
+        score_params = []
+        for skill in skills[:30]:
+            pattern = f"%{skill}%"
+            score_params.extend([pattern, pattern, pattern])
+
+        sql = f"""
+            SELECT * FROM (
+                SELECT *, ({score_expr}) as match_score
+                FROM documents
+                WHERE {where_clause}
+            )
+            WHERE match_score > 0
+            ORDER BY match_score DESC
+            LIMIT ?
+        """
+        # Bind in text order: score-expression params first, then WHERE params.
+        query_params = [*score_params, *where_params, limit]
+
+        rows = self._db.execute(sql, tuple(query_params)).fetchall()
+        results = []
+        for row in rows:
+            row_dict = dict(row)
+            match_score = row_dict.pop("match_score", 0)
+            doc = DocumentRow(**{k: row_dict[k] for k in row_dict if k != "match_score"}).to_public()
+            results.append({"document": doc, "match_count": match_score})
+        return results
+
+    def get_documents_by_ids(self, document_ids: list[str]) -> dict[str, dict]:
+        """Fetch multiple documents by id; returns {id: public_dict}."""
+        if not document_ids:
+            return {}
+        placeholders = ",".join("?" for _ in document_ids)
+        rows = self._db.execute(
+            f"SELECT * FROM documents WHERE id IN ({placeholders})",
+            tuple(document_ids),
+        ).fetchall()
+        return {
+            row["id"]: DocumentRow(**dict(row)).to_public()
+            for row in rows
+        }
+
+    def get_profiles_by_document_ids(self, document_ids: list[str], profile_type: str) -> dict[str, dict]:
+        """Get profiles for multiple document IDs. Returns {document_id: profile_public_dict}."""
+        if not document_ids:
+            return {}
+        placeholders = ",".join("?" for _ in document_ids)
+        rows = self._db.execute(
+            f"""SELECT * FROM profiles
+                WHERE document_id IN ({placeholders}) AND profile_type = ?""",
+            (*document_ids, profile_type),
+        ).fetchall()
+        result = {}
+        for row in rows:
+            row_dict = dict(row)
+            profile_row = ProfileRow(**row_dict)
+            profile = self._row_to_profile(profile_row)
+            result[row_dict["document_id"]] = profile.public()
+        return result
 
     # ── Profile operations ───────────────────────────────
 
@@ -418,6 +671,75 @@ class SQLiteResourceRepository:
             implementation=row["implementation"],
             created_at=row["created_at"],
         )
+
+    # ── Recommendation cache ─────────────────────────────
+
+    def get_recommendation(
+        self,
+        user_id: str,
+        input_document_id: str,
+        top_n: int,
+        filters: str | None,
+        max_per_company: int,
+    ) -> dict | None:
+        """Return a cached auto-match result or None.
+
+        Returns ``{"result": dict, "created_at": str}`` on a hit.
+        """
+        row = self._db.execute(
+            """SELECT result, created_at FROM recommendations
+               WHERE user_id = ? AND input_document_id = ?
+                 AND top_n = ? AND filters IS ? AND max_per_company = ?
+               LIMIT 1""",
+            (user_id, input_document_id, top_n, filters, max_per_company),
+        ).fetchone()
+        if row is None:
+            return None
+        try:
+            return {"result": json.loads(row["result"]), "created_at": row["created_at"]}
+        except (json.JSONDecodeError, TypeError):
+            return None
+
+    def save_recommendation(
+        self,
+        user_id: str,
+        input_document_id: str,
+        direction: str,
+        top_n: int,
+        filters: str | None,
+        max_per_company: int,
+        result: dict,
+    ) -> dict:
+        """Persist (or refresh) an auto-match result under its cache key."""
+        from backend.app.domain.entities import resource_id, utc_now
+
+        rec_id = resource_id("rec")
+        now = utc_now()
+        self._db.execute(
+            """INSERT INTO recommendations
+               (id, user_id, input_document_id, direction, top_n, filters,
+                max_per_company, result, created_at)
+               VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+               ON CONFLICT(user_id, input_document_id, top_n, filters, max_per_company)
+               DO UPDATE SET result = excluded.result, created_at = excluded.created_at""",
+            (
+                rec_id, user_id, input_document_id, direction, top_n, filters,
+                max_per_company, json.dumps(result, ensure_ascii=False), now,
+            ),
+        )
+        self._db.commit()
+        return {"result": result, "created_at": now}
+
+    def list_recommendations(self, user_id: str, limit: int = 20) -> list[dict]:
+        """Recent cached recommendations for a user (newest first)."""
+        rows = self._db.execute(
+            """SELECT id, input_document_id, direction, top_n, filters,
+                      max_per_company, created_at
+               FROM recommendations WHERE user_id = ?
+               ORDER BY created_at DESC LIMIT ?""",
+            (user_id, limit),
+        ).fetchall()
+        return [dict(row) for row in rows]
 
     def recover_stale_tasks(self, max_age_seconds: int = 300) -> int:
         """Mark profile tasks left running after a crashed/reloaded worker as failed."""

@@ -231,3 +231,7 @@ __marimo__/
 data/app.db
 data/app.db-shm
 data/app.db-wal
+
+# Test scratch dirs (created at runtime by unit tests)
+tests/unit/.tmp/
+

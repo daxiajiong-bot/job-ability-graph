@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Outlet, useNavigate, useLocation } from "react-router-dom";
-import { Layout as AntLayout, Menu, Typography, theme, Badge, Tooltip } from "antd";
+import { Layout as AntLayout, Menu, Typography, theme, Badge, Tooltip, Dropdown, Tag, Button } from "antd";
 import {
   DashboardOutlined,
   FileTextOutlined,
@@ -10,28 +10,47 @@ import {
   SettingOutlined,
   StarOutlined,
   ThunderboltOutlined,
+  LogoutOutlined,
+  TeamOutlined,
+  ShareAltOutlined,
 } from "@ant-design/icons";
 import useStore from "../store/useStore";
 
 const { Sider, Content, Header } = AntLayout;
 
-const MENU_ITEMS = [
+const ALL_MENU_ITEMS = [
   { key: "/", icon: <DashboardOutlined />, label: "数据概览" },
-  { key: "/jd", icon: <FileTextOutlined />, label: "JD 管理" },
-  { key: "/resume", icon: <UserOutlined />, label: "简历管理" },
+  { key: "/jd", icon: <FileTextOutlined />, label: "JD 管理", roles: ["hr"] },
+  { key: "/resume", icon: <UserOutlined />, label: "简历管理", roles: ["job_seeker"] },
   { key: "/match", icon: <SwapOutlined />, label: "人岗匹配" },
+  { key: "/recommend", icon: <StarOutlined />, label: "智能推荐" },
   { key: "/history", icon: <HistoryOutlined />, label: "匹配历史" },
   { key: "/starmap", icon: <StarOutlined />, label: "岗位星图" },
+  { key: "/graph", icon: <ShareAltOutlined />, label: "知识图谱" },
   { key: "/settings", icon: <SettingOutlined />, label: "系统设置" },
 ];
 
+// 角色标签配置
+const ROLE_CONFIG = {
+  job_seeker: { label: "求职者", color: "blue", icon: <TeamOutlined /> },
+  hr: { label: "HR", color: "green", icon: <UserOutlined /> },
+};
+
 export default function Layout() {
-  const { settings } = useStore();
+  const { settings, user, logout } = useStore();
   const [collapsed, setCollapsed] = useState(settings.sidebarCollapsed ?? false);
   const navigate = useNavigate();
   const location = useLocation();
   const { token } = theme.useToken();
   const [currentTime, setCurrentTime] = useState(new Date());
+
+  const role = user?.role || "job_seeker";
+  const roleConfig = ROLE_CONFIG[role] || ROLE_CONFIG.job_seeker;
+
+  // 根据角色过滤菜单
+  const menuItems = ALL_MENU_ITEMS.filter(
+    (item) => !item.roles || item.roles.includes(role)
+  );
 
   // 同步侧边栏折叠状态
   useEffect(() => {
@@ -44,7 +63,36 @@ export default function Layout() {
   }, []);
 
   // 获取当前页面标题
-  const currentPageTitle = MENU_ITEMS.find((item) => item.key === location.pathname)?.label || "数据概览";
+  const currentPageTitle = menuItems.find((item) => item.key === location.pathname)?.label || "数据概览";
+
+  const handleLogout = () => {
+    logout();
+    navigate("/login", { replace: true });
+  };
+
+  // 用户下拉菜单
+  const userDropdownItems = [
+    {
+      key: "info",
+      label: (
+        <div style={{ padding: "4px 0" }}>
+          <div style={{ fontWeight: 600 }}>{user?.display_name || user?.username}</div>
+          <div style={{ fontSize: 12, color: token.colorTextSecondary }}>
+            {roleConfig.label} · {user?.username}
+          </div>
+        </div>
+      ),
+      disabled: true,
+    },
+    { type: "divider" },
+    {
+      key: "logout",
+      icon: <LogoutOutlined />,
+      label: "退出登录",
+      danger: true,
+      onClick: handleLogout,
+    },
+  ];
 
   return (
     <AntLayout style={{ height: "100vh", overflow: "hidden" }}>
@@ -118,7 +166,7 @@ export default function Layout() {
         <Menu
           mode="inline"
           selectedKeys={[location.pathname]}
-          items={MENU_ITEMS}
+          items={menuItems}
           onClick={({ key }) => navigate(key)}
           style={{
             borderRight: 0,
@@ -182,7 +230,7 @@ export default function Layout() {
             style={{
               display: "flex",
               alignItems: "center",
-              gap: 12,
+              gap: 16,
             }}
           >
             <Tooltip title="系统运行正常">
@@ -193,6 +241,43 @@ export default function Layout() {
             >
               在线
             </Typography.Text>
+
+            {/* 用户信息 + 退出 */}
+            <Dropdown
+              menu={{ items: userDropdownItems }}
+              placement="bottomRight"
+              trigger={["click"]}
+            >
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: 8,
+                  cursor: "pointer",
+                  padding: "4px 12px",
+                  borderRadius: 8,
+                  transition: "background 0.2s",
+                  marginLeft: 8,
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.background = token.colorBgTextHover;
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.background = "transparent";
+                }}
+              >
+                <Tag
+                  color={roleConfig.color}
+                  icon={roleConfig.icon}
+                  style={{ margin: 0, fontSize: 11 }}
+                >
+                  {roleConfig.label}
+                </Tag>
+                <Typography.Text style={{ fontSize: 13, fontWeight: 500 }}>
+                  {user?.display_name || user?.username}
+                </Typography.Text>
+              </div>
+            </Dropdown>
           </div>
         </Header>
 

@@ -131,3 +131,80 @@ def get_seed_status(db: DatabaseManager) -> dict[str, int]:
         "SELECT COUNT(*) FROM documents WHERE user_id = 'system' AND document_type = 'jd'"
     ).fetchone()
     return {"system_jd_count": row[0] if row else 0}
+
+
+PREBUILT_GRAPH_ID = "kg_prebuilt_v2"
+
+
+def ensure_prebuilt_graph(repository, data_root: str | Path) -> bool:
+    """Register the pre-built knowledge graph as a queryable snapshot.
+
+    Loads ``small_raw_200_lskt_tech_v2`` (also imported into Neo4j by
+    ``scripts/import_prebuilt_kg.py``) into the repository so that
+    ``GET /api/v1/knowledge-graphs/kg_prebuilt_v2`` returns real graph data and
+    ``POST /api/v1/graph-retrievals`` (graph_id=kg_prebuilt_v2) queries Neo4j.
+
+    Returns True when the snapshot was registered, False when it already
+    existed or the graph files were missing.
+    """
+    from backend.app.domain.entities import KnowledgeGraphSnapshot
+
+    if hasattr(repository, "get_graph"):
+        try:
+            repository.get_graph(PREBUILT_GRAPH_ID)
+            return False  # already registered
+        except Exception:
+            pass
+
+    graph_dir = Path(data_root) / "small_raw_200_lskt_tech_v2"
+    nodes_file = graph_dir / "graph_nodes.jsonl"
+    edges_file = graph_dir / "graph_edges.jsonl"
+    if not nodes_file.exists() or not edges_file.exists():
+        return False
+
+    nodes: list[dict] = []
+    for line in nodes_file.read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if not line:
+            continue
+        try:
+            node = json.loads(line)
+        except json.JSONDecodeError:
+            continue
+        node_id = node.get("node_id", "")
+        label = node.get("label", "")
+        props = dict(node.get("properties") or {})
+        name = props.get("name") or props.get("title") or node_id
+        nodes.append({"id": node_id, "label": label, "type": label, "name": name, "properties": props})
+
+    edges: list[dict] = []
+    for line in edges_file.read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if not line:
+            continue
+        try:
+            edge = json.loads(line)
+        except json.JSONDecodeError:
+            continue
+        edges.append({
+            "source": edge.get("source_id", ""),
+            "target": edge.get("target_id", ""),
+            "type": edge.get("relation_type", ""),
+            "relation_type": edge.get("relation_type", ""),
+            "evidence_ids": edge.get("evidence_ids", []),
+            "properties": dict(edge.get("properties") or {}),
+        })
+
+    snapshot = KnowledgeGraphSnapshot(
+        id=PREBUILT_GRAPH_ID,
+        document_ids=[],
+        candidate_profile_ids=[],
+        job_profile_ids=[],
+        nodes=nodes,
+        edges=edges,
+        state="available",
+        implementation="neo4j",
+        created_at=_utc_now_iso(),
+    )
+    repository.add_graph(snapshot)
+    return True
