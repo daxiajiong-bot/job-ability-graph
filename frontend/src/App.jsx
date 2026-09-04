@@ -11,6 +11,7 @@ import ResumeManage from "./pages/ResumeManage";
 import MatchResult from "./pages/MatchResult";
 import MatchHistory from "./pages/MatchHistory";
 import RecommendPage from "./pages/RecommendPage";
+import DiscoverPage from "./pages/DiscoverPage";
 import KnowledgeGraph from "./pages/KnowledgeGraph";
 import StarMap from "./pages/StarMap";
 import Settings from "./pages/Settings";
@@ -115,6 +116,15 @@ function ThemedApp() {
           />
           <Route path="match" element={<MatchResult />} />
           <Route path="recommend" element={<RecommendPage />} />
+          {/* 新岗位发现仅供 HR：审核通过的新岗位会入库供求职者参考 */}
+          <Route
+            path="discover"
+            element={
+              <RoleRoute allowedRoles={["hr"]}>
+                <DiscoverPage />
+              </RoleRoute>
+            }
+          />
           <Route path="history" element={<MatchHistory />} />
           <Route path="starmap" element={<StarMap />} />
           <Route path="graph" element={<KnowledgeGraph />} />

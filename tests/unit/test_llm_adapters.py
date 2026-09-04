@@ -6,6 +6,8 @@ from types import SimpleNamespace
 
 from backend.app.domain.entities import DocumentType, ProfileType, SourceDocument
 from backend.app.infrastructure.llm import (
+    GraphRAGLearningAdvisor,
+    LLMLearningAdvisor,
     LLMProfileBuilder,
     LLMMatcher,
     LLMSettings,
@@ -118,6 +120,52 @@ class LLMAdapterTest(unittest.TestCase):
 
         self.assertEqual(result["state"], "available")
         self.assertEqual(result["implementation"], "deterministic_matcher_fallback")
+
+
+    def test_learning_advisors_use_dedicated_timeout(self) -> None:
+        settings = LLMSettings(
+            backend="ollama",
+            base_url="http://127.0.0.1:11434/v1",
+            api_key="ollama",
+            model="qwen2.5:7b",
+            timeout_seconds=60,
+            max_input_chars=12000,
+            learning_timeout_seconds=240,
+        )
+
+        llm_advisor = LLMLearningAdvisor(settings)
+        graph_advisor = GraphRAGLearningAdvisor(settings)
+
+        self.assertEqual(llm_advisor.chat_client.settings.timeout_seconds, 240)
+        self.assertEqual(graph_advisor.chat_client.settings.timeout_seconds, 240)
+
+    def test_learning_advisor_returns_fallback_when_llm_times_out(self) -> None:
+        advisor = LLMLearningAdvisor(_settings(), FakeChatClient(exc=TimeoutError("timed out")))
+
+        result = advisor.generate({
+            "score": 42,
+            "gaps": [{"text": "SQL", "importance": "required"}],
+            "learning_path": [],
+        })
+
+        self.assertEqual(result["state"], "available")
+        self.assertEqual(result["implementation"], "llm_learning_advisor_fallback")
+        self.assertEqual(result["skill_gaps"][0]["skill"], "SQL")
+        self.assertEqual(result["skill_gaps"][0]["priority"], "high")
+        self.assertIn("timed out", result["warnings"][0])
+
+    def test_graph_learning_advisor_fallback_keeps_graph_context(self) -> None:
+        advisor = GraphRAGLearningAdvisor(_settings(), FakeChatClient(exc=TimeoutError("timed out")))
+
+        result = advisor.generate({
+            "score": 35,
+            "gaps": [{"text": "Python", "importance": "preferred"}],
+        })
+
+        self.assertEqual(result["state"], "available")
+        self.assertEqual(result["implementation"], "graph_rag_learning_advisor_fallback")
+        self.assertIn("graph_context", result)
+        self.assertIn("timed out", result["warnings"][0])
 
     def test_resume_extraction_normalization_and_profile_building(self) -> None:
         document = SourceDocument.create(

@@ -16,18 +16,26 @@ class LLMSettings:
     max_input_chars: int
     match_timeout_seconds: float = 45.0
     profile_timeout_seconds: float = 90.0
+    learning_timeout_seconds: float = 180.0
 
     @classmethod
     def from_env(cls) -> "LLMSettings":
+        timeout_seconds = _env_float("LLM_TIMEOUT_SECONDS", 60.0, minimum=1.0, maximum=600.0)
         return cls(
             backend=getenv("LLM_BACKEND", "mock").strip().lower(),
             base_url=getenv("LLM_BASE_URL", "http://127.0.0.1:11434/v1").strip().rstrip("/"),
             api_key=getenv("LLM_API_KEY", "ollama"),
             model=getenv("LLM_MODEL", "qwen2.5:7b").strip(),
-            timeout_seconds=_env_float("LLM_TIMEOUT_SECONDS", 60.0, minimum=1.0, maximum=600.0),
+            timeout_seconds=timeout_seconds,
             max_input_chars=_env_int("LLM_MAX_INPUT_CHARS", 12000, minimum=1000, maximum=200000),
             match_timeout_seconds=_env_float("LLM_MATCH_TIMEOUT_SECONDS", 45.0, minimum=5.0, maximum=600.0),
             profile_timeout_seconds=_env_float("LLM_PROFILE_TIMEOUT_SECONDS", 90.0, minimum=5.0, maximum=600.0),
+            learning_timeout_seconds=_env_float(
+                "LLM_LEARNING_TIMEOUT_SECONDS",
+                max(180.0, timeout_seconds),
+                minimum=5.0,
+                maximum=600.0,
+            ),
         )
 
 

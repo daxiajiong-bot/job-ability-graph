@@ -1,0 +1,1512 @@
+{
+  "说明": "既有岗位能力图谱输出（子图：岗位 -> 技术/技能/知识 -> 证据），取自预构建图谱快照 kg_prebuilt_v2 的原始 JSONL",
+  "graph_source": "data\\small_raw_200_lskt_tech_v2\\graph_nodes.jsonl",
+  "job": {
+    "id": "job:40857992907",
+    "name": "python自动化测试工程师（双休/福利好）"
+  },
+  "graph": {
+    "nodes": [
+      {
+        "id": "evidence:jd_40857992907:ev_jd_40857992907_0001",
+        "label": "Evidence",
+        "label_cn": "证据",
+        "name": "python自动化测试工程师（双休/福利好）",
+        "properties": {
+          "evidence_id": "ev_jd_40857992907_0001",
+          "quote": "python自动化测试工程师（双休/福利好）",
+          "source_field": "job_title",
+          "sentence_id": "sent_jd_40857992907_0001",
+          "field_start_char": 0,
+          "record_id": "jd_40857992907",
+          "record_type": "jd"
+        }
+      },
+      {
+        "id": "evidence:jd_40857992907:ev_jd_40857992907_0002",
+        "label": "Evidence",
+        "label_cn": "证据",
+        "name": "Python",
+        "properties": {
+          "evidence_id": "ev_jd_40857992907_0002",
+          "quote": "Python",
+          "source_field": "skills_norm",
+          "sentence_id": "sent_jd_40857992907_0002",
+          "field_start_char": null,
+          "record_id": "jd_40857992907",
+          "record_type": "jd"
+        }
+      },
+      {
+        "id": "evidence:jd_40857992907:ev_jd_40857992907_0003",
+        "label": "Evidence",
+        "label_cn": "证据",
+        "name": "C/C++",
+        "properties": {
+          "evidence_id": "ev_jd_40857992907_0003",
+          "quote": "C/C++",
+          "source_field": "skills_norm",
+          "sentence_id": "sent_jd_40857992907_0003",
+          "field_start_char": null,
+          "record_id": "jd_40857992907",
+          "record_type": "jd"
+        }
+      },
+      {
+        "id": "evidence:jd_40857992907:ev_jd_40857992907_0004",
+        "label": "Evidence",
+        "label_cn": "证据",
+        "name": "Linux",
+        "properties": {
+          "evidence_id": "ev_jd_40857992907_0004",
+          "quote": "Linux",
+          "source_field": "skills_norm",
+          "sentence_id": "sent_jd_40857992907_0004",
+          "field_start_char": null,
+          "record_id": "jd_40857992907",
+          "record_type": "jd"
+        }
+      },
+      {
+        "id": "evidence:jd_40857992907:ev_jd_40857992907_0005",
+        "label": "Evidence",
+        "label_cn": "证据",
+        "name": "Windows",
+        "properties": {
+          "evidence_id": "ev_jd_40857992907_0005",
+          "quote": "Windows",
+          "source_field": "skills_norm",
+          "sentence_id": "sent_jd_40857992907_0005",
+          "field_start_char": null,
+          "record_id": "jd_40857992907",
+          "record_type": "jd"
+        }
+      },
+      {
+        "id": "evidence:jd_40857992907:ev_jd_40857992907_0006",
+        "label": "Evidence",
+        "label_cn": "证据",
+        "name": "Oracle",
+        "properties": {
+          "evidence_id": "ev_jd_40857992907_0006",
+          "quote": "Oracle",
+          "source_field": "skills_norm",
+          "sentence_id": "sent_jd_40857992907_0006",
+          "field_start_char": null,
+          "record_id": "jd_40857992907",
+          "record_type": "jd"
+        }
+      },
+      {
+        "id": "evidence:jd_40857992907:ev_jd_40857992907_0007",
+        "label": "Evidence",
+        "label_cn": "证据",
+        "name": "MySQL",
+        "properties": {
+          "evidence_id": "ev_jd_40857992907_0007",
+          "quote": "MySQL",
+          "source_field": "skills_norm",
+          "sentence_id": "sent_jd_40857992907_0007",
+          "field_start_char": null,
+          "record_id": "jd_40857992907",
+          "record_type": "jd"
+        }
+      },
+      {
+        "id": "evidence:jd_40857992907:ev_jd_40857992907_0008",
+        "label": "Evidence",
+        "label_cn": "证据",
+        "name": "SQLServer",
+        "properties": {
+          "evidence_id": "ev_jd_40857992907_0008",
+          "quote": "SQLServer",
+          "source_field": "skills_norm",
+          "sentence_id": "sent_jd_40857992907_0008",
+          "field_start_char": null,
+          "record_id": "jd_40857992907",
+          "record_type": "jd"
+        }
+      },
+      {
+        "id": "evidence:jd_40857992907:ev_jd_40857992907_0009",
+        "label": "Evidence",
+        "label_cn": "证据",
+        "name": "接口自动化测试",
+        "properties": {
+          "evidence_id": "ev_jd_40857992907_0009",
+          "quote": "接口自动化测试",
+          "source_field": "skills_norm",
+          "sentence_id": "sent_jd_40857992907_0009",
+          "field_start_char": null,
+          "record_id": "jd_40857992907",
+          "record_type": "jd"
+        }
+      },
+      {
+        "id": "evidence:jd_40857992907:ev_jd_40857992907_0010",
+        "label": "Evidence",
+        "label_cn": "证据",
+        "name": "UI自动化测试",
+        "properties": {
+          "evidence_id": "ev_jd_40857992907_0010",
+          "quote": "UI自动化测试",
+          "source_field": "skills_norm",
+          "sentence_id": "sent_jd_40857992907_0010",
+          "field_start_char": null,
+          "record_id": "jd_40857992907",
+          "record_type": "jd"
+        }
+      },
+      {
+        "id": "evidence:jd_40857992907:ev_jd_40857992907_0011",
+        "label": "Evidence",
+        "label_cn": "证据",
+        "name": "Python",
+        "properties": {
+          "evidence_id": "ev_jd_40857992907_0011",
+          "quote": "Python",
+          "source_field": "skills_raw",
+          "sentence_id": "sent_jd_40857992907_0011",
+          "field_start_char": null,
+          "record_id": "jd_40857992907",
+          "record_type": "jd"
+        }
+      },
+      {
+        "id": "evidence:jd_40857992907:ev_jd_40857992907_0012",
+        "label": "Evidence",
+        "label_cn": "证据",
+        "name": "C/C++",
+        "properties": {
+          "evidence_id": "ev_jd_40857992907_0012",
+          "quote": "C/C++",
+          "source_field": "skills_raw",
+          "sentence_id": "sent_jd_40857992907_0012",
+          "field_start_char": null,
+          "record_id": "jd_40857992907",
+          "record_type": "jd"
+        }
+      },
+      {
+        "id": "evidence:jd_40857992907:ev_jd_40857992907_0013",
+        "label": "Evidence",
+        "label_cn": "证据",
+        "name": "Linux",
+        "properties": {
+          "evidence_id": "ev_jd_40857992907_0013",
+          "quote": "Linux",
+          "source_field": "skills_raw",
+          "sentence_id": "sent_jd_40857992907_0013",
+          "field_start_char": null,
+          "record_id": "jd_40857992907",
+          "record_type": "jd"
+        }
+      },
+      {
+        "id": "evidence:jd_40857992907:ev_jd_40857992907_0014",
+        "label": "Evidence",
+        "label_cn": "证据",
+        "name": "Windows",
+        "properties": {
+          "evidence_id": "ev_jd_40857992907_0014",
+          "quote": "Windows",
+          "source_field": "skills_raw",
+          "sentence_id": "sent_jd_40857992907_0014",
+          "field_start_char": null,
+          "record_id": "jd_40857992907",
+          "record_type": "jd"
+        }
+      },
+      {
+        "id": "evidence:jd_40857992907:ev_jd_40857992907_0015",
+        "label": "Evidence",
+        "label_cn": "证据",
+        "name": "Oracle",
+        "properties": {
+          "evidence_id": "ev_jd_40857992907_0015",
+          "quote": "Oracle",
+          "source_field": "skills_raw",
+          "sentence_id": "sent_jd_40857992907_0015",
+          "field_start_char": null,
+          "record_id": "jd_40857992907",
+          "record_type": "jd"
+        }
+      },
+      {
+        "id": "evidence:jd_40857992907:ev_jd_40857992907_0016",
+        "label": "Evidence",
+        "label_cn": "证据",
+        "name": "MySQL",
+        "properties": {
+          "evidence_id": "ev_jd_40857992907_0016",
+          "quote": "MySQL",
+          "source_field": "skills_raw",
+          "sentence_id": "sent_jd_40857992907_0016",
+          "field_start_char": null,
+          "record_id": "jd_40857992907",
+          "record_type": "jd"
+        }
+      },
+      {
+        "id": "evidence:jd_40857992907:ev_jd_40857992907_0017",
+        "label": "Evidence",
+        "label_cn": "证据",
+        "name": "SQLServer",
+        "properties": {
+          "evidence_id": "ev_jd_40857992907_0017",
+          "quote": "SQLServer",
+          "source_field": "skills_raw",
+          "sentence_id": "sent_jd_40857992907_0017",
+          "field_start_char": null,
+          "record_id": "jd_40857992907",
+          "record_type": "jd"
+        }
+      },
+      {
+        "id": "evidence:jd_40857992907:ev_jd_40857992907_0018",
+        "label": "Evidence",
+        "label_cn": "证据",
+        "name": "接口自动化测试",
+        "properties": {
+          "evidence_id": "ev_jd_40857992907_0018",
+          "quote": "接口自动化测试",
+          "source_field": "skills_raw",
+          "sentence_id": "sent_jd_40857992907_0018",
+          "field_start_char": null,
+          "record_id": "jd_40857992907",
+          "record_type": "jd"
+        }
+      },
+      {
+        "id": "evidence:jd_40857992907:ev_jd_40857992907_0019",
+        "label": "Evidence",
+        "label_cn": "证据",
+        "name": "UI自动化测试",
+        "properties": {
+          "evidence_id": "ev_jd_40857992907_0019",
+          "quote": "UI自动化测试",
+          "source_field": "skills_raw",
+          "sentence_id": "sent_jd_40857992907_0019",
+          "field_start_char": null,
+          "record_id": "jd_40857992907",
+          "record_type": "jd"
+        }
+      },
+      {
+        "id": "evidence:jd_40857992907:ev_jd_40857992907_0020",
+        "label": "Evidence",
+        "label_cn": "证据",
+        "name": "2.工作经验：具有3年及以上计算机软件测试经验，金融行业背景优先",
+        "properties": {
+          "evidence_id": "ev_jd_40857992907_0020",
+          "quote": "2.工作经验：具有3年及以上计算机软件测试经验，金融行业背景优先",
+          "source_field": "jd_text",
+          "sentence_id": "sent_jd_40857992907_0023",
+          "field_start_char": 36,
+          "record_id": "jd_40857992907",
+          "record_type": "jd"
+        }
+      },
+      {
+        "id": "evidence:jd_40857992907:ev_jd_40857992907_0021",
+        "label": "Evidence",
+        "label_cn": "证据",
+        "name": "(1)熟悉常用数据库如TDSQL、GaussDB、TiDB、Oracle、MySQL一个或以上的常用操作",
+        "properties": {
+          "evidence_id": "ev_jd_40857992907_0021",
+          "quote": "(1)熟悉常用数据库如TDSQL、GaussDB、TiDB、Oracle、MySQL一个或以上的常用操作",
+          "source_field": "jd_text",
+          "sentence_id": "sent_jd_40857992907_0025",
+          "field_start_char": 81,
+          "record_id": "jd_40857992907",
+          "record_type": "jd"
+        }
+      },
+      {
+        "id": "evidence:jd_40857992907:ev_jd_40857992907_0022",
+        "label": "Evidence",
+        "label_cn": "证据",
+        "name": "(2)熟悉常用操作系统如Windows Server、Linux、统信OS等的日常操作",
+        "properties": {
+          "evidence_id": "ev_jd_40857992907_0022",
+          "quote": "(2)熟悉常用操作系统如Windows Server、Linux、统信OS等的日常操作",
+          "source_field": "jd_text",
+          "sentence_id": "sent_jd_40857992907_0026",
+          "field_start_char": 135,
+          "record_id": "jd_40857992907",
+          "record_type": "jd"
+        }
+      },
+      {
+        "id": "evidence:jd_40857992907:ev_jd_40857992907_0023",
+        "label": "Evidence",
+        "label_cn": "证据",
+        "name": "(3)熟悉Python、C/C++或 Java 等开发语言，有Python编程能力",
+        "properties": {
+          "evidence_id": "ev_jd_40857992907_0023",
+          "quote": "(3)熟悉Python、C/C++或 Java 等开发语言，有Python编程能力",
+          "source_field": "jd_text",
+          "sentence_id": "sent_jd_40857992907_0027",
+          "field_start_char": 180,
+          "record_id": "jd_40857992907",
+          "record_type": "jd"
+        }
+      },
+      {
+        "id": "evidence:jd_40857992907:ev_jd_40857992907_0024",
+        "label": "Evidence",
+        "label_cn": "证据",
+        "name": "(4)具有扎实的网络基础知识",
+        "properties": {
+          "evidence_id": "ev_jd_40857992907_0024",
+          "quote": "(4)具有扎实的网络基础知识",
+          "source_field": "jd_text",
+          "sentence_id": "sent_jd_40857992907_0028",
+          "field_start_char": 223,
+          "record_id": "jd_40857992907",
+          "record_type": "jd"
+        }
+      },
+      {
+        "id": "job:40857992907",
+        "label": "Job",
+        "label_cn": "岗位",
+        "name": "python自动化测试工程师（双休/福利好）",
+        "properties": {
+          "record_id": "jd_40857992907",
+          "job_id": "40857992907",
+          "title": "python自动化测试工程师（双休/福利好）",
+          "company_name": "深圳市汇合发展有限公司",
+          "industry": "咨询服务",
+          "location": "深圳 南山 科技园",
+          "education": "本科",
+          "experience": "3-5年"
+        }
+      },
+      {
+        "id": "k:k_操作系统:9bccf9823b",
+        "label": "Knowledge",
+        "label_cn": "知识",
+        "name": "操作系统",
+        "properties": {
+          "category": "K",
+          "name": "操作系统",
+          "label": "操作系统"
+        }
+      },
+      {
+        "id": "k:k_网络基础知识:b24c7a2d05",
+        "label": "Knowledge",
+        "label_cn": "知识",
+        "name": "网络基础知识",
+        "properties": {
+          "category": "K",
+          "name": "网络基础知识",
+          "label": "网络基础知识"
+        }
+      },
+      {
+        "id": "k:k_金融知识:bc1c1da7e0",
+        "label": "Knowledge",
+        "label_cn": "知识",
+        "name": "金融知识",
+        "properties": {
+          "category": "K",
+          "name": "金融知识",
+          "label": "金融行业背景"
+        }
+      },
+      {
+        "id": "s:s_ui自动化测试:2450e4406b",
+        "label": "Skill",
+        "label_cn": "技能",
+        "name": "UI自动化测试",
+        "properties": {
+          "category": "S",
+          "name": "UI自动化测试",
+          "label": "UI自动化测试"
+        }
+      },
+      {
+        "id": "s:s_接口自动化测试:b90d7dc290",
+        "label": "Skill",
+        "label_cn": "技能",
+        "name": "接口自动化测试",
+        "properties": {
+          "category": "S",
+          "name": "接口自动化测试",
+          "label": "接口自动化测试"
+        }
+      },
+      {
+        "id": "s:s_自动化测试:893d4c01a9",
+        "label": "Skill",
+        "label_cn": "技能",
+        "name": "自动化测试",
+        "properties": {
+          "category": "S",
+          "name": "自动化测试",
+          "label": "自动化测试"
+        }
+      },
+      {
+        "id": "s:s_软件测试:186b52e97c",
+        "label": "Skill",
+        "label_cn": "技能",
+        "name": "软件测试",
+        "properties": {
+          "category": "S",
+          "name": "软件测试",
+          "label": "软件测试"
+        }
+      },
+      {
+        "id": "tech:tech_c++:b4f1d573c9",
+        "label": "Technology",
+        "label_cn": "技术",
+        "name": "C++",
+        "properties": {
+          "category": "Tech",
+          "name": "C++",
+          "label": "C/C++"
+        }
+      },
+      {
+        "id": "tech:tech_gaussdb:a84d9f6988",
+        "label": "Technology",
+        "label_cn": "技术",
+        "name": "GaussDB",
+        "properties": {
+          "category": "Tech",
+          "name": "GaussDB",
+          "label": "GaussDB"
+        }
+      },
+      {
+        "id": "tech:tech_java:35de5629f8",
+        "label": "Technology",
+        "label_cn": "技术",
+        "name": "Java",
+        "properties": {
+          "category": "Tech",
+          "name": "Java",
+          "label": "Java"
+        }
+      },
+      {
+        "id": "tech:tech_linux:2fa1fe0537",
+        "label": "Technology",
+        "label_cn": "技术",
+        "name": "Linux",
+        "properties": {
+          "category": "Tech",
+          "name": "Linux",
+          "label": "Linux"
+        }
+      },
+      {
+        "id": "tech:tech_mysql:4354053eeb",
+        "label": "Technology",
+        "label_cn": "技术",
+        "name": "MySQL",
+        "properties": {
+          "category": "Tech",
+          "name": "MySQL",
+          "label": "MySQL"
+        }
+      },
+      {
+        "id": "tech:tech_oracle:57bde4e668",
+        "label": "Technology",
+        "label_cn": "技术",
+        "name": "Oracle",
+        "properties": {
+          "category": "Tech",
+          "name": "Oracle",
+          "label": "Oracle"
+        }
+      },
+      {
+        "id": "tech:tech_python:aa29696399",
+        "label": "Technology",
+        "label_cn": "技术",
+        "name": "Python",
+        "properties": {
+          "category": "Tech",
+          "name": "Python",
+          "label": "python"
+        }
+      },
+      {
+        "id": "tech:tech_sql_server:006a835fdb",
+        "label": "Technology",
+        "label_cn": "技术",
+        "name": "SQL Server",
+        "properties": {
+          "category": "Tech",
+          "name": "SQL Server",
+          "label": "SQLServer"
+        }
+      },
+      {
+        "id": "tech:tech_tdsql:ab1e5e2835",
+        "label": "Technology",
+        "label_cn": "技术",
+        "name": "TDSQL",
+        "properties": {
+          "category": "Tech",
+          "name": "TDSQL",
+          "label": "TDSQL"
+        }
+      },
+      {
+        "id": "tech:tech_tidb:284f4f90ca",
+        "label": "Technology",
+        "label_cn": "技术",
+        "name": "TiDB",
+        "properties": {
+          "category": "Tech",
+          "name": "TiDB",
+          "label": "TiDB"
+        }
+      },
+      {
+        "id": "tech:tech_windows:f1a3d8dfc3",
+        "label": "Technology",
+        "label_cn": "技术",
+        "name": "Windows",
+        "properties": {
+          "category": "Tech",
+          "name": "Windows",
+          "label": "Windows"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "edge_v2_000001",
+        "source": "job:40857992907",
+        "target": "tech:tech_python:aa29696399",
+        "relation_type": "REQUIRES_TECHNOLOGY",
+        "evidence_ids": [
+          "ev_jd_40857992907_0001"
+        ],
+        "properties": {
+          "role": "mentioned",
+          "confidence": 0.96,
+          "surface": "python"
+        }
+      },
+      {
+        "id": "edge_v2_000003",
+        "source": "job:40857992907",
+        "target": "s:s_自动化测试:893d4c01a9",
+        "relation_type": "REQUIRES_SKILL",
+        "evidence_ids": [
+          "ev_jd_40857992907_0001"
+        ],
+        "properties": {
+          "role": "mentioned",
+          "confidence": 0.9,
+          "surface": "自动化测试"
+        }
+      },
+      {
+        "id": "edge_v2_000005",
+        "source": "job:40857992907",
+        "target": "tech:tech_python:aa29696399",
+        "relation_type": "REQUIRES_TECHNOLOGY",
+        "evidence_ids": [
+          "ev_jd_40857992907_0002"
+        ],
+        "properties": {
+          "role": "required",
+          "confidence": 0.96,
+          "surface": "Python"
+        }
+      },
+      {
+        "id": "edge_v2_000007",
+        "source": "job:40857992907",
+        "target": "tech:tech_c++:b4f1d573c9",
+        "relation_type": "REQUIRES_TECHNOLOGY",
+        "evidence_ids": [
+          "ev_jd_40857992907_0003"
+        ],
+        "properties": {
+          "role": "required",
+          "confidence": 0.96,
+          "surface": "C/C++"
+        }
+      },
+      {
+        "id": "edge_v2_000009",
+        "source": "job:40857992907",
+        "target": "tech:tech_linux:2fa1fe0537",
+        "relation_type": "REQUIRES_TECHNOLOGY",
+        "evidence_ids": [
+          "ev_jd_40857992907_0004"
+        ],
+        "properties": {
+          "role": "required",
+          "confidence": 0.96,
+          "surface": "Linux"
+        }
+      },
+      {
+        "id": "edge_v2_000011",
+        "source": "job:40857992907",
+        "target": "tech:tech_windows:f1a3d8dfc3",
+        "relation_type": "REQUIRES_TECHNOLOGY",
+        "evidence_ids": [
+          "ev_jd_40857992907_0005"
+        ],
+        "properties": {
+          "role": "required",
+          "confidence": 0.96,
+          "surface": "Windows"
+        }
+      },
+      {
+        "id": "edge_v2_000013",
+        "source": "job:40857992907",
+        "target": "tech:tech_oracle:57bde4e668",
+        "relation_type": "REQUIRES_TECHNOLOGY",
+        "evidence_ids": [
+          "ev_jd_40857992907_0006"
+        ],
+        "properties": {
+          "role": "required",
+          "confidence": 0.96,
+          "surface": "Oracle"
+        }
+      },
+      {
+        "id": "edge_v2_000015",
+        "source": "job:40857992907",
+        "target": "tech:tech_mysql:4354053eeb",
+        "relation_type": "REQUIRES_TECHNOLOGY",
+        "evidence_ids": [
+          "ev_jd_40857992907_0007"
+        ],
+        "properties": {
+          "role": "required",
+          "confidence": 0.96,
+          "surface": "MySQL"
+        }
+      },
+      {
+        "id": "edge_v2_000017",
+        "source": "job:40857992907",
+        "target": "tech:tech_sql_server:006a835fdb",
+        "relation_type": "REQUIRES_TECHNOLOGY",
+        "evidence_ids": [
+          "ev_jd_40857992907_0008"
+        ],
+        "properties": {
+          "role": "required",
+          "confidence": 0.96,
+          "surface": "SQLServer"
+        }
+      },
+      {
+        "id": "edge_v2_000019",
+        "source": "job:40857992907",
+        "target": "s:s_接口自动化测试:b90d7dc290",
+        "relation_type": "REQUIRES_SKILL",
+        "evidence_ids": [
+          "ev_jd_40857992907_0009"
+        ],
+        "properties": {
+          "role": "required",
+          "confidence": 0.9,
+          "surface": "接口自动化测试"
+        }
+      },
+      {
+        "id": "edge_v2_000021",
+        "source": "job:40857992907",
+        "target": "s:s_ui自动化测试:2450e4406b",
+        "relation_type": "REQUIRES_SKILL",
+        "evidence_ids": [
+          "ev_jd_40857992907_0010"
+        ],
+        "properties": {
+          "role": "required",
+          "confidence": 0.9,
+          "surface": "UI自动化测试"
+        }
+      },
+      {
+        "id": "edge_v2_000023",
+        "source": "job:40857992907",
+        "target": "tech:tech_python:aa29696399",
+        "relation_type": "REQUIRES_TECHNOLOGY",
+        "evidence_ids": [
+          "ev_jd_40857992907_0011"
+        ],
+        "properties": {
+          "role": "required",
+          "confidence": 0.96,
+          "surface": "Python"
+        }
+      },
+      {
+        "id": "edge_v2_000025",
+        "source": "job:40857992907",
+        "target": "tech:tech_c++:b4f1d573c9",
+        "relation_type": "REQUIRES_TECHNOLOGY",
+        "evidence_ids": [
+          "ev_jd_40857992907_0012"
+        ],
+        "properties": {
+          "role": "required",
+          "confidence": 0.96,
+          "surface": "C/C++"
+        }
+      },
+      {
+        "id": "edge_v2_000027",
+        "source": "job:40857992907",
+        "target": "tech:tech_linux:2fa1fe0537",
+        "relation_type": "REQUIRES_TECHNOLOGY",
+        "evidence_ids": [
+          "ev_jd_40857992907_0013"
+        ],
+        "properties": {
+          "role": "required",
+          "confidence": 0.96,
+          "surface": "Linux"
+        }
+      },
+      {
+        "id": "edge_v2_000029",
+        "source": "job:40857992907",
+        "target": "tech:tech_windows:f1a3d8dfc3",
+        "relation_type": "REQUIRES_TECHNOLOGY",
+        "evidence_ids": [
+          "ev_jd_40857992907_0014"
+        ],
+        "properties": {
+          "role": "required",
+          "confidence": 0.96,
+          "surface": "Windows"
+        }
+      },
+      {
+        "id": "edge_v2_000031",
+        "source": "job:40857992907",
+        "target": "tech:tech_oracle:57bde4e668",
+        "relation_type": "REQUIRES_TECHNOLOGY",
+        "evidence_ids": [
+          "ev_jd_40857992907_0015"
+        ],
+        "properties": {
+          "role": "required",
+          "confidence": 0.96,
+          "surface": "Oracle"
+        }
+      },
+      {
+        "id": "edge_v2_000033",
+        "source": "job:40857992907",
+        "target": "tech:tech_mysql:4354053eeb",
+        "relation_type": "REQUIRES_TECHNOLOGY",
+        "evidence_ids": [
+          "ev_jd_40857992907_0016"
+        ],
+        "properties": {
+          "role": "required",
+          "confidence": 0.96,
+          "surface": "MySQL"
+        }
+      },
+      {
+        "id": "edge_v2_000035",
+        "source": "job:40857992907",
+        "target": "tech:tech_sql_server:006a835fdb",
+        "relation_type": "REQUIRES_TECHNOLOGY",
+        "evidence_ids": [
+          "ev_jd_40857992907_0017"
+        ],
+        "properties": {
+          "role": "required",
+          "confidence": 0.96,
+          "surface": "SQLServer"
+        }
+      },
+      {
+        "id": "edge_v2_000037",
+        "source": "job:40857992907",
+        "target": "s:s_接口自动化测试:b90d7dc290",
+        "relation_type": "REQUIRES_SKILL",
+        "evidence_ids": [
+          "ev_jd_40857992907_0018"
+        ],
+        "properties": {
+          "role": "required",
+          "confidence": 0.9,
+          "surface": "接口自动化测试"
+        }
+      },
+      {
+        "id": "edge_v2_000039",
+        "source": "job:40857992907",
+        "target": "s:s_ui自动化测试:2450e4406b",
+        "relation_type": "REQUIRES_SKILL",
+        "evidence_ids": [
+          "ev_jd_40857992907_0019"
+        ],
+        "properties": {
+          "role": "required",
+          "confidence": 0.9,
+          "surface": "UI自动化测试"
+        }
+      },
+      {
+        "id": "edge_v2_000041",
+        "source": "job:40857992907",
+        "target": "s:s_软件测试:186b52e97c",
+        "relation_type": "REQUIRES_SKILL",
+        "evidence_ids": [
+          "ev_jd_40857992907_0020"
+        ],
+        "properties": {
+          "role": "preferred",
+          "confidence": 0.9,
+          "surface": "软件测试"
+        }
+      },
+      {
+        "id": "edge_v2_000043",
+        "source": "job:40857992907",
+        "target": "k:k_金融知识:bc1c1da7e0",
+        "relation_type": "REQUIRES_KNOWLEDGE",
+        "evidence_ids": [
+          "ev_jd_40857992907_0020"
+        ],
+        "properties": {
+          "role": "preferred",
+          "confidence": 0.88,
+          "surface": "金融行业背景"
+        }
+      },
+      {
+        "id": "edge_v2_000045",
+        "source": "job:40857992907",
+        "target": "tech:tech_tdsql:ab1e5e2835",
+        "relation_type": "REQUIRES_TECHNOLOGY",
+        "evidence_ids": [
+          "ev_jd_40857992907_0021"
+        ],
+        "properties": {
+          "role": "required",
+          "confidence": 0.96,
+          "surface": "TDSQL"
+        }
+      },
+      {
+        "id": "edge_v2_000047",
+        "source": "job:40857992907",
+        "target": "tech:tech_gaussdb:a84d9f6988",
+        "relation_type": "REQUIRES_TECHNOLOGY",
+        "evidence_ids": [
+          "ev_jd_40857992907_0021"
+        ],
+        "properties": {
+          "role": "required",
+          "confidence": 0.96,
+          "surface": "GaussDB"
+        }
+      },
+      {
+        "id": "edge_v2_000049",
+        "source": "job:40857992907",
+        "target": "tech:tech_tidb:284f4f90ca",
+        "relation_type": "REQUIRES_TECHNOLOGY",
+        "evidence_ids": [
+          "ev_jd_40857992907_0021"
+        ],
+        "properties": {
+          "role": "required",
+          "confidence": 0.96,
+          "surface": "TiDB"
+        }
+      },
+      {
+        "id": "edge_v2_000051",
+        "source": "job:40857992907",
+        "target": "tech:tech_oracle:57bde4e668",
+        "relation_type": "REQUIRES_TECHNOLOGY",
+        "evidence_ids": [
+          "ev_jd_40857992907_0021"
+        ],
+        "properties": {
+          "role": "required",
+          "confidence": 0.96,
+          "surface": "Oracle"
+        }
+      },
+      {
+        "id": "edge_v2_000053",
+        "source": "job:40857992907",
+        "target": "tech:tech_mysql:4354053eeb",
+        "relation_type": "REQUIRES_TECHNOLOGY",
+        "evidence_ids": [
+          "ev_jd_40857992907_0021"
+        ],
+        "properties": {
+          "role": "required",
+          "confidence": 0.96,
+          "surface": "MySQL"
+        }
+      },
+      {
+        "id": "edge_v2_000055",
+        "source": "job:40857992907",
+        "target": "k:k_操作系统:9bccf9823b",
+        "relation_type": "REQUIRES_KNOWLEDGE",
+        "evidence_ids": [
+          "ev_jd_40857992907_0022"
+        ],
+        "properties": {
+          "role": "required",
+          "confidence": 0.88,
+          "surface": "操作系统"
+        }
+      },
+      {
+        "id": "edge_v2_000057",
+        "source": "job:40857992907",
+        "target": "tech:tech_windows:f1a3d8dfc3",
+        "relation_type": "REQUIRES_TECHNOLOGY",
+        "evidence_ids": [
+          "ev_jd_40857992907_0022"
+        ],
+        "properties": {
+          "role": "required",
+          "confidence": 0.96,
+          "surface": "Windows Server"
+        }
+      },
+      {
+        "id": "edge_v2_000059",
+        "source": "job:40857992907",
+        "target": "tech:tech_linux:2fa1fe0537",
+        "relation_type": "REQUIRES_TECHNOLOGY",
+        "evidence_ids": [
+          "ev_jd_40857992907_0022"
+        ],
+        "properties": {
+          "role": "required",
+          "confidence": 0.96,
+          "surface": "Linux"
+        }
+      },
+      {
+        "id": "edge_v2_000061",
+        "source": "job:40857992907",
+        "target": "tech:tech_python:aa29696399",
+        "relation_type": "REQUIRES_TECHNOLOGY",
+        "evidence_ids": [
+          "ev_jd_40857992907_0023"
+        ],
+        "properties": {
+          "role": "required",
+          "confidence": 0.96,
+          "surface": "Python"
+        }
+      },
+      {
+        "id": "edge_v2_000063",
+        "source": "job:40857992907",
+        "target": "tech:tech_c++:b4f1d573c9",
+        "relation_type": "REQUIRES_TECHNOLOGY",
+        "evidence_ids": [
+          "ev_jd_40857992907_0023"
+        ],
+        "properties": {
+          "role": "required",
+          "confidence": 0.96,
+          "surface": "C/C++"
+        }
+      },
+      {
+        "id": "edge_v2_000065",
+        "source": "job:40857992907",
+        "target": "tech:tech_java:35de5629f8",
+        "relation_type": "REQUIRES_TECHNOLOGY",
+        "evidence_ids": [
+          "ev_jd_40857992907_0023"
+        ],
+        "properties": {
+          "role": "required",
+          "confidence": 0.96,
+          "surface": "Java"
+        }
+      },
+      {
+        "id": "edge_v2_000067",
+        "source": "job:40857992907",
+        "target": "k:k_网络基础知识:b24c7a2d05",
+        "relation_type": "REQUIRES_KNOWLEDGE",
+        "evidence_ids": [
+          "ev_jd_40857992907_0024"
+        ],
+        "properties": {
+          "role": "required",
+          "confidence": 0.88,
+          "surface": "网络基础知识"
+        }
+      },
+      {
+        "id": "edge_v2_000002",
+        "source": "tech:tech_python:aa29696399",
+        "target": "evidence:jd_40857992907:ev_jd_40857992907_0001",
+        "relation_type": "SUPPORTED_BY",
+        "evidence_ids": [
+          "ev_jd_40857992907_0001"
+        ],
+        "properties": {}
+      },
+      {
+        "id": "edge_v2_000004",
+        "source": "s:s_自动化测试:893d4c01a9",
+        "target": "evidence:jd_40857992907:ev_jd_40857992907_0001",
+        "relation_type": "SUPPORTED_BY",
+        "evidence_ids": [
+          "ev_jd_40857992907_0001"
+        ],
+        "properties": {}
+      },
+      {
+        "id": "edge_v2_000006",
+        "source": "tech:tech_python:aa29696399",
+        "target": "evidence:jd_40857992907:ev_jd_40857992907_0002",
+        "relation_type": "SUPPORTED_BY",
+        "evidence_ids": [
+          "ev_jd_40857992907_0002"
+        ],
+        "properties": {}
+      },
+      {
+        "id": "edge_v2_000008",
+        "source": "tech:tech_c++:b4f1d573c9",
+        "target": "evidence:jd_40857992907:ev_jd_40857992907_0003",
+        "relation_type": "SUPPORTED_BY",
+        "evidence_ids": [
+          "ev_jd_40857992907_0003"
+        ],
+        "properties": {}
+      },
+      {
+        "id": "edge_v2_000010",
+        "source": "tech:tech_linux:2fa1fe0537",
+        "target": "evidence:jd_40857992907:ev_jd_40857992907_0004",
+        "relation_type": "SUPPORTED_BY",
+        "evidence_ids": [
+          "ev_jd_40857992907_0004"
+        ],
+        "properties": {}
+      },
+      {
+        "id": "edge_v2_000012",
+        "source": "tech:tech_windows:f1a3d8dfc3",
+        "target": "evidence:jd_40857992907:ev_jd_40857992907_0005",
+        "relation_type": "SUPPORTED_BY",
+        "evidence_ids": [
+          "ev_jd_40857992907_0005"
+        ],
+        "properties": {}
+      },
+      {
+        "id": "edge_v2_000014",
+        "source": "tech:tech_oracle:57bde4e668",
+        "target": "evidence:jd_40857992907:ev_jd_40857992907_0006",
+        "relation_type": "SUPPORTED_BY",
+        "evidence_ids": [
+          "ev_jd_40857992907_0006"
+        ],
+        "properties": {}
+      },
+      {
+        "id": "edge_v2_000016",
+        "source": "tech:tech_mysql:4354053eeb",
+        "target": "evidence:jd_40857992907:ev_jd_40857992907_0007",
+        "relation_type": "SUPPORTED_BY",
+        "evidence_ids": [
+          "ev_jd_40857992907_0007"
+        ],
+        "properties": {}
+      },
+      {
+        "id": "edge_v2_000018",
+        "source": "tech:tech_sql_server:006a835fdb",
+        "target": "evidence:jd_40857992907:ev_jd_40857992907_0008",
+        "relation_type": "SUPPORTED_BY",
+        "evidence_ids": [
+          "ev_jd_40857992907_0008"
+        ],
+        "properties": {}
+      },
+      {
+        "id": "edge_v2_000020",
+        "source": "s:s_接口自动化测试:b90d7dc290",
+        "target": "evidence:jd_40857992907:ev_jd_40857992907_0009",
+        "relation_type": "SUPPORTED_BY",
+        "evidence_ids": [
+          "ev_jd_40857992907_0009"
+        ],
+        "properties": {}
+      },
+      {
+        "id": "edge_v2_000022",
+        "source": "s:s_ui自动化测试:2450e4406b",
+        "target": "evidence:jd_40857992907:ev_jd_40857992907_0010",
+        "relation_type": "SUPPORTED_BY",
+        "evidence_ids": [
+          "ev_jd_40857992907_0010"
+        ],
+        "properties": {}
+      },
+      {
+        "id": "edge_v2_000024",
+        "source": "tech:tech_python:aa29696399",
+        "target": "evidence:jd_40857992907:ev_jd_40857992907_0011",
+        "relation_type": "SUPPORTED_BY",
+        "evidence_ids": [
+          "ev_jd_40857992907_0011"
+        ],
+        "properties": {}
+      },
+      {
+        "id": "edge_v2_000026",
+        "source": "tech:tech_c++:b4f1d573c9",
+        "target": "evidence:jd_40857992907:ev_jd_40857992907_0012",
+        "relation_type": "SUPPORTED_BY",
+        "evidence_ids": [
+          "ev_jd_40857992907_0012"
+        ],
+        "properties": {}
+      },
+      {
+        "id": "edge_v2_000028",
+        "source": "tech:tech_linux:2fa1fe0537",
+        "target": "evidence:jd_40857992907:ev_jd_40857992907_0013",
+        "relation_type": "SUPPORTED_BY",
+        "evidence_ids": [
+          "ev_jd_40857992907_0013"
+        ],
+        "properties": {}
+      },
+      {
+        "id": "edge_v2_000030",
+        "source": "tech:tech_windows:f1a3d8dfc3",
+        "target": "evidence:jd_40857992907:ev_jd_40857992907_0014",
+        "relation_type": "SUPPORTED_BY",
+        "evidence_ids": [
+          "ev_jd_40857992907_0014"
+        ],
+        "properties": {}
+      },
+      {
+        "id": "edge_v2_000032",
+        "source": "tech:tech_oracle:57bde4e668",
+        "target": "evidence:jd_40857992907:ev_jd_40857992907_0015",
+        "relation_type": "SUPPORTED_BY",
+        "evidence_ids": [
+          "ev_jd_40857992907_0015"
+        ],
+        "properties": {}
+      },
+      {
+        "id": "edge_v2_000034",
+        "source": "tech:tech_mysql:4354053eeb",
+        "target": "evidence:jd_40857992907:ev_jd_40857992907_0016",
+        "relation_type": "SUPPORTED_BY",
+        "evidence_ids": [
+          "ev_jd_40857992907_0016"
+        ],
+        "properties": {}
+      },
+      {
+        "id": "edge_v2_000036",
+        "source": "tech:tech_sql_server:006a835fdb",
+        "target": "evidence:jd_40857992907:ev_jd_40857992907_0017",
+        "relation_type": "SUPPORTED_BY",
+        "evidence_ids": [
+          "ev_jd_40857992907_0017"
+        ],
+        "properties": {}
+      },
+      {
+        "id": "edge_v2_000038",
+        "source": "s:s_接口自动化测试:b90d7dc290",
+        "target": "evidence:jd_40857992907:ev_jd_40857992907_0018",
+        "relation_type": "SUPPORTED_BY",
+        "evidence_ids": [
+          "ev_jd_40857992907_0018"
+        ],
+        "properties": {}
+      },
+      {
+        "id": "edge_v2_000040",
+        "source": "s:s_ui自动化测试:2450e4406b",
+        "target": "evidence:jd_40857992907:ev_jd_40857992907_0019",
+        "relation_type": "SUPPORTED_BY",
+        "evidence_ids": [
+          "ev_jd_40857992907_0019"
+        ],
+        "properties": {}
+      },
+      {
+        "id": "edge_v2_000042",
+        "source": "s:s_软件测试:186b52e97c",
+        "target": "evidence:jd_40857992907:ev_jd_40857992907_0020",
+        "relation_type": "SUPPORTED_BY",
+        "evidence_ids": [
+          "ev_jd_40857992907_0020"
+        ],
+        "properties": {}
+      },
+      {
+        "id": "edge_v2_000044",
+        "source": "k:k_金融知识:bc1c1da7e0",
+        "target": "evidence:jd_40857992907:ev_jd_40857992907_0020",
+        "relation_type": "SUPPORTED_BY",
+        "evidence_ids": [
+          "ev_jd_40857992907_0020"
+        ],
+        "properties": {}
+      },
+      {
+        "id": "edge_v2_000046",
+        "source": "tech:tech_tdsql:ab1e5e2835",
+        "target": "evidence:jd_40857992907:ev_jd_40857992907_0021",
+        "relation_type": "SUPPORTED_BY",
+        "evidence_ids": [
+          "ev_jd_40857992907_0021"
+        ],
+        "properties": {}
+      },
+      {
+        "id": "edge_v2_000048",
+        "source": "tech:tech_gaussdb:a84d9f6988",
+        "target": "evidence:jd_40857992907:ev_jd_40857992907_0021",
+        "relation_type": "SUPPORTED_BY",
+        "evidence_ids": [
+          "ev_jd_40857992907_0021"
+        ],
+        "properties": {}
+      },
+      {
+        "id": "edge_v2_000050",
+        "source": "tech:tech_tidb:284f4f90ca",
+        "target": "evidence:jd_40857992907:ev_jd_40857992907_0021",
+        "relation_type": "SUPPORTED_BY",
+        "evidence_ids": [
+          "ev_jd_40857992907_0021"
+        ],
+        "properties": {}
+      },
+      {
+        "id": "edge_v2_000052",
+        "source": "tech:tech_oracle:57bde4e668",
+        "target": "evidence:jd_40857992907:ev_jd_40857992907_0021",
+        "relation_type": "SUPPORTED_BY",
+        "evidence_ids": [
+          "ev_jd_40857992907_0021"
+        ],
+        "properties": {}
+      },
+      {
+        "id": "edge_v2_000054",
+        "source": "tech:tech_mysql:4354053eeb",
+        "target": "evidence:jd_40857992907:ev_jd_40857992907_0021",
+        "relation_type": "SUPPORTED_BY",
+        "evidence_ids": [
+          "ev_jd_40857992907_0021"
+        ],
+        "properties": {}
+      },
+      {
+        "id": "edge_v2_000056",
+        "source": "k:k_操作系统:9bccf9823b",
+        "target": "evidence:jd_40857992907:ev_jd_40857992907_0022",
+        "relation_type": "SUPPORTED_BY",
+        "evidence_ids": [
+          "ev_jd_40857992907_0022"
+        ],
+        "properties": {}
+      },
+      {
+        "id": "edge_v2_000058",
+        "source": "tech:tech_windows:f1a3d8dfc3",
+        "target": "evidence:jd_40857992907:ev_jd_40857992907_0022",
+        "relation_type": "SUPPORTED_BY",
+        "evidence_ids": [
+          "ev_jd_40857992907_0022"
+        ],
+        "properties": {}
+      },
+      {
+        "id": "edge_v2_000060",
+        "source": "tech:tech_linux:2fa1fe0537",
+        "target": "evidence:jd_40857992907:ev_jd_40857992907_0022",
+        "relation_type": "SUPPORTED_BY",
+        "evidence_ids": [
+          "ev_jd_40857992907_0022"
+        ],
+        "properties": {}
+      },
+      {
+        "id": "edge_v2_000062",
+        "source": "tech:tech_python:aa29696399",
+        "target": "evidence:jd_40857992907:ev_jd_40857992907_0023",
+        "relation_type": "SUPPORTED_BY",
+        "evidence_ids": [
+          "ev_jd_40857992907_0023"
+        ],
+        "properties": {}
+      },
+      {
+        "id": "edge_v2_000064",
+        "source": "tech:tech_c++:b4f1d573c9",
+        "target": "evidence:jd_40857992907:ev_jd_40857992907_0023",
+        "relation_type": "SUPPORTED_BY",
+        "evidence_ids": [
+          "ev_jd_40857992907_0023"
+        ],
+        "properties": {}
+      },
+      {
+        "id": "edge_v2_000066",
+        "source": "tech:tech_java:35de5629f8",
+        "target": "evidence:jd_40857992907:ev_jd_40857992907_0023",
+        "relation_type": "SUPPORTED_BY",
+        "evidence_ids": [
+          "ev_jd_40857992907_0023"
+        ],
+        "properties": {}
+      },
+      {
+        "id": "edge_v2_000068",
+        "source": "k:k_网络基础知识:b24c7a2d05",
+        "target": "evidence:jd_40857992907:ev_jd_40857992907_0024",
+        "relation_type": "SUPPORTED_BY",
+        "evidence_ids": [
+          "ev_jd_40857992907_0024"
+        ],
+        "properties": {}
+      }
+    ]
+  },
+  "summary": {
+    "node_count": 43,
+    "edge_count": 68,
+    "capability_edges_by_label": {
+      "Technology": 25,
+      "Skill": 6,
+      "Knowledge": 3
+    },
+    "evidence_node_count": 24,
+    "evidence_quotes": [
+      {
+        "id": "evidence:jd_40857992907:ev_jd_40857992907_0001",
+        "quote": "python自动化测试工程师（双休/福利好）"
+      },
+      {
+        "id": "evidence:jd_40857992907:ev_jd_40857992907_0002",
+        "quote": "Python"
+      },
+      {
+        "id": "evidence:jd_40857992907:ev_jd_40857992907_0003",
+        "quote": "C/C++"
+      },
+      {
+        "id": "evidence:jd_40857992907:ev_jd_40857992907_0004",
+        "quote": "Linux"
+      },
+      {
+        "id": "evidence:jd_40857992907:ev_jd_40857992907_0005",
+        "quote": "Windows"
+      },
+      {
+        "id": "evidence:jd_40857992907:ev_jd_40857992907_0006",
+        "quote": "Oracle"
+      },
+      {
+        "id": "evidence:jd_40857992907:ev_jd_40857992907_0007",
+        "quote": "MySQL"
+      },
+      {
+        "id": "evidence:jd_40857992907:ev_jd_40857992907_0008",
+        "quote": "SQLServer"
+      },
+      {
+        "id": "evidence:jd_40857992907:ev_jd_40857992907_0009",
+        "quote": "接口自动化测试"
+      },
+      {
+        "id": "evidence:jd_40857992907:ev_jd_40857992907_0010",
+        "quote": "UI自动化测试"
+      },
+      {
+        "id": "evidence:jd_40857992907:ev_jd_40857992907_0011",
+        "quote": "Python"
+      },
+      {
+        "id": "evidence:jd_40857992907:ev_jd_40857992907_0012",
+        "quote": "C/C++"
+      },
+      {
+        "id": "evidence:jd_40857992907:ev_jd_40857992907_0013",
+        "quote": "Linux"
+      },
+      {
+        "id": "evidence:jd_40857992907:ev_jd_40857992907_0014",
+        "quote": "Windows"
+      },
+      {
+        "id": "evidence:jd_40857992907:ev_jd_40857992907_0015",
+        "quote": "Oracle"
+      },
+      {
+        "id": "evidence:jd_40857992907:ev_jd_40857992907_0016",
+        "quote": "MySQL"
+      },
+      {
+        "id": "evidence:jd_40857992907:ev_jd_40857992907_0017",
+        "quote": "SQLServer"
+      },
+      {
+        "id": "evidence:jd_40857992907:ev_jd_40857992907_0018",
+        "quote": "接口自动化测试"
+      },
+      {
+        "id": "evidence:jd_40857992907:ev_jd_40857992907_0019",
+        "quote": "UI自动化测试"
+      },
+      {
+        "id": "evidence:jd_40857992907:ev_jd_40857992907_0020",
+        "quote": "2.工作经验：具有3年及以上计算机软件测试经验，金融行业背景优先"
+      },
+      {
+        "id": "evidence:jd_40857992907:ev_jd_40857992907_0021",
+        "quote": "(1)熟悉常用数据库如TDSQL、GaussDB、TiDB、Oracle、MySQL一个或以上的常用操作"
+      },
+      {
+        "id": "evidence:jd_40857992907:ev_jd_40857992907_0022",
+        "quote": "(2)熟悉常用操作系统如Windows Server、Linux、统信OS等的日常操作"
+      },
+      {
+        "id": "evidence:jd_40857992907:ev_jd_40857992907_0023",
+        "quote": "(3)熟悉Python、C/C++或 Java 等开发语言，有Python编程能力"
+      },
+      {
+        "id": "evidence:jd_40857992907:ev_jd_40857992907_0024",
+        "quote": "(4)具有扎实的网络基础知识"
+      }
+    ]
+  }
+}

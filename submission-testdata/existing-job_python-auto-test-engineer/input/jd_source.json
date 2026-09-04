@@ -1,0 +1,38 @@
+{
+  "source_type": "job_platform",
+  "source_name": "zhaopin",
+  "job_id": 40857992907,
+  "job_title": "python自动化测试工程师（双休/福利好）",
+  "company_name": "深圳市汇合发展有限公司",
+  "industry": "咨询服务",
+  "location": "深圳 南山 科技园",
+  "salary_min": "9000",
+  "salary_max": "13000",
+  "experience": "3-5年",
+  "education": "本科",
+  "publish_date": "2026-06-18 15:26:11",
+  "jd_text": "岗位职责：负责业务测试相关工作\n任职要求：\n1.学历：本科及以上学历。\n2.工作经验：具有3年及以上计算机软件测试经验，金融行业背景优先。\n3.技能/能力要求：\n(1)熟悉常用数据库如TDSQL、GaussDB、TiDB、Oracle、MySQL一个或以上的常用操作；\n(2)熟悉常用操作系统如Windows Server、Linux、统信OS等的日常操作；\n(3)熟悉Python、C/C++或 Java 等开发语言，有Python编程能力；\n(4)具有扎实的网络基础知识。",
+  "responsibilities": [
+    "岗位职责：负责业务测试相关工作",
+    "任职要求：",
+    "1.学历：本科及以上学历。",
+    "2.工作经验：具有3年及以上计算机软件测试经验，金融行业背景优先。",
+    "3.技能/能力要求：",
+    "(1)熟悉常用数据库如TDSQL、GaussDB、TiDB、Oracle、MySQL一个或以上的常用操作；",
+    "(2)熟悉常用操作系统如Windows Server、Linux、统信OS等的日常操作；",
+    "(3)熟悉Python、C/C++或 Java 等开发语言，有Python编程能力；",
+    "(4)具有扎实的网络基础知识。"
+  ],
+  "requirements": [
+    "岗位职责：负责业务测试相关工作",
+    "任职要求：",
+    "1.学历：本科及以上学历。",
+    "2.工作经验：具有3年及以上计算机软件测试经验，金融行业背景优先。",
+    "3.技能/能力要求：",
+    "(1)熟悉常用数据库如TDSQL、GaussDB、TiDB、Oracle、MySQL一个或以上的常用操作；",
+    "(2)熟悉常用操作系统如Windows Server、Linux、统信OS等的日常操作；",
+    "(3)熟悉Python、C/C++或 Java 等开发语言，有Python编程能力；",
+    "(4)具有扎实的网络基础知识。"
+  ],
+  "_说明": "原始招聘岗位数据源（智联 zhaopin 抓取字段 + 岗位原文 jd_text），对应能力图谱证据注释（sentence_annotations.jsonl）"
+}

@@ -1,0 +1,93 @@
+{
+  "说明": "新岗位能力图谱（提案形态）：角色节点指向既有能力/证据，合并后即进入动态演化图谱",
+  "role": {
+    "id": "role:51fda9ea3aba30e88342",
+    "canonical_title": "AI Agent安全评测工程师",
+    "aliases": [
+      "大模型智能体评测工程师",
+      "智能体安全测试工程师"
+    ],
+    "core_responsibilities": [
+      "分析智能体全链路风险",
+      "建设大模型幻觉和安全评测集",
+      "设计智能体工具调用与越权测试"
+    ]
+  },
+  "required_skill_names": [
+    "Agent",
+    "LLM评测",
+    "Python",
+    "RAG",
+    "提示注入测试"
+  ],
+  "ability_edges": [
+    {
+      "source": "role:51fda9ea3aba30e88342",
+      "target": "ability:56ab09c8947dd856aa26",
+      "relation_type": "PREFERS_SKILL",
+      "ability_name": "红队测试",
+      "resolution_status": "unresolved",
+      "evidence_count": 24
+    },
+    {
+      "source": "role:51fda9ea3aba30e88342",
+      "target": "ability:a3e690053061793bb12a",
+      "relation_type": "REQUIRES_SKILL",
+      "ability_name": "RAG",
+      "resolution_status": "unresolved",
+      "evidence_count": 24
+    },
+    {
+      "source": "role:51fda9ea3aba30e88342",
+      "target": "ability:d4f0bc5a29de06b510f9",
+      "relation_type": "REQUIRES_SKILL",
+      "ability_name": "Agent",
+      "resolution_status": "unresolved",
+      "evidence_count": 24
+    },
+    {
+      "source": "role:51fda9ea3aba30e88342",
+      "target": "ability:db383c62cce24a69374a",
+      "relation_type": "REQUIRES_SKILL",
+      "ability_name": "LLM评测",
+      "resolution_status": "unresolved",
+      "evidence_count": 24
+    },
+    {
+      "source": "role:51fda9ea3aba30e88342",
+      "target": "ability:11a4a60b518bf24989d4",
+      "relation_type": "REQUIRES_SKILL",
+      "ability_name": "Python",
+      "resolution_status": "unresolved",
+      "evidence_count": 24
+    },
+    {
+      "source": "role:51fda9ea3aba30e88342",
+      "target": "ability:fc6613028a25106d2fc3",
+      "relation_type": "REQUIRES_SKILL",
+      "ability_name": "提示注入测试",
+      "resolution_status": "unresolved",
+      "evidence_count": 24
+    },
+    {
+      "source": "role:51fda9ea3aba30e88342",
+      "target": "ability:10182ab855ff772753c0",
+      "relation_type": "PREFERS_SKILL",
+      "ability_name": "MCP",
+      "resolution_status": "unresolved",
+      "evidence_count": 24
+    }
+  ],
+  "summary": {
+    "role_count": 1,
+    "proposed_ability_edge_count": 7,
+    "propose_node_ops": [
+      {
+        "delta_id": "delta:f2d18028ff9ca39abcbc",
+        "operation": "propose_node",
+        "source_id": "role:51fda9ea3aba30e88342"
+      }
+    ],
+    "evidence_ids_total": 25
+  }
+}

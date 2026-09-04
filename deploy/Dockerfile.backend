@@ -1,0 +1,43 @@
+# syntax=docker/dockerfile:1
+#
+# job-ability-graph backend image (FastAPI + uvicorn).
+# Build context: repository root (job-ability-graph/), e.g.
+#   docker build -f deploy/Dockerfile.backend -t job-ability-backend .
+# See deploy/.dockerignore (repo root .dockerignore) for what is excluded
+# from the build context.
+
+FROM python:3.11-slim
+
+ENV PYTHONUNBUFFERED=1 \
+    PYTHONDONTWRITEBYTECODE=1 \
+    PIP_NO_CACHE_DIR=1 \
+    PIP_DISABLE_PIP_VERSION_CHECK=1 \
+    DATA_GOVERNANCE_ROOT=/app/data
+
+WORKDIR /app
+
+# 1) Runtime dependencies first (better layer caching).
+COPY deploy/requirements.backend.txt /tmp/requirements.backend.txt
+RUN python -m pip install --upgrade pip \
+    && python -m pip install -r /tmp/requirements.backend.txt \
+    && rm -rf /root/.cache/pip
+
+# 2) Application source.
+COPY backend /app/backend
+COPY scripts /app/scripts
+
+# 3) Read-only fixtures. docker-entrypoint.sh copies them into the
+#    /app/data volume on the first boot.
+COPY data/small_raw_200_lskt_tech_v2 /app/.fixtures/small_raw_200_lskt_tech_v2
+COPY data/esco /app/.fixtures/esco
+COPY data/small-raw/jd_raw_100.jsonl /app/.fixtures/small-raw/jd_raw_100.jsonl
+
+# 4) JobTrend offline component artifacts (read by /api/v1/trends* routes).
+COPY jobtrend-team-delivery-2026-08-09/component /app/jobtrend-team-delivery-2026-08-09/component
+
+# 5) Bootstrap entrypoint.
+COPY deploy/docker-entrypoint.sh /app/deploy/docker-entrypoint.sh
+
+EXPOSE 8002
+ENTRYPOINT ["/bin/sh", "/app/deploy/docker-entrypoint.sh"]
+CMD ["python", "-m", "uvicorn", "backend.app.main:app", "--host", "0.0.0.0", "--port", "8002"]

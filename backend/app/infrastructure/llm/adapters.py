@@ -967,12 +967,92 @@ LEARNING_ADVICE_SCHEMA = """输出 JSON schema:
 }"""
 
 
+def _gap_skill_name(gap: Any) -> str:
+    if isinstance(gap, dict):
+        return str(gap.get("skill") or gap.get("text") or "该技能").strip() or "该技能"
+    return str(gap or "该技能").strip() or "该技能"
+
+
+def _gap_priority(gap: Any) -> str:
+    raw = ""
+    if isinstance(gap, dict):
+        raw = str(gap.get("priority") or gap.get("importance") or "").casefold()
+    if raw in {"high", "required", "关键", "高"}:
+        return "high"
+    if raw in {"low", "optional", "低"}:
+        return "low"
+    return "medium"
+
+
+def _fallback_learning_advice(
+    match_data: dict[str, Any],
+    reason: str,
+    implementation: str,
+    graph_context: list[dict[str, Any]] | None = None,
+) -> dict[str, Any]:
+    """Return a useful deterministic plan when the local LLM is too slow or unavailable."""
+    score = match_data.get("score", 0)
+    raw_gaps = match_data.get("gaps", [])
+    raw_learning_path = match_data.get("learning_path", [])
+    source_items = raw_gaps if isinstance(raw_gaps, list) and raw_gaps else raw_learning_path
+    if not isinstance(source_items, list):
+        source_items = []
+
+    skill_gaps = []
+    for gap in source_items[:5]:
+        skill = _gap_skill_name(gap)
+        skill_gaps.append({
+            "skill": skill,
+            "current_level": "待补齐",
+            "target_level": "达到岗位可交付要求",
+            "priority": _gap_priority(gap),
+            "learning_steps": [
+                f"梳理{skill}的核心概念和岗位常见应用场景",
+                f"完成一个围绕{skill}的小型练习或案例复现",
+                "把练习过程整理成项目说明，补充到简历或作品集中",
+            ],
+            "resources": ["官方文档", "高质量项目案例", "岗位 JD 中的真实要求"],
+            "estimated_time": "2-4周",
+        })
+
+    result = {
+        "state": "available",
+        "implementation": implementation,
+        "summary": f"当前匹配度为 {score}%，LLM 生成耗时过长，已先根据匹配差距生成基础学习建议。",
+        "skill_gaps": skill_gaps,
+        "learning_plan": [
+            {
+                "phase": "第一阶段：核心差距补齐",
+                "duration": "2-4周",
+                "goals": ["掌握高优先级技能基础", "完成可展示练习"],
+                "activities": ["阅读官方文档", "复现岗位相关案例", "记录关键知识点"],
+            },
+            {
+                "phase": "第二阶段：项目化验证",
+                "duration": "4-6周",
+                "goals": ["形成作品集证据", "提升面试表达材料"],
+                "activities": ["完成综合项目", "整理项目复盘", "针对目标岗位补充简历描述"],
+            },
+        ],
+        "recommended_resources": [
+            {"type": "documentation", "name": "技术官方文档", "description": "优先学习岗位要求中反复出现的核心 API 和实践指南"},
+            {"type": "practice", "name": "项目实战", "description": "用小型项目验证技能掌握程度并沉淀作品集"},
+            {"type": "course", "name": "体系化课程", "description": "针对薄弱技能选择一门短周期课程补齐基础"},
+        ],
+        "career_advice": "先补齐岗位要求中的高优先级短板，再用项目成果证明能力提升；复盘时把技能、场景、结果三点写清楚。",
+        "warnings": [f"LLM learning advisor fallback: {reason}"],
+    }
+    if graph_context is not None:
+        result["graph_context"] = graph_context
+    return result
+
+
 class LLMLearningAdvisor:
     """LLM-based learning advice generator for low-match resumes."""
 
     def __init__(self, settings: LLMSettings, chat_client: ChatClientProtocol | None = None) -> None:
-        self.settings = settings
-        self.chat_client = chat_client or OpenAICompatibleChatClient(settings)
+        self.settings = replace(settings, timeout_seconds=settings.learning_timeout_seconds)
+        self.chat_client = chat_client or OpenAICompatibleChatClient(self.settings)
 
     def generate(self, match_data: dict[str, Any]) -> dict[str, Any]:
         score = match_data.get("score", 0)
@@ -1003,16 +1083,11 @@ class LLMLearningAdvisor:
             if not isinstance(result, dict):
                 raise ValueError("expected a JSON object")
         except Exception as exc:
-            return {
-                "state": "error",
-                "implementation": "llm_learning_advisor_error",
-                "summary": f"学习建议生成失败: {exc}",
-                "skill_gaps": [],
-                "learning_plan": [],
-                "recommended_resources": [],
-                "career_advice": "",
-                "warnings": [str(exc)],
-            }
+            return _fallback_learning_advice(
+                match_data,
+                str(exc),
+                "llm_learning_advisor_fallback",
+            )
 
         return {
             "state": "available",
@@ -1044,8 +1119,8 @@ class GraphRAGLearningAdvisor:
         graph_edges: list[dict[str, Any]] | None = None,
         rag: Any | None = None,
     ) -> None:
-        self.settings = settings
-        self.chat_client = chat_client or OpenAICompatibleChatClient(settings)
+        self.settings = replace(settings, timeout_seconds=settings.learning_timeout_seconds)
+        self.chat_client = chat_client or OpenAICompatibleChatClient(self.settings)
         self.graph_nodes = graph_nodes or []
         self.graph_edges = graph_edges or []
         self.rag = rag
@@ -1096,7 +1171,7 @@ class GraphRAGLearningAdvisor:
                                 if name:
                                     co_occurring[name]["count"] += 1
                                     co_occurring[name]["roles"].add(edge["properties"].get("role", "unknown"))
-        results = sorted(co_occurring.items(), key=lambda x: -x[1]["count"])[:5]
+        results = sorted(co_occurring.items(), key=lambda x: -x[1]["count"])[:3]
         return [
             {"name": name, "co_occurrence_count": info["count"], "roles": list(info["roles"])}
             for name, info in results
@@ -1114,14 +1189,14 @@ class GraphRAGLearningAdvisor:
                         "title": job_info["job_title"],
                         "role": job_info["role"],
                     }
-        return list(jobs.values())[:5]
+        return list(jobs.values())[:3]
 
     def _retrieve_rag_context(self, skill_name: str) -> list[dict[str, Any]]:
         """Retrieve relevant JD text fragments from RAG data."""
         if not self.rag:
             return []
         try:
-            result = self.rag.retrieve(skill_name, top_k=2)
+            result = self.rag.retrieve(skill_name, top_k=1)
             return [{"quote": r["quote"], "score": r["score"]} for r in result.get("results", [])]
         except Exception:
             return []
@@ -1132,9 +1207,9 @@ class GraphRAGLearningAdvisor:
         strengths = match_data.get("strengths", [])
         summary = match_data.get("summary", "")
 
-        # Build graph context for top-3 gap skills
+        # Build graph context for top-2 gap skills (reduced for faster LLM response)
         gap_context: list[dict[str, Any]] = []
-        for gap in gaps[:3]:
+        for gap in gaps[:2]:
             skill_name = gap.get("text", gap.get("skill", "")) if isinstance(gap, dict) else str(gap)
             if not skill_name:
                 continue
@@ -1178,16 +1253,12 @@ class GraphRAGLearningAdvisor:
             if not isinstance(result, dict):
                 raise ValueError("expected a JSON object")
         except Exception as exc:
-            return {
-                "state": "error",
-                "implementation": "graph_rag_learning_advisor_error",
-                "summary": f"学习建议生成失败: {exc}",
-                "skill_gaps": [],
-                "learning_plan": [],
-                "recommended_resources": [],
-                "career_advice": "",
-                "warnings": [str(exc)],
-            }
+            return _fallback_learning_advice(
+                match_data,
+                str(exc),
+                "graph_rag_learning_advisor_fallback",
+                graph_context=gap_context,
+            )
 
         return {
             "state": "available",

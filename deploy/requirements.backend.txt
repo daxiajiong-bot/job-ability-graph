@@ -1,0 +1,11 @@
+# Backend runtime dependencies for the containerized deployment.
+# NOTE: OCR (PaddleOCR) and the Qwen3-Embedding model are optional and are
+# loaded lazily at runtime, so they are intentionally NOT installed here.
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+python-dotenv>=1.0.0
+pydantic>=2.7.0
+httpx>=0.27.0
+numpy>=1.26.0
+neo4j>=5.20.0
+python-multipart>=0.0.9

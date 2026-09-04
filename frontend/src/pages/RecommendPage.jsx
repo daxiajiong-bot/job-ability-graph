@@ -15,7 +15,6 @@ import {
   Empty,
   Modal,
   Divider,
-  Radio,
   Collapse,
 } from "antd";
 import {
@@ -56,10 +55,32 @@ export default function RecommendPage() {
   } = useStore();
   const role = user?.role || "job_seeker";
 
+  // 推荐方向按角色固定：HR 只能“由 JD 推荐简历”，求职者只能“由简历推荐 JD”
+  const allowedDirection = role === "hr" ? "jd_to_resume" : "resume_to_jd";
+  const directionMeta =
+    allowedDirection === "jd_to_resume"
+      ? {
+          label: "JD → 简历",
+          icon: <FileTextOutlined />,
+          caption: "HR：由 JD 推荐简历",
+          doc: "JD",
+          docTarget: "简历",
+        }
+      : {
+          label: "简历 → JD",
+          icon: <UserOutlined />,
+          caption: "求职者：由简历推荐 JD",
+          doc: "简历",
+          docTarget: "JD",
+        };
+  const direction = allowedDirection;
+
   // 恢复上次查看文档的推荐状态（点击其他页面再回来时直接展示，无需重新生成）
-  // 仅恢复与当前缓存版本匹配的结果（逻辑升级后旧结果自动失效）
+  // 仅恢复与当前角色方向一致的缓存（旧方向/旧版本结果自动失效）
   const restored =
-    lastRecommendDocId && recommendCache[lastRecommendDocId]?.version === 2
+    lastRecommendDocId &&
+    recommendCache[lastRecommendDocId]?.version === 2 &&
+    recommendCache[lastRecommendDocId]?.direction === allowedDirection
       ? recommendCache[lastRecommendDocId]
       : null;
 
@@ -71,9 +92,6 @@ export default function RecommendPage() {
     restored?.documentId || null
   );
   const [topN, setTopN] = useState(restored?.topN || 5);
-  const [direction, setDirection] = useState(
-    restored?.direction || (role === "hr" ? "jd_to_resume" : "resume_to_jd")
-  );
   const [recommendations, setRecommendations] = useState(
     restored?.recommendations || []
   );
@@ -323,33 +341,25 @@ export default function RecommendPage() {
       {/* 配置区 */}
       <Card className="gradient-border" style={{ marginBottom: 16 }}>
         <Row gutter={[16, 16]} align="middle">
-          {/* 推荐方向 */}
+          {/* 推荐方向（按角色固定，不可切换） */}
           <Col xs={24} sm={8} md={6}>
             <div style={{ marginBottom: 4 }}>
               <Text type="secondary" style={{ fontSize: 12 }}>
                 推荐方向
               </Text>
             </div>
-            <Radio.Group
-              value={direction}
-              onChange={(e) => {
-                setDirection(e.target.value);
-                setSelectedDocId(null);
-                setRecommendations([]);
-                setMeta(null);
-                setInputDocument(null);
-              }}
-              optionType="button"
-              buttonStyle="solid"
-              size="small"
+            <Tag
+              color="gold"
+              icon={directionMeta.icon}
+              style={{ fontSize: 13, padding: "4px 12px" }}
             >
-              <Radio.Button value="resume_to_jd">
-                <UserOutlined /> 简历→JD
-              </Radio.Button>
-              <Radio.Button value="jd_to_resume">
-                <FileTextOutlined /> JD→简历
-              </Radio.Button>
-            </Radio.Group>
+              {directionMeta.label}
+            </Tag>
+            <div style={{ marginTop: 4 }}>
+              <Text type="secondary" style={{ fontSize: 11 }}>
+                {directionMeta.caption}
+              </Text>
+            </div>
           </Col>
 
           {/* 文档选择 */}

@@ -64,13 +64,13 @@ job-ability-graph/
 
 ## 环境要求
 
-| 组件    | 版本要求 | 说明                                                    |
-| ------- | -------- | ------------------------------------------------------- |
-| Python  | 3.10+    | 后端运行（本机推荐 `backend/venv`，已含嵌入依赖）       |
-| Node.js | 18+      | 前端构建                                                |
-| Ollama  | 最新版   | 画像生成 / LLM 匹配 / 报告 / 学习建议（qwen2.5:7b）     |
-| JDK     | 21       | Neo4j 2026 必需（便携版已装在 `D:\neo4j\jdk-21.0.12+8`）|
-| GPU     | 可选     | 语义嵌入加速（本机 RTX 4060，8-bit 量化约 4GB 显存）    |
+| 组件    | 版本要求 | 说明                                                      |
+| ------- | -------- | --------------------------------------------------------- |
+| Python  | 3.10+    | 后端运行（本机推荐`backend/venv`，已含嵌入依赖）        |
+| Node.js | 18+      | 前端构建                                                  |
+| Ollama  | 最新版   | 画像生成 / LLM 匹配 / 报告 / 学习建议（qwen2.5:7b）       |
+| JDK     | 21       | Neo4j 2026 必需（便携版已装在`D:\neo4j\jdk-21.0.12+8`） |
+| GPU     | 可选     | 语义嵌入加速（本机 RTX 4060，8-bit 量化约 4GB 显存）      |
 
 ---
 
@@ -87,17 +87,17 @@ pip install -r requirements.txt
 
 编辑 `.env` 文件，核心配置项：
 
-| 变量                     | 默认值         | 说明                                                    |
-| ------------------------ | -------------- | ------------------------------------------------------- |
-| `DB_BACKEND`           | `sqlite`     | 数据库：`sqlite`（持久化）或 `memory`（重启丢失）   |
-| `LLM_BACKEND`          | `ollama`     | 大模型：`mock`（无 AI）或 `ollama`（需安装 Ollama） |
-| `GRAPH_BACKEND`        | `neo4j`      | 图数据库：`neo4j`（推荐）或 `mock`（内存 JSONL）    |
-| `NEO4J_URI` / `NEO4J_PASSWORD` | `bolt://localhost:7687` / `jobgraph_neo4j_2026` | Neo4j 连接参数，与 `neo4j_local.ps1` 一致 |
-| `EMBEDDING_BACKEND`    | `local`      | 语义召回：`local`（Qwen3-Embedding-4B）或 `off`    |
-| `EMBEDDING_QUANT`      | `8bit`       | 嵌入量化：`none`（需 16GB+ 显存）/ `8bit`（推荐）/ `4bit` |
-| `EMBEDDING_BATCH_SIZE` | `8`          | 编码批次，8GB 显存建议保持 8 |
-| `LLM_MODEL`            | `qwen2.5:7b` | Ollama 模型名                                           |
-| `DATA_GOVERNANCE_ROOT` | `data`       | 数据目录                                                |
+| 变量                               | 默认值                                              | 说明                                                            |
+| ---------------------------------- | --------------------------------------------------- | --------------------------------------------------------------- |
+| `DB_BACKEND`                     | `sqlite`                                          | 数据库：`sqlite`（持久化）或 `memory`（重启丢失）           |
+| `LLM_BACKEND`                    | `ollama`                                          | 大模型：`mock`（无 AI）或 `ollama`（需安装 Ollama）         |
+| `GRAPH_BACKEND`                  | `neo4j`                                           | 图数据库：`neo4j`（推荐）或 `mock`（内存 JSONL）            |
+| `NEO4J_URI` / `NEO4J_PASSWORD` | `bolt://localhost:7687` / `jobgraph_neo4j_2026` | Neo4j 连接参数，与`neo4j_local.ps1` 一致                      |
+| `EMBEDDING_BACKEND`              | `local`                                           | 语义召回：`local`（Qwen3-Embedding-4B）或 `off`             |
+| `EMBEDDING_QUANT`                | `8bit`                                            | 嵌入量化：`none`（需 16GB+ 显存）/ `8bit`（推荐）/ `4bit` |
+| `EMBEDDING_BATCH_SIZE`           | `8`                                               | 编码批次，8GB 显存建议保持 8                                    |
+| `LLM_MODEL`                      | `qwen2.5:7b`                                      | Ollama 模型名                                                   |
+| `DATA_GOVERNANCE_ROOT`           | `data`                                            | 数据目录                                                        |
 
 > 完整配置见 `.env.example`（含 NEO4J_*、OCR_*、LLM_*、EMBEDDING_* 全部选项）。
 
@@ -183,17 +183,17 @@ npm run dev
 
 ### 3. 主要页面
 
-| 路径          | 功能                                  |
-| ------------- | ------------------------------------- |
-| `/`         | 仪表盘概览                            |
-| `/jd`       | JD 管理（查看/上传 JD，生成岗位画像） |
-| `/resume`   | 简历管理（上传简历，生成候选人画像）  |
-| `/match`    | 人岗匹配                              |
-| `/recommend`| 智能推荐（嵌入混合召回 + LLM 打分）   |
-| `/history`  | 匹配历史                              |
-| `/graph`    | 知识图谱（Neo4j 真实数据，检索高亮）  |
-| `/starmap`  | 3D 星图可视化                         |
-| `/settings` | 系统设置                              |
+| 路径           | 功能                                  |
+| -------------- | ------------------------------------- |
+| `/`          | 仪表盘概览                            |
+| `/jd`        | JD 管理（查看/上传 JD，生成岗位画像） |
+| `/resume`    | 简历管理（上传简历，生成候选人画像）  |
+| `/match`     | 人岗匹配                              |
+| `/recommend` | 智能推荐（嵌入混合召回 + LLM 打分）   |
+| `/history`   | 匹配历史                              |
+| `/graph`     | 知识图谱（Neo4j 真实数据，节点搜索高亮） |
+| `/starmap`   | 3D 星图可视化                         |
+| `/settings`  | 系统设置                              |
 
 ---
 
@@ -333,7 +333,7 @@ python scripts/merge_kg_delta.py --force       # 演示：连 unresolved 一起�
 ### 4. 后端接线
 
 - `.env` 中 `GRAPH_BACKEND=neo4j` 后，`POST /knowledge-graphs` 真实写入 Neo4j，`POST /graph-retrievals` 走 Cypher 多跳检索
-- 前端 `/graph` 页面：加载 `kg_prebuilt_v2`（默认按连接度取 Top-N 节点），支持分类筛选、节点搜索、语义路径检索高亮、力导向/环形布局切换
+- 前端 `/graph` 页面：加载 `kg_prebuilt_v2`（默认按连接度取 Top-N 节点），支持分类筛选、节点搜索、力导向/环形布局切换
 
 ---
 
@@ -364,8 +364,16 @@ python scripts/build_embedding_index.py --limit 100
 ### 4. 验证
 
 ```bash
-python scripts/_test_recall.py            # 编码查询 + 检索 Top5
-python scripts/_test_api_automatch.py     # API 级：检查 meta.recall == "hybrid"
+# 接口级验证：创建一份简历文档，再调用智能推荐，响应 meta.recall 应为 "hybrid"
+curl -X POST http://127.0.0.1:8002/api/v1/documents \
+  -H "Content-Type: application/json" \
+  -d '{"document_type":"resume","text":"Python 后端开发工程师，熟悉 Django、FastAPI、MySQL、Redis、Docker"}'
+
+# 取返回的 document id 后：
+curl -X POST http://127.0.0.1:8002/api/v1/auto-match \
+  -H "Content-Type: application/json" \
+  -d '{"document_id":"<上一步返回的id>","top_n":5}'
+# 期望 meta.recall == "hybrid"（嵌入召回生效）；若为 "sql" 请先构建索引
 ```
 
 ---
@@ -383,39 +391,39 @@ python -m pytest tests/ -v
 
 ## 九、常见问题
 
-| 问题                            | 解决方案                                             |
-| ------------------------------- | ---------------------------------------------------- |
-| `No module named 'backend'`   | 在`job-ability-graph` 根目录下运行                 |
-| 前端页面空白                    | 确保后端已启动，访问`http://127.0.0.1:8002/health`；Vite 代理只指向 8002 |
-| 图谱页看不到数据                | ① 确认 Neo4j 已启动（`scripts/neo4j_local.ps1 status`）② 浏览器 Ctrl+F5 强刷 |
-| 图谱检索返回空                  | `GRAPH_BACKEND=neo4j` + Neo4j 运行中；先执行 `import_prebuilt_kg.py` |
-| JD 页面没有数据                 | 检查`data/small-raw/jd_raw.jsonl` 是否存在         |
-| 数据库被锁定                    | 确保只有一个后端进程运行（不要同时在 8000/8002 各起一个） |
-| 画像返回`not_implemented`     | 检查`LLM_BACKEND` 是否设为 `ollama`              |
-| 学习建议显示 Mock               | 需要`LLM_BACKEND=ollama` 且 Ollama 运行中          |
-| 学习建议显示 LLM 而非 Graph-RAG | 重启后端（不要用`--reload`）                       |
-| 智能推荐 `recall=sql`（无嵌入） | 先跑 `build_embedding_index.py` 构建索引；检查 `EMBEDDING_QUANT` 与显存 |
-| 嵌入模型加载 OOM                | `EMBEDDING_QUANT=4bit` 进一步省显存，或 `EMBEDDING_BACKEND=off` 关闭嵌入 |
-| Ollama 响应超时                 | 首次加载模型需 30-60 秒，属正常                      |
-| `ollama: command not found`   | 重新安装 Ollama 并重启终端                           |
+| 问题                             | 解决方案                                                                         |
+| -------------------------------- | -------------------------------------------------------------------------------- |
+| `No module named 'backend'`    | 在`job-ability-graph` 根目录下运行                                             |
+| 前端页面空白                     | 确保后端已启动，访问`http://127.0.0.1:8002/health`；Vite 代理只指向 8002       |
+| 图谱页看不到数据                 | ① 确认 Neo4j 已启动（`scripts/neo4j_local.ps1 status`）② 浏览器 Ctrl+F5 强刷 |
+| 图谱检索返回空                   | `GRAPH_BACKEND=neo4j` + Neo4j 运行中；先执行 `import_prebuilt_kg.py`         |
+| JD 页面没有数据                  | 检查`data/small-raw/jd_raw.jsonl` 是否存在                                     |
+| 数据库被锁定                     | 确保只有一个后端进程运行（不要同时在 8000/8002 各起一个）                        |
+| 画像返回`not_implemented`      | 检查`LLM_BACKEND` 是否设为 `ollama`                                          |
+| 学习建议显示 Mock                | 需要`LLM_BACKEND=ollama` 且 Ollama 运行中                                      |
+| 学习建议显示 LLM 而非 Graph-RAG  | 重启后端（不要用`--reload`）                                                   |
+| 智能推荐`recall=sql`（无嵌入） | 先跑`build_embedding_index.py` 构建索引；检查 `EMBEDDING_QUANT` 与显存       |
+| 嵌入模型加载 OOM                 | `EMBEDDING_QUANT=4bit` 进一步省显存，或 `EMBEDDING_BACKEND=off` 关闭嵌入     |
+| Ollama 响应超时                  | 首次加载模型需 30-60 秒，属正常                                                  |
+| `ollama: command not found`    | 重新安装 Ollama 并重启终端                                                       |
 
 ---
 
 ## 十、技术栈
 
-| 层        | 技术                            |
-| --------- | ------------------------------- |
-| 后端框架  | Python 3.10+, FastAPI, Uvicorn  |
-| 数据库    | SQLite（默认）/ Neo4j（知识图谱）|
-| 大模型    | Ollama + qwen2.5:7b（本地推理） |
-| 语义嵌入  | Qwen3-Embedding-4B + LoRA（8-bit 量化，混合召回） |
-| 知识图谱  | Neo4j 2026（Cypher 多跳检索）   |
+| 层        | 技术                                                |
+| --------- | --------------------------------------------------- |
+| 后端框架  | Python 3.10+, FastAPI, Uvicorn                      |
+| 数据库    | SQLite（默认）/ Neo4j（知识图谱）                   |
+| 大模型    | Ollama + qwen2.5:7b（本地推理）                     |
+| 语义嵌入  | Qwen3-Embedding-4B + LoRA（8-bit 量化，混合召回）   |
+| 知识图谱  | Neo4j 2026（Cypher 多跳检索）                       |
 | RAG       | 关键词检索（DataGovernanceRag）+ Graph-RAG 学习建议 |
-| 前端框架  | React 19, Vite 8, Ant Design 6  |
-| 3D 可视化 | Three.js, @react-three/fiber    |
-| 图表      | ECharts（力导向/环形图谱、雷达图）|
-| 状态管理  | Zustand                         |
-| ML 训练   | Qwen3-Embedding-4B LoRA 微调    |
+| 前端框架  | React 19, Vite 8, Ant Design 6                      |
+| 3D 可视化 | Three.js, @react-three/fiber                        |
+| 图表      | ECharts（力导向/环形图谱、雷达图）                  |
+| 状态管理  | Zustand                                             |
+| ML 训练   | Qwen3-Embedding-4B LoRA 微调                        |
 
 ---
 

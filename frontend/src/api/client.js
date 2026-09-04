@@ -7,6 +7,8 @@ const api = axios.create({
   headers: { "Content-Type": "application/json" },
 });
 
+const LEARNING_ADVICE_TIMEOUT_MS = 360000;
+
 // ── 获取认证信息（从 localStorage） ──
 function getStoredState() {
   try {
@@ -189,8 +191,10 @@ export const createReport = (matchId, language = "zh-CN") =>
 
 // ── Learning Advice ────────────────────────────────────
 export const getLearningAdvice = (matchId) =>
-  requestWithRetry(() =>
-    api.post("/learning-advice", { match_id: matchId })
+  api.post(
+    "/learning-advice",
+    { match_id: matchId },
+    { timeout: LEARNING_ADVICE_TIMEOUT_MS }
   );
 
 // ── Auto Match (智能推荐) ─────────────────────────────
@@ -292,6 +296,52 @@ export const answerRAG = (query, docIds = [], topK = 5) =>
       top_k: topK,
     })
   );
+
+// ── JobTrend Discovery (岗位发现) ──────────────────────
+export const getEmergingRoles = () =>
+  requestWithRetry(() => api.get("/trend/emerging-roles"));
+
+export const generateRoleDefinition = (roleId) =>
+  api.post(`/trend/emerging-roles/${encodeURIComponent(roleId)}/generate-definition`, {}, { timeout: 180000 });
+
+export const saveRoleDefinition = (roleId, definition, status) =>
+  requestWithRetry(() =>
+    api.put(`/trend/emerging-roles/${encodeURIComponent(roleId)}/definition`, {
+      ...definition,
+      status,
+    })
+  );
+
+export const reviewRoleDefinition = (roleId, decision, notes = "") =>
+  requestWithRetry(() =>
+    api.post(`/trend/emerging-roles/${encodeURIComponent(roleId)}/review`, {
+      decision,
+      notes,
+      reviewer: "expert",
+    })
+  );
+
+export const getSkillUpdates = () =>
+  requestWithRetry(() => api.get("/trend/skill-updates"));
+
+// 审核「既有岗位技能更新」：decision=approved/rejected；skillNames 为空数组表示对该更新的全部变化项生效
+export const reviewSkillUpdate = (updateId, decision, skillNames = [], notes = "") =>
+  requestWithRetry(() =>
+    api.post(`/trend/skill-updates/${encodeURIComponent(updateId)}/review`, {
+      decision,
+      skill_names: skillNames,
+      notes,
+    })
+  );
+
+export const getTrendFeatures = () =>
+  requestWithRetry(() => api.get("/trend/features"));
+
+export const getReviewQueue = () =>
+  requestWithRetry(() => api.get("/trend/review-queue"));
+
+export const getTrendSummary = () =>
+  requestWithRetry(() => api.get("/trend/summary"));
 
 // ── Users ─────────────────────────────────────────────
 export const initUser = () => api.post("/users/init");

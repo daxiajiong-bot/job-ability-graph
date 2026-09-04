@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import {
   Button,
   Card,
@@ -11,15 +11,14 @@ import {
   Space,
   Spin,
   Statistic,
-  Tag,
   Typography,
   message,
 } from "antd";
 import { ReloadOutlined, SearchOutlined, ShareAltOutlined } from "@ant-design/icons";
 import ReactECharts from "echarts-for-react";
-import { getKnowledgeGraph, graphRetrieval } from "../api/client";
+import { getKnowledgeGraph } from "../api/client";
 
-const { Title, Text } = Typography;
+const { Title } = Typography;
 
 // ── 节点分类与配色（与预构建图谱 label 对应） ──
 const CATEGORY_META = {
@@ -48,10 +47,6 @@ export default function KnowledgeGraph() {
   const [maxNodes, setMaxNodes] = useState(100); // 0 = 全部
   const [layout, setLayout] = useState("force");
   const [search, setSearch] = useState("");
-  const [retrievalQuery, setRetrievalQuery] = useState("");
-  const [retrieving, setRetrieving] = useState(false);
-  const [highlightIds, setHighlightIds] = useState(new Set());
-  const [paths, setPaths] = useState([]);
 
   const loadGraph = useCallback(async () => {
     setLoading(true);
@@ -70,24 +65,6 @@ export default function KnowledgeGraph() {
   useEffect(() => {
     loadGraph();
   }, [loadGraph]);
-
-  const doRetrieval = useCallback(async () => {
-    const q = retrievalQuery.trim();
-    if (!q) return;
-    setRetrieving(true);
-    try {
-      const res = await graphRetrieval(GRAPH_ID, q);
-      const retr = res.data.data.retrieval;
-      const ids = Object.keys(retr.entities || {});
-      setHighlightIds(new Set(ids));
-      setPaths(retr.paths || []);
-      message.info(`检索命中 ${ids.length} 个实体 / ${(retr.paths || []).length} 条路径`);
-    } catch (e) {
-      message.error(`检索失败：${e.message}`);
-    } finally {
-      setRetrieving(false);
-    }
-  }, [retrievalQuery]);
 
   // ── 类别过滤后的全量子图 ──
   const { allNodes, allEdges, degreeMap } = useMemo(() => {
@@ -191,10 +168,7 @@ export default function KnowledgeGraph() {
           links: edges.map((e) => ({
             source: e.source,
             target: e.target,
-            lineStyle: {
-              color: highlightIds.has(e.source) || highlightIds.has(e.target) ? "#facc15" : "rgba(120,130,150,0.45)",
-              width: highlightIds.has(e.source) || highlightIds.has(e.target) ? 3 : 0.8,
-            },
+            lineStyle: { color: "rgba(120,130,150,0.45)", width: 0.8 },
           })),
           lineStyle: { curveness: 0.12, opacity: 0.6 },
           animationDuration: 400,
@@ -202,7 +176,7 @@ export default function KnowledgeGraph() {
       ],
       backgroundColor: "transparent",
     };
-  }, [nodes, edges, categories, highlightIds, search, degreeMap, layout]);
+  }, [nodes, edges, categories, search, degreeMap, layout]);
 
   const totalNodes = graph?.nodes?.length || 0;
   const totalEdges = graph?.edges?.length || 0;
@@ -214,9 +188,6 @@ export default function KnowledgeGraph() {
           <Title level={4} style={{ margin: 0 }}>
             <ShareAltOutlined /> 岗位能力全景图谱
           </Title>
-          <Text type="secondary">
-            数据源：Neo4j 快照 kg_prebuilt_v2（{totalNodes} 节点 / {totalEdges} 边）
-          </Text>
         </Col>
         <Col>
           <Space wrap>
@@ -256,11 +227,10 @@ export default function KnowledgeGraph() {
       </Row>
 
       <Row gutter={12} style={{ marginBottom: 12 }}>
-        <Col span={5}><Statistic title="图谱节点" value={totalNodes} suffix={`/ 展示 ${nodes.length}`} /></Col>
-        <Col span={5}><Statistic title="图谱关系" value={totalEdges} suffix={`/ 展示 ${edges.length}`} /></Col>
-        <Col span={4}><Statistic title="分类" value={categories.length} /></Col>
-        <Col span={5}><Statistic title="检索命中" value={highlightIds.size} /></Col>
-        <Col span={5}>
+        <Col span={6}><Statistic title="图谱节点" value={totalNodes} suffix={`/ 展示 ${nodes.length}`} /></Col>
+        <Col span={6}><Statistic title="图谱关系" value={totalEdges} suffix={`/ 展示 ${edges.length}`} /></Col>
+        <Col span={6}><Statistic title="分类" value={categories.length} /></Col>
+        <Col span={6}>
           <Space.Compact style={{ width: "100%" }}>
             <Input
               prefix={<SearchOutlined />}
@@ -273,50 +243,15 @@ export default function KnowledgeGraph() {
         </Col>
       </Row>
 
-      <Row gutter={12}>
-        <Col span={7}>
-          <Card size="small" title="语义路径检索（Neo4j）" style={{ minHeight: 320 }}>
-            <Space.Compact style={{ width: "100%" }}>
-              <Input
-                placeholder="如 Agent、python、Java"
-                value={retrievalQuery}
-                onChange={(e) => setRetrievalQuery(e.target.value)}
-                onPressEnter={doRetrieval}
-              />
-              <Button type="primary" icon={<SearchOutlined />} loading={retrieving} onClick={doRetrieval}>
-                检索
-              </Button>
-            </Space.Compact>
-            <div style={{ marginTop: 10 }}>
-              {paths.length === 0 ? (
-                <Text type="secondary" style={{ fontSize: 12 }}>
-                  在 Neo4j 中沿图谱关系检索最多 3 跳路径，命中实体黄色高亮。
-                </Text>
-              ) : (
-                <div style={{ maxHeight: 420, overflow: "auto" }}>
-                  {paths.slice(0, 40).map((p, i) => (
-                    <div key={p.id || i} style={{ fontSize: 12, marginBottom: 6 }}>
-                      <Tag color="gold">#{i + 1}</Tag>
-                      {p.nodes.map((n) => n.properties?.name || n.id).join(" → ")}
-                    </div>
-                  ))}
-                </div>
-              )}
-            </div>
-          </Card>
-        </Col>
-        <Col span={17}>
-          <Card size="small" bodyStyle={{ padding: 8 }}>
-            <Spin spinning={loading}>
-              {nodes.length === 0 ? (
-                <Empty description="暂无图谱数据，请刷新或检查后端/Neo4j" style={{ padding: 80 }} />
-              ) : (
-                <ReactECharts option={option} style={{ height: 640 }} notMerge lazyUpdate />
-              )}
-            </Spin>
-          </Card>
-        </Col>
-      </Row>
+      <Card size="small" bodyStyle={{ padding: 8 }}>
+        <Spin spinning={loading}>
+          {nodes.length === 0 ? (
+            <Empty description="暂无图谱数据，请刷新或检查后端/Neo4j" style={{ padding: 80 }} />
+          ) : (
+            <ReactECharts option={option} style={{ height: 640 }} notMerge lazyUpdate />
+          )}
+        </Spin>
+      </Card>
     </div>
   );
 }

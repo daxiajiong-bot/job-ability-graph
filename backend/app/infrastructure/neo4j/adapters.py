@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
+from datetime import datetime, timezone
 from hashlib import sha256
 import json
 from os import getenv
@@ -30,6 +31,29 @@ REL_HAS_CAPABILITY = "HAS_CAPABILITY"
 REL_REQUIRES_CAPABILITY = "REQUIRES_CAPABILITY"
 REL_BELONGS_TO_CAPABILITY = "BELONGS_TO_CAPABILITY"
 REL_SUPPORTED_BY = "SUPPORTED_BY"
+
+# 既有岗位（Job 角色级节点）标签：更新/合并技能变化时在这些节点上挂边。
+ROLE_NODE_LABELS = ("Job", "JobProfile", "EmergingRole", "Role")
+
+# 技能/技术/知识/通用能力等"能力节点"标签，按优先级尝试复用既有节点。
+CAPABILITY_LABELS = (
+    "Skill",
+    "Technology",
+    "Knowledge",
+    "TransversalCompetence",
+    "LanguageCompetence",
+    "Capability",
+)
+CAPABILITY_REL_TYPES = {
+    "Skill": REL_REQUIRES_SKILL,
+    "Technology": "REQUIRES_TECHNOLOGY",
+    "Knowledge": "REQUIRES_KNOWLEDGE",
+    "TransversalCompetence": "REQUIRES_TRANSVERSAL_COMPETENCE",
+    "LanguageCompetence": "REQUIRES_LANGUAGE_COMPETENCE",
+    "Capability": REL_REQUIRES_CAPABILITY,
+}
+DEFAULT_CAPABILITY_LABEL = "Skill"
+DEFAULT_CAPABILITY_REL = REL_REQUIRES_SKILL
 
 
 @dataclass(frozen=True)
@@ -84,6 +108,209 @@ class Neo4jGraphStore:
         self.ensure_schema()
         with self._driver.session(**self._session_kwargs()) as session:
             session.execute_write(self._write_graph_tx, payload)
+
+    def apply_role_skill_delta(
+        self,
+        *,
+        snapshot_id: str,
+        role_title: str,
+        additions: list[dict[str, Any]] | None = None,
+        removals: list[dict[str, Any]] | None = None,
+        reviewer: str = "expert",
+        notes: str = "",
+    ) -> dict[str, Any]:
+        """Update existing job role node(s) inside ``snapshot_id`` (idempotent).
+
+        For every reviewed skill change the caller submits, this attaches
+        ``(Job)-[:REQUIRES_*]->(capability)`` edges to every matched existing
+        job node. A capability node is reused when its name matches an existing
+        Skill/Technology/Knowledge/... node; otherwise a ``Skill`` node is
+        created. ``removals`` detach the requirement edge instead. All writes
+        are idempotent (MERGE) and are tagged with the target snapshot id so
+        the change is immediately visible in the live knowledge graph.
+        """
+        self.ensure_schema()
+        role_title = (role_title or "").strip()
+        additions = [
+            dict(item) for item in (additions or []) if str(item.get("skill_name") or "").strip()
+        ]
+        removals = [
+            dict(item) for item in (removals or []) if str(item.get("skill_name") or "").strip()
+        ]
+        summary: dict[str, Any] = {
+            "applied": False,
+            "backend": "neo4j",
+            "snapshot": snapshot_id,
+            "matched_job_count": 0,
+            "matched_jobs": [],
+            "additions": [],
+            "removals": [],
+        }
+        if not role_title:
+            summary["reason"] = "role_title is empty"
+            return summary
+        if not additions and not removals:
+            summary["reason"] = "no skill changes to apply"
+            return summary
+
+        find_statement = f"""
+        MATCH (job)
+        WHERE $snapshot_id IN coalesce(job.graph_ids, [])
+          AND any(lbl IN labels(job) WHERE lbl IN $role_labels)
+          AND toLower(coalesce(job.title, '') + ' ' + coalesce(job.name, '')) CONTAINS toLower($role_title)
+        WITH job
+        ORDER BY size(coalesce(job.title, job.name, '')) ASC
+        LIMIT $limit
+        RETURN job.id AS id,
+               labels(job) AS labels,
+               coalesce(job.title, job.name, job.id) AS title,
+               job.company_name AS company_name,
+               job.location AS location
+        """
+        with self._driver.session(**self._session_kwargs()) as session:
+            matched_rows = session.run(
+                find_statement,
+                snapshot_id=snapshot_id,
+                role_labels=list(ROLE_NODE_LABELS),
+                role_title=role_title,
+                limit=25,
+            ).data()
+
+        job_ids = [row["id"] for row in matched_rows]
+        if not job_ids:
+            summary["reason"] = (
+                f'no existing job node matched "{role_title}" in snapshot {snapshot_id}'
+            )
+            return summary
+
+        summary["matched_job_count"] = len(job_ids)
+        summary["matched_jobs"] = [
+            {
+                "id": row["id"],
+                "labels": row["labels"],
+                "title": row["title"],
+                "company_name": row.get("company_name"),
+                "location": row.get("location"),
+            }
+            for row in matched_rows
+        ]
+
+        now = datetime.now(timezone.utc).isoformat(timespec="seconds")
+
+        def _append_graph_ids(var: str) -> str:
+            return (
+                f"{var}.graph_ids = CASE "
+                f"WHEN {var}.graph_ids IS NULL THEN [$snapshot_id] "
+                f"WHEN NOT ($snapshot_id IN {var}.graph_ids) THEN {var}.graph_ids + $snapshot_id "
+                f"ELSE {var}.graph_ids END"
+            )
+
+        def _resolve_capability(tx: Any, name: str) -> tuple[str, str] | None:
+            rows = tx.run(
+                """
+                MATCH (cap)
+                WHERE any(lbl IN labels(cap) WHERE lbl IN $labels)
+                  AND toLower(coalesce(cap.name, '')) = toLower($name)
+                RETURN cap.id AS id, labels(cap) AS labels
+                LIMIT 1
+                """,
+                labels=list(CAPABILITY_LABELS),
+                name=name,
+            ).data()
+            if not rows:
+                return None
+            labels = rows[0].get("labels") or []
+            label = next(
+                (lbl for lbl in CAPABILITY_LABELS if lbl in labels),
+                DEFAULT_CAPABILITY_LABEL,
+            )
+            return str(rows[0]["id"]), label
+
+        def _apply_tx(tx: Any) -> dict[str, Any]:
+            applied: dict[str, Any] = {"additions": [], "removals": []}
+
+            for item in additions:
+                skill_name = str(item.get("skill_name") or "").strip()
+                resolved = _resolve_capability(tx, skill_name)
+                if resolved is not None:
+                    cap_id, cap_label = resolved
+                else:
+                    cap_id = _named_node_id("skill", skill_name)
+                    cap_label = DEFAULT_CAPABILITY_LABEL
+                    tx.run(
+                        "MERGE (cap:%s {id: $id}) SET cap.name = $name SET "
+                        % _identifier(cap_label)
+                        + _append_graph_ids("cap"),
+                        id=cap_id,
+                        name=skill_name,
+                        snapshot_id=snapshot_id,
+                    )
+                rel_type = CAPABILITY_REL_TYPES.get(cap_label, DEFAULT_CAPABILITY_REL)
+                rel_props = {
+                    "evidence_ids": [str(x) for x in (item.get("evidence_ids") or [])],
+                    "change_type": str(item.get("change_type") or "added"),
+                    "canonical_role": role_title,
+                    "resolution_status": "approved",
+                    "reviewer": reviewer,
+                    "reviewed_at": now,
+                    "source_system": "jobtrend_online_review",
+                }
+                if item.get("update_id"):
+                    rel_props["update_id"] = str(item["update_id"])
+                if notes:
+                    rel_props["notes"] = notes
+                merge_statement = (
+                    "UNWIND $job_ids AS jid "
+                    "MATCH (job) WHERE job.id = jid "
+                    "MATCH (cap:%s {id: $cap_id}) " % _identifier(cap_label)
+                    + "MERGE (job)-[r:%s]->(cap) " % rel_type
+                    + "SET r += $props "
+                    + "SET " + _append_graph_ids("r")
+                )
+                tx.run(
+                    merge_statement,
+                    job_ids=job_ids,
+                    cap_id=cap_id,
+                    props=rel_props,
+                    snapshot_id=snapshot_id,
+                )
+                applied["additions"].append(
+                    {
+                        "skill_name": skill_name,
+                        "capability_id": cap_id,
+                        "capability_label": cap_label,
+                        "relation_type": rel_type,
+                        "created_node": resolved is None,
+                        "jobs_linked": len(job_ids),
+                    }
+                )
+
+            for item in removals:
+                skill_name = str(item.get("skill_name") or "").strip()
+                resolved = _resolve_capability(tx, skill_name)
+                if resolved is None:
+                    applied["removals"].append({"skill_name": skill_name, "edges_deleted": 0})
+                    continue
+                cap_id, cap_label = resolved
+                delete_statement = (
+                    "UNWIND $job_ids AS jid "
+                    "MATCH (job) WHERE job.id = jid "
+                    "MATCH (job)-[r]->(cap:%s) " % _identifier(cap_label)
+                    + "WHERE cap.id = $cap_id AND type(r) STARTS WITH 'REQUIRES_' "
+                    + "DELETE r"
+                )
+                counters = tx.run(delete_statement, job_ids=job_ids, cap_id=cap_id).consume()
+                applied["removals"].append(
+                    {"skill_name": skill_name, "edges_deleted": counters.relationships_deleted or 0}
+                )
+            return applied
+
+        with self._driver.session(**self._session_kwargs()) as session:
+            applied_result = session.execute_write(_apply_tx)
+
+        summary["applied"] = True
+        summary.update(applied_result)
+        return summary
 
     def retrieve_paths(
         self,

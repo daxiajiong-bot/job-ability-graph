@@ -1,0 +1,75 @@
+# .dockerignore for the job-ability-graph repository root.
+# Keeps the Docker build context small (excludes venv, node_modules, .git,
+# model weights and non-runtime datasets) for deploy/Dockerfile.backend and
+# deploy/Dockerfile.frontend. Place this file in the repository root.
+
+# VCS / editors / OS
+.git
+.gitignore
+**/.git
+.idea
+.vscode
+*.iml
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+**/__pycache__/
+*.py[codz]
+*$py.class
+backend/venv
+.venv
+venv/
+.pytest_cache
+.coverage
+htmlcov
+*.egg-info/
+
+# Node
+frontend/node_modules
+frontend/dist
+
+# Machine-local runtime data NOT needed by the images.
+data/app.db
+data/app.db-shm
+data/app.db-wal
+data/structured
+data/rag
+data/audit
+data/graph
+data/legacy
+data/outputs
+data/parsed
+data/raw
+data/samples
+data/staging
+data/jd-raw-3000
+data/resume_synthetic_lstk_tech_v1
+data/embeddings
+data/jd-raw.zip
+data/small-raw/jd_raw.csv
+data/small-raw/jd_raw.jsonl
+data/small-raw/resume_raw.csv
+data/small-raw/resume_raw.jsonl
+data/small-raw/*.json
+# NOTE: data/small_raw_200_lskt_tech_v2, data/esco and
+# data/small-raw/jd_raw_100.jsonl are fixtures COPYed into the backend image,
+# so they must stay in the context.
+
+# Heavy / local-only directories.
+jdmatch-deployment-qwen3-4b-v1
+jd-parser
+JobCloud
+research
+algorithms
+docs
+tests
+*.whl
+*.zip
+*.npy
+*.bin
+*.safetensors
+*.pt
+*.pth
+*.ckpt

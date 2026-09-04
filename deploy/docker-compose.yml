@@ -1,0 +1,155 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# job-ability-graph 全栈容器化部署
+# 服务：neo4j（图谱库）+ kg-init（首次导入预构建图谱）+ ollama（自带 LLM）
+#       + backend（FastAPI :8002）+ frontend（nginx :8080，代理 /api）
+#
+# 用法（在 deploy/ 目录下）：
+#   copy .env.docker .env          # 可选，改端口/密码/模型
+#   docker compose up -d --build   # 首次启动会自动拉取镜像/模型并导入图谱
+#
+# 常用：
+#   docker compose ps
+#   docker compose logs -f backend
+#   docker compose logs ollama-pull     # 观察大模型拉取进度
+#   docker compose run --rm kg-init     # 手动重导图谱（幂等）
+#   docker compose down                 # 停止；加 -v 会连数据卷一起删
+# ─────────────────────────────────────────────────────────────────────────────
+
+name: job-ability-graph
+
+# 后端进程（backend / kg-init）共用的环境变量，占位值由 .env 插值。
+x-backend-env: &backend-env
+  DB_BACKEND: ${DB_BACKEND:-sqlite}
+  DB_PATH: ${DB_PATH:-/app/data/app.db}
+  DATA_GOVERNANCE_ROOT: ${DATA_GOVERNANCE_ROOT:-/app/data}
+  GRAPH_BACKEND: ${GRAPH_BACKEND:-neo4j}
+  NEO4J_URI: ${NEO4J_URI:-bolt://neo4j:7687}
+  NEO4J_USER: ${NEO4J_USER:-neo4j}
+  NEO4J_PASSWORD: ${NEO4J_PASSWORD:-jobgraph_neo4j_2026}
+  NEO4J_DATABASE: ${NEO4J_DATABASE:-neo4j}
+  NEO4J_MAX_PATH_DEPTH: ${NEO4J_MAX_PATH_DEPTH:-3}
+  NEO4J_RETRIEVAL_LIMIT: ${NEO4J_RETRIEVAL_LIMIT:-20}
+  TREND_UPDATE_GRAPH_SNAPSHOT: ${TREND_UPDATE_GRAPH_SNAPSHOT:-kg_prebuilt_v2}
+  LLM_BACKEND: ${LLM_BACKEND:-ollama}
+  LLM_BASE_URL: ${LLM_BASE_URL:-http://ollama:11434/v1}
+  LLM_API_KEY: ${LLM_API_KEY:-ollama}
+  LLM_MODEL: ${LLM_MODEL:-qwen2.5:7b}
+  LLM_TIMEOUT_SECONDS: ${LLM_TIMEOUT_SECONDS:-300}
+  LLM_MATCH_TIMEOUT_SECONDS: ${LLM_MATCH_TIMEOUT_SECONDS:-45}
+  LLM_PROFILE_TIMEOUT_SECONDS: ${LLM_PROFILE_TIMEOUT_SECONDS:-90}
+  LLM_LEARNING_TIMEOUT_SECONDS: ${LLM_LEARNING_TIMEOUT_SECONDS:-180}
+  LLM_MAX_INPUT_CHARS: ${LLM_MAX_INPUT_CHARS:-12000}
+  EMBEDDING_BACKEND: ${EMBEDDING_BACKEND:-off}
+  JWT_SECRET_KEY: ${JWT_SECRET_KEY:-job-ability-graph-secret-key-2026-challenge-cup}
+  OCR_DEFAULT_LANG: ${OCR_DEFAULT_LANG:-ch}
+  OCR_DEVICE: ${OCR_DEVICE:-cpu}
+  OCR_MAX_UPLOAD_MB: ${OCR_MAX_UPLOAD_MB:-20}
+
+services:
+  neo4j:
+    image: neo4j:${NEO4J_VERSION:-2026.05.0}
+    restart: unless-stopped
+    stop_grace_period: 60s
+    ports:
+      - "${NEO4J_HTTP_PORT:-7474}:7474"
+      - "${NEO4J_BOLT_PORT:-7687}:7687"
+    environment:
+      NEO4J_AUTH: neo4j/${NEO4J_PASSWORD:-jobgraph_neo4j_2026}
+      NEO4J_server_memory_heap_initial__size: ${NEO4J_HEAP_INITIAL:-768M}
+      NEO4J_server_memory_heap_max__size: ${NEO4J_HEAP_MAX:-1536M}
+      NEO4J_server_memory_pagecache_size: ${NEO4J_PAGECACHE:-1G}
+    volumes:
+      - neo4j-data:/data
+      - neo4j-logs:/logs
+      - neo4j-import:/import
+      - neo4j-plugins:/plugins
+    healthcheck:
+      test: ["CMD-SHELL", "cypher-shell -u neo4j -p '${NEO4J_PASSWORD:-jobgraph_neo4j_2026}' 'RETURN 1 AS ok;' >/dev/null 2>&1"]
+      interval: 10s
+      timeout: 10s
+      retries: 12
+      start_period: 40s
+
+  # 自带 Ollama（CPU 可跑；默认不在宿主机发布 11434 端口，避免和宿主机
+  # 已装的 Ollama 冲突。需要从宿主机调试时再手动 publish）。
+  ollama:
+    image: ollama/ollama:${OLLAMA_VERSION:-latest}
+    restart: unless-stopped
+    volumes:
+      - ollama-store:/root/.ollama
+    healthcheck:
+      test: ["CMD-SHELL", "ollama list >/dev/null 2>&1"]
+      interval: 10s
+      timeout: 10s
+      retries: 12
+      start_period: 10s
+
+  # 一次性：拉取 LLM_MODEL（首次运行要下载 ~4.7GB，观察日志）
+  ollama-pull:
+    image: ollama/ollama:${OLLAMA_VERSION:-latest}
+    restart: "no"
+    depends_on:
+      ollama:
+        condition: service_healthy
+    environment:
+      OLLAMA_HOST: http://ollama:11434
+    command: ["pull", "${LLM_MODEL:-qwen2.5:7b}"]
+    volumes:
+      - ollama-store:/root/.ollama
+
+  # 一次性：把 data/small_raw_200_lskt_tech_v2 导入 Neo4j 快照 kg_prebuilt_v2
+  kg-init:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile.backend
+    restart: "no"
+    depends_on:
+      neo4j:
+        condition: service_healthy
+    environment: *backend-env
+    volumes:
+      - appdata:/app/data
+    command: ["python", "scripts/import_prebuilt_kg.py"]
+
+  backend:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile.backend
+    restart: unless-stopped
+    depends_on:
+      neo4j:
+        condition: service_healthy
+      kg-init:
+        condition: service_completed_successfully
+      ollama:
+        condition: service_healthy
+    environment: *backend-env
+    volumes:
+      - appdata:/app/data
+    ports:
+      - "${BACKEND_PORT:-8002}:8002"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request,sys; sys.exit(0 if urllib.request.urlopen('http://127.0.0.1:8002/health', timeout=5).status == 200 else 1)"]
+      interval: 10s
+      timeout: 10s
+      retries: 12
+      start_period: 30s
+
+  frontend:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile.frontend
+    restart: unless-stopped
+    depends_on:
+      backend:
+        condition: service_healthy
+    ports:
+      - "${WEB_PORT:-8080}:80"
+
+volumes:
+  appdata:            # 后端可写数据：/app/data（app.db、上传、画像产物、seed fixtures）
+  neo4j-data:
+  neo4j-logs:
+  neo4j-import:
+  neo4j-plugins:
+  ollama-store:       # 大模型权重，跨容器复用

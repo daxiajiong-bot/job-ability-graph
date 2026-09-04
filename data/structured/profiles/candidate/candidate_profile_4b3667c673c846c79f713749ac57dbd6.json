@@ -1,0 +1,692 @@
+{
+  "artifact_type": "candidate_profile",
+  "created_at": "2026-08-31T15:34:07Z",
+  "extraction": {
+    "evidence": [
+      {
+        "field": "education",
+        "id": "ev_001",
+        "text": "XX职业技术学院｜人工智能技术应用｜2020.09-2023.06｜大专"
+      },
+      {
+        "field": "work_experience",
+        "id": "ev_002",
+        "text": "- 基础Prompt设计与优化：协助团队开展大模型提示词调试工作，针对文本创作、问题解答、内容总结等基础场景，设计、优化基础Prompt指令，运用少样本、基础思维链优化方式，改善模型输出的逻辑性和完整性，减少基础输出偏差。\n- 行业语料与数"
+      },
+      {
+        "field": "skills",
+        "id": "ev_003",
+        "text": "- 大模型应用能力：熟悉主流通用大模型平台，掌握基础Prompt工程优化方法，可独立完成基础场景的提示词设计、调试与迭代，能有效优化模型输出效果。"
+      },
+      {
+        "field": "skills",
+        "id": "ev_004",
+        "text": "- 数据与知识库能力：熟练完成文本语料清洗、筛选、整理、切片，掌握基础知识库搭建、挂载与测试流程，具备大模型配套数据处理能力。"
+      },
+      {
+        "field": "skills",
+        "id": "ev_005",
+        "text": "- AI测试与优化能力：能够独立完成大模型应用日常测试、问题排查、效果复盘，熟悉模型常见问题类型，可针对性提出基础优化思路。"
+      },
+      {
+        "field": "capabilities",
+        "id": "ev_006",
+        "text": "逻辑清晰、文字功底良好，对AIGC和大模型技术敏感度高，学习能力强，工作细致严谨，可高效完成各类大模型应用辅助工作。"
+      },
+      {
+        "field": "achievements",
+        "id": "ev_007",
+        "text": "优化多类基础场景Prompt模板，统一团队提示词使用规范，有效降低大模型输出错误率，提升内容输出规整度。"
+      },
+      {
+        "field": "achievements",
+        "id": "ev_008",
+        "text": "整理分类千余条行业语料数据，完成标准化筛选与清洗，为团队知识库搭建和模型微调测试提供合规、高质量基础数据。"
+      },
+      {
+        "field": "achievements",
+        "id": "ev_009",
+        "text": "累计完成百余次大模型应用效果测试，汇总各类问题台账并协助迭代优化，有效提升AI基础应用的稳定性。"
+      }
+    ],
+    "fields": {
+      "achievements": [
+        {
+          "description": "优化多类基础场景Prompt模板，统一团队提示词使用规范，有效降低大模型输出错误率，提升内容输出规整度。",
+          "evidence_ids": [
+            "ev_007"
+          ],
+          "name": "优化多类基础场景Prompt模板"
+        },
+        {
+          "description": "整理分类千余条行业语料数据，完成标准化筛选与清洗，为团队知识库搭建和模型微调测试提供合规、高质量基础数据。",
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "name": "整理分类千余条行业语料数据"
+        },
+        {
+          "description": "累计完成百余次大模型应用效果测试，汇总各类问题台账并协助迭代优化，有效提升AI基础应用的稳定性。",
+          "evidence_ids": [
+            "ev_009"
+          ],
+          "name": "累计完成百余次大模型应用效果测试"
+        }
+      ],
+      "candidate": {
+        "current_title": null,
+        "location": null,
+        "name": "XXX",
+        "years_of_experience": 1
+      },
+      "capabilities": [
+        {
+          "description": "逻辑清晰",
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "level": "proficient",
+          "name": "逻辑清晰"
+        },
+        {
+          "description": "文字功底良好",
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "level": "proficient",
+          "name": "文字功底良好"
+        },
+        {
+          "description": "学习能力强",
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "level": "proficient",
+          "name": "学习能力强"
+        },
+        {
+          "description": "工作细致严谨",
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "level": "proficient",
+          "name": "工作细致严谨"
+        }
+      ],
+      "career_intent": {
+        "target_industry": null,
+        "target_location": null,
+        "target_position": "AI大模型应用工程师"
+      },
+      "certificates": [],
+      "document_type": "resume",
+      "education": [
+        {
+          "degree": "大专",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "major": "人工智能技术应用",
+          "period": "2020.09-2023.06",
+          "school": "XX职业技术学院"
+        }
+      ],
+      "evidence": [
+        {
+          "field": "education",
+          "id": "ev_001",
+          "text": "XX职业技术学院｜人工智能技术应用｜2020.09-2023.06｜大专"
+        },
+        {
+          "field": "work_experience",
+          "id": "ev_002",
+          "text": "- 基础Prompt设计与优化：协助团队开展大模型提示词调试工作，针对文本创作、问题解答、内容总结等基础场景，设计、优化基础Prompt指令，运用少样本、基础思维链优化方式，改善模型输出的逻辑性和完整性，减少基础输出偏差。\n- 行业语料与数"
+        },
+        {
+          "field": "skills",
+          "id": "ev_003",
+          "text": "- 大模型应用能力：熟悉主流通用大模型平台，掌握基础Prompt工程优化方法，可独立完成基础场景的提示词设计、调试与迭代，能有效优化模型输出效果。"
+        },
+        {
+          "field": "skills",
+          "id": "ev_004",
+          "text": "- 数据与知识库能力：熟练完成文本语料清洗、筛选、整理、切片，掌握基础知识库搭建、挂载与测试流程，具备大模型配套数据处理能力。"
+        },
+        {
+          "field": "skills",
+          "id": "ev_005",
+          "text": "- AI测试与优化能力：能够独立完成大模型应用日常测试、问题排查、效果复盘，熟悉模型常见问题类型，可针对性提出基础优化思路。"
+        },
+        {
+          "field": "capabilities",
+          "id": "ev_006",
+          "text": "逻辑清晰、文字功底良好，对AIGC和大模型技术敏感度高，学习能力强，工作细致严谨，可高效完成各类大模型应用辅助工作。"
+        },
+        {
+          "field": "achievements",
+          "id": "ev_007",
+          "text": "优化多类基础场景Prompt模板，统一团队提示词使用规范，有效降低大模型输出错误率，提升内容输出规整度。"
+        },
+        {
+          "field": "achievements",
+          "id": "ev_008",
+          "text": "整理分类千余条行业语料数据，完成标准化筛选与清洗，为团队知识库搭建和模型微调测试提供合规、高质量基础数据。"
+        },
+        {
+          "field": "achievements",
+          "id": "ev_009",
+          "text": "累计完成百余次大模型应用效果测试，汇总各类问题台账并协助迭代优化，有效提升AI基础应用的稳定性。"
+        }
+      ],
+      "experience": [
+        {
+          "company": "XX人工智能科技公司",
+          "description": "基础Prompt设计与优化、行业语料与数据集处理、AI知识库基础搭建与调试、大模型应用测试与复盘、AI工具落地与资料整理",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "industry": "人工智能",
+          "period": "2023.07-至今",
+          "role": "大模型应用助理"
+        }
+      ],
+      "languages": [],
+      "project_experience": [],
+      "projects": [],
+      "requirements": [],
+      "responsibilities": [],
+      "schema_version": "profile-extraction/v2",
+      "skills": [
+        {
+          "category": "framework",
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "level": "proficient",
+          "lskt_label": "S",
+          "name": "大模型应用能力",
+          "raw_name": "大模型应用能力",
+          "years": null
+        },
+        {
+          "category": "data_processing",
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "level": "proficient",
+          "lskt_label": "S",
+          "name": "数据与知识库能力",
+          "raw_name": "数据与知识库能力",
+          "years": null
+        },
+        {
+          "category": "testing",
+          "evidence_ids": [
+            "ev_005"
+          ],
+          "level": "proficient",
+          "lskt_label": "S",
+          "name": "AI测试与优化能力",
+          "raw_name": "AI测试与优化能力",
+          "years": null
+        }
+      ],
+      "work_experience": [
+        {
+          "company": "XX人工智能科技公司",
+          "description": "基础Prompt设计与优化、行业语料与数据集处理、AI知识库基础搭建与调试、大模型应用测试与复盘、AI工具落地与资料整理",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "industry": "人工智能",
+          "period": "2023.07-至今",
+          "role": "大模型应用助理"
+        }
+      ]
+    },
+    "implementation": "ollama",
+    "model": "qwen2.5:7b",
+    "raw_model_output": "",
+    "reason": "",
+    "schema": "profile-extraction/v2",
+    "state": "available",
+    "validation_error": "",
+    "warnings": []
+  },
+  "normalization": {
+    "implementation": "lightweight_skill_normalizer",
+    "skills": [
+      {
+        "category": "framework",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_003"
+        ],
+        "level": "proficient",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "大模型应用能力",
+        "raw_name": "大模型应用能力",
+        "years": null
+      },
+      {
+        "category": "data_processing",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_004"
+        ],
+        "level": "proficient",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "数据与知识库能力",
+        "raw_name": "数据与知识库能力",
+        "years": null
+      },
+      {
+        "category": "testing",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_005"
+        ],
+        "level": "proficient",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "AI测试与优化能力",
+        "raw_name": "AI测试与优化能力",
+        "years": null
+      }
+    ],
+    "state": "available",
+    "warnings": []
+  },
+  "profile": {
+    "artifacts": {
+      "profile_json": "data\\structured\\profiles\\candidate\\candidate_profile_4b3667c673c846c79f713749ac57dbd6.json",
+      "schema_version": "profile-extraction/v2",
+      "storage": "filesystem"
+    },
+    "attributes": {
+      "candidate": {
+        "current_title": null,
+        "location": null,
+        "name": "XXX",
+        "years_of_experience": 1
+      },
+      "capabilities": [
+        {
+          "description": "逻辑清晰",
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "level": "proficient",
+          "name": "逻辑清晰"
+        },
+        {
+          "description": "文字功底良好",
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "level": "proficient",
+          "name": "文字功底良好"
+        },
+        {
+          "description": "学习能力强",
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "level": "proficient",
+          "name": "学习能力强"
+        },
+        {
+          "description": "工作细致严谨",
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "level": "proficient",
+          "name": "工作细致严谨"
+        }
+      ],
+      "career_intent": {
+        "target_industry": null,
+        "target_location": null,
+        "target_position": "AI大模型应用工程师"
+      },
+      "education": [
+        {
+          "degree": "大专",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "major": "人工智能技术应用",
+          "period": "2020.09-2023.06",
+          "school": "XX职业技术学院"
+        }
+      ],
+      "experience": [
+        {
+          "company": "XX人工智能科技公司",
+          "description": "基础Prompt设计与优化、行业语料与数据集处理、AI知识库基础搭建与调试、大模型应用测试与复盘、AI工具落地与资料整理",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "industry": "人工智能",
+          "period": "2023.07-至今",
+          "role": "大模型应用助理"
+        }
+      ],
+      "profile_schema": "profile-extraction/v2",
+      "projects": [],
+      "resume_profile": {
+        "achievements": [
+          {
+            "description": "优化多类基础场景Prompt模板，统一团队提示词使用规范，有效降低大模型输出错误率，提升内容输出规整度。",
+            "evidence_ids": [
+              "ev_007"
+            ],
+            "name": "优化多类基础场景Prompt模板"
+          },
+          {
+            "description": "整理分类千余条行业语料数据，完成标准化筛选与清洗，为团队知识库搭建和模型微调测试提供合规、高质量基础数据。",
+            "evidence_ids": [
+              "ev_008"
+            ],
+            "name": "整理分类千余条行业语料数据"
+          },
+          {
+            "description": "累计完成百余次大模型应用效果测试，汇总各类问题台账并协助迭代优化，有效提升AI基础应用的稳定性。",
+            "evidence_ids": [
+              "ev_009"
+            ],
+            "name": "累计完成百余次大模型应用效果测试"
+          }
+        ],
+        "candidate": {
+          "current_title": null,
+          "location": null,
+          "name": "XXX",
+          "years_of_experience": 1
+        },
+        "capabilities": [
+          {
+            "description": "逻辑清晰",
+            "evidence_ids": [
+              "ev_006"
+            ],
+            "level": "proficient",
+            "name": "逻辑清晰"
+          },
+          {
+            "description": "文字功底良好",
+            "evidence_ids": [
+              "ev_006"
+            ],
+            "level": "proficient",
+            "name": "文字功底良好"
+          },
+          {
+            "description": "学习能力强",
+            "evidence_ids": [
+              "ev_006"
+            ],
+            "level": "proficient",
+            "name": "学习能力强"
+          },
+          {
+            "description": "工作细致严谨",
+            "evidence_ids": [
+              "ev_006"
+            ],
+            "level": "proficient",
+            "name": "工作细致严谨"
+          }
+        ],
+        "career_intent": {
+          "target_industry": null,
+          "target_location": null,
+          "target_position": "AI大模型应用工程师"
+        },
+        "certificates": [],
+        "document_type": "resume",
+        "education": [
+          {
+            "degree": "大专",
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "major": "人工智能技术应用",
+            "period": "2020.09-2023.06",
+            "school": "XX职业技术学院"
+          }
+        ],
+        "languages": [],
+        "project_experience": [],
+        "schema_version": "profile-extraction/v2",
+        "skills": [
+          {
+            "category": "framework",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_003"
+            ],
+            "level": "proficient",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "大模型应用能力",
+            "raw_name": "大模型应用能力",
+            "years": null
+          },
+          {
+            "category": "data_processing",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_004"
+            ],
+            "level": "proficient",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "数据与知识库能力",
+            "raw_name": "数据与知识库能力",
+            "years": null
+          },
+          {
+            "category": "testing",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_005"
+            ],
+            "level": "proficient",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "AI测试与优化能力",
+            "raw_name": "AI测试与优化能力",
+            "years": null
+          }
+        ],
+        "work_experience": [
+          {
+            "company": "XX人工智能科技公司",
+            "description": "基础Prompt设计与优化、行业语料与数据集处理、AI知识库基础搭建与调试、大模型应用测试与复盘、AI工具落地与资料整理",
+            "evidence_ids": [
+              "ev_002"
+            ],
+            "industry": "人工智能",
+            "period": "2023.07-至今",
+            "role": "大模型应用助理"
+          }
+        ]
+      },
+      "skills": [
+        {
+          "category": "framework",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "level": "proficient",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "大模型应用能力",
+          "raw_name": "大模型应用能力",
+          "years": null
+        },
+        {
+          "category": "data_processing",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "level": "proficient",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "数据与知识库能力",
+          "raw_name": "数据与知识库能力",
+          "years": null
+        },
+        {
+          "category": "testing",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_005"
+          ],
+          "level": "proficient",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "AI测试与优化能力",
+          "raw_name": "AI测试与优化能力",
+          "years": null
+        }
+      ],
+      "target_position": "AI大模型应用工程师"
+    },
+    "created_at": "2026-08-31T15:34:07Z",
+    "evidence": [
+      {
+        "field": "education",
+        "id": "ev_001",
+        "text": "XX职业技术学院｜人工智能技术应用｜2020.09-2023.06｜大专"
+      },
+      {
+        "field": "work_experience",
+        "id": "ev_002",
+        "text": "- 基础Prompt设计与优化：协助团队开展大模型提示词调试工作，针对文本创作、问题解答、内容总结等基础场景，设计、优化基础Prompt指令，运用少样本、基础思维链优化方式，改善模型输出的逻辑性和完整性，减少基础输出偏差。\n- 行业语料与数"
+      },
+      {
+        "field": "skills",
+        "id": "ev_003",
+        "text": "- 大模型应用能力：熟悉主流通用大模型平台，掌握基础Prompt工程优化方法，可独立完成基础场景的提示词设计、调试与迭代，能有效优化模型输出效果。"
+      },
+      {
+        "field": "skills",
+        "id": "ev_004",
+        "text": "- 数据与知识库能力：熟练完成文本语料清洗、筛选、整理、切片，掌握基础知识库搭建、挂载与测试流程，具备大模型配套数据处理能力。"
+      },
+      {
+        "field": "skills",
+        "id": "ev_005",
+        "text": "- AI测试与优化能力：能够独立完成大模型应用日常测试、问题排查、效果复盘，熟悉模型常见问题类型，可针对性提出基础优化思路。"
+      },
+      {
+        "field": "capabilities",
+        "id": "ev_006",
+        "text": "逻辑清晰、文字功底良好，对AIGC和大模型技术敏感度高，学习能力强，工作细致严谨，可高效完成各类大模型应用辅助工作。"
+      },
+      {
+        "field": "achievements",
+        "id": "ev_007",
+        "text": "优化多类基础场景Prompt模板，统一团队提示词使用规范，有效降低大模型输出错误率，提升内容输出规整度。"
+      },
+      {
+        "field": "achievements",
+        "id": "ev_008",
+        "text": "整理分类千余条行业语料数据，完成标准化筛选与清洗，为团队知识库搭建和模型微调测试提供合规、高质量基础数据。"
+      },
+      {
+        "field": "achievements",
+        "id": "ev_009",
+        "text": "累计完成百余次大模型应用效果测试，汇总各类问题台账并协助迭代优化，有效提升AI基础应用的稳定性。"
+      }
+    ],
+    "id": "candidate_profile_4b3667c673c846c79f713749ac57dbd6",
+    "implementation": "llm_profile_builder",
+    "profile_type": "candidate",
+    "source_document_id": "doc_c76d0a92a30d45839d381236e9d9f66b",
+    "state": "available",
+    "warnings": []
+  },
+  "schema_version": "profile-extraction/v2",
+  "source_document": {
+    "char_count": 1635,
+    "content_digest": "a352e9a41ea8bc2c26e13c2e3beadd5309427b1eb8a9b9acd08f7e802ac3a4e5",
+    "created_at": "2026-08-31T15:33:15Z",
+    "document_type": "resume",
+    "id": "doc_c76d0a92a30d45839d381236e9d9f66b",
+    "metadata": {
+      "candidate_name": "XXX｜年龄：23岁｜学历：大专",
+      "display_name": "XXX｜年龄：23岁｜学历：大专",
+      "education": "大专",
+      "skills": [
+        "求职",
+        "AI",
+        "大模型应用工程师",
+        "岗位",
+        "具备人工智能专业",
+        "基础",
+        "熟悉主流大模型平",
+        "台操作与基础",
+        "Prompt",
+        "优化逻辑",
+        "掌握语料整理",
+        "文本调试",
+        "基础知识库搭建技",
+        "可协助团队完成大",
+        "模型输出优化",
+        "应用测试",
+        "数据整理等基础工",
+        "愿意深耕",
+        "AIGC",
+        "与大模型应用领域",
+        "持续提升实操能力",
+        "专业技能",
+        "中度及格匹配",
+        "相关",
+        "具备人工智能科班",
+        "背景及一年大模型",
+        "应用相关实操经验",
+        "熟练掌握",
+        "优化",
+        "语料处理"
+      ]
+    },
+    "source": {
+      "source_system": "manual"
+    },
+    "storage": "memory"
+  }
+}

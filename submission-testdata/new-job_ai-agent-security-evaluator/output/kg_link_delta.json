@@ -1,0 +1,152 @@
+{
+  "说明": "新岗位 -> 既有能力节点 的图谱增量提案（trend_kg_delta_v1；需评审通过后由 merge_kg_delta.py 合并进演化快照 kg_evolved_v1）",
+  "role_id": "role:51fda9ea3aba30e88342",
+  "canonical_title": "AI Agent安全评测工程师",
+  "delta_count": 8,
+  "deltas": [
+    {
+      "delta_id": "delta:189b6f23903ad94d05be",
+      "operation": "propose_edge",
+      "source_id": "role:51fda9ea3aba30e88342",
+      "target_id": "ability:56ab09c8947dd856aa26",
+      "relation_type": "PREFERS_SKILL",
+      "ability_name": "红队测试",
+      "category": "unknown",
+      "resolution_status": "unresolved",
+      "evidence_count": 24,
+      "evidence_sample": [
+        "ev:03ae0b4ed09c8cc9ee04",
+        "ev:092c62f7d1af9e90c52c",
+        "ev:0e799f6a620201ce65d4",
+        "ev:18076b4e52e1b98a8355",
+        "ev:1ba279d3c414d5763abe"
+      ]
+    },
+    {
+      "delta_id": "delta:2a60400e4df76e863b7b",
+      "operation": "propose_edge",
+      "source_id": "role:51fda9ea3aba30e88342",
+      "target_id": "ability:a3e690053061793bb12a",
+      "relation_type": "REQUIRES_SKILL",
+      "ability_name": "RAG",
+      "category": "unknown",
+      "resolution_status": "unresolved",
+      "evidence_count": 24,
+      "evidence_sample": [
+        "ev:03ae0b4ed09c8cc9ee04",
+        "ev:092c62f7d1af9e90c52c",
+        "ev:0e799f6a620201ce65d4",
+        "ev:18076b4e52e1b98a8355",
+        "ev:1ba279d3c414d5763abe"
+      ]
+    },
+    {
+      "delta_id": "delta:3d2b18119ecb57830797",
+      "operation": "propose_edge",
+      "source_id": "role:51fda9ea3aba30e88342",
+      "target_id": "ability:d4f0bc5a29de06b510f9",
+      "relation_type": "REQUIRES_SKILL",
+      "ability_name": "Agent",
+      "category": "unknown",
+      "resolution_status": "unresolved",
+      "evidence_count": 24,
+      "evidence_sample": [
+        "ev:03ae0b4ed09c8cc9ee04",
+        "ev:092c62f7d1af9e90c52c",
+        "ev:0e799f6a620201ce65d4",
+        "ev:18076b4e52e1b98a8355",
+        "ev:1ba279d3c414d5763abe"
+      ]
+    },
+    {
+      "delta_id": "delta:4fb6607a78940cddcd70",
+      "operation": "propose_edge",
+      "source_id": "role:51fda9ea3aba30e88342",
+      "target_id": "ability:db383c62cce24a69374a",
+      "relation_type": "REQUIRES_SKILL",
+      "ability_name": "LLM评测",
+      "category": "unknown",
+      "resolution_status": "unresolved",
+      "evidence_count": 24,
+      "evidence_sample": [
+        "ev:03ae0b4ed09c8cc9ee04",
+        "ev:092c62f7d1af9e90c52c",
+        "ev:0e799f6a620201ce65d4",
+        "ev:18076b4e52e1b98a8355",
+        "ev:1ba279d3c414d5763abe"
+      ]
+    },
+    {
+      "delta_id": "delta:6ac88444ad411aa02e4a",
+      "operation": "propose_edge",
+      "source_id": "role:51fda9ea3aba30e88342",
+      "target_id": "ability:11a4a60b518bf24989d4",
+      "relation_type": "REQUIRES_SKILL",
+      "ability_name": "Python",
+      "category": "unknown",
+      "resolution_status": "unresolved",
+      "evidence_count": 24,
+      "evidence_sample": [
+        "ev:03ae0b4ed09c8cc9ee04",
+        "ev:092c62f7d1af9e90c52c",
+        "ev:0e799f6a620201ce65d4",
+        "ev:18076b4e52e1b98a8355",
+        "ev:1ba279d3c414d5763abe"
+      ]
+    },
+    {
+      "delta_id": "delta:adf6834101879d4d82c3",
+      "operation": "propose_edge",
+      "source_id": "role:51fda9ea3aba30e88342",
+      "target_id": "ability:fc6613028a25106d2fc3",
+      "relation_type": "REQUIRES_SKILL",
+      "ability_name": "提示注入测试",
+      "category": "unknown",
+      "resolution_status": "unresolved",
+      "evidence_count": 24,
+      "evidence_sample": [
+        "ev:03ae0b4ed09c8cc9ee04",
+        "ev:092c62f7d1af9e90c52c",
+        "ev:0e799f6a620201ce65d4",
+        "ev:18076b4e52e1b98a8355",
+        "ev:1ba279d3c414d5763abe"
+      ]
+    },
+    {
+      "delta_id": "delta:c4ddedb3f107ae80f7dd",
+      "operation": "propose_edge",
+      "source_id": "role:51fda9ea3aba30e88342",
+      "target_id": "ability:10182ab855ff772753c0",
+      "relation_type": "PREFERS_SKILL",
+      "ability_name": "MCP",
+      "category": "unknown",
+      "resolution_status": "unresolved",
+      "evidence_count": 24,
+      "evidence_sample": [
+        "ev:03ae0b4ed09c8cc9ee04",
+        "ev:092c62f7d1af9e90c52c",
+        "ev:0e799f6a620201ce65d4",
+        "ev:18076b4e52e1b98a8355",
+        "ev:1ba279d3c414d5763abe"
+      ]
+    },
+    {
+      "delta_id": "delta:f2d18028ff9ca39abcbc",
+      "operation": "propose_node",
+      "source_id": "role:51fda9ea3aba30e88342",
+      "target_id": null,
+      "relation_type": null,
+      "ability_name": null,
+      "category": null,
+      "resolution_status": "unresolved",
+      "evidence_count": 25,
+      "evidence_sample": [
+        "ev:03ae0b4ed09c8cc9ee04",
+        "ev:092c62f7d1af9e90c52c",
+        "ev:0e799f6a620201ce65d4",
+        "ev:18076b4e52e1b98a8355",
+        "ev:1ba279d3c414d5763abe"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1888 @@
+{
+  "artifact_type": "job_profile",
+  "created_at": "2026-08-31T15:35:19Z",
+  "extraction": {
+    "evidence": [
+      {
+        "field": "responsibilities",
+        "id": "ev_001",
+        "text": "- 负责通用大模型（GPT、文心一言、通义千问等）的落地应用开发"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_002",
+        "text": "- 参与AI知识库搭建与优化"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_003",
+        "text": "- 协助进行大模型微调数据准备、样本筛选、数据清洗工作"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_004",
+        "text": "- 负责AI应用功能测试、效果验收、问题复盘"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_005",
+        "text": "- 跟进大模型行业新技术、新应用方案"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_006",
+        "text": "- 配合产品、开发团队完成AI功能上线、用户反馈收集与功能迭代"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_007",
+        "text": "- 大专及以上学历"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_008",
+        "text": " 人工智能、计算机、大数据、软件工程、汉"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_009",
+        "text": " 有大模型、Prompt优化、AI知识库"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_010",
+        "text": "- 了解大模型基础原理"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_011",
+        "text": " 熟悉Prompt工程基础逻辑"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_012",
+        "text": " 掌握零样本、少样本、思维链等基础提示词"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_013",
+        "text": " 具备文本调教、模型输出优化能力"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_014",
+        "text": "- 具备基础数据处理、文本标注、语料整理能力"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_015",
+        "text": " 了解知识库搭建、文本切片、向量检索等基"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_016",
+        "text": "- 具备良好的逻辑思维、文字功底和问题排查能力"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_017",
+        "text": "- 学习能力强，对AIGC、大模型应用有浓厚兴趣"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_018",
+        "text": " 熟悉主流大模型平台工具"
+      }
+    ],
+    "fields": {
+      "application_scenarios": [
+        {
+          "description": "负责通用大模型（GPT、文心一言、通义千问等）的落地应用开发",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "name": "大模型应用开发"
+        },
+        {
+          "description": "参与AI知识库搭建与优化",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "name": "AI知识库搭建与优化"
+        },
+        {
+          "description": "协助进行大模型微调数据准备、样本筛选、数据清洗工作",
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "name": "大模型微调数据准备"
+        },
+        {
+          "description": "负责AI应用功能测试、效果验收、问题复盘",
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "name": "AI应用功能测试"
+        },
+        {
+          "description": "跟进大模型行业新技术、新应用方案",
+          "evidence_ids": [
+            "ev_005"
+          ],
+          "name": "新技术调研"
+        },
+        {
+          "description": "配合产品、开发团队完成AI功能上线、用户反馈收集与功能迭代",
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "name": "AI功能上线"
+        }
+      ],
+      "candidate": {
+        "name": null,
+        "target_position": null
+      },
+      "capabilities": [],
+      "company": {
+        "industry": null,
+        "location": "一线城市",
+        "name": null
+      },
+      "document_type": "jd",
+      "education": [],
+      "employment": {
+        "employment_type": "full_time",
+        "published_at": null,
+        "salary_max": 16000,
+        "salary_min": 9000
+      },
+      "evaluation_signals": [],
+      "evidence": [
+        {
+          "field": "responsibilities",
+          "id": "ev_001",
+          "text": "- 负责通用大模型（GPT、文心一言、通义千问等）的落地应用开发"
+        },
+        {
+          "field": "responsibilities",
+          "id": "ev_002",
+          "text": "- 参与AI知识库搭建与优化"
+        },
+        {
+          "field": "responsibilities",
+          "id": "ev_003",
+          "text": "- 协助进行大模型微调数据准备、样本筛选、数据清洗工作"
+        },
+        {
+          "field": "responsibilities",
+          "id": "ev_004",
+          "text": "- 负责AI应用功能测试、效果验收、问题复盘"
+        },
+        {
+          "field": "responsibilities",
+          "id": "ev_005",
+          "text": "- 跟进大模型行业新技术、新应用方案"
+        },
+        {
+          "field": "responsibilities",
+          "id": "ev_006",
+          "text": "- 配合产品、开发团队完成AI功能上线、用户反馈收集与功能迭代"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_007",
+          "text": "- 大专及以上学历"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_008",
+          "text": " 人工智能、计算机、大数据、软件工程、汉"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_009",
+          "text": " 有大模型、Prompt优化、AI知识库"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_010",
+          "text": "- 了解大模型基础原理"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_011",
+          "text": " 熟悉Prompt工程基础逻辑"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_012",
+          "text": " 掌握零样本、少样本、思维链等基础提示词"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_013",
+          "text": " 具备文本调教、模型输出优化能力"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_014",
+          "text": "- 具备基础数据处理、文本标注、语料整理能力"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_015",
+          "text": " 了解知识库搭建、文本切片、向量检索等基"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_016",
+          "text": "- 具备良好的逻辑思维、文字功底和问题排查能力"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_017",
+          "text": "- 学习能力强，对AIGC、大模型应用有浓厚兴趣"
+        },
+        {
+          "field": "requirements",
+          "id": "ev_018",
+          "text": " 熟悉主流大模型平台工具"
+        }
+      ],
+      "experience": [],
+      "job": {
+        "department": "人工智能产品研发部",
+        "normalized_title": "AI大模型应用工程师",
+        "seniority": null,
+        "title": "AI大模型应用工程师"
+      },
+      "projects": [],
+      "requirements": [
+        {
+          "evidence_ids": [
+            "ev_007"
+          ],
+          "importance": "preferred",
+          "requirement_type": "education",
+          "text": "大专及以上学历"
+        },
+        {
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "importance": "preferred",
+          "requirement_type": "education",
+          "text": "人工智能、计算机、大数据、软件工程、汉语言、新媒体等相关专业"
+        },
+        {
+          "evidence_ids": [
+            "ev_009"
+          ],
+          "importance": "preferred",
+          "requirement_type": "experience",
+          "text": "有大模型、Prompt优化、AI知识库搭建经验优先"
+        },
+        {
+          "evidence_ids": [
+            "ev_010"
+          ],
+          "importance": "required",
+          "requirement_type": "knowledge",
+          "text": "了解大模型基础原理"
+        },
+        {
+          "evidence_ids": [
+            "ev_011"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "熟悉Prompt工程基础逻辑"
+        },
+        {
+          "evidence_ids": [
+            "ev_012"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "掌握零样本、少样本、思维链等基础提示词优化方法"
+        },
+        {
+          "evidence_ids": [
+            "ev_013"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "具备文本调教、模型输出优化能力"
+        },
+        {
+          "evidence_ids": [
+            "ev_014"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "具备基础数据处理、文本标注、语料整理能力"
+        },
+        {
+          "evidence_ids": [
+            "ev_015"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "了解知识库搭建、文本切片、向量检索等基础AI应用流程"
+        },
+        {
+          "evidence_ids": [
+            "ev_016"
+          ],
+          "importance": "required",
+          "requirement_type": "soft_skill",
+          "text": "具备良好的逻辑思维、文字功底和问题排查能力"
+        },
+        {
+          "evidence_ids": [
+            "ev_017"
+          ],
+          "importance": "preferred",
+          "requirement_type": "soft_skill",
+          "text": "学习能力强，对AIGC、大模型应用有浓厚兴趣"
+        },
+        {
+          "evidence_ids": [
+            "ev_018"
+          ],
+          "importance": "preferred",
+          "requirement_type": "tool",
+          "text": "熟悉主流大模型平台工具"
+        }
+      ],
+      "responsibilities": [
+        {
+          "action": "负责",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "object": "通用大模型的落地应用开发",
+          "text": "负责通用大模型（GPT、文心一言、通义千问等）的落地应用开发"
+        },
+        {
+          "action": "参与",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "object": "AI知识库搭建与优化",
+          "text": "参与AI知识库搭建与优化"
+        },
+        {
+          "action": "协助",
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "object": "大模型微调数据准备、样本筛选、数据清洗工作",
+          "text": "协助进行大模型微调数据准备、样本筛选、数据清洗工作"
+        },
+        {
+          "action": "负责",
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "object": "AI应用功能测试、效果验收、问题复盘",
+          "text": "负责AI应用功能测试、效果验收、问题复盘"
+        },
+        {
+          "action": "跟进",
+          "evidence_ids": [
+            "ev_005"
+          ],
+          "object": "大模型行业新技术、新应用方案",
+          "text": "跟进大模型行业新技术、新应用方案"
+        },
+        {
+          "action": "配合",
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "object": "产品、开发团队完成AI功能上线、用户反馈收集与功能迭代",
+          "text": "配合产品、开发团队完成AI功能上线、用户反馈收集与功能迭代"
+        }
+      ],
+      "schema_version": "profile-extraction/v2",
+      "skills": [
+        {
+          "category": "other",
+          "evidence_ids": [
+            "ev_010"
+          ],
+          "importance": "required",
+          "lskt_label": "unknown",
+          "name": "大模型",
+          "raw_name": "大模型"
+        },
+        {
+          "category": "other",
+          "evidence_ids": [
+            "ev_011"
+          ],
+          "importance": "required",
+          "lskt_label": "unknown",
+          "name": "Prompt工程",
+          "raw_name": "Prompt工程"
+        },
+        {
+          "category": "other",
+          "evidence_ids": [
+            "ev_012"
+          ],
+          "importance": "required",
+          "lskt_label": "unknown",
+          "name": "零样本",
+          "raw_name": "零样本"
+        },
+        {
+          "category": "other",
+          "evidence_ids": [
+            "ev_012"
+          ],
+          "importance": "required",
+          "lskt_label": "unknown",
+          "name": "少样本",
+          "raw_name": "少样本"
+        },
+        {
+          "category": "other",
+          "evidence_ids": [
+            "ev_012"
+          ],
+          "importance": "required",
+          "lskt_label": "unknown",
+          "name": "思维链",
+          "raw_name": "思维链"
+        },
+        {
+          "category": "other",
+          "evidence_ids": [
+            "ev_013"
+          ],
+          "importance": "required",
+          "lskt_label": "unknown",
+          "name": "文本调教",
+          "raw_name": "文本调教"
+        },
+        {
+          "category": "other",
+          "evidence_ids": [
+            "ev_013"
+          ],
+          "importance": "required",
+          "lskt_label": "unknown",
+          "name": "模型输出优化",
+          "raw_name": "模型输出优化"
+        },
+        {
+          "category": "data_processing",
+          "evidence_ids": [
+            "ev_014"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "数据处理",
+          "raw_name": "基础数据处理"
+        },
+        {
+          "category": "data_processing",
+          "evidence_ids": [
+            "ev_014"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "文本标注",
+          "raw_name": "文本标注"
+        },
+        {
+          "category": "data_processing",
+          "evidence_ids": [
+            "ev_014"
+          ],
+          "importance": "required",
+          "lskt_label": "S",
+          "name": "语料整理",
+          "raw_name": "语料整理"
+        },
+        {
+          "category": "other",
+          "evidence_ids": [
+            "ev_015"
+          ],
+          "importance": "required",
+          "lskt_label": "unknown",
+          "name": "知识库搭建",
+          "raw_name": "知识库搭建"
+        },
+        {
+          "category": "other",
+          "evidence_ids": [
+            "ev_015"
+          ],
+          "importance": "required",
+          "lskt_label": "unknown",
+          "name": "文本切片",
+          "raw_name": "文本切片"
+        },
+        {
+          "category": "other",
+          "evidence_ids": [
+            "ev_015"
+          ],
+          "importance": "required",
+          "lskt_label": "unknown",
+          "name": "向量检索",
+          "raw_name": "向量检索"
+        },
+        {
+          "category": "soft_skill",
+          "evidence_ids": [
+            "ev_016"
+          ],
+          "importance": "required",
+          "lskt_label": "T",
+          "name": "逻辑思维",
+          "raw_name": "逻辑思维"
+        },
+        {
+          "category": "soft_skill",
+          "evidence_ids": [
+            "ev_016"
+          ],
+          "importance": "required",
+          "lskt_label": "T",
+          "name": "文字功底",
+          "raw_name": "文字功底"
+        },
+        {
+          "category": "soft_skill",
+          "evidence_ids": [
+            "ev_016"
+          ],
+          "importance": "required",
+          "lskt_label": "T",
+          "name": "问题排查",
+          "raw_name": "问题排查"
+        },
+        {
+          "category": "soft_skill",
+          "evidence_ids": [
+            "ev_017"
+          ],
+          "importance": "preferred",
+          "lskt_label": "T",
+          "name": "学习能力",
+          "raw_name": "学习能力"
+        }
+      ]
+    },
+    "implementation": "ollama",
+    "model": "qwen2.5:7b",
+    "raw_model_output": "",
+    "reason": "",
+    "schema": "profile-extraction/v2",
+    "state": "available",
+    "validation_error": "",
+    "warnings": [
+      "capabilities[1] ignored: missing evidence_text"
+    ]
+  },
+  "normalization": {
+    "implementation": "lightweight_skill_normalizer",
+    "skills": [
+      {
+        "category": "other",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_010"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "unknown",
+        "name": "大模型",
+        "raw_name": "大模型"
+      },
+      {
+        "category": "other",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_011"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "unknown",
+        "name": "Prompt工程",
+        "raw_name": "Prompt工程"
+      },
+      {
+        "category": "other",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_012"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "unknown",
+        "name": "零样本",
+        "raw_name": "零样本"
+      },
+      {
+        "category": "other",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_012"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "unknown",
+        "name": "少样本",
+        "raw_name": "少样本"
+      },
+      {
+        "category": "other",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_012"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "unknown",
+        "name": "思维链",
+        "raw_name": "思维链"
+      },
+      {
+        "category": "other",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_013"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "unknown",
+        "name": "文本调教",
+        "raw_name": "文本调教"
+      },
+      {
+        "category": "other",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_013"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "unknown",
+        "name": "模型输出优化",
+        "raw_name": "模型输出优化"
+      },
+      {
+        "category": "data_processing",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_014"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "基础数据处理",
+        "raw_name": "基础数据处理"
+      },
+      {
+        "category": "data_processing",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_014"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "文本标注",
+        "raw_name": "文本标注"
+      },
+      {
+        "category": "data_processing",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_014"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "S",
+        "name": "语料整理",
+        "raw_name": "语料整理"
+      },
+      {
+        "category": "other",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_015"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "unknown",
+        "name": "知识库搭建",
+        "raw_name": "知识库搭建"
+      },
+      {
+        "category": "other",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_015"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "unknown",
+        "name": "文本切片",
+        "raw_name": "文本切片"
+      },
+      {
+        "category": "other",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_015"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "unknown",
+        "name": "向量检索",
+        "raw_name": "向量检索"
+      },
+      {
+        "category": "soft_skill",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_016"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "T",
+        "name": "逻辑思维",
+        "raw_name": "逻辑思维"
+      },
+      {
+        "category": "soft_skill",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_016"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "T",
+        "name": "文字功底",
+        "raw_name": "文字功底"
+      },
+      {
+        "category": "soft_skill",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_016"
+        ],
+        "importance": "required",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "T",
+        "name": "问题排查",
+        "raw_name": "问题排查"
+      },
+      {
+        "category": "soft_skill",
+        "esco_preferred_label": null,
+        "esco_uri": null,
+        "esco_version": null,
+        "evidence_ids": [
+          "ev_017"
+        ],
+        "importance": "preferred",
+        "linking_confidence": 0.0,
+        "linking_status": "unmapped",
+        "lskt_label": "T",
+        "name": "学习能力",
+        "raw_name": "学习能力"
+      }
+    ],
+    "state": "available",
+    "warnings": []
+  },
+  "profile": {
+    "artifacts": {
+      "profile_json": "data\\structured\\profiles\\job\\job_profile_1504b608c8b54310984986226c399aa6.json",
+      "schema_version": "profile-extraction/v2",
+      "storage": "filesystem"
+    },
+    "attributes": {
+      "capabilities": [],
+      "company": {
+        "industry": null,
+        "location": "一线城市",
+        "name": null
+      },
+      "education": [],
+      "employment": {
+        "employment_type": "full_time",
+        "published_at": null,
+        "salary_max": 16000,
+        "salary_min": 9000
+      },
+      "experience": [],
+      "jd_profile": {
+        "application_scenarios": [
+          {
+            "description": "负责通用大模型（GPT、文心一言、通义千问等）的落地应用开发",
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "name": "大模型应用开发"
+          },
+          {
+            "description": "参与AI知识库搭建与优化",
+            "evidence_ids": [
+              "ev_002"
+            ],
+            "name": "AI知识库搭建与优化"
+          },
+          {
+            "description": "协助进行大模型微调数据准备、样本筛选、数据清洗工作",
+            "evidence_ids": [
+              "ev_003"
+            ],
+            "name": "大模型微调数据准备"
+          },
+          {
+            "description": "负责AI应用功能测试、效果验收、问题复盘",
+            "evidence_ids": [
+              "ev_004"
+            ],
+            "name": "AI应用功能测试"
+          },
+          {
+            "description": "跟进大模型行业新技术、新应用方案",
+            "evidence_ids": [
+              "ev_005"
+            ],
+            "name": "新技术调研"
+          },
+          {
+            "description": "配合产品、开发团队完成AI功能上线、用户反馈收集与功能迭代",
+            "evidence_ids": [
+              "ev_006"
+            ],
+            "name": "AI功能上线"
+          }
+        ],
+        "capabilities": [],
+        "company": {
+          "industry": null,
+          "location": "一线城市",
+          "name": null
+        },
+        "document_type": "jd",
+        "employment": {
+          "employment_type": "full_time",
+          "published_at": null,
+          "salary_max": 16000,
+          "salary_min": 9000
+        },
+        "evaluation_signals": [],
+        "job": {
+          "department": "人工智能产品研发部",
+          "normalized_title": "AI大模型应用工程师",
+          "seniority": null,
+          "title": "AI大模型应用工程师"
+        },
+        "requirements": [
+          {
+            "evidence_ids": [
+              "ev_007"
+            ],
+            "importance": "preferred",
+            "requirement_type": "education",
+            "text": "大专及以上学历"
+          },
+          {
+            "evidence_ids": [
+              "ev_008"
+            ],
+            "importance": "preferred",
+            "requirement_type": "education",
+            "text": "人工智能、计算机、大数据、软件工程、汉语言、新媒体等相关专业"
+          },
+          {
+            "evidence_ids": [
+              "ev_009"
+            ],
+            "importance": "preferred",
+            "requirement_type": "experience",
+            "text": "有大模型、Prompt优化、AI知识库搭建经验优先"
+          },
+          {
+            "evidence_ids": [
+              "ev_010"
+            ],
+            "importance": "required",
+            "requirement_type": "knowledge",
+            "text": "了解大模型基础原理"
+          },
+          {
+            "evidence_ids": [
+              "ev_011"
+            ],
+            "importance": "required",
+            "requirement_type": "skill",
+            "text": "熟悉Prompt工程基础逻辑"
+          },
+          {
+            "evidence_ids": [
+              "ev_012"
+            ],
+            "importance": "required",
+            "requirement_type": "skill",
+            "text": "掌握零样本、少样本、思维链等基础提示词优化方法"
+          },
+          {
+            "evidence_ids": [
+              "ev_013"
+            ],
+            "importance": "required",
+            "requirement_type": "skill",
+            "text": "具备文本调教、模型输出优化能力"
+          },
+          {
+            "evidence_ids": [
+              "ev_014"
+            ],
+            "importance": "required",
+            "requirement_type": "skill",
+            "text": "具备基础数据处理、文本标注、语料整理能力"
+          },
+          {
+            "evidence_ids": [
+              "ev_015"
+            ],
+            "importance": "required",
+            "requirement_type": "skill",
+            "text": "了解知识库搭建、文本切片、向量检索等基础AI应用流程"
+          },
+          {
+            "evidence_ids": [
+              "ev_016"
+            ],
+            "importance": "required",
+            "requirement_type": "soft_skill",
+            "text": "具备良好的逻辑思维、文字功底和问题排查能力"
+          },
+          {
+            "evidence_ids": [
+              "ev_017"
+            ],
+            "importance": "preferred",
+            "requirement_type": "soft_skill",
+            "text": "学习能力强，对AIGC、大模型应用有浓厚兴趣"
+          },
+          {
+            "evidence_ids": [
+              "ev_018"
+            ],
+            "importance": "preferred",
+            "requirement_type": "tool",
+            "text": "熟悉主流大模型平台工具"
+          }
+        ],
+        "responsibilities": [
+          {
+            "action": "负责",
+            "evidence_ids": [
+              "ev_001"
+            ],
+            "object": "通用大模型的落地应用开发",
+            "text": "负责通用大模型（GPT、文心一言、通义千问等）的落地应用开发"
+          },
+          {
+            "action": "参与",
+            "evidence_ids": [
+              "ev_002"
+            ],
+            "object": "AI知识库搭建与优化",
+            "text": "参与AI知识库搭建与优化"
+          },
+          {
+            "action": "协助",
+            "evidence_ids": [
+              "ev_003"
+            ],
+            "object": "大模型微调数据准备、样本筛选、数据清洗工作",
+            "text": "协助进行大模型微调数据准备、样本筛选、数据清洗工作"
+          },
+          {
+            "action": "负责",
+            "evidence_ids": [
+              "ev_004"
+            ],
+            "object": "AI应用功能测试、效果验收、问题复盘",
+            "text": "负责AI应用功能测试、效果验收、问题复盘"
+          },
+          {
+            "action": "跟进",
+            "evidence_ids": [
+              "ev_005"
+            ],
+            "object": "大模型行业新技术、新应用方案",
+            "text": "跟进大模型行业新技术、新应用方案"
+          },
+          {
+            "action": "配合",
+            "evidence_ids": [
+              "ev_006"
+            ],
+            "object": "产品、开发团队完成AI功能上线、用户反馈收集与功能迭代",
+            "text": "配合产品、开发团队完成AI功能上线、用户反馈收集与功能迭代"
+          }
+        ],
+        "schema_version": "profile-extraction/v2",
+        "skills": [
+          {
+            "category": "other",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_010"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "unknown",
+            "name": "大模型",
+            "raw_name": "大模型"
+          },
+          {
+            "category": "other",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_011"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "unknown",
+            "name": "Prompt工程",
+            "raw_name": "Prompt工程"
+          },
+          {
+            "category": "other",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_012"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "unknown",
+            "name": "零样本",
+            "raw_name": "零样本"
+          },
+          {
+            "category": "other",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_012"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "unknown",
+            "name": "少样本",
+            "raw_name": "少样本"
+          },
+          {
+            "category": "other",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_012"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "unknown",
+            "name": "思维链",
+            "raw_name": "思维链"
+          },
+          {
+            "category": "other",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_013"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "unknown",
+            "name": "文本调教",
+            "raw_name": "文本调教"
+          },
+          {
+            "category": "other",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_013"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "unknown",
+            "name": "模型输出优化",
+            "raw_name": "模型输出优化"
+          },
+          {
+            "category": "data_processing",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_014"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "基础数据处理",
+            "raw_name": "基础数据处理"
+          },
+          {
+            "category": "data_processing",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_014"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "文本标注",
+            "raw_name": "文本标注"
+          },
+          {
+            "category": "data_processing",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_014"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "S",
+            "name": "语料整理",
+            "raw_name": "语料整理"
+          },
+          {
+            "category": "other",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_015"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "unknown",
+            "name": "知识库搭建",
+            "raw_name": "知识库搭建"
+          },
+          {
+            "category": "other",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_015"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "unknown",
+            "name": "文本切片",
+            "raw_name": "文本切片"
+          },
+          {
+            "category": "other",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_015"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "unknown",
+            "name": "向量检索",
+            "raw_name": "向量检索"
+          },
+          {
+            "category": "soft_skill",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_016"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "T",
+            "name": "逻辑思维",
+            "raw_name": "逻辑思维"
+          },
+          {
+            "category": "soft_skill",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_016"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "T",
+            "name": "文字功底",
+            "raw_name": "文字功底"
+          },
+          {
+            "category": "soft_skill",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_016"
+            ],
+            "importance": "required",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "T",
+            "name": "问题排查",
+            "raw_name": "问题排查"
+          },
+          {
+            "category": "soft_skill",
+            "esco_preferred_label": null,
+            "esco_uri": null,
+            "esco_version": null,
+            "evidence_ids": [
+              "ev_017"
+            ],
+            "importance": "preferred",
+            "linking_confidence": 0.0,
+            "linking_status": "unmapped",
+            "lskt_label": "T",
+            "name": "学习能力",
+            "raw_name": "学习能力"
+          }
+        ]
+      },
+      "job": {
+        "department": "人工智能产品研发部",
+        "normalized_title": "AI大模型应用工程师",
+        "seniority": null,
+        "title": "AI大模型应用工程师"
+      },
+      "job_title": "AI大模型应用工程师",
+      "profile_schema": "profile-extraction/v2",
+      "projects": [],
+      "requirements": [
+        {
+          "evidence_ids": [
+            "ev_007"
+          ],
+          "importance": "preferred",
+          "requirement_type": "education",
+          "text": "大专及以上学历"
+        },
+        {
+          "evidence_ids": [
+            "ev_008"
+          ],
+          "importance": "preferred",
+          "requirement_type": "education",
+          "text": "人工智能、计算机、大数据、软件工程、汉语言、新媒体等相关专业"
+        },
+        {
+          "evidence_ids": [
+            "ev_009"
+          ],
+          "importance": "preferred",
+          "requirement_type": "experience",
+          "text": "有大模型、Prompt优化、AI知识库搭建经验优先"
+        },
+        {
+          "evidence_ids": [
+            "ev_010"
+          ],
+          "importance": "required",
+          "requirement_type": "knowledge",
+          "text": "了解大模型基础原理"
+        },
+        {
+          "evidence_ids": [
+            "ev_011"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "熟悉Prompt工程基础逻辑"
+        },
+        {
+          "evidence_ids": [
+            "ev_012"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "掌握零样本、少样本、思维链等基础提示词优化方法"
+        },
+        {
+          "evidence_ids": [
+            "ev_013"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "具备文本调教、模型输出优化能力"
+        },
+        {
+          "evidence_ids": [
+            "ev_014"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "具备基础数据处理、文本标注、语料整理能力"
+        },
+        {
+          "evidence_ids": [
+            "ev_015"
+          ],
+          "importance": "required",
+          "requirement_type": "skill",
+          "text": "了解知识库搭建、文本切片、向量检索等基础AI应用流程"
+        },
+        {
+          "evidence_ids": [
+            "ev_016"
+          ],
+          "importance": "required",
+          "requirement_type": "soft_skill",
+          "text": "具备良好的逻辑思维、文字功底和问题排查能力"
+        },
+        {
+          "evidence_ids": [
+            "ev_017"
+          ],
+          "importance": "preferred",
+          "requirement_type": "soft_skill",
+          "text": "学习能力强，对AIGC、大模型应用有浓厚兴趣"
+        },
+        {
+          "evidence_ids": [
+            "ev_018"
+          ],
+          "importance": "preferred",
+          "requirement_type": "tool",
+          "text": "熟悉主流大模型平台工具"
+        }
+      ],
+      "responsibilities": [
+        {
+          "action": "负责",
+          "evidence_ids": [
+            "ev_001"
+          ],
+          "object": "通用大模型的落地应用开发",
+          "text": "负责通用大模型（GPT、文心一言、通义千问等）的落地应用开发"
+        },
+        {
+          "action": "参与",
+          "evidence_ids": [
+            "ev_002"
+          ],
+          "object": "AI知识库搭建与优化",
+          "text": "参与AI知识库搭建与优化"
+        },
+        {
+          "action": "协助",
+          "evidence_ids": [
+            "ev_003"
+          ],
+          "object": "大模型微调数据准备、样本筛选、数据清洗工作",
+          "text": "协助进行大模型微调数据准备、样本筛选、数据清洗工作"
+        },
+        {
+          "action": "负责",
+          "evidence_ids": [
+            "ev_004"
+          ],
+          "object": "AI应用功能测试、效果验收、问题复盘",
+          "text": "负责AI应用功能测试、效果验收、问题复盘"
+        },
+        {
+          "action": "跟进",
+          "evidence_ids": [
+            "ev_005"
+          ],
+          "object": "大模型行业新技术、新应用方案",
+          "text": "跟进大模型行业新技术、新应用方案"
+        },
+        {
+          "action": "配合",
+          "evidence_ids": [
+            "ev_006"
+          ],
+          "object": "产品、开发团队完成AI功能上线、用户反馈收集与功能迭代",
+          "text": "配合产品、开发团队完成AI功能上线、用户反馈收集与功能迭代"
+        }
+      ],
+      "skills": [
+        {
+          "category": "other",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_010"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "unknown",
+          "name": "大模型",
+          "raw_name": "大模型"
+        },
+        {
+          "category": "other",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_011"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "unknown",
+          "name": "Prompt工程",
+          "raw_name": "Prompt工程"
+        },
+        {
+          "category": "other",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_012"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "unknown",
+          "name": "零样本",
+          "raw_name": "零样本"
+        },
+        {
+          "category": "other",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_012"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "unknown",
+          "name": "少样本",
+          "raw_name": "少样本"
+        },
+        {
+          "category": "other",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_012"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "unknown",
+          "name": "思维链",
+          "raw_name": "思维链"
+        },
+        {
+          "category": "other",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_013"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "unknown",
+          "name": "文本调教",
+          "raw_name": "文本调教"
+        },
+        {
+          "category": "other",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_013"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "unknown",
+          "name": "模型输出优化",
+          "raw_name": "模型输出优化"
+        },
+        {
+          "category": "data_processing",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_014"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "基础数据处理",
+          "raw_name": "基础数据处理"
+        },
+        {
+          "category": "data_processing",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_014"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "文本标注",
+          "raw_name": "文本标注"
+        },
+        {
+          "category": "data_processing",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_014"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "S",
+          "name": "语料整理",
+          "raw_name": "语料整理"
+        },
+        {
+          "category": "other",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_015"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "unknown",
+          "name": "知识库搭建",
+          "raw_name": "知识库搭建"
+        },
+        {
+          "category": "other",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_015"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "unknown",
+          "name": "文本切片",
+          "raw_name": "文本切片"
+        },
+        {
+          "category": "other",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_015"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "unknown",
+          "name": "向量检索",
+          "raw_name": "向量检索"
+        },
+        {
+          "category": "soft_skill",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_016"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "T",
+          "name": "逻辑思维",
+          "raw_name": "逻辑思维"
+        },
+        {
+          "category": "soft_skill",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_016"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "T",
+          "name": "文字功底",
+          "raw_name": "文字功底"
+        },
+        {
+          "category": "soft_skill",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_016"
+          ],
+          "importance": "required",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "T",
+          "name": "问题排查",
+          "raw_name": "问题排查"
+        },
+        {
+          "category": "soft_skill",
+          "esco_preferred_label": null,
+          "esco_uri": null,
+          "esco_version": null,
+          "evidence_ids": [
+            "ev_017"
+          ],
+          "importance": "preferred",
+          "linking_confidence": 0.0,
+          "linking_status": "unmapped",
+          "lskt_label": "T",
+          "name": "学习能力",
+          "raw_name": "学习能力"
+        }
+      ]
+    },
+    "created_at": "2026-08-31T15:35:19Z",
+    "evidence": [
+      {
+        "field": "responsibilities",
+        "id": "ev_001",
+        "text": "- 负责通用大模型（GPT、文心一言、通义千问等）的落地应用开发"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_002",
+        "text": "- 参与AI知识库搭建与优化"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_003",
+        "text": "- 协助进行大模型微调数据准备、样本筛选、数据清洗工作"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_004",
+        "text": "- 负责AI应用功能测试、效果验收、问题复盘"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_005",
+        "text": "- 跟进大模型行业新技术、新应用方案"
+      },
+      {
+        "field": "responsibilities",
+        "id": "ev_006",
+        "text": "- 配合产品、开发团队完成AI功能上线、用户反馈收集与功能迭代"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_007",
+        "text": "- 大专及以上学历"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_008",
+        "text": " 人工智能、计算机、大数据、软件工程、汉"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_009",
+        "text": " 有大模型、Prompt优化、AI知识库"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_010",
+        "text": "- 了解大模型基础原理"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_011",
+        "text": " 熟悉Prompt工程基础逻辑"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_012",
+        "text": " 掌握零样本、少样本、思维链等基础提示词"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_013",
+        "text": " 具备文本调教、模型输出优化能力"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_014",
+        "text": "- 具备基础数据处理、文本标注、语料整理能力"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_015",
+        "text": " 了解知识库搭建、文本切片、向量检索等基"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_016",
+        "text": "- 具备良好的逻辑思维、文字功底和问题排查能力"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_017",
+        "text": "- 学习能力强，对AIGC、大模型应用有浓厚兴趣"
+      },
+      {
+        "field": "requirements",
+        "id": "ev_018",
+        "text": " 熟悉主流大模型平台工具"
+      }
+    ],
+    "id": "job_profile_1504b608c8b54310984986226c399aa6",
+    "implementation": "llm_profile_builder",
+    "profile_type": "job",
+    "source_document_id": "doc_2751ff64d7e24d08808f97f933789ecc",
+    "state": "available",
+    "warnings": [
+      "capabilities[1] ignored: missing evidence_text"
+    ]
+  },
+  "schema_version": "profile-extraction/v2",
+  "source_document": {
+    "char_count": 924,
+    "content_digest": "90d8afc67cbc35cb1e1fbbc4b418655bcba16124009d619f05f134b24730dc23",
+    "created_at": "2026-08-31T15:33:15Z",
+    "document_type": "jd",
+    "id": "doc_2751ff64d7e24d08808f97f933789ecc",
+    "metadata": {
+      "company_name": "智能问答、文本生成、内容解析等AI应用场景。",
+      "job_title": "AI大模型应用工程师",
+      "location": "一线城市",
+      "salary_range": "9k-16k｜双休、五险一金、项目奖金、技术晋升",
+      "skills": [
+        "任职要求"
+      ],
+      "title": "AI大模型应用工程师"
+    },
+    "source": {
+      "source_system": "manual"
+    },
+    "storage": "memory"
+  }
+}

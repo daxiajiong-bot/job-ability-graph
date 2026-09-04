@@ -1,0 +1,16 @@
+# GPU 覆盖文件：把容器内 Ollama 调度到 NVIDIA GPU（比 CPU 快一个数量级）。
+#
+# 前提：宿主机安装 NVIDIA 驱动 + nvidia-container-toolkit，且 docker 引擎支持 GPU。
+# 用法（deploy/ 目录）：
+#   docker compose -f docker-compose.yml -f docker-compose.gpu.yml up -d --build
+#   docker compose -f docker-compose.yml -f docker-compose.gpu.yml logs -f ollama ollama-pull
+
+services:
+  ollama:
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]

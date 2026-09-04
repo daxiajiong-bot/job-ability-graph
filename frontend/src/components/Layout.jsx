@@ -13,6 +13,7 @@ import {
   LogoutOutlined,
   TeamOutlined,
   ShareAltOutlined,
+  BulbOutlined,
 } from "@ant-design/icons";
 import useStore from "../store/useStore";
 
@@ -24,6 +25,7 @@ const ALL_MENU_ITEMS = [
   { key: "/resume", icon: <UserOutlined />, label: "简历管理", roles: ["job_seeker"] },
   { key: "/match", icon: <SwapOutlined />, label: "人岗匹配" },
   { key: "/recommend", icon: <StarOutlined />, label: "智能推荐" },
+  { key: "/discover", icon: <BulbOutlined />, label: "岗位发现", roles: ["hr"] },
   { key: "/history", icon: <HistoryOutlined />, label: "匹配历史" },
   { key: "/starmap", icon: <StarOutlined />, label: "岗位星图" },
   { key: "/graph", icon: <ShareAltOutlined />, label: "知识图谱" },

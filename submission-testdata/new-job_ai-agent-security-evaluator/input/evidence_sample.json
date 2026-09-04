@@ -1,0 +1,83 @@
+{
+  "说明": "AI Agent安全评测工程师 岗位数据源支撑证据样例（from evidence.jsonl；evidence_id 与 emerging_role.json 中 required_skills[*].evidence_ids 对应）",
+  "evidence": [
+    {
+      "schema_version": "evidence_v1",
+      "evidence_id": "ev:03ae0b4ed09c8cc9ee04",
+      "document_id": "doc:ae1687da9ff716422a30",
+      "source_type": "job",
+      "text": "岗位职责：\n设计智能体工具调用与越权测试\n建设大模型幻觉和安全评测集\n分析智能体全链路风险\n任职要求：\n熟练掌握LLM评测\n熟练掌握Agent\n熟练掌握Python\n熟练掌握提示注入测试\n熟练掌握RAG\n具备MCP经验者优先\n具备红队测试经验者优先",
+      "text_sha256": "0e72086dc02059cfa0c28ffd7a7049428522849ea8d59c15e38a4ec7eeb0017c",
+      "uri": "https://careers.example.org/enterprise-careers-a/109",
+      "page": null,
+      "section": "AI Agent安全评测工程师",
+      "char_start": 0,
+      "char_end": 124
+    },
+    {
+      "schema_version": "evidence_v1",
+      "evidence_id": "ev:092c62f7d1af9e90c52c",
+      "document_id": "doc:96a019e8d71f068733af",
+      "source_type": "job",
+      "text": "岗位职责：\n设计智能体工具调用与越权测试\n建设大模型幻觉和安全评测集\n分析智能体全链路风险\n任职要求：\n熟练掌握LLM评测\n熟练掌握Agent\n熟练掌握Python\n熟练掌握提示注入测试\n熟练掌握RAG\n具备MCP经验者优先\n具备红队测试经验者优先",
+      "text_sha256": "0e72086dc02059cfa0c28ffd7a7049428522849ea8d59c15e38a4ec7eeb0017c",
+      "uri": "https://careers.example.org/enterprise-careers-a/111",
+      "page": null,
+      "section": "大模型智能体评测工程师",
+      "char_start": 0,
+      "char_end": 124
+    },
+    {
+      "schema_version": "evidence_v1",
+      "evidence_id": "ev:0e799f6a620201ce65d4",
+      "document_id": "doc:0d491a63310d60f25771",
+      "source_type": "job",
+      "text": "岗位职责：\n设计智能体工具调用与越权测试\n建设大模型幻觉和安全评测集\n分析智能体全链路风险\n任职要求：\n熟练掌握LLM评测\n熟练掌握Agent\n熟练掌握Python\n熟练掌握提示注入测试\n熟练掌握RAG\n具备MCP经验者优先\n具备红队测试经验者优先",
+      "text_sha256": "0e72086dc02059cfa0c28ffd7a7049428522849ea8d59c15e38a4ec7eeb0017c",
+      "uri": "https://careers.example.org/enterprise-careers-a/105",
+      "page": null,
+      "section": "大模型智能体评测工程师",
+      "char_start": 0,
+      "char_end": 124
+    },
+    {
+      "schema_version": "evidence_v1",
+      "evidence_id": "ev:18076b4e52e1b98a8355",
+      "document_id": "doc:e087eeded95640b80bda",
+      "source_type": "job",
+      "text": "岗位职责：\n设计智能体工具调用与越权测试\n建设大模型幻觉和安全评测集\n分析智能体全链路风险\n任职要求：\n熟练掌握LLM评测\n熟练掌握Agent\n熟练掌握Python\n熟练掌握提示注入测试\n熟练掌握RAG\n具备MCP经验者优先\n具备红队测试经验者优先",
+      "text_sha256": "0e72086dc02059cfa0c28ffd7a7049428522849ea8d59c15e38a4ec7eeb0017c",
+      "uri": "https://careers.example.org/enterprise-careers-a/93",
+      "page": null,
+      "section": "大模型智能体评测工程师",
+      "char_start": 0,
+      "char_end": 124
+    },
+    {
+      "schema_version": "evidence_v1",
+      "evidence_id": "ev:1ba279d3c414d5763abe",
+      "document_id": "doc:dcb1ad4770f6be08df7e",
+      "source_type": "job",
+      "text": "岗位职责：\n设计智能体工具调用与越权测试\n建设大模型幻觉和安全评测集\n分析智能体全链路风险\n任职要求：\n熟练掌握LLM评测\n熟练掌握Agent\n熟练掌握Python\n熟练掌握提示注入测试\n熟练掌握RAG\n具备MCP经验者优先\n具备红队测试经验者优先",
+      "text_sha256": "0e72086dc02059cfa0c28ffd7a7049428522849ea8d59c15e38a4ec7eeb0017c",
+      "uri": "https://careers.example.org/enterprise-careers-b/100",
+      "page": null,
+      "section": "AI Agent安全评测工程师",
+      "char_start": 0,
+      "char_end": 124
+    },
+    {
+      "schema_version": "evidence_v1",
+      "evidence_id": "ev:344ba6b411b09d7699dc",
+      "document_id": "doc:cc3b514b56fafee72a25",
+      "source_type": "job",
+      "text": "岗位职责：\n设计智能体工具调用与越权测试\n建设大模型幻觉和安全评测集\n分析智能体全链路风险\n任职要求：\n熟练掌握LLM评测\n熟练掌握Agent\n熟练掌握Python\n熟练掌握提示注入测试\n熟练掌握RAG\n具备MCP经验者优先\n具备红队测试经验者优先",
+      "text_sha256": "0e72086dc02059cfa0c28ffd7a7049428522849ea8d59c15e38a4ec7eeb0017c",
+      "uri": "https://careers.example.org/enterprise-careers-b/110",
+      "page": null,
+      "section": "智能体安全测试工程师",
+      "char_start": 0,
+      "char_end": 124
+    }
+  ]
+}
